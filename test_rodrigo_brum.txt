@@ -1,4 +1,4 @@
 ListEX 0
-item 3.2
+item 3.2 - Alterado 
 
-Teste de Commit
+Teste de Commit e Merge
