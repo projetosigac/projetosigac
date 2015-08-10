@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 teste de conflito de merge
+=======
+teste de commit e conflito e teste de merge.
+>>>>>>> novabrench
