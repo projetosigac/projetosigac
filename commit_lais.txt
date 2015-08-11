@@ -3,3 +3,5 @@ teste de conflito de merge
 =======
 teste de commit e conflito e teste de merge.
 >>>>>>> novabrench
+test
+test
