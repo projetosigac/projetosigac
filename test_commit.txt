@@ -1,1 +1,1 @@
-Create new file to test commit and merge conflict
+Modify new file again
