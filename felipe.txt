@@ -1,2 +1,0 @@
-Texto qualquer
-Mais texto, merge entre felipe e master
