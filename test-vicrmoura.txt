@@ -1,1 +1,1 @@
-Arbritary text to test commit and merge.
+Arbitrary text to test commit and merge. - Changed branch ‘test_merge’
