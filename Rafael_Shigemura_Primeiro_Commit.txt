@@ -2,4 +2,5 @@
 void main(){
 	printf('primeiro commit');
 	printf('segundo commit');
+	printf('terceiro commit');
 }
