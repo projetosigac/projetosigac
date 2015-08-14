@@ -1,1 +1,1 @@
-Second line. Changed from Master.
+Fourth line. Corrected from merging conflict
