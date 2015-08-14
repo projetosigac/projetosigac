@@ -1,5 +1,5 @@
 //teste de conflito
 void main(){
-	printf('primeiro commit');
-	printf('segundo commit');
+	printf('primeiroooo commit');
+	printf('terceiro commit');
 }
