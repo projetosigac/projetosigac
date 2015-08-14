@@ -1,1 +1,1 @@
-arquivo para realizar meu primeiro commit
+arquivo para realizar meu segundo (editei para criar um conflito) commit
