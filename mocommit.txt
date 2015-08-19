@@ -1,2 +1,3 @@
 mocommit
 2o commit - change
+commit conflito (master)
