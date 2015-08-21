@@ -1,1 +1,2 @@
-my commit
+my conflict was solved
+
