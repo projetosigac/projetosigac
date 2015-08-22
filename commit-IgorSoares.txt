@@ -1,2 +1,2 @@
-commit teste
-adicionando uma segunda linha
+Vai dar
+Conflito!
