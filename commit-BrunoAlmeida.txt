@@ -1,2 +1,2 @@
 Some text
-conflict line from master
+conflict line solved
