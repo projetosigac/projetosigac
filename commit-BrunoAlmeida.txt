@@ -1,1 +1,2 @@
 Some text
+conflict line from branch bruno-almeida-conflict
