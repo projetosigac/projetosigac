@@ -1,1 +1,0 @@
-Primeira linha criada para testar o conflito de merge.
