@@ -1,3 +1,0 @@
-mocommit
-2o commit - change
-Linha p/ conflito (conflito resolvido)
