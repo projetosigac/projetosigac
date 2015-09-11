@@ -1,10 +1,7 @@
-# projetosigac
-SI-GAC Project 2015
-_________________________________________________________
+## SI-GAC Project 2015
 
-Waiting someone to write this description. Can be you?
-Who will be the first?
+_**S**istema **I**ntegrado de **G**erenciamento de **A**cidentes e **C**rises_ (Accident and Crisis Management Integrated System)
 
-You good but I'm better =D alter
+----
 
-conflict hereo.O 
+The SI-GAC project aims to create a fully integrated software system to manage cooperation between different forces during accidents and crises. Being a system that requires extremely high reliability, the SCADE Suite was chosen as the main technology to power the project.
