@@ -534,8 +534,8 @@
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">32</intprop>
-                        <intprop name="BlinkingType">0</intprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="BlinkingType">2</intprop>
+                        <enumprop name="Visible">A661_FALSE</enumprop>
                     </model>
                     <children>
                         <widget name="Registering" oid="66cf836f-e25e-4e2f-b6a3-2de5a0f4408a" type="Label">
@@ -543,7 +543,7 @@
                             <model>
                                 <intprop name="WidgetIdent">33</intprop>
                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
-                                <enumprop name="Visible">A661_FALSE</enumprop>
+                                <enumprop name="Visible">A661_TRUE</enumprop>
                                 <intprop name="PosX">12600</intprop>
                                 <intprop name="PosY">1000</intprop>
                                 <intprop name="SizeX">3000</intprop>
@@ -565,5 +565,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1477174772 -->
+<!-- crc32 : 1696104647 -->
 
