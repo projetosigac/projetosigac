@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="6.4.2" ?>
+
+<?scade_release version="6.4.2" ?>
+
+<specification>
+    <IDE>
+        <environment_id value="-2133961615"/>
+        <ratio horizontal="1" vertical="1"/>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <A661 library_version="1" supp_version="4">
+        <intprop name="ApplicationId">1</intprop>
+    </A661>
+    <children>
+        <A661Layer name="a661_layer" oid="78c4eadb-a146-409f-b223-81160fd1a994">
+            <IDE>
+                <ratio horizontal="20" vertical="20"/>
+            </IDE>
+            <model>
+                <intprop name="LayerId">1</intprop>
+                <intprop name="ContextNumber">0</intprop>
+                <intprop name="Width">15360</intprop>
+                <intprop name="Height">15360</intprop>
+            </model>
+            <children>
+                <widget name="Panel" oid="dfc29ed8-d181-4739-bbf3-2dacca083404" type="Panel">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">6</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">200</intprop>
+                        <intprop name="PosY">8060</intprop>
+                        <intprop name="SizeX">14920</intprop>
+                        <intprop name="SizeY">5600</intprop>
+                        <intprop name="StyleSet">100</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                    </model>
+                    <children/>
+                </widget>
+                <widget name="Removerincidente" oid="2824e8c1-ff26-4922-8f19-08ba49873227" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">1</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">10120</intprop>
+                        <intprop name="PosY">12520</intprop>
+                        <intprop name="SizeX">2020</intprop>
+                        <intprop name="SizeY">680</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Remover</stringprop>
+                    </model>
+                </widget>
+                <widget name="AdicionarIncidente" oid="9e7a0b67-2780-4105-8d84-a7d973ee89da" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">4</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">7420</intprop>
+                        <intprop name="PosY">12520</intprop>
+                        <intprop name="SizeX">2420</intprop>
+                        <intprop name="SizeY">680</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Adicionar</stringprop>
+                    </model>
+                </widget>
+                <widget name="AtualizarIncidente" oid="668b623d-8225-4871-b53b-4f52127571ae" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">5</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">12480</intprop>
+                        <intprop name="PosY">12520</intprop>
+                        <intprop name="SizeX">2400</intprop>
+                        <intprop name="SizeY">680</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Atualizar</stringprop>
+                    </model>
+                </widget>
+                <widget name="TipoIncidente" oid="f64e72e9-73ae-43b1-805b-7ba873131fb9" type="ComboBoxEdit">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">11</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4160</intprop>
+                        <intprop name="PosY">12520</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">680</intprop>
+                        <intprop name="SelectingAreaWidth">3000</intprop>
+                        <intprop name="SelectingAreaHeight">4900</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxNumberOfEntries">16</intprop>
+                        <intprop name="NumberOfEntries">4</intprop>
+                        <intprop name="SelectedEntry">1</intprop>
+                        <intprop name="OpeningEntry">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="OpeningMode">A661_OPEN_DOWN</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="StartCursorPos">32</intprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <arrayprop name="EntryList">
+                            <stringprop name="1">Enchente</stringprop>
+                            <stringprop name="2">Incendio</stringprop>
+                            <stringprop name="3">Desmoronamento</stringprop>
+                            <stringprop name="4">Vendaval</stringprop>
+                        </arrayprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="e2900b4a-6ad7-446a-8eb1-cc9fde6b5e03" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">12</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">3020</intprop>
+                        <intprop name="PosY">14480</intprop>
+                        <intprop name="SizeX">8620</intprop>
+                        <intprop name="SizeY">680</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">3</intprop>
+                        <intprop name="ColorIndex">102</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Cadastro de Incidientes</stringprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="a0bd2490-215f-496f-928c-be70a9eb4b3b" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">13</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">360</intprop>
+                        <intprop name="PosY">12420</intprop>
+                        <intprop name="SizeX">3520</intprop>
+                        <intprop name="SizeY">780</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Tipo de incidente</stringprop>
+                    </model>
+                </widget>
+                <widget name="ComboBoxEdit" oid="1e919612-6137-4fe1-9401-99d6810938ab" type="ComboBoxEdit">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">18</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4100</intprop>
+                        <intprop name="PosY">11120</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">680</intprop>
+                        <intprop name="SelectingAreaWidth">3000</intprop>
+                        <intprop name="SelectingAreaHeight">4900</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxNumberOfEntries">16</intprop>
+                        <intprop name="NumberOfEntries">4</intprop>
+                        <intprop name="SelectedEntry">1</intprop>
+                        <intprop name="OpeningEntry">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="OpeningMode">A661_OPEN_DOWN</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="StartCursorPos">32</intprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <arrayprop name="EntryList">
+                            <stringprop name="1">Policia</stringprop>
+                            <stringprop name="2">Bombeiros</stringprop>
+                            <stringprop name="3">Saude</stringprop>
+                            <stringprop name="4">Defesa civil</stringprop>
+                        </arrayprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="d474bbb7-a6f2-4830-8e94-b80efc711b6c" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">19</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">380</intprop>
+                        <intprop name="PosY">11100</intprop>
+                        <intprop name="SizeX">4560</intprop>
+                        <intprop name="SizeY">780</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Especialidade</stringprop>
+                    </model>
+                </widget>
+                <widget name="AdicionarIncidente" oid="2703471d-fed4-407c-89db-1f3b2ed0664b" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">23</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">740</intprop>
+                        <intprop name="PosY">8560</intprop>
+                        <intprop name="SizeX">2420</intprop>
+                        <intprop name="SizeY">780</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Gravar</stringprop>
+                    </model>
+                </widget>
+                <widget name="AdicionarIncidente" oid="faa230ea-90aa-41ec-8025-ac4920834aa3" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">24</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">3400</intprop>
+                        <intprop name="PosY">8560</intprop>
+                        <intprop name="SizeX">2420</intprop>
+                        <intprop name="SizeY">780</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Voltar</stringprop>
+                    </model>
+                </widget>
+                <widget name="EditBoxText" oid="8896b95e-c9df-4577-9965-e2260b0446c4" type="EditBoxText">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">25</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">2480</intprop>
+                        <intprop name="PosY">9780</intprop>
+                        <intprop name="SizeX">12320</intprop>
+                        <intprop name="SizeY">720</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="StartCursorPos">32</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="0f8c8b7a-2db6-4de3-b573-a2d930e4514a" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">26</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">420</intprop>
+                        <intprop name="PosY">9840</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Endereco</stringprop>
+                    </model>
+                </widget>
+            </children>
+        </A661Layer>
+    </children>
+</specification>
+
+<!-- crc32 : 1237138522 -->
+
