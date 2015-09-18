@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="6.4.2" ?>
+
+<?scade_release version="6.4.2" ?>
+
+<specification>
+    <IDE>
+        <environment_id value="-2133961615"/>
+        <ratio horizontal="1" vertical="1"/>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <A661 library_version="1" supp_version="4">
+        <intprop name="ApplicationId">1</intprop>
+    </A661>
+    <children>
+        <A661Layer name="a661_layer" oid="4a96b3e7-6455-4963-8f2e-ccb8e8697140">
+            <IDE>
+                <ratio horizontal="20" vertical="20"/>
+            </IDE>
+            <model>
+                <intprop name="LayerId">1</intprop>
+                <intprop name="ContextNumber">0</intprop>
+                <intprop name="Width">15360</intprop>
+                <intprop name="Height">15360</intprop>
+            </model>
+            <children>
+                <widget name="NomeHospital_Label" oid="e699e81d-7805-4c92-892a-7fd3bd19b6f3" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">1</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">800</intprop>
+                        <intprop name="PosY">14000</intprop>
+                        <intprop name="SizeX">10000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">50</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">HOSPITAL DA RESTAURACAO - Setor de UTI</stringprop>
+                    </model>
+                </widget>
+                <widget name="Ativos_EditBoxNumeric" oid="5e945f39-0475-465e-8359-f4c808e2690f" type="EditBoxNumeric">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">2</intprop>
+                        <enumprop name="Enable">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">780</intprop>
+                        <intprop name="PosY">13000</intprop>
+                        <intprop name="SizeX">4500</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">111</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <floatprop name="Value">0.0</floatprop>
+                        <floatprop name="TicsCoarse">10.0</floatprop>
+                        <floatprop name="TicsFine">0.1</floatprop>
+                        <floatprop name="MinValue">0.0</floatprop>
+                        <floatprop name="MaxValue">100.0</floatprop>
+                        <intprop name="LegendAreaSizeX">3500</intprop>
+                        <intprop name="StartCursorPosByte">32</intprop>
+                        <intprop name="MaxFormatStringLength">40</intprop>
+                        <intprop name="MaxLegendStringLength">40</intprop>
+                        <enumprop name="LegendPosition">A661_LEFT</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <enumprop name="LegendRemoved">A661_FALSE</enumprop>
+                        <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
+                        <enumprop name="CyclicFlag">A661_TRUE</enumprop>
+                        <stringprop name="FormatString">###</stringprop>
+                        <stringprop name="LegendString">Leitos Ativos</stringprop>
+                    </model>
+                </widget>
+                <widget name="Livre_EditBoxNumeric" oid="6c83304f-840f-4cb3-93e8-96e64e061d0f" type="EditBoxNumeric">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">3</intprop>
+                        <enumprop name="Enable">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">780</intprop>
+                        <intprop name="PosY">12000</intprop>
+                        <intprop name="SizeX">4500</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">112</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <floatprop name="Value">0.0</floatprop>
+                        <floatprop name="TicsCoarse">10.0</floatprop>
+                        <floatprop name="TicsFine">0.1</floatprop>
+                        <floatprop name="MinValue">0.0</floatprop>
+                        <floatprop name="MaxValue">100.0</floatprop>
+                        <intprop name="LegendAreaSizeX">3500</intprop>
+                        <intprop name="StartCursorPosByte">32</intprop>
+                        <intprop name="MaxFormatStringLength">40</intprop>
+                        <intprop name="MaxLegendStringLength">40</intprop>
+                        <enumprop name="LegendPosition">A661_LEFT</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <enumprop name="LegendRemoved">A661_FALSE</enumprop>
+                        <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
+                        <enumprop name="CyclicFlag">A661_TRUE</enumprop>
+                        <stringprop name="FormatString">###</stringprop>
+                        <stringprop name="LegendString">Leitos Livres</stringprop>
+                    </model>
+                </widget>
+                <widget name="Ativar0_PictureToggleButton" oid="c319ed82-8572-42d4-8139-9a902885ea5c" type="PictureToggleButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">4</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">2400</intprop>
+                        <intprop name="PosY">10000</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="PictureReference">11</intprop>
+                        <intprop name="AlternatePictureReference">12</intprop>
+                        <enumprop name="PicturePosition">A661_LEFT</enumprop>
+                        <enumprop name="ToggleState">A661_SELECTED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                        <stringprop name="AlternateLabelString"></stringprop>
+                    </model>
+                </widget>
+                <widget name="Ocupar0_PushButton" oid="9325cec1-fb26-4880-9c58-9654aa609514" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">5</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1700</intprop>
+                        <intprop name="PosY">9000</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">111</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Ocupar</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito0_GpRectangle" oid="0b4ac876-a530-4356-9755-55e0d743a9f1" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">6</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1700</intprop>
+                        <intprop name="PosY">6000</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">3000</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">51</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Ativar1_PictureToggleButton" oid="306cfcc5-5802-4e21-9522-55875439b28f" type="PictureToggleButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">7</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5600</intprop>
+                        <intprop name="PosY">10000</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="PictureReference">11</intprop>
+                        <intprop name="AlternatePictureReference">12</intprop>
+                        <enumprop name="PicturePosition">A661_LEFT</enumprop>
+                        <enumprop name="ToggleState">A661_SELECTED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                        <stringprop name="AlternateLabelString"></stringprop>
+                    </model>
+                </widget>
+                <widget name="Ocupar1_PushButton" oid="fcd56a41-c7c7-4168-aee9-d9bdb98be501" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">8</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4900</intprop>
+                        <intprop name="PosY">9000</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">111</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Ocupar</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito1_GpRectangle" oid="0e6a524a-a64d-426d-b280-d83287de5d62" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">9</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4900</intprop>
+                        <intprop name="PosY">6000</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">3000</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">51</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Ativar2_PictureToggleButton" oid="7ee99471-d326-494c-b0f6-26327a5c149d" type="PictureToggleButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">10</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8800</intprop>
+                        <intprop name="PosY">10000</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="PictureReference">11</intprop>
+                        <intprop name="AlternatePictureReference">12</intprop>
+                        <enumprop name="PicturePosition">A661_LEFT</enumprop>
+                        <enumprop name="ToggleState">A661_SELECTED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                        <stringprop name="AlternateLabelString"></stringprop>
+                    </model>
+                </widget>
+                <widget name="Ocupar2_PushButton" oid="eaeb33c4-5528-46f3-8280-834acfaf9b4d" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">11</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8100</intprop>
+                        <intprop name="PosY">9000</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">111</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Ocupar</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito2_GpRectangle" oid="77baee23-9d74-4be5-b933-587e44ada845" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">12</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8100</intprop>
+                        <intprop name="PosY">6000</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">3000</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">51</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Ativar3_PictureToggleButton" oid="2bf919e3-4339-4e31-8dc1-79ff285e6d5d" type="PictureToggleButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">13</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">12100</intprop>
+                        <intprop name="PosY">10000</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="PictureReference">11</intprop>
+                        <intprop name="AlternatePictureReference">12</intprop>
+                        <enumprop name="PicturePosition">A661_LEFT</enumprop>
+                        <enumprop name="ToggleState">A661_SELECTED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                        <stringprop name="AlternateLabelString"></stringprop>
+                    </model>
+                </widget>
+                <widget name="Ocupar3_PushButton" oid="a46059cd-7da2-45f6-9f34-b1ebc270417a" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">14</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">11300</intprop>
+                        <intprop name="PosY">9000</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">111</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Ocupar</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito3_GpRectangle" oid="90ea8d05-c333-422f-80b6-ac459697ccde" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">15</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">11300</intprop>
+                        <intprop name="PosY">6000</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">3000</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">51</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Ativar4_PictureToggleButton" oid="56d65ff3-b162-4b4e-9fe9-9165797cf41b" type="PictureToggleButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">16</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">2400</intprop>
+                        <intprop name="PosY">4400</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="PictureReference">11</intprop>
+                        <intprop name="AlternatePictureReference">12</intprop>
+                        <enumprop name="PicturePosition">A661_LEFT</enumprop>
+                        <enumprop name="ToggleState">A661_SELECTED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                        <stringprop name="AlternateLabelString"></stringprop>
+                    </model>
+                </widget>
+                <widget name="Ocupar4_PushButton" oid="f5060f61-9a1d-4a28-af68-f35244cdb341" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">17</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1700</intprop>
+                        <intprop name="PosY">3400</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">111</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Ocupar</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito4_GpRectangle" oid="3e70f7b5-5ae0-4838-9588-eba73015f525" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">18</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1700</intprop>
+                        <intprop name="PosY">400</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">3000</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">51</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Ativar5_PictureToggleButton" oid="97b79720-4640-4a1a-a92d-42b916147805" type="PictureToggleButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">19</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5600</intprop>
+                        <intprop name="PosY">4400</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="PictureReference">11</intprop>
+                        <intprop name="AlternatePictureReference">12</intprop>
+                        <enumprop name="PicturePosition">A661_LEFT</enumprop>
+                        <enumprop name="ToggleState">A661_SELECTED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                        <stringprop name="AlternateLabelString"></stringprop>
+                    </model>
+                </widget>
+                <widget name="Ocupar5_PushButton" oid="acbff827-68d1-46c4-af07-f7f69ad447cc" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">20</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4900</intprop>
+                        <intprop name="PosY">3400</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">111</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Ocupar</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito5_GpRectangle" oid="3dac9670-1333-4e77-9783-aca35248dfd6" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">21</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4900</intprop>
+                        <intprop name="PosY">400</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">3000</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">51</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Ativar6_PictureToggleButton" oid="782eb16e-064e-44b0-8e91-1cc25470c0c8" type="PictureToggleButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">22</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8800</intprop>
+                        <intprop name="PosY">4400</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="PictureReference">11</intprop>
+                        <intprop name="AlternatePictureReference">12</intprop>
+                        <enumprop name="PicturePosition">A661_LEFT</enumprop>
+                        <enumprop name="ToggleState">A661_SELECTED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                        <stringprop name="AlternateLabelString"></stringprop>
+                    </model>
+                </widget>
+                <widget name="Ocupar6_PushButton" oid="f9574bee-5736-462e-8550-c728fb54c11f" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">23</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8100</intprop>
+                        <intprop name="PosY">3400</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">111</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Ocupar</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito6_GpRectangle" oid="641d1aa9-98de-4cd2-a80e-968800995bc9" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">24</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8100</intprop>
+                        <intprop name="PosY">400</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">3000</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">51</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Ativar7_PictureToggleButton" oid="c1b44678-361d-46a8-8cfe-1abefba6aeb7" type="PictureToggleButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">25</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">12100</intprop>
+                        <intprop name="PosY">4400</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <intprop name="PictureReference">11</intprop>
+                        <intprop name="AlternatePictureReference">12</intprop>
+                        <enumprop name="PicturePosition">A661_LEFT</enumprop>
+                        <enumprop name="ToggleState">A661_SELECTED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString"></stringprop>
+                        <stringprop name="AlternateLabelString"></stringprop>
+                    </model>
+                </widget>
+                <widget name="Ocupar7_PushButton" oid="724d13e9-c4cf-4025-98d0-d353325d4ff4" type="PushButton">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">26</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">11300</intprop>
+                        <intprop name="PosY">3400</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">111</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Ocupar</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito7_GpRectangle" oid="5e4a0afc-31bd-4cb6-92d5-625334378cd9" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">27</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">11300</intprop>
+                        <intprop name="PosY">400</intprop>
+                        <intprop name="SizeX">2200</intprop>
+                        <intprop name="SizeY">3000</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">51</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+            </children>
+        </A661Layer>
+    </children>
+</specification>
+
+<!-- crc32 : 748623302 -->
+
