@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="UTI" oid="!ed/21ca/52CE/874/55f0368b18">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Ocupar0_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="AllocateBed1" type="bool" oid="!ed/2248/52CE/874/55f03797629c" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="PictureToggleButton" WidgetName="Ativar1_PictureToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ActivateBed2" type="bool" oid="!ed/228d/52CE/874/55f038184f0" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="10" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="PictureToggleButton" WidgetName="Ativar2_PictureToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ActivateBed3" type="bool" oid="!ed/229a/52CE/874/55f03a9566a" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="PictureToggleButton" WidgetName="Ativar3_PictureToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ActivateBed4" type="bool" oid="!ed/22ba/52CE/874/55f03abb7c66" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="16" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="PictureToggleButton" WidgetName="Ativar4_PictureToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ActivateBed5" type="bool" oid="!ed/22c7/52CE/874/55f03ad444e2" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="19" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="PictureToggleButton" WidgetName="Ativar5_PictureToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ActivateBed6" type="bool" oid="!ed/22d4/52CE/874/55f03af668f4" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="22" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="PictureToggleButton" WidgetName="Ativar6_PictureToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ActivateBed7" type="bool" oid="!ed/22e1/52CE/874/55f03b076739" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="25" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="PictureToggleButton" WidgetName="Ativar7_PictureToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ActivateBed8" type="bool" oid="!ed/22ee/52CE/874/55f03b165b89" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="PictureToggleButton" WidgetName="Ativar0_PictureToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ActivateBed1" type="bool" oid="!ed/235d/52CE/874/55f0867d75f7" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Ocupar1_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="AllocateBed2" type="bool" oid="!ed/236a/52CE/874/55f086b21c98" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Ocupar3_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="AllocateBed4" type="bool" oid="!ed/2377/52CE/874/55f086f41536" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="11" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Ocupar2_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="AllocateBed3" type="bool" oid="!ed/237e/52CE/874/55f086f719d1" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="20" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Ocupar5_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="AllocateBed6" type="bool" oid="!ed/239a/52CE/874/55f0873a549b" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="17" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Ocupar4_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="AllocateBed5" type="bool" oid="!ed/23a7/52CE/874/55f0876a35b3" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="23" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Ocupar6_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="AllocateBed7" type="bool" oid="!ed/23b8/52CE/874/55f087786af1" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="26" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Ocupar7_PushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="AllocateBed8" type="bool" oid="!ed/23c5/52CE/874/55f08785393f" instancepath="UTI/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ActiveBedsCount" type="real" oid="!ed/22a5/52CE/874/55f03aaf1a16" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="Ativos_EditBoxNumeric">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="BedColor1" type="int" oid="!ed/2314/52CE/874/55f05b732134" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="6" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito0_GpRectangle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="FreeBedsCount" type="real" oid="!ed/231e/52CE/874/55f07dfe6f94" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="Livre_EditBoxNumeric">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="BedColor2" type="int" oid="!ed/23d0/52CE/874/55f087fc1e6" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito1_GpRectangle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="BedColor3" type="int" oid="!ed/23e7/52CE/874/55f0880465a2" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito2_GpRectangle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="BedColor4" type="int" oid="!ed/23f1/52CE/874/55f088166379" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="15" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito3_GpRectangle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="BedColor5" type="int" oid="!ed/23fb/52CE/874/55f0881929be" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="18" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito4_GpRectangle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="BedColor6" type="int" oid="!ed/2405/52CE/874/55f0881cfd4" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="21" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito5_GpRectangle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="BedColor7" type="int" oid="!ed/240f/52CE/874/55f0881f68a7" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="24" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito6_GpRectangle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="BedColor8" type="int" oid="!ed/2419/52CE/874/55f08822b12" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="27" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito7_GpRectangle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="EmitToCDS" type="bool" oid="!ed/21d9/3F17/10E4/55fb71b46c14" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="6" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito0_GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito1_GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito2_GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="15" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito3_GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="18" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito4_GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="21" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito5_GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="24" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito6_GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="27" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="Leito7_GpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="Ativos_EditBoxNumeric">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="Livre_EditBoxNumeric">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LayerVisible" type="bool" oid="!ed/21e6/333/2320/55fca5b64f7b" instancepath="UTI/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DF_US08.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>

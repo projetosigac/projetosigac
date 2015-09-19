@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="111" defaultConfiguration="21">
+<Project id="1" oid_count="116" defaultConfiguration="21">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -312,6 +312,10 @@
 		<Prop id="110" name="@SCADE:ASSTRING_TRIM">
 			<value></value>
 		</Prop>
+		<Prop id="116" name="@GENERATOR:DISPLAY_ASYNC_PANELS">
+			<value>..\..\DF\DF_US08.sgfx</value>
+			<configuration>21</configuration>
+		</Prop>
 	</props>
 	<roots>
 		<Folder id="3" extensions="vsp;etp" name="SCADE Libraries">
@@ -334,6 +338,7 @@
 			</elements>
 		</Folder>
 		<Folder id="84" name="Design Verifier File"/>
+		<FileRef id="112" persistAs="..\..\DF\DF_US08.sgfx"/>
 	</roots>
 	<configurations>
 		<Configuration id="13" name="KCG"/>
