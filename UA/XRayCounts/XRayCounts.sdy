@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="XRayCounts" oid="!ed/20de/39D6/1130/55fcb2c92050">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Variable name="EmitToCDS" type="bool" oid="!ed/20fb/39D6/1130/55fcb2ff661f" instancepath="XRayCounts/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\RaioXSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasTotal">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\RaioXSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasDisponiveis">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\RaioXSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasOcupadas">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LayerVisible" type="bool" oid="!ed/20fd/39D6/1130/55fcb3123c72" instancepath="XRayCounts/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\RaioXSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="availableOutput" type="real" oid="!ed/20fe/39D6/1130/55fcb31e23a2" instancepath="XRayCounts/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\DF\RaioXSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasDisponiveis">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="occupiedOutput" type="real" oid="!ed/20ff/39D6/1130/55fcb3272838" instancepath="XRayCounts/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\DF\RaioXSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasOcupadas">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="totalOutput" type="real" oid="!ed/2100/39D6/1130/55fcb32f5a34" instancepath="XRayCounts/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\DF\RaioXSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasTotal">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>

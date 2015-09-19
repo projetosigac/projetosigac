@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="SurgeryCounts" oid="!ed/20de/3EFD/1180/55fcb50c477c">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Variable name="EmitToCDS" type="bool" oid="!ed/20e3/3EFD/1180/55fcb53a77f" instancepath="SurgeryCounts/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CirurgiaSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasTotal">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CirurgiaSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasDisponiveis">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CirurgiaSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasOcupadas">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LayerVisible" type="bool" oid="!ed/20e4/3EFD/1180/55fcb5416f7b" instancepath="SurgeryCounts/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CirurgiaSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="availableOutput" type="real" oid="!ed/20e5/3EFD/1180/55fcb54f35cf" instancepath="SurgeryCounts/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\DF\CirurgiaSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasDisponiveis">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="occupiedOutput" type="real" oid="!ed/20e6/3EFD/1180/55fcb55975ab" instancepath="SurgeryCounts/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\DF\CirurgiaSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasOcupadas">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="totalOutput" type="real" oid="!ed/20e7/3EFD/1180/55fcb562147e" instancepath="SurgeryCounts/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\DF\CirurgiaSalas.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="SalasTotal">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>

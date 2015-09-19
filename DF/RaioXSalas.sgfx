@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="6.4.2" ?>
+
+<?scade_release version="6.4.2" ?>
+
+<specification>
+    <IDE>
+        <environment_id value="-2133961615"/>
+        <ratio horizontal="1" vertical="1"/>
+        <reporter authors="Fernando J Miguel" classification="" company="Instituto Tecnológico de Aeronáutica" date="08.09.2015" distribution_list="" index="" issue="" reference="Listex1 / Listex2" referenceNr="" subtitle="#TS06 / #US07" title=" UTI - Leitos">
+            <description>Definition File utilizado para atendimento a US07</description>
+            <summary>Definition File criado pelo time #TS06 para atendimento de #US07, referente a Sprint1 do projeto SI-GAC</summary>
+        </reporter>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <A661 library_version="1" supp_version="4">
+        <intprop name="ApplicationId">1</intprop>
+    </A661>
+    <children>
+        <A661Layer name="a661_layer" oid="7605dfe9-437f-4b4c-bfcb-f266c582a728">
+            <IDE>
+                <ratio horizontal="20" vertical="20"/>
+            </IDE>
+            <model>
+                <intprop name="LayerId">1</intprop>
+                <intprop name="ContextNumber">0</intprop>
+                <intprop name="Width">15360</intprop>
+                <intprop name="Height">15360</intprop>
+            </model>
+            <children>
+                <widget name="NomeDoHospital" oid="da633e37-a224-4214-b2ca-efcb769ae080" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">1</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">3380</intprop>
+                        <intprop name="PosY">13440</intprop>
+                        <intprop name="SizeX">6880</intprop>
+                        <intprop name="SizeY">960</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">3</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">Raio X &lt;Hospital&gt;</stringprop>
+                    </model>
+                </widget>
+                <widget name="SalasTotal" oid="c995f738-1bd3-4807-9322-5e7552d2076b" type="EditBoxNumeric">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">2</intprop>
+                        <enumprop name="Enable">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5520</intprop>
+                        <intprop name="PosY">11940</intprop>
+                        <intprop name="SizeX">3020</intprop>
+                        <intprop name="SizeY">980</intprop>
+                        <intprop name="StyleSet">130</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <floatprop name="Value">20.0</floatprop>
+                        <floatprop name="TicsCoarse">10.0</floatprop>
+                        <floatprop name="TicsFine">0.1</floatprop>
+                        <floatprop name="MinValue">0.0</floatprop>
+                        <floatprop name="MaxValue">100.0</floatprop>
+                        <intprop name="LegendAreaSizeX">800</intprop>
+                        <intprop name="StartCursorPosByte">32</intprop>
+                        <intprop name="MaxFormatStringLength">16</intprop>
+                        <intprop name="MaxLegendStringLength">16</intprop>
+                        <enumprop name="LegendPosition">A661_RIGHT</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <enumprop name="LegendRemoved">A661_FALSE</enumprop>
+                        <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
+                        <enumprop name="CyclicFlag">A661_TRUE</enumprop>
+                        <stringprop name="FormatString">___</stringprop>
+                        <stringprop name="LegendString">ST</stringprop>
+                    </model>
+                </widget>
+                <widget name="SalasDisponiveis" oid="a9a1a992-b8d6-4492-b07a-98127ef15518" type="EditBoxNumeric">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">3</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5500</intprop>
+                        <intprop name="PosY">10660</intprop>
+                        <intprop name="SizeX">3040</intprop>
+                        <intprop name="SizeY">960</intprop>
+                        <intprop name="StyleSet">132</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <floatprop name="Value">5.0</floatprop>
+                        <floatprop name="TicsCoarse">10.0</floatprop>
+                        <floatprop name="TicsFine">0.1</floatprop>
+                        <floatprop name="MinValue">0.0</floatprop>
+                        <floatprop name="MaxValue">100.0</floatprop>
+                        <intprop name="LegendAreaSizeX">800</intprop>
+                        <intprop name="StartCursorPosByte">32</intprop>
+                        <intprop name="MaxFormatStringLength">16</intprop>
+                        <intprop name="MaxLegendStringLength">16</intprop>
+                        <enumprop name="LegendPosition">A661_RIGHT</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <enumprop name="LegendRemoved">A661_FALSE</enumprop>
+                        <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
+                        <enumprop name="CyclicFlag">A661_TRUE</enumprop>
+                        <stringprop name="FormatString">___</stringprop>
+                        <stringprop name="LegendString">SD</stringprop>
+                    </model>
+                </widget>
+                <widget name="SalasOcupadas" oid="c45920f8-cb26-4b66-9630-b275d136c1a0" type="EditBoxNumeric">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">4</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5500</intprop>
+                        <intprop name="PosY">9300</intprop>
+                        <intprop name="SizeX">3040</intprop>
+                        <intprop name="SizeY">980</intprop>
+                        <intprop name="StyleSet">135</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <floatprop name="Value">15.0</floatprop>
+                        <floatprop name="TicsCoarse">10.0</floatprop>
+                        <floatprop name="TicsFine">0.1</floatprop>
+                        <floatprop name="MinValue">0.0</floatprop>
+                        <floatprop name="MaxValue">100.0</floatprop>
+                        <intprop name="LegendAreaSizeX">800</intprop>
+                        <intprop name="StartCursorPosByte">32</intprop>
+                        <intprop name="MaxFormatStringLength">16</intprop>
+                        <intprop name="MaxLegendStringLength">16</intprop>
+                        <enumprop name="LegendPosition">A661_RIGHT</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <enumprop name="LegendRemoved">A661_FALSE</enumprop>
+                        <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
+                        <enumprop name="CyclicFlag">A661_TRUE</enumprop>
+                        <stringprop name="FormatString">___</stringprop>
+                        <stringprop name="LegendString">SO</stringprop>
+                    </model>
+                </widget>
+                <widget name="LegendaST" oid="c1671212-3ab3-4da0-8804-6c2598feef8b" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">9</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1280</intprop>
+                        <intprop name="PosY">7660</intprop>
+                        <intprop name="SizeX">4980</intprop>
+                        <intprop name="SizeY">860</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">ST - Salas no Total</stringprop>
+                    </model>
+                </widget>
+                <widget name="LegendaSD" oid="b657fa30-e4c2-4efc-b3ad-e020e5054a25" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">10</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1280</intprop>
+                        <intprop name="PosY">7060</intprop>
+                        <intprop name="SizeX">5840</intprop>
+                        <intprop name="SizeY">780</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">52</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">SD - Salas Disponiveis</stringprop>
+                    </model>
+                </widget>
+                <widget name="LegendaSO" oid="db352ea8-9110-4882-a2b8-64044dbbc175" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">11</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1280</intprop>
+                        <intprop name="PosY">6460</intprop>
+                        <intprop name="SizeX">5520</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">55</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">SO - Salas Ocupadas</stringprop>
+                    </model>
+                </widget>
+            </children>
+        </A661Layer>
+    </children>
+</specification>
+
+<!-- crc32 : 646384281 -->
+
