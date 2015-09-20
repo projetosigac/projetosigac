@@ -112,7 +112,7 @@
                         <enumprop name="Halo">A661_FALSE</enumprop>
                     </model>
                 </widget>
-                <widget name="EditBoxText" oid="5c107cee-2cd7-41d7-994d-c11e20d4d54d" type="EditBoxText">
+                <widget name="RefNumText" oid="5c107cee-2cd7-41d7-994d-c11e20d4d54d" type="EditBoxText">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">2</intprop>
@@ -183,7 +183,7 @@
                         <enumprop name="Halo">A661_FALSE</enumprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="180cb4a9-a480-4edb-a028-e1308e93e833" type="Label">
+                <widget name="RefNumLabel" oid="180cb4a9-a480-4edb-a028-e1308e93e833" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">10</intprop>
@@ -220,7 +220,7 @@
                         <enumprop name="Halo">A661_FALSE</enumprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="4f4448af-4454-4b2b-9097-fdaf63edf05a" type="Label">
+                <widget name="DataLabel" oid="4f4448af-4454-4b2b-9097-fdaf63edf05a" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">14</intprop>
@@ -240,7 +240,7 @@
                         <stringprop name="LabelString">Data:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="45068e5b-e9dc-4f5f-9ade-6aa311b5b82a" type="Label">
+                <widget name="DataValueLabel" oid="45068e5b-e9dc-4f5f-9ade-6aa311b5b82a" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">15</intprop>
@@ -260,7 +260,7 @@
                         <stringprop name="LabelString">Placeholder data</stringprop>
                     </model>
                 </widget>
-                <widget name="EditBoxText" oid="e0881785-6c53-4f2c-8846-6965adb1f495" type="EditBoxText">
+                <widget name="NameText" oid="e0881785-6c53-4f2c-8846-6965adb1f495" type="EditBoxText">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">16</intprop>
@@ -280,7 +280,7 @@
                         <stringprop name="LabelString">LabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="7436d36e-5908-4dc5-b979-3a16bfa096bf" type="Label">
+                <widget name="NameLabel" oid="7436d36e-5908-4dc5-b979-3a16bfa096bf" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">17</intprop>
@@ -300,7 +300,7 @@
                         <stringprop name="LabelString">Nome:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="47a6ea9c-5e4f-49af-b86d-ef94614aad28" type="Label">
+                <widget name="SexLabel" oid="47a6ea9c-5e4f-49af-b86d-ef94614aad28" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">18</intprop>
@@ -320,7 +320,7 @@
                         <stringprop name="LabelString">Sexo:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="6d0281f7-8482-4131-a5ed-279277cef721" type="Label">
+                <widget name="StateLabel" oid="6d0281f7-8482-4131-a5ed-279277cef721" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">25</intprop>
@@ -340,27 +340,7 @@
                         <stringprop name="LabelString">Estado:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="ad8d25c4-3bd5-4fb6-bb23-980c0358cdab" type="Label">
-                    <IDE/>
-                    <model>
-                        <intprop name="WidgetIdent">26</intprop>
-                        <enumprop name="Anonymous">A661_FALSE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1940</intprop>
-                        <intprop name="PosY">9620</intprop>
-                        <intprop name="SizeX">3780</intprop>
-                        <intprop name="SizeY">840</intprop>
-                        <intprop name="RotationAngle">0</intprop>
-                        <intprop name="StyleSet">1</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
-                        <intprop name="Font">0</intprop>
-                        <intprop name="ColorIndex">1</intprop>
-                        <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <stringprop name="LabelString">Placeholder estado</stringprop>
-                    </model>
-                </widget>
-                <widget name="Label" oid="bfc72e7f-db94-4e1d-9eee-f5c11a78e69b" type="Label">
+                <widget name="ShowRecordLabel" oid="bfc72e7f-db94-4e1d-9eee-f5c11a78e69b" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">29</intprop>
@@ -380,7 +360,7 @@
                         <stringprop name="LabelString">Visualizar cadastro</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="24ad4730-4076-440b-a3bd-5d4a82035532" type="Label">
+                <widget name="ShowRefNumLabel" oid="24ad4730-4076-440b-a3bd-5d4a82035532" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">30</intprop>
@@ -400,7 +380,7 @@
                         <stringprop name="LabelString">Num. de referencia:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="50bbcfcc-4628-4144-a95d-8d360eab7061" type="Label">
+                <widget name="ShowRefNumValueLabel" oid="50bbcfcc-4628-4144-a95d-8d360eab7061" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">31</intprop>
@@ -420,7 +400,7 @@
                         <stringprop name="LabelString">Placeholder num. de referencia</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="761254c7-0cd2-45c1-9ead-d1c5734d4d53" type="Label">
+                <widget name="ShowNameLabel" oid="761254c7-0cd2-45c1-9ead-d1c5734d4d53" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">32</intprop>
@@ -440,7 +420,7 @@
                         <stringprop name="LabelString">Nome:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="894207e7-f57c-4a4e-b198-efb443696b52" type="Label">
+                <widget name="ShowNameValueLabel" oid="894207e7-f57c-4a4e-b198-efb443696b52" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">33</intprop>
@@ -460,7 +440,7 @@
                         <stringprop name="LabelString">Placeholder nome</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="673d1a78-6c29-437f-860c-a45289621f7e" type="Label">
+                <widget name="ShowSexLabel" oid="673d1a78-6c29-437f-860c-a45289621f7e" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">34</intprop>
@@ -480,7 +460,7 @@
                         <stringprop name="LabelString">Sexo:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="bfab0879-7e80-4210-a507-05a1329de647" type="Label">
+                <widget name="ShowStateLabel" oid="bfab0879-7e80-4210-a507-05a1329de647" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">36</intprop>
@@ -500,7 +480,7 @@
                         <stringprop name="LabelString">Estado:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="f2129de2-9fa9-4f9a-b580-4c26f65932c6" type="Label">
+                <widget name="ShowDataLabel" oid="f2129de2-9fa9-4f9a-b580-4c26f65932c6" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">38</intprop>
@@ -520,7 +500,7 @@
                         <stringprop name="LabelString">Data:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="b4228b64-6cae-4c29-a966-e2336745d7f2" type="Label">
+                <widget name="ShowDataValueLabel" oid="b4228b64-6cae-4c29-a966-e2336745d7f2" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">39</intprop>
@@ -540,7 +520,7 @@
                         <stringprop name="LabelString">Placeholder data</stringprop>
                     </model>
                 </widget>
-                <widget name="PushButton" oid="b33d146c-a426-4f3e-968e-833f3a4ea509" type="PushButton">
+                <widget name="SavePushButton" oid="b33d146c-a426-4f3e-968e-833f3a4ea509" type="PushButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">57</intprop>
@@ -558,7 +538,7 @@
                         <stringprop name="LabelString">SALVAR</stringprop>
                     </model>
                 </widget>
-                <widget name="PushButton" oid="4c95e269-2b92-4b11-a72d-9253bbaa5176" type="PushButton">
+                <widget name="ShowDeletePushButton" oid="4c95e269-2b92-4b11-a72d-9253bbaa5176" type="PushButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">58</intprop>
@@ -576,7 +556,7 @@
                         <stringprop name="LabelString">EXCLUIR</stringprop>
                     </model>
                 </widget>
-                <widget name="PushButton" oid="9758fe5b-d762-451f-8bd7-45018a9881f6" type="PushButton">
+                <widget name="ShowDownPushButton" oid="9758fe5b-d762-451f-8bd7-45018a9881f6" type="PushButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">59</intprop>
@@ -594,7 +574,7 @@
                         <stringprop name="LabelString">DOWN</stringprop>
                     </model>
                 </widget>
-                <widget name="PushButton" oid="e5f94008-25d9-40cd-8799-bbca980b826c" type="PushButton">
+                <widget name="ShowUpPushButton" oid="e5f94008-25d9-40cd-8799-bbca980b826c" type="PushButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">60</intprop>
@@ -612,7 +592,7 @@
                         <stringprop name="LabelString">UP</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="7fdb0d6b-9f03-4b53-96e8-1479fa8658f6" type="Label">
+                <widget name="PeoplePerStateLabel" oid="7fdb0d6b-9f03-4b53-96e8-1479fa8658f6" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">65</intprop>
@@ -632,7 +612,7 @@
                         <stringprop name="LabelString">Num. pessoas por estado</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="88c8c1b6-9e3c-4451-a352-b3249f9a6a25" type="Label">
+                <widget name="AgeLabel" oid="88c8c1b6-9e3c-4451-a352-b3249f9a6a25" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">71</intprop>
@@ -652,7 +632,7 @@
                         <stringprop name="LabelString">Idade:</stringprop>
                     </model>
                 </widget>
-                <widget name="Label" oid="eaacb889-250c-4a42-9e46-e73341d30f48" type="Label">
+                <widget name="ShowAgeLabel" oid="eaacb889-250c-4a42-9e46-e73341d30f48" type="Label">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">72</intprop>
@@ -672,7 +652,7 @@
                         <stringprop name="LabelString">Idade:</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="db9f1f3a-dc95-4e23-af16-2ee409d29c76" type="ToggleButton">
+                <widget name="SexMaleToggleButton" oid="db9f1f3a-dc95-4e23-af16-2ee409d29c76" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">74</intprop>
@@ -693,7 +673,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="e7c5a34f-f148-4ced-838b-2e856ad04ed9" type="ToggleButton">
+                <widget name="SexFemToggleButton" oid="e7c5a34f-f148-4ced-838b-2e856ad04ed9" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">75</intprop>
@@ -714,7 +694,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="f631b887-b14b-4cce-bff2-b0e153d6fdae" type="ToggleButton">
+                <widget name="AgeRange1ToggleButton" oid="f631b887-b14b-4cce-bff2-b0e153d6fdae" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">76</intprop>
@@ -735,7 +715,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="1fb32eed-2cd3-4699-9a76-4c523a83e4ae" type="ToggleButton">
+                <widget name="AgeRange2ToggleButton" oid="1fb32eed-2cd3-4699-9a76-4c523a83e4ae" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">80</intprop>
@@ -756,7 +736,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="12ef05b4-184a-4d28-91ea-c46129ddb24b" type="ToggleButton">
+                <widget name="AgeRange3ToggleButton" oid="12ef05b4-184a-4d28-91ea-c46129ddb24b" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">81</intprop>
@@ -777,7 +757,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="be4f8731-1cc6-4a0d-a831-533a5cbd49e4" type="ToggleButton">
+                <widget name="AgeRange4ToggleButton" oid="be4f8731-1cc6-4a0d-a831-533a5cbd49e4" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">82</intprop>
@@ -798,7 +778,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="408e5167-11f4-4c69-93d3-252f303fe766" type="ToggleButton">
+                <widget name="State0BlackToggleButton" oid="408e5167-11f4-4c69-93d3-252f303fe766" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">83</intprop>
@@ -819,7 +799,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="9af62911-baec-4a85-a10b-69a2b2cdac42" type="ToggleButton">
+                <widget name="State1RedToggleButton" oid="9af62911-baec-4a85-a10b-69a2b2cdac42" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">84</intprop>
@@ -840,7 +820,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="2f94c56b-d606-4ae0-8a13-a54bdda93968" type="ToggleButton">
+                <widget name="State2YellowToggleButton" oid="2f94c56b-d606-4ae0-8a13-a54bdda93968" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">85</intprop>
@@ -861,7 +841,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="dad25a5d-81d2-40df-8d92-c353bed1c2ca" type="ToggleButton">
+                <widget name="State3GreenToggleButton" oid="dad25a5d-81d2-40df-8d92-c353bed1c2ca" type="ToggleButton">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">86</intprop>
@@ -882,7 +862,7 @@
                         <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
                     </model>
                 </widget>
-                <widget name="EditBoxNumeric" oid="55f3c0c8-bf32-4f7e-8844-3cfa569cfdb1" type="EditBoxNumeric">
+                <widget name="State0BlackCount" oid="55f3c0c8-bf32-4f7e-8844-3cfa569cfdb1" type="EditBoxNumeric">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">87</intprop>
@@ -914,7 +894,7 @@
                         <stringprop name="LegendString">LD</stringprop>
                     </model>
                 </widget>
-                <widget name="EditBoxNumeric" oid="7558a371-1dca-4fb6-9be5-e9d0b8c098fe" type="EditBoxNumeric">
+                <widget name="State1RedCount" oid="7558a371-1dca-4fb6-9be5-e9d0b8c098fe" type="EditBoxNumeric">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">88</intprop>
@@ -946,7 +926,7 @@
                         <stringprop name="LegendString">LD</stringprop>
                     </model>
                 </widget>
-                <widget name="EditBoxNumeric" oid="8fd9f036-097f-4905-b3c1-48c40ee02d10" type="EditBoxNumeric">
+                <widget name="State2YellowCount" oid="8fd9f036-097f-4905-b3c1-48c40ee02d10" type="EditBoxNumeric">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">89</intprop>
@@ -978,7 +958,7 @@
                         <stringprop name="LegendString">LD</stringprop>
                     </model>
                 </widget>
-                <widget name="EditBoxNumeric" oid="94a20d13-7df5-4aab-b69b-7008a6f6e9b5" type="EditBoxNumeric">
+                <widget name="State3GreenCount" oid="94a20d13-7df5-4aab-b69b-7008a6f6e9b5" type="EditBoxNumeric">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">90</intprop>
@@ -1010,7 +990,7 @@
                         <stringprop name="LegendString">LD</stringprop>
                     </model>
                 </widget>
-                <widget name="GpRectangle" oid="72af489e-9507-45a4-a81c-d1d9a73ee476" type="GpRectangle">
+                <widget name="ShowStateValueGpRectangle" oid="72af489e-9507-45a4-a81c-d1d9a73ee476" type="GpRectangle">
                     <IDE/>
                     <model>
                         <intprop name="WidgetIdent">91</intprop>
@@ -1027,130 +1007,44 @@
                         <enumprop name="Halo">A661_FALSE</enumprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="1f7332e4-27c8-4ebf-8989-cc00a965d0f3" type="ToggleButton">
+                <widget name="ShowSexValueLabel" oid="6becb185-1759-4e31-87d5-d4cb42c2750b" type="Label">
                     <IDE/>
                     <model>
-                        <intprop name="WidgetIdent">92</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <intprop name="WidgetIdent">105</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1840</intprop>
-                        <intprop name="PosY">1620</intprop>
-                        <intprop name="SizeX">2240</intprop>
-                        <intprop name="SizeY">480</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="PosX">1760</intprop>
+                        <intprop name="PosY">2200</intprop>
+                        <intprop name="SizeX">3780</intprop>
+                        <intprop name="SizeY">840</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
                         <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="ToggleState">A661_UNSELECTED</enumprop>
-                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">0 - 13</stringprop>
-                        <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Placeholder sexo</stringprop>
                     </model>
                 </widget>
-                <widget name="ToggleButton" oid="b3341cf7-cf0a-4964-8224-e40a2eda9bbb" type="ToggleButton">
+                <widget name="ShowAgeValueLabel" oid="c62d27fb-d177-478a-a6c9-ffafb6dcabe2" type="Label">
                     <IDE/>
                     <model>
-                        <intprop name="WidgetIdent">99</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <intprop name="WidgetIdent">106</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">4280</intprop>
-                        <intprop name="PosY">1620</intprop>
-                        <intprop name="SizeX">2240</intprop>
-                        <intprop name="SizeY">480</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="PosX">1880</intprop>
+                        <intprop name="PosY">1440</intprop>
+                        <intprop name="SizeX">3780</intprop>
+                        <intprop name="SizeY">840</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
                         <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="ToggleState">A661_UNSELECTED</enumprop>
-                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">14 - 25</stringprop>
-                        <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
-                    </model>
-                </widget>
-                <widget name="ToggleButton" oid="b422ea34-074c-467f-82d8-9bb730dfee1e" type="ToggleButton">
-                    <IDE/>
-                    <model>
-                        <intprop name="WidgetIdent">100</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">6700</intprop>
-                        <intprop name="PosY">1620</intprop>
-                        <intprop name="SizeX">2240</intprop>
-                        <intprop name="SizeY">480</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="ToggleState">A661_UNSELECTED</enumprop>
-                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">26 - 60</stringprop>
-                        <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
-                    </model>
-                </widget>
-                <widget name="ToggleButton" oid="2fc87083-83b9-4fbe-86ca-bc367fadad77" type="ToggleButton">
-                    <IDE/>
-                    <model>
-                        <intprop name="WidgetIdent">101</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">9140</intprop>
-                        <intprop name="PosY">1620</intprop>
-                        <intprop name="SizeX">2240</intprop>
-                        <intprop name="SizeY">480</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="ToggleState">A661_UNSELECTED</enumprop>
-                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">61+</stringprop>
-                        <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
-                    </model>
-                </widget>
-                <widget name="ToggleButton" oid="ce8873d4-b640-4966-bf8e-785dc3ebeb13" type="ToggleButton">
-                    <IDE/>
-                    <model>
-                        <intprop name="WidgetIdent">102</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1640</intprop>
-                        <intprop name="PosY">2400</intprop>
-                        <intprop name="SizeX">1680</intprop>
-                        <intprop name="SizeY">500</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="ToggleState">A661_UNSELECTED</enumprop>
-                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">MASC</stringprop>
-                        <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
-                    </model>
-                </widget>
-                <widget name="ToggleButton" oid="5528d39d-79b0-4e23-bef9-a10b2549f971" type="ToggleButton">
-                    <IDE/>
-                    <model>
-                        <intprop name="WidgetIdent">104</intprop>
-                        <enumprop name="Enable">A661_TRUE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">3480</intprop>
-                        <intprop name="PosY">2400</intprop>
-                        <intprop name="SizeX">1680</intprop>
-                        <intprop name="SizeY">500</intprop>
-                        <intprop name="StyleSet">110</intprop>
-                        <intprop name="NextFocusedWidget">0</intprop>
-                        <intprop name="MaxStringLength">32</intprop>
-                        <enumprop name="ToggleState">A661_UNSELECTED</enumprop>
-                        <enumprop name="AlternateFlag">A661_FALSE</enumprop>
-                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
-                        <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">FEM</stringprop>
-                        <stringprop name="AlternateLabelString">AlternateLabelString</stringprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Placeholder idade</stringprop>
                     </model>
                 </widget>
             </children>
@@ -1158,5 +1052,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 3140857143 -->
+<!-- crc32 : 132114823 -->
 
