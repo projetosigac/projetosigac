@@ -79,3 +79,6 @@ Icon
 *.orig
 
 *.pyc
+
+# Deps
+web/node_modules
