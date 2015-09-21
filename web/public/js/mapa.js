@@ -28,6 +28,7 @@ mapa = function(){
 		marker = new google.maps.Marker({
 			map: map,
 			draggable: true,
+			visible: false
 		});
 		marker.setPosition(latlng);
 				
@@ -45,8 +46,10 @@ mapa = function(){
 		
 					var location = new google.maps.LatLng(latitude, longitude);
 					marker.setPosition(location);
+					marker.setVisible(true);
 					map.setCenter(location);
 					map.setZoom(16);
+					
 				}
 			}
 		})
