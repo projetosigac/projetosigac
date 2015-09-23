@@ -39,6 +39,8 @@
 #define DEBUG
 #endif
 
+#include <stddef.h>
+
 typedef enum {
 	IDLE=0,
 	REQUESTING,
