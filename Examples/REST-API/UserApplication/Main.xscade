@@ -794,18 +794,6 @@
 												<ed:Variable oid="!ed/260d/782/159D0/560314202c01"/>
 											</pragmas>
 										</Variable>
-										<Variable name="_L18">
-											<type>
-												<NamedType>
-													<type>
-														<TypeRef name="bool"/>
-													</type>
-												</NamedType>
-											</type>
-											<pragmas>
-												<ed:Variable oid="!ed/494e/F5D/190FC/560327377093"/>
-											</pragmas>
-										</Variable>
 									</locals>
 									<data>
 										<!-- _L8, _L9, _L10, _L11, _L12 = GETRequest(_L17); -->
@@ -934,34 +922,6 @@
 											</right>
 											<pragmas>
 												<ed:Equation oid="!ed/260c/782/159D0/560314207aa4"/>
-											</pragmas>
-										</Equation>
-										<!-- _L18 = Switch(_null); -->
-										<Equation>
-											<lefts>
-												<VariableRef name="_L18"/>
-											</lefts>
-											<right>
-												<!-- Switch(_null) -->
-												<CallExpression>
-													<operator>
-														<OpCall name="1">
-															<operator>
-																<OperatorRef name="Switch"/>
-															</operator>
-														</OpCall>
-													</operator>
-													<callParameters>
-														<IdExpression>
-															<path>
-																<NullRef/>
-															</path>
-														</IdExpression>
-													</callParameters>
-												</CallExpression>
-											</right>
-											<pragmas>
-												<ed:Equation oid="!ed/494d/F5D/190FC/560327377a1"/>
 											</pragmas>
 										</Equation>
 									</data>
@@ -2221,14 +2181,6 @@
 										<Point x="26485" y="18944"/>
 									</positions>
 								</Edge>
-								<EquationGE presentable="!ed/494d/F5D/190FC/560327377a1">
-									<position>
-										<Point x="5794" y="4895"/>
-									</position>
-									<size>
-										<Size width="1773" height="1402"/>
-									</size>
-								</EquationGE>
 							</presentationElements>
 						</NetDiagram>
 					</diagrams>
