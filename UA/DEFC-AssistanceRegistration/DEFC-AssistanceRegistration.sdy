@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="Main" oid="!ed/20de/5BA4/23B4/55fa2289237b">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="29" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Register Button">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="RegisterButton" type="bool" oid="!ed/211e/5BA4/23B4/55fa256968f4" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="30" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Clear Button">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ClearButton" type="bool" oid="!ed/223c/5BA4/23B4/55fa305d2044" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="26" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="ComboBoxEdit" WidgetName="ComboBoxEdit">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewComboBoxValue" type="bool" oid="!ed/245b/5BA4/23B4/55fa390b7241" instancepath="Main/" subelement=".notify"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="26" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="256" WidgetType="ComboBoxEdit" WidgetName="ComboBoxEdit">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewComboBoxValue" type="char^256" oid="!ed/245b/5BA4/23B4/55fa390b7241" instancepath="Main/" subelement=".value"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="28" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxMultiLine" WidgetName="Description Box">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewDescriptionBoxValue" type="bool" oid="!ed/246b/5BA4/23B4/55fa3a4b678e" instancepath="Main/" subelement=".notify"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="28" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="256" WidgetType="EditBoxMultiLine" WidgetName="Description Box">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewDescriptionBoxValue" type="char^256" oid="!ed/246b/5BA4/23B4/55fa3a4b678e" instancepath="Main/" subelement=".value"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="20" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumeric" WidgetName="EditBoxNumeric">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewEditBoxNumericValue" type="bool" oid="!ed/246c/5BA4/23B4/55fa3a595b47" instancepath="Main/" subelement=".notify"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="20" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="256" WidgetType="EditBoxNumeric" WidgetName="EditBoxNumeric">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewEditBoxNumericValue" type="char^256" oid="!ed/246c/5BA4/23B4/55fa3a595b47" instancepath="Main/" subelement=".value"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumericBCD" WidgetName="Latitude Box">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewLatitudeBoxValue" type="bool" oid="!ed/246d/5BA4/23B4/55fa3a5f6556" instancepath="Main/" subelement=".notify"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="256" WidgetType="EditBoxNumericBCD" WidgetName="Latitude Box">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewLatitudeBoxValue" type="char^256" oid="!ed/246d/5BA4/23B4/55fa3a5f6556" instancepath="Main/" subelement=".value"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxText" WidgetName="Location Box">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewLocationBoxValue" type="bool" oid="!ed/246e/5BA4/23B4/55fa3a649eb" instancepath="Main/" subelement=".notify"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="256" WidgetType="EditBoxText" WidgetName="Location Box">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewLocationBoxValue" type="char^256" oid="!ed/246e/5BA4/23B4/55fa3a649eb" instancepath="Main/" subelement=".value"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumericBCD" WidgetName="Longitude Box">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewLongitudeBoxValue" type="bool" oid="!ed/246f/5BA4/23B4/55fa3a693c94" instancepath="Main/" subelement=".notify"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="256" WidgetType="EditBoxNumericBCD" WidgetName="Longitude Box">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewLongitudeBoxValue" type="char^256" oid="!ed/246f/5BA4/23B4/55fa3a693c94" instancepath="Main/" subelement=".value"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxText" WidgetName="Name Box">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewNameBoxValue" type="bool" oid="!ed/2470/5BA4/23B4/55fa3a6f494e" instancepath="Main/" subelement=".notify"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="256" WidgetType="EditBoxText" WidgetName="Name Box">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewNameBoxValue" type="char^256" oid="!ed/2470/5BA4/23B4/55fa3a6f494e" instancepath="Main/" subelement=".value"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="17" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxText" WidgetName="Start Time Box">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewStartTimeBoxValue" type="bool" oid="!ed/2471/5BA4/23B4/55fa3a76632e" instancepath="Main/" subelement=".notify"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="17" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="256" WidgetType="EditBoxText" WidgetName="Start Time Box">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NewStartTimeBoxValue" type="char^256" oid="!ed/2471/5BA4/23B4/55fa3a76632e" instancepath="Main/" subelement=".value"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ActivateLayer" type="bool" oid="!ed/20e0/5BA4/23B4/55fa23af5aa5" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Emit2CDS" type="bool" oid="!ed/20e1/5BA4/23B4/55fa23b719d2" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="32" ParameterIdent="A661_VISIBLE" WidgetType="BlinkingContainer" WidgetName="BlinkingContainer">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="EnableRegisteringText" type="bool" oid="!ed/2127/5BA4/23B4/55fa25982ab7" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Visible" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="32" ParameterIdent="A661_VISIBLE" WidgetType="BlinkingContainer" WidgetName="BlinkingContainer">
+							<A661Data>
+								<DataField value="Visible"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="EmptyString" type="char^1" oid="!ed/225d/5BA4/23B4/55fa308511ad" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_STRING" Size="1" WidgetType="EditBoxText" WidgetName="Name Box">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_STRING" Size="1" WidgetType="EditBoxText" WidgetName="Location Box">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="17" ParameterIdent="A661_STRING" Size="1" WidgetType="EditBoxText" WidgetName="Start Time Box">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="28" ParameterIdent="A661_STRING" Size="1" WidgetType="EditBoxMultiLine" WidgetName="Description Box">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ZeroInt" type="int" oid="!ed/227d/5BA4/23B4/55fa30b144e4" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="Name Box">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="Location Box">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="17" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="Start Time Box">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="28" ParameterIdent="A661_STRING" WidgetType="EditBoxMultiLine" WidgetName="Description Box">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="ValueH" type="ulong" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumericBCD" WidgetName="Longitude Box">
+							<A661Data>
+								<DataField value="ValueH"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="ValueL" type="ulong" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumericBCD" WidgetName="Longitude Box">
+							<A661Data>
+								<DataField value="ValueL"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="ValueL" type="ulong" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumericBCD" WidgetName="Latitude Box">
+							<A661Data>
+								<DataField value="ValueL"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="ValueH" type="ulong" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumericBCD" WidgetName="Latitude Box">
+							<A661Data>
+								<DataField value="ValueH"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ClearFields" type="bool" oid="!ed/2295/5BA4/23B4/55fa30d778eb" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="Name Box">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="Location Box">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="17" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="Start Time Box">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="28" ParameterIdent="A661_STRING" WidgetType="EditBoxMultiLine" WidgetName="Description Box">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="14" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumericBCD" WidgetName="Longitude Box">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumericBCD" WidgetName="Latitude Box">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="20" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="EditBoxNumeric">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ZeroFloat" type="real" oid="!ed/2303/5BA4/23B4/55fa34005a2d" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="20" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="EditBoxNumeric">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>
