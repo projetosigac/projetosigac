@@ -92,7 +92,7 @@
                         <intprop name="SizeX">10060</intprop>
                         <intprop name="SizeY">19480</intprop>
                         <intprop name="StyleSet">0</intprop>
-                        <intprop name="ActiveTabbedPanelID">74</intprop>
+                        <intprop name="ActiveTabbedPanelID">6</intprop>
                         <enumprop name="TabPosition">A661_ABSENT</enumprop>
                         <enumprop name="AutomaticInsetSizeFlag">A661_TRUE</enumprop>
                     </model>
@@ -100,7 +100,7 @@
                         <widget name="pnlScreening" oid="3eb2e77d-a54b-47e3-be69-d1725f5f352a" type="TabbedPanel">
                             <IDE/>
                             <model>
-                                <intprop name="WidgetIdent">74</intprop>
+                                <intprop name="WidgetIdent">6</intprop>
                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                 <intprop name="StyleSet">0</intprop>
@@ -804,7 +804,7 @@
                         <widget name="pnlVictims" oid="01ad51f1-1d99-4bc7-9e99-19008d523242" type="TabbedPanel">
                             <IDE/>
                             <model>
-                                <intprop name="WidgetIdent">54</intprop>
+                                <intprop name="WidgetIdent">8</intprop>
                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                 <intprop name="StyleSet">0</intprop>
@@ -1177,5 +1177,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1003890441 -->
+<!-- crc32 : 1339752843 -->
 
