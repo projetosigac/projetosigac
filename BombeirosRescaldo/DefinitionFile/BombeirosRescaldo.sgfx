@@ -560,7 +560,7 @@
                                                 <intprop name="Font">0</intprop>
                                                 <intprop name="ColorIndex">1</intprop>
                                                 <enumprop name="Alignment">A661_CENTER</enumprop>
-                                                <stringprop name="LabelString">Victims</stringprop>
+                                                <stringprop name="LabelString">Incident</stringprop>
                                             </model>
                                         </widget>
                                     </children>
@@ -862,7 +862,7 @@
                                                 <intprop name="Font">0</intprop>
                                                 <intprop name="ColorIndex">1</intprop>
                                                 <enumprop name="Alignment">A661_CENTER</enumprop>
-                                                <stringprop name="LabelString">Incident</stringprop>
+                                                <stringprop name="LabelString">Victim</stringprop>
                                             </model>
                                         </widget>
                                     </children>
@@ -1177,5 +1177,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1339752843 -->
+<!-- crc32 : 2597825976 -->
 
