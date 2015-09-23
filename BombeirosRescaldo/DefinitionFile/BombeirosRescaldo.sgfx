@@ -210,7 +210,7 @@
                                                 <intprop name="Font">1</intprop>
                                                 <intprop name="ColorIndex">1</intprop>
                                                 <enumprop name="Alignment">A661_LEFT</enumprop>
-                                                <stringprop name="LabelString">OCCURRENCE:</stringprop>
+                                                <stringprop name="LabelString">INCIDENT ID:</stringprop>
                                             </model>
                                         </widget>
                                         <widget name="Label" oid="2c106a1f-ecd7-4816-a424-127dc2edcf0e" type="Label">
@@ -1177,5 +1177,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 2597825976 -->
+<!-- crc32 : 838600824 -->
 
