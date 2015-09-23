@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="Main" oid="!ed/20de/1B19/32A4/56032f85113c">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Variable name="ReqLayerVisible" type="bool" oid="!ed/2130/1B19/32A4/56032fd73ec7" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ReqLayerActive" type="bool" oid="!ed/212f/1B19/32A4/56032fd72bca" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>
