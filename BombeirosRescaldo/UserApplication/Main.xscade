@@ -2,6 +2,44 @@
 <File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
 	<declarations>
 		<Operator kind="node" name="Main">
+			<inputs>
+				<Variable name="ScreeningTabSelected">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/214f/736A/3C0/5603305f332d"/>
+					</pragmas>
+				</Variable>
+				<Variable name="IncidentsTabSelected">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/214e/736A/3C0/5603305f1701"/>
+					</pragmas>
+				</Variable>
+				<Variable name="VictimsTabSelected">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/214d/736A/3C0/5603305fd69"/>
+					</pragmas>
+				</Variable>
+			</inputs>
 			<outputs>
 				<Variable name="EmitToCDS">
 					<type>
@@ -39,8 +77,32 @@
 						<ed:Variable oid="!ed/212f/1B19/32A4/56032fd72bca"/>
 					</pragmas>
 				</Variable>
+				<Variable name="SelectedTab">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/216f/736A/3C0/5603307c60fb"/>
+					</pragmas>
+				</Variable>
 			</outputs>
 			<locals>
+				<Variable name="selected_tab">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/214c/736A/3C0/5603305f318e"/>
+					</pragmas>
+				</Variable>
 				<Variable name="_L3">
 					<type>
 						<NamedType>
@@ -75,6 +137,18 @@
 					</type>
 					<pragmas>
 						<ed:Variable oid="!ed/2135/1B19/32A4/56032fd72cc2"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L4">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2172/736A/3C0/5603307c5582"/>
 					</pragmas>
 				</Variable>
 			</locals>
@@ -161,6 +235,381 @@
 						<ed:Equation oid="!ed/2138/1B19/32A4/56032fd73c71"/>
 					</pragmas>
 				</Equation>
+				<StateMachine name="SM1">
+					<states>
+						<State initial="true" name="ScreeningTab">
+							<unless>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="VictimsTab"/>
+									</target>
+									<condition>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="VictimsTabSelected"/>
+											</path>
+										</IdExpression>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/2156/736A/3C0/5603305f280d"/>
+									</pragmas>
+								</Transition>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="IncidentsTab"/>
+									</target>
+									<condition>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="IncidentsTabSelected"/>
+											</path>
+										</IdExpression>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/2157/736A/3C0/5603305f30ab"/>
+									</pragmas>
+								</Transition>
+							</unless>
+							<locals>
+								<Variable name="_L1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Variable oid="!ed/2155/736A/3C0/5603305fdf0"/>
+									</pragmas>
+								</Variable>
+							</locals>
+							<data>
+								<!-- _L1 = 6; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="_L1"/>
+									</lefts>
+									<right>
+										<ConstValue value="6"/>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/2152/736A/3C0/5603305f184d"/>
+									</pragmas>
+								</Equation>
+								<!-- selected_tab = _L1; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="selected_tab"/>
+									</lefts>
+									<right>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L1"/>
+											</path>
+										</IdExpression>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/2153/736A/3C0/5603305f1955"/>
+									</pragmas>
+								</Equation>
+							</data>
+							<pragmas>
+								<ed:State oid="!ed/2151/736A/3C0/5603305f7d00" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+									<diagrams>
+										<NetDiagram name="diagram_ScreeningTab_1" landscape="true" format="A4 (210 297)" oid="!ed/2154/736A/3C0/5603305f4325">
+											<presentationElements>
+												<EquationGE kind="OBJ_LIT" presentable="!ed/2152/736A/3C0/5603305f184d">
+													<position>
+														<Point x="4471" y="4868"/>
+													</position>
+													<size>
+														<Size width="212" height="318"/>
+													</size>
+												</EquationGE>
+												<EquationGE presentable="!ed/2153/736A/3C0/5603305f1955">
+													<position>
+														<Point x="6165" y="4763"/>
+													</position>
+													<size>
+														<Size width="265" height="503"/>
+													</size>
+												</EquationGE>
+												<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2152/736A/3C0/5603305f184d" dstEquation="!ed/2153/736A/3C0/5603305f1955">
+													<positions>
+														<Point x="4683" y="5027"/>
+														<Point x="5741" y="5027"/>
+														<Point x="5741" y="5027"/>
+														<Point x="6165" y="5027"/>
+													</positions>
+												</Edge>
+											</presentationElements>
+										</NetDiagram>
+									</diagrams>
+								</ed:State>
+							</pragmas>
+						</State>
+						<State name="IncidentsTab">
+							<unless>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="ScreeningTab"/>
+									</target>
+									<condition>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="ScreeningTabSelected"/>
+											</path>
+										</IdExpression>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/215d/736A/3C0/5603305f5e0c"/>
+									</pragmas>
+								</Transition>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="VictimsTab"/>
+									</target>
+									<condition>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="VictimsTabSelected"/>
+											</path>
+										</IdExpression>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/215e/736A/3C0/5603305f258c"/>
+									</pragmas>
+								</Transition>
+							</unless>
+							<locals>
+								<Variable name="_L1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Variable oid="!ed/215c/736A/3C0/5603305f78f5"/>
+									</pragmas>
+								</Variable>
+							</locals>
+							<data>
+								<!-- _L1 = 7; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="_L1"/>
+									</lefts>
+									<right>
+										<ConstValue value="7"/>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/2159/736A/3C0/5603305f5723"/>
+									</pragmas>
+								</Equation>
+								<!-- selected_tab = _L1; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="selected_tab"/>
+									</lefts>
+									<right>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L1"/>
+											</path>
+										</IdExpression>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/215a/736A/3C0/5603305f5890"/>
+									</pragmas>
+								</Equation>
+							</data>
+							<pragmas>
+								<ed:State oid="!ed/2158/736A/3C0/5603305f7ea6" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+									<diagrams>
+										<NetDiagram name="diagram_IncidentsTab_1" landscape="true" format="A4 (210 297)" oid="!ed/215b/736A/3C0/5603305f7d0e">
+											<presentationElements>
+												<EquationGE kind="OBJ_LIT" presentable="!ed/2159/736A/3C0/5603305f5723">
+													<position>
+														<Point x="6959" y="1746"/>
+													</position>
+													<size>
+														<Size width="211" height="318"/>
+													</size>
+												</EquationGE>
+												<EquationGE presentable="!ed/215a/736A/3C0/5603305f5890">
+													<position>
+														<Point x="8652" y="1640"/>
+													</position>
+													<size>
+														<Size width="264" height="503"/>
+													</size>
+												</EquationGE>
+												<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2159/736A/3C0/5603305f5723" dstEquation="!ed/215a/736A/3C0/5603305f5890">
+													<positions>
+														<Point x="7170" y="1905"/>
+														<Point x="8229" y="1905"/>
+														<Point x="8229" y="1905"/>
+														<Point x="8652" y="1905"/>
+													</positions>
+												</Edge>
+											</presentationElements>
+										</NetDiagram>
+									</diagrams>
+								</ed:State>
+							</pragmas>
+						</State>
+						<State name="VictimsTab">
+							<unless>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="ScreeningTab"/>
+									</target>
+									<condition>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="ScreeningTabSelected"/>
+											</path>
+										</IdExpression>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/2164/736A/3C0/5603305f2062"/>
+									</pragmas>
+								</Transition>
+								<Transition kind="restart">
+									<target>
+										<StateRef name="IncidentsTab"/>
+									</target>
+									<condition>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="IncidentsTabSelected"/>
+											</path>
+										</IdExpression>
+									</condition>
+									<pragmas>
+										<ed:Transition oid="!ed/2165/736A/3C0/5603305f6419"/>
+									</pragmas>
+								</Transition>
+							</unless>
+							<locals>
+								<Variable name="_L1">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Variable oid="!ed/2163/736A/3C0/5603305f4299"/>
+									</pragmas>
+								</Variable>
+							</locals>
+							<data>
+								<!-- selected_tab = _L1; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="selected_tab"/>
+									</lefts>
+									<right>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="_L1"/>
+											</path>
+										</IdExpression>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/2160/736A/3C0/5603305f248d"/>
+									</pragmas>
+								</Equation>
+								<!-- _L1 = 8; -->
+								<Equation>
+									<lefts>
+										<VariableRef name="_L1"/>
+									</lefts>
+									<right>
+										<ConstValue value="8"/>
+									</right>
+									<pragmas>
+										<ed:Equation oid="!ed/2161/736A/3C0/5603305f458e"/>
+									</pragmas>
+								</Equation>
+							</data>
+							<pragmas>
+								<ed:State oid="!ed/215f/736A/3C0/5603305f272f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+									<diagrams>
+										<NetDiagram name="diagram_VictimsTab_1" landscape="true" format="A4 (210 297)" oid="!ed/2162/736A/3C0/5603305f776e">
+											<presentationElements>
+												<EquationGE presentable="!ed/2160/736A/3C0/5603305f248d">
+													<position>
+														<Point x="12250" y="5689"/>
+													</position>
+													<size>
+														<Size width="265" height="502"/>
+													</size>
+												</EquationGE>
+												<EquationGE kind="OBJ_LIT" presentable="!ed/2161/736A/3C0/5603305f458e">
+													<position>
+														<Point x="10557" y="5794"/>
+													</position>
+													<size>
+														<Size width="212" height="318"/>
+													</size>
+												</EquationGE>
+												<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2161/736A/3C0/5603305f458e" dstEquation="!ed/2160/736A/3C0/5603305f248d">
+													<positions>
+														<Point x="10769" y="5953"/>
+														<Point x="11827" y="5953"/>
+														<Point x="11827" y="5953"/>
+														<Point x="12250" y="5953"/>
+													</positions>
+												</Edge>
+											</presentationElements>
+										</NetDiagram>
+									</diagrams>
+								</ed:State>
+							</pragmas>
+						</State>
+					</states>
+					<pragmas>
+						<ed:StateMachine oid="!ed/2150/736A/3C0/5603305f427d"/>
+					</pragmas>
+				</StateMachine>
+				<!-- SelectedTab = _L4; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="SelectedTab"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L4"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/2170/736A/3C0/5603307c771d"/>
+					</pragmas>
+				</Equation>
+				<!-- _L4 = selected_tab; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L4"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="selected_tab"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/2171/736A/3C0/5603307c1607"/>
+					</pragmas>
+				</Equation>
 			</data>
 			<pragmas>
 				<ed:Operator oid="!ed/20de/1B19/32A4/56032f85113c" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
@@ -229,6 +678,164 @@
 										<Point x="14314" y="2752"/>
 										<Point x="14314" y="2752"/>
 										<Point x="15002" y="2752"/>
+									</positions>
+								</Edge>
+								<StateMachineGE presentable="!ed/2150/736A/3C0/5603305f427d">
+									<position>
+										<Point x="3598" y="6376"/>
+									</position>
+									<size>
+										<Size width="13361" height="6244"/>
+									</size>
+								</StateMachineGE>
+								<StateGE display="split" presentable="!ed/2151/736A/3C0/5603305f7d00">
+									<position>
+										<Point x="4286" y="8652"/>
+									</position>
+									<size>
+										<Size width="1852" height="1773"/>
+									</size>
+								</StateGE>
+								<StateGE display="split" presentable="!ed/2158/736A/3C0/5603305f7ea6">
+									<position>
+										<Point x="8731" y="8573"/>
+									</position>
+									<size>
+										<Size width="1852" height="1773"/>
+									</size>
+								</StateGE>
+								<StateGE display="split" presentable="!ed/215f/736A/3C0/5603305f272f">
+									<position>
+										<Point x="12621" y="8573"/>
+									</position>
+									<size>
+										<Size width="1852" height="1773"/>
+									</size>
+								</StateGE>
+								<TransitionGE presentable="!ed/2156/736A/3C0/5603305f280d">
+									<positions>
+										<Point x="5741" y="8652"/>
+										<Point x="7567" y="7858"/>
+										<Point x="10345" y="7832"/>
+										<Point x="12806" y="8599"/>
+									</positions>
+									<labelSize>
+										<Size width="3228" height="1270"/>
+									</labelSize>
+									<labelPos>
+										<Point x="7858" y="7091"/>
+									</labelPos>
+									<slashPos>
+										<Point x="10292" y="7091"/>
+									</slashPos>
+								</TransitionGE>
+								<TransitionGE presentable="!ed/2157/736A/3C0/5603305f30ab">
+									<positions>
+										<Point x="6138" y="9181"/>
+										<Point x="6985" y="8625"/>
+										<Point x="7726" y="8678"/>
+										<Point x="8731" y="9181"/>
+									</positions>
+									<labelSize>
+										<Size width="3731" height="1270"/>
+									</labelSize>
+									<labelPos>
+										<Point x="5027" y="7514"/>
+									</labelPos>
+									<slashPos>
+										<Point x="7964" y="7514"/>
+									</slashPos>
+								</TransitionGE>
+								<TransitionGE presentable="!ed/215d/736A/3C0/5603305f5e0c">
+									<positions>
+										<Point x="8731" y="9975"/>
+										<Point x="7885" y="9948"/>
+										<Point x="7038" y="9922"/>
+										<Point x="6138" y="9895"/>
+									</positions>
+									<labelSize>
+										<Size width="4313" height="318"/>
+									</labelSize>
+									<labelPos>
+										<Point x="4524" y="11059"/>
+									</labelPos>
+									<slashPos>
+										<Point x="8043" y="11059"/>
+									</slashPos>
+								</TransitionGE>
+								<TransitionGE presentable="!ed/215e/736A/3C0/5603305f258c">
+									<positions>
+										<Point x="10583" y="8943"/>
+										<Point x="11245" y="8969"/>
+										<Point x="11906" y="8996"/>
+										<Point x="12621" y="9022"/>
+									</positions>
+									<labelSize>
+										<Size width="3969" height="1270"/>
+									</labelSize>
+									<labelPos>
+										<Point x="9921" y="7751"/>
+									</labelPos>
+									<slashPos>
+										<Point x="13097" y="7752"/>
+									</slashPos>
+								</TransitionGE>
+								<TransitionGE presentable="!ed/2164/736A/3C0/5603305f2062">
+									<positions>
+										<Point x="12965" y="10345"/>
+										<Point x="10530" y="10954"/>
+										<Point x="8202" y="11218"/>
+										<Point x="6006" y="10372"/>
+									</positions>
+									<labelSize>
+										<Size width="5186" height="318"/>
+									</labelSize>
+									<labelPos>
+										<Point x="6324" y="11958"/>
+									</labelPos>
+									<slashPos>
+										<Point x="10716" y="11959"/>
+									</slashPos>
+								</TransitionGE>
+								<TransitionGE presentable="!ed/2165/736A/3C0/5603305f6419">
+									<positions>
+										<Point x="12621" y="9684"/>
+										<Point x="11959" y="9657"/>
+										<Point x="11298" y="9631"/>
+										<Point x="10583" y="9604"/>
+									</positions>
+									<labelSize>
+										<Size width="3493" height="1270"/>
+									</labelSize>
+									<labelPos>
+										<Point x="10425" y="10980"/>
+									</labelPos>
+									<slashPos>
+										<Point x="13123" y="10980"/>
+									</slashPos>
+								</TransitionGE>
+								<EquationGE presentable="!ed/2170/736A/3C0/5603307c771d">
+									<position>
+										<Point x="10874" y="13494"/>
+									</position>
+									<size>
+										<Size width="212" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/2171/736A/3C0/5603307c1607">
+									<position>
+										<Point x="8255" y="13494"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2171/736A/3C0/5603307c1607" dstEquation="!ed/2170/736A/3C0/5603307c771d">
+									<positions>
+										<Point x="8520" y="13758"/>
+										<Point x="10239" y="13758"/>
+										<Point x="10239" y="13758"/>
+										<Point x="10901" y="13758"/>
 									</positions>
 								</Edge>
 							</presentationElements>

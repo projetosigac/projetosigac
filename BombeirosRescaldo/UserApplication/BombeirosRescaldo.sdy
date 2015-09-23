@@ -5,6 +5,54 @@
 			<mappingItems>
 				<MappingItem>
 					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbScreening">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ScreeningTabSelected" type="bool" oid="!ed/214f/736A/3C0/5603305f332d" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbIncident">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="IncidentsTabSelected" type="bool" oid="!ed/214e/736A/3C0/5603305f1701" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbVictim">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="VictimsTabSelected" type="bool" oid="!ed/214d/736A/3C0/5603305fd69" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="EmitToCDS" type="bool" oid="!ed/2131/1B19/32A4/56032fd777a5" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ACTIVE_TABBED_PANEL" WidgetType="TabbedPanelGroup" WidgetName="TabbedPanelGroup">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
 						<Variable name="ReqLayerVisible" type="bool" oid="!ed/2130/1B19/32A4/56032fd73ec7" instancepath="Main/"/>
 					</output>
 					<inputs>
@@ -25,6 +73,18 @@
 								<Emit/>
 							</A661Data>
 						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="SelectedTab" type="int" oid="!ed/216f/736A/3C0/5603307c60fb" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ActiveTabbedPanelID" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ACTIVE_TABBED_PANEL" WidgetType="TabbedPanelGroup" WidgetName="TabbedPanelGroup">
+							<A661Data>
+								<DataField value="ActiveTabbedPanelID"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
 					</inputs>
 				</MappingItem>
 			</mappingItems>
