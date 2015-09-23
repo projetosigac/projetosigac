@@ -13,7 +13,7 @@
 // Include <string.h>
 #include <string.h>
 
-// Include "../httpclient.h"
+// Include "../librest/httpclient.h"
 #include "../librest/httpclient.h"
 
 // Implement the sendSqlRequest function.
