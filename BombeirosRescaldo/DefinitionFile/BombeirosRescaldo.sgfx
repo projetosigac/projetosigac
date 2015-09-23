@@ -239,9 +239,9 @@
                                                 <intprop name="WidgetIdent">92</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
-                                                <intprop name="PosX">2800</intprop>
-                                                <intprop name="PosY">-900</intprop>
-                                                <intprop name="SizeX">7000</intprop>
+                                                <intprop name="PosX">3120</intprop>
+                                                <intprop name="PosY">-860</intprop>
+                                                <intprop name="SizeX">6750</intprop>
                                                 <intprop name="SizeY">800</intprop>
                                                 <intprop name="StyleSet">110</intprop>
                                                 <intprop name="NextFocusedWidget">0</intprop>
@@ -1177,5 +1177,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 838600824 -->
+<!-- crc32 : 1385812190 -->
 
