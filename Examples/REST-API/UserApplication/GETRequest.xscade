@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2" xmlns:SP="unknown_address" xmlns:SMP="unknown_address">
+	<declarations>
+		<Operator kind="function" external="imported" name="GETRequest">
+			<inputs>
+				<Variable name="URL">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4253/359/107D4/5600d9f1afd"/>
+						<SMP:Pragma>
+							set varSmpUnit {}&#xA;set varSmpType {}&#xA;set varSmpInfo {}
+						</SMP:Pragma>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="Name">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4254/359/107D4/5600d9f93f0e"/>
+					</pragmas>
+				</Variable>
+				<Variable name="ID">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2310/782/159D0/560305ff1535"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Sex">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2318/782/159D0/56030600173e"/>
+					</pragmas>
+				</Variable>
+				<Variable name="State">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2320/782/159D0/56030600363e"/>
+					</pragmas>
+				</Variable>
+				<Variable name="Comment">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2328/782/159D0/560306004c2b"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<pragmas>
+				<ed:Operator oid="!ed/4252/359/107D4/5600d8a61d9d"/>
+				<SP:Pragma>
+					set varSpName {}&#xA;set varSpId {}&#xA;set varSpMajor {}&#xA;set varSpMinor {}&#xA;set varSpStack {}
+				</SP:Pragma>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>
