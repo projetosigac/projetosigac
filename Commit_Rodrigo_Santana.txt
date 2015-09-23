@@ -1,9 +1,0 @@
-tst
-
-nova linha
-
-<<<<<<< HEAD
-brch_master
-=======
-brch_teste
->>>>>>> branch_rs_test

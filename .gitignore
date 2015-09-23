@@ -1,3 +1,4 @@
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
@@ -52,6 +53,7 @@ Icon
 **/*DF/
 **/KCG/
 **/Simulation/
+**/IntegrationCode/bin
 
 # Report Files & Directories
 # =========================
@@ -66,9 +68,4 @@ Icon
 
 *.orig
 
-
-# C Compilation Files
-# =========================
-
-*.o
-*.exe
+*.pyc
