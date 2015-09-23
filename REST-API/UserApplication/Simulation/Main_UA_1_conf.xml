@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="6.4.2" ?>
+
+<?scade_release version="6.4.2" ?>
+
+<server_conf>
+    <options>
+        <pointers n="2"/>
+        <keyboards n="2"/>
+        <dev_buffer_size n="32"/>
+        <event_queue size="64"/>
+        <event_commands pool="false"/>
+    </options>
+    <display_conf>
+        <du height="256" ratio_x="20" ratio_y="20" width="256"/>
+        <conf>
+            <window du_id="1" x1="0" x2="5119" y1="0" y2="5119">
+                <layer app_id="1" layer_id="1" visible="false"/>
+            </window>
+        </conf>
+    </display_conf>
+</server_conf>
+
+<!-- crc32 : 4055000142 -->
+

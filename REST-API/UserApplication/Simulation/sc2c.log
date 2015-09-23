@@ -1,0 +1,82 @@
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-23T18:39:13
+** Command: scade -code "C:\ita\ces-65\REST-API\UserApplication\REST-API.etp" -node Main -conf Simulation -build
+*************************************************************$
+*** Build Execution Warning (MAKEEXE): make.log: Warning(s) occurs durring Makefile execution.
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\make.log, line 0, character 0
+ ~..\..\Custom\rest_api.c(28) : passing arg 2 of `kcg_comp_array_char_512' from incompatible pointer type
+  at file C:/ita/ces-65/REST-API/UserApplication/Simulation/../../Custom/rest_api.c, line 28, character 0
+ ~..\..\Custom\rest_api.c(36) : passing arg 2 of `kcg_comp_array_char_512' from incompatible pointer type
+  at file C:/ita/ces-65/REST-API/UserApplication/Simulation/../../Custom/rest_api.c, line 36, character 0
+*** Generated Files Information (GENFIL): KCG- Generated files
+ ~kcg.log
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg.log, line 0, character 0
+ ~kcg_s2c_config.txt
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg_s2c_config.txt, line 0, character 0
+ ~kcg_trace.xml
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg_trace.xml, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg_metrics.txt, line 0, character 0
+ ~Main.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main.c, line 0, character 0
+ ~Main.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg_types.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg_consts.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg_sensors.h, line 0, character 0
+ ~kcg_imported_functions.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg_imported_functions.h, line 0, character 0
+ ~kcg_types.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg_types.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\kcg_consts.c, line 0, character 0
+*** Generated Files Information (GENFIL): Simulator Generated files
+ ~Main_UA_1.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_UA_1.c, line 0, character 0
+ ~Main_UA_1.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_UA_1.h, line 0, character 0
+ ~Main_cosim.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_cosim.c, line 0, character 0
+ ~Main_type.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_type.h, line 0, character 0
+ ~Main_type.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_type.c, line 0, character 0
+ ~Main_mapping.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_mapping.h, line 0, character 0
+ ~Main_mapping.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_mapping.c, line 0, character 0
+ ~Main_interface.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_interface.h, line 0, character 0
+ ~Main_interface.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_interface.c, line 0, character 0
+ ~Main_dll.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main_dll.c, line 0, character 0
+*** Generated Files Information (GENFIL): Type Utils Generated files
+ ~REST-API_newtype.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\REST-API_newtype.h, line 0, character 0
+ ~REST-API_newtype.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\REST-API_newtype.c, line 0, character 0
+*** Generated Files Information (GENFIL): Mapping Utils Generated files
+ ~REST-API_newmapping.h
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\REST-API_newmapping.h, line 0, character 0
+ ~REST-API_newmapping.c
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\REST-API_newmapping.c, line 0, character 0
+*** Generated Files Information (GENFIL): Build Generated files
+ ~Makefile
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Makefile, line 0, character 0
+ ~Main.dll
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main.dll, line 0, character 0
+ ~Main.exe
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\Main.exe, line 0, character 0
+*** Generated Files Information (GENFIL): Code Generator Generated files
+ ~sc2c.log
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\sc2c.log, line 0, character 0
+ ~sc2c_integration_files.txt
+  at file C:\ita\ces-65\REST-API\UserApplication\Simulation\sc2c_integration_files.txt, line 0, character 0
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-23T18:39:51
+** sc2c.log
+*************************************************************$

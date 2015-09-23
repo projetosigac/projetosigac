@@ -1,0 +1,18 @@
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "Main_dll.c" -o "win32\Main_dll.o"
+gcc "win32\Main_dll.o" "win32\SmuMainWindows.o" -lm -lwsock32 -o "Main.exe" 
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "Main.c" -o "win32\Main.o"	
+ar -r Main.a "win32\Main.o"
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "kcg_types.c" -o "win32\kcg_types.o"	
+ar -r Main.a "win32\kcg_types.o"
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "kcg_consts.c" -o "win32\kcg_consts.o"	
+ar -r Main.a "win32\kcg_consts.o"
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "..\..\Custom\rest_api.c" -o "win32\rest_api.o"
+..\..\Custom\rest_api.c: In function `Operator3':
+..\..\Custom\rest_api.c:28: warning: passing arg 2 of `kcg_comp_array_char_512' from incompatible pointer type
+..\..\Custom\rest_api.c:36: warning: passing arg 2 of `kcg_comp_array_char_512' from incompatible pointer type
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "Main_UA_1.c" -o "win32\Main_UA_1.o"
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "Main_cosim.c" -o "win32\Main_cosim.o"
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "Main_type.c" -o "win32\Main_type.o"
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "Main_mapping.c" -o "win32\Main_mapping.o"
+gcc -I"." -I"C:\ita\ces-65\scade\SCADE\." -I"..\..\..\scade\SCADE\include" -I"..\..\..\scade\SCADE\libraries\libmathext" -O2 -pedantic -DBUILD_DLL -DEXTENDED_SIM -DSIM -DWIN32 -D_CONSOLE -D_MBCS -c "Main_interface.c" -o "win32\Main_interface.o"
+dllwrap --driver-name=gcc  "win32\consts.o" "win32\rest_api.o" "win32\Main_UA_1.o" "win32\A661Cosim.o" "win32\Main_cosim.o" "win32\Main_type.o" "win32\Main_mapping.o" "win32\Main_interface.o" "win32\SmuProxy.o" "Main.a" --def "SmuExport.def" -lm -lwsock32 --dllname "Main.dll" 

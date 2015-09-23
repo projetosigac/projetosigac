@@ -1,0 +1,25 @@
+*** Semantic Warning (WAR_508): Unused input
+  at file C:\Users\Paulo\AppData\Local\Temp\ScadeChecker\91868\Main.scade, line 715, character 0
+  at path Main/Comment/
+ The local variable Comment is never used
+*** Semantic Warning (WAR_508): Unused input
+  at file C:\Users\Paulo\AppData\Local\Temp\ScadeChecker\91868\Main.scade, line 735, character 0
+  at path Main/VictimIDSize/
+ The local variable VictimIDSize is never used
+*** Semantic Warning (WAR_508): Unused input
+  at file C:\Users\Paulo\AppData\Local\Temp\ScadeChecker\91868\Main.scade, line 653, character 0
+  at path Main/RequestPath/
+ The input variable RequestPath is never used
+*** Semantic Warning (WAR_508): Unused input
+  at file C:\Users\Paulo\AppData\Local\Temp\ScadeChecker\91868\Main.scade, line 657, character 0
+  at path Main/Input3/
+ The input variable Input3 is never used
+*** Semantic Warning (WAR_508): Unused input
+  at file C:\Users\Paulo\AppData\Local\Temp\ScadeChecker\91868\Main.scade, line 661, character 0
+  at path Main/Input4/
+ The input variable Input4 is never used
+*** Semantic Warning (WAR_151):  Internal state expected
+  at file C:\Users\Paulo\AppData\Local\Temp\ScadeChecker\91868\Main.scade, line 1453, character 0
+  at path ConcatString/
+ Node ConcatString has no internal state
+ (it should probably be declared as a function)

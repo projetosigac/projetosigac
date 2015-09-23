@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$*************** KCG Version 6.1.3 (build i6) ****************
+** Command: s2c613 -config C:/Users/Marrcio/Copy/EstudosRemote/ITA/Cunha/SI-GAC/BombeirosRescaldo/Simulation\kcg_s2c_config.txt
+** Generation date: 2015-09-23T19:20:53
+*************************************************************$-->
+<Model date="2015-09-23T19:20:53" commandLine="s2c613 -config C:/Users/Marrcio/Copy/EstudosRemote/ITA/Cunha/SI-GAC/BombeirosRescaldo/Simulation\kcg_s2c_config.txt">
+  <RootNode scadeName="Main" headerFile="Main.h" targetCycleFct="Main" targetInitFct="Main_reset">
+    <Output scadeName="ReqLayerVisible" scadeType="bool" targetName="ReqLayerVisible" targetType="kcg_bool"
+        inCtx="true"/>
+    <Output scadeName="ReqLayerActive" scadeType="bool" targetName="ReqLayerActive" targetType="kcg_bool" inCtx="true"/>
+    <Output scadeName="EmitToCDS" scadeType="bool" targetName="EmitToCDS" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L1" scadeType="bool" targetName="_L1" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L2" scadeType="bool" targetName="_L2" targetType="kcg_bool" inCtx="true"/>
+    <Local scadeName="_L3" scadeType="bool" targetName="_L3" targetType="kcg_bool" inCtx="true"/>
+    <NodeInlining scadeName="InitDF" instName="1">
+      <Output scadeName="ReqLayerVisible" scadeType="bool" targetName="ReqLayerVisible_1" targetType="kcg_bool"
+          inCtx="true"/>
+      <Output scadeName="ReqLayerActive" scadeType="bool" targetName="ReqLayerActive_1" targetType="kcg_bool"
+          inCtx="true"/>
+      <Memory scadeName="_L2" scadeType="bool" targetName="_L2_1" targetType="kcg_bool" inCtx="true"/>
+      <Local scadeName="_L1" scadeType="bool" targetName="_L1_1" targetType="kcg_bool" inCtx="true"/>
+    </NodeInlining>
+    <Init targetName="init" targetType="kcg_bool" inCtx="true"/>
+    <OutCtxType targetName="outC_Main"/>
+  </RootNode>
+  <ExpNode scadeName="InitDF"/>
+  <Option name="root_node_name" value="Main"/>
+  <Option name="target" value="C"/>
+  <Option name="target_dir" value="C:/Users/Marrcio/Copy/EstudosRemote/ITA/Cunha/SI-GAC/BombeirosRescaldo/Simulation"/>
+  <Option name="expall" value="#on#"/>
+  <Option name="exp" value="#off#"/>
+  <Option name="noexp" value="#off#"/>
+  <Option name="global_root_context" value="#off#"/>
+  <Option name="optimization_level" value="0"/>
+  <Option name="macro_on_assert" value="#off#"/>
+  <Option name="global_prefix" value="#off#"/>
+  <Option name="name_length" value="200"/>
+  <Option name="significance_length" value="31"/>
+  <Option name="header" value="#off#"/>
+  <Option name="input_threshold" value="#off#"/>
+  <Option name="user_config" value="./user_macros.h"/>
+  <Option name="debug" value="#on#"/>
+  <Option name="observe" value="#off#"/>
+  <Option name="no_observe" value="#off#"/>
+  <Option name="probes" value="#on#"/>
+  <Option name="input_file"
+      value="C:/Users/Marrcio/Copy/EstudosRemote/ITA/Cunha/SI-GAC/BombeirosRescaldo/Simulation/scade_model_without_unused.scade"/>
+  <Option name="wrap_c_ops" value="#off#"/>
+  <Option name="no_bitwise" value="#off#"/>
+  <Option name="warn_error" value="#off#"/>
+  <Option name="static" value="#off#"/>
+  <Option name="state_vector" value="#off#"/>
+  <PredefType scadeName="real" targetName="kcg_real"/>
+  <PredefType scadeName="bool" targetName="kcg_bool"/>
+  <PredefType scadeName="char" targetName="kcg_char"/>
+  <PredefType scadeName="int" targetName="kcg_int"/>
+</Model>
+<!--$*************** KCG Version 6.1.3 (build i6) ****************
+** kcg_trace.xml
+** Generation date: 2015-09-23T19:20:53
+*************************************************************$-->
