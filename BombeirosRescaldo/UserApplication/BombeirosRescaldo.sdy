@@ -101,6 +101,18 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtSelectedEntry" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="38" ParameterIdent="A661_EVT_SEL_ENTRY_CHANGE" WidgetType="ScrollList" WidgetName="scrllistVictims">
+							<A661Data>
+								<DataField value="EvtSelectedEntry"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="SelectedVictim" type="int" oid="!ed/ce9c/2D38/6A8/56046fce25f8" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
 						<Variable name="EmitToCDS" type="bool" oid="!ed/2131/1B19/32A4/56032fd777a5" instancepath="Main/"/>
 					</output>
 					<inputs>
@@ -194,6 +206,11 @@
 								<DataField value="String_size"/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="45" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="txtIDVictim">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -226,6 +243,30 @@
 					</output>
 					<inputs>
 						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="55" ParameterIdent="A661_STRING" Size="512" WidgetType="EditBoxMultiLine" WidgetName="txtmlCommentVictim">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="EmitSearch" type="bool" oid="!ed/cf1b/2D38/6A8/560475b421cd" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="45" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="txtIDVictim">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="SearchVictimLabel" type="char^512" oid="!ed/cf27/2D38/6A8/560475dc6767" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="45" ParameterIdent="A661_STRING" Size="512" WidgetType="EditBoxText" WidgetName="txtIDVictim">
 							<A661Data>
 								<DataField value="LabelString"/>
 							</A661Data>

@@ -13,6 +13,8 @@ const kcg_int MOCK_VICTIM2_SEX = 3;
 const kcg_int MOCK_VICTIM2_STATE = 4;
 const String MOCK_VICTIM2_COMMENT = "comment victim2 lalalalalalalalalalalalallalala";
 
+const String VICTIM_STR = "victim";
+
 const String NOT_FOUND = "Not Found";
 
 void GetVictimInfo(
@@ -45,3 +47,23 @@ void GetVictimInfo(
 	}
 }
 
+/* FromIntToVictimId */
+extern void FromIntToVictimId(
+  /* FromIntToVictimId::in */kcg_int in,
+  /* FromIntToVictimId::victimId */String *victimId) {
+	kcg_copy_String(victimId, VICTIM_STR);
+	kcg_int qtdDigitos = 0;
+	kcg_int aux = in;
+	while (aux > 0){
+		qtdDigitos++;
+		aux/=10;
+	}
+	while (in > 0) {
+		size_t i = 5 + qtdDigitos;
+		kcg_char digito = (in%10) + '0';
+		(*victimId)[i] = digito;
+		qtdDigitos--;
+		in /= 10;
+	}
+
+}

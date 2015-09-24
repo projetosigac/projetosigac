@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="121" defaultConfiguration="21">
+<Project id="1" oid_count="126" defaultConfiguration="21">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -335,6 +335,7 @@
 				<FileRef id="114" persistAs="GetValueFromTxtWidget.xscade"/>
 				<FileRef id="117" persistAs="SetValueToLabelWidget.xscade"/>
 				<FileRef id="119" persistAs="SetValueToComboBoxWidget.xscade"/>
+				<FileRef id="123" persistAs="FromIntToVictimId.xscade"/>
 			</elements>
 		</Folder>
 		<Folder id="84" name="Design Verifier File">
@@ -352,6 +353,7 @@
 						</Prop>
 						<Prop id="110" name="@SCADE:IMPORTED_NODES">
 							<value>GetVictimInfo</value>
+							<value>FromIntToVictimId</value>
 						</Prop>
 					</props>
 				</FileRef>
