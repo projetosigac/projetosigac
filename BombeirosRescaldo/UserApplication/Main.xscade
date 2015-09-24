@@ -111,6 +111,54 @@
 						<ed:Variable oid="!ed/ce9c/2D38/6A8/56046fce25f8"/>
 					</pragmas>
 				</Variable>
+				<Variable name="ScreeningVictimSexEntry">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/68ad/1524/78C/560486a05f8b"/>
+					</pragmas>
+				</Variable>
+				<Variable name="ScreeningVictimAgeEntry">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/68ae/1524/78C/560486a8218a"/>
+					</pragmas>
+				</Variable>
+				<Variable name="ScreeningVictimDamageEntry">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/68af/1524/78C/560486b26ab9"/>
+					</pragmas>
+				</Variable>
+				<Variable name="ScreeningOkBtn">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/68b0/1524/78C/560486bc4897"/>
+					</pragmas>
+				</Variable>
 			</inputs>
 			<outputs>
 				<Variable name="EmitToCDS">
