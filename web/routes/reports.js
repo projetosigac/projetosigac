@@ -17,12 +17,15 @@ exports.get_list = function(req, res){
   };
 
   var r = req.query.r;
-  var p1 = JSON.parse(req.query.center);
+  var p1 = req.query.center;
 
 
   if (typeof(r) == "undefined" || typeof(p1) == "undefined") {
     r = 99999999;
     p1 = {'lat':0, 'lng':0};
+  }
+  else {
+    p1 = JSON.parse(p1);
   }
 
   req.getConnection(function(err,connection) {

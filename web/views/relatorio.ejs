@@ -81,7 +81,7 @@
 
     function updatePoints() {
       var response;
-      $.get( "reports/all", function(r) {
+      $.get( "reports/get_list", function(r) {
         while(pointMvc.getLength() > 0) pointMvc.pop();
 
         console.log('parsing');
