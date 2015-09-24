@@ -5,7 +5,7 @@
 			<mappingItems>
 				<MappingItem>
 					<output>
-						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbScreening">
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="1" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbScreening">
 							<A661Data>
 								<Notify/>
 							</A661Data>
@@ -17,7 +17,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbIncident">
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbIncident">
 							<A661Data>
 								<Notify/>
 							</A661Data>
@@ -29,7 +29,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbVictim">
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbVictim">
 							<A661Data>
 								<Notify/>
 							</A661Data>
@@ -41,10 +41,78 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="45" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxText" WidgetName="txtIDVictim">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="VictimSearchNotify" type="bool" oid="!ed/42eb/73E7/2F7F0/560356e910ef" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="45" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="512" WidgetType="EditBoxText" WidgetName="txtIDVictim">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="VictimSearchEvtString" type="char^512" oid="!ed/42f8/73E7/2F7F0/560356eb12e4" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtStringLength" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="45" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxText" WidgetName="txtIDVictim">
+							<A661Data>
+								<DataField value="EvtStringLength"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="VictimSearchEvtStringLength" type="int" oid="!ed/4305/73E7/2F7F0/560356ec4b99" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="46" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbSearchVictim">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="SearchVictimButtonPressed" type="bool" oid="!ed/434a/73E7/2F7F0/5603587853fe" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
 						<Variable name="EmitToCDS" type="bool" oid="!ed/2131/1B19/32A4/56032fd777a5" instancepath="Main/"/>
 					</output>
 					<inputs>
-						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ACTIVE_TABBED_PANEL" WidgetType="TabbedPanelGroup" WidgetName="TabbedPanelGroup">
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_ACTIVE_TABBED_PANEL" WidgetType="TabbedPanelGroup" WidgetName="TabbedPanelGroup">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="49" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="lblIDVictimValue">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="51" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="cmbSexVictim">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="53" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="cmbPriorityVictim">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="55" ParameterIdent="A661_STRING" WidgetType="EditBoxMultiLine" WidgetName="txtmlCommentVictim">
 							<A661Data>
 								<Emit/>
 							</A661Data>
@@ -56,7 +124,7 @@
 						<Variable name="ReqLayerVisible" type="bool" oid="!ed/2130/1B19/32A4/56032fd73ec7" instancepath="Main/"/>
 					</output>
 					<inputs>
-						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
 							<A661Data>
 								<Emit/>
 							</A661Data>
@@ -68,7 +136,7 @@
 						<Variable name="ReqLayerActive" type="bool" oid="!ed/212f/1B19/32A4/56032fd72bca" instancepath="Main/"/>
 					</output>
 					<inputs>
-						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
 							<A661Data>
 								<Emit/>
 							</A661Data>
@@ -80,9 +148,74 @@
 						<Variable name="SelectedTab" type="int" oid="!ed/216f/736A/3C0/5603307c60fb" instancepath="Main/"/>
 					</output>
 					<inputs>
-						<A661_CMD_SET_PARAMETER name="ActiveTabbedPanelID" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="main" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ACTIVE_TABBED_PANEL" WidgetType="TabbedPanelGroup" WidgetName="TabbedPanelGroup">
+						<A661_CMD_SET_PARAMETER name="ActiveTabbedPanelID" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_ACTIVE_TABBED_PANEL" WidgetType="TabbedPanelGroup" WidgetName="TabbedPanelGroup">
 							<A661Data>
 								<DataField value="ActiveTabbedPanelID"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="VictimIDLabel" type="char^512" oid="!ed/437e/73E7/2F7F0/5603594058b0" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="49" ParameterIdent="A661_STRING" Size="512" WidgetType="Label" WidgetName="lblIDVictimValue">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ResultSize" type="int" oid="!ed/43dc/73E7/2F7F0/56035a50ad1" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="49" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="lblIDVictimValue">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="55" ParameterIdent="A661_STRING" WidgetType="EditBoxMultiLine" WidgetName="txtmlCommentVictim">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="VictimSexSelectedEntry" type="int" oid="!ed/471b/73E7/2F7F0/5603615d2027" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SelectedEntry" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="51" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="cmbSexVictim">
+							<A661Data>
+								<DataField value="SelectedEntry"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="VictimStateSelectedEntry" type="int" oid="!ed/4741/73E7/2F7F0/5603619837fe" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SelectedEntry" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="53" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="cmbPriorityVictim">
+							<A661Data>
+								<DataField value="SelectedEntry"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="VictimCommentText" type="char^512" oid="!ed/4834/73E7/2F7F0/56036d43eab" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="55" ParameterIdent="A661_STRING" Size="512" WidgetType="EditBoxMultiLine" WidgetName="txtmlCommentVictim">
+							<A661Data>
+								<DataField value="LabelString"/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
 					</inputs>

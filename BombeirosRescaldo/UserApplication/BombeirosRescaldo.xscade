@@ -51,5 +51,17 @@
 				<ed:Constant oid="!ed/2188/76E9/2C080/56033a4335ac"/>
 			</pragmas>
 		</Constant>
+		<Constant external="imported" name="EMPTY_STRING">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Constant oid="!ed/461a/73E7/2F7F0/56035c9d7ab7"/>
+			</pragmas>
+		</Constant>
 	</declarations>
 </File>

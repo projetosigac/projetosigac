@@ -10,31 +10,31 @@
         <ratio horizontal="1" vertical="1"/>
     </IDE>
     <symbology>
-        <dimension height="1024" width="512"/>
+        <dimension height="768" width="768"/>
     </symbology>
     <A661 library_version="1" supp_version="4">
         <intprop name="ApplicationId">1</intprop>
     </A661>
     <children>
-        <A661Layer name="main" oid="71fb5c00-a85f-4479-954e-761c4136758e">
+        <A661Layer name="a661_layer" oid="c30dff9f-c234-4c8b-97aa-096798eceaf9">
             <IDE>
                 <ratio horizontal="20" vertical="20"/>
             </IDE>
             <model>
                 <intprop name="LayerId">1</intprop>
                 <intprop name="ContextNumber">0</intprop>
-                <intprop name="Width">10240</intprop>
-                <intprop name="Height">20480</intprop>
+                <intprop name="Width">15360</intprop>
+                <intprop name="Height">15360</intprop>
             </model>
             <children>
-                <widget name="pbScreening" oid="a85ee7bb-c6d7-43d2-925f-e8833db1c34e" type="PushButton">
+                <widget name="pbScreening" oid="76d81cf8-a652-4c1e-98e8-d4ba3568f069" type="PushButton">
                     <IDE/>
                     <model>
-                        <intprop name="WidgetIdent">2</intprop>
+                        <intprop name="WidgetIdent">1</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">0</intprop>
-                        <intprop name="PosY">19680</intprop>
+                        <intprop name="PosX">2520</intprop>
+                        <intprop name="PosY">14340</intprop>
                         <intprop name="SizeX">3413</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -45,14 +45,14 @@
                         <stringprop name="LabelString">SCREENING</stringprop>
                     </model>
                 </widget>
-                <widget name="pbVictim" oid="7728651d-b0af-4c03-8b63-3c6bde411c3b" type="PushButton">
+                <widget name="pbVictim" oid="43d67321-86fc-4792-af68-1bd19cde82f7" type="PushButton">
                     <IDE/>
                     <model>
-                        <intprop name="WidgetIdent">3</intprop>
+                        <intprop name="WidgetIdent">2</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">3413</intprop>
-                        <intprop name="PosY">19680</intprop>
+                        <intprop name="PosX">5933</intprop>
+                        <intprop name="PosY">14340</intprop>
                         <intprop name="SizeX">3413</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -63,14 +63,14 @@
                         <stringprop name="LabelString">VICTIM</stringprop>
                     </model>
                 </widget>
-                <widget name="pbIncident" oid="1fed405f-baa3-4744-892b-82deae0f9188" type="PushButton">
+                <widget name="pbIncident" oid="fff4f026-d94c-422d-91c8-acfcb707d2f7" type="PushButton">
                     <IDE/>
                     <model>
-                        <intprop name="WidgetIdent">4</intprop>
+                        <intprop name="WidgetIdent">3</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">6826</intprop>
-                        <intprop name="PosY">19680</intprop>
+                        <intprop name="PosX">9346</intprop>
+                        <intprop name="PosY">14340</intprop>
                         <intprop name="SizeX">3413</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -81,26 +81,26 @@
                         <stringprop name="LabelString">INCIDENT</stringprop>
                     </model>
                 </widget>
-                <widget name="TabbedPanelGroup" oid="e456e9c0-9c05-467d-a1b0-4a4028ab05e5" type="TabbedPanelGroup">
+                <widget name="TabbedPanelGroup" oid="ceeb1412-b4b0-4094-8669-153d936b10a3" type="TabbedPanelGroup">
                     <IDE/>
                     <model>
-                        <intprop name="WidgetIdent">5</intprop>
+                        <intprop name="WidgetIdent">4</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">80</intprop>
-                        <intprop name="PosY">80</intprop>
+                        <intprop name="PosX">2600</intprop>
+                        <intprop name="PosY">-5260</intprop>
                         <intprop name="SizeX">10060</intprop>
                         <intprop name="SizeY">19480</intprop>
                         <intprop name="StyleSet">0</intprop>
-                        <intprop name="ActiveTabbedPanelID">6</intprop>
+                        <intprop name="ActiveTabbedPanelID">5</intprop>
                         <enumprop name="TabPosition">A661_ABSENT</enumprop>
-                        <enumprop name="AutomaticInsetSizeFlag">A661_TRUE</enumprop>
+                        <enumprop name="AutomaticInsetSizeFlag">A661_FALSE</enumprop>
                     </model>
                     <children>
-                        <widget name="pnlScreening" oid="3eb2e77d-a54b-47e3-be69-d1725f5f352a" type="TabbedPanel">
+                        <widget name="pnlScreening" oid="6a1371af-9b16-436e-b7e3-ee5a5e52000f" type="TabbedPanel">
                             <IDE/>
                             <model>
-                                <intprop name="WidgetIdent">6</intprop>
+                                <intprop name="WidgetIdent">5</intprop>
                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                 <intprop name="StyleSet">0</intprop>
@@ -114,20 +114,20 @@
                                 <stringprop name="LabelString">Victims</stringprop>
                             </model>
                             <children>
-                                <widget name="Title" oid="95c56a87-8478-4df5-ba94-a9510dc19b33" type="BasicContainer">
+                                <widget name="Title" oid="23c9f022-12b2-4d24-b4fe-f9c0633094b3" type="BasicContainer">
                                     <IDE/>
                                     <model>
-                                        <intprop name="WidgetIdent">75</intprop>
+                                        <intprop name="WidgetIdent">6</intprop>
                                         <enumprop name="Enable">A661_TRUE</enumprop>
                                         <enumprop name="Visible">A661_TRUE</enumprop>
                                         <intprop name="PosX">5060</intprop>
                                         <intprop name="PosY">18420</intprop>
                                     </model>
                                     <children>
-                                        <widget name="GpRectangle" oid="c002ae73-ea20-446d-9065-506259e09881" type="GpRectangle">
+                                        <widget name="GpRectangle" oid="2dd6c0f4-d421-4ac9-9c7c-7b7c5c93ab12" type="GpRectangle">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">76</intprop>
+                                                <intprop name="WidgetIdent">7</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">-4980</intprop>
@@ -141,10 +141,10 @@
                                                 <enumprop name="Halo">A661_FALSE</enumprop>
                                             </model>
                                         </widget>
-                                        <widget name="Label" oid="2ec89730-737a-425d-9868-00e97da4ca4a" type="Label">
+                                        <widget name="Label" oid="deefb011-5faa-4958-bdb0-e69044b0fdd8" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">77</intprop>
+                                                <intprop name="WidgetIdent">8</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">-4940</intprop>
@@ -163,20 +163,20 @@
                                         </widget>
                                     </children>
                                 </widget>
-                                <widget name="Data" oid="388d9089-2ee7-44e3-b845-969617fe2803" type="BasicContainer">
+                                <widget name="Data" oid="ce7a5a35-ac51-40d9-bf54-485b3aba0b54" type="BasicContainer">
                                     <IDE/>
                                     <model>
-                                        <intprop name="WidgetIdent">78</intprop>
+                                        <intprop name="WidgetIdent">9</intprop>
                                         <enumprop name="Enable">A661_TRUE</enumprop>
                                         <enumprop name="Visible">A661_TRUE</enumprop>
                                         <intprop name="PosX">100</intprop>
                                         <intprop name="PosY">17400</intprop>
                                     </model>
                                     <children>
-                                        <widget name="Label" oid="321f0dd7-0947-48e9-8d82-ae195590dc48" type="Label">
+                                        <widget name="Label" oid="ae10d287-9305-4273-94af-908548c475ad" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">88</intprop>
+                                                <intprop name="WidgetIdent">10</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">100</intprop>
@@ -193,10 +193,10 @@
                                                 <stringprop name="LabelString">VICTIM ID:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="Label" oid="5f8835e2-5420-46b3-993c-593528188143" type="Label">
+                                        <widget name="Label" oid="90d711c7-96e2-4450-852b-d39e7b297358" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">89</intprop>
+                                                <intprop name="WidgetIdent">11</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">100</intprop>
@@ -213,10 +213,10 @@
                                                 <stringprop name="LabelString">INCIDENT ID:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="Label" oid="2c106a1f-ecd7-4816-a424-127dc2edcf0e" type="Label">
+                                        <widget name="Label" oid="7a51fa4c-7da1-4e26-81d7-4f524bd93740" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">90</intprop>
+                                                <intprop name="WidgetIdent">12</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">2800</intprop>
@@ -233,10 +233,10 @@
                                                 <stringprop name="LabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="EditBoxText" oid="a0ee6d66-5631-4d9f-be92-91f1a243acd2" type="EditBoxText">
+                                        <widget name="EditBoxText" oid="feb3419e-ce06-4093-83da-41b3c25e361e" type="EditBoxText">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">92</intprop>
+                                                <intprop name="WidgetIdent">13</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">3120</intprop>
@@ -255,20 +255,20 @@
                                         </widget>
                                     </children>
                                 </widget>
-                                <widget name="Characteristics" oid="b21fc022-6f5a-4cce-bd96-4e12455278d8" type="BasicContainer">
+                                <widget name="Characteristics" oid="36456e86-90bf-4775-90f0-57dbadd7a456" type="BasicContainer">
                                     <IDE/>
                                     <model>
-                                        <intprop name="WidgetIdent">83</intprop>
+                                        <intprop name="WidgetIdent">14</intprop>
                                         <enumprop name="Enable">A661_TRUE</enumprop>
                                         <enumprop name="Visible">A661_TRUE</enumprop>
                                         <intprop name="PosX">100</intprop>
                                         <intprop name="PosY">16200</intprop>
                                     </model>
                                     <children>
-                                        <widget name="CharacteristicsLabel" oid="e82cb907-be39-42ad-b151-91ffc460c3f5" type="Label">
+                                        <widget name="CharacteristicsLabel" oid="cd19ed00-e1fd-42a1-91ad-e1bfa39e8557" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">93</intprop>
+                                                <intprop name="WidgetIdent">15</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">60</intprop>
@@ -285,10 +285,10 @@
                                                 <stringprop name="LabelString">CHARACTERISTICS:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="MaleTB" oid="661c1127-3fc2-4250-97c3-26450ec42af5" type="ToggleButton">
+                                        <widget name="MaleTB" oid="cc5473a3-d306-4421-af9d-ab49cf10838b" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">94</intprop>
+                                                <intprop name="WidgetIdent">16</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">500</intprop>
@@ -306,10 +306,10 @@
                                                 <stringprop name="AlternateLabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="FemaleTB" oid="21304d21-3f20-49a1-a7d9-117f579462bb" type="ToggleButton">
+                                        <widget name="FemaleTB" oid="532e5531-01e9-4dac-abec-70c652f5a429" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">95</intprop>
+                                                <intprop name="WidgetIdent">17</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">3700</intprop>
@@ -327,10 +327,10 @@
                                                 <stringprop name="AlternateLabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="ChildTB" oid="4ac99a7e-b92a-4b65-b842-2183af057bc5" type="ToggleButton">
+                                        <widget name="ChildTB" oid="c6e390e7-9271-404e-b84a-957f7ad09be6" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">96</intprop>
+                                                <intprop name="WidgetIdent">18</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">500</intprop>
@@ -348,10 +348,10 @@
                                                 <stringprop name="AlternateLabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="YoungTB" oid="a501e394-0ffa-49b5-b2b4-7b0b32552622" type="ToggleButton">
+                                        <widget name="YoungTB" oid="15496089-4c42-46e4-b833-7a9f0a8bac8b" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">97</intprop>
+                                                <intprop name="WidgetIdent">19</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">3700</intprop>
@@ -369,10 +369,10 @@
                                                 <stringprop name="AlternateLabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="AdultTB" oid="f0b6aef4-e3e2-40ea-9787-28204e346f56" type="ToggleButton">
+                                        <widget name="AdultTB" oid="845a63c5-a358-4dcd-ad3f-2926a4fc2a0b" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">102</intprop>
+                                                <intprop name="WidgetIdent">20</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">6860</intprop>
@@ -390,10 +390,10 @@
                                                 <stringprop name="AlternateLabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="NoPriorityTB" oid="cba72072-ed07-4112-a15a-da34fd753cd9" type="ToggleButton">
+                                        <widget name="NoPriorityTB" oid="de259ef9-a2fd-4c75-826f-775e9d067757" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">103</intprop>
+                                                <intprop name="WidgetIdent">21</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">500</intprop>
@@ -411,10 +411,10 @@
                                                 <stringprop name="AlternateLabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="InjuredTB" oid="fe4a535f-fed2-4e7b-aa15-cc90fb384e74" type="ToggleButton">
+                                        <widget name="InjuredTB" oid="bf74ca46-e703-495c-82f0-1ff6a7aeb221" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">104</intprop>
+                                                <intprop name="WidgetIdent">22</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">3700</intprop>
@@ -432,10 +432,10 @@
                                                 <stringprop name="AlternateLabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="SeriousTB" oid="28be44cd-e985-49b9-94bc-a09cff31aad7" type="ToggleButton">
+                                        <widget name="SeriousTB" oid="77e0bf40-a0bf-4f56-9520-cf440af06052" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">105</intprop>
+                                                <intprop name="WidgetIdent">23</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">500</intprop>
@@ -453,10 +453,10 @@
                                                 <stringprop name="AlternateLabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="DeadTB" oid="2d991d7e-70e9-46c4-a3f0-6a6bd03c9409" type="ToggleButton">
+                                        <widget name="DeadTB" oid="136a8869-070e-49c5-9fe6-7f8bddbce46e" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">106</intprop>
+                                                <intprop name="WidgetIdent">24</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">3700</intprop>
@@ -474,10 +474,10 @@
                                                 <stringprop name="AlternateLabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="OKTB" oid="cc3c153e-874d-4d34-aea2-67d1d7bf8c01" type="ToggleButton">
+                                        <widget name="OKTB" oid="c95ca5c7-6815-4550-96c0-3046b190e2c7" type="ToggleButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">107</intprop>
+                                                <intprop name="WidgetIdent">25</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">6860</intprop>
@@ -499,10 +499,10 @@
                                 </widget>
                             </children>
                         </widget>
-                        <widget name="pnlIncidents" oid="69204984-fcce-4f56-8cec-173100d2c4f3" type="TabbedPanel">
+                        <widget name="pnlIncidents" oid="baaf2da4-f5dc-4b6f-9221-aeb8fe4b5b08" type="TabbedPanel">
                             <IDE/>
                             <model>
-                                <intprop name="WidgetIdent">7</intprop>
+                                <intprop name="WidgetIdent">26</intprop>
                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                 <intprop name="StyleSet">0</intprop>
@@ -516,20 +516,20 @@
                                 <stringprop name="LabelString">Victims</stringprop>
                             </model>
                             <children>
-                                <widget name="Title" oid="d8c811aa-4cfb-4b51-846d-cd716d3ed7ce" type="BasicContainer">
+                                <widget name="Title" oid="5af1f939-7e67-4e85-b633-c957bd04133c" type="BasicContainer">
                                     <IDE/>
                                     <model>
-                                        <intprop name="WidgetIdent">34</intprop>
+                                        <intprop name="WidgetIdent">27</intprop>
                                         <enumprop name="Enable">A661_TRUE</enumprop>
                                         <enumprop name="Visible">A661_TRUE</enumprop>
                                         <intprop name="PosX">5060</intprop>
                                         <intprop name="PosY">18420</intprop>
                                     </model>
                                     <children>
-                                        <widget name="GpRectangle" oid="2fa88cc8-5316-46ea-9088-64da7b5af68c" type="GpRectangle">
+                                        <widget name="GpRectangle" oid="c7f64405-5fe3-439a-b198-8fe5e2dc5848" type="GpRectangle">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">32</intprop>
+                                                <intprop name="WidgetIdent">28</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">-4980</intprop>
@@ -543,10 +543,10 @@
                                                 <enumprop name="Halo">A661_FALSE</enumprop>
                                             </model>
                                         </widget>
-                                        <widget name="Label" oid="43efcffa-abc8-4010-99ca-b4b6bf16d970" type="Label">
+                                        <widget name="Label" oid="316e6adb-a93d-4c41-b48a-b09cce840136" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">35</intprop>
+                                                <intprop name="WidgetIdent">29</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">-4940</intprop>
@@ -565,20 +565,20 @@
                                         </widget>
                                     </children>
                                 </widget>
-                                <widget name="Search" oid="3eb9c012-c0bd-4817-9108-b02077afbb4b" type="BasicContainer">
+                                <widget name="Search" oid="60c50bf1-cb2a-4c6c-8a45-6d2f4545a2ac" type="BasicContainer">
                                     <IDE/>
                                     <model>
-                                        <intprop name="WidgetIdent">36</intprop>
+                                        <intprop name="WidgetIdent">30</intprop>
                                         <enumprop name="Enable">A661_TRUE</enumprop>
                                         <enumprop name="Visible">A661_TRUE</enumprop>
                                         <intprop name="PosX">100</intprop>
                                         <intprop name="PosY">18320</intprop>
                                     </model>
                                     <children>
-                                        <widget name="Label" oid="64f3cef9-473f-4e18-b3b2-b6237b0c5065" type="Label">
+                                        <widget name="Label" oid="47257805-ad65-4998-831c-7197bdeabff8" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">37</intprop>
+                                                <intprop name="WidgetIdent">31</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">80</intprop>
@@ -595,10 +595,10 @@
                                                 <stringprop name="LabelString">ID:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="txtIDVictim" oid="56483147-cf18-45e9-8a07-97b9f688c008" type="EditBoxText">
+                                        <widget name="txtIDIncident" oid="32c0bd8a-d38e-4210-bf0a-e3c9ddfb4711" type="EditBoxText">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">38</intprop>
+                                                <intprop name="WidgetIdent">32</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">2120</intprop>
@@ -615,10 +615,10 @@
                                                 <stringprop name="LabelString">****</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="pbSearchVictim" oid="861f5173-aec2-4782-b847-71ffa643d14d" type="PushButton">
+                                        <widget name="pbSearchIncident" oid="c1957c01-420b-40cc-b964-51d179ea5e36" type="PushButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">39</intprop>
+                                                <intprop name="WidgetIdent">33</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">5920</intprop>
@@ -633,42 +633,22 @@
                                                 <stringprop name="LabelString">Search</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="lblVictimSearchInfo" oid="83ca0824-1eaa-4471-b5e8-a571a4877b97" type="Label">
-                                            <IDE/>
-                                            <model>
-                                                <intprop name="WidgetIdent">41</intprop>
-                                                <enumprop name="Anonymous">A661_FALSE</enumprop>
-                                                <enumprop name="Visible">A661_TRUE</enumprop>
-                                                <intprop name="PosX">-160</intprop>
-                                                <intprop name="PosY">-1920</intprop>
-                                                <intprop name="SizeX">10180</intprop>
-                                                <intprop name="SizeY">820</intprop>
-                                                <intprop name="RotationAngle">0</intprop>
-                                                <intprop name="StyleSet">1</intprop>
-                                                <intprop name="MaxStringLength">32</intprop>
-                                                <enumprop name="MotionAllowed">A661_TRUE</enumprop>
-                                                <intprop name="Font">0</intprop>
-                                                <intprop name="ColorIndex">51</intprop>
-                                                <enumprop name="Alignment">A661_CENTER</enumprop>
-                                                <stringprop name="LabelString">FOUND</stringprop>
-                                            </model>
-                                        </widget>
                                     </children>
                                 </widget>
-                                <widget name="DisplayInfo" oid="3dc78b30-2b59-4d21-b1bf-462ec2b4ab27" type="BasicContainer">
+                                <widget name="DisplayInfo" oid="4b5100c8-3af0-434c-9d78-f65a5d9b64dc" type="BasicContainer">
                                     <IDE/>
                                     <model>
-                                        <intprop name="WidgetIdent">42</intprop>
+                                        <intprop name="WidgetIdent">34</intprop>
                                         <enumprop name="Enable">A661_TRUE</enumprop>
                                         <enumprop name="Visible">A661_TRUE</enumprop>
                                         <intprop name="PosX">120</intprop>
                                         <intprop name="PosY">16300</intprop>
                                     </model>
                                     <children>
-                                        <widget name="lblIDIncident" oid="98af28c1-a2a1-4824-af41-3c277eeb8e1a" type="Label">
+                                        <widget name="lblIDIncident" oid="3733cf53-8c70-4d76-84f0-c25e64cc7fca" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">43</intprop>
+                                                <intprop name="WidgetIdent">35</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">360</intprop>
@@ -685,10 +665,10 @@
                                                 <stringprop name="LabelString">ID:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="lblIDIncidentValue" oid="ae0afac4-486e-4f85-a5bc-de6109db67e0" type="Label">
+                                        <widget name="lblIDIncidentValue" oid="f0d4eaa7-dbf3-43ec-8e61-0efd4baf8051" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">45</intprop>
+                                                <intprop name="WidgetIdent">36</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">2760</intprop>
@@ -705,10 +685,10 @@
                                                 <stringprop name="LabelString">XXXXXXXXXXXXXXXXXXXXXX</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="pbSaveVictim" oid="51495e0e-9449-47ac-88b3-7eaf731c2da4" type="PushButton">
+                                        <widget name="pbViewVictim" oid="ea040511-e420-48c6-b942-b7876cef64ff" type="PushButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">53</intprop>
+                                                <intprop name="WidgetIdent">37</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">3740</intprop>
@@ -723,10 +703,10 @@
                                                 <stringprop name="LabelString">View</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="scrllistVictims" oid="23e4f3ff-0731-4798-966b-f582b99854ff" type="ScrollList">
+                                        <widget name="scrllistVictims" oid="a258f4bb-b443-47ca-a34f-52de44db0c02" type="ScrollList">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">73</intprop>
+                                                <intprop name="WidgetIdent">38</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">480</intprop>
@@ -801,10 +781,10 @@
                                 </widget>
                             </children>
                         </widget>
-                        <widget name="pnlVictims" oid="01ad51f1-1d99-4bc7-9e99-19008d523242" type="TabbedPanel">
+                        <widget name="pnlVictims" oid="362595de-df3b-422c-bd56-d208803cae43" type="TabbedPanel">
                             <IDE/>
                             <model>
-                                <intprop name="WidgetIdent">8</intprop>
+                                <intprop name="WidgetIdent">39</intprop>
                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                 <intprop name="StyleSet">0</intprop>
@@ -818,20 +798,20 @@
                                 <stringprop name="LabelString">Victims</stringprop>
                             </model>
                             <children>
-                                <widget name="Title" oid="bc05eefb-1b86-4d6d-a84f-b5dead04f86d" type="BasicContainer">
+                                <widget name="Title" oid="2c2a5869-ae53-473f-9921-71a9b5c3577b" type="BasicContainer">
                                     <IDE/>
                                     <model>
-                                        <intprop name="WidgetIdent">55</intprop>
+                                        <intprop name="WidgetIdent">40</intprop>
                                         <enumprop name="Enable">A661_TRUE</enumprop>
                                         <enumprop name="Visible">A661_TRUE</enumprop>
                                         <intprop name="PosX">5060</intprop>
                                         <intprop name="PosY">18420</intprop>
                                     </model>
                                     <children>
-                                        <widget name="GpRectangle" oid="d8ffea77-b706-4dcf-afcd-25fdff700920" type="GpRectangle">
+                                        <widget name="GpRectangle" oid="ef89c6f9-9dc6-4e5e-8922-c2d4e39706d5" type="GpRectangle">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">56</intprop>
+                                                <intprop name="WidgetIdent">41</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">-4980</intprop>
@@ -845,10 +825,10 @@
                                                 <enumprop name="Halo">A661_FALSE</enumprop>
                                             </model>
                                         </widget>
-                                        <widget name="Label" oid="5857f4b6-b07e-4228-aefb-0a2eef28067d" type="Label">
+                                        <widget name="Label" oid="deda18cb-3334-44a2-a417-36ce5fe908e9" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">57</intprop>
+                                                <intprop name="WidgetIdent">42</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">-4940</intprop>
@@ -867,20 +847,20 @@
                                         </widget>
                                     </children>
                                 </widget>
-                                <widget name="Search" oid="c7bbe105-1ba2-47a5-b58c-e6d9bcacd9be" type="BasicContainer">
+                                <widget name="Search" oid="ac78fbef-b5cf-4b93-9f37-954cf9549486" type="BasicContainer">
                                     <IDE/>
                                     <model>
-                                        <intprop name="WidgetIdent">58</intprop>
+                                        <intprop name="WidgetIdent">43</intprop>
                                         <enumprop name="Enable">A661_TRUE</enumprop>
                                         <enumprop name="Visible">A661_TRUE</enumprop>
                                         <intprop name="PosX">100</intprop>
                                         <intprop name="PosY">18320</intprop>
                                     </model>
                                     <children>
-                                        <widget name="Label" oid="d4a68480-539c-485a-b68c-244403e79482" type="Label">
+                                        <widget name="Label" oid="83f0da80-28a4-4b37-a201-0221893a4f5b" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">59</intprop>
+                                                <intprop name="WidgetIdent">44</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">80</intprop>
@@ -897,10 +877,10 @@
                                                 <stringprop name="LabelString">ID:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="txtIDIncident" oid="bdd71ae0-0c5b-4858-a1cd-6ac47a5b78fc" type="EditBoxText">
+                                        <widget name="txtIDVictim" oid="c03460b4-11b9-4bae-a7aa-3e7b52313255" type="EditBoxText">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">60</intprop>
+                                                <intprop name="WidgetIdent">45</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">2120</intprop>
@@ -917,10 +897,10 @@
                                                 <stringprop name="LabelString">****</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="pbSearchIncident" oid="4e714b56-4329-420d-a2c1-1f9ee103e27a" type="PushButton">
+                                        <widget name="pbSearchVictim" oid="a0cab9e0-426b-4c69-9519-1645cd2a4a96" type="PushButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">61</intprop>
+                                                <intprop name="WidgetIdent">46</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">5920</intprop>
@@ -935,42 +915,22 @@
                                                 <stringprop name="LabelString">Search</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="lblIncidentSearchInfo" oid="5085583d-998f-4f1d-945b-49e57bfcca4c" type="Label">
-                                            <IDE/>
-                                            <model>
-                                                <intprop name="WidgetIdent">62</intprop>
-                                                <enumprop name="Anonymous">A661_FALSE</enumprop>
-                                                <enumprop name="Visible">A661_TRUE</enumprop>
-                                                <intprop name="PosX">-160</intprop>
-                                                <intprop name="PosY">-1920</intprop>
-                                                <intprop name="SizeX">10180</intprop>
-                                                <intprop name="SizeY">820</intprop>
-                                                <intprop name="RotationAngle">0</intprop>
-                                                <intprop name="StyleSet">1</intprop>
-                                                <intprop name="MaxStringLength">32</intprop>
-                                                <enumprop name="MotionAllowed">A661_TRUE</enumprop>
-                                                <intprop name="Font">0</intprop>
-                                                <intprop name="ColorIndex">51</intprop>
-                                                <enumprop name="Alignment">A661_CENTER</enumprop>
-                                                <stringprop name="LabelString">FOUND</stringprop>
-                                            </model>
-                                        </widget>
                                     </children>
                                 </widget>
-                                <widget name="DisplayInfo" oid="7c437413-144a-49af-a049-199c3a2aa76f" type="BasicContainer">
+                                <widget name="DisplayInfo" oid="25e6dcb5-33bf-43da-9a26-b5968fba6999" type="BasicContainer">
                                     <IDE/>
                                     <model>
-                                        <intprop name="WidgetIdent">63</intprop>
+                                        <intprop name="WidgetIdent">47</intprop>
                                         <enumprop name="Enable">A661_TRUE</enumprop>
                                         <enumprop name="Visible">A661_TRUE</enumprop>
                                         <intprop name="PosX">120</intprop>
                                         <intprop name="PosY">16300</intprop>
                                     </model>
                                     <children>
-                                        <widget name="lblIDVictim" oid="8ae1746d-45e0-4768-8890-0f8f3f4710b0" type="Label">
+                                        <widget name="lblIDVictim" oid="067f6d1f-05e8-43d8-9ab4-3376069e72d2" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">64</intprop>
+                                                <intprop name="WidgetIdent">48</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">360</intprop>
@@ -987,10 +947,10 @@
                                                 <stringprop name="LabelString">ID:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="lblIDVictimValue" oid="f6cd3862-0c74-4384-9f15-2d836982e6f1" type="Label">
+                                        <widget name="lblIDVictimValue" oid="59b601bb-e702-48f7-885a-e1c539fc82b4" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">65</intprop>
+                                                <intprop name="WidgetIdent">49</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">2760</intprop>
@@ -999,7 +959,7 @@
                                                 <intprop name="SizeY">860</intprop>
                                                 <intprop name="RotationAngle">0</intprop>
                                                 <intprop name="StyleSet">1</intprop>
-                                                <intprop name="MaxStringLength">32</intprop>
+                                                <intprop name="MaxStringLength">512</intprop>
                                                 <enumprop name="MotionAllowed">A661_TRUE</enumprop>
                                                 <intprop name="Font">0</intprop>
                                                 <intprop name="ColorIndex">1</intprop>
@@ -1007,10 +967,10 @@
                                                 <stringprop name="LabelString">XXXXXXXXXXXXXXXXXXXXXX</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="lblSexVictim" oid="5f299940-b9c2-4f39-9772-02968112b774" type="Label">
+                                        <widget name="lblSexVictim" oid="fe0c5c57-9211-4a2e-98bd-a011544b4a3d" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">66</intprop>
+                                                <intprop name="WidgetIdent">50</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">380</intprop>
@@ -1027,10 +987,10 @@
                                                 <stringprop name="LabelString">Sex:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="cmbSexVictim" oid="7e09fdd2-4402-4ea4-997f-ae1e267bc282" type="ComboBox">
+                                        <widget name="cmbSexVictim" oid="05295575-d7dd-4675-9454-cbe3c4b3180f" type="ComboBox">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">67</intprop>
+                                                <intprop name="WidgetIdent">51</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">2740</intprop>
@@ -1056,10 +1016,10 @@
                                                 </arrayprop>
                                             </model>
                                         </widget>
-                                        <widget name="lblPriorityVictim" oid="698618d9-317d-4d43-bbff-8232c49e2d53" type="Label">
+                                        <widget name="lblPriorityVictim" oid="b0d2d7f6-428c-4c69-996b-0c26596b4673" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">68</intprop>
+                                                <intprop name="WidgetIdent">52</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">100</intprop>
@@ -1076,10 +1036,10 @@
                                                 <stringprop name="LabelString">Priority:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="cmbPriorityVictim" oid="5c5588c3-7b6d-43d8-a4bf-02f193e432b6" type="ComboBox">
+                                        <widget name="cmbPriorityVictim" oid="e7f8997b-2a35-4c32-bcd0-15f916e74b4d" type="ComboBox">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">69</intprop>
+                                                <intprop name="WidgetIdent">53</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">2780</intprop>
@@ -1107,10 +1067,10 @@
                                                 </arrayprop>
                                             </model>
                                         </widget>
-                                        <widget name="lblCommentVictim" oid="f20f6644-940a-4892-9d53-2cd07541c4a0" type="Label">
+                                        <widget name="lblCommentVictim" oid="d2dc0d25-e4c9-48b0-b6ab-6bdfc7ec26b1" type="Label">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">70</intprop>
+                                                <intprop name="WidgetIdent">54</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">160</intprop>
@@ -1127,10 +1087,10 @@
                                                 <stringprop name="LabelString">Comment:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="txtmlCommentVictim" oid="6d49b4e8-e62b-41d5-bfb9-05e6b8345ac0" type="EditBoxMultiLine">
+                                        <widget name="txtmlCommentVictim" oid="1ae0fe81-8545-4e64-a80d-e91ebaa1cf4f" type="EditBoxMultiLine">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">71</intprop>
+                                                <intprop name="WidgetIdent">55</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">2760</intprop>
@@ -1140,7 +1100,7 @@
                                                 <intprop name="StyleSet">110</intprop>
                                                 <intprop name="NextFocusedWidget">0</intprop>
                                                 <intprop name="StartCursorPos">32</intprop>
-                                                <intprop name="MaxStringLength">32</intprop>
+                                                <intprop name="MaxStringLength">512</intprop>
                                                 <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
                                                 <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
                                                 <enumprop name="Alignment">A661_LEFT</enumprop>
@@ -1148,10 +1108,10 @@
                                                 <stringprop name="LabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="pbSaveVictim" oid="62cbb905-0b74-4e64-b6ae-29e4b0dfbdbb" type="PushButton">
+                                        <widget name="pbSaveVictim" oid="c4f5fbbb-e8e5-4878-be2b-6ebb3e694dd6" type="PushButton">
                                             <IDE/>
                                             <model>
-                                                <intprop name="WidgetIdent">72</intprop>
+                                                <intprop name="WidgetIdent">56</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
                                                 <intprop name="PosX">3740</intprop>
@@ -1177,5 +1137,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1385812190 -->
+<!-- crc32 : 2001726524 -->
 
