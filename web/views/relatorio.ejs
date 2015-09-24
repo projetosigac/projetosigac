@@ -80,20 +80,30 @@
     }
 
     function updatePoints() {
-      var response;
-      $.get( "reports/get_list", function(r) {
-        while(pointMvc.getLength() > 0) pointMvc.pop();
+      console.log(heatmapCircle.getRadius())
+      console.log(heatmapCircle.getCenter())
+      $.ajax({ 
+        url: "reports/get_list", 
+        type: "get",
+        data: {
+          "r": heatmapCircle.getRadius(),
+          "center": {
+            "lat": heatmapCircle.getCenter().H,
+            "lng": heatmapCircle.getCenter().L
+          }
+        },
+        success: function(resp) {
+          while(pointMvc.getLength() > 0) pointMvc.pop();
 
-        console.log('parsing');
-        var points = JSON.parse(r).reports;
+          var points = JSON.parse(resp).reports;
 
-        console.log('before for');
-        console.log(points);
-        for (var i=0; i<points.length; i++) {
-          var p = points[i];
-          console.log(p);
-          console.log('adding point');
-          pointMvc.push(new google.maps.LatLng(p.lat, p.lng));
+          console.log(points);
+          for (var i=0; i<points.length; i++) {
+            var p = points[i];
+            console.log(p);
+            console.log('adding point');
+            pointMvc.push(new google.maps.LatLng(p.lat, p.lng));
+          }
         }
       });
     }
@@ -145,6 +155,7 @@
 
       google.maps.event.addListener(heatmapCircle, 'center_changed', function() {
         var c = heatmapCircle.getCenter();
+        console.log(c);
         $('#heatmapCenter').val(roundDecimal(c.lat(), 6) + " " + roundDecimal(c.lng(), 6));
       });
     }
