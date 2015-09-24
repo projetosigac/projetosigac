@@ -62,6 +62,7 @@ app.use(
 app.get('/', routes.index);
 app.get('/atendimento', routes.atendimento);
 app.get('/ambulancias', routes.ambulancias);
+app.get('/relatorio', routes.relatorio);
 app.get('/chamados', routes.chamados);
 app.get('/customers', customers.list);
 app.get('/customers/add', customers.add);

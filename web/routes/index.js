@@ -18,3 +18,7 @@ exports.ambulancias = function(req, res){
 exports.chamados = function(req, res){
   res.render('chamados', { title: 'Chamados' });
 };
+
+exports.relatorio = function(req, res){
+  res.render('relatorio', { title: 'Relatório' });
+};
