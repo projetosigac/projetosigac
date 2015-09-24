@@ -25,8 +25,7 @@ char* sendSqlRequest(const char* sqlOperation) {
 	url[0] = '\0';
 
 	// Set the base URL to "http://www.google.com/query" by using strcat.
-	// TODO: Use the HTTP Proxy URL.
-	strcat(url, "http://www.google.com/query");
+	strcat(url, "http://powerful-forest-9086.herokuapp.com/");
 
 	// Append the query string "?q=" by using strcat.
 	strcat(url, "?q=");
