@@ -210,7 +210,7 @@
                                                 <intprop name="Font">1</intprop>
                                                 <intprop name="ColorIndex">1</intprop>
                                                 <enumprop name="Alignment">A661_LEFT</enumprop>
-                                                <stringprop name="LabelString">OCCURRENCE:</stringprop>
+                                                <stringprop name="LabelString">INCIDENT ID:</stringprop>
                                             </model>
                                         </widget>
                                         <widget name="Label" oid="2c106a1f-ecd7-4816-a424-127dc2edcf0e" type="Label">
@@ -239,9 +239,9 @@
                                                 <intprop name="WidgetIdent">92</intprop>
                                                 <enumprop name="Enable">A661_TRUE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
-                                                <intprop name="PosX">2800</intprop>
-                                                <intprop name="PosY">-900</intprop>
-                                                <intprop name="SizeX">7000</intprop>
+                                                <intprop name="PosX">3120</intprop>
+                                                <intprop name="PosY">-860</intprop>
+                                                <intprop name="SizeX">6750</intprop>
                                                 <intprop name="SizeY">800</intprop>
                                                 <intprop name="StyleSet">110</intprop>
                                                 <intprop name="NextFocusedWidget">0</intprop>
@@ -560,7 +560,7 @@
                                                 <intprop name="Font">0</intprop>
                                                 <intprop name="ColorIndex">1</intprop>
                                                 <enumprop name="Alignment">A661_CENTER</enumprop>
-                                                <stringprop name="LabelString">Victims</stringprop>
+                                                <stringprop name="LabelString">Incident</stringprop>
                                             </model>
                                         </widget>
                                     </children>
@@ -862,7 +862,7 @@
                                                 <intprop name="Font">0</intprop>
                                                 <intprop name="ColorIndex">1</intprop>
                                                 <enumprop name="Alignment">A661_CENTER</enumprop>
-                                                <stringprop name="LabelString">Incident</stringprop>
+                                                <stringprop name="LabelString">Victim</stringprop>
                                             </model>
                                         </widget>
                                     </children>
@@ -1177,5 +1177,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1339752843 -->
+<!-- crc32 : 1385812190 -->
 
