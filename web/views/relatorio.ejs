@@ -29,7 +29,7 @@
                         
                         <input type="text" class="form-control" id="heatmapCenter" placeholder="Ex.: Pq. Santos Dumont, São José dos Campos" />
                         <span class="input-group-btn">
-                            <button type="button" class="btn btn-default" aria-label="Search">
+                            <button id="searchCenterButton" type="button" class="btn btn-default" aria-label="Search">
                               <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
                             </button>
                         </span>
@@ -70,18 +70,17 @@
 
 <script>
 
-    var map, heatmap;
+    var map, heatmap, geocoder;
     var heatmapCircle;
     var pointMvc = new google.maps.MVCArray([]);
 
     function initialize() {
       initMap();
+      bindFormToMap();
       updatePoints();
     }
 
     function updatePoints() {
-      console.log(heatmapCircle.getRadius())
-      console.log(heatmapCircle.getCenter())
       $.ajax({ 
         url: "reports/get_list", 
         type: "get",
@@ -97,11 +96,8 @@
 
           var points = JSON.parse(resp).reports;
 
-          console.log(points);
           for (var i=0; i<points.length; i++) {
             var p = points[i];
-            console.log(p);
-            console.log('adding point');
             pointMvc.push(new google.maps.LatLng(p.lat, p.lng));
           }
         }
@@ -119,8 +115,10 @@
       map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: center,
-        mapTypeId: google.maps.MapTypeId.SATELLITE
+        mapTypeId: google.maps.MapTypeId.HYBRID,
+        streetViewControl: false
       });
+      geocoder = new google.maps.Geocoder();
 
       heatmap = new google.maps.visualization.HeatmapLayer({
         data: pointMvc,
@@ -141,22 +139,118 @@
         zIndex: 1,
         map: map,
       });
+    }
 
+    var editingCircle = false;
+
+    function setHeatmapCircleRadius(radius) {
+      editingCircle = true;
+      heatmapCircle.setRadius(radius);
+      editingCircle = false;
+    }
+
+    function setHeatmapCircleCenter(center) {
+      editingCircle = true;
+      heatmapCircle.setCenter(center);
+      editingCircle = false;
+    }
+
+    function bindFormToMap() {
+      // Heatmap search radius
       google.maps.event.addListener(heatmapCircle, 'radius_changed', function() {
-        var rad = Math.round(heatmapCircle.getRadius());
-        if (rad < 500) {
-            heatmapCircle.setRadius(rad = 500);
+        if (editingCircle) return;
+
+        var radius = Math.round(heatmapCircle.getRadius());
+        if (radius < 500) {
+          setHeatmapCircleRadius(radius);
         }
-        $('#searchRadius').val(rad / 1000.0);
-      });
-      $('#searchRadius').change(function() {
-        heatmapCircle.setRadius(1000 * $(this).val());
+        $('#searchRadius').val(radius / 1000.0);
+        updateMapZoomLevel();
       });
 
+      $('#searchRadius').change(function() {
+        var radius = $(this).val();
+        if (isNaN(radius)) {
+          $(this).val(radius = 1);
+        } else if (radius < 0.5) {
+          $(this).val(radius = 0.5);
+        }
+
+        setHeatmapCircleRadius(1000 * radius);
+        updateMapZoomLevel();
+      });
+
+      // Heatmap search center
       google.maps.event.addListener(heatmapCircle, 'center_changed', function() {
+        if (editingCircle) return;
+
         var c = heatmapCircle.getCenter();
-        console.log(c);
+        map.panTo(c);
+
         $('#heatmapCenter').val(roundDecimal(c.lat(), 6) + " " + roundDecimal(c.lng(), 6));
+        getFriendlyAddress(c, function(address) {
+          $('#heatmapCenter').val(address);
+        });
+      });
+
+      $('#searchCenterButton').click(function() {
+        searchHeatmapLocation($('#heatmapCenter').val(), function(location) {
+          setHeatmapCircleCenter(location);
+          map.setCenter(location);
+          updateMapZoomLevel();
+        });
+      });
+
+      $('#heatmapCenter').keypress(function(e) {
+        if(e.keyCode == 13) {
+          e.preventDefault();
+          $("#searchCenterButton").click();
+        }
+      });
+      $('#searchRadius').keypress(function(e) {
+        if(e.keyCode == 13) {
+          e.preventDefault();
+          $(this).change();
+        }
+      });
+    }
+
+    function zoomLevelForRadius(loc, radius) {
+        var meters_per_pixel = radius / $('#map').height();
+        var zoom = Math.log2(156543.03392 * Math.cos(loc.lat() * Math.PI / 180) / meters_per_pixel);
+        return Math.floor(zoom) - 1;
+    }
+
+    function updateMapZoomLevel() {
+        var zoom = zoomLevelForRadius(heatmapCircle.getCenter(), heatmapCircle.getRadius());
+        if (zoom != map.getZoom()) {
+            map.setZoom(zoom);
+            map.setCenter(heatmapCircle.getCenter());
+        }
+    }
+
+    function searchHeatmapLocation(address, callback) {
+        geocoder.geocode({
+            address: address,
+            region: 'BR',
+            bounds: map.getBounds(),
+            componentRestrictions: {country: 'BR'}
+        }, function (results, status) {
+            if (status == google.maps.GeocoderStatus.OK && results[0]) {
+                var location = results[0].geometry.location;
+                callback(location);
+            }
+        });
+    }
+
+    function getFriendlyAddress(location, callback) {
+      geocoder.geocode({
+        location: location
+      }, function (results, status) {
+          if (status == google.maps.GeocoderStatus.OK && results[0]) {
+            var address = results[0].formatted_address;
+            callback(address);
+          }
       });
     }
 
