@@ -716,7 +716,7 @@
                                                 <intprop name="StyleSet">110</intprop>
                                                 <intprop name="NextFocusedWidget">0</intprop>
                                                 <intprop name="MaxNumberOfEntries">1024</intprop>
-                                                <intprop name="NumberOfEntries">16</intprop>
+                                                <intprop name="NumberOfEntries">10</intprop>
                                                 <intprop name="SelectedEntry">1</intprop>
                                                 <intprop name="MaxStringLength">32</intprop>
                                                 <intprop name="FirstAccessibleEntry">1</intprop>
@@ -750,30 +750,18 @@
                                                     <enumprop name="8">A661_TRUE</enumprop>
                                                     <enumprop name="9">A661_TRUE</enumprop>
                                                     <enumprop name="10">A661_TRUE</enumprop>
-                                                    <enumprop name="11">A661_TRUE</enumprop>
-                                                    <enumprop name="12">A661_TRUE</enumprop>
-                                                    <enumprop name="13">A661_TRUE</enumprop>
-                                                    <enumprop name="14">A661_TRUE</enumprop>
-                                                    <enumprop name="15">A661_TRUE</enumprop>
-                                                    <enumprop name="16">A661_TRUE</enumprop>
                                                 </arrayprop>
                                                 <arrayprop name="LabelStringArray">
-                                                    <stringprop name="1">Entry1</stringprop>
-                                                    <stringprop name="2">Entry2</stringprop>
-                                                    <stringprop name="3">Entry3</stringprop>
-                                                    <stringprop name="4">Entry4</stringprop>
-                                                    <stringprop name="5">Entry4</stringprop>
-                                                    <stringprop name="6">Entry4</stringprop>
-                                                    <stringprop name="7">Entry4</stringprop>
-                                                    <stringprop name="8">Entry4</stringprop>
-                                                    <stringprop name="9">Entry4</stringprop>
-                                                    <stringprop name="10">Entry4</stringprop>
-                                                    <stringprop name="11">Entry4</stringprop>
-                                                    <stringprop name="12">Entry4</stringprop>
-                                                    <stringprop name="13">Entry4</stringprop>
-                                                    <stringprop name="14">Entry4</stringprop>
-                                                    <stringprop name="15">Entry4</stringprop>
-                                                    <stringprop name="16">Entry4</stringprop>
+                                                    <stringprop name="1">victim1</stringprop>
+                                                    <stringprop name="2">victim2</stringprop>
+                                                    <stringprop name="3">victim3</stringprop>
+                                                    <stringprop name="4">victim4</stringprop>
+                                                    <stringprop name="5">victim5</stringprop>
+                                                    <stringprop name="6">victim6</stringprop>
+                                                    <stringprop name="7">victim7</stringprop>
+                                                    <stringprop name="8">victim8</stringprop>
+                                                    <stringprop name="9">victim9</stringprop>
+                                                    <stringprop name="10">victim10</stringprop>
                                                 </arrayprop>
                                             </model>
                                         </widget>
@@ -1137,5 +1125,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 2001726524 -->
+<!-- crc32 : 1709615567 -->
 

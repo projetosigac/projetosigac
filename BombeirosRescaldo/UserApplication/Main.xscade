@@ -966,13 +966,17 @@
 								</Variable>
 							</locals>
 							<data>
-								<!-- _L1 = 5; -->
+								<!-- _L1 = SCREENING_TAB_ID; -->
 								<Equation>
 									<lefts>
 										<VariableRef name="_L1"/>
 									</lefts>
 									<right>
-										<ConstValue value="5"/>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="SCREENING_TAB_ID"/>
+											</path>
+										</IdExpression>
 									</right>
 									<pragmas>
 										<ed:Equation oid="!ed/2152/736A/3C0/5603305f184d"/>
@@ -1078,13 +1082,17 @@
 								</Variable>
 							</locals>
 							<data>
-								<!-- _L1 = 26; -->
+								<!-- _L1 = INCIDENTS_TAB_ID; -->
 								<Equation>
 									<lefts>
 										<VariableRef name="_L1"/>
 									</lefts>
 									<right>
-										<ConstValue value="26"/>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="INCIDENTS_TAB_ID"/>
+											</path>
+										</IdExpression>
 									</right>
 									<pragmas>
 										<ed:Equation oid="!ed/2159/736A/3C0/5603305f5723"/>
@@ -1206,13 +1214,17 @@
 										<ed:Equation oid="!ed/2160/736A/3C0/5603305f248d"/>
 									</pragmas>
 								</Equation>
-								<!-- _L1 = 39; -->
+								<!-- _L1 = VICTIMS_TAB_ID; -->
 								<Equation>
 									<lefts>
 										<VariableRef name="_L1"/>
 									</lefts>
 									<right>
-										<ConstValue value="39"/>
+										<IdExpression>
+											<path>
+												<ConstVarRef name="VICTIMS_TAB_ID"/>
+											</path>
+										</IdExpression>
 									</right>
 									<pragmas>
 										<ed:Equation oid="!ed/2161/736A/3C0/5603305f458e"/>
@@ -1813,7 +1825,7 @@
 										<Point x="25239" y="16164"/>
 									</labelPos>
 									<slashPos>
-										<Point x="28417" y="16166"/>
+										<Point x="28416" y="16166"/>
 									</slashPos>
 								</TransitionGE>
 								<TransitionGE presentable="!ed/215d/736A/3C0/5603305f5e0c">
@@ -1830,7 +1842,7 @@
 										<Point x="19842" y="19472"/>
 									</labelPos>
 									<slashPos>
-										<Point x="23363" y="19474"/>
+										<Point x="23363" y="19473"/>
 									</slashPos>
 								</TransitionGE>
 								<StateGE display="split" presentable="!ed/2158/736A/3C0/5603305f7ea6">
@@ -1855,7 +1867,7 @@
 										<Point x="20345" y="15927"/>
 									</labelPos>
 									<slashPos>
-										<Point x="23284" y="15928"/>
+										<Point x="23283" y="15928"/>
 									</slashPos>
 								</TransitionGE>
 								<TransitionGE presentable="!ed/2156/736A/3C0/5603305f280d">
