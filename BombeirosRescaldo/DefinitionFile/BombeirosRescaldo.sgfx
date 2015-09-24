@@ -213,14 +213,14 @@
                                                 <stringprop name="LabelString">INCIDENT ID:</stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="Label" oid="7a51fa4c-7da1-4e26-81d7-4f524bd93740" type="Label">
+                                        <widget name="NewVictimId" oid="7a51fa4c-7da1-4e26-81d7-4f524bd93740" type="Label">
                                             <IDE/>
                                             <model>
                                                 <intprop name="WidgetIdent">12</intprop>
                                                 <enumprop name="Anonymous">A661_FALSE</enumprop>
                                                 <enumprop name="Visible">A661_TRUE</enumprop>
-                                                <intprop name="PosX">2800</intprop>
-                                                <intprop name="PosY">0</intprop>
+                                                <intprop name="PosX">3100</intprop>
+                                                <intprop name="PosY">20</intprop>
                                                 <intprop name="SizeX">5000</intprop>
                                                 <intprop name="SizeY">800</intprop>
                                                 <intprop name="RotationAngle">0</intprop>
@@ -230,7 +230,7 @@
                                                 <intprop name="Font">0</intprop>
                                                 <intprop name="ColorIndex">1</intprop>
                                                 <enumprop name="Alignment">A661_LEFT</enumprop>
-                                                <stringprop name="LabelString"></stringprop>
+                                                <stringprop name="LabelString">victim1</stringprop>
                                             </model>
                                         </widget>
                                         <widget name="EditBoxText" oid="feb3419e-ce06-4093-83da-41b3c25e361e" type="EditBoxText">
@@ -1125,5 +1125,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1709615567 -->
+<!-- crc32 : 2141446100 -->
 
