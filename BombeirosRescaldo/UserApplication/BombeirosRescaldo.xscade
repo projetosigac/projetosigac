@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Constant name="MAX_STRING_SIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="512"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/216e/76E9/2C080/5603396627c6"/>
+			</pragmas>
+		</Constant>
+		<Type name="String">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="MAX_STRING_SIZE"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/2174/76E9/2C080/5603396b2ec"/>
+			</pragmas>
+		</Type>
+		<Constant external="imported" name="TESTE_STRING">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Constant oid="!ed/2188/76E9/2C080/56033a4335ac"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>
