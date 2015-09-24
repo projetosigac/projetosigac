@@ -63,5 +63,50 @@
 				<ed:Constant oid="!ed/461a/73E7/2F7F0/56035c9d7ab7"/>
 			</pragmas>
 		</Constant>
+		<Constant name="SCREENING_TAB_ID">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2441/7696/478/560439d0c65"/>
+			</pragmas>
+		</Constant>
+		<Constant name="VICTIMS_TAB_ID">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="39"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2442/7696/478/560439de317a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INCIDENTS_TAB_ID">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="26"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2443/7696/478/560439ef64f0"/>
+			</pragmas>
+		</Constant>
 	</declarations>
 </File>
