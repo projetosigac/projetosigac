@@ -87,6 +87,18 @@
 						<ed:Variable oid="!ed/434a/73E7/2F7F0/5603587853fe"/>
 					</pragmas>
 				</Variable>
+				<Variable name="ViewButtonPressed">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/228c/2D38/6A8/560458067373"/>
+					</pragmas>
+				</Variable>
 			</inputs>
 			<outputs>
 				<Variable name="EmitToCDS">
@@ -1056,11 +1068,21 @@
 										<StateRef name="VictimsTab"/>
 									</target>
 									<condition>
-										<IdExpression>
-											<path>
-												<ConstVarRef name="VictimsTabSelected"/>
-											</path>
-										</IdExpression>
+										<!-- VictimsTabSelected or ViewButtonPressed -->
+										<NAryOp name="1" operator="or">
+											<operands>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="VictimsTabSelected"/>
+													</path>
+												</IdExpression>
+												<IdExpression>
+													<path>
+														<ConstVarRef name="ViewButtonPressed"/>
+													</path>
+												</IdExpression>
+											</operands>
+										</NAryOp>
 									</condition>
 									<pragmas>
 										<ed:Transition oid="!ed/215e/736A/3C0/5603305f258c"/>
@@ -1757,13 +1779,13 @@
 									<positions>
 										<Point x="6218" y="21881"/>
 										<Point x="7938" y="21881"/>
-										<Point x="7938" y="21881"/>
-										<Point x="8599" y="21881"/>
+										<Point x="7938" y="21960"/>
+										<Point x="8758" y="21960"/>
 									</positions>
 								</Edge>
 								<EquationGE presentable="!ed/2170/736A/3C0/5603307c771d">
 									<position>
-										<Point x="8573" y="21616"/>
+										<Point x="8731" y="21696"/>
 									</position>
 									<size>
 										<Size width="212" height="503"/>
