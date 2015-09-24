@@ -1,10 +1,10 @@
-## Example: Make a request to a REST API using Scade
+## Example: Make Request to a REST API using Scade
 
 Required libraries:
 
 cURL: http://curl.haxx.se/
 
-# Dinamically linking the library to Scade on Windows using MinGW
+# Dynamically linking the library to Scade on Windows using MinGW
 * Scade SUITE:
 	* Project > Code Generator > Settings...
 		* Include "..\..\lib\libcurldll.a" on tab Compiler > Additional linker options: for Simulation configuration.
