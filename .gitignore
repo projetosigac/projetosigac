@@ -69,3 +69,5 @@ Icon
 *.orig
 
 *.pyc
+**/lib
+**/include

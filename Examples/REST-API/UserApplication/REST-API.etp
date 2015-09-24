@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="155" defaultConfiguration="21">
+<Project id="1" oid_count="164" defaultConfiguration="21">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -329,6 +329,18 @@
 		<Prop id="139" name="@TRACEABILITY:Project">
 			<value>REST-API.rqtf</value>
 		</Prop>
+		<Prop id="159" name="@GNU C:ADD_COMP_OPTIONS">
+			<value>-O2 -std=c99 -pedantic</value>
+			<configuration>21</configuration>
+		</Prop>
+		<Prop id="163" name="@GNU C:ADD_LINK_OPTIONS">
+			<value>&quot;..\..\lib\libcrypto.a&quot; &quot;..\..\lib\libcurl.a&quot; &quot;..\..\lib\libidn.a&quot; &quot;..\..\lib\librtmp.a&quot; &quot;..\..\lib\libssh2.a&quot; &quot;..\..\lib\libssl.a&quot; &quot;..\..\lib\libz.a&quot;</value>
+			<configuration>21</configuration>
+		</Prop>
+		<Prop id="164" name="@COMPILER:ADD_INCLUDE_DIR">
+			<value>..\include</value>
+			<configuration>21</configuration>
+		</Prop>
 	</props>
 	<roots>
 		<Folder id="3" extensions="vsp;etp" name="SCADE Libraries">
@@ -388,11 +400,6 @@
 						</Prop>
 					</props>
 				</FileRef>
-			</elements>
-		</Folder>
-		<Folder id="155" extensions="etp" name="mylibs">
-			<elements>
-				<FileRef id="154" persistAs="..\..\ex1\LandingGear.etp"/>
 			</elements>
 		</Folder>
 	</roots>
