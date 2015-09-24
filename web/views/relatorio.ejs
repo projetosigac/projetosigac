@@ -23,7 +23,7 @@
                 <div class="alert alert-info" role="alert">
                     <b>Heatmap:</b> Inicialmente configure a região do heatmap a ser gerado.
                 </div>
-                <form onsubmit="return false;">
+                <form id="heatmap_form">
                     <label>Centro da pesquisa:</label>
                     <div class="input-group form-group">
                         
@@ -39,7 +39,7 @@
                         <input type="number" value="1" min=".5" step=".1" class="form-control" id="searchRadius" />
                         <span class="input-group-addon" id="basic-addon2">km</span>
                     </div>
-                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Gerar Heatmap</button>
+                    <button type="submit" class="btn btn-primary">Gerar Heatmap</button>
                 </form>
             </div>
       <div class="col-md-9">
@@ -47,24 +47,6 @@
             </div>
     </div>
   </div>
-    <!-- Modal: Confirmação do Atendimento -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <center>
-                <img src="/../images/ok.png" style="width:150px;" />
-                <br />
-                <label>Ocorrência aberta com sucesso!</label>  
-            </center>            
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar</button>
-          </div>
-        </div>
-      </div>
-    </div>    
-
 	
 <%- include layouts/footer.ejs %>
 
@@ -77,7 +59,6 @@
     function initialize() {
       initMap();
       bindFormToMap();
-      updatePoints();
     }
 
     function updatePoints() {
@@ -122,7 +103,8 @@
 
       heatmap = new google.maps.visualization.HeatmapLayer({
         data: pointMvc,
-        map: map
+        map: map,
+        radius: 16
       });
 
       heatmapCircle = new google.maps.Circle({
@@ -212,6 +194,11 @@
           e.preventDefault();
           $(this).change();
         }
+      });
+
+      $('#heatmap_form').submit(function() {
+        updatePoints();
+        return false;
       });
     }
 
