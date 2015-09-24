@@ -1,0 +1,2 @@
+kcg.log
+kcg_s2c_config.txt

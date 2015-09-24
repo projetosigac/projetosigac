@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Type name="Boletim">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="description">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="BigText"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/20df/20AE/1418/55f636d56abd"/>
+							</pragmas>
+						</Field>
+						<Field name="dt_fato">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="String"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/210a/20AE/1418/55f637e1d9a"/>
+							</pragmas>
+						</Field>
+						<Field name="hora_fato">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="String"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/211a/20AE/1418/55f638012142"/>
+							</pragmas>
+						</Field>
+						<Field name="dt_ini_atend">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="String"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/2121/20AE/1418/55f638081e26"/>
+							</pragmas>
+						</Field>
+						<Field name="hora_ini_atend">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="String"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/2128/20AE/1418/55f638087451"/>
+							</pragmas>
+						</Field>
+						<Field name="dt_fim_atend">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="String"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/212f/20AE/1418/55f63808cc7"/>
+							</pragmas>
+						</Field>
+						<Field name="hora_fim_atend">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="String"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/2136/20AE/1418/55f63809506"/>
+							</pragmas>
+						</Field>
+						<Field name="rg">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="String"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/213d/20AE/1418/55f63859451d"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/20de/20AE/1418/55f636b26f5b"/>
+			</pragmas>
+		</Type>
+		<Type name="String">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="20"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/20e8/20AE/1418/55f6376747ad"/>
+			</pragmas>
+		</Type>
+		<Type name="BigText">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="1000"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/254e/20AE/1418/55f6482a740c"/>
+			</pragmas>
+		</Type>
+		<Constant name="STR_SIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2232/2628/D70/55ff75817e8b"/>
+			</pragmas>
+		</Constant>
+		<Type name="Name">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="5"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/2211/725F/100C/560089c2146e"/>
+			</pragmas>
+		</Type>
+		<Constant name="TEXTO_BTN_ESPERA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Name"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['W', 'A', 'I', 'T', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'W'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'T'"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2280/2628/D70/55ff75a412a3"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TEXTO_BTN_ENVIAR">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Name"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['S', 'E', 'N', 'D', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'D'"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/21ab/2628/D70/55ff6d304a25"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TEXTO_TBN_END_TIME">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['E', 'n', 'd', ' ', 'T', 'i', 'm', 'e', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'n'"/>
+						<ConstValue value="'d'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="'T'"/>
+						<ConstValue value="'i'"/>
+						<ConstValue value="'m'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/266f/3D11/1300/5600cc12314f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TEXTO_BTN_START_TIME">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['S', 't', 'a', 'r', 't', ' ', 'T', 'i', 'm', 'e', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'r'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="'T'"/>
+						<ConstValue value="'i'"/>
+						<ConstValue value="'m'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/25c8/3D11/1300/5600cc124f8d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TEXTO_BTN_START_DATE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['S', 't', 'a', 'r', 't', ' ', 'D', 'a', 't', 'e', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'r'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="'D'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/232c/3D11/1300/5600cc0f3b4a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TEXTO_BTN_RG">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['R', 'G', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'G'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/247a/3D11/1300/5600cc114993"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TEXTO_BTN_FACT_TIME">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['F', 'a', 'c', 't', ' ', 'T', 'i', 'm', 'e', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'F'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'c'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="'T'"/>
+						<ConstValue value="'i'"/>
+						<ConstValue value="'m'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2521/3D11/1300/5600cc115561"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TEXTO_BTN_FACT_DATE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['F', 'a', 'c', 't', ' ', 'D', 'a', 't', 'e', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'F'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'c'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="'D'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2273/3D11/1300/5600cbe7193f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="TEXTO_BTN_END_DATE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['E', 'n', 'd', ' ', 'D', 'a', 't', 'e', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'n'"/>
+						<ConstValue value="'d'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="'D'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/23d3/3D11/1300/5600cc101bc7"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

@@ -1,0 +1,1 @@
+-expall -target C -O 0 -name_length 200 -significance_length 31 -user_config ./user_macros.h -input_threshold 2 -probes -debug -node Enviar C:/Users/Goku/Desktop/scade/BO/BO/BO/Simulation/scade_model_without_unused.scade -target_dir C:/Users/Goku/Desktop/scade/BO/BO/BO/Simulation 

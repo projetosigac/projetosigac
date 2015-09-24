@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2" xmlns:SP="unknown_address">
+	<declarations>
+		<Operator kind="function" external="imported" name="Salvar">
+			<outputs>
+				<Variable name="output">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/266a/4414/139C/5603644a2ee6"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<pragmas>
+				<ed:Operator oid="!ed/2669/4414/139C/560363643d81"/>
+				<SP:Pragma>
+					set varSpName {}&#xA;set varSpId {}&#xA;set varSpMajor {}&#xA;set varSpMinor {}&#xA;set varSpStack {}
+				</SP:Pragma>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

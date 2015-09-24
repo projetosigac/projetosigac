@@ -1,0 +1,7 @@
+*****************************
+*** Include Directories   ***
+*****************************
+.
+$(SCADE)
+..\..\..\..\..\..\..\..\Program Files (x86)\Esterel Technologies\Esterel SCADE 6.4.2\SCADE\libraries\libmathext
+

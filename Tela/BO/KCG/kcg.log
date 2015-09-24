@@ -1,0 +1,26 @@
+$*************** KCG Version 6.1.3 (build i6) ****************
+** Command: kcg613.exe -config C:/Users/Goku/Desktop/scade/BO/BO/BO/KCG/config.txt
+** Generation date: 2015-09-24T00:06:05
+*************************************************************$
+$*************** KCG Version 6.1.3 (build i6) ****************
+** Command: s2c613 -config C:/Users/Goku/Desktop/scade/BO/BO/BO/KCG\kcg_s2c_config.txt
+** Generation date: 2015-09-24T00:06:05
+*************************************************************$
+*** Semantic Error (ERR_516): Undefined variable
+  at file C:/Users/Goku/Desktop/scade/BO/BO/BO/KCG/scade_model_without_unused.scade, line 548, character 0
+  at path Enviar/ano/
+ the local variable ano has no definition
+*** Semantic Warning (WAR_508): Unused input
+  at file C:/Users/Goku/Desktop/scade/BO/BO/BO/KCG/scade_model_without_unused.scade, line 548, character 0
+  at path Enviar/ano/
+ The local variable ano is never used
+1 warning was found
+1 error was found
+$*************** KCG Version 6.1.3 (build i6) ****************
+** s2c.log
+** Generation date: 2015-09-24T00:06:05
+*************************************************************$
+$*************** KCG Version 6.1.3 (build i6) ****************
+** C:/Users/Goku/Desktop/scade/BO/BO/BO/KCG\kcg.log
+** Generation date: 2015-09-24T00:06:05
+*************************************************************$

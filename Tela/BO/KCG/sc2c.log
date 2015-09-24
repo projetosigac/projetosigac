@@ -1,0 +1,18 @@
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-24T00:06:04
+** Command: scade -code "C:\Users\Goku\Desktop\scade\BO\BO\BO\BO.etp" -node Enviar -conf KCG
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+ ~kcg.log
+  at file C:\Users\Goku\Desktop\scade\BO\BO\BO\KCG\kcg.log, line 0, character 0
+ ~kcg_s2c_config.txt
+  at file C:\Users\Goku\Desktop\scade\BO\BO\BO\KCG\kcg_s2c_config.txt, line 0, character 0
+*** Generated Files Information (GENFIL): Code Generator Generated files
+ ~sc2c.log
+  at file C:\Users\Goku\Desktop\scade\BO\BO\BO\KCG\sc2c.log, line 0, character 0
+ ~sc2c_integration_files.txt
+  at file C:\Users\Goku\Desktop\scade\BO\BO\BO\KCG\sc2c_integration_files.txt, line 0, character 0
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-24T00:06:05
+** sc2c.log
+*************************************************************$

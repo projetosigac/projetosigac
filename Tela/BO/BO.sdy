@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="Enviar" oid="!ed/2281/20AE/1418/55f63e666e77">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="39" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Send">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="enviar" type="bool" oid="!ed/2283/20AE/1418/55f63e73659a" instancepath="Enviar/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="35" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="20" WidgetType="EditBoxText" WidgetName="RG">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="rg" type="char^20" oid="!ed/246d/20AE/1418/55f645b21dc9" instancepath="Enviar/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="38" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="20" WidgetType="EditBoxText" WidgetName="Hora F Aten">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="hora_fim_atend" type="char^20" oid="!ed/246c/20AE/1418/55f645b21781" instancepath="Enviar/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="37" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="20" WidgetType="EditBoxText" WidgetName="Hora I Aten">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="hora_ini_atend" type="char^20" oid="!ed/246b/20AE/1418/55f645b2672b" instancepath="Enviar/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="34" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="20" WidgetType="EditBoxText" WidgetName="Data F Aten">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="dt_fim_atend" type="char^20" oid="!ed/246a/20AE/1418/55f645b24c92" instancepath="Enviar/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="33" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="20" WidgetType="EditBoxText" WidgetName="Data I Aten">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="dt_ini_atend" type="char^20" oid="!ed/2469/20AE/1418/55f645b2cd9" instancepath="Enviar/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="36" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="20" WidgetType="EditBoxText" WidgetName="Hora Fato">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="hora_fato" type="char^20" oid="!ed/2468/20AE/1418/55f645b2760b" instancepath="Enviar/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="32" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="20" WidgetType="EditBoxText" WidgetName="Data Fato">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="dt_fato" type="char^20" oid="!ed/2467/20AE/1418/55f645b2900" instancepath="Enviar/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="18" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="1000" WidgetType="EditBoxText" WidgetName="EditBoxText">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="description" type="char^1000" oid="!ed/2466/20AE/1418/55f645b265ee" instancepath="Enviar/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Layer1Visible" type="bool" oid="!ed/218c/2628/D70/55ff6b20348c" instancepath="Enviar/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Layer1Active" type="bool" oid="!ed/218b/2628/D70/55ff6b201c22" instancepath="Enviar/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\BO.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>
