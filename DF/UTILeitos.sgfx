@@ -7,8 +7,11 @@
 <specification>
     <IDE>
         <environment_id value="-2133961615"/>
+        <df_gen>
+            <output path="UTILeitosDF"/>
+        </df_gen>
         <ratio horizontal="1" vertical="1"/>
-        <reporter authors="Fernando J Miguel" company="Instituto Tecnológico de Aeronáutica" date="08.09.2015" reference="Listex1 / Listex2" subtitle="#TS06 / #US07" title=" UTI - Leitos">
+        <reporter authors="Fernando J Miguel" classification="" company="Instituto Tecnológico de Aeronáutica" date="08.09.2015" distribution_list="" index="" issue="" reference="Listex1 / Listex2" referenceNr="" subtitle="#TS06 / #US07" title=" UTI - Leitos">
             <description>Definition File utilizado para atendimento a US07</description>
             <summary>Definition File criado pelo time #TS06 para atendimento de #US07, referente a Sprint1 do projeto SI-GAC</summary>
         </reporter>
@@ -17,7 +20,7 @@
         <dimension height="768" width="768"/>
     </symbology>
     <A661 library_version="1" supp_version="4">
-        <intprop name="ApplicationId">1</intprop>
+        <intprop name="ApplicationId">2</intprop>
     </A661>
     <children>
         <A661Layer name="a661_layer" oid="6a1906dc-3499-4d91-8743-c75e864372f8">
@@ -212,5 +215,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 76884129 -->
+<!-- crc32 : 3776842690 -->
 
