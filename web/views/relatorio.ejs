@@ -36,7 +36,7 @@
                     </div>
                     <label>Raio da pesquisa:</label>
                     <div class="input-group form-group">                        
-                        <input type="number" value="5" min="1" class="form-control" id="qtdVitimas" />
+                        <input type="number" value="1" min=".5" step=".1" class="form-control" id="searchRadius" />
                         <span class="input-group-addon" id="basic-addon2">km</span>
                     </div>
                     <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Gerar Heatmap</button>
@@ -68,115 +68,91 @@
 	
 <%- include layouts/footer.ejs %>
 
-    <script>
+<script>
 
-        var map, heatmap, drawingManager;
-        var pointMvc = new google.maps.MVCArray([
-            new google.maps.LatLng(37.782551, -122.445368),
-            new google.maps.LatLng(37.782745, -122.444586),
-            new google.maps.LatLng(37.782842, -122.443688)
-          ]);
+    var map, heatmap;
+    var heatmapCircle;
+    var pointMvc = new google.maps.MVCArray([]);
 
-        function initialize() {
-          initMap();
-          updatePoints();
+    function initialize() {
+      initMap();
+      updatePoints();
+    }
+
+    function updatePoints() {
+      var response;
+      $.get( "reports/all", function(r) {
+        while(pointMvc.getLength() > 0) pointMvc.pop();
+
+        console.log('parsing');
+        var points = JSON.parse(r).reports;
+
+        console.log('before for');
+        console.log(points);
+        for (var i=0; i<points.length; i++) {
+          var p = points[i];
+          console.log(p);
+          console.log('adding point');
+          pointMvc.push(new google.maps.LatLng(p.lat, p.lng));
         }
+      });
+    }
 
-        function updatePoints() {
-          var response;
-          $.get( "reports/all", function(r) {
-            while(pointMvc.getLength() > 0) pointMvc.pop();
+    function roundDecimal(num, decplaces) {
+        var multiplier = 1;
+        while (decplaces-- > 0) multiplier *= 10;
+        return Math.round(num * multiplier) / multiplier;
+    }
 
-            console.log('parsing');
-            var points = JSON.parse(r).reports;
+    function initMap() {
+      var center = new google.maps.LatLng(-23.200809, -45.892521);
+      map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: center,
+        mapTypeId: google.maps.MapTypeId.SATELLITE
+      });
 
-            console.log('before for');
-            console.log(points);
-            for (var i=0; i<points.length; i++) {
-              var p = points[i];
-              console.log(p);
-              console.log('adding point');
-              pointMvc.push(new google.maps.LatLng(p.lat, p.lng));
-            }
-          });
+      heatmap = new google.maps.visualization.HeatmapLayer({
+        data: pointMvc,
+        map: map
+      });
+
+      heatmapCircle = new google.maps.Circle({
+        center: center,
+        clickable: true,
+        editable: true,
+        draggable: false,
+        fillColor: '#1E90FF',
+        strokeColor: '#1E90FF',
+        fillOpacity: 0.2,
+        strokeOpacity: 0.4,
+        strokeWeight: 2,
+        radius: 1000,
+        zIndex: 1,
+        map: map,
+      });
+
+      google.maps.event.addListener(heatmapCircle, 'radius_changed', function() {
+        var rad = Math.round(heatmapCircle.getRadius());
+        if (rad < 500) {
+            heatmapCircle.setRadius(rad = 500);
         }
+        $('#searchRadius').val(rad / 1000.0);
+      });
+      $('#searchRadius').change(function() {
+        heatmapCircle.setRadius(1000 * $(this).val());
+      });
 
-        function initMap() {
-          map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 15,
-            center: {lat: -23.200809, lng: -45.892521},
-            mapTypeId: google.maps.MapTypeId.SATELLITE
-          });
+      google.maps.event.addListener(heatmapCircle, 'center_changed', function() {
+        var c = heatmapCircle.getCenter();
+        $('#heatmapCenter').val(roundDecimal(c.lat(), 6) + " " + roundDecimal(c.lng(), 6));
+      });
+    }
 
-          heatmap = new google.maps.visualization.HeatmapLayer({
-            data: pointMvc,
-            map: map
-          });
-
-          // drawingManager = new google.maps.drawing.DrawingManager({
-          //   drawingMode: google.maps.drawing.OverlayType.POLYGON,
-          //   markerOptions: {
-          //     draggable: true
-          //   },
-          //   polylineOptions: {
-          //     editable: true
-          //   },
-          //   rectangleOptions: polyOptions,
-          //   circleOptions: polyOptions,
-          //   polygonOptions: polyOptions,
-          //   map: map
-          // });
-        }
-
-        function chooseNewArea() {
-
-        }
-
-        function toggleHeatmap() {
-          heatmap.setMap(heatmap.getMap() ? null : map);
-        }
-
-        function changeGradient() {
-          var gradient = [
-            'rgba(0, 255, 255, 0)',
-            'rgba(0, 255, 255, 1)',
-            'rgba(0, 191, 255, 1)',
-            'rgba(0, 127, 255, 1)',
-            'rgba(0, 63, 255, 1)',
-            'rgba(0, 0, 255, 1)',
-            'rgba(0, 0, 223, 1)',
-            'rgba(0, 0, 191, 1)',
-            'rgba(0, 0, 159, 1)',
-            'rgba(0, 0, 127, 1)',
-            'rgba(63, 0, 91, 1)',
-            'rgba(127, 0, 63, 1)',
-            'rgba(191, 0, 31, 1)',
-            'rgba(255, 0, 0, 1)'
-          ]
-          heatmap.set('gradient', heatmap.get('gradient') ? null : gradient);
-        }
-
-        function changeRadius() {
-          heatmap.set('radius', heatmap.get('radius') ? null : 20);
-        }
-
-        function changeOpacity() {
-          heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
-        }
-
-        // Heatmap data: 500 Points
-        function getPoints() {
-          return [
-            new google.maps.LatLng(37.782551, -122.445368),
-            new google.maps.LatLng(37.782745, -122.444586),
-            new google.maps.LatLng(37.782842, -122.443688)
-          ];
-        }
-
-    </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4qT-G5vu5hSoFy89zR8YdTARSsez-3Ls&libraries=visualization,drawing&callback=initialize">
-    </script>
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4qT-G5vu5hSoFy89zR8YdTARSsez-3Ls&libraries=visualization&callback=initialize">
+</script>
 
 </body>
 </html>
