@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="Locations" oid="!ed/20f9/4392/5B8/560303534a58">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Variable name="OutBombLat1" type="real" oid="!ed/21bd/4392/5B8/560306104fdd" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="EQ01Lat" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutBombLat2" type="real" oid="!ed/23f8/4392/5B8/56031144248" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="EQ02Lat" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutBombLat3" type="real" oid="!ed/23fe/4392/5B8/560311453157" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="EQ03Lat" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutBombLong1" type="real" oid="!ed/21d2/4392/5B8/5603070751d3" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="EQ01Long" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutBombLong2" type="real" oid="!ed/23ec/4392/5B8/5603113f7a32" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="EQ02Long" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutBombLong3" type="real" oid="!ed/23f2/4392/5B8/560311405b33" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="EQ03Long" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutCriseLat" type="real" oid="!ed/2404/4392/5B8/56031149634b" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="CriseLat" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutrCriseLong" type="real" oid="!ed/240a/4392/5B8/5603114d4caa" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="CriseLong" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutDist3" type="real" oid="!ed/2354/1ADB/DEC/56033f801b96" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="EQ03Dist" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutDist2" type="real" oid="!ed/2353/1ADB/DEC/56033f807d1b" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="EQ02Dist" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutDist1" type="real" oid="!ed/2352/1ADB/DEC/56033f803867" instancepath="Locations/"/>
+					</output>
+					<inputs>
+						<Plug name="EQ01Dist" type="real" pathname="..\US02-DFv01.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>

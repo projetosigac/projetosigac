@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Constant name="Lati1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="-45.23"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/45f1/2BA9/1CD8/560329f991e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="Lati2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="-44.56"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/45f2/2BA9/1CD8/56032a0c424f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="Lati3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="-46.88"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/45f3/2BA9/1CD8/56032a116bed"/>
+			</pragmas>
+		</Constant>
+		<Constant name="Longi1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="-23.45"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/461e/2BA9/1CD8/56032a2910f1"/>
+			</pragmas>
+		</Constant>
+		<Constant name="Longi2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="-23.88"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/462c/2BA9/1CD8/56032a3251b7"/>
+			</pragmas>
+		</Constant>
+		<Constant name="Longi3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="-23.77"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/463a/2BA9/1CD8/56032a353c3c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LatiCrise">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="-50.5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/463b/2BA9/1CD8/56032a4277a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LongiCrise">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="-24.8"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/463c/2BA9/1CD8/56032a52304e"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

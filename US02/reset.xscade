@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Operator kind="node" name="reset">
+			<inputs>
+				<Variable name="Crise">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="real"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4533/2BA9/1CD8/5603276d6138"/>
+					</pragmas>
+				</Variable>
+				<Variable name="inicial">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="real"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/457c/2BA9/1CD8/560328282327"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="reset">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/455e/2BA9/1CD8/560327ba5736"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L6">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="real"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/456b/2BA9/1CD8/560327ed3296"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L7">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="real"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/457e/2BA9/1CD8/560328287be3"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L8">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4592/2BA9/1CD8/560328456b29"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- reset = _null; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="reset"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<NullRef/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/455f/2BA9/1CD8/560327ba57c7"/>
+					</pragmas>
+				</Equation>
+				<!-- _L6 = countdown(_L7, _null); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L6"/>
+					</lefts>
+					<right>
+						<!-- countdown(_L7, _null) -->
+						<CallExpression>
+							<operator>
+								<OpCall name="3">
+									<operator>
+										<OperatorRef name="countdown"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<callParameters>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L7"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<NullRef/>
+									</path>
+								</IdExpression>
+							</callParameters>
+						</CallExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/456a/2BA9/1CD8/560327ed65a4"/>
+					</pragmas>
+				</Equation>
+				<!-- _L7 = inicial; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L7"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="inicial"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/457d/2BA9/1CD8/5603282832e2"/>
+					</pragmas>
+				</Equation>
+				<!-- _L8 = math::RoundFloor(_L6); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L8"/>
+					</lefts>
+					<right>
+						<!-- math::RoundFloor(_L6) -->
+						<CallExpression>
+							<operator>
+								<OpCall name="2">
+									<operator>
+										<OperatorRef name="math::RoundFloor"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<callParameters>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L6"/>
+									</path>
+								</IdExpression>
+							</callParameters>
+						</CallExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4591/2BA9/1CD8/56032845643c"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/4528/2BA9/1CD8/56032765eb8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+					<diagrams>
+						<NetDiagram name="diagram_reset_1" landscape="true" format="A4 (210 297)" oid="!ed/4529/2BA9/1CD8/560327653223">
+							<presentationElements>
+								<EquationGE presentable="!ed/455f/2BA9/1CD8/560327ba57c7">
+									<position>
+										<Point x="17198" y="3545"/>
+									</position>
+									<size>
+										<Size width="317" height="503"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/456a/2BA9/1CD8/560327ed65a4">
+									<position>
+										<Point x="4895" y="5636"/>
+									</position>
+									<size>
+										<Size width="1773" height="1402"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/457d/2BA9/1CD8/5603282832e2">
+									<position>
+										<Point x="2884" y="5874"/>
+									</position>
+									<size>
+										<Size width="265" height="502"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/457d/2BA9/1CD8/5603282832e2" dstEquation="!ed/456a/2BA9/1CD8/560327ed65a4">
+									<positions>
+										<Point x="3149" y="6138"/>
+										<Point x="4022" y="6138"/>
+										<Point x="4022" y="6112"/>
+										<Point x="4895" y="6112"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/4591/2BA9/1CD8/56032845643c">
+									<position>
+										<Point x="10239" y="6641"/>
+									</position>
+									<size>
+										<Size width="1773" height="1403"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/456a/2BA9/1CD8/560327ed65a4" dstEquation="!ed/4591/2BA9/1CD8/56032845643c">
+									<positions>
+										<Point x="6668" y="6350"/>
+										<Point x="8440" y="6350"/>
+										<Point x="8440" y="7329"/>
+										<Point x="10239" y="7329"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>
