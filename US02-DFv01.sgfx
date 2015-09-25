@@ -1639,7 +1639,7 @@
                             <init>255</init>
                         </maxLength>
                         <textValue type="char">
-                            <init>[68,73,83,84,65,78,67,73,65,0]</init>
+                            <init>[68,73,83,84,65,78,67,73,65,32,40,107,109,41,0]</init>
                         </textValue>
                         <haloing>
                             <init>false</init>
@@ -2365,5 +2365,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1834810925 -->
+<!-- crc32 : 454017986 -->
 

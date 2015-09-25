@@ -121,5 +121,35 @@
 				<ed:Constant oid="!ed/463c/2BA9/1CD8/56032a52304e"/>
 			</pragmas>
 		</Constant>
+		<Constant name="KM_PER_LAT">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="110.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2239/7405/1E4/5604bc305cca"/>
+			</pragmas>
+		</Constant>
+		<Constant name="KM_PER_LONG">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="real"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="90.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2260/7405/1E4/5604bc4c28c5"/>
+			</pragmas>
+		</Constant>
 	</declarations>
 </File>
