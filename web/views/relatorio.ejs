@@ -156,10 +156,11 @@
       google.maps.event.addListener(heatmapCircle, 'radius_changed', function() {
         if (editingCircle) return;
 
-        var radius = Math.round(heatmapCircle.getRadius());
+        var radius = Math.round(heatmapCircle.getRadius() / 100) * 100;
         if (radius < 500) {
-          setHeatmapCircleRadius(radius = 500);
+          radius = 500;
         }
+        setHeatmapCircleRadius(radius);
         $('#searchRadius').val(radius / 1000.0);
         updateMapZoomLevel();
       });
