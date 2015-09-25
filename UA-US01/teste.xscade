@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Constant name="CSexFemale">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['F', 'e', 'm', 'a', 'l', 'e', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'F'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="'m'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'l'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/91d1/3A26/1EA4/55ff276e6e91"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CSexMale">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['M', 'a', 'l', 'e', ' ', ' ', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'M'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'l'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/91d2/3A26/1EA4/55ff277e772e"/>
+			</pragmas>
+		</Constant>
+		<Type name="T_String">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="StrSize"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/91d3/3A26/1EA4/55ff27cb46ca"/>
+			</pragmas>
+		</Type>
+		<Constant name="StrSize">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="10"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/91dc/3A26/1EA4/55ff27ef28c9"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CNotSelected">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['N', 'o', 't', 'S', 'e', 'l', 'e', 'c', 't', '.'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'o'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="'l'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="'c'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="'.'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/9251/3A26/1EA4/55ff28d839a0"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CSTARTBlack">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['B', 'l', 'a', 'c', 'k', ' ', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'B'"/>
+						<ConstValue value="'l'"/>
+						<ConstValue value="'a'"/>
+						<ConstValue value="'c'"/>
+						<ConstValue value="'k'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/93aa/3A26/1EA4/55ff2cd51992"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CSTARTRed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['R', 'e', 'd', ' ', ' ', ' ', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="'d'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/93ab/3A26/1EA4/55ff2ce365b7"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CSTARTYellow">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['Y', 'e', 'l', 'l', 'o', 'w', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'Y'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="'l'"/>
+						<ConstValue value="'l'"/>
+						<ConstValue value="'o'"/>
+						<ConstValue value="'w'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/93ac/3A26/1EA4/55ff2cef1de6"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CSTARTGreen">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['G', 'r', 'e', 'e', 'n', ' ', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'G'"/>
+						<ConstValue value="'r'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="'e'"/>
+						<ConstValue value="'n'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/93ad/3A26/1EA4/55ff2cf82c6e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CColorBlack">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/273e/4F60/1508/5600c1b33cbd"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CColorRed">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="21"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2754/4F60/1508/5600c1cf5c1d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CColorYellow">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="41"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2762/4F60/1508/5600c1d05b72"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CColorGreen">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="56"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2770/4F60/1508/5600c1d03f84"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CNotSelectedInt">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2841/4F60/1508/5600cb6415ac"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CAgeChild">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['0', '-', '1', '3', ' ', ' ', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'0'"/>
+						<ConstValue value="'-'"/>
+						<ConstValue value="'1'"/>
+						<ConstValue value="'3'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/29b3/478C/1FEC/56046dfd7bac"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CAgeTeenage">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['1', '4', '-', '2', '5', ' ', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'1'"/>
+						<ConstValue value="'4'"/>
+						<ConstValue value="'-'"/>
+						<ConstValue value="'2'"/>
+						<ConstValue value="'5'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/29b4/478C/1FEC/56046e095082"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CAgeAdult">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['2', '6', '-', '6', '0', ' ', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'2'"/>
+						<ConstValue value="'6'"/>
+						<ConstValue value="'-'"/>
+						<ConstValue value="'6'"/>
+						<ConstValue value="'0'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/29b5/478C/1FEC/56046e1136bb"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CAgeSenior">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['6', '1', '+', ' ', ' ', ' ', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'6'"/>
+						<ConstValue value="'1'"/>
+						<ConstValue value="'+'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/29b6/478C/1FEC/56046e1830d1"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CStrBlank">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['-', '-', '-', ' ', ' ', ' ', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'-'"/>
+						<ConstValue value="'-'"/>
+						<ConstValue value="'-'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2b8e/1B4D/20D4/56048c595ea8"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>
