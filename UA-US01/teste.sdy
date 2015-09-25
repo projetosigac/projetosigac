@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="Oper" oid="!ed/41bc/2CFB/1CB8/55f4057e3c11">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Dec">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Dec" type="bool" oid="!ed/41d6/2CFB/1CB8/55f4068f22fd" instancepath="Oper/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Inc">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Inc" type="bool" oid="!ed/41dd/2CFB/1CB8/55f40696190b" instancepath="Oper/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Q" type="real" oid="!ed/420c/2CFB/1CB8/55f407213e14" instancepath="Oper/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\DF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="Amount">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="QEmit" type="bool" oid="!ed/216e/C18/12A4/55f411fb6ae4" instancepath="Oper/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="Amount">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LayerVisible" type="bool" oid="!ed/219c/C18/12A4/55f4141e70b4" instancepath="Oper/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LayerActive" type="bool" oid="!ed/21a2/C18/12A4/55f41421910" instancepath="Oper/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DF.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+		<OperatorMapping name="ToggleGroup" oid="!ed/21a4/F04/2724/55fc64a3460b">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="ToggleButtonA">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NotifyA" type="bool" oid="!ed/21dd/F04/2724/55fc65947c56" instancepath="ToggleGroup/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="ToggleButtonB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NotifyB" type="bool" oid="!ed/21ea/F04/2724/55fc65a26662" instancepath="ToggleGroup/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="ToggleButtonC">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="NotifyC" type="bool" oid="!ed/21f7/F04/2724/55fc65a83ed0" instancepath="ToggleGroup/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="ToggleButtonA">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="StateA" type="int" oid="!ed/2204/F04/2724/55fc65d54acf" instancepath="ToggleGroup/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="ToggleButtonB">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="StateB" type="int" oid="!ed/2211/F04/2724/55fc65d73afd" instancepath="ToggleGroup/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="ToggleButtonC">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="StateC" type="int" oid="!ed/221e/F04/2724/55fc65d97a46" instancepath="ToggleGroup/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LayerActive" type="bool" oid="!ed/21f5/3A26/1EA4/55fefe4cdd4" instancepath="ToggleGroup/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LayerVisible" type="bool" oid="!ed/21f4/3A26/1EA4/55fefe4c2c6b" instancepath="ToggleGroup/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="QEmit" type="bool" oid="!ed/21f3/3A26/1EA4/55fefe4cb40" instancepath="ToggleGroup/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="ToggleButtonA">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="ToggleButtonB">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="ToggleButtonC">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="NewStateA" type="int" oid="!ed/221e/3A26/1EA4/55ff03814d69" instancepath="ToggleGroup/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="ToggleButtonA">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="NewStateB" type="int" oid="!ed/2228/3A26/1EA4/55ff03843c3e" instancepath="ToggleGroup/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="ToggleButtonB">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="NewStateC" type="int" oid="!ed/2232/3A26/1EA4/55ff0386518b" instancepath="ToggleGroup/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\DFToogle.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="9" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="ToggleButtonC">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+		<OperatorMapping name="Main" oid="!ed/231f/3A26/1EA4/55ff095c45ed">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="75" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="SexFemToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifyF" type="bool" oid="!ed/2457/3A26/1EA4/55ff0dad43fb" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="74" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="SexMaleToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifyM" type="bool" oid="!ed/246d/3A26/1EA4/55ff0ee85b70" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="74" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="SexMaleToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateM" type="int" oid="!ed/2483/3A26/1EA4/55ff0eff1443" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="75" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="SexFemToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateF" type="int" oid="!ed/2499/3A26/1EA4/55ff0f0e5fbf" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="83" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="State0BlackToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateBlack" type="int" oid="!ed/24af/3A26/1EA4/55ff0f2d1b56" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="84" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="State1RedToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateRed" type="int" oid="!ed/24c5/3A26/1EA4/55ff0f4a3dc4" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="85" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="State2YellowToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateYellow" type="int" oid="!ed/24db/3A26/1EA4/55ff0f736b59" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="86" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="State3GreenToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateGreen" type="int" oid="!ed/24f1/3A26/1EA4/55ff0f75102c" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="84" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="State1RedToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifyRed" type="bool" oid="!ed/2507/3A26/1EA4/55ff0f775b26" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="85" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="State2YellowToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifyYellow" type="bool" oid="!ed/251d/3A26/1EA4/55ff0f791f2d" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="83" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="State0BlackToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifyBalck" type="bool" oid="!ed/2533/3A26/1EA4/55ff0f7a532a" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="86" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="State3GreenToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifyGreen" type="bool" oid="!ed/2549/3A26/1EA4/55ff0f7e1206" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="57" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="SavePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Save" type="bool" oid="!ed/947c/3A26/1EA4/55ff31da614" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="16" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="10" WidgetType="EditBoxText" WidgetName="NameText">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INName" type="char^10" oid="!ed/2789/4F60/1508/5600c2a1a34" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_EVT_STRING_CONFIRMED" Size="10" WidgetType="EditBoxText" WidgetName="RefNumText">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INRefNum" type="char^10" oid="!ed/278a/4F60/1508/5600c2cd617a" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="60" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="ShowUpPushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Up" type="bool" oid="!ed/26f3/4480/34C/560373e32302" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="59" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="ShowDownPushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Down" type="bool" oid="!ed/26fa/4480/34C/560373e63bcc" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="82" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="AgeRange4ToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateSenior" type="int" oid="!ed/2a26/478C/1FEC/5604701b588d" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="82" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="AgeRange4ToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifySenior" type="bool" oid="!ed/2a3c/478C/1FEC/560470254500" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="81" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="AgeRange3ToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifyAdult" type="bool" oid="!ed/2a52/478C/1FEC/5604702931d6" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="80" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="AgeRange2ToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifyTeenage" type="bool" oid="!ed/2a68/478C/1FEC/5604702b6558" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="81" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="AgeRange3ToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateAdult" type="int" oid="!ed/2a7e/478C/1FEC/5604703839ce" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="76" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="AgeRange1ToggleButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INNotifyChild" type="bool" oid="!ed/2a94/478C/1FEC/5604703a1d80" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="80" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="AgeRange2ToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateTeenage" type="int" oid="!ed/2ab6/478C/1FEC/5604703d5c54" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="76" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="ToggleButton" WidgetName="AgeRange1ToggleButton">
+							<A661Data>
+								<DataField value="EvtToggleState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="INStateChild" type="int" oid="!ed/2acc/478C/1FEC/560470405ee1" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="58" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="ShowDeletePushButton">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Delete" type="bool" oid="!ed/2b04/1B4D/20D4/5604887c4ece" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateF" type="int" oid="!ed/255c/3A26/1EA4/55ff106f688e" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="75" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="SexFemToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateM" type="int" oid="!ed/256c/3A26/1EA4/55ff10713fcf" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="74" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="SexMaleToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateYellow" type="int" oid="!ed/257c/3A26/1EA4/55ff107671b9" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="85" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="State2YellowToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateRed" type="int" oid="!ed/258c/3A26/1EA4/55ff10775b37" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="84" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="State1RedToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateBlack" type="int" oid="!ed/259c/3A26/1EA4/55ff10793b72" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="83" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="State0BlackToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateGreen" type="int" oid="!ed/25ac/3A26/1EA4/55ff107b7ad0" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="86" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="State3GreenToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OQBlack" type="real" oid="!ed/9842/3A26/1EA4/55ff369a678f" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="87" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="State0BlackCount">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OQRed" type="real" oid="!ed/985a/3A26/1EA4/55ff369c3c1e" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="88" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="State1RedCount">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OQYellow" type="real" oid="!ed/9872/3A26/1EA4/55ff369e1ccc" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="89" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="State2YellowCount">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OQGreen" type="real" oid="!ed/988a/3A26/1EA4/55ff36a0598f" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Value" type="float" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="90" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="State3GreenCount">
+							<A661Data>
+								<DataField value="Value"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LayerActive" type="bool" oid="!ed/2664/4F60/1508/5600b2352526" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LayerVisible" type="bool" oid="!ed/2663/4F60/1508/5600b2353440" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="QEmit" type="bool" oid="!ed/2662/4F60/1508/5600b2352f50" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="75" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="SexFemToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="74" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="SexMaleToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="83" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="State0BlackToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="84" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="State1RedToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="85" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="State2YellowToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="86" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="State3GreenToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="87" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="State0BlackCount">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="88" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="State1RedCount">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="89" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="State2YellowCount">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="90" ParameterIdent="A661_VALUE" WidgetType="EditBoxNumeric" WidgetName="State3GreenCount">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="76" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="AgeRange1ToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="80" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="AgeRange2ToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="81" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="AgeRange3ToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="82" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="AgeRange4ToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OName" type="char^10" oid="!ed/2797/4F60/1508/5600c2ef52d6" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="33" ParameterIdent="A661_STRING" Size="10" WidgetType="Label" WidgetName="ShowNameValueLabel">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ORefNum" type="char^10" oid="!ed/279d/4F60/1508/5600c2f71619" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="31" ParameterIdent="A661_STRING" Size="10" WidgetType="Label" WidgetName="ShowRefNumValueLabel">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="STR_SIZE" type="int" oid="!ed/27db/4F60/1508/5600c5b748d6" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="31" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="ShowRefNumValueLabel">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="33" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="ShowNameValueLabel">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="105" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="ShowSexValueLabel">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="106" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="ShowAgeValueLabel">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OStateColor" type="int" oid="!ed/287a/4F60/1508/5600cc027022" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="FillIndex" type="uchar" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="91" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="ShowStateValueGpRectangle">
+							<A661Data>
+								<DataField value="FillIndex"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OAge" type="char^10" oid="!ed/2745/2D07/159C/56044aa76523" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="106" ParameterIdent="A661_STRING" Size="10" WidgetType="Label" WidgetName="ShowAgeValueLabel">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OSex" type="char^10" oid="!ed/2759/2D07/159C/56044ae74c99" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="105" ParameterIdent="A661_STRING" Size="10" WidgetType="Label" WidgetName="ShowSexValueLabel">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateSenior" type="int" oid="!ed/2b1b/478C/1FEC/560471156e00" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="82" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="AgeRange4ToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateChild" type="int" oid="!ed/2b2b/478C/1FEC/5604711929b2" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="76" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="AgeRange1ToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateTeenage" type="int" oid="!ed/2b3b/478C/1FEC/5604711f35ca" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="80" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="AgeRange2ToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ONewStateAdult" type="int" oid="!ed/2b4b/478C/1FEC/560471216f3" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="81" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="AgeRange3ToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="UpdateGreyPart" type="bool" oid="!ed/2bee/1B4D/20D4/560493706b33" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="106" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="ShowAgeValueLabel">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="105" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="ShowSexValueLabel">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="91" ParameterIdent="A661_FILL_INDEX" WidgetType="GpRectangle" WidgetName="ShowStateValueGpRectangle">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="33" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="ShowNameValueLabel">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\CDSMetodoStart.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="31" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="ShowRefNumValueLabel">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>

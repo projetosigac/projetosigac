@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Operator kind="function" external="imported" name="DbMockPost">
+			<inputs>
+				<Variable name="refnum">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/26f4/3E/14E8/560365ad6a72"/>
+					</pragmas>
+				</Variable>
+				<Variable name="name">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/26f5/3E/14E8/560365b3a78"/>
+					</pragmas>
+				</Variable>
+				<Variable name="sex">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2766/3E/14E8/560368eaa4d"/>
+					</pragmas>
+				</Variable>
+				<Variable name="age">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2767/3E/14E8/560368f91ee5"/>
+					</pragmas>
+				</Variable>
+				<Variable name="cstate">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2768/3E/14E8/5603690316e8"/>
+					</pragmas>
+				</Variable>
+				<Variable name="post">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2769/3E/14E8/5603693c7eb6"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<pragmas>
+				<ed:Operator oid="!ed/26ee/3E/14E8/560364f31f1b"/>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>
