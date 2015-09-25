@@ -1,0 +1,13 @@
+-target_dir "C:/Users/thais/projetosigac/UA/UTICounts/KCG" -expall -target C -O 0 -name_length 200 -significance_length 31 -user_config "./user_macros.h" -input_threshold 2 
+-node UTICounts
+"C:/Users/thais/projetosigac/UA/UTICounts/UTICounts1.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/libdigital/digital.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/libdigital/TruthTables.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/liblinear/linear.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/liblinear/filters.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/libmath/vect.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/libmath/math.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/libmathext/mathext.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/libpwlinear/pwlinear.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/libpwlinear/lut.xscade"
+"C:/Program Files (x86)/Esterel Technologies/Esterel SCADE 6.4.2/SCADE/libraries/libverif/libverif.xscade"

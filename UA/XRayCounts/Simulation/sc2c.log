@@ -1,0 +1,74 @@
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-18T22:02:20
+** Command: scade -code "C:\Users\thais\projetosigac\UA\XRayCounts\XRayCounts.etp" -node XRayCounts -conf Simulation -build
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+ ~kcg.log
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\kcg.log, line 0, character 0
+ ~kcg_s2c_config.txt
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\kcg_s2c_config.txt, line 0, character 0
+ ~kcg_trace.xml
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\kcg_trace.xml, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\kcg_metrics.txt, line 0, character 0
+ ~XRayCounts.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts.c, line 0, character 0
+ ~XRayCounts.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\kcg_types.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\kcg_consts.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\kcg_sensors.h, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\kcg_types.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\kcg_consts.c, line 0, character 0
+*** Generated Files Information (GENFIL): Simulator Generated files
+ ~XRayCounts_UA_1.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_UA_1.c, line 0, character 0
+ ~XRayCounts_UA_1.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_UA_1.h, line 0, character 0
+ ~XRayCounts_cosim.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_cosim.c, line 0, character 0
+ ~XRayCounts_type.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_type.h, line 0, character 0
+ ~XRayCounts_type.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_type.c, line 0, character 0
+ ~XRayCounts_mapping.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_mapping.h, line 0, character 0
+ ~XRayCounts_mapping.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_mapping.c, line 0, character 0
+ ~XRayCounts_interface.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_interface.h, line 0, character 0
+ ~XRayCounts_interface.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_interface.c, line 0, character 0
+ ~XRayCounts_dll.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_dll.c, line 0, character 0
+*** Generated Files Information (GENFIL): Type Utils Generated files
+ ~XRayCounts_newtype.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_newtype.h, line 0, character 0
+ ~XRayCounts_newtype.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_newtype.c, line 0, character 0
+*** Generated Files Information (GENFIL): Mapping Utils Generated files
+ ~XRayCounts_newmapping.h
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_newmapping.h, line 0, character 0
+ ~XRayCounts_newmapping.c
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts_newmapping.c, line 0, character 0
+*** Generated Files Information (GENFIL): Build Generated files
+ ~Makefile
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\Makefile, line 0, character 0
+ ~XRayCounts.dll
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts.dll, line 0, character 0
+ ~XRayCounts.exe
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\XRayCounts.exe, line 0, character 0
+*** Generated Files Information (GENFIL): Code Generator Generated files
+ ~sc2c.log
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\sc2c.log, line 0, character 0
+ ~sc2c_integration_files.txt
+  at file C:\Users\thais\projetosigac\UA\XRayCounts\Simulation\sc2c_integration_files.txt, line 0, character 0
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-18T22:02:48
+** sc2c.log
+*************************************************************$

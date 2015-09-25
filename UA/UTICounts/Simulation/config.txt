@@ -1,0 +1,3 @@
+-target_dir "C:/Users/thais/projetosigac/UA/UTICounts/Simulation" -expall -target C -O 0 -name_length 200 -significance_length 31 -user_config "./user_macros.h" -input_threshold 2 -probes -debug 
+-node UTICounts
+"C:/Users/thais/projetosigac/UA/UTICounts/Simulation/scade_model_without_unused.scade"

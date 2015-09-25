@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$*************** KCG Version 6.1.3 (build i6) ****************
+** Command: s2c613 -config C:/Users/thais/projetosigac/UA/UTICounts/Simulation\kcg_s2c_config.txt
+** Generation date: 2015-09-18T21:55:10
+*************************************************************$-->
+<Model date="2015-09-18T21:55:10" commandLine="s2c613 -config C:/Users/thais/projetosigac/UA/UTICounts/Simulation\kcg_s2c_config.txt">
+  <RootNode scadeName="UTICounts" headerFile="UTICounts.h" targetCycleFct="UTICounts" targetInitFct="UTICounts_reset">
+    <Input scadeName="availableInput" scadeType="real" targetName="availableInput" targetType="kcg_real" inCtx="true"/>
+    <Input scadeName="occupiedInput" scadeType="real" targetName="occupiedInput" targetType="kcg_real" inCtx="true"/>
+    <Input scadeName="totalInput" scadeType="real" targetName="totalInput" targetType="kcg_real" inCtx="true"/>
+    <Output scadeName="EmitToCDS" scadeType="bool" targetName="EmitToCDS" targetType="kcg_bool" inCtx="true"/>
+    <Output scadeName="LayerVisible" scadeType="bool" targetName="LayerVisible" targetType="kcg_bool" inCtx="true"/>
+    <Output scadeName="availableOutput" scadeType="real" targetName="availableOutput" targetType="kcg_real"
+        inCtx="true"/>
+    <Output scadeName="occupiedOutput" scadeType="real" targetName="occupiedOutput" targetType="kcg_real" inCtx="true"/>
+    <Output scadeName="totalOutput" scadeType="real" targetName="totalOutput" targetType="kcg_real" inCtx="true"/>
+    <Local scadeName="_L1" scadeType="real" targetName="_L1" targetType="kcg_real" inCtx="true"/>
+    <Local scadeName="_L2" scadeType="real" targetName="_L2" targetType="kcg_real" inCtx="true"/>
+    <Local scadeName="_L3" scadeType="real" targetName="_L3" targetType="kcg_real" inCtx="true"/>
+    <Local scadeName="_L4" scadeType="bool" targetName="_L4" targetType="kcg_bool" inCtx="true"/>
+    <OutCtxType targetName="outC_UTICounts"/>
+    <InCtxType targetName="inC_UTICounts"/>
+  </RootNode>
+  <Option name="root_node_name" value="UTICounts"/>
+  <Option name="target" value="C"/>
+  <Option name="target_dir" value="C:/Users/thais/projetosigac/UA/UTICounts/Simulation"/>
+  <Option name="expall" value="#on#"/>
+  <Option name="exp" value="#off#"/>
+  <Option name="noexp" value="#off#"/>
+  <Option name="global_root_context" value="#off#"/>
+  <Option name="optimization_level" value="0"/>
+  <Option name="macro_on_assert" value="#off#"/>
+  <Option name="global_prefix" value="#off#"/>
+  <Option name="name_length" value="200"/>
+  <Option name="significance_length" value="31"/>
+  <Option name="header" value="#off#"/>
+  <Option name="input_threshold" value="2"/>
+  <Option name="user_config" value="./user_macros.h"/>
+  <Option name="debug" value="#on#"/>
+  <Option name="observe" value="#off#"/>
+  <Option name="no_observe" value="#off#"/>
+  <Option name="probes" value="#on#"/>
+  <Option name="input_file"
+      value="C:/Users/thais/projetosigac/UA/UTICounts/Simulation/scade_model_without_unused.scade"/>
+  <Option name="wrap_c_ops" value="#off#"/>
+  <Option name="no_bitwise" value="#off#"/>
+  <Option name="warn_error" value="#off#"/>
+  <Option name="static" value="#off#"/>
+  <Option name="state_vector" value="#off#"/>
+  <PredefType scadeName="real" targetName="kcg_real"/>
+  <PredefType scadeName="bool" targetName="kcg_bool"/>
+  <PredefType scadeName="char" targetName="kcg_char"/>
+  <PredefType scadeName="int" targetName="kcg_int"/>
+</Model>
+<!--$*************** KCG Version 6.1.3 (build i6) ****************
+** kcg_trace.xml
+** Generation date: 2015-09-18T21:55:10
+*************************************************************$-->

@@ -1,0 +1,74 @@
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-18T22:11:36
+** Command: scade -code "C:\Users\thais\projetosigac\UA\SurgeryCounts\SurgeryCounts.etp" -node SurgeryCounts -conf Simulation -build
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+ ~kcg.log
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\kcg.log, line 0, character 0
+ ~kcg_s2c_config.txt
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\kcg_s2c_config.txt, line 0, character 0
+ ~kcg_trace.xml
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\kcg_trace.xml, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\kcg_metrics.txt, line 0, character 0
+ ~SurgeryCounts.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts.c, line 0, character 0
+ ~SurgeryCounts.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\kcg_types.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\kcg_consts.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\kcg_sensors.h, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\kcg_types.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\kcg_consts.c, line 0, character 0
+*** Generated Files Information (GENFIL): Simulator Generated files
+ ~SurgeryCounts_UA_1.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_UA_1.c, line 0, character 0
+ ~SurgeryCounts_UA_1.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_UA_1.h, line 0, character 0
+ ~SurgeryCounts_cosim.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_cosim.c, line 0, character 0
+ ~SurgeryCounts_type.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_type.h, line 0, character 0
+ ~SurgeryCounts_type.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_type.c, line 0, character 0
+ ~SurgeryCounts_mapping.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_mapping.h, line 0, character 0
+ ~SurgeryCounts_mapping.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_mapping.c, line 0, character 0
+ ~SurgeryCounts_interface.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_interface.h, line 0, character 0
+ ~SurgeryCounts_interface.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_interface.c, line 0, character 0
+ ~SurgeryCounts_dll.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_dll.c, line 0, character 0
+*** Generated Files Information (GENFIL): Type Utils Generated files
+ ~SurgeryCounts_newtype.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_newtype.h, line 0, character 0
+ ~SurgeryCounts_newtype.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_newtype.c, line 0, character 0
+*** Generated Files Information (GENFIL): Mapping Utils Generated files
+ ~SurgeryCounts_newmapping.h
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_newmapping.h, line 0, character 0
+ ~SurgeryCounts_newmapping.c
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts_newmapping.c, line 0, character 0
+*** Generated Files Information (GENFIL): Build Generated files
+ ~Makefile
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\Makefile, line 0, character 0
+ ~SurgeryCounts.dll
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts.dll, line 0, character 0
+ ~SurgeryCounts.exe
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\SurgeryCounts.exe, line 0, character 0
+*** Generated Files Information (GENFIL): Code Generator Generated files
+ ~sc2c.log
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\sc2c.log, line 0, character 0
+ ~sc2c_integration_files.txt
+  at file C:\Users\thais\projetosigac\UA\SurgeryCounts\Simulation\sc2c_integration_files.txt, line 0, character 0
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-18T22:12:04
+** sc2c.log
+*************************************************************$

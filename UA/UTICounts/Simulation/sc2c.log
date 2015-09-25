@@ -1,0 +1,74 @@
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-18T21:55:08
+** Command: scade -code "C:\Users\thais\projetosigac\UA\UTICounts\UTICounts.etp" -node UTICounts -conf Simulation -build
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+ ~kcg.log
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\kcg.log, line 0, character 0
+ ~kcg_s2c_config.txt
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\kcg_s2c_config.txt, line 0, character 0
+ ~kcg_trace.xml
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\kcg_trace.xml, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\kcg_metrics.txt, line 0, character 0
+ ~UTICounts.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts.c, line 0, character 0
+ ~UTICounts.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\kcg_types.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\kcg_consts.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\kcg_sensors.h, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\kcg_types.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\kcg_consts.c, line 0, character 0
+*** Generated Files Information (GENFIL): Simulator Generated files
+ ~UTICounts_UA_1.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_UA_1.c, line 0, character 0
+ ~UTICounts_UA_1.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_UA_1.h, line 0, character 0
+ ~UTICounts_cosim.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_cosim.c, line 0, character 0
+ ~UTICounts_type.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_type.h, line 0, character 0
+ ~UTICounts_type.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_type.c, line 0, character 0
+ ~UTICounts_mapping.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_mapping.h, line 0, character 0
+ ~UTICounts_mapping.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_mapping.c, line 0, character 0
+ ~UTICounts_interface.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_interface.h, line 0, character 0
+ ~UTICounts_interface.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_interface.c, line 0, character 0
+ ~UTICounts_dll.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_dll.c, line 0, character 0
+*** Generated Files Information (GENFIL): Type Utils Generated files
+ ~UTICounts_newtype.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_newtype.h, line 0, character 0
+ ~UTICounts_newtype.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_newtype.c, line 0, character 0
+*** Generated Files Information (GENFIL): Mapping Utils Generated files
+ ~UTICounts_newmapping.h
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_newmapping.h, line 0, character 0
+ ~UTICounts_newmapping.c
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts_newmapping.c, line 0, character 0
+*** Generated Files Information (GENFIL): Build Generated files
+ ~Makefile
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\Makefile, line 0, character 0
+ ~UTICounts.dll
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts.dll, line 0, character 0
+ ~UTICounts.exe
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\UTICounts.exe, line 0, character 0
+*** Generated Files Information (GENFIL): Code Generator Generated files
+ ~sc2c.log
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\sc2c.log, line 0, character 0
+ ~sc2c_integration_files.txt
+  at file C:\Users\thais\projetosigac\UA\UTICounts\Simulation\sc2c_integration_files.txt, line 0, character 0
+$**************  SCADETOC Version 6.4.2 (build i26) **************
+** Generation date: 2015-09-18T21:55:39
+** sc2c.log
+*************************************************************$

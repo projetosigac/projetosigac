@@ -1,0 +1,1 @@
+-expall -target C -O 0 -name_length 200 -significance_length 31 -user_config ./user_macros.h -input_threshold 2 -node UTI C:/Users/thais/projetosigac/UA/UTI-availability/KCG/scade_model_without_unused.scade -target_dir C:/Users/thais/projetosigac/UA/UTI-availability/KCG 

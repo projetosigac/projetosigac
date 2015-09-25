@@ -50,10 +50,6 @@ Icon
 # =========================
 
 *.err
-**/*DF/
-**/KCG/
-**/Simulation/
-**/IntegrationCode/bin
 
 # Report Files & Directories
 # =========================
