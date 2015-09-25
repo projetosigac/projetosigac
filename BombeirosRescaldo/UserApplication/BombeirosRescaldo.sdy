@@ -365,6 +365,11 @@
 								<Emit/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="IncidentIdTextBox">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -387,6 +392,30 @@
 						<A661_CMD_SET_PARAMETER name="SelectedEntry" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="58" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="ScreeningVictimAge">
 							<A661Data>
 								<DataField value="SelectedEntry"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ScreeningVictimIncidentIdOut" type="char^512" oid="!ed/2346/7E2A/6A8/5604973c4887" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_STRING" Size="512" WidgetType="EditBoxText" WidgetName="IncidentIdTextBox">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ScreeningVictimIncidentIdSizeOut" type="int" oid="!ed/2361/7E2A/6A8/560497ae4d76" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="13" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="IncidentIdTextBox">
+							<A661Data>
+								<DataField value="String_size"/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
 					</inputs>
