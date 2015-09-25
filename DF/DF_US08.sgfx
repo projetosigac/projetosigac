@@ -583,10 +583,170 @@
                         <enumprop name="Halo">A661_FALSE</enumprop>
                     </model>
                 </widget>
+                <widget name="Leito0_Label" oid="fa0c6d55-7eca-4655-b76b-758af9bb3ca9" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">28</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1600</intprop>
+                        <intprop name="PosY">10000</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">A1</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito1_Label" oid="4ce0aa6e-2959-403c-bb52-7fc2c78a3590" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">29</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4800</intprop>
+                        <intprop name="PosY">10000</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">A2</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito2_Label" oid="97622e79-146f-4069-a282-c84ca5c41ba5" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">30</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8000</intprop>
+                        <intprop name="PosY">10000</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">A3</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito3_Label" oid="e2dcd5e0-4aa3-4b0a-b649-ada578edaff5" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">31</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">11200</intprop>
+                        <intprop name="PosY">10000</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">A4</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito4_Label" oid="f2878178-dd30-40b9-b975-aeb72ea32227" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">32</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1600</intprop>
+                        <intprop name="PosY">4400</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">B1</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito5_Label" oid="5f11eaef-cdca-425a-8fed-4ecd771b4dd6" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">33</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4800</intprop>
+                        <intprop name="PosY">4400</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">B2</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito6_Label" oid="c18ac6f6-d5c9-4279-9d6e-f4c99e23bba1" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">34</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8000</intprop>
+                        <intprop name="PosY">4400</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">B3</stringprop>
+                    </model>
+                </widget>
+                <widget name="Leito7_Label" oid="46e56ecf-a9e0-4206-a5e5-e3757706aaaf" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">35</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">11200</intprop>
+                        <intprop name="PosY">4400</intprop>
+                        <intprop name="SizeX">800</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_CENTER</enumprop>
+                        <stringprop name="LabelString">B4</stringprop>
+                    </model>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 748623302 -->
+<!-- crc32 : 459148569 -->
 
