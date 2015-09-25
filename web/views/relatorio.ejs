@@ -24,9 +24,19 @@
                     <b>Heatmap:</b> Inicialmente configure a região do heatmap a ser gerado.
                 </div>
                 <form id="heatmap_form">
+                    <label>Tipo de ocorrência:</label>
+                    <div class="form-group">
+                      <select class="form-control" id="occurrence_type">
+                        <option>Todas</option>
+                        <option>Assaltos</option>
+                        <option>Roubos</option>
+                        <option>Acidentes de Trânsito</option>
+                        <option>Incêndios</option>
+                      </select>
+                    </div>
+
                     <label>Centro da pesquisa:</label>
                     <div class="input-group form-group">
-                        
                         <input type="text" class="form-control" id="heatmapCenter" placeholder="Ex.: Pq. Santos Dumont, São José dos Campos" />
                         <span class="input-group-btn">
                             <button id="searchCenterButton" type="button" class="btn btn-default" aria-label="Search">
@@ -39,7 +49,7 @@
                         <input type="number" value="1" min=".5" step=".1" class="form-control" id="searchRadius" />
                         <span class="input-group-addon" id="basic-addon2">km</span>
                     </div>
-                    <button type="submit" class="btn btn-primary">Gerar Heatmap</button>
+                    <button type="submit" id="generate_heatmap" class="btn btn-primary">Gerar Heatmap</button>
                 </form>
             </div>
       <div class="col-md-9">
@@ -61,7 +71,7 @@
       bindFormToMap();
     }
 
-    function updatePoints() {
+    function updatePoints(finished) {
       $.ajax({ 
         url: "reports/get_list", 
         type: "get",
@@ -81,6 +91,10 @@
             var p = points[i];
             pointMvc.push(new google.maps.LatLng(p.lat, p.lng));
           }
+          if (finished) finished(true);
+        },
+        error: function() {
+          if (finished) finished(false);
         }
       });
     }
@@ -197,9 +211,36 @@
       });
 
       $('#heatmap_form').submit(function() {
-        updatePoints();
+        var btn = $('#generate_heatmap');
+        if (heatmapCircle.getVisible()) {
+          // heatmap not generated yet, do it now
+          btn.text('Gerando...');
+          updatePoints(function(success) {
+            if (success) {
+              setHeatmapGenerated(true);
+            } else {
+              setHeatmapGenerated(false);
+            }
+          });
+        } else {
+          while (pointMvc.getLength() > 0) pointMvc.pop();
+          setHeatmapGenerated(false);
+        }
         return false;
       });
+    }
+
+    function setHeatmapGenerated(generated) {
+      $('#generate_heatmap').text(generated ? 'Refazer Pesquisa' : 'Gerar Heatmap');
+      heatmapCircle.setVisible(!generated);
+      map.setOptions({
+        zoomControl: !generated,
+        mapTypeControl: !generated,
+        draggable: !generated,
+        scrollwheel: !generated,
+        disableDoubleClickZoom: generated
+      });
+      $('#searchRadius, #heatmapCenter, #searchCenterButton').prop('disabled', generated);
     }
 
     function zoomLevelForRadius(loc, radius) {
