@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="main" oid="!ed/20de/1BEA/A60/5604e76d730a">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="32" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Register Button">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="FirstPage_ContinueButton" type="bool" oid="!ed/21a8/63D2/12C/56050cf11063" instancepath="main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="5" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Confirmar e Continuar Button">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="SecondPage_ContinueButton" type="bool" oid="!ed/21c5/63D2/12C/56050d8b31af" instancepath="main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="5" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Confirmar e Concluir Button">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="ThirdPage_ContinueButton" type="bool" oid="!ed/66a8/2A39/8EC/560517d54173" instancepath="main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="30" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="Get Token">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="GetToken_Button" type="bool" oid="!ed/252c/21C4/8C4/5605a8824dd0" instancepath="main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="10" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 01">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[1]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="11" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 02">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[2]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="12" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 03">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[3]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="13" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 04">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[4]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="14" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 05">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[5]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="15" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 06">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[6]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="16" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 07">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[7]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="18" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 08">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[8]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="19" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 09">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[9]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="20" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 10">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[10]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="21" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 11">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[11]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="22" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 12">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[12]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="23" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 13">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[13]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="24" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Acidente CheckButton 14">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Accidents" type="int" oid="!ed/22fe/21C4/8C4/56059754713c" instancepath="main/" subelement="[14]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtEntryNumber" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="29" ParameterIdent="A661_EVT_SEL_ENTRY_CHANGE" WidgetType="ComboBox" WidgetName="Via Aerea ComboBox">
+							<A661Data>
+								<DataField value="EvtEntryNumber"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="AerialWay" type="int" oid="!ed/2330/21C4/8C4/56059c681559" instancepath="main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtEntryNumber" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="32" ParameterIdent="A661_EVT_SEL_ENTRY_CHANGE" WidgetType="ComboBox" WidgetName="Respiracao ComboBox">
+							<A661Data>
+								<DataField value="EvtEntryNumber"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Respiration" type="int" oid="!ed/233e/21C4/8C4/56059c974d78" instancepath="main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtEntryNumber" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="35" ParameterIdent="A661_EVT_SEL_ENTRY_CHANGE" WidgetType="ComboBox" WidgetName="Circulacao ComboBox">
+							<A661Data>
+								<DataField value="EvtEntryNumber"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Circulation" type="int" oid="!ed/2344/21C4/8C4/56059c993662" instancepath="main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtEntryNumber" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="23" ParameterIdent="A661_EVT_SEL_ENTRY_CHANGE" WidgetType="ComboBox" WidgetName="Abertura Ocular ComboBox">
+							<A661Data>
+								<DataField value="EvtEntryNumber"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Neurologic" type="int" oid="!ed/234a/21C4/8C4/56059ca9624d" instancepath="main/" subelement="[1]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtEntryNumber" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="26" ParameterIdent="A661_EVT_SEL_ENTRY_CHANGE" WidgetType="ComboBox" WidgetName="Resposta Verbal ComboBox">
+							<A661Data>
+								<DataField value="EvtEntryNumber"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Neurologic" type="int" oid="!ed/234a/21C4/8C4/56059ca9624d" instancepath="main/" subelement="[2]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtEntryNumber" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="29" ParameterIdent="A661_EVT_SEL_ENTRY_CHANGE" WidgetType="ComboBox" WidgetName="Resposta Motora ComboBox">
+							<A661Data>
+								<DataField value="EvtEntryNumber"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Neurologic" type="int" oid="!ed/234a/21C4/8C4/56059ca9624d" instancepath="main/" subelement="[3]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="10" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 01">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[1]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="11" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 02">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[2]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="12" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 03">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[3]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="13" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 04">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[4]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="14" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 05">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[5]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="15" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 06">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[6]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="16" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 07">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[7]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="17" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 08">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[8]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="18" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 09">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[9]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="19" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 10">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[10]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="31" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 11">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[11]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="32" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 12">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[12]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="33" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 13">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[13]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="34" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 14">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[14]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="35" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 15">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[15]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="36" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 16">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[16]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="37" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 17">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[17]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="38" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 18">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[18]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="39" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 19">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[19]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtCheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="40" ParameterIdent="A661_EVT_STATE_CHANGE" WidgetType="CheckButton" WidgetName="Procedimentos CheckButton 20">
+							<A661Data>
+								<DataField value="EvtCheckButtonState"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Procedures" type="int" oid="!ed/236e/21C4/8C4/56059cc83337" instancepath="main/" subelement="[20]"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="FirstPageActive" type="bool" oid="!ed/210c/63D2/12C/560504db45af" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="FirstPageInactive" type="bool" oid="!ed/22c5/63D2/12C/56050f986cd1" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_INACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_INACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_INACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="FirstPageVisible" type="bool" oid="!ed/2112/63D2/12C/560504f7373" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="SecondPageActive" type="bool" oid="!ed/2118/63D2/12C/560505047e6" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="SecondPageInactive" type="bool" oid="!ed/2165/2A39/8EC/5605137b6909" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_INACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_INACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_INACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="SecondPageVisible" type="bool" oid="!ed/211e/63D2/12C/5605053b2a36" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="SecondPage" LayerIdent="2" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ThirdPageActive" type="bool" oid="!ed/2124/63D2/12C/56050548eb4" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ThirdPageVisible" type="bool" oid="!ed/212a/63D2/12C/5605055627da" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="ThirdPage" LayerIdent="3" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="LoadInitialData" type="bool" oid="!ed/2533/21C4/8C4/5605a8d26fe9" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="29" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Bracelet Token Value">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="Name Box">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_INNER_STATE_CHECK" WidgetType="CheckButton" WidgetName="Sex M CheckButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_INNER_STATE_CHECK" WidgetType="CheckButton" WidgetName="Sex F CheckButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="20" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="Status Dead ToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="22" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="Status Severe ToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="24" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="Status Light ToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="37" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="Status Perfect ToggleButton">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialTokenData" type="char^31" oid="!ed/2547/21C4/8C4/5605a8fd2931" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="29" ParameterIdent="A661_STRING" Size="31" WidgetType="Label" WidgetName="Bracelet Token Value">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialNameData" type="char^31" oid="!ed/2651/21C4/8C4/5605a91a645d" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_STRING" Size="31" WidgetType="EditBoxText" WidgetName="Name Box">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="StringSize" type="int" oid="!ed/267f/21C4/8C4/5605a9b324f9" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="29" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Bracelet Token Value">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="Name Box">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialSexMData" type="int" oid="!ed/26ab/21C4/8C4/5605abc020d9" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="CheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_INNER_STATE_CHECK" WidgetType="CheckButton" WidgetName="Sex M CheckButton">
+							<A661Data>
+								<DataField value="CheckButtonState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialSexFData" type="int" oid="!ed/26b1/21C4/8C4/5605abf21875" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="CheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_INNER_STATE_CHECK" WidgetType="CheckButton" WidgetName="Sex F CheckButton">
+							<A661Data>
+								<DataField value="CheckButtonState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialStatusData" type="int" oid="!ed/2b7c/21C4/8C4/5605b7a92294" instancepath="main/" subelement="[1]"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="20" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="Status Dead ToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialStatusData" type="int" oid="!ed/2b7c/21C4/8C4/5605b7a92294" instancepath="main/" subelement="[2]"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="22" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="Status Severe ToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialStatusData" type="int" oid="!ed/2b7c/21C4/8C4/5605b7a92294" instancepath="main/" subelement="[3]"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="24" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="Status Light ToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialStatusData" type="int" oid="!ed/2b7c/21C4/8C4/5605b7a92294" instancepath="main/" subelement="[4]"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="37" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="Status Perfect ToggleButton">
+							<A661Data>
+								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>
