@@ -215,22 +215,16 @@
         if (heatmapCircle.getVisible()) {
           // heatmap not generated yet, do it now
           btn.text('Gerando...');
-          updatePoints(function(success) {
-            if (success) {
-              setHeatmapGenerated(true);
-            } else {
-              setHeatmapGenerated(false);
-            }
-          });
+          updatePoints(updateViewsForHeatmap);
         } else {
           while (pointMvc.getLength() > 0) pointMvc.pop();
-          setHeatmapGenerated(false);
+          updateViewsForHeatmap(false);
         }
         return false;
       });
     }
 
-    function setHeatmapGenerated(generated) {
+    function updateViewsForHeatmap(generated) {
       $('#generate_heatmap').text(generated ? 'Refazer Pesquisa' : 'Gerar Heatmap');
       heatmapCircle.setVisible(!generated);
       map.setOptions({
@@ -240,7 +234,7 @@
         scrollwheel: !generated,
         disableDoubleClickZoom: generated
       });
-      $('#searchRadius, #heatmapCenter, #searchCenterButton').prop('disabled', generated);
+      $('#occurrence_type, #searchRadius, #heatmapCenter, #searchCenterButton').prop('disabled', generated);
     }
 
     function zoomLevelForRadius(loc, radius) {
