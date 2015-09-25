@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Constant name="MAX_STRING_SIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="512"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/216e/76E9/2C080/5603396627c6"/>
+			</pragmas>
+		</Constant>
+		<Type name="String">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="MAX_STRING_SIZE"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/2174/76E9/2C080/5603396b2ec"/>
+			</pragmas>
+		</Type>
+		<Constant external="imported" name="TESTE_STRING">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Constant oid="!ed/2188/76E9/2C080/56033a4335ac"/>
+			</pragmas>
+		</Constant>
+		<Constant external="imported" name="EMPTY_STRING">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="String"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Constant oid="!ed/461a/73E7/2F7F0/56035c9d7ab7"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SCREENING_TAB_ID">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2441/7696/478/560439d0c65"/>
+			</pragmas>
+		</Constant>
+		<Constant name="VICTIMS_TAB_ID">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="39"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2442/7696/478/560439de317a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="INCIDENTS_TAB_ID">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="26"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2443/7696/478/560439ef64f0"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>
