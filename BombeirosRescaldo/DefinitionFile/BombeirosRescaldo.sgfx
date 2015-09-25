@@ -577,7 +577,7 @@
                                                 <intprop name="Font">0</intprop>
                                                 <intprop name="ColorIndex">1</intprop>
                                                 <enumprop name="Alignment">A661_LEFT</enumprop>
-                                                <stringprop name="LabelString">XXXXXXXXXXXXXXXXXXXXXX</stringprop>
+                                                <stringprop name="LabelString">incident1</stringprop>
                                             </model>
                                         </widget>
                                         <widget name="pbViewVictim" oid="c2964a6f-3ed2-472b-ae2e-179770c1a24d" type="PushButton">
@@ -1020,5 +1020,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 416680116 -->
+<!-- crc32 : 368363378 -->
 
