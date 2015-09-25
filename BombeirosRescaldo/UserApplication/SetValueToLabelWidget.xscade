@@ -62,7 +62,7 @@
 				</Variable>
 			</outputs>
 			<locals>
-				<Variable name="_L2">
+				<Variable name="_L5">
 					<type>
 						<NamedType>
 							<type>
@@ -71,19 +71,7 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/460b/73E7/2F7F0/56035beab44"/>
-					</pragmas>
-				</Variable>
-				<Variable name="_L1">
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="bool"/>
-							</type>
-						</NamedType>
-					</type>
-					<pragmas>
-						<ed:Variable oid="!ed/460c/73E7/2F7F0/56035bea18c2"/>
+						<ed:Variable oid="!ed/460e/73E7/2F7F0/56035bea105e"/>
 					</pragmas>
 				</Variable>
 				<Variable name="_L4">
@@ -98,7 +86,19 @@
 						<ed:Variable oid="!ed/460d/73E7/2F7F0/56035bea6497"/>
 					</pragmas>
 				</Variable>
-				<Variable name="_L5">
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="bool"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/460c/73E7/2F7F0/56035bea18c2"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
 					<type>
 						<NamedType>
 							<type>
@@ -107,90 +107,11 @@
 						</NamedType>
 					</type>
 					<pragmas>
-						<ed:Variable oid="!ed/460e/73E7/2F7F0/56035bea105e"/>
+						<ed:Variable oid="!ed/460b/73E7/2F7F0/56035beab44"/>
 					</pragmas>
 				</Variable>
 			</locals>
 			<data>
-				<!-- Result = _L4; -->
-				<Equation>
-					<lefts>
-						<VariableRef name="Result"/>
-					</lefts>
-					<right>
-						<IdExpression>
-							<path>
-								<ConstVarRef name="_L4"/>
-							</path>
-						</IdExpression>
-					</right>
-					<pragmas>
-						<ed:Equation oid="!ed/4603/73E7/2F7F0/56035bea2bc5"/>
-					</pragmas>
-				</Equation>
-				<!-- _L2 = ValueString; -->
-				<Equation>
-					<lefts>
-						<VariableRef name="_L2"/>
-					</lefts>
-					<right>
-						<IdExpression>
-							<path>
-								<ConstVarRef name="ValueString"/>
-							</path>
-						</IdExpression>
-					</right>
-					<pragmas>
-						<ed:Equation oid="!ed/4604/73E7/2F7F0/56035bea5182"/>
-					</pragmas>
-				</Equation>
-				<!-- _L1 = Button; -->
-				<Equation>
-					<lefts>
-						<VariableRef name="_L1"/>
-					</lefts>
-					<right>
-						<IdExpression>
-							<path>
-								<ConstVarRef name="Button"/>
-							</path>
-						</IdExpression>
-					</right>
-					<pragmas>
-						<ed:Equation oid="!ed/4605/73E7/2F7F0/56035bea4f0e"/>
-					</pragmas>
-				</Equation>
-				<!-- _L4 = fby(_L5; 1; EMPTY_STRING); -->
-				<Equation>
-					<lefts>
-						<VariableRef name="_L4"/>
-					</lefts>
-					<right>
-						<!-- fby(_L5; 1; EMPTY_STRING) -->
-						<FbyOp name="1">
-							<flows>
-								<IdExpression>
-									<path>
-										<ConstVarRef name="_L5"/>
-									</path>
-								</IdExpression>
-							</flows>
-							<delay>
-								<ConstValue value="1"/>
-							</delay>
-							<values>
-								<IdExpression>
-									<path>
-										<ConstVarRef name="EMPTY_STRING"/>
-									</path>
-								</IdExpression>
-							</values>
-						</FbyOp>
-					</right>
-					<pragmas>
-						<ed:Equation oid="!ed/4606/73E7/2F7F0/56035bea6852"/>
-					</pragmas>
-				</Equation>
 				<!-- _L5 = if _L1 then (_L2) else (_L4); -->
 				<Equation>
 					<lefts>
@@ -232,6 +153,85 @@
 					</right>
 					<pragmas>
 						<ed:Equation oid="!ed/4607/73E7/2F7F0/56035beac37"/>
+					</pragmas>
+				</Equation>
+				<!-- _L4 = fby(_L5; 1; EMPTY_STRING); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L4"/>
+					</lefts>
+					<right>
+						<!-- fby(_L5; 1; EMPTY_STRING) -->
+						<FbyOp name="1">
+							<flows>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L5"/>
+									</path>
+								</IdExpression>
+							</flows>
+							<delay>
+								<ConstValue value="1"/>
+							</delay>
+							<values>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="EMPTY_STRING"/>
+									</path>
+								</IdExpression>
+							</values>
+						</FbyOp>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4606/73E7/2F7F0/56035bea6852"/>
+					</pragmas>
+				</Equation>
+				<!-- _L1 = Button; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="Button"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4605/73E7/2F7F0/56035bea4f0e"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2 = ValueString; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="ValueString"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4604/73E7/2F7F0/56035bea5182"/>
+					</pragmas>
+				</Equation>
+				<!-- Result = _L4; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="Result"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L4"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4603/73E7/2F7F0/56035bea2bc5"/>
 					</pragmas>
 				</Equation>
 			</data>
@@ -290,7 +290,7 @@
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/4606/73E7/2F7F0/56035bea6852" dstEquation="!ed/4607/73E7/2F7F0/56035beac37">
 									<positions>
-										<Point x="10425" y="6853"/>
+										<Point x="10451" y="6853"/>
 										<Point x="10927" y="6853"/>
 										<Point x="10927" y="7673"/>
 										<Point x="3519" y="7673"/>
@@ -315,7 +315,7 @@
 								</Edge>
 								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4606/73E7/2F7F0/56035bea6852" dstEquation="!ed/4603/73E7/2F7F0/56035bea2bc5">
 									<positions>
-										<Point x="10425" y="6853"/>
+										<Point x="10451" y="6853"/>
 										<Point x="11853" y="6853"/>
 										<Point x="11853" y="6853"/>
 										<Point x="12171" y="6853"/>
