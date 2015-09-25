@@ -1,4 +1,4 @@
-I0001: SCADE Suite UA Adaptor Version 6.4.2 (build i25) (c) Esterel Technologies SA 2012-2013 started at 2015-09-24T12:34:57.
+I0001: SCADE Suite UA Adaptor Version 6.4.2 (build i25) (c) Esterel Technologies SA 2012-2013 started at 2015-09-25T12:16:28.
 I0005: Command line: uaadaptor.exe -n "C:\Program Files (x86)\Esterel Technologies\Esterel SCADE 6.4.2\SCADE Display\config\Workspace\environments\UAPageCreator\A661Norm\a661.xml" -k ..\..\UA\UTI-availability\KCG\kcg_trace.xml -d ..\..\DF\DF_US08.sgfx ..\..\UA\UTI-availability\UTI-availability.sdy -outdir ..\..\UA\UTI-availability\KCG
 I0006: Generated file: <log> : ..\..\UA\UTI-availability\KCG\ua.log
 I0007: Input file: C:\Program Files (x86)\Esterel Technologies\Esterel SCADE 6.4.2\SCADE Display\config\Workspace\environments\UAPageCreator\A661Norm\a661.xml
@@ -83,4 +83,4 @@ I0006: Generated file: <.c> : ..\..\UA\UTI-availability\KCG\ua.c
 I0006: Generated file: <.h> : ..\..\UA\UTI-availability\KCG\ua.h
 I0808: [SUCCESSFUL]
 I0006: Generated file: ..\..\UA\UTI-availability\KCG\df.log
-I0002: SCADE Suite UA Adaptor finished with 0 error(s) at 2015-09-24T12:34:58.
+I0002: SCADE Suite UA Adaptor finished with 0 error(s) at 2015-09-25T12:16:29.
