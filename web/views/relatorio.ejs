@@ -158,7 +158,7 @@
 
         var radius = Math.round(heatmapCircle.getRadius());
         if (radius < 500) {
-          setHeatmapCircleRadius(radius);
+          setHeatmapCircleRadius(radius = 500);
         }
         $('#searchRadius').val(radius / 1000.0);
         updateMapZoomLevel();
