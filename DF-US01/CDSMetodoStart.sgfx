@@ -8,6 +8,12 @@
     <IDE>
         <environment_id value="-2133961615"/>
         <ratio horizontal="1" vertical="1"/>
+        <reporter authors="Adan Vítor e Marcelo Almeida" classification="" company="ITA" date="24/09/2015" distribution_list="" index="" issue="" reference="Lab 1 - Trem de Pouso" referenceNr="" subtitle="SS-BOMB TS03" title="SI-GAC">
+            <description>DF/CDS para input de dados de vítimas de acidentes.
+
+Essa tela permite inclusão de diversas informações do acidentado.</description>
+            <summary>Esse relatório contém a descrição detalhada da tela criada.</summary>
+        </reporter>
     </IDE>
     <symbology>
         <dimension height="768" width="768"/>
@@ -1052,5 +1058,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 132114823 -->
+<!-- crc32 : 3887697599 -->
 
