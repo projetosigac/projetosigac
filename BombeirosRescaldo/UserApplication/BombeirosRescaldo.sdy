@@ -333,6 +333,64 @@
 						</A661_CMD_SET_PARAMETER>
 					</inputs>
 				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ScreeningVictimSexEntryOut" type="int" oid="!ed/233a/6381/B90/56048f825173" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SelectedEntry" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="57" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="ScreeningVictimSex">
+							<A661Data>
+								<DataField value="SelectedEntry"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ScreeningVictimReset" type="bool" oid="!ed/233b/6381/B90/56048f8e30e3" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="57" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="ScreeningVictimSex">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="58" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="ScreeningVictimAge">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="59" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="ScreeningVictimDamage">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ScreeningVictimDamageEntryOut" type="int" oid="!ed/2301/7E2A/6A8/560494f23ed3" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SelectedEntry" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="59" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="ScreeningVictimDamage">
+							<A661Data>
+								<DataField value="SelectedEntry"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="ScreeningVictimAgeEntryOut" type="int" oid="!ed/2300/7E2A/6A8/560494d75837" instancepath="Main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SelectedEntry" type="ushort" pathname="..\DefinitionFile\BombeirosRescaldo.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="58" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="ScreeningVictimAge">
+							<A661Data>
+								<DataField value="SelectedEntry"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
 			</mappingItems>
 		</OperatorMapping>
 	</operatorMappings>
