@@ -1,0 +1,38 @@
+<%- include layouts/header.ejs %>
+<link href="/../css/pages/atendimento.css" rel="stylesheet">
+</head>
+	<body>
+	<div class="menu-masthead">
+      <div class="container">
+        <nav class="menu-nav">
+          <a class="menu-nav-item active" href="#">Novo Atendimento</a>
+          <a class="menu-nav-item" href="#">Bases Samu</a>
+          <a class="menu-nav-item" href="#">Consultar Atendimento</a>
+		  <a class="menu-nav-item navbar-right">Sair</a>
+          <a class="menu-nav-item navbar-right" href="#">Olá João!</a>
+        </nav>
+      </div>
+    </div>
+	<div class="container">
+	<div class="container-filter">
+		<div class="row">
+			<div class="alert alert-info" role="alert">
+				<b>1º Passo:</b> Digite no combo de endereço o local da emergência.
+			</div>
+		<form class="form-inline" onsubmit="return mapa.pesquisarEndereco();">
+		  <div class="form-group">
+			<label for="Local">Local da Emergência</label>
+			<input type="text" style="width:350px;" class="form-control" id="localEmergencia" placeholder="Avenida 9 de Julho, Centro, São José dos Campos">
+		  </div>
+		  <button type="submit" class="btn btn-primary">Localizar</button>
+		</form>			
+			
+		</div>
+	</div>
+		<div id="map"></div>
+	</div>
+<%- include layouts/footer.ejs %>
+<script>
+	mapa.start();
+</script>
+</html>
