@@ -88,7 +88,7 @@
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
                         <intprop name="PosX">2600</intprop>
-                        <intprop name="PosY">-5260</intprop>
+                        <intprop name="PosY">-5240</intprop>
                         <intprop name="SizeX">10060</intprop>
                         <intprop name="SizeY">19480</intprop>
                         <intprop name="StyleSet">0</intprop>
@@ -233,7 +233,7 @@
                                                 <stringprop name="LabelString"></stringprop>
                                             </model>
                                         </widget>
-                                        <widget name="EditBoxText" oid="95cbf175-3a09-4d34-a3b5-2c9537234ab8" type="EditBoxText">
+                                        <widget name="IncidentIdTextBox" oid="95cbf175-3a09-4d34-a3b5-2c9537234ab8" type="EditBoxText">
                                             <IDE/>
                                             <model>
                                                 <intprop name="WidgetIdent">13</intprop>
@@ -1020,5 +1020,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 2280307880 -->
+<!-- crc32 : 416680116 -->
 
