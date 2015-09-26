@@ -8,6 +8,9 @@
     <IDE>
         <environment_id value="-2133961615"/>
         <ratio horizontal="1" vertical="1"/>
+        <reporter authors="Felipe Vincent Yannik Romero Pereira" classification="" company="Instituto Tecnológico de Aeronáutica" distribution_list="" issue="" referenceNr="">
+            <summary>This is the DF of a form to add new medical data to already registered victims.</summary>
+        </reporter>
     </IDE>
     <symbology>
         <dimension height="768" width="768"/>
@@ -2251,5 +2254,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 3166108376 -->
+<!-- crc32 : 3830558213 -->
 
