@@ -672,6 +672,16 @@
 								<Emit/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="39" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="DoB Value">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="40" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="CivilState Value">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -713,6 +723,11 @@
 								<DataField value="String_size"/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="39" ParameterIdent="A661_STRING" WidgetType="EditBoxText" WidgetName="DoB Value">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -735,6 +750,18 @@
 						<A661_CMD_SET_PARAMETER name="CheckButtonState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_INNER_STATE_CHECK" WidgetType="CheckButton" WidgetName="Sex F CheckButton">
 							<A661Data>
 								<DataField value="CheckButtonState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialCivilStateData" type="int" oid="!ed/2a43/21C4/8C4/5605b64c452e" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="SelectedEntry" type="ushort" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="40" ParameterIdent="A661_SELECTED_ENTRY" WidgetType="ComboBox" WidgetName="CivilState Value">
+							<A661Data>
+								<DataField value="SelectedEntry"/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
 					</inputs>
@@ -783,6 +810,18 @@
 						<A661_CMD_SET_PARAMETER name="ToggleState" type="enum {A661_SELECTED, A661_UNSELECTED}" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="37" ParameterIdent="A661_INNER_STATE_TOGGLE" WidgetType="ToggleButton" WidgetName="Status Perfect ToggleButton">
 							<A661Data>
 								<DataField value="ToggleState"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="InitialDoBData" type="char^31" oid="!ed/267a/1431/464/5605fc106a2f" instancepath="main/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\..\DF\CadastroVitima\SAMU-CadastroVitima.sgfx" layer="FirstPage" LayerIdent="1" WidgetIdent="39" ParameterIdent="A661_STRING" Size="31" WidgetType="EditBoxText" WidgetName="DoB Value">
+							<A661Data>
+								<DataField value="LabelString"/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
 					</inputs>

@@ -357,6 +357,18 @@
 						<ed:Variable oid="!ed/2b7c/21C4/8C4/5605b7a92294"/>
 					</pragmas>
 				</Variable>
+				<Variable name="InitialDoBData">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/267a/1431/464/5605fc106a2f"/>
+					</pragmas>
+				</Variable>
 			</outputs>
 			<locals>
 				<Variable name="_L10">
@@ -627,6 +639,18 @@
 					</type>
 					<pragmas>
 						<ed:Variable oid="!ed/2b53/21C4/8C4/5605b7685c53"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L31">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_String"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/2675/1431/464/5605fc094905"/>
 					</pragmas>
 				</Variable>
 			</locals>
@@ -1278,6 +1302,38 @@
 						<ed:Equation oid="!ed/2b7d/21C4/8C4/5605b7a92fab"/>
 					</pragmas>
 				</Equation>
+				<!-- _L31 = STUB_DOB; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L31"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="STUB_DOB"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/2674/1431/464/5605fc09f1c"/>
+					</pragmas>
+				</Equation>
+				<!-- InitialDoBData = _L31; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="InitialDoBData"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L31"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/267b/1431/464/5605fc10497"/>
+					</pragmas>
+				</Equation>
 			</data>
 			<pragmas>
 				<ed:Operator oid="!ed/20de/1BEA/A60/5604e76d730a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
@@ -1761,6 +1817,30 @@
 										<Point x="17119" y="12700"/>
 										<Point x="17119" y="12700"/>
 										<Point x="17912" y="12700"/>
+									</positions>
+								</Edge>
+								<EquationGE kind="OBJ_LIT" presentable="!ed/2674/1431/464/5605fc09f1c">
+									<position>
+										<Point x="3466" y="19076"/>
+									</position>
+									<size>
+										<Size width="211" height="317"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/267b/1431/464/5605fc10497">
+									<position>
+										<Point x="6906" y="18971"/>
+									</position>
+									<size>
+										<Size width="317" height="502"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/2674/1431/464/5605fc09f1c" dstEquation="!ed/267b/1431/464/5605fc10497">
+									<positions>
+										<Point x="3678" y="19235"/>
+										<Point x="5318" y="19235"/>
+										<Point x="5318" y="19235"/>
+										<Point x="6959" y="19235"/>
 									</positions>
 								</Edge>
 							</presentationElements>
