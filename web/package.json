@@ -10,6 +10,7 @@
     "ejs": "^1.0.0",
     "express": "3.5.1",
     "express-myconnection": "1.0.4",
+    "express-session": "^1.7.6",
     "jade": "*",
     "mysql": "2.2.0"
   }

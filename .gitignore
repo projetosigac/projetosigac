@@ -60,7 +60,7 @@ Icon
 # =========================
 
 *.err
-**/*DF/
+#**/*DF/
 **/KCG/
 **/Simulation/
 **/IntegrationCode/bin

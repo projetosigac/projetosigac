@@ -4,14 +4,15 @@
  */
 
 var express = require('express');
+var session	= require('express-session');
 var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 
-
 //load routes
 var customers = require('./routes/customers'); 
 var api = require('./routes/api');
+var util = require('./routes/utils');
  
 var app = express();
 
@@ -31,6 +32,9 @@ app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
+
+app.use(session({secret: 'ssshhhhh',saveUninitialized: true,resave: true}));
+var sess;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -59,15 +63,18 @@ app.use(
 );
 
 app.get('/', routes.index);
-app.get('/atendimento', routes.atendimento);
-app.get('/ambulancias', routes.ambulancias);
-app.get('/chamados', routes.chamados);
+app.get('/atendimento', util.autenticarSessao, routes.atendimento);
+app.get('/ambulancias', util.autenticarSessao, routes.ambulancias);
+app.get('/chamados', util.autenticarSessao, routes.chamados);
+/*
+***Exemplo de criação de rota passando parametros
 app.get('/customers', customers.list);
 app.get('/customers/add', customers.add);
 app.post('/customers/add', customers.save);
 app.get('/customers/delete/:id', customers.delete_customer);
 app.get('/customers/edit/:id', customers.edit);
 app.post('/customers/edit/:id',customers.save_edit);
+*/
 
 //apis
 app.post('/api/login', api.login);
