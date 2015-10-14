@@ -1,4 +1,3 @@
-
 /**
  * Module dependencies.
  */
@@ -13,6 +12,7 @@ var path = require('path');
 var customers = require('./routes/customers'); 
 var api = require('./routes/api');
 var util = require('./routes/utils');
+var atendimento = require('./routes/atendimento');
  
 var app = express();
 
@@ -63,7 +63,7 @@ app.use(
 );
 
 app.get('/', routes.index);
-app.get('/atendimento', util.autenticarSessao, routes.atendimento);
+app.get('/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/chamados', util.autenticarSessao, routes.chamados);
 /*
@@ -77,7 +77,8 @@ app.post('/customers/edit/:id',customers.save_edit);
 */
 
 //apis
-app.post('/api/login', api.login);
+app.post('/api/login-sistema', api.loginSistema);
+app.get('/logout', api.logout);
 
 
 app.use(app.router);

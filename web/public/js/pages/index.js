@@ -4,7 +4,7 @@ index = function(){
 		var requestData = JSON.stringify($('#formLogin').serializeObject());
 		
 		$.ajax({
-			url: '/api/login',
+			url: '/api/login-sistema',
 			type: 'POST',
 			async: false,
 			contentType: 'application/json; charset=utf-8',

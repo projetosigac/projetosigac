@@ -3,9 +3,7 @@
  * APIS do Sistema.
  */
 
-exports.login = function (req, res) {
-  //req
-  //res.render('index', { title: 'Hello World' });
+exports.loginSistema = function (req, res) {
   
   if (!req.body.hasOwnProperty('login') || !req.body.hasOwnProperty('senha')) {
 		res.statusCode = 400;
@@ -41,4 +39,16 @@ exports.login = function (req, res) {
     }); 
       */  
     res.json({status: 'OK', token: sess.token});
+};
+/*Realizar logout do sistema*/
+exports.logout = function (req, res){
+	req.session.destroy(function(err){
+		if(err){
+			console.log(err);
+		}
+		else
+		{
+			res.redirect('/');
+		}
+	});
 };
