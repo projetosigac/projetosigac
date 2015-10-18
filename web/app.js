@@ -9,14 +9,16 @@ var http = require('http');
 var path = require('path');
 
 //load routes
-var customers = require('./routes/customers'); 
+var dashboard = require('./routes/dashboard');
+var utiCrises = require('./routes/utiCrises');
+var customers = require('./routes/customers');
 var api = require('./routes/api');
 var util = require('./routes/utils');
 var atendimento = require('./routes/atendimento');
- 
+
 var app = express();
 
-var connection  = require('express-myconnection'); 
+var connection  = require('express-myconnection');
 var mysql = require('mysql');
 
 //criamos instancia do body-parser, usado nos handlers
@@ -45,13 +47,13 @@ if ('development' == app.get('env')) {
 
 /*------------------------------------------
     connection peer, register as middleware
-    type koneksi : single,pool and request 
+    type koneksi : single,pool and request
 -------------------------------------------*/
 
 app.use(
-    
+
     connection(mysql,{
-        
+
         host: 'localhost',
         user: 'root',
         password : 'mysql',
@@ -63,6 +65,8 @@ app.use(
 );
 
 app.get('/', routes.index);
+app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
+app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
 app.get('/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/chamados', util.autenticarSessao, routes.chamados);

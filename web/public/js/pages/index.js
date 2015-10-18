@@ -1,8 +1,8 @@
 index = function(){
 	var _api_user_login = function (){
-			
+
 		var requestData = JSON.stringify($('#formLogin').serializeObject());
-		
+
 		$.ajax({
 			url: '/api/login-sistema',
 			type: 'POST',
@@ -12,11 +12,11 @@ index = function(){
 			data: requestData
 		}).done(function(data, textStatus, jqXHR) {
 			//$.sessionStorage.setItem('userToken', data.token);
-			window.location.href = '/atendimento';
+			window.location.href = '/dashboard';
 		}).fail(function(jqXHR, textStatus, errorThrown) {
 			alert(textStatus);
 		});
-		
+
 		return false;
 	}
 	return {
