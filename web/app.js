@@ -49,7 +49,17 @@ if ('development' == app.get('env')) {
 -------------------------------------------*/
 
 app.use(
-    
+    /*conexao remota*/
+    connection(mysql,{
+        
+        host: 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
+        user: 'admin',
+        password : 'adminsigac',
+        port : 3306, //port mysql
+        database:'sigac'
+
+    },'pool')
+    /*conexao local
     connection(mysql,{
         
         host: 'localhost',
@@ -59,7 +69,7 @@ app.use(
         database:'sigac'
 
     },'pool') //or single
-
+    */
 );
 
 app.get('/', routes.index);
