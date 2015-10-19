@@ -1,24 +1,17 @@
-<%- include layouts/header.ejs %>
+<%- include ../layouts/header.ejs %>
 <link href="/../css/pages/atendimento.css" rel="stylesheet">
 </head>
 	<body>
-	<div class="menu-masthead">
-      <div class="container">
-        <nav class="menu-nav">
-          <a class="menu-nav-item" href="atendimento">Novo Atendimento</a>
-          <a class="menu-nav-item" href="ambulancias">Ambulâncias</a>
-          <a class="menu-nav-item active" href="#">Ocorrências ativas</a>
-          <%- include layouts/menu-login.ejs %>
-        </nav>
-      </div>
-    </div>
-	
-	<div class="container" style="padding-top: 10px">
-		<div class="row">
-			<div class="col-md-6">
-	
-	<h1> Ocorrências ativas </h1>
-	
+		<div id="wrapper">
+			<%- include ../layouts/navigationAmbulancia.ejs %>
+
+
+			<div class="container-fluid" style="padding-top: 10px">
+				<div class="row">
+					<div class="col-md-6">
+
+			<h1> Ocorrências ativas </h1>
+
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	  <div class="panel panel-default">
 		<div class="panel-heading" role="tab" id="headingOne">
@@ -67,18 +60,20 @@
 		</div>
 	  </div>
 	</div>
-	
+
 			</div>
-			
+
 			<div class="col-md-6">
 				<div id="map"></div>
 			</div>
-			
+
 		</div>
 	</div>
-	
+
 	</body>
-<%- include layouts/footer.ejs %>
+<%- include ../layouts/footer.ejs %>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="/../js/mapa.js"></script>
 <script>
 	mapa.start();
 	var marker_1 = new google.maps.Marker({
@@ -102,4 +97,3 @@
 		});
 </script>
 </html>
-

@@ -39,6 +39,9 @@ mapa = function(){
 		});
 		marker.setPosition(latlng);
 
+		google.maps.event.addDomListener(window, 'resize', _initialize);
+		google.maps.event.addDomListener(window, 'load', _initialize);
+
 	}
     var _calcularRota = function (enderecoAtendimento) {
       directionsService.route({
@@ -70,6 +73,9 @@ mapa = function(){
 					marker.setVisible(true);
 					map.setCenter(location);
 					map.setZoom(16);
+
+					google.maps.event.addDomListener(window, 'resize', _initialize);
+					google.maps.event.addDomListener(window, 'load', _initialize)
 
                     var infowindow = new google.maps.InfoWindow({
                         content: "<b>Local da emergência</b><br/>".concat(enderecoFormatado),

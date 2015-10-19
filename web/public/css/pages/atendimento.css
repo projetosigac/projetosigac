@@ -6,4 +6,4 @@
     font-style: italic;
 }
 
-div#map {width:500px; height:500px;}
+div#map {width:100%;height:500px;}
