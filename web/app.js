@@ -1,17 +1,18 @@
-
 /**
  * Module dependencies.
  */
 
 var express = require('express');
+var session	= require('express-session');
 var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 
-
 //load routes
 var customers = require('./routes/customers'); 
 var api = require('./routes/api');
+var util = require('./routes/utils');
+var atendimento = require('./routes/atendimento');
  
 var app = express();
 
@@ -32,6 +33,9 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 
+app.use(session({secret: 'ssshhhhh',saveUninitialized: true,resave: true}));
+var sess;
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
@@ -45,7 +49,17 @@ if ('development' == app.get('env')) {
 -------------------------------------------*/
 
 app.use(
-    
+    /*conexao remota*/
+    connection(mysql,{
+        
+        host: 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
+        user: 'admin',
+        password : 'adminsigac',
+        port : 3306, //port mysql
+        database:'sigac'
+
+    },'pool')
+    /*conexao local
     connection(mysql,{
         
         host: 'localhost',
@@ -55,22 +69,26 @@ app.use(
         database:'sigac'
 
     },'pool') //or single
-
+    */
 );
 
 app.get('/', routes.index);
-app.get('/atendimento', routes.atendimento);
-app.get('/ambulancias', routes.ambulancias);
-app.get('/chamados', routes.chamados);
+app.get('/atendimento', util.autenticarSessao, atendimento.carregarPagina);
+app.get('/ambulancias', util.autenticarSessao, routes.ambulancias);
+app.get('/chamados', util.autenticarSessao, routes.chamados);
+/*
+***Exemplo de criação de rota passando parametros
 app.get('/customers', customers.list);
 app.get('/customers/add', customers.add);
 app.post('/customers/add', customers.save);
 app.get('/customers/delete/:id', customers.delete_customer);
 app.get('/customers/edit/:id', customers.edit);
 app.post('/customers/edit/:id',customers.save_edit);
+*/
 
 //apis
-app.post('/api/login', api.login);
+app.post('/api/login-sistema', api.loginSistema);
+app.get('/logout', api.logout);
 
 
 app.use(app.router);
