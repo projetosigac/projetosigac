@@ -1,26 +1,19 @@
-<%- include layouts/header.ejs %>
+<%- include ../layouts/header.ejs %>
 <link href="/../css/pages/atendimento.css" rel="stylesheet">
 </head>
 	<body>
-	<div class="menu-masthead">
-      <div class="container">
-        <nav class="menu-nav">
-          <a class="menu-nav-item active" href="#">Novo Atendimento</a>
-          <a class="menu-nav-item" href="ambulancias">Ambulâncias</a>
-          <a class="menu-nav-item" href="chamados">Ocorrências ativas</a>
-          <%- include layouts/menu-login.ejs %>
-        </nav>
-      </div>
-    </div>
-	<div class="container body-atendimento">
+		<div id="wrapper">
+			<%- include ../layouts/navigationAmbulancia.ejs %>
+
+			<div class="container-fluid body-atendimento">
 		<div class="row">
 			<div class="col-md-3">
-                <div class="alert alert-info" id="passo" role="alert">                    
+                <div class="alert alert-info" id="passo" role="alert">
                 </div>
                 <form onsubmit="return false;">
                     <label>Local da emergência:</label>
                     <div class="input-group form-group">
-                        
+
                         <input type="text" class="form-control" id="localEmergencia" placeholder="Ex.: Avenida 9 de Julho, Centro, São José dos Campos" onkeydown="if(event.keyCode == 13){atendimento.pesquisarEndereco();}" />
                         <input type="hidden" id="enderecoAtendimentoGoogle" />
                         <span class="input-group-btn">
@@ -30,12 +23,12 @@
                         </span>
                     </div>
                     <label>Quantidade de vítimas:</label>
-                    <div class="form-group">                        
+                    <div class="form-group">
                         <input type="number" min="1" value="1" class="form-control" id="qtdVitimas" />
                     </div>
                     <div class="form-group">
                         <button type="button" class="btn btn-info" onclick="atendimento.chamarAmbulancia();"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Calcular Ambulâncias</button>
-                    </div>                    
+                    </div>
                     <label>Observação:</label>
                     <div class="form-group">
                         <textarea class="form-control" rows="3"></textarea>
@@ -57,20 +50,22 @@
             <center>
                 <img src="/../images/ok.png" style="width:150px;" />
                 <br />
-                <label>Ocorrência aberta com sucesso!</label>  
-            </center>            
+                <label>Ocorrência aberta com sucesso!</label>
+            </center>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar</button>
           </div>
         </div>
       </div>
-    </div>    
-<%- include layouts/footer.ejs %>
+    </div>
+<%- include ../layouts/footer.ejs %>
         <script type="text/javascript" src="/../js/pages/atendimento.js"></script>
 <script>
     $(document).ready(function(){
-        atendimento.init();        
+        atendimento.init();
     });
 </script>
+</div>
+</body>
 </html>

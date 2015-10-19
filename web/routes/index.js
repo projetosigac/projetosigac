@@ -9,9 +9,9 @@ exports.index = function(req, res){
 /*mover funcoes abaixo para arquivo js igual nome da funcionalidade*/
 
 exports.ambulancias = function(req, res){
-  res.render('ambulancias', { title: 'Ambulancias' });
+  res.render('ambulancia/ambulancias', { title: 'Ambulancias' });
 };
 
 exports.chamados = function(req, res){
-  res.render('chamados', { title: 'Chamados' });
+  res.render('ambulancia/chamados', { title: 'Chamados' });
 };

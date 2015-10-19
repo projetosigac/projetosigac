@@ -11,6 +11,8 @@ var path = require('path');
 //load routes
 var dashboard = require('./routes/dashboard');
 var utiCrises = require('./routes/utiCrises');
+var utiVitimas = require('./routes/utiVitimas');
+var utiVitima = require('./routes/utiVitima');
 var customers = require('./routes/customers');
 var api = require('./routes/api');
 var util = require('./routes/utils');
@@ -67,9 +69,11 @@ app.use(
 app.get('/', routes.index);
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
 app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
-app.get('/atendimento', util.autenticarSessao, atendimento.carregarPagina);
-app.get('/ambulancias', util.autenticarSessao, routes.ambulancias);
-app.get('/chamados', util.autenticarSessao, routes.chamados);
+app.get('/uti/vitimas', util.autenticarSessao, utiVitimas.carregarPagina);
+app.get('/uti/vitima', util.autenticarSessao, utiVitima.carregarPagina);
+app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
+app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
+app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 /*
 ***Exemplo de criação de rota passando parametros
 app.get('/customers', customers.list);
