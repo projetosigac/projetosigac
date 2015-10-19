@@ -5,6 +5,9 @@
 **/build
 **/dist
 
+**/.idea/
+*.iml
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
