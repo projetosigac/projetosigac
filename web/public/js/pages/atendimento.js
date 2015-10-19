@@ -26,7 +26,7 @@ atendimento = function () {
                 break;
             case 3:
                 $("#passo").html("<b>3º Passo:</b> Clique em 'Registrar Ocorrência para encaminhar o atendimento.'");
-                break;                
+                break;
         }
     }
     return{
