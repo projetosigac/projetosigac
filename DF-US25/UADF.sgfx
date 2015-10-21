@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<specification>
+    <IDE>
+        <project path="US25-DF.etp"/>
+        <ratio horizontal="20" vertical="20"/>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <A661 library_version="1" supp_version="5">
+        <intprop name="ApplicationId">1</intprop>
+    </A661>
+    <children>
+        <A661Layer name="a661_layer" oid="b24fdbee-fddc-4d5c-8b74-a7da2a4b6461">
+            <IDE>
+                <ratio horizontal="20" vertical="20"/>
+            </IDE>
+            <model>
+                <intprop name="LayerId">1</intprop>
+                <intprop name="ContextNumber">0</intprop>
+                <intprop name="Width">15360</intprop>
+                <intprop name="Height">15360</intprop>
+            </model>
+            <children>
+                <widget name="GpRectangle" oid="9732b9aa-b804-4cad-b80f-89a4c7d614db" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">1</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">260</intprop>
+                        <intprop name="PosY">13900</intprop>
+                        <intprop name="SizeX">14800</intprop>
+                        <intprop name="SizeY">1020</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">74</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="GpRectangle" oid="c55fe08e-0511-486c-80e3-8f79f9a022ad" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">7</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1180</intprop>
+                        <intprop name="PosY">9780</intprop>
+                        <intprop name="SizeX">4980</intprop>
+                        <intprop name="SizeY">2420</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">74</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="b41bf234-6a3b-4c2c-8a48-f91f77f5917d" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">2</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1460</intprop>
+                        <intprop name="PosY">11160</intprop>
+                        <intprop name="SizeX">4480</intprop>
+                        <intprop name="SizeY">780</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Sound Relevance labels</stringprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="175ab3e9-f2df-49f4-abed-2115ba1cee98" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">3</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">5620</intprop>
+                        <intprop name="PosY">13880</intprop>
+                        <intprop name="SizeX">3520</intprop>
+                        <intprop name="SizeY">960</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">2</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">SOUND SENSOR</stringprop>
+                    </model>
+                </widget>
+                <widget name="GpRectangle" oid="97a38a74-2953-4a64-a9dd-840e2b656852" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">4</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1980</intprop>
+                        <intprop name="PosY">10560</intprop>
+                        <intprop name="SizeX">940</intprop>
+                        <intprop name="SizeY">660</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">7</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="GpRectangle" oid="671658a0-6426-427e-a029-6228ed95e42c" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">5</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8780</intprop>
+                        <intprop name="PosY">2560</intprop>
+                        <intprop name="SizeX">5540</intprop>
+                        <intprop name="SizeY">9640</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">0</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="GpRectangle" oid="c1bd6fe1-bb1d-49f8-8912-35a93d146304" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">9</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">3140</intprop>
+                        <intprop name="PosY">10560</intprop>
+                        <intprop name="SizeX">940</intprop>
+                        <intprop name="SizeY">660</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">41</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="GpRectangle" oid="12556adc-74a8-49a6-a3a2-44b87622e4b4" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">10</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4300</intprop>
+                        <intprop name="PosY">10560</intprop>
+                        <intprop name="SizeX">940</intprop>
+                        <intprop name="SizeY">660</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">21</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="60b8ade2-9c6c-4841-928a-79926685878b" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">11</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">3280</intprop>
+                        <intprop name="PosY">9900</intprop>
+                        <intprop name="SizeX">620</intprop>
+                        <intprop name="SizeY">700</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">MID</stringprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="1ee4e9bd-56d2-463a-8ab6-ab5ec225c4e1" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">12</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4340</intprop>
+                        <intprop name="PosY">9920</intprop>
+                        <intprop name="SizeX">860</intprop>
+                        <intprop name="SizeY">620</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">HIGH</stringprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="e6a12bdd-85a9-4af0-9c15-1d166ceb7abe" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">13</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">2140</intprop>
+                        <intprop name="PosY">9860</intprop>
+                        <intprop name="SizeX">620</intprop>
+                        <intprop name="SizeY">700</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">LOW</stringprop>
+                    </model>
+                </widget>
+                <widget name="GpRectangle" oid="bd552426-b987-4398-9e24-358d63b2022b" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">15</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1140</intprop>
+                        <intprop name="PosY">4940</intprop>
+                        <intprop name="SizeX">5040</intprop>
+                        <intprop name="SizeY">4380</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">74</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="b3c21994-bae2-4f7a-add3-ca0d9f3bed98" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">14</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1360</intprop>
+                        <intprop name="PosY">8200</intprop>
+                        <intprop name="SizeX">4660</intprop>
+                        <intprop name="SizeY">900</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Current Sound Relevance</stringprop>
+                    </model>
+                </widget>
+                <widget name="SoundRelevanceBox" oid="2240a127-d6c7-4301-bfa1-e3a90e53cce0" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">16</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1580</intprop>
+                        <intprop name="PosY">5280</intprop>
+                        <intprop name="SizeX">4140</intprop>
+                        <intprop name="SizeY">2920</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">7</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="GpRectangle" oid="d223e13f-18d3-41e0-b918-0003a406cb9a" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">17</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">9700</intprop>
+                        <intprop name="PosY">1360</intprop>
+                        <intprop name="SizeX">3700</intprop>
+                        <intprop name="SizeY">660</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">74</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+                <widget name="Label" oid="94c4a08e-9b72-4820-ab1d-ae7d52705179" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">6</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">10040</intprop>
+                        <intprop name="PosY">1220</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Sound Intensity</stringprop>
+                    </model>
+                </widget>
+                <widget name="SoundIntesityBar" oid="5a9653be-0681-439c-a75b-7769bc392184" type="GpRectangle">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">18</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">8820</intprop>
+                        <intprop name="PosY">2600</intprop>
+                        <intprop name="SizeX">5460</intprop>
+                        <intprop name="SizeY">1100</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Filled">A661_TRUE</enumprop>
+                        <intprop name="FillIndex">31</intprop>
+                        <enumprop name="Halo">A661_FALSE</enumprop>
+                    </model>
+                </widget>
+            </children>
+        </A661Layer>
+    </children>
+</specification>
+
+<!-- crc32 : 1958953566 -->
+

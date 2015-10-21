@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project id="1" oid_count="78">
+	<props>
+		<Prop id="1" name="@STUDIO:PRODUCT">
+			<value>UAPC</value>
+		</Prop>
+		<Prop id="3" name="@SDY:RELEASE">
+			<value>R16.2</value>
+		</Prop>
+		<Prop id="4" name="@SDY:RATIO">
+			<value>20.0</value>
+			<value>20.0</value>
+		</Prop>
+		<Prop id="5" name="@SDY:DEFAULTCOLORTABLE">
+			<value>color_table.sct</value>
+		</Prop>
+		<Prop id="6" name="@SDY:DEFAULTLWTABLE">
+			<value>line_width_table.swt</value>
+		</Prop>
+		<Prop id="7" name="@SDY:DEFAULTLSTABLE">
+			<value>line_stipple_table.sst</value>
+		</Prop>
+		<Prop id="9" name="@SDY:FONTTABLE">
+			<value>font_table.sft</value>
+		</Prop>
+		<Prop id="18" name="@UAPC:STYLESETTABLE">
+			<value>lookStylesets.xml</value>
+		</Prop>
+		<Prop id="19" name="@UAPC:PICTURESTABLE">
+			<value>picturesTable.xml</value>
+		</Prop>
+		<Prop id="20" name="@UAPC:SYMBOLSTABLE">
+			<value>symbolsTable.xml</value>
+		</Prop>
+		<Prop id="21" name="@UAPC:LINESTYLETABLE">
+			<value>linestylesTable.xml</value>
+		</Prop>
+		<Prop id="22" name="@UAPC:CONFFILE">
+			<value>a661.xml</value>
+		</Prop>
+		<Prop id="29" name="@UAPC:CHARSETENCODING">
+			<value>Ascii</value>
+		</Prop>
+		<Prop id="30" name="@UAPC:CONFLIB">
+			<value>$(SCADEDISPLAY_HOME)\config\lib\A661Server.dll</value>
+		</Prop>
+		<Prop id="34" name="@UAPC:STYLESETLIB">
+			<value>stylesets.dll</value>
+		</Prop>
+		<Prop id="31" name="@SDY:FONTLIBRARY">
+			<value>Fonts.dll</value>
+		</Prop>
+		<Prop id="37" name="@SDY:CONFTARGET">
+			<value>dfgen</value>
+			<configuration>36</configuration>
+		</Prop>
+		<Prop id="38" name="CONFIGURATIONS">
+			<value>36</value>
+		</Prop>
+		<Prop id="39" name="@SDY:CONFSOURCE">
+			<configuration>36</configuration>
+		</Prop>
+		<Prop id="40" name="@SDY:CONFOUTPUT">
+			<value>%ModelName%_DF</value>
+			<configuration>36</configuration>
+		</Prop>
+		<Prop id="41" name="@UAPC:DFGENERATOR">
+			<value>dfgen66</value>
+			<configuration>36</configuration>
+		</Prop>
+		<Prop id="42" name="@UAPC:SERVERCONF">
+			<configuration>36</configuration>
+		</Prop>
+		<Prop id="43" name="@UAPC:BASENAME">
+			<configuration>36</configuration>
+		</Prop>
+		<Prop id="45" name="REPCONFIGURATIONS">
+			<value>44</value>
+		</Prop>
+		<Prop id="46" name="@SDYREP:CONFSOURCE">
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="47" name="@SDY:@SDYREP:OUTPUT">
+			<value>%ModelName%_Report</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="48" name="@SDYREP:INTERNATIONALIZATION">
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="49" name="@SDYREP:AUTHORS">
+			<value>&lt;authors></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="50" name="@SDYREP:CLASSIFICATION">
+			<value>&lt;document classification></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="51" name="@SDYREP:COMPANYINFO">
+			<value>&lt;company></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="52" name="@SDYREP:DISTLIST">
+			<value>&lt;distribution list></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="53" name="@SDYREP:IMAGEPATH">
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="54" name="@SDYREP:LOGOPATH">
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="55" name="@SDYREP:BANNERPATH">
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="56" name="@SDYREP:SUMMARY">
+			<value>&lt;summary></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="57" name="@SDYREP:DATE">
+			<value>&lt;date></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="58" name="@SDYREP:DESCRIPTION">
+			<value>&lt;description></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="59" name="@SDYREP:INDEX">
+			<value>&lt;index></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="60" name="@SDYREP:ISSUE">
+			<value>&lt;issue number></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="61" name="@SDYREP:REFERENCE">
+			<value>&lt;reference></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="62" name="@SDYREP:REFERENCENB">
+			<value>&lt;reference number></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="63" name="@SDYREP:SUBTITLE">
+			<value>&lt;subtitle></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="64" name="@SDYREP:TITLE">
+			<value>&lt;title></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="65" name="@SDYREP:HEADERLEFT">
+			<value>$(ReferenceNr)&#xA;$(CreatedDate)</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="66" name="@SDYREP:HEADERCENTER">
+			<value>$(IssueNr)</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="67" name="@SDYREP:HEADERRIGHT">
+			<value>$(PageNumbering)</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="68" name="@SDYREP:FOOTERLEFT">
+			<value></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="69" name="@SDYREP:FOOTERCENTER">
+			<value>&lt;Corporate Info></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="70" name="@SDYREP:FOOTERRIGHT">
+			<value></value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="71" name="@SDYREP:SUBMODELS">
+			<value>false</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="72" name="@SDYREP:SYMBOLS">
+			<value>false</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="73" name="@SDYREP:WIDGETSETS">
+			<value>false</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="74" name="@SDYREP:SCREENSHOTS">
+			<value>true</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="75" name="@SDYREP:RESOURCES">
+			<value>$(CONFIG)/default</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="76" name="@SDYREP:FORMAT">
+			<value>HTML</value>
+			<configuration>44</configuration>
+		</Prop>
+		<Prop id="78" name="@UAPC:USESERVERCONF">
+			<value>false</value>
+		</Prop>
+	</props>
+	<roots>
+		<Folder id="11" extensions="sct;swt;sst;sft" name="Resource Files">
+			<elements>
+				<FileRef id="12" persistAs="color_table.sct"/>
+				<FileRef id="13" persistAs="line_width_table.swt"/>
+				<FileRef id="14" persistAs="line_stipple_table.sst"/>
+				<FileRef id="15" persistAs="font_table.sft"/>
+			</elements>
+		</Folder>
+		<Folder id="33" extensions="sdt;pdt" name="A661 Resource Files"/>
+		<Folder id="23" extensions="xml" name="A661 Configuration Files">
+			<elements>
+				<FileRef id="24" persistAs="$(SCADEDISPLAY_HOME)\config\Stylesets\lookStylesets.xml"/>
+				<FileRef id="25" persistAs="$(SCADEDISPLAY_HOME)\config\a661_description\Tables\picturesTable.xml"/>
+				<FileRef id="26" persistAs="$(SCADEDISPLAY_HOME)\config\a661_description\Tables\symbolsTable.xml"/>
+				<FileRef id="27" persistAs="$(SCADEDISPLAY_HOME)\config\a661_description\Tables\linestylesTable.xml"/>
+				<FileRef id="28" persistAs="$(SCADEDISPLAY_HOME)\config\a661_description\a661.xml"/>
+			</elements>
+		</Folder>
+		<Folder id="31" extensions="sgfx;ogfx;pgfx" name="Model Files">
+			<elements>
+				<FileRef id="77" persistAs="UADF.sgfx"/>
+			</elements>
+		</Folder>
+		<Folder id="32" extensions="sdfx" name="Symbol Model Files"/>
+	</roots>
+	<configurations>
+		<Configuration id="36" name="DF Generation"/>
+		<Configuration id="44" name="Reporter"/>
+	</configurations>
+</Project>

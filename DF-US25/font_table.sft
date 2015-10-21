@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2" ?>
+
+<fontTable generateAsBitmap="true" generateHalo="false" name="font_table" size="5">
+    <fontDefinition index="0" path="$(SCADEDISPLAY_HOME)\config\fonts\MonoBold16 A661.nfd"/>
+    <fontDefinition index="1" path="$(SCADEDISPLAY_HOME)\config\fonts\MonoBold20 A661.nfd"/>
+    <fontDefinition index="2" path="$(SCADEDISPLAY_HOME)\config\fonts\MonoBold24 A661.nfd"/>
+    <fontDefinition index="3" path="$(SCADEDISPLAY_HOME)\config\fonts\MonoBold28 A661.nfd"/>
+</fontTable>
+
+<!-- crc32 : 487110285 -->
+
