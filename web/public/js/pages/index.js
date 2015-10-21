@@ -11,10 +11,9 @@ index = function(){
 			dataType: 'json',
 			data: requestData
 		}).done(function(data, textStatus, jqXHR) {
-			//$.sessionStorage.setItem('userToken', data.token);
 			window.location.href = '/dashboard';
 		}).fail(function(jqXHR, textStatus, errorThrown) {
-			alert(textStatus);
+			alert(jqXHR.responseJSON.message);
 		});
 
 		return false;
