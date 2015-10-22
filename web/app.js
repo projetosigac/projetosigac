@@ -50,17 +50,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 -------------------------------------------*/
 
 app.use(
-
+/*conexao remota*/
     connection(mysql,{
-
-        host: 'localhost',
-        user: 'root',
-        password : 'mysql',
+        
+        host: 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
+        user: 'admin',
+        password : 'adminsigac',
         port : 3306, //port mysql
         database:'sigac'
 
     },'pool') //or single
-
 );
 
 app.get('/', routes.index);

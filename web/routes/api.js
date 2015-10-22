@@ -51,46 +51,39 @@ exports.confirmarAtendimento = function (req, res, next) {
 
 
 exports.loginSistema = function (req, res) {
-  
+
   if (!req.body.hasOwnProperty('login') || !req.body.hasOwnProperty('senha')) {
 		res.statusCode = 400;
-		return res.json({status: 'Error 400', message: 'Login ou senha não preenchidos',body: req.body});
+		return res.json({status: 'Error 400', message: 'Login ou senha não preenchidos', body: req.body});
 	}
     
     var sess = req.session;	    
     var email = req.body.login;
     var senha = req.body.senha;
-/*    
-    ***DESCOMENTAR APOS A CRIACAO DA TABELA USUARIOS
+
     req.getConnection(function(err,connection){   
-        var query = connection.query('SELECT token FROM tb_usuario WHERE email = ? AND senha=?',[email, senha],function(err,rows)
+        var query = connection.query('SELECT usu_token FROM usuario WHERE usu_email = ? AND usu_senha=?', [email, senha], function(err,rows)
         {
             if(err)
                 console.log("Error Query : %s ",err );
 
             if(rows.length == 1)
             {
-                sess.token = rows[0].token;
-                */
+                sess.token = rows[0].usu_token;                
                 sess.login = req.body.login;
-                /* APAGAR LINHA ABAIXO QUANDO CONECTAR NO BD */
-                sess.token = 'QWERTYUIOPASDFG1236547';
-    /*
+                res.json({status: 'OK', token: sess.token});            
             }else
             {
                 res.statusCode = 401;
-                return res.json({status: 'Error 401', message: 'Login ou senha estão incorretos',body: req.body});
-            }
-                
+                res.json({status: 'Error 401', message: 'Login ou senha estão incorretos', body: req.body});
+            }                
         });
     }); 
-      */  
-    res.json({status: 'OK', token: sess.token});
 };
 /*Realizar logout do sistema*/
 exports.logout = function (req, res){
 	req.session.destroy(function(err){
-		if(err){
+		if (err){
 			console.log(err);
 		}
 		else
