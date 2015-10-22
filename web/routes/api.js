@@ -1,7 +1,54 @@
 
+var db = require('../db/db') // load the database library
+
 /*
  * APIS do Sistema.
  */
+
+/**
+ * Retorna a ocorrência em aberto mais antiga que ainda precisa de atendimento.
+ * Esse serviço é utilizado pelas ambulâncias para obter novas ocorrências a serem atendidas.
+ *
+ * @author vinicius
+ *
+ * @param req HTTP request
+ * @param res HHTP response
+ */
+exports.verificarOcorrencia = function (req, res, next) {
+    req.getConnection(function(err,connection) {
+        db.obterOcorrenciaAberta(connection, function(err, result) {
+            if (err) return next(err);
+            res.json(result);
+        });
+    });
+}
+
+/**
+ * Método POST que realiza a confirmação de que uma dada ambulância partiu para o atendimento
+ * de uma ocorrência.
+ *
+ * @author vinicius
+ *
+ * @param req HTTP request
+ * @param res HHTP response
+ */
+exports.confirmarAtendimento = function (req, res, next) {
+    var placaAmbulancia = req.body.placaAmbulancia;
+    var ocorrenciaId = req.body.ocorrenciaId;
+
+    req.getConnection(function(err,connection){
+        var atendimento = { ocorrenciaId: ocorrenciaId, placaAmbulancia: placaAmbulancia };
+        db.salvarAtendimento(connection, function(err) {
+            if (err) {
+                return next(err);
+            } else {
+                res.end();
+            }
+        }, atendimento);
+    });
+
+}
+
 
 exports.loginSistema = function (req, res) {
   
