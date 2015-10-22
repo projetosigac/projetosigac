@@ -6,7 +6,7 @@
 exports.obterOcorrenciaAberta = function(conn, oncomplete) {
     var query = conn.query("SELECT * FROM ocorrencia AS ocr WHERE ocr.status LIKE 'ABERTO' AND\
             ocr.n_ambulancias_necessarias > (\
-                SELECT COUNT(*) FROM dd atendimento_ambulancia WHERE ocorrencia_id = ocr.id\
+                SELECT COUNT(*) FROM atendimento_ambulancia WHERE ocorrencia_id = ocr.id\
             ) ORDER BY ocr.data_abertura DESC LIMIT 1", function (err, rows) {
         if (err) {
             oncomplete(err, {});
