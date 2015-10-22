@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2 ?>
+
+<colorTable backgroundIndex="0" name="color_table" size="128">
+    <colorDefinition alpha="0xFF" index="0" name="BLACK" rgb="0x000000"/>
+    <colorDefinition alpha="0xFF" index="1" name="WHITE" rgb="0xFFFFFF"/>
+    <colorDefinition alpha="0xFF" index="2" name="2.5% GREY" rgb="0xF9F9F9"/>
+    <colorDefinition alpha="0xFF" index="3" name="5% GREY" rgb="0xF2F2F2"/>
+    <colorDefinition alpha="0xFF" index="4" name="7.5% GREY" rgb="0xECECEC"/>
+    <colorDefinition alpha="0xFF" index="5" name="10% GREY" rgb="0xE6E6E6"/>
+    <colorDefinition alpha="0xFF" index="6" name="20% GREY" rgb="0xCCCCCC"/>
+    <colorDefinition alpha="0xFF" index="7" name="30% GREY" rgb="0xB3B3B3"/>
+    <colorDefinition alpha="0xFF" index="8" name="40% GREY" rgb="0x999999"/>
+    <colorDefinition alpha="0xFF" index="9" name="50% GREY" rgb="0x808080"/>
+    <colorDefinition alpha="0xFF" index="10" name="60% GREY" rgb="0x666666"/>
+    <colorDefinition alpha="0xFF" index="11" name="70% GREY" rgb="0x4D4D4D"/>
+    <colorDefinition alpha="0xFF" index="12" name="80% GREY" rgb="0x333333"/>
+    <colorDefinition alpha="0xFF" index="13" name="90% GREY" rgb="0x1A1A1A"/>
+    <colorDefinition alpha="0xFF" index="21" name="RED" rgb="0xFF0000"/>
+    <colorDefinition alpha="0xFF" index="22" name="LIGHTEST RED" rgb="0xFFD5D5"/>
+    <colorDefinition alpha="0xFF" index="23" name="LIGHTER RED" rgb="0xFFAAAA"/>
+    <colorDefinition alpha="0xFF" index="24" name="LIGHT RED" rgb="0xFF5555"/>
+    <colorDefinition alpha="0xFF" index="25" name="DARK RED" rgb="0xD40000"/>
+    <colorDefinition alpha="0xFF" index="26" name="DARKER RED" rgb="0xAA0000"/>
+    <colorDefinition alpha="0xFF" index="27" name="DARKEST RED" rgb="0x800000"/>
+    <colorDefinition alpha="0xFF" index="31" name="AMBER" rgb="0xFF8000"/>
+    <colorDefinition alpha="0xFF" index="32" name="LIGHTEST AMBER" rgb="0xFFE6D5"/>
+    <colorDefinition alpha="0xFF" index="33" name="LIGHTER AMBER" rgb="0xFFCCAA"/>
+    <colorDefinition alpha="0xFF" index="34" name="LIGHT AMBER" rgb="0xFF9955"/>
+    <colorDefinition alpha="0xFF" index="35" name="DARK AMBER" rgb="0xD45500"/>
+    <colorDefinition alpha="0xFF" index="36" name="DARKER AMBER" rgb="0xAA4400"/>
+    <colorDefinition alpha="0xFF" index="37" name="DARKEST AMBER" rgb="0x803300"/>
+    <colorDefinition alpha="0xFF" index="41" name="YELLOW" rgb="0xFFFF00"/>
+    <colorDefinition alpha="0xFF" index="42" name="LIGHTEST YELLOW" rgb="0xFFF6D5"/>
+    <colorDefinition alpha="0xFF" index="43" name="LIGHTER YELLOW" rgb="0xFFEEAA"/>
+    <colorDefinition alpha="0xFF" index="44" name="LIGHT YELLOW" rgb="0xFFDD55"/>
+    <colorDefinition alpha="0xFF" index="45" name="DARK YELLOW" rgb="0xFFCC00"/>
+    <colorDefinition alpha="0xFF" index="46" name="DARKER YELLOW" rgb="0xD4AA00"/>
+    <colorDefinition alpha="0xFF" index="47" name="DARKEST YELLOW" rgb="0xAA8800"/>
+    <colorDefinition alpha="0xFF" index="51" name="GREEN" rgb="0x00FF00"/>
+    <colorDefinition alpha="0xFF" index="52" name="LIGHTEST GREEN" rgb="0xD5FFD5"/>
+    <colorDefinition alpha="0xFF" index="53" name="LIGHTER GREEN" rgb="0xAAFFAA"/>
+    <colorDefinition alpha="0xFF" index="54" name="LIGHT GREEN" rgb="0x55FF55"/>
+    <colorDefinition alpha="0xFF" index="55" name="DARK GREEN" rgb="0x00D400"/>
+    <colorDefinition alpha="0xFF" index="56" name="DARKER GREEN" rgb="0x00AA00"/>
+    <colorDefinition alpha="0xFF" index="57" name="DARKEST GREEN" rgb="0x008000"/>
+    <colorDefinition alpha="0xFF" index="61" name="CYAN" rgb="0x00FFFF"/>
+    <colorDefinition alpha="0xFF" index="62" name="LIGHTEST CYAN" rgb="0xD5FFF6"/>
+    <colorDefinition alpha="0xFF" index="63" name="LIGHTER CYAN" rgb="0xAAFFEE"/>
+    <colorDefinition alpha="0xFF" index="64" name="LIGHT CYAN" rgb="0x55FFDD"/>
+    <colorDefinition alpha="0xFF" index="65" name="DARK CYAN" rgb="0x00D4AA"/>
+    <colorDefinition alpha="0xFF" index="66" name="DARKER CYAN" rgb="0x00AA88"/>
+    <colorDefinition alpha="0xFF" index="67" name="DARKEST CYAN" rgb="0x006666"/>
+    <colorDefinition alpha="0xFF" index="71" name="BLUE" rgb="0x0000FF"/>
+    <colorDefinition alpha="0xFF" index="72" name="LIGHTEST BLUE" rgb="0xD5D5FF"/>
+    <colorDefinition alpha="0xFF" index="73" name="LIGHTER BLUE" rgb="0xAAAAFF"/>
+    <colorDefinition alpha="0xFF" index="74" name="LIGHT BLUE" rgb="0x5555FF"/>
+    <colorDefinition alpha="0xFF" index="75" name="DARK BLUE" rgb="0x0000D4"/>
+    <colorDefinition alpha="0xFF" index="76" name="DARKER BLUE" rgb="0x0000AA"/>
+    <colorDefinition alpha="0xFF" index="77" name="DARKEST BLUE" rgb="0x000080"/>
+    <colorDefinition alpha="0xFF" index="81" name="MAGENTA" rgb="0xFF00FF"/>
+    <colorDefinition alpha="0xFF" index="82" name="LIGHTEST MAGENTA" rgb="0xFFD5F6"/>
+    <colorDefinition alpha="0xFF" index="83" name="LIGHTER MAGENTA" rgb="0xFFAAEE"/>
+    <colorDefinition alpha="0xFF" index="86" name="DARKER MAGENTA" rgb="0xD400AA"/>
+    <colorDefinition alpha="0xFF" index="87" name="DARKEST MAGENTA" rgb="0x800066"/>
+    <colorDefinition alpha="0xFF" index="101" name="HIGHLIGHT" rgb="0x1A92FF"/>
+    <colorDefinition alpha="0xFF" index="102" name="FOCUS" rgb="0xFF0033"/>
+</colorTable>
+
+<!-- crc32 : 517626574 -->
+
