@@ -35,7 +35,7 @@
                         <enumprop name="Visible">A661_TRUE</enumprop>
                         <intprop name="PosX">800</intprop>
                         <intprop name="PosY">14000</intprop>
-                        <intprop name="SizeX">10000</intprop>
+                        <intprop name="SizeX">2500</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
                         <intprop name="StyleSet">1</intprop>
@@ -44,7 +44,7 @@
                         <intprop name="Font">1</intprop>
                         <intprop name="ColorIndex">1</intprop>
                         <enumprop name="Alignment">A661_LEFT</enumprop>
-                        <stringprop name="LabelString">HOSPITAL DA RESTAURACAO - Setor de UTI</stringprop>
+                        <stringprop name="LabelString">HOSPITAL - </stringprop>
                     </model>
                 </widget>
                 <widget name="Ativos_EditBoxNumeric" oid="5e945f39-0475-465e-8359-f4c808e2690f" type="EditBoxNumeric">
@@ -76,7 +76,7 @@
                         <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
                         <enumprop name="CyclicFlag">A661_TRUE</enumprop>
                         <stringprop name="FormatString">###</stringprop>
-                        <stringprop name="LegendString">Leitos Ativos</stringprop>
+                        <stringprop name="LegendString">Active #</stringprop>
                     </model>
                 </widget>
                 <widget name="Livre_EditBoxNumeric" oid="6c83304f-840f-4cb3-93e8-96e64e061d0f" type="EditBoxNumeric">
@@ -108,7 +108,7 @@
                         <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
                         <enumprop name="CyclicFlag">A661_TRUE</enumprop>
                         <stringprop name="FormatString">###</stringprop>
-                        <stringprop name="LegendString">Leitos Livres</stringprop>
+                        <stringprop name="LegendString">Available #</stringprop>
                     </model>
                 </widget>
                 <widget name="Ativar0_PictureToggleButton" oid="c319ed82-8572-42d4-8139-9a902885ea5c" type="PictureToggleButton">
@@ -150,7 +150,7 @@
                         <intprop name="MaxStringLength">32</intprop>
                         <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
                         <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">Ocupar</stringprop>
+                        <stringprop name="LabelString">Occupy</stringprop>
                     </model>
                 </widget>
                 <widget name="Leito0_GpRectangle" oid="0b4ac876-a530-4356-9755-55e0d743a9f1" type="GpRectangle">
@@ -209,7 +209,7 @@
                         <intprop name="MaxStringLength">32</intprop>
                         <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
                         <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">Ocupar</stringprop>
+                        <stringprop name="LabelString">Occupy</stringprop>
                     </model>
                 </widget>
                 <widget name="Leito1_GpRectangle" oid="0e6a524a-a64d-426d-b280-d83287de5d62" type="GpRectangle">
@@ -268,7 +268,7 @@
                         <intprop name="MaxStringLength">32</intprop>
                         <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
                         <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">Ocupar</stringprop>
+                        <stringprop name="LabelString">Occupy</stringprop>
                     </model>
                 </widget>
                 <widget name="Leito2_GpRectangle" oid="77baee23-9d74-4be5-b933-587e44ada845" type="GpRectangle">
@@ -327,7 +327,7 @@
                         <intprop name="MaxStringLength">32</intprop>
                         <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
                         <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">Ocupar</stringprop>
+                        <stringprop name="LabelString">Occupy</stringprop>
                     </model>
                 </widget>
                 <widget name="Leito3_GpRectangle" oid="90ea8d05-c333-422f-80b6-ac459697ccde" type="GpRectangle">
@@ -386,7 +386,7 @@
                         <intprop name="MaxStringLength">32</intprop>
                         <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
                         <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">Ocupar</stringprop>
+                        <stringprop name="LabelString">Occupy</stringprop>
                     </model>
                 </widget>
                 <widget name="Leito4_GpRectangle" oid="3e70f7b5-5ae0-4838-9588-eba73015f525" type="GpRectangle">
@@ -445,7 +445,7 @@
                         <intprop name="MaxStringLength">32</intprop>
                         <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
                         <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">Ocupar</stringprop>
+                        <stringprop name="LabelString">Occupy</stringprop>
                     </model>
                 </widget>
                 <widget name="Leito5_GpRectangle" oid="3dac9670-1333-4e77-9783-aca35248dfd6" type="GpRectangle">
@@ -504,7 +504,7 @@
                         <intprop name="MaxStringLength">32</intprop>
                         <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
                         <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">Ocupar</stringprop>
+                        <stringprop name="LabelString">Occupy</stringprop>
                     </model>
                 </widget>
                 <widget name="Leito6_GpRectangle" oid="641d1aa9-98de-4cd2-a80e-968800995bc9" type="GpRectangle">
@@ -563,7 +563,7 @@
                         <intprop name="MaxStringLength">32</intprop>
                         <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
                         <enumprop name="Alignment">A661_CENTER</enumprop>
-                        <stringprop name="LabelString">Ocupar</stringprop>
+                        <stringprop name="LabelString">Occupy</stringprop>
                     </model>
                 </widget>
                 <widget name="Leito7_GpRectangle" oid="5e4a0afc-31bd-4cb6-92d5-625334378cd9" type="GpRectangle">
@@ -743,10 +743,30 @@
                         <stringprop name="LabelString">B4</stringprop>
                     </model>
                 </widget>
+                <widget name="Sector_Label" oid="2d8d1d35-2c8b-4ceb-8905-b1e8802f28fe" type="Label">
+                    <IDE/>
+                    <model>
+                        <intprop name="WidgetIdent">36</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">3480</intprop>
+                        <intprop name="PosY">14000</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">ICU</stringprop>
+                    </model>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 2794405243 -->
+<!-- crc32 : 2664287350 -->
 

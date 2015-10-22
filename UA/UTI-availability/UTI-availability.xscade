@@ -46,5 +46,196 @@
 				<ed:Constant oid="!ed/21e2/4171/5B8/55f099059cb"/>
 			</pragmas>
 		</Constant>
+		<Type name="T_String">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="STR_SIZE"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3d18/7A4C/4AC/562948ee500c"/>
+			</pragmas>
+		</Type>
+		<Constant name="STR_SIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="32"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3d19/7A4C/4AC/562948f93fef"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ICU_LABEL">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['I', 'C', 'U', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'C'"/>
+						<ConstValue value="'U'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3d3a/7A4C/4AC/562949396950"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SURGERY_LABEL">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['S', 'U', 'R', 'G', 'E', 'R', 'Y', ' ', 'R', 'O', 'O', 'M', 'S', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'U'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'G'"/>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'Y'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'O'"/>
+						<ConstValue value="'O'"/>
+						<ConstValue value="'M'"/>
+						<ConstValue value="'S'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3d5c/7A4C/4AC/562949625eb7"/>
+			</pragmas>
+		</Constant>
+		<Constant name="XRAY_LABEL">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['X', '-', 'R', 'A', 'Y', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'X'"/>
+						<ConstValue value="'-'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'Y'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3d7e/7A4C/4AC/5629499c538"/>
+			</pragmas>
+		</Constant>
 	</declarations>
 </File>
