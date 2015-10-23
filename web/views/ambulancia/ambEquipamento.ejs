@@ -1,0 +1,68 @@
+<%- include ../layouts/header.ejs %>
+<link href="/../css/pages/atendimento.css" rel="stylesheet">
+</head>
+    <body>
+        <div id="wrapper">
+            <%- include ../layouts/navigationAmbulancia.ejs %>
+
+            <div class="container-fluid body-atendimento">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="alert alert-info" style="display:none">
+                </div>
+                <form onsubmit="return false;">
+                    
+                     <label>Nome do Equipamento:</label>
+                    <div class="form-group">
+                        <input type="text"  class="form-control" id="nomeEquipamento" placeholder="Ex.: Maca retrátil em alumínio" />
+                    </div>
+
+                    <label>Quantidade:</label>
+                    <div class="form-group">
+                        <input type="number" min="1" value="1" class="form-control" id="qtdEquipamento" />
+                    </div>
+
+                    <label>Identificador da Ambulância:</label>
+                    <div class="form-group">
+                        <input type="number" min="1" value="1" class="form-control" id="qtdEquipamento" />
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" class="btn btn-info" onclick="atendimento.chamarAmbulancia();"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Cadastrar Equipamento</button>
+                    </div>
+                   
+                </form>
+            </div>
+            <div class="col-md-9">
+                    <div id="map"></div>
+                    <div id="mapaLegenda"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal: Confirmação do Atendimento -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <center>
+                <img src="/../images/ok.png" style="width:150px;" />
+                <br />
+                <label>Ocorrência aberta com sucesso!</label>
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+<%- include ../layouts/footer.ejs %>
+<script type="text/javascript" src="/../js/pages/atendimento.js"></script>
+<script>
+    $(document).ready(function(){
+        atendimento.init();
+    });
+</script>
+</div>
+</body>
+</html>

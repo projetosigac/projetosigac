@@ -17,6 +17,7 @@ var customers = require('./routes/customers');
 var api = require('./routes/api');
 var util = require('./routes/utils');
 var atendimento = require('./routes/atendimento');
+var ambEquipamento = require('./routes/ambEquipamento');
 
 var app = express();
 
@@ -73,6 +74,7 @@ app.get('/uti/vitima', util.autenticarSessao, utiVitima.carregarPagina);
 app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
+app.get('/ambulancia/ambEquipamento', util.autenticarSessao, routes.ambEquipamento);
 /*
 ***Exemplo de criação de rota passando parametros
 app.get('/customers', customers.list);
