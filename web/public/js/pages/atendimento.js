@@ -15,7 +15,16 @@ atendimento = function () {
         var endereco = $("#enderecoAtendimentoGoogle").val();
         mapa.calcularRota(endereco);
         $("#btnRegistrarOcorrencia").attr('disabled',false);
+        _numeroAmbulancias($("#qtdVitimas").val());
+        _numeroMedicos($("#qtdVitimas").val());
     }
+    var _numeroAmbulancias = function(qtdVitimas){
+        $("#qtdAmb").val(Math.ceil(2*qtdVitimas*0.12));
+    }
+    var _numeroMedicos = function(qtdVitimas){
+        $("#qtdMed").val(Math.ceil(1.5*qtdVitimas));
+    }
+
     var _passoMensagem = function (passo){
         switch(passo) {
             case 1:
@@ -32,6 +41,8 @@ atendimento = function () {
     return{
         init: _init,
         pesquisarEndereco: _pesquisarEndereco,
-        chamarAmbulancia: _chamarAmbulancia
+        chamarAmbulancia: _chamarAmbulancia,
+        numeroAmbulancias: _numeroAmbulancias,
+        numeroMedicos: _numeroMedicos
     }
 }();
