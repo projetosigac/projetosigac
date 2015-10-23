@@ -8,6 +8,8 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 
+
+
 //load routes
 var dashboard = require('./routes/dashboard');
 var utiCrises = require('./routes/utiCrises');
@@ -42,11 +44,6 @@ app.use(session({secret: 'ssshhhhh',saveUninitialized: true,resave: true}));
 var sess;
 
 app.use(express.static(path.join(__dirname, 'public')));
-
-// development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
-}
 
 /*------------------------------------------
     connection peer, register as middleware
@@ -88,9 +85,36 @@ app.post('/customers/edit/:id',customers.save_edit);
 //apis
 app.post('/api/login-sistema', api.loginSistema);
 app.get('/logout', api.logout);
-
+app.get('/api/verificarOcorrencia', api.verificarOcorrencia);
+app.post('/api/confirmarAtendimento', api.confirmarAtendimento);
 
 app.use(app.router);
+
+// API error handler
+app.use(function(err, req, res, next) {
+    if (req.path.indexOf('api') > 0) {
+        res.status(500).json({message: err.message});
+    } else {
+        next(err);
+    }
+
+});
+
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.render('error', {
+            message: err.message,
+            error: err
+        });
+    });
+
+}
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
