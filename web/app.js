@@ -73,7 +73,6 @@ app.use(
         database:'sigac'
 
     },'pool') //or single
-    connection(mysql, connConfig,'pool') //or single
 );
 
 // inicia os DAOs.
