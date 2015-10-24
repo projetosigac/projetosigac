@@ -6,13 +6,14 @@ atendimento = function () {
     var _pesquisarEndereco = function (){
         if($("#localEmergencia").val())
         {
-		  mapa.carregarNoMapa($("#localEmergencia").val());
+		      mapa.carregarNoMapa($("#localEmergencia").val());
           _passoMensagem(2);
         }
 		return false;
 	}
     var _chamarAmbulancia = function (){
         var endereco = $("#enderecoAtendimentoGoogle").val();
+
         mapa.calcularRota(endereco);
         $("#btnRegistrarOcorrencia").attr('disabled',false);
         _numeroAmbulancias($("#qtdVitimas").val());

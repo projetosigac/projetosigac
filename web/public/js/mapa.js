@@ -65,6 +65,7 @@ mapa = function(){
                     var enderecoFormatado = results[0].formatted_address;
 
                     $("#enderecoAtendimentoGoogle").val(enderecoFormatado);
+										$("#btnChamarAmbulancia").prop("disabled", false);
 
                     $("#mapaLegenda").html("Posição geográfica da emergência, latitude: ".concat(latitude," e longitude: ",longitude,"."));
 
