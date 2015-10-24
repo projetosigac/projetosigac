@@ -50,6 +50,19 @@ app.use(express.static(path.join(__dirname, 'public')));
     type koneksi : single,pool and request
 -------------------------------------------*/
 
+/**
+ * Pool usado nos componentes de acesso a dados.
+ */
+var connConfig = {
+    connectionLimit : 10,
+    host            : 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
+    user            : 'admin',
+    password        : 'adminsigac',
+    database:'sigac'
+};
+
+var pool  = mysql.createPool(connConfig);
+
 app.use(
 /*conexao remota*/
     connection(mysql,{
@@ -60,7 +73,22 @@ app.use(
         database:'sigac'
 
     },'pool') //or single
+    connection(mysql, connConfig,'pool') //or single
 );
+
+// inicia os DAOs.
+var ocorrenciaDAO = require("./db/ocorrenciaDAO")(pool);
+
+//load routes
+var dashboard = require('./routes/dashboard');
+var utiCrises = require('./routes/utiCrises');
+var utiVitimas = require('./routes/utiVitimas');
+var utiVitima = require('./routes/utiVitima');
+var customers = require('./routes/customers');
+var api = require('./routes/api');
+var util = require('./routes/utils');
+var atendimento = require('./routes/atendimento');
+
 
 app.get('/', routes.index);
 
@@ -96,14 +124,14 @@ app.post('/api/get-equip-amb', util.autenticarSessao, api.getEquipAmb);
 app.use(app.router);
 
 // API error handler
-app.use(function(err, req, res, next) {
-    if (req.path.indexOf('api') > 0) {
-        res.status(500).json({message: err.message});
-    } else {
-        next(err);
-    }
-
-});
+//app.use(function(err, req, res, next) {
+//    if (req.path.indexOf('api') > 0) {
+//        res.status(500).json({message: err.message});
+//    } else {
+//        next(err);
+//    }
+//
+//});
 
 
 // development error handler

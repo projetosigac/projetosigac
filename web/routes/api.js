@@ -1,5 +1,5 @@
 
-var db = require('../db/db') // load the database library
+var ocorrenciaDAO = require('../db/ocorrenciaDAO')(); // load the database library
 
 /*
  * APIS do Sistema.
@@ -15,12 +15,11 @@ var db = require('../db/db') // load the database library
  * @param res HHTP response
  */
 exports.verificarOcorrencia = function (req, res, next) {
-    req.getConnection(function(err,connection) {
-        db.obterOcorrenciaAberta(connection, function(err, result) {
-            if (err) return next(err);
-            res.json(result);
-        });
+    ocorrenciaDAO.obterOcorrenciaAberta(function(err, result) {
+        if (err) return next(err);
+        res.json(result);
     });
+
 }
 
 /**
@@ -36,17 +35,14 @@ exports.confirmarAtendimento = function (req, res, next) {
     var placaAmbulancia = req.body.placaAmbulancia;
     var ocorrenciaId = req.body.ocorrenciaId;
 
-    req.getConnection(function(err,connection){
-        var atendimento = { ocorrenciaId: ocorrenciaId, placaAmbulancia: placaAmbulancia };
-        db.salvarAtendimento(connection, function(err) {
-            if (err) {
-                return next(err);
-            } else {
-                res.end();
-            }
-        }, atendimento);
+    var atendimento = { ocorrenciaId: ocorrenciaId, placaAmbulancia: placaAmbulancia };
+    ocorrenciaDAO.salvarAtendimento(atendimento, function(err) {
+        if (err) {
+            return next(err);
+        } else {
+            res.end();
+        }
     });
-
 }
 
 
