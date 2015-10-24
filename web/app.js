@@ -53,7 +53,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(
 /*conexao remota*/
     connection(mysql,{
-        
         host: 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
         user: 'admin',
         password : 'adminsigac',
@@ -64,6 +63,7 @@ app.use(
 );
 
 app.get('/', routes.index);
+
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
 app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
 app.get('/uti/vitimas', util.autenticarSessao, utiVitimas.carregarPagina);
@@ -71,7 +71,8 @@ app.get('/uti/vitima', util.autenticarSessao, utiVitima.carregarPagina);
 app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
-app.get('/ambulancia/ambEquipamento', util.autenticarSessao, routes.ambEquipamento);
+app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
+
 /*
 ***Exemplo de criação de rota passando parametros
 app.get('/customers', customers.list);
@@ -87,6 +88,10 @@ app.post('/api/login-sistema', api.loginSistema);
 app.get('/logout', api.logout);
 app.get('/api/verificarOcorrencia', api.verificarOcorrencia);
 app.post('/api/confirmarAtendimento', api.confirmarAtendimento);
+
+app.post('/api/insert-equip', util.autenticarSessao, api.insertEquip);
+app.post('/api/insert-equip-amb', util.autenticarSessao, api.insertEquipAmb);
+app.post('/api/get-equip-amb', util.autenticarSessao, api.getEquipAmb);
 
 app.use(app.router);
 

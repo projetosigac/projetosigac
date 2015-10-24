@@ -8,59 +8,64 @@
             <div class="container-fluid body-atendimento">
         <div class="row">
             <div class="col-md-3">
-                <div class="alert alert-info" style="display:none">
+                <div class="alert alert-info" >
+                  <center> <b> Cadastrar Novo Equipamento </b> </center>
                 </div>
-                <form onsubmit="return false;">
+                <form onsubmit="return cadastroEquipamento.api_insert_equip();" id="formInsertEquip">
                     
-                     <label>Nome do Equipamento:</label>
+                     <label>Identificador do Equipamento:</label>
                     <div class="form-group">
-                        <input type="text"  class="form-control" id="nomeEquipamento" placeholder="Ex.: Maca retrátil em alumínio" />
+                        <input type="number"  name="idEquipamento" class="form-control" id="idEquipamento" min="1" value="1" />
                     </div>
 
-                    <label>Quantidade:</label>
+                    <label>Descrição do equipamento:</label>
                     <div class="form-group">
-                        <input type="number" min="1" value="1" class="form-control" id="qtdEquipamento" />
-                    </div>
-
-                    <label>Identificador da Ambulância:</label>
-                    <div class="form-group">
-                        <input type="number" min="1" value="1" class="form-control" id="qtdEquipamento" />
+                        <input type="text" name="equipDesc"  placeholder="Ex.: Maca Retrátil em Alumínio" class="form-control" id="equipDesc" />
                     </div>
 
                     <div class="form-group">
-                        <button type="button" class="btn btn-info" onclick="atendimento.chamarAmbulancia();"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Cadastrar Equipamento</button>
+                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Cadastrar </button>
                     </div>
                    
                 </form>
             </div>
-            <div class="col-md-9">
-                    <div id="map"></div>
-                    <div id="mapaLegenda"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="alert alert-info" >
+                  <center> <b> Inserir Equipamento em Ambulância </b> </center>
+                </div>
+                <form onsubmit="return cadastroEquipamentoAmb.api_insert_equip_amb();" id="formInsertEquipAmb">
+                    
+                     <label>Identificador do Equipamento:</label>
+                    <div class="form-group">
+                        <input type="number"  name="idEquipamentoAmb" class="form-control" id="idEquipamentoAmb" min="1" value="1" />
+                    </div>
+
+                    <label>Placa da Ambulância:</label>
+                    <div class="form-group">
+                        <input type="text" name="placaAmb" placeholder="AAA-1234"  value="AAA-1234" class="form-control" id="placaAmb" />
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Inserir </button>
+                    </div>
+                   
+                </form>
             </div>
         </div>
+
     </div>
-    <!-- Modal: Confirmação do Atendimento -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-body">
-            <center>
-                <img src="/../images/ok.png" style="width:150px;" />
-                <br />
-                <label>Ocorrência aberta com sucesso!</label>
-            </center>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Confirmar</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    
 <%- include ../layouts/footer.ejs %>
-<script type="text/javascript" src="/../js/pages/atendimento.js"></script>
+
+<script type="text/javascript" src="/../js/pages/cadastroEquipamento.js"></script>
+<script type="text/javascript" src="/../js/pages/cadastroEquipamentoAmb.js"></script>
+
 <script>
     $(document).ready(function(){
-        atendimento.init();
+       // atendimento.init();
     });
 </script>
 </div>

@@ -92,3 +92,91 @@ exports.logout = function (req, res){
 		}
 	});
 };
+
+
+/*cadastrar equipamento no bd*/
+
+exports.insertEquip = function (req, res) {
+    
+    var sess = req.session;    
+    var idEquipamento = req.body.idEquipamento; 
+    var equipDesc = req.body.equipDesc;
+   
+
+    req.getConnection(function(err,connection){   
+        var query = connection.query('INSERT INTO amb_equipamento VALUES (? , ?);', [idEquipamento, equipDesc], function(err, result) {
+            if(err) {
+                console.log(err);
+                res.statusCode = 401;
+                return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
+            }
+
+            if(result.affectedRows > 0)
+            {
+                return res.json({'status': 'OK'});
+            }else
+            {
+                res.statusCode = 401;
+                return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
+            }
+        });
+    }); 
+};
+
+
+
+/*inserir equipamento na ambulancia*/
+
+exports.insertEquipAmb = function (req, res) {
+    
+    var sess = req.session;    
+    var idEquipamentoAmb = req.body.idEquipamentoAmb; 
+    var placaAmb = req.body.placaAmb;
+   
+
+    req.getConnection(function(err,connection){   
+        var query = connection.query('INSERT INTO amb_lista_equipamentos VALUES (? , ?);', [placaAmb, idEquipamentoAmb], function(err, result) {
+            if(err) {
+                console.log(err);
+                res.statusCode = 401;
+                return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
+            }
+
+            if(result.affectedRows > 0)
+            {
+                return res.json({'status': 'OK'});
+            }else
+            {
+                res.statusCode = 401;
+                return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
+            }
+        });
+    }); 
+};
+
+
+/*Get Equip*/
+exports.getEquipAmb = function (req, res) {
+    
+    var sess = req.session;     
+    var placaAmbGet = req.body.placaAmbGet;
+
+    req.getConnection(function(err,connection){   
+        var query = connection.query('SELECT equip_id FROM amb_lista_equipamentos WHERE placa_ambulancia = ?;', [placaAmbGet], function(err,rows,fields)
+        {
+            if(err)
+                console.log("Error Query : %s ",err );
+
+            else
+            {
+                for (var i in rows){
+                    console.log(rows[i]);
+                    
+                }
+                res.json({status: 'OK', token: sess.token});            
+            }                
+        });
+    }); 
+
+
+};

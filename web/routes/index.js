@@ -16,6 +16,3 @@ exports.chamados = function(req, res){
   res.render('ambulancia/chamados', { title: 'Chamados' });
 };
 
-exports.ambEquipamento = function(req, res){
-  res.render('ambulancia/ambEquipamento', { title: 'ambEquipamento' });
-};
