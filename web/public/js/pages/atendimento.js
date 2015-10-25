@@ -12,12 +12,25 @@ atendimento = function () {
 		return false;
 	}
     var _chamarAmbulancia = function (){
-        var endereco = $("#enderecoAtendimentoGoogle").val();
+      debugger;
+      $.ajax({
+  			url: '/atendimento/carregar-base-samu',
+  			type: 'GET',
+  			contentType: 'application/json; charset=utf-8',
+  			dataType: 'json',
+  		}).done(function(data, textStatus, jqXHR) {
+        //futuro: calcular a base mais próxima da ocorrência, hoje é sempre a primeira
 
-        mapa.calcularRota(endereco);
-        $("#btnRegistrarOcorrencia").attr('disabled',false);
+        mapa.calcularRota($("#enderecoAtendimentoGoogle").val(), data.result[0].samu_endereco);
+
         _numeroAmbulancias($("#qtdVitimas").val());
         _numeroMedicos($("#qtdVitimas").val());
+
+        $("#btnRegistrarOcorrencia").attr('disabled',false);
+        
+  		}).fail(function(jqXHR, textStatus, errorThrown) {
+  			alert(jqXHR.responseJSON);
+  		});
     }
     var _numeroAmbulancias = function(qtdVitimas){
         $("#qtdAmb").val(Math.ceil(2*qtdVitimas*0.12));

@@ -34,7 +34,7 @@ mapa = function(){
 		geocoder = new google.maps.Geocoder();
 		marker = new google.maps.Marker({
 			map: map,
-			draggable: true,
+			draggable: false,
 			visible: false
 		});
 		marker.setPosition(latlng);
@@ -43,10 +43,10 @@ mapa = function(){
 		google.maps.event.addDomListener(window, 'load', _initialize);
 
 	}
-    var _calcularRota = function (enderecoAtendimento) {
+    var _calcularRota = function (enderecoDestino, enderecoPartida) {
       directionsService.route({
-        origin: enderecoAtendimento,
-        destination: "Avenida Andrômeda, 1000 Jardim Satélite São José dos Campos",
+        origin: enderecoDestino,
+        destination: enderecoPartida,
         travelMode: google.maps.TravelMode.DRIVING
       }, function(response, status) {
         if (status === google.maps.DirectionsStatus.OK) {

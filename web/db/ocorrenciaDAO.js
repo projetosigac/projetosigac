@@ -40,6 +40,21 @@ function OcorrenciaDAO(pool) {
                 });
         });
     };
+
+    this.obterBaseSamuAtiva = function(atendimento, callback){
+/*
+      var query = self.pool.query("select * from cadastro_samu s\
+       where exists (select placa from ambulancia a where s.samu_id=a.samu_id and a.status = 'Ativo')", function (err, rows) {
+          if (err) {
+              callback(err, {});
+          } else {
+              var result = (rows ? rows[0] : {});
+              callback(null, result);
+          }
+      });
+      */
+      callback(null, {});
+    };
 }
 
 var ocorrenciaDAO = null;

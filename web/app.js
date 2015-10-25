@@ -95,10 +95,15 @@ app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
 app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
 app.get('/uti/vitimas', util.autenticarSessao, utiVitimas.carregarPagina);
 app.get('/uti/vitima', util.autenticarSessao, utiVitima.carregarPagina);
-app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
+app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
+
+/*
+métodos internos do sistema que necessita de sessão
+*/
+app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.carregarBaseSamu);
 
 /*
 ***Exemplo de criação de rota passando parametros
