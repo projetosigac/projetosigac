@@ -12,7 +12,6 @@ atendimento = function () {
 		return false;
 	}
     var _chamarAmbulancia = function (){
-      debugger;
       $.ajax({
   			url: '/atendimento/carregar-base-samu',
   			type: 'GET',
@@ -20,14 +19,16 @@ atendimento = function () {
   			dataType: 'json',
   		}).done(function(data, textStatus, jqXHR) {
         //futuro: calcular a base mais próxima da ocorrência, hoje é sempre a primeira
+        //var enderecoSamuMaisProxima = _analisarEnderecoProximo(enderecoAtendimento, listaEnderecos);
 
-        mapa.calcularRota($("#enderecoAtendimentoGoogle").val(), data.result[0].samu_endereco);
+        marker.setVisible(false);
+        mapa.calcularRota($("#enderecoAtendimentoGoogle").val(), data[0].samu_endereco);
 
         _numeroAmbulancias($("#qtdVitimas").val());
         _numeroMedicos($("#qtdVitimas").val());
 
         $("#btnRegistrarOcorrencia").attr('disabled',false);
-        
+
   		}).fail(function(jqXHR, textStatus, errorThrown) {
   			alert(jqXHR.responseJSON);
   		});
@@ -38,7 +39,30 @@ atendimento = function () {
     var _numeroMedicos = function(qtdVitimas){
         $("#qtdMed").val(Math.ceil(1.5*qtdVitimas));
     }
-
+    var _salvarOcorrencia = function (){
+      var requestData = JSON.stringify($('#formOcorrencia').serializeObject());
+      $.ajax({
+        type: "POST",
+        url: '/atendimento/salvar-ocorrencia',
+        async: false,
+        contentType: 'application/json; charset=utf-8',
+        dataType: 'json',
+        data: requestData,
+        success: function (data){
+            $('#myModal').modal('toggle');
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+    			alert(jqXHR.responseJSON);
+        }
+      });
+    }
+    var _clearForm = function (){
+      _passoMensagem(1);
+      $('form input[type=text]').val('');
+      $('form .btn').prop( "disabled", true);
+      //mapa.limparRota();
+      location.reload();
+    }
     var _passoMensagem = function (passo){
         switch(passo) {
             case 1:
@@ -57,6 +81,11 @@ atendimento = function () {
         pesquisarEndereco: _pesquisarEndereco,
         chamarAmbulancia: _chamarAmbulancia,
         numeroAmbulancias: _numeroAmbulancias,
-        numeroMedicos: _numeroMedicos
+        numeroMedicos: _numeroMedicos,
+        clearForm: _clearForm,
+        salvarOcorrencia: _salvarOcorrencia
     }
 }();
+$('#myModal').on('hidden.bs.modal', function (e) {
+  atendimento.clearForm();
+});

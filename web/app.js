@@ -80,6 +80,7 @@ app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carr
 métodos internos do sistema que necessita de sessão
 */
 app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.carregarBaseSamu);
+app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.salvarOcorrencia);
 
 /*
 ***Exemplo de criação de rota passando parametros

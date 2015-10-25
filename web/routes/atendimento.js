@@ -20,20 +20,46 @@ exports.carregarBaseSamu = function (req, res, next) {
         if (err) return next(err);
         else res.json(result);
     });
-/*tirar essa parte pois a parte de cima ainda não funciona*/
-//  req.getConnection(function(err,connection){
-//      var query = connection.query('select * from cadastro_samu s where exists (select placa from ambulancia a where s.samu_id=a.samu_id and a.status = ?)', ['Ativo'], function(err,rows)
-//      {
-//          if(err)
-//              console.log("Error Query : %s ",err );
-//
-//          if(rows.length > 0)
-//              res.json({status: 'OK', result: rows});
-//          else
-//          {
-//              res.statusCode = 401;
-//              res.json({status: 'Error 401', message: 'Não existe base de Samu disponível no momento', body: req.body});
-//          }
-//      });
-//  });
+};
+/**
+ * Retorna a base de samu que contém a ambulância com a configuração adequada para atendimento a ocorrência
+ * Esse método é utilizado pela tela de atendimento para abrir uma ocorrência
+ *
+ * @author Danilo Ramalho
+ *
+ * @param req HTTP request
+ * @param res HHTP response
+ */
+exports.salvarOcorrencia = function (req, res, next) {
+
+  var ocorrencia = {
+      endereco : req.body.localEmergencia,
+      latitude : req.body.latitudeEmergencia,
+      longitude : req.body.longitudeEmergencia,
+      qtdVitimas : req.body.qtdVitimas,
+      qtdAmb : req.body.qtdAmb,
+      qtdMed : req.body.qtdMed,
+      observacao : req.body.observacao
+    };
+
+  /*Validação dos valores do formulário de cadastro de ocorrência*/
+  var camposValidos = true;
+  var campoObrigatorio;
+  for(var campo in ocorrencia){
+      if (campo != 'observacao' && !ocorrencia[campo]){
+        camposValidos = true;
+        campoObrigatorio = campo;
+        break;
+      }
+  }
+  if (!camposValidos){
+    res.statusCode = 400;
+    return res.json({status: 'Error 400', message: 'O campo ('+campoObrigatorio+') é obrigatório', body: req.body});
+  }
+
+  ocorrenciaDAO.salvarOcorrencia(ocorrencia, function(err, result) {
+      if (err) return next(err);
+      else res.json(result);
+  });
+
 };
