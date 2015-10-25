@@ -8,19 +8,6 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 
-
-
-//load routes
-var dashboard = require('./routes/dashboard');
-var utiCrises = require('./routes/utiCrises');
-var utiVitimas = require('./routes/utiVitimas');
-var utiVitima = require('./routes/utiVitima');
-var customers = require('./routes/customers');
-var api = require('./routes/api');
-var util = require('./routes/utils');
-var atendimento = require('./routes/atendimento');
-var ambEquipamento = require('./routes/ambEquipamento');
-
 var app = express();
 
 var connection  = require('express-myconnection');
@@ -45,11 +32,6 @@ var sess;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-/*------------------------------------------
-    connection peer, register as middleware
-    type koneksi : single,pool and request
--------------------------------------------*/
-
 /**
  * Pool usado nos componentes de acesso a dados.
  */
@@ -65,20 +47,15 @@ var pool  = mysql.createPool(connConfig);
 
 app.use(
 /*conexao remota*/
-    connection(mysql,{
-        host: 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
-        user: 'admin',
-        password : 'adminsigac',
-        port : 3306, //port mysql
-        database:'sigac'
-
-    },'pool') //or single
+    connection(mysql,connConfig,'pool') //or single
 );
 
 // inicia os DAOs.
 var ocorrenciaDAO = require("./db/ocorrenciaDAO")(pool);
 
+
 //load routes
+// The routes MUST be loaded AFTER ALL the DAO components.
 var dashboard = require('./routes/dashboard');
 var utiCrises = require('./routes/utiCrises');
 var utiVitimas = require('./routes/utiVitimas');
@@ -87,10 +64,9 @@ var customers = require('./routes/customers');
 var api = require('./routes/api');
 var util = require('./routes/utils');
 var atendimento = require('./routes/atendimento');
-
+var ambEquipamento = require('./routes/ambEquipamento')
 
 app.get('/', routes.index);
-
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
 app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
 app.get('/uti/vitimas', util.autenticarSessao, utiVitimas.carregarPagina);

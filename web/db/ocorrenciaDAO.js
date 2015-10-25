@@ -33,16 +33,36 @@ function OcorrenciaDAO(pool) {
 
     this.salvarAtendimento = function(atendimento, callback) {
         db.executarTransacao(self.pool, function(conn) {
-            conn.query("INSERT INTO atendimento_ambulancia(ocorrencia_id, placa_ambulancia) VALUES (?, ?)",
-                [atendimento.ocorrenciaId, atendimento.placaAmbulancia],
-                function (err, rows) {
-                    callback(err, {});
-                });
+            self.obterAtendimento(atendimento, function(err, result) {
+                if (err) {
+                    return callback(err, {});
+                }
+                if (result == null) {
+                    conn.query("INSERT INTO atendimento_ambulancia(ocorrencia_id, placa_ambulancia) VALUES (?, ?)",
+                        [atendimento.ocorrenciaId, atendimento.placaAmbulancia],
+                        function (err, rows) {
+                            callback(err, {});
+                        });
+                } else {
+                    callback(null, {});
+                }
+            });
         });
     };
 
-    this.obterBaseSamuAtiva = function(atendimento, callback){
-/*
+    this.obterAtendimento = function(atendimento, callback) {
+        var query = self.pool.query("SELECT * FROM atendimento_ambulancia WHERE placa_ambulancia LIKE ? AND\
+             ocorrencia_id = ?", [atendimento.placaAmbulancia, atendimento.ocorrenciaId], function (err, rows) {
+            if (err) {
+                callback(err, {});
+            } else {
+                var result = (rows ? rows[0] : {});
+                callback(null, result);
+            }
+        });
+    };
+
+    this.obterBaseSamuAtiva = function(callback){
       var query = self.pool.query("select * from cadastro_samu s\
        where exists (select placa from ambulancia a where s.samu_id=a.samu_id and a.status = 'Ativo')", function (err, rows) {
           if (err) {
@@ -52,8 +72,6 @@ function OcorrenciaDAO(pool) {
               callback(null, result);
           }
       });
-      */
-      callback(null, {});
     };
 }
 
