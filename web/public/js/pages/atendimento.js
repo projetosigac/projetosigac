@@ -66,13 +66,13 @@ atendimento = function () {
     var _passoMensagem = function (passo){
         switch(passo) {
             case 1:
-                $("#passo").html("<b>1º Passo:</b> Digite no combo de endereço o local da emergência.");
+                $("#passo").html("<b>1º Step:</b> Enter the Emergency address.");
                 break;
             case 2:
-                $("#passo").html("<b>2º Passo:</b> Informe a quantidade de vítimas e calcule as ambulâncias.");
+                $("#passo").html("<b>2º Step:</b> Enter the number of victims and calculate ambulances.");
                 break;
             case 3:
-                $("#passo").html("<b>3º Passo:</b> Clique em 'Registrar Ocorrência para encaminhar o atendimento.'");
+                $("#passo").html("<b>3º Step:</b> Click Register Occurrence to forward the call.'");
                 break;
         }
     }

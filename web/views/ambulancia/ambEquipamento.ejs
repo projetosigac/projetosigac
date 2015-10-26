@@ -9,22 +9,22 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="alert alert-info" >
-                  <center> <b> Cadastrar Novo Equipamento </b> </center>
+                  <center> <b> Post New Equipment </b> </center>
                 </div>
                 <form onsubmit="return cadastroEquipamento.api_insert_equip();" id="formInsertEquip">
                     
-                     <label>Identificador do Equipamento:</label>
+                     <label>Equipment ID:</label>
                     <div class="form-group">
                         <input type="number"  name="idEquipamento" class="form-control" id="idEquipamento" min="1" value="1" />
                     </div>
 
-                    <label>Descrição do equipamento:</label>
+                    <label>Description:</label>
                     <div class="form-group">
                         <input type="text" name="equipDesc"  placeholder="Ex.: Maca Retrátil em Alumínio" class="form-control" id="equipDesc" />
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Cadastrar </button>
+                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Register </button>
                     </div>
                    
                 </form>
@@ -34,22 +34,22 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="alert alert-info" >
-                  <center> <b> Inserir Equipamento em Ambulância </b> </center>
+                  <center> <b> Insert Equipament in Ambulance </b> </center>
                 </div>
                 <form onsubmit="return cadastroEquipamentoAmb.api_insert_equip_amb();" id="formInsertEquipAmb">
                     
-                     <label>Identificador do Equipamento:</label>
+                     <label>Equipament ID:</label>
                     <div class="form-group">
                         <input type="number"  name="idEquipamentoAmb" class="form-control" id="idEquipamentoAmb" min="1" value="1" />
                     </div>
 
-                    <label>Placa da Ambulância:</label>
+                    <label>License Plate:</label>
                     <div class="form-group">
                         <input type="text" name="placaAmb" placeholder="AAA-1234"  value="AAA-1234" class="form-control" id="placaAmb" />
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Inserir </button>
+                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Insert </button>
                     </div>
                    
                 </form>
