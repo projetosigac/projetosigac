@@ -31,20 +31,23 @@
                                             <th class="text-center">ID</th>
                                             <th class="text-center">Batimentos Cardíacos</th>
                                             <th class="text-center">Temperatura</th>
-																						<th class="text-center">Oximetria</th>
-																						<th class="text-center">Horário da Última Leitura</th>
-																						<th class="text-center">Histórico</th>
+											<th class="text-center">Oximetria</th>
+											<th class="text-center">Horário da Última Leitura</th>
+											<th class="text-center">Histórico</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="odd gradeX">
-                                            <td class="text-center"><a href="vitima">1</a></td>
-                                            <td class="text-center">100 b/s</td>
-                                            <td class="text-danger text-center">38</td>
-																						<td class="text-danger text-center">90</td>
-																						<td class="text-center">10/10/2015 10h30</td>
-																						<td class="text-center"><a href="vitima"><i class="fa fa-folder fa-2x"></i></a></td>
-                                        </tr>
+                                        
+                                            <% for(var i = 0; i < pacientes.length; i++) { %>
+                                                <tr class="odd gradeX">
+                                                    <td class="text-center"><a href="vitima"> <%= pacientes[i].paciente_id %> </a></td>
+                                                    <td class="text-center"><%= pacientes[i].batimento_cardiaco %> b/s</td>
+                                                    <td class="text-danger text-center"><%= pacientes[i].temperatura %></td>
+                                                    <td class="text-danger text-center"><%= pacientes[i].oximetria %></td>
+                                                    <td class="text-center"><%= pacientes[i].timestamp %></td>
+                                                    <td class="text-center"><a href=<%= "vitima/" + pacientes[i].paciente_id %>><i class="fa fa-folder fa-2x"></i></a></td>
+                                                </tr>
+                                            <% } %>
                                     </tbody>
                                 </table>
                             </div>
