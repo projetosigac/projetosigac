@@ -81,7 +81,7 @@ function OcorrenciaDAO(pool) {
           if (err) {
               callback(err, {});
           } else {
-              callback(null, {status: 'OK');
+              callback(null, {status: 'OK'});
           }
       });
     };
