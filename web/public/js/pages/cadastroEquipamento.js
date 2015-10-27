@@ -17,6 +17,10 @@ cadastroEquipamento = function(){
 			alert(jqXHR.responseJSON.message);
 		});
 
+		
+
+		
+
 		return false;
 	}
 	return {

@@ -119,6 +119,8 @@ app.post('/api/confirmarAtendimento', api.confirmarAtendimento);
 app.post('/api/insert-equip', util.autenticarSessao, api.insertEquip);
 app.post('/api/insert-equip-amb', util.autenticarSessao, api.insertEquipAmb);
 app.post('/api/get-equip-amb', util.autenticarSessao, api.getEquipAmb);
+app.post('/api/show-equip', util.autenticarSessao, api.showEquip);
+app.post('/api/show-amb', util.autenticarSessao, api.showAmb);
 
 app.use(app.router);
 
