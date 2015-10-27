@@ -93,6 +93,10 @@ app.post('/customers/edit/:id',customers.save_edit);
 */
 
 //apis
+app.get('/api/leituraSinais', api.leituraSinais);
+app.post('/api/leituraSinais', api.leituraSinais);
+//app.post('/api/leituraSinais', api.leituraSinais);
+
 app.post('/api/login-sistema', api.loginSistema);
 app.get('/logout', api.logout);
 app.get('/api/verificarOcorrencia', api.verificarOcorrencia);
