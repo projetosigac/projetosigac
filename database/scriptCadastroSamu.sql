@@ -1,6 +1,18 @@
+CREATE TABLE `sigac`.`ocorrencia` (
+  `id` INT  NOT NULL AUTO_INCREMENT,
+  `data_abertura` DATETIME  NOT NULL,
+  `status` ENUM('ABERTO', 'FECHADO')  NOT NULL,
+  `n_ambulancias_necessarias` INT ,
+  `comentarios` TEXT  NOT NULL,
+  `n_vitimas` INT  NOT NULL,
+  PRIMARY KEY (`id`)
+)
+ENGINE = InnoDB;
+
+
 CREATE TABLE cadastro_samu
 (
-	samu_id	int NOT NULL,
+	samu_id	int NOT NULL AUTO_INCREMENT,
 	samu_cnes int NOT NULL,
 	samu_cnpj char(20) NOT NULL,
 	samu_endereco varchar(255),

@@ -15,11 +15,10 @@ int main(int argc, char** argv) {
     HTTP_REQUEST* req;
     HTTP_RESPONSE* resp;
     
-    resp = get("http://localhost:8080/HellorREST-war/test/hello/vsadfa");
-    printf(resp->buffer);
+    resp = get("http://google.com");
     
-    resp = get("http://localhost:8080/HellorREST-war/test/hello/vsadfa");
-    printf(resp->buffer);
+    free(resp->buffer);
+    free(resp);        
     return (EXIT_SUCCESS);
 }
 

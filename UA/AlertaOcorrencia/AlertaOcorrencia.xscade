@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Type name="Ocorrencia">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="endereco">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="StringM"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/3c84/4226/610/562d518c3f66"/>
+							</pragmas>
+						</Field>
+						<Field name="comentarios">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="StringG"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/3ce3/4226/610/562d52f43cd0"/>
+							</pragmas>
+						</Field>
+						<Field name="nVitimas">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/3cda/4226/610/562d52e21313"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3c77/4226/610/562d4f7a79b7"/>
+			</pragmas>
+		</Type>
+		<Type name="Estado">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="Atendendo">
+							<pragmas>
+								<ed:Value oid="!ed/3c82/4226/610/562d508f90d"/>
+							</pragmas>
+						</Value>
+						<Value name="Livre">
+							<pragmas>
+								<ed:Value oid="!ed/3c83/4226/610/562d50b710c0"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3c81/4226/610/562d505a5fd8"/>
+			</pragmas>
+		</Type>
+		<Type name="StringG">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="1024"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3c85/4226/610/562d51a03325"/>
+			</pragmas>
+		</Type>
+		<Type name="StringM">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="255"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3ca6/4226/610/562d52683897"/>
+			</pragmas>
+		</Type>
+		<Type name="StringP">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="32"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3cb7/4226/610/562d52802754"/>
+			</pragmas>
+		</Type>
+		<Type name="Color">
+			<definition>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/3d79/4226/610/562d56ed29b3"/>
+			</pragmas>
+		</Type>
+		<Constant name="WHITE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Color"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3d8a/4226/610/562d5709191f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="GREEN">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Color"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3d94/4226/610/562d571d7115"/>
+			</pragmas>
+		</Constant>
+		<Constant name="YELLOW">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Color"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3d9e/4226/610/562d57294b62"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LIVRE_TEXT">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="StringP"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['W', 'A', 'I', 'T', 'I', 'N', 'G', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'W'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'T'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'G'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3e59/4226/610/562d5afc99"/>
+			</pragmas>
+		</Constant>
+		<Constant name="EM_ATENDIMENTO_TEXT">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="StringP"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['B', 'U', 'S', 'Y', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'B'"/>
+						<ConstValue value="'U'"/>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'Y'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3e5a/4226/610/562d5b082195"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ATENCAO_TEXT">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="StringP"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['W', 'A', 'R', 'N', 'I', 'N', 'G', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'W'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'G'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3e5b/4226/610/562d5b136219"/>
+			</pragmas>
+		</Constant>
+		<Constant name="RED">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3f4d/4226/610/562d8359964"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>
