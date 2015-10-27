@@ -28,5 +28,6 @@ exports.executarTransacao = function(pool, cmd, onError) {
                throw err;
             });
         }
+        conn.release();
     });
 };

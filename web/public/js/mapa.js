@@ -14,10 +14,10 @@ mapa = function(){
 			}
 		});
 	});
-	}
+ }
 
-    var directionsService = new google.maps.DirectionsService;
-    var directionsDisplay = new google.maps.DirectionsRenderer;
+  var directionsService = new google.maps.DirectionsService;
+  var directionsDisplay = new google.maps.DirectionsRenderer;
 
 	var _initialize = function (){
 
@@ -29,12 +29,12 @@ mapa = function(){
 		};
 		map = new google.maps.Map(document.getElementById("map"), options);
 
-        directionsDisplay.setMap(map);
+    directionsDisplay.setMap(map);
 
 		geocoder = new google.maps.Geocoder();
 		marker = new google.maps.Marker({
 			map: map,
-			draggable: true,
+			draggable: false,
 			visible: false
 		});
 		marker.setPosition(latlng);
@@ -43,10 +43,10 @@ mapa = function(){
 		google.maps.event.addDomListener(window, 'load', _initialize);
 
 	}
-    var _calcularRota = function (enderecoAtendimento) {
+  var _calcularRota = function (enderecoDestino, enderecoPartida) {
       directionsService.route({
-        origin: enderecoAtendimento,
-        destination: "Avenida Andrômeda, 1000 Jardim Satélite São José dos Campos",
+        origin: enderecoDestino,
+        destination: enderecoPartida,
         travelMode: google.maps.TravelMode.DRIVING
       }, function(response, status) {
         if (status === google.maps.DirectionsStatus.OK) {
@@ -62,11 +62,14 @@ mapa = function(){
 				if (results[0]) {
 					var latitude = results[0].geometry.location.lat();
 					var longitude = results[0].geometry.location.lng();
-                    var enderecoFormatado = results[0].formatted_address;
+          var enderecoFormatado = results[0].formatted_address;
 
-                    $("#enderecoAtendimentoGoogle").val(enderecoFormatado);
+          $("#enderecoAtendimentoGoogle").val(enderecoFormatado);
+					$("#btnChamarAmbulancia").prop("disabled", false);
 
-                    $("#mapaLegenda").html("Posição geográfica da emergência, latitude: ".concat(latitude," e longitude: ",longitude,"."));
+          $("#mapaLegenda").html("Posição geográfica da emergência, latitude: ".concat(latitude," e longitude: ",longitude,"."));
+					$("#latitudeEmergencia").val(latitude);
+					$("#longitudeEmergencia").val(longitude);
 
 					var location = new google.maps.LatLng(latitude, longitude);
 					marker.setPosition(location);
@@ -77,14 +80,13 @@ mapa = function(){
 					google.maps.event.addDomListener(window, 'resize', _initialize);
 					google.maps.event.addDomListener(window, 'load', _initialize)
 
-                    var infowindow = new google.maps.InfoWindow({
-                        content: "<b>Local da emergência</b><br/>".concat(enderecoFormatado),
-                        maxWidth: 250
-                    });
-
-                    marker.addListener('click', function() {
-                        infowindow.open(map, marker);
-                    });
+          var infowindow = new google.maps.InfoWindow({
+              content: "<b>Local da emergência</b><br/>".concat(enderecoFormatado),
+              maxWidth: 250
+          });
+          marker.addListener('click', function() {
+              infowindow.open(map, marker);
+          });
 
 				}
 			}
@@ -94,6 +96,6 @@ mapa = function(){
 		start: _start,
 		initialize: _initialize,
 		carregarNoMapa: _carregarNoMapa,
-        calcularRota:_calcularRota
+		calcularRota:_calcularRota
 	}
 }();

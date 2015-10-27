@@ -9,21 +9,21 @@
 				<div class="row">
 					<div class="col-md-6">
 
-			<h1> Ambulâncias </h1>
+			<h1> Ambulances </h1>
 
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
 	  <div class="panel panel-default">
 		<div class="panel-heading" role="tab" id="headingOne">
 		  <h4 class="panel-title">
 			<a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			  Ambulância 1
+			  Ambulance 1
 			</a>
 		  </h4>
 		</div>
 		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 		  <div class="panel-body">
-			<p> <b> Qtde vítimas: </b> 1 </p>
-			<p> <b> Status: </b> Retorno para base com vítimas </p>
+			<p> <b> Victims: </b> 1 </p>
+			<p> <b> Status: </b> Return to base with victims </p>
 		  </div>
 		</div>
 	  </div>
@@ -31,13 +31,13 @@
 		<div class="panel-heading" role="tab" id="headingTwo">
 		  <h4 class="panel-title">
 			<a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			  Ambulância 2
+			  Ambulance 2
 			</a>
 		  </h4>
 		</div>
 		<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 		  <div class="panel-body">
-			Detalhes ambulância 2
+			Details ambulance 2
 		  </div>
 		</div>
 	  </div>
@@ -45,13 +45,13 @@
 		<div class="panel-heading" role="tab" id="headingThree">
 		  <h4 class="panel-title">
 			<a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			  Ambulância 3
+			  Ambulance 3
 			</a>
 		  </h4>
 		</div>
 		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 		  <div class="panel-body">
-			Detalhes ambulância 3
+			Details ambulance 3
 		  </div>
 		</div>
 	  </div>
@@ -73,7 +73,7 @@
 		var marker_1 = new google.maps.Marker({
 				map: map,
 				position: new google.maps.LatLng(-23.29486486253487, -45.99185186132812),
-				title: 'Ambulância 1'
+				title: 'Ambulance 1'
 			});
 		marker_1.addListener('click', function(){
 				$('#accordion .panel-collapse.collapse').collapse('hide');
@@ -82,12 +82,12 @@
 		var marker_2 = new google.maps.Marker({
 				map: map,
 				position: new google.maps.LatLng(-23.59586486253487, -45.89185186132812),
-				title: 'Ambulância 2'
+				title: 'Ambulance 2'
 			});
 		var marker_3 = new google.maps.Marker({
 				map: map,
 				position: new google.maps.LatLng(-23.49586486253487, -45.9185186132812),
-				title: 'Ambulância 3'
+				title: 'Ambulance 3'
 			});
 	</script>
 	</body>

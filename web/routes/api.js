@@ -52,12 +52,12 @@ exports.loginSistema = function (req, res) {
 		res.statusCode = 400;
 		return res.json({status: 'Error 400', message: 'Login ou senha não preenchidos', body: req.body});
 	}
-    
-    var sess = req.session;	    
+
+    var sess = req.session;
     var email = req.body.login;
     var senha = req.body.senha;
 
-    req.getConnection(function(err,connection){   
+    req.getConnection(function(err,connection){
         var query = connection.query('SELECT usu_token FROM usuario WHERE usu_email = ? AND usu_senha=?', [email, senha], function(err,rows)
         {
             if(err)
@@ -65,16 +65,16 @@ exports.loginSistema = function (req, res) {
 
             if(rows.length == 1)
             {
-                sess.token = rows[0].usu_token;                
+                sess.token = rows[0].usu_token;
                 sess.login = req.body.login;
-                res.json({status: 'OK', token: sess.token});            
+                res.json({status: 'OK', token: sess.token});
             }else
             {
                 res.statusCode = 401;
                 res.json({status: 'Error 401', message: 'Login ou senha estão incorretos', body: req.body});
-            }                
+            }
         });
-    }); 
+    });
 };
 /*Realizar logout do sistema*/
 exports.logout = function (req, res){
@@ -93,11 +93,8 @@ exports.logout = function (req, res){
 /*cadastrar equipamento no bd*/
 
 exports.insertEquip = function (req, res) {
-    
     var sess = req.session;    
     var equipDesc = req.body.equipDesc;
-   
-
     req.getConnection(function(err,connection){   
         var query = connection.query('INSERT INTO amb_equipamento (equip_descricao) VALUES (?);', [equipDesc], function(err, result) {
             if(err) {
@@ -115,7 +112,7 @@ exports.insertEquip = function (req, res) {
                 return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
             }
         });
-    }); 
+    });
 };
 
 
@@ -123,7 +120,6 @@ exports.insertEquip = function (req, res) {
 /*inserir equipamento na ambulancia*/
 
 exports.insertEquipAmb = function (req, res) {
-    
     var sess = req.session;    
     var nomeEquipamentoAmb = req.body.nomeEquipamentoAmb; 
     var placaAmb = req.body.placaAmb;
@@ -146,14 +142,14 @@ exports.insertEquipAmb = function (req, res) {
                 return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
             }
         });
-    }); 
+    });
 };
 
 
 /*Get Equip*/
 exports.getEquipAmb = function (req, res) {
-    
-    var sess = req.session;     
+
+    var sess = req.session;
     var placaAmbGet = req.body.placaAmbGet;
 
     req.getConnection(function(err,connection){   
@@ -204,7 +200,7 @@ exports.showAmb = function (req, res) {
             return res.json({status: 'OK', 'rows' : rows, token: sess.token});            
                           
         });
-    }); 
+    });
 
 
 };

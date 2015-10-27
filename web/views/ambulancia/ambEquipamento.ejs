@@ -9,24 +9,23 @@
         <div class="row" >
             <div class="col-md-3" >
                 <div class="alert alert-info" >
-                  <center> <b> Cadastrar Novo Equipamento </b> </center>
+                  <center> <b> Register new Equipment </b> </center>
                 </div>
                 <form onsubmit="return !!(cadastroEquipamento.api_insert_equip() & getEquipamentoAmb.show_equip());" id="formInsertEquip">
                     
-
-                    <label>Descrição do equipamento:</label>
+                    <label>Equipment Description:</label>
                     <div class="form-group">
                         <input type="text" name="equipDesc"  placeholder="Ex.: Maca Retrátil em Alumínio" class="form-control" id="equipDesc" />
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Cadastrar </button>
+                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Register </button>
                     </div>
                    
                 </form>
 
                 <div class="form-group">
-                    <label>Lista de equipamentos cadastrados:</label>
+                    <label>Registered Equipment List:</label>
                     <textarea type="text"  class="form-control" id="lista_equipamentos"  rows="10"  readonly/></textarea>
                 </div>
 
@@ -37,44 +36,44 @@
 
             <div class="col-md-3">
                 <div class="alert alert-info" >
-                  <center> <b> Inserir Equipamento em Ambulância </b> </center>
+                  <center> <b> Insert Equipament in Ambulance </b> </center>
                 </div>
                 <form onsubmit="return cadastroEquipamentoAmb.api_insert_equip_amb();" id="formInsertEquipAmb">
                     
-                     <label>Nome do Equipamento:</label>
+                     <label>Equipment Description:</label>
                     <div class="form-group">
                         <input type="text"  name="nomeEquipamentoAmb" class="form-control" id="nomeEquipamentoAmb"  />
                     </div>
 
-                    <label>Placa da Ambulância:</label>
+                    <label>License Plate:</label>
                     <div class="form-group">
                         <input type="text" name="placaAmb" placeholder="AAA-1234"  value="AAA-1234" class="form-control" id="placaAmb" />
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Inserir </button>
+                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Insert </button>
                     </div>
                    
                 </form>
                 <div class="form-group">
-                    <label>Lista de ambulâncias cadastradas:</label>
+                    <label>Registered Ambulance List:</label>
                     <textarea type="text"  class="form-control" id="lista_amb"  rows="10"  readonly/></textarea>
                 </div>
             </div>
 
             <div class="col-md-3">
                 <div class="alert alert-info" >
-                  <center> <b> Mostrar Equipamento em Ambulância </b> </center>
+                  <center> <b> Show Equipment in Ambulance </b> </center>
                 </div>
                 <form onsubmit="return getEquipamentoAmb.api_get_equip_amb();" id="formGetEquipAmb">
                     
-                    <label>Placa da Ambulância:</label>
+                    <label>License Plate:</label>
                     <div class="form-group">
                         <input type="text" name="placaAmbGet" placeholder="AAA-1234"  value="AAA-1234" class="form-control" id="placaAmbGet" />
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Mostrar Equipamentos </button>
+                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Show Equipment </button>
                     </div>
 
                 </form>
