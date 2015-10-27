@@ -33,6 +33,7 @@ With [this image][1] and the table below (from [the rfid lib][3]), it is easy to
 1. Clone the `MFRC522-python` dependency: https://github.com/lthiery/SPI-Py
 1. Enter the cloned directory and run `sudo python setup.py install`
 1. Install the `requests` library: `sudo pip install requests`
+1. Clone this repo and cd into the created directory
 1. Run `sudo python sigac-rfid-reader.py`
 
 [1]: http://www.jameco.com/Jameco/workshop/circuitnotes/raspberry_pi_circuit_note_fig2a.jpg
