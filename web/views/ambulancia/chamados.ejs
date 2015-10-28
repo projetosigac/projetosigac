@@ -5,7 +5,6 @@
 		<div id="wrapper">
 			<%- include ../layouts/navigationAmbulancia.ejs %>
 
-
 			<div class="container-fluid" style="padding-top: 10px">
 				<div class="row">
 					<div class="col-md-6">
@@ -13,52 +12,6 @@
 			<h1> Active Occurences</h1>
 
 	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-	  <div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingOne">
-		  <h4 class="panel-title">
-			<a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			  Ocurrence 1
-			</a>
-		  </h4>
-		</div>
-		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-		  <div class="panel-body">
-			<p> <b> Victims: </b> 1 </p>
-			<p> <b> Ambulances on the way: </b> 1 </p>
-			<p> <b> Firefighters notified: </b> Yes </p>
-			<p> <b> Rescue Team notified: </b> Yes </p>
-			<p> <b> Police notified: </b> Yes </p>
-		  </div>
-		</div>
-	  </div>
-	  <div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingTwo">
-		  <h4 class="panel-title">
-			<a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			  Ocurrence 2
-			</a>
-		  </h4>
-		</div>
-		<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-		  <div class="panel-body">
-			 Details of Ocurrence 2
-		  </div>
-		</div>
-	  </div>
-	  <div class="panel panel-default">
-		<div class="panel-heading" role="tab" id="headingThree">
-		  <h4 class="panel-title">
-			<a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			  Ocurrence 3
-			</a>
-		  </h4>
-		</div>
-		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-		  <div class="panel-body">
-			Details of Ocurrence 3
-		  </div>
-		</div>
-	  </div>
 	</div>
 
 			</div>
@@ -74,26 +27,10 @@
 <%- include ../layouts/footer.ejs %>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="/../js/mapa.js"></script>
+<script type="text/javascript" src="/../js/pages/chamados.js"></script>
 <script>
-	mapa.start();
-	var marker_1 = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(-23.19586486253487, -45.89185186132812),
-			title: 'Ocorrência 1'
-		});
-	marker_1.addListener('click', function(){
-			$('#accordion .panel-collapse.collapse').collapse('hide');
-			$('#collapseOne').collapse('show');
-		});
-	var marker_2 = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(-23.29586486253487, -45.89185186132812),
-			title: 'Ocorrência 2'
-		});
-	var marker_3 = new google.maps.Marker({
-			map: map,
-			position: new google.maps.LatLng(-23.19586486253487, -45.59185186132812),
-			title: 'Ocorrência 3'
-		});
+    $(document).ready(function(){
+        chamados.init();
+    });
 </script>
 </html>

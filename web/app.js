@@ -82,6 +82,8 @@ métodos internos do sistema que necessita de sessão
 app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.carregarBaseSamu);
 app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.salvarOcorrencia);
 
+app.get('/ambulancia/listar-ocorrencias', util.autenticarSessao, atendimento.listarOcorrencia);
+
 /*
 ***Exemplo de criação de rota passando parametros
 app.get('/customers', customers.list);

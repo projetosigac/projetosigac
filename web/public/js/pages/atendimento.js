@@ -40,7 +40,7 @@ atendimento = function () {
         $("#qtdMed").val(Math.ceil(1.5*qtdVitimas));
     }
     var _salvarOcorrencia = function (){
-      var requestData = JSON.stringify($('#formOcorrencia').serializeObject());
+      /*var requestData = JSON.stringify($('#formOcorrencia').serializeObject());
       $.ajax({
         type: "POST",
         url: '/atendimento/salvar-ocorrencia',
@@ -54,14 +54,15 @@ atendimento = function () {
         error: function(jqXHR, textStatus, errorThrown) {
     			alert(jqXHR.responseJSON);
         }
-      });
+      });*/
+      $('#myModal').modal('toggle');
     }
     var _clearForm = function (){
       _passoMensagem(1);
       $('form input[type=text]').val('');
-      $('form .btn').prop( "disabled", true);
-      //mapa.limparRota();
-      location.reload();
+      $('#btnChamarAmbulancia').prop( "disabled", true);
+      $('#btnRegistrarOcorrencia').prop( "disabled", true);
+      directionsDisplay.setMap(null);
     }
     var _passoMensagem = function (passo){
         switch(passo) {
