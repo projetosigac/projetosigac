@@ -23,40 +23,43 @@
 // Include <sqlite3.h>
 #include <sqlite3.h>
 
+// Include <stdio.h>
+#include <stdio.h>
+
 // Include <string.h>
 #include <string.h>
 
 // Include "../librest/httpclient.h"
 #include "../librest/httpclient.h"
 
-// Implement the sendSqlRequest function.
-char* sendSqlRequest(const char* sqlOperation) {
-	// Declare the URL char array.
-	char url[1515];
+// Declare the default detabase name.
+static const char DBNAME[] = "sqlgac.sql";
 
-	// Set the first character to be '\0'.
-	url[0] = '\0';
+// Implement the callback private function.
+static int callback(void *NotUsed, int argc, char **argv, char **azColName){
+	return 0;
+}
 
-	// Set the base URL to "http://www.google.com/query" by using strcat.
-	strcat(url, "http://powerful-forest-9086.herokuapp.com/");
+// Implement the execSqlOperation function.
+int execSqlOperation(const char* sqlOperation) {
+    sqlite3 *db;
+    char *errmsg = 0;
 
-	// Append the query string "?q=" by using strcat.
-	strcat(url, "?q=");
+    if (sqlite3_open(DBNAME, &db)) {
+    	errmsg = sqlite3_errmsg(db);
+        fprintf(stderr, "Error opening database: %s\n", errmsg);
+        sqlite3_close(db);
+        return 1;
+    }
 
-	// Append the sqlOperation string.
-	strcat(url, sqlOperation);
+    if (sqlite3_exec(db, sqlOperation, callback, 0, &errmsg) != SQLITE_OK) {
+        fprintf(stderr, "Error executing operation on database: %s\n", errmsg);
+        sqlite3_close(db);
+    	return 1;
+    }
 
-	// Prepare an HTTP_REQUEST.
-	HTTP_REQUEST req;
-
-	// Set the request method to HTTP_GET.
-	req.method = HTTP_GET;
-
-	// Set the request url to url.
-	req.url = url;
-
-	// Return the sent request buffer.
-	return sendRequest(&req)->buffer;
+    sqlite3_close(db);
+    return 0;
 }
 
 // Implement the sendHttpSqlRequest function.

@@ -20,8 +20,11 @@
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-// Declare the sendSqlRequest function.
-char* sendSqlRequest(const char* sqlOperation);
+// Declare the createLocalDb function.
+void createLocalDb();
+
+// Declare the execSqlOperation function.
+int execSqlOperation(const char* sqlOperation);
 
 // Declare the sendHttpSqlRequest function.
 char* sendHttpSqlRequest(const char* sqlOperation);
