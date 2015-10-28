@@ -36,7 +36,7 @@
 static const char DBNAME[] = "sqlgac.sql";
 
 // Implement the callback private function.
-static int callback(void *NotUsed, int argc, char **argv, char **azColName){
+static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
 	return 0;
 }
 
