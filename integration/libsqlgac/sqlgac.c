@@ -20,14 +20,14 @@
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-// Include <sqlite3.h>
-#include <sqlite3.h>
-
 // Include <stdio.h>
 #include <stdio.h>
 
 // Include <string.h>
 #include <string.h>
+
+// Include "sqlite3.h"
+#include "sqlite3.h"
 
 // Include "../librest/httpclient.h"
 #include "../librest/httpclient.h"
