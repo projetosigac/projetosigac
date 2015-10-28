@@ -20,9 +20,6 @@
  * along with this program; if not, see <http://www.gnu.org/licenses/>.
  *******************************************************************/
 
-// Declare the createLocalDb function.
-void createLocalDb();
-
 // Declare the execSqlOperation function.
 int execSqlOperation(const char* sqlOperation);
 
