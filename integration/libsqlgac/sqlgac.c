@@ -33,7 +33,7 @@
 #include "../librest/httpclient.h"
 
 // Declare the default detabase name.
-static const char DBNAME[] = "sqlgac.sql";
+static const char DBNAME[] = "sqlgac.db";
 
 // Implement the callback private function.
 static int callback(void *NotUsed, int argc, char **argv, char **azColName) {
