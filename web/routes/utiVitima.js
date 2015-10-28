@@ -2,5 +2,21 @@
  * Funcionalidades envolvendo a página de atendimento
  */
 exports.carregarPagina = function(req, res){
-  res.render('uti/vitima', { title: 'Hello World' });
+
+	req.getConnection(function(err,connection){  
+		var queryStr = 'SELECT * FROM sigac.paciente_status WHERE paciente_id=' + req.params.pId + ' ORDER BY timestamp DESC';
+        var query = connection.query(queryStr, function(err,rows,fields)
+        {
+            if(err)
+                console.log("Error Query : %s ",err );
+
+            else
+            {
+				res.render('uti/vitima', { dados: rows });              
+            }                
+        });
+    }); 
+
+
+    
 };

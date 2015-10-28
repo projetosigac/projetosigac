@@ -40,7 +40,7 @@ atendimento = function () {
         $("#qtdMed").val(Math.ceil(1.5*qtdVitimas));
     }
     var _salvarOcorrencia = function (){
-      var requestData = JSON.stringify($('#formOcorrencia').serializeObject());
+      /*var requestData = JSON.stringify($('#formOcorrencia').serializeObject());
       $.ajax({
         type: "POST",
         url: '/atendimento/salvar-ocorrencia',
@@ -54,25 +54,26 @@ atendimento = function () {
         error: function(jqXHR, textStatus, errorThrown) {
     			alert(jqXHR.responseJSON);
         }
-      });
+      });*/
+      $('#myModal').modal('toggle');
     }
     var _clearForm = function (){
       _passoMensagem(1);
       $('form input[type=text]').val('');
-      $('form .btn').prop( "disabled", true);
-      //mapa.limparRota();
-      location.reload();
+      $('#btnChamarAmbulancia').prop( "disabled", true);
+      $('#btnRegistrarOcorrencia').prop( "disabled", true);
+      directionsDisplay.setMap(null);
     }
     var _passoMensagem = function (passo){
         switch(passo) {
             case 1:
-                $("#passo").html("<b>1º Passo:</b> Digite no combo de endereço o local da emergência.");
+                $("#passo").html("<b>1º Step:</b> Enter the Emergency address.");
                 break;
             case 2:
-                $("#passo").html("<b>2º Passo:</b> Informe a quantidade de vítimas e calcule as ambulâncias.");
+                $("#passo").html("<b>2º Step:</b> Enter the number of victims and calculate ambulances.");
                 break;
             case 3:
-                $("#passo").html("<b>3º Passo:</b> Clique em 'Registrar Ocorrência para encaminhar o atendimento.'");
+                $("#passo").html("<b>3º Step:</b> Click Register Occurrence to forward the call.'");
                 break;
         }
     }

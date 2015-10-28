@@ -1,8 +1,10 @@
+  var directionsService = new google.maps.DirectionsService;
+  var directionsDisplay = new google.maps.DirectionsRenderer;
 mapa = function(){
 	var _start = function(){
 
 		google.maps.event.addDomListener(window, 'load', _initialize());
-
+/*
 		google.maps.event.addListener(marker, 'drag', function () {
 		geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status) {
 			if (status == google.maps.GeocoderStatus.OK) {
@@ -14,11 +16,8 @@ mapa = function(){
 			}
 		});
 	});
+  */
  }
-
-  var directionsService = new google.maps.DirectionsService;
-  var directionsDisplay = new google.maps.DirectionsRenderer;
-
 	var _initialize = function (){
 
 		var latlng = new google.maps.LatLng(-23.19586486253487, -45.89185186132812);
@@ -29,21 +28,21 @@ mapa = function(){
 		};
 		map = new google.maps.Map(document.getElementById("map"), options);
 
-    directionsDisplay.setMap(map);
-
+/*
 		geocoder = new google.maps.Geocoder();
-		marker = new google.maps.Marker({
+  	marker = new google.maps.Marker({
 			map: map,
 			draggable: false,
 			visible: false
 		});
 		marker.setPosition(latlng);
-
+*/
 		google.maps.event.addDomListener(window, 'resize', _initialize);
-		google.maps.event.addDomListener(window, 'load', _initialize);
+		//google.maps.event.addDomListener(window, 'load', _initialize);
 
 	}
   var _calcularRota = function (enderecoDestino, enderecoPartida) {
+      directionsDisplay.setMap(map);
       directionsService.route({
         origin: enderecoDestino,
         destination: enderecoPartida,

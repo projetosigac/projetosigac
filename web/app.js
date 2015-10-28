@@ -70,7 +70,7 @@ app.get('/', routes.index);
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
 app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
 app.get('/uti/vitimas', util.autenticarSessao, utiVitimas.carregarPagina);
-app.get('/uti/vitima', util.autenticarSessao, utiVitima.carregarPagina);
+app.get('/uti/vitima/:pId', util.autenticarSessao, utiVitima.carregarPagina);
 app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
@@ -81,6 +81,8 @@ métodos internos do sistema que necessita de sessão
 */
 app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.carregarBaseSamu);
 app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.salvarOcorrencia);
+
+app.get('/ambulancia/listar-ocorrencias', util.autenticarSessao, atendimento.listarOcorrencia);
 
 /*
 ***Exemplo de criação de rota passando parametros
@@ -93,6 +95,10 @@ app.post('/customers/edit/:id',customers.save_edit);
 */
 
 //apis
+app.get('/api/leituraSinais', api.leituraSinais);
+app.post('/api/leituraSinais', api.leituraSinais);
+//app.post('/api/leituraSinais', api.leituraSinais);
+
 app.post('/api/login-sistema', api.loginSistema);
 app.get('/logout', api.logout);
 app.get('/api/verificarOcorrencia', api.verificarOcorrencia);
@@ -101,6 +107,8 @@ app.post('/api/confirmarAtendimento', api.confirmarAtendimento);
 app.post('/api/insert-equip', util.autenticarSessao, api.insertEquip);
 app.post('/api/insert-equip-amb', util.autenticarSessao, api.insertEquipAmb);
 app.post('/api/get-equip-amb', util.autenticarSessao, api.getEquipAmb);
+app.post('/api/show-equip', util.autenticarSessao, api.showEquip);
+app.post('/api/show-amb', util.autenticarSessao, api.showAmb);
 
 app.use(app.router);
 

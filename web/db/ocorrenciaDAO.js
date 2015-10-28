@@ -74,6 +74,21 @@ function OcorrenciaDAO(pool) {
       });
     };
 
+    this.listarOcorrencia = function(callback){
+      var sql = "SELECT * FROM ocorrencia WHERE status='ABERTO'";
+      //if(obj.status)
+      //  sql = sql + " WHERE status='"+obj.status+"'";
+
+      var query = self.pool.query(sql, function (err, rows) {
+          if (err) {
+              callback(err, {});
+          } else {
+              var result = (rows ? rows : {});
+              callback(null, result);
+          }
+      });
+    };
+
     this.salvarOcorrencia = function(obj, callback) {
       var query = self.pool.query("INSERT INTO ocorrencia(data_abertura, status, n_ambulancias_necessarias, n_vitimas,\
          latitude, longitude, endereco, comentarios) VALUES (NOW(),'ABERTO',?,?,?,?,?,?)", [obj.qtdAmb, obj.qtdVitimas, obj.latitude,

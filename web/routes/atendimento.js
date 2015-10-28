@@ -22,6 +22,25 @@ exports.carregarBaseSamu = function (req, res, next) {
     });
 };
 /**
+ * Retorna a lista de ocorrências
+ * Esse método é utilizado pela tela de ambulancias/chamados
+ *
+ * @author Danilo Ramalho
+ *
+ * @param req HTTP request
+ * @param res HHTP response
+ */
+exports.listarOcorrencia = function (req, res, next) {
+    var param = {
+      status : req.params.status,
+    };
+    ocorrenciaDAO.listarOcorrencia(function(err, result) {
+        if (err) return next(err);
+        else res.json(result);
+    });
+
+};
+/**
  * Retorna a base de samu que contém a ambulância com a configuração adequada para atendimento a ocorrência
  * Esse método é utilizado pela tela de atendimento para abrir uma ocorrência
  *
