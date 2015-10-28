@@ -6,9 +6,12 @@
  * Copyright (c) 2015    Fernando Fonseca <fetofs@gmail.com> 
  * Copyright (c) 2015    Rodrigo Roim <roim.rodrigo@gmail.com> 
  *  
- *  Distributed under GPL license
+ *  Distributed under GPL license.
  *  All rights reserved.
  *******************************************************************/
+
+// Include <sqlite3.h>
+#include <sqlite3.h>
 
 // Include <string.h>
 #include <string.h>
