@@ -28,15 +28,6 @@ mapa = function(){
 		};
 		map = new google.maps.Map(document.getElementById("map"), options);
 
-/*
-		geocoder = new google.maps.Geocoder();
-  	marker = new google.maps.Marker({
-			map: map,
-			draggable: false,
-			visible: false
-		});
-		marker.setPosition(latlng);
-*/
 		google.maps.event.addDomListener(window, 'resize', _initialize);
 		//google.maps.event.addDomListener(window, 'load', _initialize);
 
@@ -56,6 +47,9 @@ mapa = function(){
       });
     }
 	var _carregarNoMapa = function (endereco) {
+
+    geocoder = new google.maps.Geocoder();
+
 		geocoder.geocode({ 'address': endereco + ', Brasil', 'region': 'BR' }, function (results, status) {
 			if (status == google.maps.GeocoderStatus.OK) {
 				if (results[0]) {
@@ -71,6 +65,10 @@ mapa = function(){
 					$("#longitudeEmergencia").val(longitude);
 
 					var location = new google.maps.LatLng(latitude, longitude);
+          marker = new google.maps.Marker({
+      			map: map,
+      			draggable: false,
+      		});
 					marker.setPosition(location);
 					marker.setVisible(true);
 					map.setCenter(location);

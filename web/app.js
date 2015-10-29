@@ -52,7 +52,7 @@ app.use(
 
 // inicia os DAOs.
 require("./db/ocorrenciaDAO")(pool);
-require("./db/localizacaoAmbulanciaDAO")(pool);
+//require("./db/localizacaoAmbulanciaDAO")(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.
@@ -62,6 +62,7 @@ var utiVitimas = require('./routes/utiVitimas');
 var utiVitima = require('./routes/utiVitima');
 var customers = require('./routes/customers');
 var api = require('./routes/api');
+var apiBombeiro = require('./routes/bombeiro')
 var util = require('./routes/utils');
 var atendimento = require('./routes/atendimento');
 var ambEquipamento = require('./routes/ambEquipamento')
@@ -114,6 +115,17 @@ app.post('/api/delete-equip', util.autenticarSessao, api.deleteEquip);
 app.post('/api/delete-equip-amb', util.autenticarSessao, api.deleteEquipAmb);
 
 app.use(app.router);
+
+//apis bombeiros
+
+app.post('/tag',apiBombeiro.iniVictim)
+app.get('/api/bombeiro',apiBombeiro.list)
+app.get('/api/bombeiro/getBraceletList',apiBombeiro.getList)
+app.post('/api/bombeiro/',apiBombeiro.classifyVictim)
+app.get('/api/bombeiro/victimsOfColor/:color',apiBombeiro.getVictimsOfColor) //typeof(getNames) = boolean
+app.get('/api/bombeiro/countVictims/:color',apiBombeiro.colorCounter)
+//app.get('/api/bombeiro/:token',apiBombeiro.deleteBracelet)
+
 
 // API error handler
 //app.use(function(err, req, res, next) {
