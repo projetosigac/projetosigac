@@ -32,7 +32,7 @@ exports.carregarBaseSamu = function (req, res, next) {
  */
 exports.listarOcorrencia = function (req, res, next) {
     var param = {
-      status : req.params.status,
+      status : req.params.status
     };
     ocorrenciaDAO.listarOcorrencia(function(err, result) {
         if (err) return next(err);

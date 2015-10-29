@@ -1,5 +1,6 @@
 
 var ocorrenciaDAO = require('../db/ocorrenciaDAO')(); // load the database library
+var localicazaoAmbulanciaDAO = require('../db/localizacaoAmbulanciaDAO')(); // load the database library
 
 /*
  * APIS do Sistema.
@@ -15,6 +16,32 @@ var ocorrenciaDAO = require('../db/ocorrenciaDAO')(); // load the database libra
  * @param res HHTP response
  */
 exports.verificarOcorrencia = function (req, res, next) {
+    if (req.query.lat && req.query.long && req.query.placa) {
+        console.log('Salvando localizacao para ambulancia ' + req.query.placa);
+
+        var longAsDouble = parseFloat(req.query.long);
+        var latAsDouble = parseFloat(req.query.lat);
+
+        if (isNaN(longAsDouble)) {
+            res.status(400); // bad request;
+            return res.json({message: 'Invalid longitude parameter.'})
+        }
+        if (isNaN(latAsDouble)) {
+            res.status(400); // bad request;
+            return res.json({message: 'Invalid latitude parameter.'})
+        }
+
+        var localizacao = {
+            placa: req.query.placa,
+            latitude: latAsDouble,
+            longitude: longAsDouble
+        }
+        localicazaoAmbulanciaDAO.salvarLocalizacao(localizacao, function(err) {
+            if (err) {
+                console.log(err);
+            }
+        });
+    }
     ocorrenciaDAO.obterOcorrenciaAberta(function(err, result) {
         if (err) return next(err);
         res.json(result);
