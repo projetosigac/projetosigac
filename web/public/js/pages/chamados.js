@@ -10,7 +10,7 @@ chamados = function () {
         async: false,
         contentType: 'application/json; charset=utf-8',
         dataType: 'json',
-        data: {status:'ATIVO'},
+        data: {status:'ABERTO'},
         success: function (data){
             var resultHtml = "";
             for (var i = 0; i < data.length; i++) {
