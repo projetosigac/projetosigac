@@ -52,7 +52,7 @@ app.use(
 
 // inicia os DAOs.
 require("./db/ocorrenciaDAO")(pool);
-require("./db/localizacaoAmbulanciaDAO")(pool);
+//require("./db/localizacaoAmbulanciaDAO")(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.

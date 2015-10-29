@@ -74,10 +74,10 @@ function OcorrenciaDAO(pool) {
       });
     };
 
-    this.listarOcorrencia = function(callback){
-      var sql = "SELECT * FROM ocorrencia WHERE status='ABERTO'";
-      //if(obj.status)
-      //  sql = sql + " WHERE status='"+obj.status+"'";
+    this.listarOcorrencia = function(obj, callback){
+      var sql = "SELECT * FROM ocorrencia";
+      if(obj.status)
+        sql = sql + " WHERE status='"+obj.status+"'";
 
       var query = self.pool.query(sql, function (err, rows) {
           if (err) {

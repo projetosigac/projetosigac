@@ -31,10 +31,11 @@ exports.carregarBaseSamu = function (req, res, next) {
  * @param res HHTP response
  */
 exports.listarOcorrencia = function (req, res, next) {
+
     var param = {
-      status : req.params.status
+      status : req.query.status
     };
-    ocorrenciaDAO.listarOcorrencia(function(err, result) {
+    ocorrenciaDAO.listarOcorrencia(param, function(err, result) {
         if (err) return next(err);
         else res.json(result);
     });
