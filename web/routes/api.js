@@ -144,6 +144,33 @@ exports.insertEquip = function (req, res) {
 };
 
 
+/*deletar equipamento no bd*/
+
+exports.deleteEquip = function (req, res) {
+    var sess = req.session;    
+    var equipDesc = req.body.equipDesc;
+    req.getConnection(function(err,connection){   
+        var query = connection.query('DELETE FROM amb_equipamento WHERE equip_descricao = (?);', [equipDesc], function(err, result) {
+            if(err) {
+                console.log(err);
+                res.statusCode = 401;
+                return res.json({status: 'Error 401', message: 'Nao foi possivel deletar do banco de dados', body: req.body});
+            }
+
+            if(result.affectedRows > 0)
+            {
+                return res.json({'status': 'OK'});
+            }else
+            {
+                res.statusCode = 401;
+                return res.json({status: 'Error 401', message: 'Nao foi possivel deletar do banco de dados', body: req.body});
+            }
+        });
+    });
+};
+
+
+
 
 /*inserir equipamento na ambulancia*/
 
@@ -152,9 +179,39 @@ exports.insertEquipAmb = function (req, res) {
     var nomeEquipamentoAmb = req.body.nomeEquipamentoAmb; 
     var placaAmb = req.body.placaAmb;
    
-    nomeEquipamentoAmb = "%" + nomeEquipamentoAmb + "%";
+    //nomeEquipamentoAmb = "%" + nomeEquipamentoAmb + "%";
     req.getConnection(function(err,connection){   
         var query = connection.query('INSERT INTO amb_lista_equipamentos VALUES (?, (SELECT equip_id FROM amb_equipamento WHERE equip_descricao LIKE ?));', [placaAmb, nomeEquipamentoAmb], function(err, result) {
+            if(err) {
+                console.log(err);
+                res.statusCode = 401;
+                return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
+            }
+
+            if(result.affectedRows > 0)
+            {
+                return res.json({'status': 'OK'});
+            }else
+            {
+                res.statusCode = 401;
+                return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
+            }
+        });
+    });
+};
+
+
+
+/*deletar equipamento na ambulancia*/
+
+exports.deleteEquipAmb = function (req, res) {
+    var sess = req.session;    
+    var nomeEquipamentoAmb = req.body.nomeEquipamentoAmb; 
+    var placaAmb = req.body.placaAmb;
+   
+    //nomeEquipamentoAmb = "%" + nomeEquipamentoAmb + "%";
+    req.getConnection(function(err,connection){   
+        var query = connection.query('DELETE FROM amb_lista_equipamentos WHERE (placa_ambulancia = ? AND equip_id = (SELECT equip_id FROM amb_equipamento WHERE equip_descricao = ?));', [placaAmb, nomeEquipamentoAmb], function(err, result) {
             if(err) {
                 console.log(err);
                 res.statusCode = 401;

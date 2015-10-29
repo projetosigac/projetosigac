@@ -110,6 +110,9 @@ app.post('/api/get-equip-amb', util.autenticarSessao, api.getEquipAmb);
 app.post('/api/show-equip', util.autenticarSessao, api.showEquip);
 app.post('/api/show-amb', util.autenticarSessao, api.showAmb);
 
+app.post('/api/delete-equip', util.autenticarSessao, api.deleteEquip);
+app.post('/api/delete-equip-amb', util.autenticarSessao, api.deleteEquipAmb);
+
 app.use(app.router);
 
 // API error handler
