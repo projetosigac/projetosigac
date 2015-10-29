@@ -51,8 +51,8 @@ app.use(
 );
 
 // inicia os DAOs.
-var ocorrenciaDAO = require("./db/ocorrenciaDAO")(pool);
-
+require("./db/ocorrenciaDAO")(pool);
+require("./db/localizacaoAmbulanciaDAO")(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.
@@ -81,7 +81,6 @@ métodos internos do sistema que necessita de sessão
 */
 app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.carregarBaseSamu);
 app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.salvarOcorrencia);
-
 app.get('/ambulancia/listar-ocorrencias', util.autenticarSessao, atendimento.listarOcorrencia);
 
 /*
@@ -97,6 +96,7 @@ app.post('/customers/edit/:id',customers.save_edit);
 //apis
 app.get('/api/leituraSinais', api.leituraSinais);
 app.post('/api/leituraSinais', api.leituraSinais);
+
 //app.post('/api/leituraSinais', api.leituraSinais);
 
 app.post('/api/login-sistema', api.loginSistema);
@@ -109,6 +109,9 @@ app.post('/api/insert-equip-amb', util.autenticarSessao, api.insertEquipAmb);
 app.post('/api/get-equip-amb', util.autenticarSessao, api.getEquipAmb);
 app.post('/api/show-equip', util.autenticarSessao, api.showEquip);
 app.post('/api/show-amb', util.autenticarSessao, api.showAmb);
+
+app.post('/api/delete-equip', util.autenticarSessao, api.deleteEquip);
+app.post('/api/delete-equip-amb', util.autenticarSessao, api.deleteEquipAmb);
 
 app.use(app.router);
 

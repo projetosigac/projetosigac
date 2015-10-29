@@ -15,6 +15,8 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
+
+
 # =========================
 # Operating System Files
 # =========================
@@ -48,6 +50,8 @@ Icon
 
 # Compilation Files & Directories
 # =========================
+
+**/node_modules/
 
 *.err
 **/*DF/
