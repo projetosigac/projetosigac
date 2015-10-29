@@ -1,6 +1,6 @@
 
 var ocorrenciaDAO = require('../db/ocorrenciaDAO')(); // load the database library
-var localicazaoAmbulanciaDAO = require('../db/localizacaoAmbulanciaDAO')(); // load the database library
+//var localicazaoAmbulanciaDAO = require('../db/localizacaoAmbulanciaDAO')(); // load the database library
 
 /*
  * APIS do Sistema.
