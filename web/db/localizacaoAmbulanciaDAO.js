@@ -12,6 +12,18 @@ function LocalizacaoAmbulanciaDAO(pool) {
         this.pool = pool;
     }
 
+    this.listarLocalizacoes = function(callback) {
+        self.pool.query("SELECT * FROM localizacao_ambulancia",
+            function(err, rows) {
+                if (err) {
+                    callback(err, {});
+                } else {
+                    var result = (rows ? rows[0] : null);
+                    callback(null, result);
+                }
+            });
+    };
+
     this.obterLocalizacaoRecente = function(placa, callback) {
         self.pool.query("SELECT * FROM localizacao_ambulancia WHERE placa_ambulancia LIKE ? ORDER BY data DESC LIMIT 1",
             [placa],

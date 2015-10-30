@@ -5,7 +5,6 @@ chamados = function () {
     var _init = function (){
         mapa.start();
         _carregarAmbulancias();
-        _listarOcorrencia();
     }
     var _listarOcorrencia = function (){
       $.ajax({
@@ -56,6 +55,7 @@ chamados = function () {
 
             }
             $("#accordion").html(resultHtml);
+            window.alert("TAMANHO: " + enderecosAmbulancias.length);
         },
         error: function(jqXHR, textStatus, errorThrown) {
     			alert(jqXHR.responseJSON);
@@ -74,11 +74,16 @@ chamados = function () {
         geocoder.geocode({'location': latlng}, function(results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
                 if (results[0]) {
-                        callback(results[0].formatted_address);
+                    callback(results[0].formatted_address);
                 }
             }
+            else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {    
+                setTimeout(function() {
+                    _enderecoLatLng(callback, lat, lng);
+                }, 200);
+            }
             else {
-              window.alert('Geocoder failed due to: ' + status);
+                window.alert('Geocoder failed due to: ' + status);
             }
           });
     }
@@ -88,28 +93,42 @@ chamados = function () {
     */
     var _carregarAmbulancias = function () {
 
-        /*_enderecoLatLng(function(address) {
-            enderecosAmbulancias.push(address);
-        }
-        ,-23.29486486253487, -45.99185186132812);
-        _enderecoLatLng(function(address) {
-           enderecosAmbulancias.push(address);
-        }
-        ,-23.59586486253487, -45.89185186132812);
-        _enderecoLatLng(function(address) {
-            enderecosAmbulancias.push(address);
-        }
-        ,-23.49586486253487, -45.9185186132812);*/
+        $.ajax({
+            type: "GET",
+            url: '/ambulancia/localizacao-ambulancias',
+            async: false,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (data){
+                for (var i = 0; i < 10; i++)
+                {
+                    if(data.length == 1 || i == 9) {
+                        _enderecoLatLng(function(address) {
+                            enderecosAmbulancias.push(address);
+                            _listarOcorrencia();
+                        }, data[i].latitude, data[i].longitude);
+                    }
+                    else {
+                        _enderecoLatLng(function(address) {
+                            enderecosAmbulancias.push(address);
+                        }, data[i].latitude, data[i].longitude);
+                    }
+                }
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+               alert(jqXHR.responseJSON);
+            }
+        });
 
-        enderecosAmbulancias.push("Rua H8B, 232");
+        /*enderecosAmbulancias.push("Rua H8B, 232");
         enderecosAmbulancias.push("Avenida 9 de Julho, 200");
         enderecosAmbulancias.push("R. Dr. José Cândido de Souza - Jardim Novo Mundo");
         enderecosAmbulancias.push("Av. Andrômeda - São José dos Campos");
-        enderecosAmbulancias.push("Av. Silva Jardim, 340");
+        enderecosAmbulancias.push("Av. Silva Jardim, 340");*/
     }
 
     var _maisProxima = function (ocorrencia) {
-          _ambulanciaMaisProxima(enderecosAmbulancias, ocorrencia);
+        _ambulanciaMaisProxima(enderecosAmbulancias, ocorrencia);
     }
 
     var _ambulanciaMaisProxima = function (origem, ocorrencia) {
@@ -124,9 +143,17 @@ chamados = function () {
             avoidTolls: false
         },
         function (response, status) {
-            if (status !== google.maps.DistanceMatrixStatus.OK) {
+            if (status == google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT) {    
+                setTimeout(function() {
+                    _ambulanciaMaisProxima(origem, ocorrencia);
+                }, 200);
+            }
+
+            else if (status != google.maps.DistanceMatrixStatus.OK) {
                 console.log('Error:', status);
-            } else {
+            }
+
+            else {
                 console.log(response);
                 
                 var caminhos_json = response;

@@ -29,6 +29,7 @@ atendimento = function () {
 
         $("#btnRegistrarOcorrencia").attr('disabled',false);
 
+         _passoMensagem(3);
   		}).fail(function(jqXHR, textStatus, errorThrown) {
   			alert(jqXHR.responseJSON);
   		});
@@ -40,22 +41,22 @@ atendimento = function () {
         $("#qtdMed").val(Math.ceil(1.5*qtdVitimas));
     }
     var _salvarOcorrencia = function (){
-      /*var requestData = JSON.stringify($('#formOcorrencia').serializeObject());
-      $.ajax({
-        type: "POST",
-        url: '/atendimento/salvar-ocorrencia',
-        async: false,
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
-        data: requestData,
-        success: function (data){
-            $('#myModal').modal('toggle');
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-    			alert(jqXHR.responseJSON);
-        }
-      });*/
-      $('#myModal').modal('toggle');
+        var requestData = JSON.stringify($('#formOcorrencia').serializeObject());
+        $.ajax({
+          type: "POST",
+          url: '/atendimento/salvar-ocorrencia',
+          async: false,
+          contentType: 'application/json; charset=utf-8',
+          dataType: 'json',
+          data: requestData,
+          success: function (data){
+              $('#myModal').modal('toggle');
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+      			alert(jqXHR.responseJSON);
+          }
+        });
+        $('#myModal').modal('toggle');
     }
     var _clearForm = function (){
       _passoMensagem(1);

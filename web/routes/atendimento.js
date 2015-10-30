@@ -2,6 +2,7 @@
  * Funcionalidades envolvendo a página de atendimento
  */
 var ocorrenciaDAO = require('../db/ocorrenciaDAO')(); // load the database library
+var localizacaoAmbulanciaDAO = require('../db/localizacaoAmbulanciaDAO')();
 
 exports.carregarPagina = function(req, res){
   res.render('ambulancia/atendimento', { title: 'Hello World' });
@@ -81,5 +82,24 @@ exports.salvarOcorrencia = function (req, res, next) {
       if (err) return next(err);
       else res.json(result);
   });
+
+};
+
+/**
+ * Retorna as localizações de todas as ambulâncias cadastradas
+ * Esse método é utilizado pela tela de ambulâncias/chamados
+ *
+ * @param req HTTP request
+ * @param res HHTP response
+ */
+exports.localizacaoAmbulancias = function (req, res, next) {
+
+    var param = {
+      status : req.query.status
+    };
+    localizacaoAmbulanciaDAO.listarLocalizacoes(param, function(err, result) {
+        if (err) return next(err);
+        else res.json(result);
+    });
 
 };
