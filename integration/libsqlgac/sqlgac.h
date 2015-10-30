@@ -25,3 +25,9 @@ int execSqlOperation(const char* sqlOperation);
 
 // Declare the sendHttpSqlRequest function.
 char* sendHttpSqlRequest(const char* sqlOperation);
+
+// Declare the sendCrisesForm function
+char* sendCrisesForm(const char* name, const char* location, const char* coordinates, const char* lt, const char* lg, const char* address, const char* reference, const char* history, const char* description);
+
+// Declare the sendAssistanceForm function
+char* sendAssistanceForm(const char* solicitor, const char* phone, const char* dispatcher, const char* dateTime, const char* ocr, const char* address, const char* reference, const char* history);

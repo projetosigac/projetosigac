@@ -91,3 +91,69 @@ char* sendHttpSqlRequest(const char* sqlOperation) {
 	// Return the sent request buffer.
 	return sendRequest(&req)->buffer;
 }
+
+char* sendCrisesForm(const char* name, const char* location, const char* coordinates, const char* lt, const char* lg, const char* address, const char* reference, const char* history, const char* description){
+	// Declare the SQL char array
+	char sqlOp[1400];
+	
+	// Set the first character to be '\0'.
+	sqlOp[0] = '\0';
+
+	// set values tuple
+	strcat(sqlOp)
+
+	// Set the base of the INSERT query
+	strcat(sqlOp, "insert into TABLE_NAME (column_names) values (");
+	strcat(sqlOp, name);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, location);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, coordinates);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, lt);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, lg);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, address);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, reference);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, history);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, description);
+	strcat(sqlOp, ")");
+
+	return sendHttpSqlRequest(sqlOp);
+}
+
+char* sendAssistanceForm(const char* solicitor, const char* phone, const char* dispatcher, const char* dateTime, const char* ocr, const char* address, const char* reference, const char* history){
+	// Declare the SQL char array
+	char sqlOp[1400];
+	
+	// Set the first character to be '\0'.
+	sqlOp[0] = '\0';
+
+	// set values tuple
+	strcat(sqlOp)
+
+	// Set the base of the INSERT query
+	strcat(sqlOp, "insert into TABLE_NAME (column_names) values (");
+	strcat(sqlOp, solicitor);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, phone);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, dispatcher);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, dateTime);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, ocr);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, address);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, reference);
+	strcat(sqlOp, ",");
+	strcat(sqlOp, history);
+	strcat(sqlOp, ")");
+
+	return sendHttpSqlRequest(sqlOp);
+}
