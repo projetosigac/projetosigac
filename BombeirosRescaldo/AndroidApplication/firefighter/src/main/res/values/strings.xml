@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">SigacFirefighter</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string-array name="victim_priorities">
+        <item>Green</item>
+        <item>Yellow</item>
+        <item>Red</item>
+        <item>Black</item>
+    </string-array>
+
+    <string-array name="victim_sex">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

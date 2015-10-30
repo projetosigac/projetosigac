@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="ID:"
+                />
+
+            <EditText
+                android:id="@+id/victim_id_query"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Victim ID"
+                android:enabled="false"
+                android:textColor="#FF444444"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/victim_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Go"
+                android:enabled="false"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="right"
+                >
+
+                <TextView
+                    android:text="Name:"
+                    style="@style/VictimFormLabel"
+                    />
+
+                <TextView
+                    android:text="Sex:"
+                    style="@style/VictimFormLabel"
+                    />
+
+                <TextView
+                    android:text="Priority:"
+                    style="@style/VictimFormLabel"
+                    />
+
+                <TextView
+                    android:text="Comment:"
+                    style="@style/VictimFormLabel"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="left"
+                >
+
+                <EditText
+                    android:id="@+id/victim_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:enabled="false"
+                    android:textColor="#FF444444"
+                    android:text="Name"
+                    />
+
+                <Spinner
+                    android:id="@+id/victim_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    />
+
+                <Spinner
+                    android:id="@+id/victim_priority"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    />
+
+                <EditText
+                    android:id="@+id/victim_comment"
+                    android:inputType="textMultiLine"
+                    android:lines="8"
+                    android:minLines="6"
+                    android:gravity="top|start"
+                    android:maxLines="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:text="Extremely injured?"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+
+
+</LinearLayout>
