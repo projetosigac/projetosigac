@@ -55,7 +55,6 @@ chamados = function () {
 
             }
             $("#accordion").html(resultHtml);
-            window.alert("TAMANHO: " + enderecosAmbulancias.length);
         },
         error: function(jqXHR, textStatus, errorThrown) {
     			alert(jqXHR.responseJSON);
@@ -93,7 +92,7 @@ chamados = function () {
     */
     var _carregarAmbulancias = function () {
 
-        $.ajax({
+        /*$.ajax({
             type: "GET",
             url: '/ambulancia/localizacao-ambulancias',
             async: false,
@@ -118,13 +117,14 @@ chamados = function () {
             error: function(jqXHR, textStatus, errorThrown) {
                alert(jqXHR.responseJSON);
             }
-        });
+        });*/
 
-        /*enderecosAmbulancias.push("Rua H8B, 232");
+        enderecosAmbulancias.push("Rua H8B, 232");
         enderecosAmbulancias.push("Avenida 9 de Julho, 200");
         enderecosAmbulancias.push("R. Dr. José Cândido de Souza - Jardim Novo Mundo");
         enderecosAmbulancias.push("Av. Andrômeda - São José dos Campos");
-        enderecosAmbulancias.push("Av. Silva Jardim, 340");*/
+        enderecosAmbulancias.push("Av. Silva Jardim, 340");
+        _listarOcorrencia();
     }
 
     var _maisProxima = function (ocorrencia) {

@@ -87,7 +87,7 @@ exports.salvarOcorrencia = function (req, res, next) {
 
 /**
  * Retorna as localizações de todas as ambulâncias cadastradas
- * Esse método é utilizado pela tela de ambulâncias/chamados
+ * Esse método é utilizado pela tela de ambulancias/chamados
  *
  * @param req HTTP request
  * @param res HHTP response
