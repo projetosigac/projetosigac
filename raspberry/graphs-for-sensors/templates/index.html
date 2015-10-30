@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SI-GAC | Sensors Data</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><h4>Temperature</h4></td>
+        <td><input id="temperature" value="--" readonly="true"/></td>
+      </tr>
+    </table>
+    <canvas id="t_canvas" width="600" height="300"></canvas>
+
+    <table>
+      <tr>
+        <td><h4>Heart Beat</h4></td>
+        <td><input id="heartbeat" value="--" readonly="true"/></td>
+      </tr>
+    </table>
+    <canvas id="hb_canvas" width="600" height="300"></canvas>
+
+    <!-- <h1>Data</h1> -->
+    <div id="data"></div>
+    <script type="text/javascript" src="/static/js/smoothie.js"></script>
+    <script type="text/javascript" src="/static/js/charts.js"></script>
+  </body>
+</html>
