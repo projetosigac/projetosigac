@@ -183,7 +183,7 @@ static HTTP_RESPONSE* httpGetResponse(HTTP_CONN * const conn) {
         }
         if (!p) {
             DEBUG("Invalid server response\n");
-            resp->status = ERROR;
+            resp->status = LIBREST_ERROR;
             continue;
         } else {
             resp->status = OK;
@@ -202,7 +202,7 @@ static HTTP_RESPONSE* httpGetResponse(HTTP_CONN * const conn) {
             closesocket(conn->sockfd);
             conn->sockfd = 0;
             conn->state = IDLE;
-            resp->status = ERROR;
+            resp->status = LIBREST_ERROR;
             return resp;
         }
         while ((p = strstr(p, "\r\n"))) {
