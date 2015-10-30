@@ -99,9 +99,6 @@ char* sendCrisesForm(const char* name, const char* location, const char* coordin
 	// Set the first character to be '\0'.
 	sqlOp[0] = '\0';
 
-	// set values tuple
-	strcat(sqlOp)
-
 	// Set the base of the INSERT query
 	strcat(sqlOp, "insert into TABLE_NAME (column_names) values (");
 	strcat(sqlOp, name);
@@ -132,9 +129,6 @@ char* sendAssistanceForm(const char* solicitor, const char* phone, const char* d
 	
 	// Set the first character to be '\0'.
 	sqlOp[0] = '\0';
-
-	// set values tuple
-	strcat(sqlOp)
 
 	// Set the base of the INSERT query
 	strcat(sqlOp, "insert into TABLE_NAME (column_names) values (");
