@@ -56,7 +56,7 @@ atendimento = function () {
       			alert(jqXHR.responseJSON);
           }
         });
-        $('#myModal').modal('toggle');
+        //$('#myModal').modal('toggle');
     }
     var _clearForm = function (){
       _passoMensagem(1);
