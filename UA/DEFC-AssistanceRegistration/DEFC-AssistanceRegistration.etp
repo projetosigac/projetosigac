@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="113" defaultConfiguration="21">
+<Project id="1" oid_count="123" defaultConfiguration="21">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -210,7 +210,7 @@
 			<value>$(SCADE)/lib/DefaultAty.aty</value>
 		</Prop>
 		<Prop id="74" name="@SCADE:SAVEVERSION">
-			<value>Vcurrent</value>
+			<value>SCADE64</value>
 		</Prop>
 		<Prop id="75" name="@SCADE:NEWVARIABLESYMBOLS">
 			<value>true</value>
@@ -317,6 +317,21 @@
 		<Prop id="109" name="@SCADE:SEMFILE">
 			<value>DEFC-AssistanceRegistration.err</value>
 		</Prop>
+		<Prop id="114" name="@STUDIO:TOOLCONF">
+			<value>Synchronization</value>
+			<value>13</value>
+			<value>21</value>
+			<value>31</value>
+			<value>36</value>
+			<value>41</value>
+			<value>52</value>
+			<value>60</value>
+			<value>63</value>
+		</Prop>
+		<Prop id="117" name="@GENERATOR:DISPLAY_ENABLED_PANELS">
+			<value>..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx,DF Generation</value>
+			<configuration>21</configuration>
+		</Prop>
 	</props>
 	<roots>
 		<Folder id="3" extensions="vsp;etp" name="SCADE Libraries">
@@ -336,6 +351,7 @@
 				<FileRef id="105" persistAs="Toggle.xscade"/>
 				<FileRef id="107" persistAs="DEFC-AssistanceRegistration.xscade"/>
 				<FileRef id="110" persistAs="RegisterAssistance.xscade"/>
+				<FileRef id="119" persistAs="RegisterInDatabase.xscade"/>
 			</elements>
 		</Folder>
 		<Folder id="84" name="Design Verifier File">
@@ -343,7 +359,25 @@
 				<FileRef id="85" persistAs="DEFC-AssistanceRegistration.l4"/>
 			</elements>
 		</Folder>
-		<FileRef id="113" persistAs="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.sgfx"/>
+		<Folder id="115" extensions="etp" name="Graphical Panels">
+			<elements>
+				<FileRef id="116" persistAs="..\..\DF\DEFC-AssistanceRegistration\DEFC-AssistanceRegistration.etp"/>
+			</elements>
+		</Folder>
+		<Folder id="120" extensions="c;adb;ada" name="External Code">
+			<elements>
+				<FileRef id="121" persistAs="..\DEFC-AccidentAndCrisisForm\RegisterInDatabase.c">
+					<props>
+						<Prop id="122" name="@SIMULATOR:FILEKIND">
+							<value>CS</value>
+						</Prop>
+						<Prop id="123" name="@SCADE:IMPORTED_NODES">
+							<value>RegisterInDatabase</value>
+						</Prop>
+					</props>
+				</FileRef>
+			</elements>
+		</Folder>
 	</roots>
 	<configurations>
 		<Configuration id="13" name="KCG"/>

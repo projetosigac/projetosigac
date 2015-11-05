@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
 	<declarations>
 		<Operator kind="node" name="RegisterAssistance">
 			<inputs>
@@ -19,7 +19,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="str"/>
+								<TypeRef name="texto"/>
 							</type>
 						</NamedType>
 					</type>
@@ -31,7 +31,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="longstr"/>
+								<TypeRef name="textolongo"/>
 							</type>
 						</NamedType>
 					</type>
@@ -43,7 +43,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="str"/>
+								<TypeRef name="texto"/>
 							</type>
 						</NamedType>
 					</type>
@@ -55,7 +55,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="str"/>
+								<TypeRef name="texto"/>
 							</type>
 						</NamedType>
 					</type>
@@ -67,7 +67,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="str"/>
+								<TypeRef name="texto"/>
 							</type>
 						</NamedType>
 					</type>
@@ -79,7 +79,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="str"/>
+								<TypeRef name="texto"/>
 							</type>
 						</NamedType>
 					</type>
@@ -91,7 +91,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="str"/>
+								<TypeRef name="texto"/>
 							</type>
 						</NamedType>
 					</type>
@@ -103,7 +103,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="str"/>
+								<TypeRef name="texto"/>
 							</type>
 						</NamedType>
 					</type>
@@ -214,7 +214,7 @@
 				</Equation>
 			</data>
 			<pragmas>
-				<ed:Operator oid="!ed/212d/5BA4/23B4/55fa262166e1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4">
+				<ed:Operator oid="!ed/212d/5BA4/23B4/55fa262166e1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
 					<diagrams>
 						<NetDiagram name="diagram_RegisterAssistance_1" landscape="true" format="A4 (210 297)" oid="!ed/212e/5BA4/23B4/55fa2621522a">
 							<presentationElements>
