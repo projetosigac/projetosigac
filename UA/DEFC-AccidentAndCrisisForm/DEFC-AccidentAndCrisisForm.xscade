@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+	<declarations>
+		<Constant name="STR_SIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="256"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/232b/5BA4/23B4/55fa36517702"/>
+			</pragmas>
+		</Constant>
+		<Type name="texto">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="STR_SIZE"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/2344/5BA4/23B4/55fa36667444"/>
+			</pragmas>
+		</Type>
+		<Type name="textolongo">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="LONG_STR_SIZE"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/2395/5BA4/23B4/55fa37b0507e"/>
+			</pragmas>
+		</Type>
+		<Constant name="LONG_STR_SIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="2000"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/2396/5BA4/23B4/55fa37bf55e4"/>
+			</pragmas>
+		</Constant>
+		<Type name="strnotify">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="notify">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/24a8/5BA4/23B4/55fa3b5879b6"/>
+							</pragmas>
+						</Field>
+						<Field name="value">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="texto"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/24aa/5BA4/23B4/55fa3b58733c"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/2472/5BA4/23B4/55fa3acbad2"/>
+			</pragmas>
+		</Type>
+		<Type name="longstrnotify">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="notify">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/24fc/5BA4/23B4/55fa3bec5a9d"/>
+							</pragmas>
+						</Field>
+						<Field name="value">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="textolongo"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/24fe/5BA4/23B4/55fa3bec5397"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/24f3/5BA4/23B4/55fa3bda5d5"/>
+			</pragmas>
+		</Type>
+	</declarations>
+</File>
