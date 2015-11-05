@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/4" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
 	<declarations>
 		<Constant name="STR_SIZE">
 			<type>
@@ -16,7 +16,7 @@
 				<ed:Constant oid="!ed/232b/5BA4/23B4/55fa36517702"/>
 			</pragmas>
 		</Constant>
-		<Type name="str">
+		<Type name="texto">
 			<definition>
 				<Table>
 					<type>
@@ -39,7 +39,7 @@
 				<ed:Type oid="!ed/2344/5BA4/23B4/55fa36667444"/>
 			</pragmas>
 		</Type>
-		<Type name="longstr">
+		<Type name="textolongo">
 			<definition>
 				<Table>
 					<type>
@@ -97,7 +97,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="str"/>
+										<TypeRef name="texto"/>
 									</type>
 								</NamedType>
 							</type>
@@ -132,7 +132,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="longstr"/>
+										<TypeRef name="textolongo"/>
 									</type>
 								</NamedType>
 							</type>

@@ -55,7 +55,7 @@ typedef enum {
 
 typedef enum {
     OK = 0,
-    ERROR = -1           
+    LIBREST_ERROR = -1           
 } RESPONSE_STATUS;
 
 #define postPayload_STRING 0
