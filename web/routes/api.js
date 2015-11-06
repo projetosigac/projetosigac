@@ -121,9 +121,9 @@ exports.logout = function (req, res){
 /*cadastrar equipamento no bd*/
 
 exports.insertEquip = function (req, res) {
-    var sess = req.session;    
+    var sess = req.session;
     var equipDesc = req.body.equipDesc;
-    req.getConnection(function(err,connection){   
+    req.getConnection(function(err,connection){
         var query = connection.query('INSERT INTO amb_equipamento (equip_descricao) VALUES (?);', [equipDesc], function(err, result) {
             if(err) {
                 console.log(err);
@@ -147,9 +147,9 @@ exports.insertEquip = function (req, res) {
 /*deletar equipamento no bd*/
 
 exports.deleteEquip = function (req, res) {
-    var sess = req.session;    
+    var sess = req.session;
     var equipDesc = req.body.equipDesc;
-    req.getConnection(function(err,connection){   
+    req.getConnection(function(err,connection){
         var query = connection.query('DELETE FROM amb_equipamento WHERE equip_descricao = (?);', [equipDesc], function(err, result) {
             if(err) {
                 console.log(err);
@@ -175,12 +175,12 @@ exports.deleteEquip = function (req, res) {
 /*inserir equipamento na ambulancia*/
 
 exports.insertEquipAmb = function (req, res) {
-    var sess = req.session;    
-    var nomeEquipamentoAmb = req.body.nomeEquipamentoAmb; 
+    var sess = req.session;
+    var nomeEquipamentoAmb = req.body.nomeEquipamentoAmb;
     var placaAmb = req.body.placaAmb;
-   
+
     //nomeEquipamentoAmb = "%" + nomeEquipamentoAmb + "%";
-    req.getConnection(function(err,connection){   
+    req.getConnection(function(err,connection){
         var query = connection.query('INSERT INTO amb_lista_equipamentos VALUES (?, (SELECT equip_id FROM amb_equipamento WHERE equip_descricao LIKE ?));', [placaAmb, nomeEquipamentoAmb], function(err, result) {
             if(err) {
                 console.log(err);
@@ -205,12 +205,12 @@ exports.insertEquipAmb = function (req, res) {
 /*deletar equipamento na ambulancia*/
 
 exports.deleteEquipAmb = function (req, res) {
-    var sess = req.session;    
-    var nomeEquipamentoAmb = req.body.nomeEquipamentoAmb; 
+    var sess = req.session;
+    var nomeEquipamentoAmb = req.body.nomeEquipamentoAmb;
     var placaAmb = req.body.placaAmb;
-   
+
     //nomeEquipamentoAmb = "%" + nomeEquipamentoAmb + "%";
-    req.getConnection(function(err,connection){   
+    req.getConnection(function(err,connection){
         var query = connection.query('DELETE FROM amb_lista_equipamentos WHERE (placa_ambulancia = ? AND equip_id = (SELECT equip_id FROM amb_equipamento WHERE equip_descricao = ?));', [placaAmb, nomeEquipamentoAmb], function(err, result) {
             if(err) {
                 console.log(err);
@@ -237,34 +237,34 @@ exports.getEquipAmb = function (req, res) {
     var sess = req.session;
     var placaAmbGet = req.body.placaAmbGet;
 
-    req.getConnection(function(err,connection){   
+    req.getConnection(function(err,connection){
             var query = connection.query('SELECT E.equip_descricao FROM amb_lista_equipamentos as L LEFT JOIN amb_equipamento as E ON (L.equip_id = E.equip_id) WHERE L.placa_ambulancia = ?;',[placaAmbGet], function(err,rows,fields)
         {
             if(err)
                 return console.log("Error Query : %s ",err );
 
-            return res.json({status: 'OK', 'rows' : rows, token: sess.token});            
-                          
+            return res.json({status: 'OK', 'rows' : rows, token: sess.token});
+
         });
-    }); 
+    });
 
 };
 
 /*Show Equip*/
 exports.showEquip = function (req, res) {
-    
-    var sess = req.session;     
 
-    req.getConnection(function(err,connection){   
+    var sess = req.session;
+
+    req.getConnection(function(err,connection){
             var query = connection.query('SELECT equip_descricao from amb_equipamento;', function(err,rows,fields)
         {
             if(err)
                 return console.log("Error Query : %s ",err );
 
-            return res.json({status: 'OK', 'rows' : rows, token: sess.token});            
-                          
+            return res.json({status: 'OK', 'rows' : rows, token: sess.token});
+
         });
-    }); 
+    });
 
 
 };
@@ -273,17 +273,17 @@ exports.showEquip = function (req, res) {
 
     /*Show amb*/
 exports.showAmb = function (req, res) {
-    
-    var sess = req.session;     
 
-    req.getConnection(function(err,connection){   
+    var sess = req.session;
+
+    req.getConnection(function(err,connection){
             var query = connection.query('SELECT placa from ambulancia;', function(err,rows,fields)
         {
             if(err)
                 return console.log("Error Query : %s ",err );
 
-            return res.json({status: 'OK', 'rows' : rows, token: sess.token});            
-                          
+            return res.json({status: 'OK', 'rows' : rows, token: sess.token});
+
         });
     });
 };
@@ -295,9 +295,9 @@ exports.leituraSinais = function (req, res) {
     var temperatura = req.body.temperatura;
     var oximetria   = req.body.oximetria;
 
-    req.getConnection(function(err,connection){   
-        var query = connection.query('INSERT INTO paciente_status (paciente_id, batimento_cardiaco, temperatura, oximetria, timestamp) VALUES (?,?,?,?,NOW());', 
-                        [pacienteId, batimentos, temperatura, oximetria], 
+    req.getConnection(function(err,connection){
+        var query = connection.query('INSERT INTO paciente_status (paciente_id, batimento_cardiaco, temperatura, oximetria, timestamp) VALUES (?,?,?,?,NOW());',
+                        [pacienteId, batimentos, temperatura, oximetria],
 
                         function(err, result) {
                             if(err) {

@@ -31,7 +31,7 @@ getEquipamentoAmb = function(){
 			aux = JSON.stringify(data['rows'].map(function(elem) {
 				return elem['equip_descricao'];
 			}));
-			
+
 		}).fail(function(jqXHR, textStatus, errorThrown) {
 			alert(jqXHR.responseJSON.message);
 		});
@@ -81,19 +81,18 @@ getEquipamentoAmb = function(){
 			for(i = 0; i < size; i++){
 				jobject[i] = JSON.stringify(data['rows'][i]['equip_descricao']);
 			}
-
-			textEquip = "";
+			$('#tableEquipamento tbody').html('');
 			for(i = 0; i < size; i++){
-				textEquip += jobject[i].replace(/["]/g,"") + "\n";
-			} 
+				//textEquip += jobject[i].replace(/["]/g,"") + "\n";
+				tr = $('<tr/>');
+							tr.append("<td><i style='cursor:pointer;' class='glyphicon glyphicon-trash' onclick=cadastroEquipamento.api_delete_equip('"+jobject[i].replace(/["]/g,"")+"');></i></td>");
+							tr.append("<td>"+jobject[i].replace(/["]/g,"")+"</td>");
+				$('#tableEquipamento tbody').append(tr);
+			}
 
 		}).fail(function(jqXHR, textStatus, errorThrown) {
 			alert(jqXHR.responseJSON.message);
 		});
-
-		$("#lista_equipamentos").val(
-			textEquip
-		);
 
 		return false;
 	}
@@ -116,12 +115,12 @@ getEquipamentoAmb = function(){
 			for(i = 0; i < size; i++){
 				jobject[i] = JSON.stringify(data['rows'][i]['placa']);
 			}
-			
+
 
 			textAmb = "";
 			for(i = 0; i < size; i++){
 				textAmb += jobject[i].replace(/["]/g,"") + "\n";
-			} 
+			}
 
 		}).fail(function(jqXHR, textStatus, errorThrown) {
 			alert(jqXHR.responseJSON.message);

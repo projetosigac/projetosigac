@@ -10,7 +10,10 @@ cadastroEquipamento = function(){
 			dataType: 'json',
 			data: requestData
 		}).done(function(data, textStatus, jqXHR) {
-			alert("Equipamento Cadastrado");
+				//equipamento incluído com sucesso
+				$("#labelMsg").html("Equipment included with successfully!");
+				$("#imgMsg").attr("src","/../images/ok.png");
+				$('#myModal').modal('toggle');
 		}).fail(function(jqXHR, textStatus, errorThrown) {
 			alert(jqXHR.responseJSON.message);
 		});
@@ -18,7 +21,7 @@ cadastroEquipamento = function(){
 		return false;
 	}
 
-	var _api_delete_equip = function (){
+	var _api_delete_equip = function (item){
 
 		var requestData = JSON.stringify($('#formInsertEquip').serializeObject());
 		//alert(requestData);
@@ -28,9 +31,15 @@ cadastroEquipamento = function(){
 			async: false,
 			contentType: 'application/json; charset=utf-8',
 			dataType: 'json',
-			data: requestData
+			data: JSON.stringify({'equipDesc': item})
 		}).done(function(data, textStatus, jqXHR) {
-			alert("Equipamento Deletado");
+				//equipamento excluído com sucesso
+				$("#labelMsg").html("Equipment excluded with successfully!");
+				$("#imgMsg").attr("src","/../images/remove.png");
+				$('#myModal').modal('toggle');
+
+				getEquipamentoAmb.show_equip();
+
 		}).fail(function(jqXHR, textStatus, errorThrown) {
 			alert(jqXHR.responseJSON.message);
 		});

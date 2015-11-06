@@ -4,7 +4,7 @@ cadastroEquipamentoAmb = function(){
 		var requestData = JSON.stringify($('#formInsertEquipAmb').serializeObject());
 		//$("#lista_equipamentos").html("testando");
 		//alert(requestData);
-		
+
 		$.ajax({
 			url: '/api/insert-equip-amb',
 			type: 'POST',
@@ -13,14 +13,15 @@ cadastroEquipamentoAmb = function(){
 			dataType: 'json',
 			data: requestData
 		}).done(function(data, textStatus, jqXHR) {
-			//window.location.href = '/dashboard';
-			alert("Equipamento Inserido na Ambulância");
-
+			//Equipamento Inserido na Ambulância
+				$("#labelMsg").html("Equipment included in ambulance with successfully!");
+				$("#imgMsg").attr("src","/../images/ok.png");
+				$('#myModal').modal('toggle');
 		}).fail(function(jqXHR, textStatus, errorThrown) {
 			alert(jqXHR.responseJSON.message);
 		});
 
-		
+
 
 		return false;
 	}
@@ -29,7 +30,7 @@ cadastroEquipamentoAmb = function(){
 		var requestData = JSON.stringify($('#formInsertEquipAmb').serializeObject());
 		//$("#lista_equipamentos").html("testando");
 		//alert(requestData);
-		
+
 		$.ajax({
 			url: '/api/delete-equip-amb',
 			type: 'POST',
@@ -38,13 +39,17 @@ cadastroEquipamentoAmb = function(){
 			dataType: 'json',
 			data: requestData
 		}).done(function(data, textStatus, jqXHR) {
-			alert("Equipamento Deletado da Ambulância");
+			//Equipamento Deletado da Ambulância
+			$("#labelMsg").html("Equipment excluded with successfully the ambulance!");
+			$("#imgMsg").attr("src","/../images/remove.png");
+			$('#myModal').modal('toggle');
+
 
 		}).fail(function(jqXHR, textStatus, errorThrown) {
 			alert(jqXHR.responseJSON.message);
 		});
 
-		
+
 
 		return false;
 	}

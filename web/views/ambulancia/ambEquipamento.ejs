@@ -12,35 +12,35 @@
                   <center> <b> Register new Equipment </b> </center>
                 </div>
                 <form onsubmit="return !!(cadastroEquipamento.api_insert_equip() & getEquipamentoAmb.show_equip());"  id="formInsertEquip">
-                    
+
                     <label>Equipment Description:</label>
                     <div class="form-group">
                         <input type="text" name="equipDesc"  placeholder="Ex.: Maca Retrátil em Alumínio" class="form-control" id="equipDesc" />
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" name="bt_1" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Register </button>
-                         <button type="button" onclick="cadastroEquipamento.api_delete_equip() & getEquipamentoAmb.show_equip()" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Delete </button>
+                        <button type="submit" name="bt_1" class="btn btn-info"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Register </button>
                     </div>
-                   
+
                 </form>
 
                 <div class="form-group">
                     <label>Registered Equipment List:</label>
-                    <textarea type="text"  class="form-control" id="lista_equipamentos"  rows="10"  readonly/></textarea>
+                    <table id="tableEquipamento" class="table table-hover">
+                    				<tbody>
+                    				</tbody>
+                    </table>
                 </div>
 
 
             </div>
-
-
 
             <div class="col-md-3">
                 <div class="alert alert-info" >
                   <center> <b> Insert Equipament in Ambulance </b> </center>
                 </div>
                 <form onsubmit="return cadastroEquipamentoAmb.api_insert_equip_amb();" id="formInsertEquipAmb">
-                    
+
                      <label>Equipment Description:</label>
                     <div class="form-group">
                         <input type="text"  name="nomeEquipamentoAmb" class="form-control" id="nomeEquipamentoAmb"  />
@@ -52,10 +52,10 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Insert </button>
-                        <button type="button" onclick="cadastroEquipamentoAmb.api_delete_equip_amb();" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Delete </button>
+                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Insert </button>
+                        <button type="button" onclick="cadastroEquipamentoAmb.api_delete_equip_amb();" class="btn btn-info"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete </button>
                     </div>
-                   
+
                 </form>
                 <div class="form-group">
                     <label>Registered Ambulance List:</label>
@@ -68,14 +68,14 @@
                   <center> <b> Show Equipment in Ambulance </b> </center>
                 </div>
                 <form onsubmit="return getEquipamentoAmb.api_get_equip_amb();" id="formGetEquipAmb">
-                    
+
                     <label>License Plate:</label>
                     <div class="form-group">
                         <input type="text" name="placaAmbGet" placeholder="AAA-1234"  value="AAA-1234" class="form-control" id="placaAmbGet" />
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Show Equipment </button>
+                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Show Equipment </button>
                     </div>
 
                 </form>
@@ -84,7 +84,7 @@
                     <textarea type="text"  class="form-control" id="equipamento_id"  rows="10"  readonly/></textarea>
                 </div>
 
-               
+
 
             </div>
 
@@ -93,7 +93,27 @@
         </div>
 
     </div>
-    
+
+    <!-- Modal: Mensagens de Ações -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <center>
+                <img src="" id="imgMsg" style="width:100px;" />
+                <br />
+                <label id="labelMsg"></label>
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 <%- include ../layouts/footer.ejs %>
 
 <script type="text/javascript" src="/../js/pages/cadastroEquipamento.js"></script>
