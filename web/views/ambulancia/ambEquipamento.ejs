@@ -43,24 +43,18 @@
 
                      <label>Equipment Description:</label>
                     <div class="form-group">
-                        <input type="text"  name="nomeEquipamentoAmb" class="form-control" id="nomeEquipamentoAmb"  />
+                        <select name="nomeEquipamentoAmb" class="form-control" id="nomeEquipamentoAmb"></select>
                     </div>
 
                     <label>License Plate:</label>
                     <div class="form-group">
-                        <input type="text" name="placaAmb" placeholder="AAA-1234"  value="AAA-1234" class="form-control" id="placaAmb" />
+                        <select name="placaAmb" id="placaAmb" class="form-control placa"></select>
                     </div>
 
                     <div class="form-group">
                         <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Insert </button>
-                        <button type="button" onclick="cadastroEquipamentoAmb.api_delete_equip_amb();" class="btn btn-info"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete </button>
                     </div>
-
                 </form>
-                <div class="form-group">
-                    <label>Registered Ambulance List:</label>
-                    <textarea type="text"  class="form-control" id="lista_amb"  rows="10"  readonly/></textarea>
-                </div>
             </div>
 
             <div class="col-md-3">
@@ -71,17 +65,24 @@
 
                     <label>License Plate:</label>
                     <div class="form-group">
-                        <input type="text" name="placaAmbGet" placeholder="AAA-1234"  value="AAA-1234" class="form-control" id="placaAmbGet" />
+                        <select name="placaAmbGet" id="placaAmbGet" class="form-control placa"></select>
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-info"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Show Equipment </button>
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Show Equipment </button>
                     </div>
 
                 </form>
 
                <div class="form-group">
-                    <textarea type="text"  class="form-control" id="equipamento_id"  rows="10"  readonly/></textarea>
+                    <!--<textarea type="text"  class="form-control" id="equipamento_id"  rows="10"  readonly/></textarea>-->
+                    <label>Equipment List:</label>
+                    <table id="tableEquipamentoPlaca" class="table table-hover">
+                      <tbody>
+                        <tr><td>Nothing results</td></tr>
+                      </tbody>
+                    </table>
+
                 </div>
 
 

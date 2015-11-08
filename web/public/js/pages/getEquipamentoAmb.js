@@ -2,8 +2,13 @@ getEquipamentoAmb = function(){
 	var _api_get_equip_amb = function (){
 
 		var aux;
+		var objForm = $('#formGetEquipAmb').serializeObject();
+		if(!objForm.placaAmbGet){
+			alert("The field can not be empty");
+			return false;
+		}
+		var requestData = JSON.stringify(objForm);
 
-		var requestData = JSON.stringify($('#formGetEquipAmb').serializeObject());
 		//alert(requestData);
 		$.ajax({
 			url: '/api/get-equip-amb',
@@ -37,18 +42,26 @@ getEquipamentoAmb = function(){
 		});
 
 		var vtext="";
-
+		$('#tableEquipamentoPlaca tbody').html('');
 
 		for(i = 0; i<aux.length;i++){
 
 
 			if(aux[i] == "\""){
 
+				vtext=""
+
 				for(j = i+1; aux[j] != "\"";j++ ){
 					vtext += aux[j];
 				}
-				vtext+="\n";
+
 				i=j;
+
+				tr = $('<tr/>');
+							tr.append("<td><i style='cursor:pointer;' class='glyphicon glyphicon-trash' onclick=cadastroEquipamentoAmb.api_delete_equip_amb('"+objForm.placaAmbGet+"','"+vtext+"');></i></td>");
+							tr.append("<td>"+vtext+"</td>");
+				$('#tableEquipamentoPlaca tbody').append(tr);
+
 			}
 
 		}
@@ -82,12 +95,18 @@ getEquipamentoAmb = function(){
 				jobject[i] = JSON.stringify(data['rows'][i]['equip_descricao']);
 			}
 			$('#tableEquipamento tbody').html('');
+
+			$('#nomeEquipamentoAmb').find('option').remove().end().append('<option value="">Select a equipament</option>').val('');
+
 			for(i = 0; i < size; i++){
 				//textEquip += jobject[i].replace(/["]/g,"") + "\n";
+				var nomeEquipamento = jobject[i].replace(/["]/g,"");
 				tr = $('<tr/>');
-							tr.append("<td><i style='cursor:pointer;' class='glyphicon glyphicon-trash' onclick=cadastroEquipamento.api_delete_equip('"+jobject[i].replace(/["]/g,"")+"');></i></td>");
-							tr.append("<td>"+jobject[i].replace(/["]/g,"")+"</td>");
+							tr.append("<td><i style='cursor:pointer;' class='glyphicon glyphicon-trash' onclick=cadastroEquipamento.api_delete_equip('"+nomeEquipamento+"');></i></td>");
+							tr.append("<td>"+nomeEquipamento+"</td>");
 				$('#tableEquipamento tbody').append(tr);
+
+				$('<option>').val(nomeEquipamento).text(nomeEquipamento).appendTo('#nomeEquipamentoAmb');
 			}
 
 		}).fail(function(jqXHR, textStatus, errorThrown) {
@@ -118,17 +137,18 @@ getEquipamentoAmb = function(){
 
 
 			textAmb = "";
+			$('.placa').find('option').remove().end().append('<option value="">Select a plate</option>').val('');
 			for(i = 0; i < size; i++){
-				textAmb += jobject[i].replace(/["]/g,"") + "\n";
+				//textAmb += jobject[i].replace(/["]/g,"") + "\n";
+				var placa = jobject[i].replace(/["]/g,"");
+				$('<option>').val(placa).text(placa).appendTo('.placa');
 			}
 
 		}).fail(function(jqXHR, textStatus, errorThrown) {
 			alert(jqXHR.responseJSON.message);
 		});
 
-		$("#lista_amb").val(
-			textAmb
-		);
+		//$("#lista_amb").val(textAmb);
 
 		return false;
 	}

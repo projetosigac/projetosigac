@@ -1,7 +1,13 @@
 cadastroEquipamento = function(){
 	var _api_insert_equip = function (){
+		var objForm = $('#formInsertEquip').serializeObject();
+		if(!objForm.equipDesc)
+		{
+			alert("The field can not be empty");
+			return false;
+		}
 
-		var requestData = JSON.stringify($('#formInsertEquip').serializeObject());
+		var requestData = JSON.stringify(objForm);
 		$.ajax({
 			url: '/api/insert-equip',
 			type: 'POST',
