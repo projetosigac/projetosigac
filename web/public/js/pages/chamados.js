@@ -16,48 +16,44 @@ chamados = function () {
         data: {status:'ABERTO'},
         success: function (data){
             var resultHtml = "";
+            $('#tableOcorrencia tbody').html('');
             for (var i = 0; i < data.length; i++) {
-              resultHtml = resultHtml + "<div class='panel panel-default'><div class='panel-heading' role='tab' id='heading"+i+"'><h4 class='panel-title'>";
-              resultHtml = resultHtml + "<a role='button' data-toggle='collapse' href='#collapse"+i+"' aria-expanded='true' aria-controls='collapse"+i+"'>";
-              resultHtml = resultHtml + "Ocurrence ID "+ data[i].id;
-              resultHtml = resultHtml + "</a></h4></div>";
-              resultHtml = resultHtml + "<div id='collapse"+i+"' class='panel-collapse collapse' role='tabpanel' aria-labelledby='heading"+i+"'><div class='panel-body'>";
-              resultHtml = resultHtml + "<p> <b> Victims: </b> "+data[i].n_vitimas+" </p>";
-              resultHtml = resultHtml + "<p> <b> Ambulances on the way: </b> "+data[i].n_ambulancias_necessarias+" </p>";
-              resultHtml = resultHtml + "<p> <b> Firefighters notified: </b> Yes </p>";
-              resultHtml = resultHtml + "<p> <b> Rescue Team notified: </b> Yes </p>";
-              resultHtml = resultHtml + "<p> <b> Police notified: </b> Yes </p>";
-              resultHtml = resultHtml + "<p> <b> Address ocurrence: </b> "+data[i].endereco+" </p>";
-              resultHtml = resultHtml + "<p> <b> Nearest ambulance: </b> <text id=maisProxima" + data[i].id + ">" + _maisProxima(data[i]) +"</text> </p>";
-              resultHtml = resultHtml + "</div></div></div>";
+
+              tr = $('<tr/>');
+                    tr.append("<td>"+data[i].id+"</td>");
+                    tr.append("<td>"+data[i].n_vitimas+"</td>");
+                    tr.append("<td>"+data[i].n_ambulancias_necessarias+"</td>");
+                    //tr.append("<td>"+_maisProxima(data[i])+"</td>");
+                    tr.append("<td>"+data[i].endereco+"</td>");
+              $('#tableOcorrencia tbody').append(tr);
 
               var marker = new google.maps.Marker({
-            			map: map,
-            			position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
-            			title: 'Ocurrence ID '+data[i].id
-            	});
+                        map: map,
+                        position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
+                        title: 'Ocurrence ID '+data[i].id
+                });
               var infowindow = new google.maps.InfoWindow({
                   maxWidth: 250
               });
               var content = "<b>Ocurrence ID:</b> ".concat(data[i].id);
 
-              google.maps.event.addListener(marker,'click', function(marker, content, infowindow){ 
+              google.maps.event.addListener(marker,'click', function(marker, content, infowindow){
                   return function() {
                       infowindow.setContent(content);
                       infowindow.open(map, marker);
                   };
               } (marker, content, infowindow));
 
-          	  /*marker.addListener('click', function(){
-            			$('#accordion .panel-collapse.collapse').collapse('hide');
-            			$('#collapse'+i).collapse('show');
-          		});*/
+              /*marker.addListener('click', function(){
+                        $('#accordion .panel-collapse.collapse').collapse('hide');
+                        $('#collapse'+i).collapse('show');
+                });*/
 
             }
-            $("#accordion").html(resultHtml);
+
         },
         error: function(jqXHR, textStatus, errorThrown) {
-    			alert(jqXHR.responseJSON);
+                alert(jqXHR.responseJSON);
         }
       });
     }
@@ -76,7 +72,7 @@ chamados = function () {
                     callback(results[0].formatted_address);
                 }
             }
-            else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {    
+            else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
                 setTimeout(function() {
                     _enderecoLatLng(callback, lat, lng);
                 }, 200);
@@ -143,7 +139,7 @@ chamados = function () {
             avoidTolls: false
         },
         function (response, status) {
-            if (status == google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT) {    
+            if (status == google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT) {
                 setTimeout(function() {
                     _ambulanciaMaisProxima(origem, ocorrencia);
                 }, 200);
@@ -155,7 +151,7 @@ chamados = function () {
 
             else {
                 console.log(response);
-                
+
                 var caminhos_json = response;
                 var melhor_endereco = origem[0];
                 var tempo_minimo = 0;
