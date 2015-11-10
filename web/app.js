@@ -66,6 +66,7 @@ var apiBombeiro = require('./routes/bombeiro')
 var util = require('./routes/utils');
 var atendimento = require('./routes/atendimento');
 var ambEquipamento = require('./routes/ambEquipamento')
+var defc = require('./routes/defc')
 
 app.get('/', routes.index);
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
@@ -76,6 +77,7 @@ app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
+app.get('/defc', util.autenticarSessao, defc.carregarPagina)
 
 /*
 métodos internos do sistema que necessita de sessão
