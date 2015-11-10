@@ -1,18 +1,18 @@
-//fun��o que retorna o n�mero de m�dicos conforme o n�mero de v�timas do local.
-//Para isso, tal fun��o recebe a quantidade de v�timas e uma matriz com a classifica��o de 
-//triagem para cada v�tima, retornando o n�mero de m�dicos a serem enviados.
+//função que retorna o número de médicos conforme o número de vítimas do local.
+//Para isso, tal função recebe a quantidade de vítimas e uma matriz com a classificação de
+//triagem para cada vítima, retornando o número de médicos a serem enviados.
 var numeroMedicos = function(qtdeVitimas, cramp) {
     var numMedicos = 0;
     var valorCramp;
 
     for (var i=0 ; i < qtdeVitimas ; i++) {
         valorCramp = 0;
-        
+
         for (var j = 0; j < 5; j++) {
             valorCramp += cramp[i][j];
         }
-        
-        if(valorCramp < 3) {
+
+        if (valorCramp < 3) {
             numMedicos += 2;
         } else if(valorCramp < 7) {
             numMedicos += 1.5;
@@ -23,7 +23,7 @@ var numeroMedicos = function(qtdeVitimas, cramp) {
         }
     }
 
-    if(numMedicos > 12) {
+    if (numMedicos > 12) {
         numMedicos = 12;
     }
 
