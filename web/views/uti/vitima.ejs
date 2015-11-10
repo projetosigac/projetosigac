@@ -1,0 +1,77 @@
+<%- include ../layouts/header.ejs %>
+	<!-- DataTables CSS -->
+	<link href="/../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+	<!-- DataTables Responsive CSS -->
+	<link href="/../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+</head>
+	<body>
+		<div id="wrapper">
+			<%- include ../layouts/navigationUTI.ejs %>
+			<div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">Large-scale accident Explosion - ID: <%= dados[0].paciente_id %></h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+
+						<div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                           Victim Historic ID: <%= dados[0].paciente_id %>
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="dataTable_wrapper">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Reading N.</th>
+                                            <th class="text-center">Heart Beats</th>
+                                            <th class="text-center">Temperature</th>
+											<th class="text-center">Oximetry</th>
+											<th class="text-center">Readings</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% for(var i = 0; i < dados.length; i++) { %>
+                                            <tr class="odd gradeX">
+                                                <td class="text-center"><%= i %></td>
+                                                <td class="text-center"><%= dados[i].batimento_cardiaco %> b/s</td>
+                                                <td class="text-danger text-center"><%= dados[i].temperatura %></td>
+    											<td class="text-danger text-center"><%= dados[i].oximetria %></td>
+    											<td class="text-center"><%= dados[i].timestamp %></td>
+                                            </tr>
+                                        <% } %>
+                                    </tbody>
+                                </table>
+
+								<a href="../vitimas"><< Go Back</a>
+                            </div>
+                            <!-- /.table-responsive -->
+
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+		</div>
+		<%- include ../layouts/footer.ejs %>
+		<script src="/../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+		<script src="/../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+		<script>
+		$(document).ready(function() {
+				$('#dataTables-example').DataTable({
+								responsive: true
+				});
+		});
+		</script>
+	</body>
+</html>

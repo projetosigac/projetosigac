@@ -1,0 +1,55 @@
+body{
+  background-color: black;
+}
+
+img.resize{
+  width:250px;
+  height: auto;
+}
+
+.d30{
+  height:30px;
+}
+
+.darken{
+  margin-left:10px;
+  margin-right:10px;
+  border-color:none; 
+  border:none;
+  color:white;
+}
+.darken:hover{
+  opacity:0.5;
+  border:none;
+  color:white;
+
+}
+
+.darken:active{
+  border: none;
+  color:white;
+  opacity:0.5;
+}
+
+.bg-white{
+  background-color: white;
+}
+
+/*.panel-back{
+  background-color: #337ab7;
+}
+
+.panel-back .panel-heading {
+  color: white;
+  background-color: #337ab7;
+}*/
+
+.panel-bomb a{
+  background-color: #d9534f;
+}
+
+li.active{
+  opacity:0.5;
+}
+
+lorem
