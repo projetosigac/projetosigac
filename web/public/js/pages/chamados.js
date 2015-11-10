@@ -2,60 +2,60 @@ chamados = function () {
 
     var enderecosAmbulancias = [];
 
-    var _init = function (){
+    var _init = function () {
         mapa.start();
         _carregarAmbulancias();
     }
-    var _listarOcorrencia = function (){
-      $.ajax({
-        type: "GET",
-        url: '/ambulancia/listar-ocorrencias',
-        async: false,
-        contentType: 'application/json; charset=utf-8',
-        dataType: 'json',
-        data: {status:'ABERTO'},
-        success: function (data){
-            var resultHtml = "";
-            $('#tableOcorrencia tbody').html('');
-            for (var i = 0; i < data.length; i++) {
 
-              tr = $('<tr/>');
-                    tr.append("<td>"+data[i].id+"</td>");
-                    tr.append("<td>"+data[i].n_vitimas+"</td>");
-                    tr.append("<td>"+data[i].n_ambulancias_necessarias+"</td>");
-                    //tr.append("<td>"+_maisProxima(data[i])+"</td>");
-                    tr.append("<td>"+data[i].endereco+"</td>");
-              $('#tableOcorrencia tbody').append(tr);
+    var _listarOcorrencia = function () {
+        $.ajax({
+            type: "GET",
+            url: '/ambulancia/listar-ocorrencias',
+            async: false,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: {status:'ABERTO'},
+            success: function (data){
+                var resultHtml = "";
+                $('#tableOcorrencia tbody').html('');
+                for (var i = 0; i < data.length; i++) {
 
-              var marker = new google.maps.Marker({
-            			map: map,
-            			position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
-            			title: 'Ocurrence ID '+data[i].id
-            	});
-              var infowindow = new google.maps.InfoWindow({
-                  maxWidth: 250
-              });
-              var content = "<b>Ocurrence ID:</b> ".concat(data[i].id);
+                tr = $('<tr/>');
+                tr.append("<td>"+data[i].id+"</td>");
+                tr.append("<td>"+data[i].n_vitimas+"</td>");
+                tr.append("<td>"+data[i].n_ambulancias_necessarias+"</td>");
+                //tr.append("<td>"+_maisProxima(data[i])+"</td>");
+                tr.append("<td>"+data[i].endereco+"</td>");
+                
+                $('#tableOcorrencia tbody').append(tr);
 
-              google.maps.event.addListener(marker,'click', function(marker, content, infowindow){
-                  return function() {
-                      infowindow.setContent(content);
-                      infowindow.open(map, marker);
-                  };
-              } (marker, content, infowindow));
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
+                    title: 'Ocurrence ID '+data[i].id
+                });
 
-          	  /*marker.addListener('click', function(){
-            			$('#accordion .panel-collapse.collapse').collapse('hide');
-            			$('#collapse'+i).collapse('show');
-          		});*/
+                var infowindow = new google.maps.InfoWindow({
+                    maxWidth: 250
+                });
+                var content = "<b>Ocurrence ID:</b> ".concat(data[i].id);
 
+                google.maps.event.addListener(marker,'click', function(marker, content, infowindow){
+                    return function() {
+                        infowindow.setContent(content);
+                        infowindow.open(map, marker);
+                    };
+                } (marker, content, infowindow));
+                /*marker.addListener('click', function(){
+                        $('#accordion .panel-collapse.collapse').collapse('hide');
+                        $('#collapse'+i).collapse('show');
+                });*/
+                }
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+                alert(jqXHR.responseJSON);
             }
-
-        },
-        error: function(jqXHR, textStatus, errorThrown) {
-    			alert(jqXHR.responseJSON);
-        }
-      });
+        });
     }
     /*
         A ideia da função abaixo é retornar o endereço de uma ambulância
@@ -80,7 +80,7 @@ chamados = function () {
             else {
                 window.alert('Geocoder failed due to: ' + status);
             }
-          });
+        });
     }
     /*
         Função que retira todos os endereços (ou latitude e longitude)
@@ -138,6 +138,7 @@ chamados = function () {
             avoidHighways: false,
             avoidTolls: false
         },
+
         function (response, status) {
             if (status == google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT) {
                 setTimeout(function() {
@@ -157,22 +158,21 @@ chamados = function () {
                 var tempo_minimo = 0;
                 var encontrou = false;
 
-                for(var x = 0; x < origem.length; x++)
-                {
-                    if (caminhos_json['rows'][x]['elements'][0]['status'] == 'OK')
-                    {
-                        if (encontrou == false || caminhos_json['rows'][x]['elements'][0]['duration']['value'] < tempo_minimo)
-                        {
+                for (var x = 0; x < origem.length; x++) {
+                    if (caminhos_json['rows'][x]['elements'][0]['status'] == 'OK') {
+                        if (encontrou == false || caminhos_json['rows'][x]['elements'][0]['duration']['value'] < tempo_minimo) {
                             tempo_minimo = caminhos_json['rows'][x]['elements'][0]['duration']['value'];
                             melhor_endereco = origem[x];
                             encontrou = true;
                         }
                     }
                 }
+
                 $("#maisProxima"+ocorrencia.id).text(melhor_endereco);
             }
         });
     }
+
     return{
         init: _init
     }
