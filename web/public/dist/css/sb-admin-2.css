@@ -318,21 +318,21 @@ table.dataTable thead .sorting:after {
 }
 
 .panel-saude {
-    border-color: #2ecc71;
+    border-color: #1abc9c;
 }
 
 .panel-saude .panel-heading {
-    border-color: #2ecc71;
+    border-color: #1abc9c;
     color: #fff;
-    background-color: #2ecc71;
+    background-color: #1abc9c;
 }
 
 .panel-saude a {
-    color: #2ecc71;
+    color: #1abc9c;
 }
 
 .panel-saude a:hover {
-    color: #27ae60;
+    color: #16a085;
 }
 
 .panel-bomb {
@@ -354,19 +354,19 @@ table.dataTable thead .sorting:after {
 }
 
 .panel-defesa {
-    border-color: #e67e22;
+    border-color: #3498db;
 }
 
 .panel-defesa .panel-heading {
-    border-color: #e67e22;
+    border-color: #3498db;
     color: #fff;
-    background-color: #e67e22;
+    background-color: #3498db;
 }
 
 .panel-defesa a {
-    color: #e67e22;
+    color: #3498db  ;
 }
 
 .panel-defesa a:hover {
-    color: #d35400;
+    color: #2980b9;
 }
