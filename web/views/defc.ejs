@@ -134,13 +134,20 @@
 
 var time_slots = [];
 var light_data = [];
+var severe_data = [];
+var dead_data = [];
 for (var i = 0; i <= 48; i += 2) {
-    time_slots.push(i + 'h');
+    factor = Math.sqrt((48 - i)/48);
+    time_slots.push('-' + (48 - i)/2 + 'h');
+
     if (i == 0) {
-        light_data.push(12000 + Math.floor(Math.random() * 600));
-    }
-    else {
-        light_data.push(light_data[i/2 - 1] + Math.floor(20 * Math.random()));
+        light_data.push(5 + Math.floor(4 * factor * Math.random()));
+        severe_data.push(3 + Math.floor(2 * factor * Math.random()));
+        dead_data.push(1 + Math.floor(1 * factor * Math.random()));
+    } else {
+        light_data.push(light_data[i/2 - 1] + Math.floor(18 * factor * factor * Math.random()));
+        severe_data.push(severe_data[i/2 - 1] + Math.floor(12 * Math.sqrt(factor) * factor * Math.random()));
+        dead_data.push(dead_data[i/2 - 1] + Math.floor(6 * Math.sqrt(factor) * Math.random()));
     }
 }
 
@@ -166,7 +173,7 @@ $(function () {
             },
             labels: {
                 formatter: function () {
-                    return this.value / 1000;
+                    return this.value;
                 }
             }
         },
@@ -186,14 +193,14 @@ $(function () {
             }
         },
         series: [{
-            name: 'Light injuries',
+            name: 'Lightly Injured',
             data: light_data
         }, {
-            name: 'Severe injuries',
-            data: light_data
+            name: 'Severely Injured',
+            data: severe_data
         }, {
             name: 'Dead',
-            data: light_data
+            data: dead_data
         }]
     });
 });
