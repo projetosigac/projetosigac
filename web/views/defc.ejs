@@ -103,7 +103,7 @@
                     <hr />
                     *** TERCEIRO GRÁFICO AQUI
                     <hr />
-                    *** QUARTO GRÁFICO AQUI
+                    <div id="graphSupportingPeople" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
                     <hr />
                 </div>
                 <!-- /.panel panel-default -->
@@ -201,6 +201,83 @@ $(function () {
         }, {
             name: 'Dead',
             data: dead_data
+        }]
+    });
+});
+
+var defc_data = [];
+var firefighter_data = [];
+var police_data = [];
+var health_data = [];
+for (var i = 0; i <= 48; i += 2) {
+    factor = Math.sqrt((48 - i)/48);
+
+    if (i == 0) {
+        defc_data.push(1 + Math.floor(1 * factor * Math.random()));
+        firefighter_data.push(5 + Math.floor(4 * factor * Math.random()));
+        police_data.push(1 + Math.floor(1 * factor * Math.random()));
+        health_data.push(3 + Math.floor(2 * factor * Math.random()));
+    } else {
+        defc_data.push(defc_data[i/2 - 1] + Math.floor(5 * factor * factor * Math.random()));
+        firefighter_data.push(firefighter_data[i/2 - 1] + Math.floor(12 * Math.sqrt(factor) * factor * Math.random()));
+        police_data.push(police_data[i/2 - 1] + Math.floor(6 * factor * Math.random()));
+        health_data.push(health_data[i/2 - 1] + Math.floor(18 * Math.sqrt(factor) * factor * Math.random()));
+    }
+}
+
+$(function () {
+    $('#graphSupportingPeople').highcharts({
+        colors: ['#3498db', '#e74c3c', '#1abc9c', '#34495e'],
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: time_slots,
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: '# Mobilized'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value;
+                }
+            }
+        },
+        tooltip: {
+            shared: true,
+            valueSuffix: ' persons'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+            name: 'Civil Defence',
+            data: defc_data
+        }, {
+            name: 'Firefighter',
+            data: firefighter_data
+        }, {
+            name: 'Health',
+            data: health_data
+        }, {
+            name: 'Police',
+            data: police_data
         }]
     });
 });
