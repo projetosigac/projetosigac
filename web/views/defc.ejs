@@ -99,12 +99,11 @@
                     <br />
                     <div id="graphAffectedPeople" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
                     <hr />
-                    *** SEGUNDO GRÁFICO AQUI
+                    <div id="graphSmoke" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
                     <hr />
-                    *** TERCEIRO GRÁFICO AQUI
+                    <div id="graphGases" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
                     <hr />
                     <div id="graphSupportingPeople" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
-                    <hr />
                 </div>
                 <!-- /.panel panel-default -->
                 </div>
@@ -149,6 +148,23 @@ for (var i = 0; i <= 48; i += 2) {
         severe_data.push(severe_data[i/2 - 1] + Math.floor(12 * Math.sqrt(factor) * factor * Math.random()));
         dead_data.push(dead_data[i/2 - 1] + Math.floor(6 * Math.sqrt(factor) * Math.random()));
     }
+}
+
+var smoke_time = [];
+var smoke_data = [];
+var gases_data = [];
+
+for (var i = 0; i <= 24; ++i) {
+    smoke_time.push('-' + (24 - i) + 'h');
+}
+
+for (var i = 0; i <= 5000; ++i) {
+    base = 0.75*Math.sqrt(5000/(5000 + 4*i));
+    smoke_data.push([i*24/5000, base + base*Math.random()/6]);
+}
+
+for (var i = 0; i <= 5000; ++i) {
+    gases_data.push([i*24/5000, 0.5 + Math.random()/14]);
 }
 
 $(function () {
@@ -281,6 +297,128 @@ $(function () {
         }]
     });
 });
+
+$(function () {
+    $('#graphSmoke').highcharts({
+        chart: {
+            zoomType: 'x',
+            categories: smoke_time,
+            tickmarkPlacement: 'on',
+            type: 'int'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: smoke_time,
+            tickmarkPlacement: 'on',
+            type: 'int'
+        },
+        yAxis: {
+            title: {
+                text: 'Smoke Level'
+            },
+            min: 0,
+            max: 1
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, '#7f8c8d'],
+                        [1, 'rgba(150, 160, 165, 0.3)']
+                    ]
+                },
+                marker: {
+                    radius: 2
+                },
+                lineWidth: 1,
+                lineColor: '#5f6c6d',
+                states: {
+                    hover: {
+                        lineWidth: 1
+                    }
+                },
+                threshold: null
+            }
+        },
+
+        series: [{
+            type: 'area',
+            name: 'Smoke Level',
+            data: smoke_data
+        }]
+    });
+});
+
+$(function () {
+    $('#graphGases').highcharts({
+        chart: {
+            zoomType: 'x'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: smoke_time,
+            tickmarkPlacement: 'on',
+            type: 'int'
+        },
+        yAxis: {
+            title: {
+                text: 'Inflammable Gases Level'
+            },
+            min: 0,
+            max: 1
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, '#e74c3c'],
+                        [1, 'rgba(200, 60, 50, 0.3)']
+                    ]
+                },
+                marker: {
+                    radius: 2
+                },
+                lineWidth: 1,
+                lineColor: '#c0392b',
+                states: {
+                    hover: {
+                        lineWidth: 1
+                    }
+                },
+                threshold: null
+            }
+        },
+
+        series: [{
+            type: 'area',
+            name: 'Inflammable Gases Level',
+            data: gases_data
+        }]
+    });
+});
+
         </script>
     </body>
 </html>
