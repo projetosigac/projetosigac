@@ -96,7 +96,7 @@
                 <!-- /.col-lg-2 -->
                 <div class="col-lg-9">
                 <div class="panel panel-default">
-                    *** GRÁFICOS AQUI ***
+                    <div id="graphAffectedPeople" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
                     <br />
                     *** GRÁFICOS AQUI ***
                     <br />
@@ -174,6 +174,76 @@
                 dom: '<"pull-left"f><"pull-right"l>tip'
             });
         });
+        </script>
+        
+        <script src="/js/highcharts-custom.js"></script>
+        <script>
+
+var time_slots = [];
+var yellow_data = [];
+for (var i = 0; i <= 48; i += 2) {
+    time_slots.push(i + 'h');
+    if (i == 0) {
+        yellow_data.push(12000 + Math.floor(Math.random() * 600));
+    }
+    else {
+        yellow_data.push(yellow_data[i/2 - 1] + Math.floor(20 * Math.random()));
+    }
+}
+
+$(function () {
+    $('#graphAffectedPeople').highcharts({
+        colors: ['#FFFF00', '#FF0000'],
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: 'Amount of affected people'
+        },
+        subtitle: {
+            text: 'per health state assessment'
+        },
+        xAxis: {
+            categories: time_slots,
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: 'Billions'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value / 1000;
+                }
+            }
+        },
+        tooltip: {
+            shared: true,
+            valueSuffix: ' millions'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+            name: 'Yellow',
+            data: yellow_data
+        }, {
+            name: 'Red',
+            data: yellow_data
+        }]
+    });
+});
         </script>
     </body>
 </html>
