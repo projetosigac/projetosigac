@@ -99,11 +99,11 @@
                     <br />
                     <div id="graphAffectedPeople" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
                     <hr />
+                    <div id="graphSupportingPeople" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
+                    <hr />
                     <div id="graphSmoke" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
                     <hr />
                     <div id="graphGases" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
-                    <hr />
-                    <div id="graphSupportingPeople" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
                 </div>
                 <!-- /.panel panel-default -->
                 </div>
@@ -229,15 +229,42 @@ for (var i = 0; i <= 48; i += 2) {
     factor = Math.sqrt((48 - i)/48);
 
     if (i == 0) {
-        defc_data.push(1 + Math.floor(1 * factor * Math.random()));
-        firefighter_data.push(5 + Math.floor(4 * factor * Math.random()));
-        police_data.push(1 + Math.floor(1 * factor * Math.random()));
-        health_data.push(3 + Math.floor(2 * factor * Math.random()));
+        defc_data.push(2 + Math.floor(2 * Math.random()));
+        firefighter_data.push(15 + Math.floor(6 * Math.random()));
+        police_data.push(5 + Math.floor(4 * Math.random()));
+        health_data.push(15 + Math.floor(6 * Math.random()));
     } else {
-        defc_data.push(defc_data[i/2 - 1] + Math.floor(5 * factor * factor * Math.random()));
-        firefighter_data.push(firefighter_data[i/2 - 1] + Math.floor(12 * Math.sqrt(factor) * factor * Math.random()));
-        police_data.push(police_data[i/2 - 1] + Math.floor(6 * factor * Math.random()));
-        health_data.push(health_data[i/2 - 1] + Math.floor(18 * Math.sqrt(factor) * factor * Math.random()));
+        if (Math.random() > 0.9 ) {
+            defc_data.push(defc_data[i/2 - 1] + 1);
+        } else if (Math.random() > 0.8 && defc_data[i/2 - 1] > 0) {
+            defc_data.push(defc_data[i/2 - 1] - 1);
+        } else {
+            defc_data.push(defc_data[i/2 - 1]);
+        }
+        
+        if (Math.random() > 0.9) {
+            firefighter_data.push(firefighter_data[i/2 - 1] + 1);
+        } else if (Math.random() > 0.4 && firefighter_data[i/2 - 1] > 0) {
+            firefighter_data.push(firefighter_data[i/2 - 1] - 1);
+        } else {
+            firefighter_data.push(firefighter_data[i/2 - 1]);
+        }
+        
+        if (Math.random() > 0.9) {
+            police_data.push(police_data[i/2 - 1] + 1);
+        } else if (Math.random() > 0.75 && police_data[i/2 - 1] > 0) {
+            police_data.push(police_data[i/2 - 1] - 1);
+        } else {
+            police_data.push(police_data[i/2 - 1]);
+        }
+        
+        if (Math.random() > 0.9) {
+            health_data.push(health_data[i/2 - 1] + 1);
+        } else if (Math.random() > 0.6 && health_data[i/2 - 1] > 0) {
+            health_data.push(health_data[i/2 - 1] - 1);
+        } else {
+            health_data.push(health_data[i/2 - 1]);
+        }
     }
 }
 
