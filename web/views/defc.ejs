@@ -96,63 +96,15 @@
                 <!-- /.col-lg-2 -->
                 <div class="col-lg-9">
                 <div class="panel panel-default">
-                    <div id="graphAffectedPeople" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
                     <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
-                    <br />
-                    *** GRÁFICOS AQUI ***
+                    <div id="graphAffectedPeople" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
+                    <hr />
+                    *** SEGUNDO GRÁFICO AQUI
+                    <hr />
+                    *** TERCEIRO GRÁFICO AQUI
+                    <hr />
+                    *** QUARTO GRÁFICO AQUI
+                    <hr />
                 </div>
                 <!-- /.panel panel-default -->
                 </div>
@@ -181,28 +133,25 @@
         <script>
 
 var time_slots = [];
-var yellow_data = [];
+var light_data = [];
 for (var i = 0; i <= 48; i += 2) {
     time_slots.push(i + 'h');
     if (i == 0) {
-        yellow_data.push(12000 + Math.floor(Math.random() * 600));
+        light_data.push(12000 + Math.floor(Math.random() * 600));
     }
     else {
-        yellow_data.push(yellow_data[i/2 - 1] + Math.floor(20 * Math.random()));
+        light_data.push(light_data[i/2 - 1] + Math.floor(20 * Math.random()));
     }
 }
 
 $(function () {
     $('#graphAffectedPeople').highcharts({
-        colors: ['#FFFF00', '#FF0000'],
+        colors: ['#f1c40f', '#e74c3c', '#2c3e50'],
         chart: {
             type: 'area'
         },
         title: {
-            text: 'Amount of affected people'
-        },
-        subtitle: {
-            text: 'per health state assessment'
+            text: ''
         },
         xAxis: {
             categories: time_slots,
@@ -213,7 +162,7 @@ $(function () {
         },
         yAxis: {
             title: {
-                text: 'Billions'
+                text: '# Affected'
             },
             labels: {
                 formatter: function () {
@@ -223,7 +172,7 @@ $(function () {
         },
         tooltip: {
             shared: true,
-            valueSuffix: ' millions'
+            valueSuffix: ' persons'
         },
         plotOptions: {
             area: {
@@ -237,11 +186,14 @@ $(function () {
             }
         },
         series: [{
-            name: 'Yellow',
-            data: yellow_data
+            name: 'Light injuries',
+            data: light_data
         }, {
-            name: 'Red',
-            data: yellow_data
+            name: 'Severe injuries',
+            data: light_data
+        }, {
+            name: 'Dead',
+            data: light_data
         }]
     });
 });
