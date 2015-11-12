@@ -252,14 +252,14 @@ exports.showAmb = function (req, res) {
 };
 
 exports.leituraSinais = function (req, res) {
-    var pacienteId  = req.body.pacienteId;
+    var id_vitima  = req.body.id_vitima;
     var batimentos  = req.body.batimentos;
     var temperatura = req.body.temperatura;
     var oximetria   = req.body.oximetria;
 
     req.getConnection(function(err,connection) {
-        var query = connection.query('INSERT INTO paciente_status (paciente_id, batimento_cardiaco, temperatura, oximetria, timestamp) VALUES (?,?,?,?,NOW());',
-            [pacienteId, batimentos, temperatura, oximetria],
+        var query = connection.query('INSERT INTO vitimas_status (id_vitima, batimento_cardiaco, temperatura, oximetria, timestamp) VALUES (?,?,?,?,NOW());',
+            [id_vitima, batimentos, temperatura, oximetria],
 
             function(err, result) {
                 if(err) {
@@ -272,7 +272,7 @@ exports.leituraSinais = function (req, res) {
                     return res.json({'status': 'OK'});
                 } else {
                     res.statusCode = 401;
-                    return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
+                    return res.json({status: 'Error 4010', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
                 }
             }
         );

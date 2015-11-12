@@ -10,7 +10,7 @@ exports.carregarPagina = function(req, res){
     }
 
     req.getConnection(function(err,connection) {
-        var queryStr = 'SELECT DISTINCT paciente_id FROM sigac.paciente_status';
+        var queryStr = 'SELECT DISTINCT id_vitima FROM sigac.vitimas_status';
         var query = connection.query(queryStr, function(err,rows,fields) {
             if (err) {
                 console.log("Error Query : %s ",err );
@@ -18,8 +18,8 @@ exports.carregarPagina = function(req, res){
                 lock = rows.length;
 
                 for (var i in rows) {
-                    var id = rows[i].paciente_id;
-                    queryStr = 'SELECT * FROM sigac.paciente_status WHERE paciente_id=' + id + ' ORDER BY timestamp DESC LIMIT 1';
+                    var id = rows[i].id_vitima;
+                    queryStr = 'SELECT * FROM sigac.vitimas_status WHERE id_vitima=' + id + ' ORDER BY timestamp DESC LIMIT 1';
 
                     var query = connection.query(queryStr, function(err,rows,fields) {
                         if(err) {

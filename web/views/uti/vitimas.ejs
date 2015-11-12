@@ -40,12 +40,12 @@
                                         
                                             <% for(var i = 0; i < pacientes.length; i++) { %>
                                                 <tr class="odd gradeX">
-                                                    <td class="text-center"><a href="<%= "vitima/" + pacientes[i].paciente_id %>"> <%= pacientes[i].paciente_id %> </a></td>
+                                                    <td class="text-center"><a href="<%= "vitima/" + pacientes[i].id_vitima %>"> <%= pacientes[i].id_vitima %> </a></td>
                                                     <td class="text-center"><%= pacientes[i].batimento_cardiaco %> b/s</td>
                                                     <td class="text-danger text-center"><%= pacientes[i].temperatura %></td>
                                                     <td class="text-danger text-center"><%= pacientes[i].oximetria %></td>
                                                     <td class="text-center"><%= pacientes[i].timestamp %></td>
-                                                    <td class="text-center"><a href="<%= "vitima/" + pacientes[i].paciente_id %>"><i class="fa fa-folder fa-2x"></i></a></td>
+                                                    <td class="text-center"><a href="<%= "vitima/" + pacientes[i].id_vitima %>"><i class="fa fa-folder fa-2x"></i></a></td>
                                                 </tr>
                                             <% } %>
                                     </tbody>
