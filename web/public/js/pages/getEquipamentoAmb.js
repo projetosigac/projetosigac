@@ -55,7 +55,7 @@ getEquipamentoAmb = function(){
                 i=j;
 
                 tr = $('<tr/>');
-                            tr.append("<td><i style='cursor:pointer;' class='glyphicon glyphicon-trash' onclick=cadastroEquipamentoAmb.api_delete_equip_amb('"+objForm.placaAmbGet+"','"+vtext+"');></i></td>");
+                            tr.append("<td><i style='cursor:pointer;' class='glyphicon glyphicon-trash' onclick=cadastroEquipamentoAmb.api_delete_equip_amb('"+objForm.placaAmbGet+"','"+vtext.replace(' ', '_')+"');></i></td>");
                             tr.append("<td>"+vtext+"</td>");
                 $('#tableEquipamentoPlaca tbody').append(tr);
             }

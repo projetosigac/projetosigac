@@ -41,7 +41,7 @@ cadastroEquipamentoAmb = function(){
             async: false,
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
-            data: JSON.stringify({nomeEquipamentoAmb: equip, placaAmb: placa})
+            data: JSON.stringify({nomeEquipamentoAmb: equip.replace('_', ' '), placaAmb: placa})
         }).done(function(data, textStatus, jqXHR) {
             //Equipamento Deletado da Ambulância
             $("#labelMsg").html("Equipment excluded with successfully the ambulance!");
