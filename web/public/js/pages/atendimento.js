@@ -24,7 +24,7 @@ atendimento = function () {
             //futuro: calcular a base mais próxima da ocorrência, hoje é sempre a primeira
             //var enderecoSamuMaisProxima = _analisarEnderecoProximo(enderecoAtendimento, listaEnderecos);
 
-            marker.setVisible(false);
+            mapa.deleteMarkers();
             mapa.calcularRota($("#enderecoAtendimentoGoogle").val(), data[0].samu_endereco);
 
             _numeroAmbulancias($("#qtdVitimas").val());

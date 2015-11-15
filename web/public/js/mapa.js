@@ -1,3 +1,5 @@
+var map;
+var markers = [];
 var directionsService = new google.maps.DirectionsService;
 var directionsDisplay = new google.maps.DirectionsRenderer;
 
@@ -51,6 +53,8 @@ mapa = function(){
     }
 
     var _carregarNoMapa = function (endereco) {
+
+        _deleteMarkers();
         geocoder = new google.maps.Geocoder();
 
         geocoder.geocode({ 'address': endereco + ', Brasil', 'region': 'BR' }, function (results, status) {
@@ -68,36 +72,74 @@ mapa = function(){
                     $("#longitudeEmergencia").val(longitude);
 
                     var location = new google.maps.LatLng(latitude, longitude);
+                    var marker = _addMarker(location);
+
+                    _createInfoWindow('Local da emergência', enderecoFormatado, marker);
+/*
                     marker = new google.maps.Marker({
                         map: map,
                         draggable: false,
                     });
                     marker.setPosition(location);
-                    marker.setVisible(true);
+                    marker.setVisible(true);*/
+
                     map.setCenter(location);
                     map.setZoom(16);
 
                     google.maps.event.addDomListener(window, 'resize', _initialize);
                     google.maps.event.addDomListener(window, 'load', _initialize)
 
-                    var infowindow = new google.maps.InfoWindow({
-                        content: "<b>Local da emergência</b><br/>".concat(enderecoFormatado),
-                        maxWidth: 250
-                    });
 
-                    marker.addListener('click', function() {
-                        infowindow.open(map, marker);
-                    });
                 }
             }
         });
     }
 
+    var _createInfoWindow = function (title, address, marker){
+      var infowindow = new google.maps.InfoWindow({
+          content: "<b>"+title+"</b><br/>".concat(address),
+          maxWidth: 250
+      });
+
+      marker.addListener('click', function() {
+          infowindow.open(map, marker);
+      });
+    }
+    // Adds a marker to the map and push to the array.
+    var _addMarker = function (location, callback) {
+      var marker = new google.maps.Marker({
+        position: location,
+        draggable: false,
+        visible: true,
+        map: map
+      });
+      markers.push(marker);
+      return marker;
+    }
+
+    // Sets the map on all markers in the array.
+    var _setMapOnAll = function (map) {
+      for (var i = 0; i < markers.length; i++) {
+        markers[i].setMap(map);
+      }
+    }
+
+    // Removes the markers from the map, but keeps them in the array.
+    var _clearMarkers = function () {
+      _setMapOnAll(null);
+    }
+
+    // Deletes all markers in the array by removing references to them.
+    var _deleteMarkers = function () {
+      _clearMarkers();
+      markers = [];
+    }
     return {
         start: _start,
         initialize: _initialize,
         carregarNoMapa: _carregarNoMapa,
-        calcularRota:_calcularRota
+        calcularRota:_calcularRota,
+        deleteMarkers: _deleteMarkers
     }
 
 }();
