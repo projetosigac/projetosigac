@@ -117,6 +117,9 @@ app.post('/api/show-amb', util.autenticarSessao, api.showAmb);
 app.post('/api/delete-equip', util.autenticarSessao, api.deleteEquip);
 app.post('/api/delete-equip-amb', util.autenticarSessao, api.deleteEquipAmb);
 
+app.post('/api/show-crisis', util.autenticarSessao, api.showCrisis);
+app.post('/api/get-crisis', util.autenticarSessao, api.getCrisis);
+
 app.use(app.router);
 
 //apis bombeiros

@@ -11,8 +11,22 @@
                 <div class="alert alert-info" id="passo" role="alert">
                 </div>
                 <form id="formOcorrencia" onsubmit="return false;">
-                    <label>Emergency Local:</label>
-                    <div class="input-group form-group">
+
+<!--new modifications-->
+
+					<label>Crisis Selection:</label>
+                    <div class="form-group">
+                        <select name="listaCriseSelecao" class="form-control crise" id="listaCriseSelecao"></select>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" onclick="atendimento.api_get_crisis();" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Show Crisis </button>
+                    </div>
+
+<!--new modifications-->
+
+
+                    <!--div class="input-group form-group">
 
                         <input type="text" name="localEmergencia" class="form-control" id="localEmergencia" placeholder="Ex.: Avenida 9 de Julho, Centro, São José dos Campos" onkeydown="if(event.keyCode == 13){atendimento.pesquisarEndereco();}" />
                         <input type="hidden" id="enderecoAtendimentoGoogle" />
@@ -23,10 +37,10 @@
                               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             </button>
                         </span>
-                    </div>
+                    </div-->
                     <label>Victims:</label>
                     <div class="form-group">
-                        <input type="number" min="1" value="1" class="form-control" name="qtdVitimas" id="qtdVitimas" />
+                        <input type="number" min="1" value="1" class="form-control" name="qtdVitimas" id="qtdVitimas" readonly />
                     </div>
                     <div class="form-group">
                         <button type="button" id="btnChamarAmbulancia" class="btn btn-info" disabled onclick="atendimento.chamarAmbulancia();"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Calculate Ambulances</button>
@@ -73,9 +87,11 @@
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="/../js/mapa.js"></script>
 <script type="text/javascript" src="/../js/pages/atendimento.js"></script>
+<script type="text/javascript" src="/../js/pages/getEquipamentoAmb.js"></script>
 <script>
     $(document).ready(function(){
         atendimento.init();
+        atendimento.show_crisis();
     });
 </script>
 </div>

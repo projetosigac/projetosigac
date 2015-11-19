@@ -88,7 +88,7 @@ getEquipamentoAmb = function(){
             }
 
             $('#tableEquipamento tbody').html('');
-            $('#nomeEquipamentoAmb').find('option').remove().end().append('<option value="">Select a equipament</option>').val('');
+            $('#nomeEquipamentoAmb').find('option').remove().end().append('<option value="">Select an equipament</option>').val('');
 
             for (i = 0; i < size; i++) {
                 //textEquip += jobject[i].replace(/["]/g,"") + "\n";
