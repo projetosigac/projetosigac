@@ -285,7 +285,7 @@ exports.showCrisis = function (req, res) {
     var sess = req.session;
 
     req.getConnection(function(err,connection){
-        var query = connection.query('SELECT cri_id from crise;', function(err,rows,fields) {
+        var query = connection.query('SELECT cri_ds from crise;', function(err,rows,fields) {
             if(err) {
                 return console.log("Error Query : %s ",err );
             }
@@ -299,10 +299,10 @@ exports.showCrisis = function (req, res) {
 /*Get Crises*/
 exports.getCrisis = function (req, res) {
     var sess = req.session;
-    var criseId = req.body.listaCriseSelecao;
+    var criseDs = req.body.listaCriseSelecao;
 
     req.getConnection(function(err,connection) {
-        var query = connection.query('SELECT cri_afetados FROM crise WHERE cri_id = ?;',[criseId], function(err,rows,fields)
+        var query = connection.query('SELECT cri_afetados FROM crise WHERE cri_ds = ?;',[criseDs], function(err,rows,fields)
         {
             if(err) {
                 return console.log("Error Query : %s ",err );

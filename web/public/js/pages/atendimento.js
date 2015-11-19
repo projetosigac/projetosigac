@@ -102,7 +102,7 @@ atendimento = function () {
         }).done(function(data, textStatus, jqXHR) {
             size = parseInt(JSON.stringify(data['rows'].length));
             for (i = 0; i < size; i++) {
-                jobject[i] = JSON.stringify(data['rows'][i]['cri_id']);
+                jobject[i] = JSON.stringify(data['rows'][i]['cri_ds']);
             }
 
             textAmb = "";
@@ -117,7 +117,6 @@ atendimento = function () {
             alert(jqXHR.responseJSON.message);
         });
 
-        //$("#lista_amb").val(textAmb);
 
         return false;
     }
