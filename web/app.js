@@ -61,6 +61,7 @@ var utiCrises = require('./routes/utiCrises');
 var utiVitimas = require('./routes/utiVitimas');
 var utiRegisteredVictims = require('./routes/utiRegisteredVictims');
 var utiVitima = require('./routes/utiVitima');
+var utiBedsAvailable = require('./routes/utiBedsAvailable');
 var customers = require('./routes/customers');
 var api = require('./routes/api');
 var apiBombeiro = require('./routes/bombeiro')
@@ -75,6 +76,7 @@ app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
 app.get('/uti/vitimas', util.autenticarSessao, utiVitimas.carregarPagina);
 app.get('/uti/registeredVictims', util.autenticarSessao, utiRegisteredVictims.carregarPagina);
 app.get('/uti/vitima/:pId', util.autenticarSessao, utiVitima.carregarPagina);
+app.get('/uti/bedsAvailable', util.autenticarSessao, utiBedsAvailable.carregarPagina);
 app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
