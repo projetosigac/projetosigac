@@ -20,18 +20,22 @@
             if(data[7].cri_cat){
                 switch(data[7].cri_cat){
                     case 'Small':
-                    $('#classif').text('SMALL');
+                        $('#classif').text('SMALL');
+                        $('#classif').attr("class","small-crisis");
                     break;
+
                     case 'Medium':
-                    $('#classif').text('MEDIUM');
+                        $('#classif').text('MEDIUM');
+                        $('#classif').attr("class","medium-crisis");
+
                     break;
+                    
                     case 'Large':
-                    $('#classif').text('LARGE');
+                        $('#classif').text('LARGE');
+                        $('#classif').attr("class","large-crisis");
                     break;
                 }
             }
-
-
         },
         error: function(jqXHR, textStatus, errorThrown) {
             alert(jqXHR.responseJSON);

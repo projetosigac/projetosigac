@@ -51,9 +51,15 @@ li.active{
   opacity:0.5;
 }
 
-.critical{
+.small-crisis{
+  font-weight:900 !important;
+  color:yellow;
+}
+.medium-crisis{
+  font-weight:900 !important;
+  color:orange;
+}
+.large-crisis{
   font-weight:900 !important;
   color:red;
 }
-
-lorem
