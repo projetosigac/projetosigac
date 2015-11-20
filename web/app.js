@@ -53,6 +53,7 @@ app.use(
 // inicia os DAOs.
 require("./db/ocorrenciaDAO")(pool);
 require("./db/localizacaoAmbulanciaDAO")(pool);
+require("./db/panelDAO")(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.
@@ -78,6 +79,7 @@ app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPa
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
 app.get('/defcivil', util.autenticarSessao, defCivil.carregarPagina);
+app.get('/defcivil/getParams', util.autenticarSessao, defCivil.getParameters);
 
 /*
 métodos internos do sistema que necessita de sessão
