@@ -53,6 +53,7 @@ app.use(
 // inicia os DAOs.
 require("./db/ocorrenciaDAO")(pool);
 require("./db/localizacaoAmbulanciaDAO")(pool);
+require('./db/stationDAO')(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.
@@ -78,6 +79,8 @@ app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPa
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
 app.get('/defc', util.autenticarSessao, defc.carregarPagina)
+
+
 
 /*
 métodos internos do sistema que necessita de sessão
@@ -132,6 +135,13 @@ app.get('/api/bombeiro/victimsOfColor/:color',apiBombeiro.getVictimsOfColor) //t
 app.get('/api/bombeiro/countVictims/:color',apiBombeiro.colorCounter)
 //app.get('/api/bombeiro/:token',apiBombeiro.deleteBracelet)
 
+
+
+/**
+ * Requires Firefigther: Rescue and Aftermath endpoints definition file.
+ * @author Paulo Henrique Aguiar(https://github.com/PauloAguiar)
+ */
+require('./routes/firefighter/rescueAndAftermath')(app);
 
 // API error handler
 //app.use(function(err, req, res, next) {
