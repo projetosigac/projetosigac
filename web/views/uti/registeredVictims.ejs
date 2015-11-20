@@ -36,6 +36,7 @@
                                             <th class="text-center">RG</th>
                                             <th class="text-center">Status</th>
                                             <th class="text-center">Crisis</th>
+                                            <th class="text-center">Hospital</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -49,6 +50,7 @@
                                                 <td class="text-danger text-center"><%= dados[i].rg %></td>
                                                 <td class="text-danger text-center"><a href="<%= "vitima/" + dados[i].status %>">Status History</a></td>
                                                 <td class="text-danger text-center"><a href='#'><%= dados[i].crise %></a></td>
+                                                <td class="text-danger text-center"><%= dados[i].hospital %></td>
                                             </tr>
                                         <% } %>
                                     </tbody>
