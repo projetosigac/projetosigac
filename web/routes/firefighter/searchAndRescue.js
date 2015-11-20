@@ -24,6 +24,9 @@ module.exports = function (app) {
     };
 
     app.get('/dashboard/firefighter/sar', /*util.autenticarSessao,*/ function(req, res) {
-        return res.render('firefighter/searchandrescue/index', commonOptions);
+        var options = Object.create(commonOptions);
+
+        options.contentTemplate = 'victims_view';
+        return res.render('firefighter/searchandrescue/index', options);
     });
 }

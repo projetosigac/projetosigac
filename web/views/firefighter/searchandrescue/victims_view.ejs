@@ -1,0 +1,54 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Victim
+                </div>
+                <div class="panel-body">
+                    <div class="dataTable_wrapper">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-defc">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Victim</th>
+                                    <th>...</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% line_counter = 0 %>
+                                <% line_counter++ %>
+                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                    <td>lalala</td>
+                                    <td><a href="#">lalalala</a></td>
+                                    <td>lalalalalala</td>
+                                </tr>
+                                <% line_counter++ %>
+                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                    <td>lalala</td>
+                                    <td><a href="#">lalalala</a></td>
+                                    <td>lalalalalala</td>
+                                </tr>
+                                <% line_counter++ %>
+                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                    <td>lalala</td>
+                                    <td><a href="#">lalalala</a></td>
+                                    <td>lalalalalala</td>
+                                </tr>
+                                <% line_counter++ %>
+                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                    <td>lalala</td>
+                                    <td><a href="#">lalalala</a></td>
+                                    <td>lalalalalala</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <%- include victim_register %>
+        </div>
+    </div>
+</div>
