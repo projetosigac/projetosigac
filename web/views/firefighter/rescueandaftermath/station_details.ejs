@@ -1,0 +1,90 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Station Devices
+                </div>
+                <div class="panel-body">
+                    <div class="dataTable_wrapper">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-defc">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Device</th>
+                                    <th>Last Reading</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% line_counter = 0 %>
+                                <% line_counter++ %>
+                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                    <td>lalala</td>
+                                    <td><a href="#">lalalala</a></td>
+                                    <td>lalalalalala</td>
+                                </tr>
+                                <% line_counter++ %>
+                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                    <td>lalala</td>
+                                    <td><a href="#">lalalala</a></td>
+                                    <td>lalalalalala</td>
+                                </tr>
+                                <% line_counter++ %>
+                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                    <td>lalala</td>
+                                    <td><a href="#">lalalala</a></td>
+                                    <td>lalalalalala</td>
+                                </tr>
+                                <% line_counter++ %>
+                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                    <td>lalala</td>
+                                    <td><a href="#">lalalala</a></td>
+                                    <td>lalalalalala</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Station Control Panel
+                </div>
+                <div class="panel-body">
+                    <div class="list-group">
+                        <div class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                            Last Report
+                            </h4>
+                            <p class="list-group-item-text">
+                                <span class="label label-danger">None</span>
+                            </p>
+                        </div>
+                        <div class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                            Teste
+                            </h4>
+                            <p class="list-group-item-text">
+                                <span class="label <%= 1 > 0 ? 'label-success' : 'label-danger' %>"> Connected</span>
+                            </p>
+                        </div>
+                        <div class="list-group-item">
+                            <h4 class="list-group-item-heading">
+                            Devices
+                            </h4>
+                            <p class="list-group-item-text">
+                                <span class="label label-success">0 Online</span>
+                                <span class="label label-danger">1 Offline</span>
+                            </p>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-primary btn-block">Command A</button>
+                    <button type="submit" class="btn btn-lg btn-primary btn-block">Command B</button>
+                    <button type="submit" class="btn btn-lg btn-primary btn-block">Command C</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

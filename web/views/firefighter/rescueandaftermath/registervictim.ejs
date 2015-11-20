@@ -15,17 +15,6 @@
                                 <th>Last Report</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <% line_counter = 0 %>
-                            <% content.forEach(function(station) { %>
-                                <% line_counter++ %>
-                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
-                                    <td><%= station.id %></td>
-                                    <td><a href="/dashboard/firefighter/raa/station/<%= station.id %>"><%= station.name %></a></td>
-                                    <td><%= station.last_report %></td>
-                                </tr>
-                            <% }); %>
-                        </tbody>
                     </table>
                 </div>
                 <!-- /.table-responsive -->

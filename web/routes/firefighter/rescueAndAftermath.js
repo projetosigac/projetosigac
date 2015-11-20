@@ -49,4 +49,12 @@ module.exports = function (app) {
     app.get('/dashboard/firefighter/raa', util.autenticarSessao, function(req, res) {
         return res.render('firefighter/rescueandaftermath/index', commonOptions);
     });
+
+    //app.get('/dashboard/firefighter/raa/station/:station_id', util.autenticarSessao, function(req, res) {
+    app.get('/dashboard/firefighter/raa/station/:station_id', function(req, res) {
+        var options = Object.create(commonOptions);
+
+        options.contentTemplate = 'station_details';
+        return res.render('firefighter/rescueandaftermath/index', options);
+    });
 }

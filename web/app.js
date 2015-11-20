@@ -147,6 +147,12 @@ app.get('/api/bombeiro/countVictims/:color',apiBombeiro.colorCounter)
  */
 require('./routes/firefighter/rescueAndAftermath')(app);
 
+/**
+ * Requires Firefigther: Search and Rescue endpoints definition file.
+ * @author 
+ */
+require('./routes/firefighter/searchAndRescue')(app);
+
 // API error handler
 //app.use(function(err, req, res, next) {
 //    if (req.path.indexOf('api') > 0) {
