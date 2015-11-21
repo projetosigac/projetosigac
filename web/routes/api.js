@@ -205,6 +205,8 @@ exports.deleteEquipAmb = function (req, res) {
     });
 };
 
+exports.registrarObito = function(req,res){}
+
 /*Get Equip*/
 exports.getEquipAmb = function (req, res) {
     var sess = req.session;
