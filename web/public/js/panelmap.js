@@ -4,21 +4,6 @@
     var pointMvc = new google.maps.MVCArray([]);
 
      
-     var LatAtual, LongAtual;
-
-     //TENTATIVA DE USAR LOCALIZAÇÃO DINÂMICA
-    function getLocation() {
-        if (navigator.geolocation) {
-            navigator.geolocation.getCurrentPosition(showPosition);
-        } else {
-            x.innerHTML = "Este browser não suporta Geolocalização.";
-        }
-    }
-    function showPosition(position) {
-        LatAtual = position.coords.latitude;
-        LongAtual = position.coords.longitude; 
-    }
-
 
     function initialize() {
       initMap();
