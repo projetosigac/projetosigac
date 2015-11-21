@@ -3,7 +3,7 @@
 <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/slate/bootstrap.min.css" rel="stylesheet" integrity="sha256-JcgoO7qVianjbv43Z5KinReHzk9/rEZg5m6z/ZZy3DI= sha512-rYMbEYJa5+7VkGdfAypdYHqwIdCNEBKh8lhKUNIv58tgHQuHHzXC/Bzf66BFDkTjq970Lc6OIEpgllKINGDCKQ==" crossorigin="anonymous">
 
 </head>
-<body onload="initialize();">
+<body>
    <div id="wrapper">
       <div class="container-fluid">
          <div class="row">
@@ -32,7 +32,7 @@
          <div class="row well">
             <!-- Tab panes -->
             <div class="tab-content">
-               <div role="tabpanel" class="tab-pane text-center" id="panel">
+               <div role="tabpanel" class="tab-pane text-center fade" id="panel">
                   <div class="jumbotron control-panel">
                      <div class="row">
                         <div class="col-lg-6">
@@ -113,8 +113,19 @@
                      </div>
                   </div>
                </div>
-               <div role="tabpanel" class="tab-pane text-center" id="mapa">
-                      <%- include relatorio.ejs %>  
+               <div role="tabpanel" class="tab-pane fade in active" id="mapa">
+                  <%- include relatorio.ejs %>  
+
+                  <script src="https://maps.googleapis.com/maps/api/js"></script>
+                  <script type="text/javascript" src="/../js/mapa.js"></script> 
+
+                  
+                  <script type="text/javascript" src="/../js/panelmap.js"></script>  
+                          
+                  <script async defer
+                      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzFcZBLzUFQAOvmNJgCYQh0jVK2DAVnhQ&libraries=visualization&callback=initialize">
+                  </script>
+
 
                </div>
             </div>
@@ -127,14 +138,6 @@
    <%- include ../layouts/footer.ejs %>
 
 <script type="text/javascript" src="/../js/pages/panel.js"></script>  
-
-
-<script type="text/javascript" src="/../js/panelmap.js"></script>  
-
-
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzFcZBLzUFQAOvmNJgCYQh0jVK2DAVnhQ&libraries=visualization&callback=initialize">
-</script>
 
 
 </body>

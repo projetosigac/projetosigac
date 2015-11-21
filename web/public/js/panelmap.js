@@ -8,6 +8,7 @@
     function initialize() {
       initMap();
       bindFormToMap();
+      map.checkResize(); 
     }
 
     function updatePoints(finished) {
