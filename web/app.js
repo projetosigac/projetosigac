@@ -8,6 +8,9 @@ var routes = require('./routes');
 var http = require('http');
 var path = require('path');
 
+//temporary heatmap route - rshigemura
+var reports = require('./routes/reports');
+
 var app = express();
 
 var connection  = require('express-myconnection');
@@ -69,6 +72,7 @@ var atendimento = require('./routes/atendimento');
 var ambEquipamento = require('./routes/ambEquipamento')
 var defCivil = require('./routes/defCivil')
 
+
 app.get('/', routes.index);
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
 app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
@@ -80,6 +84,10 @@ app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
 app.get('/defcivil', util.autenticarSessao, defCivil.carregarPagina);
 app.get('/defcivil/getParams', util.autenticarSessao, defCivil.getParameters);
+
+//temporary route for heatmap - rshigemura
+app.get('/defcivil/relatorio', util.autenticarSessao, routes.relatorio);
+app.get('/reports/get_list', util.autenticarSessao , reports.get_list);
 
 /*
 métodos internos do sistema que necessita de sessão
