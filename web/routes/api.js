@@ -253,13 +253,14 @@ exports.showAmb = function (req, res) {
 
 exports.leituraSinais = function (req, res) {
     var id_vitima  = req.body.id_vitima;
-    var batimentos  = req.body.batimentos;
+    var pulso  = req.body.pulso;
+    var bpm  = req.body.bpm;
     var temperatura = req.body.temperatura;
     var oximetria   = req.body.oximetria;
 
     req.getConnection(function(err,connection) {
-        var query = connection.query('INSERT INTO vitimas_status (id_vitima, batimento_cardiaco, temperatura, oximetria, timestamp) VALUES (?,?,?,?,NOW());',
-            [id_vitima, batimentos, temperatura, oximetria],
+        var query = connection.query('INSERT INTO vitimas_status (id_vitima, pulso, bpm, temperatura, oximetria, timestamp) VALUES (?,?,?,?,?,NOW());',
+            [id_vitima, pulso, bpm, temperatura, oximetria],
 
             function(err, result) {
                 if(err) {
