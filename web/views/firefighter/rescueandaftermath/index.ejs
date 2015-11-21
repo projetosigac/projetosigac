@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html>
-
 <%- include partials/header %>
 
 <body>
-    <div id="wrapper">
-        <%- include partials/navbar %>
+    <%- include partials/navbar %>
 
         <% if(typeof contentTemplate !== 'undefined') { %>
             <%- include(contentTemplate) %>
         <% } %>
 
         <%- include partials/footer %>
-        <script>
-        $(document).ready(function(){
-            //atendimento.init();
-            //atendimento.show_crisis();
-        });
-        </script>
-    </div>
 </body>
 </html>

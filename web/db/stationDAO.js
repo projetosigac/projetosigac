@@ -34,6 +34,32 @@ if(typeof stationDAO === 'undefined')
                 }
             );
         };
+
+        dao.getStationPerimeter = function(stationID, callback) {
+            return _pool.query(
+                {
+                    sql: 'SELECT * FROM station_perimeter_nodes WHERE station_id = ' + stationID + ' ORDER BY station_perimeter_node_id ASC;'
+                },
+                function(err, results, fields) {
+                    if(err)
+                        return callback(err, {});
+                    return callback(null, results);
+                }
+            );
+        };
+
+        dao.getStationDevices = function(stationID, callback) {
+            return _pool.query(
+                {
+                    sql: 'SELECT * FROM station_devices WHERE station_id = ' + stationID + ' ORDER BY device_id ASC;'
+                },
+                function(err, results, fields) {
+                    if(err)
+                        return callback(err, {});
+                    return callback(null, results);
+                }
+            );
+        };
     }(stationDAO));
 }
 

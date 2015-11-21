@@ -145,7 +145,8 @@ app.get('/api/bombeiro/countVictims/:color',apiBombeiro.colorCounter)
  * Requires Firefigther: Rescue and Aftermath endpoints definition file.
  * @author Paulo Henrique Aguiar(https://github.com/PauloAguiar)
  */
-require('./routes/firefighter/rescueAndAftermath')(app);
+require('./routes/firefighter/rescueAndAftermathWeb')(app);
+require('./routes/firefighter/rescueAndAftermathApi')(app);
 
 /**
  * Requires Firefigther: Search and Rescue endpoints definition file.

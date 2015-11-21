@@ -17,30 +17,14 @@
                             </thead>
                             <tbody>
                                 <% line_counter = 0 %>
-                                <% line_counter++ %>
-                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
-                                    <td>lalala</td>
-                                    <td><a href="#">lalalala</a></td>
-                                    <td>lalalalalala</td>
-                                </tr>
-                                <% line_counter++ %>
-                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
-                                    <td>lalala</td>
-                                    <td><a href="#">lalalala</a></td>
-                                    <td>lalalalalala</td>
-                                </tr>
-                                <% line_counter++ %>
-                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
-                                    <td>lalala</td>
-                                    <td><a href="#">lalalala</a></td>
-                                    <td>lalalalalala</td>
-                                </tr>
-                                <% line_counter++ %>
-                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
-                                    <td>lalala</td>
-                                    <td><a href="#">lalalala</a></td>
-                                    <td>lalalalalala</td>
-                                </tr>
+                                <% content.forEach(function(device) { %>
+                                    <% line_counter++ %>
+                                    <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                        <td><%= device.id %></td>
+                                        <td><a href="#"><%= device.name %></a></td>
+                                        <td><%= device.last_reading %></td>
+                                    </tr>
+                                <% }); %>
                             </tbody>
                         </table>
                     </div>
