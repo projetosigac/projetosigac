@@ -1,3 +1,4 @@
+
 /*
  * GET home page.
  */
@@ -6,16 +7,14 @@ exports.index = function(req, res){
   res.render('index', { title: 'Hello World' });
 };
 
-/*mover funcoes abaixo para arquivo js igual nome da funcionalidade*/
+exports.atendimento = function(req, res){
+  res.render('atendimento', { title: 'Hello World' });
+};
 
 exports.ambulancias = function(req, res){
-  res.render('ambulancia/ambulancias', { title: 'Ambulancias' });
+  res.render('ambulancias', { title: 'Ambulancias' });
 };
 
 exports.chamados = function(req, res){
-  res.render('ambulancia/chamados', { title: 'Chamados' });
-};
-
-exports.relatorio = function(req, res){
-  res.render('defcivil/relatorio', { title: 'Relatório' });
+  res.render('chamados', { title: 'Chamados' });
 };
