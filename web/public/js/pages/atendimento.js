@@ -43,7 +43,7 @@ atendimento = function () {
     }
 
     var _numeroMedicos = function(qtdVitimas) {
-        $("#qtdMed").val(Math.ceil(1.5*qtdVitimas));
+        $("#qtdMed").val(Math.ceil(qtdVitimas*0.12));
     }
 
     var _salvarOcorrencia = function () {
