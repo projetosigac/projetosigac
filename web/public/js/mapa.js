@@ -24,23 +24,6 @@ mapa = function(){
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 		map = new google.maps.Map(document.getElementById("map"), options);
-
-		google.maps.event.addDomListener(window, 'resize', _initialize);
-		//google.maps.event.addDomListener(window, 'load', _initialize);
-
-	}
-  var _calcularRota = function (enderecoDestino, enderecoPartida) {
-      directionsDisplay.setMap(map);
-      directionsService.route({
-        origin: enderecoDestino,
-        destination: enderecoPartida,
-        travelMode: google.maps.TravelMode.DRIVING
-      }, function(response, status) {
-        if (status === google.maps.DirectionsStatus.OK) {
-          directionsDisplay.setDirections(response);
-        } else {
-          window.alert('Directions request failed due to ' + status);
-        }
 		geocoder = new google.maps.Geocoder();
 		marker = new google.maps.Marker({
 			map: map,
