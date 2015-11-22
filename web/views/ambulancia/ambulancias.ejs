@@ -1,0 +1,94 @@
+<%- include ../layouts/header.ejs %>
+<link href="/../css/pages/atendimento.css" rel="stylesheet">
+</head>
+	<body>
+		<div id="wrapper">
+			<%- include ../layouts/navigationAmbulancia.ejs %>
+
+			<div class="container-fluid" style="padding-top: 10px">
+				<div class="row">
+					<div class="col-md-6">
+
+			<h1> Ambulances </h1>
+
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+	  <div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingOne">
+		  <h4 class="panel-title">
+			<a role="button" data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			  Ambulance 1
+			</a>
+		  </h4>
+		</div>
+		<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+		  <div class="panel-body">
+			<p> <b> Victims: </b> 1 </p>
+			<p> <b> Status: </b> Return to base with victims </p>
+		  </div>
+		</div>
+	  </div>
+	  <div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingTwo">
+		  <h4 class="panel-title">
+			<a class="collapsed" role="button" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			  Ambulance 2
+			</a>
+		  </h4>
+		</div>
+		<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		  <div class="panel-body">
+			Details ambulance 2
+		  </div>
+		</div>
+	  </div>
+	  <div class="panel panel-default">
+		<div class="panel-heading" role="tab" id="headingThree">
+		  <h4 class="panel-title">
+			<a class="collapsed" role="button" data-toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			  Ambulance 3
+			</a>
+		  </h4>
+		</div>
+		<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+		  <div class="panel-body">
+			Details ambulance 3
+		  </div>
+		</div>
+	  </div>
+	</div>
+
+			</div>
+
+			<div class="col-md-6">
+				<div id="map"></div>
+			</div>
+
+		</div>
+	</div>
+	<%- include ../layouts/footer.ejs %>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script type="text/javascript" src="/../js/mapa.js"></script>
+	<script>
+		mapa.start();
+		var marker_1 = new google.maps.Marker({
+				map: map,
+				position: new google.maps.LatLng(-23.29486486253487, -45.99185186132812),
+				title: 'Ambulance 1'
+			});
+		marker_1.addListener('click', function(){
+				$('#accordion .panel-collapse.collapse').collapse('hide');
+				$('#collapseOne').collapse('show');
+			});
+		var marker_2 = new google.maps.Marker({
+				map: map,
+				position: new google.maps.LatLng(-23.59586486253487, -45.89185186132812),
+				title: 'Ambulance 2'
+			});
+		var marker_3 = new google.maps.Marker({
+				map: map,
+				position: new google.maps.LatLng(-23.49586486253487, -45.9185186132812),
+				title: 'Ambulance 3'
+			});
+	</script>
+	</body>
+</html>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="centralUA3" oid="!ed/4390/55C3/DE0/563f2afe861">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="inicial" LayerIdent="2" WidgetIdent="2" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="def_inicial_PB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Defesa_I_PB" type="bool" oid="!ed/448b/55C3/DE0/563f40742de4" instancepath="centralUA3/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="inicial" LayerIdent="2" WidgetIdent="4" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="bom_inicial_PB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Bombeiros_I_PB" type="bool" oid="!ed/448c/55C3/DE0/563f407f67df" instancepath="centralUA3/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="inicial" LayerIdent="2" WidgetIdent="5" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pol_inicial_PB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Policia_I_PB" type="bool" oid="!ed/448d/55C3/DE0/563f4090dfe" instancepath="centralUA3/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="inicial" LayerIdent="2" WidgetIdent="3" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="sau_inicial_PB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Saude_I_PB" type="bool" oid="!ed/448e/55C3/DE0/563f409c5cdf" instancepath="centralUA3/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="menu" LayerIdent="3" WidgetIdent="1" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="vol_menu_PB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Voltar_M_PB" type="bool" oid="!ed/4491/55C3/DE0/563f40ec33ff" instancepath="centralUA3/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="menu" LayerIdent="3" WidgetIdent="2" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="def_menu_PB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Defesa_M_PB" type="bool" oid="!ed/442e/55C3/DE0/563f381e2b3" instancepath="centralUA3/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="menu" LayerIdent="3" WidgetIdent="3" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="bom_menu_PB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Bombeiros_M_PB" type="bool" oid="!ed/448f/55C3/DE0/563f40b33431" instancepath="centralUA3/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="menu" LayerIdent="3" WidgetIdent="4" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pol_menu_PB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Policia_M_PB" type="bool" oid="!ed/4490/55C3/DE0/563f40c1b4a" instancepath="centralUA3/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="menu" LayerIdent="3" WidgetIdent="5" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="sau_menu_PB">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="Saude_M_PB" type="bool" oid="!ed/442f/55C3/DE0/563f38481c5" instancepath="centralUA3/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Cabecalho_ACT" type="bool" oid="!ed/4394/55C3/DE0/563f2bcd7363" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="cabecalho" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Cabecalho_VIS" type="bool" oid="!ed/4395/55C3/DE0/563f2bdd4a89" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="cabecalho" LayerIdent="1" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Menu_ACT" type="bool" oid="!ed/4399/55C3/DE0/563f2cea207" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="menu" LayerIdent="3" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Menu_INA" type="bool" oid="!ed/4492/55C3/DE0/563f419a204d" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_INACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="menu" LayerIdent="3" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_INACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_INACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Menu_VIS" type="bool" oid="!ed/439a/55C3/DE0/563f2cf441d4" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="menu" LayerIdent="3" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Defesa_ACT" type="bool" oid="!ed/439c/55C3/DE0/563f2d0a3daa" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="defesa-civil" LayerIdent="4" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Defesa_INA" type="bool" oid="!ed/439b/55C3/DE0/563f2d0038f5" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_INACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="defesa-civil" LayerIdent="4" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_INACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_INACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Defesa_VIS" type="bool" oid="!ed/439d/55C3/DE0/563f2d12830" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="defesa-civil" LayerIdent="4" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Bombeiros_ACT" type="bool" oid="!ed/4494/55C3/DE0/563f427f74ee" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="bombeiros" LayerIdent="5" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Bombeiros_INA" type="bool" oid="!ed/4493/55C3/DE0/563f427516d1" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_INACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="bombeiros" LayerIdent="5" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_INACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_INACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Bombeiros_VIS" type="bool" oid="!ed/4495/55C3/DE0/563f428c79c7" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="bombeiros" LayerIdent="5" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Policia_ACT" type="bool" oid="!ed/4497/55C3/DE0/563f42baf11" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="policia" LayerIdent="6" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Policia_INA" type="bool" oid="!ed/4496/55C3/DE0/563f42ac2121" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_INACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="policia" LayerIdent="6" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_INACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_INACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Policia_VIS" type="bool" oid="!ed/4498/55C3/DE0/563f42c04836" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="policia" LayerIdent="6" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Saude_ACT" type="bool" oid="!ed/4431/55C3/DE0/563f38892d99" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="saude" LayerIdent="7" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Saude_INA" type="bool" oid="!ed/4430/55C3/DE0/563f38822aab" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_INACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="saude" LayerIdent="7" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_INACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_INACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Saude_VIS" type="bool" oid="!ed/4432/55C3/DE0/563f38921c23" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="saude" LayerIdent="7" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Inicial_ACT" type="bool" oid="!ed/44a8/55C3/DE0/563f43f32fa8" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_ACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="inicial" LayerIdent="2" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_ACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_ACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Inicial_INA" type="bool" oid="!ed/44a9/55C3/DE0/563f43fd5c34" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_INACTIVE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="inicial" LayerIdent="2" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_INACTIVE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_INACTIVE>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Inicial_VIS" type="bool" oid="!ed/44aa/55C3/DE0/563f4409ac9" instancepath="centralUA3/"/>
+					</output>
+					<inputs>
+						<A661_REQ_LAYER_VISIBLE name="Emit" type="enum {A661_FALSE, A661_TRUE}" pathname="..\..\DF\central-v02\central-v02.sgfx" layer="inicial" LayerIdent="2" WidgetIdent="-1" ParameterIdent="A661_REQ_LAYER_VISIBLE">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_REQ_LAYER_VISIBLE>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>
