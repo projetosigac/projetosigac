@@ -85,6 +85,8 @@ app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carr
 app.get('/defc', util.autenticarSessao, defc.carregarPagina)
 
 
+//var policia = require('./routes/policia');
+//app.get('/policia/BO', util.autenticarSessao, policia.carregarPagina);
 
 /*
 métodos internos do sistema que necessita de sessão
@@ -153,6 +155,18 @@ require('./routes/firefighter/rescueAndAftermathApi')(app);
  * @author 
  */
 require('./routes/firefighter/searchAndRescue')(app);
+
+
+
+/**
+ * Requires Police OR
+ * @author 
+ */
+require('./routes/police/OR')(app);
+
+
+
+
 
 // API error handler
 //app.use(function(err, req, res, next) {
