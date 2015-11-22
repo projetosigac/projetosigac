@@ -6,46 +6,11 @@
                     Occurrence Reports
                 </div>
                 <div class="panel-body">
-                    <div class="dataTable_wrapper">
-                        <table class="table table-striped table-bordered table-hover" id="dataTables-defc">
+                    <div class="dataTable_wrapper table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-condensed table-responsive" id="tableOR">
                             <thead>
-                                <tr>
-                                    <th class="col-xs-1">ID</th>
-                                    <th class="col-xs-1">Priority</th>
-                                    <th class="col-xs-3">Occurrence</th>
-                                    <th class="col-xs-8">Description</th>
-                                </tr>
                             </thead>
                             <tbody>
-                                <% line_counter = 0 %>
-                                <% line_counter++ %>
-                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
-                                    <td>002a001</td>
-                                    <td>0</td>
-                                    <td><a href="#">Art. 157 do Código Penal: Roubo</a></td>
-                                    <td> Às ___h___min, diante a solicitação do (CIODS/Central do BPM/da vítima nº____), ao realizar diligências na (especificar local) foi detido o imputado Nº____, o qual roubou a vítima nº ______, através da (grave ameaça ou violência), subtraindo os objetos acima elencados.</td>
-                                </tr>
-                                <% line_counter++ %>
-                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
-                                    <td>001b187</td>
-                                    <td>3</td>
-                                    <td><a href="#">Art. 121 do Código Penal: Homicício</a></td>
-                                    <td>Às __h___min, ao chegar ao local determinado e, mesmo ao realizar diligências nas áreas circunvizinhas, não foi verificada qualquer tipo de alteração.</td>
-                                </tr>
-                                <% line_counter++ %>
-                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
-                                    <td>0ANa101</td>
-                                    <td>2</td>
-                                    <td><a href="#">Art. 138 do Código Penal: Furto</a></td>
-                                    <td>O imputado Nº_____, almejando o resultado morte da vítima Nº______, não obteve êxito, visto que, mesmo iniciada a execução, deferindo alguns disparos, o resultado morte não sobreveio por circunstancias alheias a sua vontade, haja vista a intervenção da(s) testemunha(s) nº_____ . Portanto, foi conduzido a Delegacia sem ter sofrido qualquer tipo de agressão física ou moral.</td>
-                                </tr>
-                                <% line_counter++ %>
-                                <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
-                                    <td>003918</td>
-                                    <td>2</td>
-                                    <td><a href="#">Art. 157 do Código Penal: Roubo</a></td>
-                                    <td>O imputado nº____, aproveitando-se das circunstâncias que o favorecia, bem como de sua destreza e habilidades, subtraiu da (mercado/loja/vitima nº____) os objetos acima relatados. Porém, foi conduzido para a Delegacia (especificar qual DP) sem ter sofrido qualquer tipo de agressão, seja física ou moral.</td>
-                                </tr>
                             </tbody>
                         </table>
                     </div>
@@ -57,3 +22,12 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="/../js/pages/getOR.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        getOR.show_OR();
+    });
+</script>
