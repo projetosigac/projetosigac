@@ -95,6 +95,7 @@ app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.ca
 app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.salvarOcorrencia);
 app.get('/ambulancia/listar-ocorrencias', util.autenticarSessao, atendimento.listarOcorrencia);
 app.get('/ambulancia/localizacao-ambulancias', util.autenticarSessao, atendimento.localizacaoAmbulancias);
+app.post('/uti/comunicarObito', util.autenticarSessao, utiRegisteredVictims.registrarObito);
 
 /*
 ***Exemplo de criação de rota passando parametros

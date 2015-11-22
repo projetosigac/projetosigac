@@ -5,13 +5,6 @@
     <!-- DataTables Responsive CSS -->
     <link href="/../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
 </head>
-	<script>
-		dorefresh()
-		{
-			window.location.reload();
-		}
-	</script>
-
     <body>
         <div id="wrapper">
             <%- include ../layouts/navigationUTI.ejs %>
@@ -58,14 +51,7 @@
                                                 <td class="text-danger text-center"><a href='#'><%= dados[i].crise %></a></td>
                                                 <td class="text-danger text-center"><%= dados[i].hospital %></td>
 												<td class="text-danger text-center"><%= dados[i].obito %></td>			
-												<td class="text-danger text-center">
-													<form action="/uti/comunicarObito" method = "post">
-													<input type="hidden" name="token" value=<%=dados[i].token%>>
-													<button type="submit" >
-														Comunicar!
-													</button>
-													</form>
-												</td>	
+												<td class="text-danger text-center"><button type="button">Comunicar!</button></td>	
 
 
                                             </tr>
