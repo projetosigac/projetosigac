@@ -165,7 +165,9 @@ require('./routes/firefighter/searchAndRescue')(app);
  */
 require('./routes/police/OR')(app);
 
-
+// apis Police
+app.post('/api/insert-OR', util.autenticarSessao, api.insertOR);
+app.post('/api/show-ORs', util.autenticarSessao, api.showORs);
 
 
 
