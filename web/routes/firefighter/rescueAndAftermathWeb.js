@@ -103,4 +103,27 @@ module.exports = function (app) {
         });
 
     });
+
+    app.get('/dashboard/firefighter/raa/device/:device_id', function(req, res) {
+
+        return stationDAO.getDeviceReadings(req.params.device_id, function(err, result, fields) {
+            if(err)
+            {
+                console.log(err);
+                return res.status(500).send('DB Error');
+            }
+
+            var options = Object.create(commonOptions);
+
+            options.content = result.map(function(row) {
+                return {
+                    'timestamp': row.reading_timestamp,
+                    'value': row.reading_value };
+            });
+
+            options.contentTemplate = 'device_details';
+            return res.render('firefighter/rescueandaftermath/index', options);
+        });
+
+    });
 }

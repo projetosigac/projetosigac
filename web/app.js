@@ -36,11 +36,12 @@ app.use(express.static(path.join(__dirname, 'public')));
  * Pool usado nos componentes de acesso a dados.
  */
 var connConfig = {
-    connectionLimit : 10,
-    host            : 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
-    user            : 'admin',
-    password        : 'adminsigac',
-    database:'sigac'
+    connectionLimit    : 10,
+    multipleStatements : true,
+    host               : 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
+    user               : 'admin',
+    password           : 'adminsigac',
+    database           : 'sigac'
 };
 
 var pool  = mysql.createPool(connConfig);

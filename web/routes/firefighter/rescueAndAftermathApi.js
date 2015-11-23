@@ -58,4 +58,42 @@ module.exports = function (app) {
             }));
         });
     });
+
+    app.post('/api/firefighter/raa/station/devices/register', function(req, res) {
+        var stationID = req.body.stationID;
+        var device = req.body.device;
+
+        return stationDAO.registerStationDevice(stationID, device, function(err, result, fields) {
+            if(err)
+            {
+                if(err.code === 'ER_DUP_ENTRY')
+                    return res.status(500).json({'err': err.code});
+                console.log(err);
+                return res.status(500).json({'err': 'DB Error'});
+            }
+
+            return res.send(200);
+        });
+    });
+
+    app.post('/api/firefighter/raa/station/devices/reading', function(req, res) {
+        var device = req.body.device;
+        var reading = req.body.reading;
+
+        return stationDAO.registerStationDeviceReading(device, reading, function(err, result, fields) {
+            if(err)
+            {
+                console.log(err);
+                return res.status(500).json({'err': 'DB Error'});
+            }
+            return stationDAO.updateDeviceLastReading(device.id, reading.timestamp, function(err) {
+                if(err)
+                {
+                    console.log(err);
+                    return res.status(500).json({'err': 'DB Error'});
+                }
+                return res.send(200);
+            })
+        });
+    });
 }

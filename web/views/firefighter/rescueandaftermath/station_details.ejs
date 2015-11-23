@@ -21,7 +21,7 @@
                                     <% line_counter++ %>
                                     <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
                                         <td><%= device.id %></td>
-                                        <td><a href="#"><%= device.name %></a></td>
+                                        <td><a href="/dashboard/firefighter/raa/device/<%= device.id %>"><%= device.name %></a></td>
                                         <td><%= device.last_reading %></td>
                                     </tr>
                                 <% }); %>
