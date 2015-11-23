@@ -109,8 +109,8 @@ function OcorrenciaDAO(pool) {
 
     this.salvarOcorrencia = function(obj, callback) {
       var query = self.pool.query("INSERT INTO ocorrencia(data_abertura, status, n_ambulancias_necessarias, n_vitimas,\
-         latitude, longitude, endereco, comentarios) VALUES (NOW(),'ABERTO',?,?,?,?,?,?)", [obj.qtdAmb, obj.qtdVitimas, obj.latitude,
-           obj.longitude, obj.endereco, obj.observacao], function (err, rows) {
+         latitude, longitude, endereco, comentarios, id_crise) VALUES (NOW(),'ABERTO',?,?,?,?,?,?,?)", [obj.qtdAmb, obj.qtdVitimas, obj.latitude,
+           obj.longitude, obj.endereco, obj.observacao, obj.id_crise], function (err, rows) {
           if (err) {
               callback(err, {});
           } else {

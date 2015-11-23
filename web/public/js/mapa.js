@@ -2,6 +2,7 @@ var map;
 var markers = [];
 var directionsService = new google.maps.DirectionsService;
 var directionsDisplay = new google.maps.DirectionsRenderer;
+var geocoder = new google.maps.Geocoder();
 
 mapa = function(){
     var _start = function(){
@@ -74,7 +75,6 @@ mapa = function(){
     var _carregarNoMapa = function (endereco) {
 
         _deleteMarkers();
-        geocoder = new google.maps.Geocoder();
 
         geocoder.geocode({ 'address': endereco + ', Brasil', 'region': 'BR' }, function (results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
@@ -137,6 +137,20 @@ mapa = function(){
       return marker;
     }
 
+    var _geocodeLatLng = function (lat, long, callback) {
+      var latlng = {lat: parseFloat(lat), lng: parseFloat(long)};
+      geocoder.geocode({'location': latlng}, function(results, status) {
+        if (status === google.maps.GeocoderStatus.OK) {
+          if (results[1]) {
+            _carregarNoMapa(results[1].formatted_address);
+            callback(results[1]);
+          } else {
+            window.alert('No results found');
+          }
+        }
+      });
+    };
+
     // Sets the map on all markers in the array.
     var _setMapOnAll = function (map) {
       for (var i = 0; i < markers.length; i++) {
@@ -164,7 +178,8 @@ mapa = function(){
         carregarNoMapa: _carregarNoMapa,
         calcularRota:_calcularRota,
         deleteMarkers: _deleteMarkers,
-        clearMap: _clearMap
+        clearMap: _clearMap,
+        geocodeLatLng: _geocodeLatLng
     }
 
 }();

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<%- include partials/header %>
+
+<body>
+    <%- include partials/navbar %>
+
+        <% if(typeof contentTemplate !== 'undefined') { %>
+            <%- include(contentTemplate) %>
+        <% } %>
+
+        <%- include partials/footer %>
+</body>
+</html>

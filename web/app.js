@@ -54,13 +54,16 @@ app.use(
 require("./db/ocorrenciaDAO")(pool);
 require("./db/localizacaoAmbulanciaDAO")(pool);
 require("./db/hospitalDAO")(pool);
+require('./db/stationDAO')(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.
 var dashboard = require('./routes/dashboard');
 var utiCrises = require('./routes/utiCrises');
 var utiVitimas = require('./routes/utiVitimas');
+var utiRegisteredVictims = require('./routes/utiRegisteredVictims');
 var utiVitima = require('./routes/utiVitima');
+var utiBedsAvailable = require('./routes/utiBedsAvailable');
 var customers = require('./routes/customers');
 var api = require('./routes/api');
 var apiBombeiro = require('./routes/bombeiro')
@@ -74,12 +77,18 @@ app.get('/', routes.index);
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
 app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
 app.get('/uti/vitimas', util.autenticarSessao, utiVitimas.carregarPagina);
+app.get('/uti/registeredVictims', util.autenticarSessao, utiRegisteredVictims.carregarPagina);
 app.get('/uti/vitima/:pId', util.autenticarSessao, utiVitima.carregarPagina);
+app.get('/uti/bedsAvailable', util.autenticarSessao, utiBedsAvailable.carregarPagina);
 app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
 app.get('/defc', util.autenticarSessao, defc.carregarPagina)
+
+
+//var policia = require('./routes/policia');
+//app.get('/policia/BO', util.autenticarSessao, policia.carregarPagina);
 
 /*
 métodos internos do sistema que necessita de sessão
@@ -89,6 +98,9 @@ app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.sa
 app.get('/atendimento/listar-hospital-leito-disponivel', util.autenticarSessao, hospital.listarLeitoDisponivel);
 app.get('/ambulancia/listar-ocorrencias', util.autenticarSessao, atendimento.listarOcorrencia);
 app.get('/ambulancia/localizacao-ambulancias', util.autenticarSessao, atendimento.localizacaoAmbulancias);
+
+app.post('/uti/comunicarObito', util.autenticarSessao, utiRegisteredVictims.registrarObito);
+
 /*
 ***Exemplo de criação de rota passando parametros
 app.get('/customers', customers.list);
@@ -119,6 +131,9 @@ app.post('/api/show-amb', util.autenticarSessao, api.showAmb);
 app.post('/api/delete-equip', util.autenticarSessao, api.deleteEquip);
 app.post('/api/delete-equip-amb', util.autenticarSessao, api.deleteEquipAmb);
 
+app.post('/api/show-crisis', util.autenticarSessao, api.showCrisis);
+app.post('/api/get-crisis', util.autenticarSessao, api.getCrisis);
+
 app.use(app.router);
 
 //apis bombeiros
@@ -130,6 +145,34 @@ app.post('/api/bombeiro/',apiBombeiro.classifyVictim)
 app.get('/api/bombeiro/victimsOfColor/:color',apiBombeiro.getVictimsOfColor) //typeof(getNames) = boolean
 app.get('/api/bombeiro/countVictims/:color',apiBombeiro.colorCounter)
 //app.get('/api/bombeiro/:token',apiBombeiro.deleteBracelet)
+
+
+
+/**
+ * Requires Firefigther: Rescue and Aftermath endpoints definition file.
+ * @author Paulo Henrique Aguiar(https://github.com/PauloAguiar)
+ */
+require('./routes/firefighter/rescueAndAftermathWeb')(app);
+require('./routes/firefighter/rescueAndAftermathApi')(app);
+
+/**
+ * Requires Firefigther: Search and Rescue endpoints definition file.
+ * @author
+ */
+require('./routes/firefighter/searchAndRescue')(app);
+
+
+
+/**
+ * Requires Police OR
+ * @author
+ */
+require('./routes/police/OR')(app);
+
+// apis Police
+app.post('/api/insert-OR', util.autenticarSessao, api.insertOR);
+app.post('/api/show-ORs', util.autenticarSessao, api.showORs);
+
 
 
 // API error handler

@@ -62,7 +62,8 @@ exports.salvarOcorrencia = function (req, res, next) {
       qtdMed : req.body.qtdMed,
       observacao : req.body.observacao,
       nroHospitais: req.body.nroHospitais,
-      hospital: []
+      hospital: [],
+      id_crise: req.body.listaCriseSelecao
     };
     if(ocorrencia.nroHospitais > 1){
       var idHospital = req.body.idHospital;

@@ -2,16 +2,32 @@
     var listaHospitais;
     var numeroVitimasSemHospital;
     var processarRotas = [];
+    var objCrise;
 
 atendimento = function () {
 
     var _init = function () {
         _passoMensagem(1);
         mapa.start();
+
+        _show_crisis();
     }
 
+    var _preencherCrise = function(id){
+      if(id != ''){
+        var obj = objCrise.filter(function(x){return x.cri_id == id});
+        mapa.geocodeLatLng(obj[0].latitudeBoxValue, obj[0].LongitudeBoxValue, _preencherLocalEmergencia);
+        $("#latitudeEmergencia").val(obj[0].latitudeBoxValue);
+        $("#longitudeEmergencia").val(obj[0].LongitudeBoxValue);
+      }
+    };
+    var _preencherLocalEmergencia = function (resultGeocode){
+      $("#localEmergencia").val(resultGeocode.formatted_address);
+      $("#enderecoAtendimentoGoogle").val(resultGeocode.formatted_address);
+    };
+
     var _pesquisarEndereco = function () {
-        if($("#localEmergencia").val()) {
+        if($("#localEmergencia").val() && $("#listaCriseSelecao").val()) {
             mapa.carregarNoMapa($("#localEmergencia").val());
             _passoMensagem(2);
         }
@@ -177,7 +193,7 @@ atendimento = function () {
     }
 
     var _numeroMedicos = function(qtdVitimas) {
-        $("#qtdMed").val(Math.ceil(1.5*qtdVitimas));
+        $("#qtdMed").val(Math.ceil(qtdVitimas*0.12));
     }
 
     var _salvarOcorrencia = function () {
@@ -206,13 +222,14 @@ atendimento = function () {
         $("#qtdVitimas").val(1);
         $('#btnChamarAmbulancia').prop( "disabled", true);
         $('#btnRegistrarOcorrencia').prop( "disabled", true);
+        $("#listaCriseSelecao").val(" ");
         mapa.clearMap();
     }
 
     var _passoMensagem = function (passo) {
         switch(passo) {
             case 1:
-                $("#passo").html("<b>1º Step:</b> Enter the Emergency address.");
+                $("#passo").html("<b>1º Step:</b> Select the crisi.");
                 break;
             case 2:
                 $("#passo").html("<b>2º Step:</b> Enter the number of victims and calculate ambulances.");
@@ -223,6 +240,75 @@ atendimento = function () {
         }
     }
 
+     var _show_crisis = function (){
+        $.ajax({
+            url: '/api/show-crisis',
+            type: 'POST',
+            async: false,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json'
+        }).done(function(data, textStatus, jqXHR) {
+          if(data.status == "OK"){
+            $('<option>').val('').text('Select Crise').appendTo('#listaCriseSelecao');
+            for(i in data.rows){
+              $('<option>').val(data.rows[i].cri_id).text(data.rows[i].cri_ds).appendTo('#listaCriseSelecao');
+            }
+            objCrise = data.rows;
+          }
+/*
+            size = parseInt(JSON.stringify(data['rows'].length));
+            for (i = 0; i < size; i++) {
+                jobject[i] = JSON.stringify(data['rows'][i]['cri_ds']);
+            }
+
+            textAmb = "";
+            $('.crise').find('option').remove().end().append('<option value="">Select a crisis</option>').val('');
+            for (i = 0; i < size; i++) {
+                //textAmb += jobject[i].replace(/["]/g,"") + "\n";
+                var criseid = jobject[i].replace(/["]/g,"");
+                $('<option>').val(criseid).text(criseid).appendTo('.crise');
+            }
+            */
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.responseJSON.message);
+        });
+
+
+        return false;
+    }
+
+
+    var _api_get_crisis = function (){
+        var jobject = [""];
+        var objForm = $('#formOcorrencia').serializeObject();
+        if(!objForm.listaCriseSelecao){
+            alert("The field can not be empty");
+            return false;
+        }
+        var requestData = JSON.stringify(objForm);
+
+        $.ajax({
+            url: '/api/get-crisis',
+            type: 'POST',
+            async: false,
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            data: requestData
+        }).done(function(data, textStatus, jqXHR) {
+
+            jobject[0] = parseInt(JSON.stringify(data['rows'][0]['cri_afetados']));
+
+            $('#qtdVitimas').val(jobject[0]);
+
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.responseJSON.message);
+        });
+
+        return false;
+    }
+
+
+
     return {
         init: _init,
         pesquisarEndereco: _pesquisarEndereco,
@@ -230,7 +316,10 @@ atendimento = function () {
         numeroAmbulancias: _numeroAmbulancias,
         numeroMedicos: _numeroMedicos,
         clearForm: _clearForm,
-        salvarOcorrencia: _salvarOcorrencia
+        salvarOcorrencia: _salvarOcorrencia,
+        show_crisis: _show_crisis,
+        api_get_crisis: _api_get_crisis,
+        preencherCrise: _preencherCrise
     }
 }();
 
