@@ -53,6 +53,7 @@ app.use(
 // inicia os DAOs.
 require("./db/ocorrenciaDAO")(pool);
 require("./db/localizacaoAmbulanciaDAO")(pool);
+require("./db/hospitalDAO")(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.
@@ -65,6 +66,7 @@ var api = require('./routes/api');
 var apiBombeiro = require('./routes/bombeiro')
 var util = require('./routes/utils');
 var atendimento = require('./routes/atendimento');
+var hospital = require('./routes/hospital');
 var ambEquipamento = require('./routes/ambEquipamento')
 var defc = require('./routes/defc')
 
@@ -84,9 +86,9 @@ métodos internos do sistema que necessita de sessão
 */
 app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.carregarBaseSamu);
 app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.salvarOcorrencia);
+app.get('/atendimento/listar-hospital-leito-disponivel', util.autenticarSessao, hospital.listarLeitoDisponivel);
 app.get('/ambulancia/listar-ocorrencias', util.autenticarSessao, atendimento.listarOcorrencia);
 app.get('/ambulancia/localizacao-ambulancias', util.autenticarSessao, atendimento.localizacaoAmbulancias);
-
 /*
 ***Exemplo de criação de rota passando parametros
 app.get('/customers', customers.list);

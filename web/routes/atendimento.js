@@ -60,8 +60,19 @@ exports.salvarOcorrencia = function (req, res, next) {
       qtdVitimas : req.body.qtdVitimas,
       qtdAmb : req.body.qtdAmb,
       qtdMed : req.body.qtdMed,
-      observacao : req.body.observacao
+      observacao : req.body.observacao,
+      nroHospitais: req.body.nroHospitais,
+      hospital: []
     };
+    if(ocorrencia.nroHospitais > 1){
+      var idHospital = req.body.idHospital;
+      var qtdVitimaHospital = req.body.qtdVitimaHospital;
+      for(i in idHospital){
+        ocorrencia["hospital"].push({id_hospital: idHospital[i], qtdVitimaHospital: qtdVitimaHospital[i]});
+      }
+    }else{
+      ocorrencia["hospital"].push({id_hospital: req.body.idHospital, qtdVitimaHospital: req.body.qtdVitimaHospital});
+    }
 
   /*Validação dos valores do formulário de cadastro de ocorrência*/
   var camposValidos = true;
@@ -80,7 +91,10 @@ exports.salvarOcorrencia = function (req, res, next) {
 
   ocorrenciaDAO.salvarOcorrencia(ocorrencia, function(err, result) {
       if (err) return next(err);
-      else res.json(result);
+      else {
+        console.log(result);
+        res.json(result)
+      };
   });
 
 };

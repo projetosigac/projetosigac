@@ -5,21 +5,7 @@ var directionsDisplay = new google.maps.DirectionsRenderer;
 
 mapa = function(){
     var _start = function(){
-
     google.maps.event.addDomListener(window, 'load', _initialize());
-    /*
-        google.maps.event.addListener(marker, 'drag', function () {
-        geocoder.geocode({ 'latLng': marker.getPosition() }, function (results, status) {
-            if (status == google.maps.GeocoderStatus.OK) {
-                if (results[0]) {
-                    //$('#txtEndereco').val(results[0].formatted_address);
-                    //$('#txtLatitude').val(marker.getPosition().lat());
-                    //$('#txtLongitude').val(marker.getPosition().lng());
-                }
-            }
-        });
-    });
-    */
     }
 
     var _initialize = function (){
@@ -37,21 +23,54 @@ mapa = function(){
 
     }
 
-    var _calcularRota = function (enderecoDestino, enderecoPartida) {
-        directionsDisplay.setMap(map);
+    var _calcularRota = function (origin, destination, customIcon, callback) {
+
+        var rendererOptions = {map : map};
+
+        if(customIcon)
+          rendererOptions["suppressMarkers"] = true;
+
+        directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
+
+        //directionsDisplay.setMap(rendererOptions);
         directionsService.route({
-            origin: enderecoDestino,
-            destination: enderecoPartida,
+            origin: origin,
+            destination: destination,
             travelMode: google.maps.TravelMode.DRIVING
         }, function(response, status) {
             if (status === google.maps.DirectionsStatus.OK) {
                 directionsDisplay.setDirections(response);
+                if(customIcon){
+                  for(var i in customIcon){
+                    _setMarkerDirections(customIcon[i], customIcon[i].address);
+                  }
+                }
+                if(callback)
+                  callback(true);
+
             } else {
                 window.alert('Directions request failed due to ' + status);
             }
         });
-    }
 
+    }
+    var _setMarkerDirections = function (customIcon, address){
+
+      geocoder = new google.maps.Geocoder();
+      geocoder.geocode({ 'address': address, 'region': 'BR' }, function (results, status) {
+        if (status == google.maps.GeocoderStatus.OK) {
+          if (results[0]) {
+            var lat = results[0].geometry.location.lat();
+            var long = results[0].geometry.location.lng();
+
+            var marker = _addMarker(new google.maps.LatLng(lat, long), customIcon.image);
+
+            _createInfoWindow(customIcon.title, results[0].formatted_address, marker);
+
+          }
+        }
+      });
+    }
     var _carregarNoMapa = function (endereco) {
 
         _deleteMarkers();
@@ -72,16 +91,9 @@ mapa = function(){
                     $("#longitudeEmergencia").val(longitude);
 
                     var location = new google.maps.LatLng(latitude, longitude);
-                    var marker = _addMarker(location);
+                    var marker = _addMarker(location, '../images/marker-crisis.png');
 
                     _createInfoWindow('Local da emergência', enderecoFormatado, marker);
-/*
-                    marker = new google.maps.Marker({
-                        map: map,
-                        draggable: false,
-                    });
-                    marker.setPosition(location);
-                    marker.setVisible(true);*/
 
                     map.setCenter(location);
                     map.setZoom(16);
@@ -106,14 +118,22 @@ mapa = function(){
       });
     }
     // Adds a marker to the map and push to the array.
-    var _addMarker = function (location, callback) {
-      var marker = new google.maps.Marker({
+    var _addMarker = function (location, iconCustom, callback) {
+
+      var properties = {
         position: location,
         draggable: false,
         visible: true,
         map: map
-      });
+      };
+      if(iconCustom)
+        properties["icon"] = iconCustom;
+
+      var marker = new google.maps.Marker(properties);
       markers.push(marker);
+      if(callback)
+        callback(marker);
+
       return marker;
     }
 
@@ -134,12 +154,17 @@ mapa = function(){
       _clearMarkers();
       markers = [];
     }
+    var _clearMap = function(){
+      $("#map").html("");
+      _initialize();
+    }
     return {
         start: _start,
         initialize: _initialize,
         carregarNoMapa: _carregarNoMapa,
         calcularRota:_calcularRota,
-        deleteMarkers: _deleteMarkers
+        deleteMarkers: _deleteMarkers,
+        clearMap: _clearMap
     }
 
 }();
