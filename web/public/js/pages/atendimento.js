@@ -19,6 +19,8 @@ atendimento = function () {
         mapa.geocodeLatLng(obj[0].latitudeBoxValue, obj[0].LongitudeBoxValue, _preencherLocalEmergencia);
         $("#latitudeEmergencia").val(obj[0].latitudeBoxValue);
         $("#longitudeEmergencia").val(obj[0].LongitudeBoxValue);
+        $("#qtdVitimas").val(obj[0].cri_afetados);
+
       }
     };
     var _preencherLocalEmergencia = function (resultGeocode){
@@ -222,7 +224,7 @@ atendimento = function () {
         $("#qtdVitimas").val(1);
         $('#btnChamarAmbulancia').prop( "disabled", true);
         $('#btnRegistrarOcorrencia').prop( "disabled", true);
-        $("#listaCriseSelecao").val(" ");
+        _show_crisis();
         mapa.clearMap();
     }
 
@@ -241,6 +243,7 @@ atendimento = function () {
     }
 
      var _show_crisis = function (){
+       $("#listaCriseSelecao").find('option').remove();
         $.ajax({
             url: '/api/show-crisis',
             type: 'POST',
@@ -250,25 +253,13 @@ atendimento = function () {
         }).done(function(data, textStatus, jqXHR) {
           if(data.status == "OK"){
             $('<option>').val('').text('Select Crise').appendTo('#listaCriseSelecao');
+
             for(i in data.rows){
               $('<option>').val(data.rows[i].cri_id).text(data.rows[i].cri_ds).appendTo('#listaCriseSelecao');
             }
             objCrise = data.rows;
           }
-/*
-            size = parseInt(JSON.stringify(data['rows'].length));
-            for (i = 0; i < size; i++) {
-                jobject[i] = JSON.stringify(data['rows'][i]['cri_ds']);
-            }
 
-            textAmb = "";
-            $('.crise').find('option').remove().end().append('<option value="">Select a crisis</option>').val('');
-            for (i = 0; i < size; i++) {
-                //textAmb += jobject[i].replace(/["]/g,"") + "\n";
-                var criseid = jobject[i].replace(/["]/g,"");
-                $('<option>').val(criseid).text(criseid).appendTo('.crise');
-            }
-            */
         }).fail(function(jqXHR, textStatus, errorThrown) {
             alert(jqXHR.responseJSON.message);
         });

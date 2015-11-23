@@ -338,7 +338,7 @@ exports.showCrisis = function (req, res) {
     var sess = req.session;
 
     req.getConnection(function(err,connection){
-        var query = connection.query('SELECT cri_id, cri_ds, cri_afetados, latitudeBoxValue, LongitudeBoxValue from crise;', function(err,rows,fields) {
+        var query = connection.query('SELECT cri_id, cri_ds, cri_afetados, latitudeBoxValue, LongitudeBoxValue from crise  where cri_id not in (select id_crise from ocorrencia);', function(err,rows,fields) {
             if(err) {
                 return console.log("Error Query : %s ",err );
             }else
