@@ -1,5 +1,5 @@
 import threading
-from drone_api import libardrone
+from api import libardrone
 
 class Drone(object):
 
@@ -31,3 +31,4 @@ class Drone(object):
     self.drone.land()
 
     self.lock.release()
+
