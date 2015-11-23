@@ -114,7 +114,17 @@
                   </div>
                </div>
                <div role="tabpanel" class="tab-pane fade in" id="mapa">
-                  <%- include relatorio.ejs %>  
+
+                  <%- include ./relatorio.ejs %>
+
+                  <div id="floating-panel">
+                    <button class="btn btn-primary" onclick="toggleHeatmap()">Toggle Heatmap</button>
+                    <button class="btn btn-primary" onclick="changeGradient()">Change gradient</button>
+                    <button class="btn btn-primary" onclick="changeRadius()">Change radius</button>
+                    <button class="btn btn-primary" onclick="changeOpacity()">Change opacity</button>
+                  </div>
+                 
+                  <div id="map"></div>
 
                   <script src="https://maps.googleapis.com/maps/api/js"></script>
                   <script type="text/javascript" src="/../js/mapa.js"></script> 

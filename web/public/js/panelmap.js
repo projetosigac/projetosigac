@@ -3,23 +3,119 @@
     var heatmapCircle;
     var pointMvc = new google.maps.MVCArray([]);
 
+    var pointMvcAmb = new google.maps.MVCArray([]);
+    var pointMvcSens = new google.maps.MVCArray([]);
+    var pointMvcStat = new google.maps.MVCArray([]);
+
+    var markers = [];
+
      
 
     function initialize() {
+     
+      startMapPanel();
       initMap();
-      bindFormToMap();
-      startMapPanel();     
+      bindFormToMap(); 
+
+   }
+
+
+   // Sets the map on all markers in the array.
+   function setMapOnAll(map) {
+     for (var i = 0; i < markers.length; i++) {
+       markers[i].setMap(map);
+     }
+   }
+
+   // Removes the markers from the map, but keeps them in the array.
+   function clearMarkers() {
+     setMapOnAll(null);
+   }
+
+   // Shows any markers currently in the array.
+   function showMarkers() {
+     setMapOnAll(map);
+   }
+
+   // Deletes all markers in the array by removing references to them.
+   function deleteMarkers() {
+     clearMarkers();
+     markers = [];
+   }
+
+
+    function startGeolocation(){
+
+        var infoWindow = new google.maps.InfoWindow({map: map});
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+ 
+    function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+      infoWindow.setPosition(pos);
+      infoWindow.setContent(browserHasGeolocation ?
+                            'Error: The Geolocation service failed.' :
+                            'Error: Your browser doesn\'t support geolocation.');
     }
+
+
 
     function startMapPanel(){
-      $("a[href='#mapa']").on('shown.bs.tab', function(){
-        google.maps.event.trigger(map, 'resize');
-      });
+        $("a[href='#mapa']").on('shown.bs.tab', function(){
+          google.maps.event.trigger(map, 'resize');
+        });
     }
 
-    function updatePoints(finished) {
+       function updatePoints(finished) {
+          $.ajax({ 
+            url: "/defcivil/getOccPositions", 
+            type: "get",
+            data: {
+              "r": heatmapCircle.getRadius(),
+              "center": {
+                "lat": heatmapCircle.getCenter().H,
+                "lng": heatmapCircle.getCenter().L
+              }
+            },
+            success: function(resp) {
+              while(pointMvc.getLength() > 0) pointMvc.pop();
+
+              var points = JSON.parse(resp);
+
+              for (var i=0; i<points.length; i++) {
+                var p = points[i];
+                pointMvc.push(new google.maps.LatLng(p.lat, p.lng));
+              }
+              if (finished) finished(true);
+            },
+            error: function() {
+              if (finished) finished(false);
+            }
+          });
+      }
+
+
+    function updatePointsAmbulances(finished) {
       $.ajax({ 
-        url: "/defcivil/getOccPositions", 
+        url: "/defcivil/getAmbPositions", 
         type: "get",
         data: {
           "r": heatmapCircle.getRadius(),
@@ -29,13 +125,26 @@
           }
         },
         success: function(resp) {
-          while(pointMvc.getLength() > 0) pointMvc.pop();
+
+          var image = '../images/Ambulance.png';
+
+          while(pointMvcAmb.getLength() > 0) pointMvcAmb.pop();
 
           var points = JSON.parse(resp);
 
           for (var i=0; i<points.length; i++) {
             var p = points[i];
-            pointMvc.push(new google.maps.LatLng(p.lat, p.lng));
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(p.lat, p.lng),
+                map: map,
+                icon: image,
+                animation: google.maps.Animation.DROP,
+                //shape: shape,
+                title: p.id
+              }); 
+
+            markers.push(marker);
+
           }
           if (finished) finished(true);
         },
@@ -45,6 +154,87 @@
       });
     }
 
+      function updatePointsStations(finished) {
+        $.ajax({ 
+          url: "/defcivil/getStaPositions", 
+          type: "get",
+          data: {
+            "r": heatmapCircle.getRadius(),
+            "center": {
+              "lat": heatmapCircle.getCenter().H,
+              "lng": heatmapCircle.getCenter().L
+            }
+          },
+          success: function(resp) {
+             var image = '../images/station.png';
+
+            while(pointMvcStat.getLength() > 0) pointMvcStat.pop();
+
+            var points = JSON.parse(resp);
+
+            for (var i=0; i<points.length; i++) {
+              var p = points[i];
+              var marker = new google.maps.Marker({
+                  position: new google.maps.LatLng(p.lat, p.lng),
+                  map: map,
+                  icon: image,
+                  animation: google.maps.Animation.DROP,
+                  //shape: shape,
+                  title: p.id
+                });                    
+
+              markers.push(marker);
+       
+            }
+            if (finished) finished(true);
+          },
+          error: function() {
+            if (finished) finished(false);
+          }
+        });
+    }
+
+   
+      function updatePointsSensors(finished) {
+        $.ajax({ 
+          url: "/defcivil/getSensPositions", 
+          type: "get",
+          data: {
+            "r": heatmapCircle.getRadius(),
+            "center": {
+              "lat": heatmapCircle.getCenter().H,
+              "lng": heatmapCircle.getCenter().L
+            }
+          },
+          success: function(resp) {
+           var image = '../images/Sensor.png';
+
+             while(pointMvcSens.getLength() > 0) pointMvcSens.pop();
+
+             var points = JSON.parse(resp);
+
+             for (var i=0; i<points.length; i++) {
+               var p = points[i];
+               var marker = new google.maps.Marker({
+                   position: new google.maps.LatLng(p.lat, p.lng),
+                   map: map,
+                   icon: image,
+                   animation: google.maps.Animation.DROP,
+                   //shape: shape,
+                   title: p.id
+                 });  
+
+                 markers.push(marker);
+         
+             }
+            if (finished) finished(true);
+          },
+          error: function() {
+            if (finished) finished(false);
+          }
+        });
+      }
+
     function roundDecimal(num, decplaces) {
         var multiplier = 1;
         while (decplaces-- > 0) multiplier *= 10;
@@ -52,12 +242,12 @@
     }
 
     function initMap() {
-      var center = new google.maps.LatLng(-23.200809, -45.892521);
+      var center = new google.maps.LatLng(-23.1848566, -45.8888397);
       map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
+        zoom: 13,
         center: center,
         mapTypeId: google.maps.MapTypeId.HYBRID,
-        streetViewControl: false
+        streetViewControl: true
       });
       geocoder = new google.maps.Geocoder();
 
@@ -67,20 +257,23 @@
         radius: 16
       });
 
+     
       heatmapCircle = new google.maps.Circle({
         center: center,
         clickable: true,
         editable: true,
         draggable: false,
-        fillColor: '#1E90FF',
+        fillColor: '#ff8080',
         strokeColor: '#1E90FF',
         fillOpacity: 0.2,
         strokeOpacity: 0.4,
         strokeWeight: 2,
-        radius: 1000,
+        radius: 3000,
         zIndex: 1,
         map: map,
       });
+
+ 
     }
 
     var editingCircle = false;
@@ -159,10 +352,32 @@
 
       $('#heatmap_form').submit(function() {
         var btn = $('#generate_heatmap');
+        
         if (heatmapCircle.getVisible()) {
           // heatmap not generated yet, do it now
-          btn.text('Working...');
-          updatePoints(updateViewsForHeatmap);
+          //updatePoints(updateViewsForHeatmap);
+          clearMarkers();   
+
+          switch ($('#occurrence_type :selected').text()) {
+              case "All":
+                  updatePointsAmbulances(updateViewsForHeatmap);
+                  updatePointsSensors(updateViewsForHeatmap);
+                  updatePointsStations(updateViewsForHeatmap);
+                  break;
+              case "Ambulances":
+                  updatePointsAmbulances(updateViewsForHeatmap);
+                  break;
+              case "Sensors":
+                  updatePointsSensors(updateViewsForHeatmap);
+                  break;
+              case "Stations":
+                  updatePointsStations(updateViewsForHeatmap);
+                  break;
+              case "None":  
+                  break;            
+          }
+          
+
         } else {
           while (pointMvc.getLength() > 0) pointMvc.pop();
           updateViewsForHeatmap(false);
@@ -174,13 +389,7 @@
     function updateViewsForHeatmap(generated) {
       $('#generate_heatmap').text(generated ? 'Redo Search' : 'Gerar Heatmap');
       heatmapCircle.setVisible(!generated);
-      map.setOptions({
-        zoomControl: !generated,
-        mapTypeControl: !generated,
-        draggable: !generated,
-        scrollwheel: !generated,
-        disableDoubleClickZoom: generated
-      });
+     
       $('#occurrence_type, #searchRadius, #heatmapCenter, #searchCenterButton').prop('disabled', generated);
     }
 
@@ -221,4 +430,38 @@
             callback(address);
           }
       });
+    }
+
+    function toggleHeatmap() {
+     
+      updatePoints(false);
+      heatmap.setMap(heatmap.getMap() ? null : map);
+    }
+
+    function changeGradient() {
+      var gradient = [
+        'rgba(0, 255, 255, 0)',
+        'rgba(0, 255, 255, 1)',
+        'rgba(0, 191, 255, 1)',
+        'rgba(0, 127, 255, 1)',
+        'rgba(0, 63, 255, 1)',
+        'rgba(0, 0, 255, 1)',
+        'rgba(0, 0, 223, 1)',
+        'rgba(0, 0, 191, 1)',
+        'rgba(0, 0, 159, 1)',
+        'rgba(0, 0, 127, 1)',
+        'rgba(63, 0, 91, 1)',
+        'rgba(127, 0, 63, 1)',
+        'rgba(191, 0, 31, 1)',
+        'rgba(255, 0, 0, 1)'
+      ]
+      heatmap.set('gradient', heatmap.get('gradient') ? null : gradient);
+    }
+
+    function changeRadius() {
+      heatmap.set('radius', heatmap.get('radius') ? null : 20);
+    }
+
+    function changeOpacity() {
+      heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
     }

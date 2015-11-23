@@ -110,6 +110,44 @@ function PanelDAO(pool) {
         });
     };
 
+    this.getAmbulancesPositions = function(callback) {
+      var queryString = this.queryGenerateBatch("placa_ambulancia as id, latitude As lat, longitude As lng","localizacao_ambulancia","placa_ambulancia","");
+        var query = self.pool.query(queryString, function (err, rows) {
+            if (err) {
+                callback(err, {});
+            } else {
+                var result = (rows ? rows : {});
+                callback(null, result);
+            }
+        });
+    };
+
+    this.getSensorsPositions = function(callback) {
+      var queryString = this.queryGenerateBatch("stu_id as id, stu_lat as lat,stu_long as lng","SenTempUmid","stu_id","");
+        var query = self.pool.query(queryString, function (err, rows) {
+            if (err) {
+                callback(err, {});
+            } else {
+                var result = (rows ? rows : {});
+                callback(null, result);
+            }
+        });
+    };
+
+    this.getStationsPositions = function(callback) {
+      var queryString = this.queryGenerateBatch(" station_name As id, station_lat As lat, station_lon As lng","stations","station_name","");
+        var query = self.pool.query(queryString, function (err, rows) {
+            if (err) {
+                callback(err, {});
+            } else {
+                var result = (rows ? rows : {});
+                callback(null, result);
+            }
+        });
+    };
+
+
+
     this.queryGenerate = function(col,table,id){
       var queryString = "SELECT " + col +" FROM " + table + " ORDER BY " + id + " DESC LIMIT 1";
       return queryString;

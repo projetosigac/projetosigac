@@ -85,10 +85,9 @@ app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carr
 app.get('/defcivil', util.autenticarSessao, defCivil.carregarPagina);
 app.get('/defcivil/getParams', util.autenticarSessao, defCivil.getParameters);
 app.get('/defcivil/getOccPositions', util.autenticarSessao, defCivil.getOccurrencesPositions);
-
-//temporary route for heatmap - rshigemura
-app.get('/defcivil/relatorio', util.autenticarSessao, routes.relatorio);
-app.get('/reports/get_list', util.autenticarSessao , reports.get_list);
+app.get('/defcivil/getAmbPositions', util.autenticarSessao, defCivil.getAmbulancesPositions);
+app.get('/defcivil/getSensPositions', util.autenticarSessao, defCivil.getSensorsPositions);
+app.get('/defcivil/getStaPositions', util.autenticarSessao, defCivil.getStationsPositions);
 
 /*
 métodos internos do sistema que necessita de sessão
