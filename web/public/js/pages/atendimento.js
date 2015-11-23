@@ -51,8 +51,8 @@ atendimento = function () {
             mapa.clearMap();
             //mapa.deleteMarkers();
             iconCustom = [];
-            iconCustom.push({title: 'Base Ambulance', image: '../images/marker-ambulance.png', address: data[0].samu_endereco});
-            iconCustom.push({title: 'Local Crisis', image: '../images/marker-crisis.png', address: $("#enderecoAtendimentoGoogle").val()});
+            iconCustom.push({title: 'Ambulance Station', image: '../images/marker-ambulance.png', address: data[0].samu_endereco});
+            iconCustom.push({title: 'Crisis Location', image: '../images/marker-crisis.png', address: $("#enderecoAtendimentoGoogle").val()});
             mapa.calcularRota(data[0].samu_endereco, $("#enderecoAtendimentoGoogle").val(), iconCustom);
 
             _numeroAmbulancias($("#qtdVitimas").val());

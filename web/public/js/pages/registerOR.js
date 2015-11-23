@@ -17,7 +17,7 @@ registerOR = function() {
             dataType: 'json',
             data: requestData
         }).done(function(data, textStatus, jqXHR) {
-            //$("#labelMsg").html("Equipment included with successfully!");
+            //$("#labelMsg").html("Equipment registered successfully!");
             $( '#formInsertOR' ).each(function(){
                 this.reset();
             });
