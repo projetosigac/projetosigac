@@ -19,7 +19,7 @@ cadastroEquipamentoAmb = function(){
             data: requestData
         }).done(function(data, textStatus, jqXHR) {
             //Equipamento Inserido na Ambulância
-            $("#labelMsg").html("Equipment included in ambulance with successfully!");
+            $("#labelMsg").html("Equipment included in ambulance successfully!");
             $("#imgMsg").attr("src","/../images/ok.png");
             $('#myModal').modal('toggle');
         }).fail(function(jqXHR, textStatus, errorThrown) {
@@ -44,7 +44,7 @@ cadastroEquipamentoAmb = function(){
             data: JSON.stringify({nomeEquipamentoAmb: equip.replace('_', ' '), placaAmb: placa})
         }).done(function(data, textStatus, jqXHR) {
             //Equipamento Deletado da Ambulância
-            $("#labelMsg").html("Equipment excluded with successfully the ambulance!");
+            $("#labelMsg").html("Equipment excluded successfully from ambulance!");
             $("#imgMsg").attr("src","/../images/remove.png");
             $('#myModal').modal('toggle');
             getEquipamentoAmb.api_get_equip_amb();
