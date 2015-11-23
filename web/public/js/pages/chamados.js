@@ -26,7 +26,7 @@ chamados = function () {
                 tr.append("<td>"+data[i].n_ambulancias_necessarias+"</td>");
                 //tr.append("<td>"+_maisProxima(data[i])+"</td>");
                 tr.append("<td>"+data[i].endereco+"</td>");
-                
+
                 $('#tableOcorrencia tbody').append(tr);
 
                 var marker = new google.maps.Marker({
@@ -124,53 +124,7 @@ chamados = function () {
     }
 
     var _maisProxima = function (ocorrencia) {
-        _ambulanciaMaisProxima(enderecosAmbulancias, ocorrencia);
-    }
-
-    var _ambulanciaMaisProxima = function (origem, ocorrencia) {
-        var distanceService = new google.maps.DistanceMatrixService();
-        distanceService.getDistanceMatrix({
-            origins: origem,
-            destinations: [ocorrencia.endereco],
-            travelMode: google.maps.TravelMode.DRIVING,
-            unitSystem: google.maps.UnitSystem.METRIC,
-            durationInTraffic: true,
-            avoidHighways: false,
-            avoidTolls: false
-        },
-
-        function (response, status) {
-            if (status == google.maps.DistanceMatrixStatus.OVER_QUERY_LIMIT) {
-                setTimeout(function() {
-                    _ambulanciaMaisProxima(origem, ocorrencia);
-                }, 200);
-            }
-
-            else if (status != google.maps.DistanceMatrixStatus.OK) {
-                console.log('Error:', status);
-            }
-
-            else {
-                console.log(response);
-
-                var caminhos_json = response;
-                var melhor_endereco = origem[0];
-                var tempo_minimo = 0;
-                var encontrou = false;
-
-                for (var x = 0; x < origem.length; x++) {
-                    if (caminhos_json['rows'][x]['elements'][0]['status'] == 'OK') {
-                        if (encontrou == false || caminhos_json['rows'][x]['elements'][0]['duration']['value'] < tempo_minimo) {
-                            tempo_minimo = caminhos_json['rows'][x]['elements'][0]['duration']['value'];
-                            melhor_endereco = origem[x];
-                            encontrou = true;
-                        }
-                    }
-                }
-
-                $("#maisProxima"+ocorrencia.id).text(melhor_endereco);
-            }
-        });
+        return util.calcularLocalMaisProximo(enderecosAmbulancias, ocorrencia);
     }
 
     return{

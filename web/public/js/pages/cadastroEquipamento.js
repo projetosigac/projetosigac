@@ -18,7 +18,7 @@ cadastroEquipamento = function() {
             data: requestData
         }).done(function(data, textStatus, jqXHR) {
             //equipamento incluído com sucesso
-            $("#labelMsg").html("Equipment included with successfully!");
+            $("#labelMsg").html("Equipment registered successfully!");
             $("#imgMsg").attr("src","/../images/ok.png");
             $('#myModal').modal('toggle');
         }).fail(function(jqXHR, textStatus, errorThrown) {
@@ -40,7 +40,7 @@ cadastroEquipamento = function() {
             data: JSON.stringify({'equipDesc': item})
         }).done(function(data, textStatus, jqXHR) {
             //equipamento excluído com sucesso
-            $("#labelMsg").html("Equipment excluded with successfully!");
+            $("#labelMsg").html("Equipment excluded successfully!");
             $("#imgMsg").attr("src","/../images/remove.png");
             $('#myModal').modal('toggle');
             getEquipamentoAmb.show_equip();

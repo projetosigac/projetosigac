@@ -117,8 +117,8 @@ exports.insertOR = function (req, res) {
     var input = JSON.parse(JSON.stringify(req.body));
 
     req.getConnection(function(err,connection){
-       
-        var bulletin = {  
+
+        var bulletin = {
             por_officer_id          : input.officerid,
             pol_victim_ident        : input.id,
             pol_victim_name         : input.name,
@@ -135,12 +135,12 @@ exports.insertOR = function (req, res) {
             pol_dt_end_attend       : input.dt_end_attend,
             pol_time_end_attend     : input.time_end_attend,
         };
-        
+
         var query = connection.query("INSERT INTO PoliceReport set ? ",bulletin, function(err, rows)
         {
             if (err) {
                 console.log("Error inserting : %s ",err );
-                return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});      
+                return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});
             }
             return res.json({'status': 'OK'});
         });
@@ -338,12 +338,12 @@ exports.showCrisis = function (req, res) {
     var sess = req.session;
 
     req.getConnection(function(err,connection){
-        var query = connection.query('SELECT cri_ds from crise;', function(err,rows,fields) {
+        var query = connection.query('SELECT cri_id, cri_ds, cri_afetados, latitudeBoxValue, LongitudeBoxValue from crise  where cri_id not in (select id_crise from ocorrencia);', function(err,rows,fields) {
             if(err) {
                 return console.log("Error Query : %s ",err );
-            }
+            }else
+              return res.json({status: 'OK', 'rows' : rows, token: sess.token});
 
-            return res.json({status: 'OK', 'rows' : rows, token: sess.token});
         });
     });
 };
@@ -363,5 +363,4 @@ exports.getCrisis = function (req, res) {
             return res.json({status: 'OK', 'rows' : rows, token: sess.token});
         });
     });
-
 };

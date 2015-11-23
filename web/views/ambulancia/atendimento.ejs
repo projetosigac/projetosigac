@@ -8,26 +8,16 @@
             <div class="container-fluid body-atendimento">
         <div class="row">
             <div class="col-md-3">
-                <!--div class="alert alert-info" id="passo" role="alert">
-                </div-->
+                <div class="alert alert-info" id="passo" role="alert">
+                </div>
                 <form id="formOcorrencia" onsubmit="return false;">
 
-<!--new modifications-->
-
-					<label>Crisis Selection:</label>
+					<label>Crisis:</label>
                     <div class="form-group">
-                        <select name="listaCriseSelecao" class="form-control crise" id="listaCriseSelecao"></select>
+                        <select name="listaCriseSelecao" onchange="atendimento.preencherCrise(this.value);" class="form-control crise" id="listaCriseSelecao"></select>
                     </div>
 
-                    <div class="form-group">
-                        <button type="button" onclick="atendimento.api_get_crisis();" class="btn btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Show Crisis </button>
-                    </div>
-
-<!--new modifications-->
-
-
-                    <!--div class="input-group form-group">
-
+                    <div class="input-group form-group">
                         <input type="text" name="localEmergencia" class="form-control" id="localEmergencia" placeholder="Ex.: Avenida 9 de Julho, Centro, São José dos Campos" onkeydown="if(event.keyCode == 13){atendimento.pesquisarEndereco();}" />
                         <input type="hidden" id="enderecoAtendimentoGoogle" />
                                                 <input type="hidden" name="latitudeEmergencia" id="latitudeEmergencia" />
@@ -37,27 +27,43 @@
                               <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                             </button>
                         </span>
-                    </div-->
+                    </div>
+
                     <label>Victims:</label>
                     <div class="form-group">
-                        <input type="number" min="1" value="1" class="form-control" name="qtdVitimas" id="qtdVitimas" readonly />
+                        <input type="number" min="1" value="1" class="form-control" name="qtdVitimas" id="qtdVitimas" />
                     </div>
                     <div class="form-group">
                         <button type="button" id="btnChamarAmbulancia" class="btn btn-info" disabled onclick="atendimento.chamarAmbulancia();"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Calculate Ambulances</button>
                     </div>
-                    <label>Ambulances Qty:</label>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="qtdAmb" id="qtdAmb" readonly/>
-                    </div>
-                    <label>Doctors Qty:</label>
-                    <div class="form-group">
-                        <input type="text" class="form-control" name="qtdMed" id="qtdMed" readonly/>
+                    <ul class="list-inline">
+                      <li>
+                        <label>Ambulances Qty:</label>
+                        <input type="text" class="form-control" style="width:60px;" name="qtdAmb"  id="qtdAmb" readonly="true"/>
+                      </li>
+                      <li>
+                        <label>Doctors Qty:</label>
+                        <input type="text" class="form-control"  style="width:60px;" name="qtdMed" id="qtdMed" readonly="true" />
+                      </li>
+                    </ul>
+                    <input type="hidden" name="nroHospitais" id="nroHospitais" />
+                    <div  id="listaHospitais">
+                      <ul class="list-inline">
+                        <li>
+                          <label>Hospital's:</label>
+                              <input type="text" class="form-control" name="hospital" id="hospital" readonly="true" />
+                        </li>
+                        <li>
+                          <label>Victims Qty:</label>
+                              <input type="text" class="form-control" style="width:60px;" name="vitimasHospital" id="vitimasHospital" readonly="true" />
+                        </li>
+                      </ul>
                     </div>
                     <label>Observation:</label>
                     <div class="form-group">
                         <textarea class="form-control" name="observacao" rows="3"></textarea>
                     </div>
-                    <button type="submit" id="btnRegistrarOcorrencia" class="btn btn-primary" data-toggle="modal" disabled onclick="atendimento.salvarOcorrencia();">Register Occurence</button>
+                    <button type="submit" id="btnRegistrarOcorrencia" class="btn btn-primary btnLoading" data-toggle="modal" disabled onclick="atendimento.salvarOcorrencia();">Register Occurence</button>
                 </form>
             </div>
             <div class="col-md-9">
@@ -83,6 +89,24 @@
         </div>
       </div>
     </div>
+    <!-- Modal: Estouro do Limite de Leitos -->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <center>
+                <img src="/../images/attention.png" style="width:150px;" />
+                <br />
+                <label>The number of victims is higher than the number of beds available!</label>
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Accept</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
 <%- include ../layouts/footer.ejs %>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
 <script type="text/javascript" src="/../js/mapa.js"></script>
@@ -91,7 +115,6 @@
 <script>
     $(document).ready(function(){
         atendimento.init();
-        atendimento.show_crisis();
     });
 </script>
 </div>

@@ -89,14 +89,36 @@ function OcorrenciaDAO(pool) {
       });
     };
 
-    this.salvarOcorrencia = function(obj, callback) {
-      var query = self.pool.query("INSERT INTO ocorrencia(data_abertura, status, n_ambulancias_necessarias, n_vitimas,\
-         latitude, longitude, endereco, comentarios) VALUES (NOW(),'ABERTO',?,?,?,?,?,?)", [obj.qtdAmb, obj.qtdVitimas, obj.latitude,
-           obj.longitude, obj.endereco, obj.observacao], function (err, rows) {
+    this.atualizarLeitosHospital = function(obj, callback){
+      var query = self.pool.query("UPDATE hospitais SET leitos_ocupados = leitos_ocupados + ? \
+       WHERE id_hospital=?", [obj.qtdVitimaHospital, obj.id_hospital], function (err, rows) {
+          if (err)
+              console.log(err);
+      });
+    };
+    this.salvarOcorrenciaHospital = function(obj, callback) {
+      var query = self.pool.query("INSERT INTO ocorrencia_hospital(id_ocorrencia, id_hospital, num_vitimas) \
+         VALUES (?,?,?)", [obj.id_ocorrencia, obj.hospital.id_hospital, obj.hospital.qtdVitimaHospital], function (err, rows) {
           if (err) {
               callback(err, {});
           } else {
-              callback(null, {status: 'OK'});
+              callback({id_hospital: obj.hospital.id_hospital, qtdVitimaHospital: obj.hospital.qtdVitimaHospital});
+          }
+      });
+    };
+
+    this.salvarOcorrencia = function(obj, callback) {
+      var query = self.pool.query("INSERT INTO ocorrencia(data_abertura, status, n_ambulancias_necessarias, n_vitimas,\
+         latitude, longitude, endereco, comentarios, id_crise) VALUES (NOW(),'ABERTO',?,?,?,?,?,?,?)", [obj.qtdAmb, obj.qtdVitimas, obj.latitude,
+           obj.longitude, obj.endereco, obj.observacao, obj.id_crise], function (err, rows) {
+          if (err) {
+              callback(err, {});
+          } else {
+              for(i in obj.hospital){
+                  var obj2 = {id_ocorrencia: rows.insertId, hospital: obj.hospital[i]};
+                  self.salvarOcorrenciaHospital(obj2, self.atualizarLeitosHospital);
+              }
+              callback(null, {status: 'OK', id: rows.insertId});
           }
       });
     };
