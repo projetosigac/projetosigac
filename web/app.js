@@ -86,6 +86,8 @@ app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carr
 app.get('/defc', util.autenticarSessao, defc.carregarPagina)
 
 
+//var policia = require('./routes/policia');
+//app.get('/policia/BO', util.autenticarSessao, policia.carregarPagina);
 
 /*
 métodos internos do sistema que necessita de sessão
@@ -94,6 +96,7 @@ app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.ca
 app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.salvarOcorrencia);
 app.get('/ambulancia/listar-ocorrencias', util.autenticarSessao, atendimento.listarOcorrencia);
 app.get('/ambulancia/localizacao-ambulancias', util.autenticarSessao, atendimento.localizacaoAmbulancias);
+app.post('/uti/comunicarObito', util.autenticarSessao, utiRegisteredVictims.registrarObito);
 
 /*
 ***Exemplo de criação de rota passando parametros
@@ -154,6 +157,20 @@ require('./routes/firefighter/rescueAndAftermathApi')(app);
  * @author 
  */
 require('./routes/firefighter/searchAndRescue')(app);
+
+
+
+/**
+ * Requires Police OR
+ * @author 
+ */
+require('./routes/police/OR')(app);
+
+// apis Police
+app.post('/api/insert-OR', util.autenticarSessao, api.insertOR);
+app.post('/api/show-ORs', util.autenticarSessao, api.showORs);
+
+
 
 // API error handler
 //app.use(function(err, req, res, next) {

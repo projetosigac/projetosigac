@@ -1,0 +1,91 @@
+<script type="text/javascript" src="/../js/pages/registerOR.js"></script>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+    Occurrence Report
+    </div>
+    <div class="panel-body">
+        <form class="form-vertical" onsubmit="return !!(registerOR.api_insert_OR() & getOR.show_OR());"  id="formInsertOR">
+            <label>*Office ID:</label>
+            <div class="form-group">
+                <input type="int" name="officerid"  placeholder="Ex.: Officer ID" class="form-control" id="officerid" />
+            </div>
+            
+            <label>Victim Identification:</label>
+            <div class="form-group">
+                <input type="text" name="id"  placeholder="Ex.: 43003304" class="form-control" id="id" />
+            </div>
+            
+            <label>Full Name of the Victim:</label>
+            <div class="form-group">
+                <input type="text" name="name"  placeholder="Ex.: Full name" class="form-control" id="name" />
+            </div>
+            
+            <label>Adress:</label>
+            <div class="form-group">
+                <input type="text" name="adress"  placeholder="Ex.: Kennedy St. 47" class="form-control" id="adress" />
+            </div>
+            
+            <label>City:</label>
+            <div class="form-group">
+                <input type="text" name="city"  placeholder="Ex.: St. Louis" class="form-control" id="city" />
+            </div>
+
+            <label>State:</label>
+            <div class="form-group">
+                <input type="text" name="state"  placeholder="Ex.: MO" class="form-control" id="state" />
+            </div>
+            
+            <label>Date of the Fact:</label>
+            <div class="form-group">
+                <input type="date" name="date_fact"  placeholder="Ex.: 03/04/2015" class="form-control" id="date_fact" />
+            </div>
+            
+            <label>Time of the Fact:</label>
+            <div class="form-group">
+                <input type="time" name="time_fact"  placeholder="Ex.: 14:15" class="form-control" id="time_fact" />
+            </div>
+            
+            <label>Bulletin Register Date:</label>
+            <div class="form-group">
+                <input type="date" name="dt_start_attend"  placeholder="Ex.: 03/04/2015" class="form-control" id="dt_start_attend" />
+            </div>
+            
+            <label>Bulletin Register Time:</label>
+            <div class="form-group">
+                <input type="time" name="time_start_attend"  placeholder="Ex.: 14:15" class="form-control" id="time_start_attend" />
+            </div>
+            
+            <label>Type of Incident:</label>
+            <div class="form-group">
+                <input type="text" name="inc_type"  placeholder="Ex.: Missing Person" class="form-control" id="inc_type" />
+            </div>
+            
+            <label>Number of Missing Victims:</label>
+            <div class="form-group">
+                <input type="int" name="missing"  placeholder="Ex.: 10" class="form-control" id="missing"/>
+            </div>
+            
+            <label>Bulletin Close Date:</label>
+            <div class="form-group">
+                <input type="date" name="dt_end_attend"  placeholder="Ex.: 03/04/2015" class="form-control" id="dt_end_attend" />
+            </div>
+            
+            <label>Bulletin Close Time:</label>
+            <div class="form-group">
+                <input type="time" name="time_end_attend"  placeholder="Ex.: 14:15" class="form-control" id="time_end_attend" />
+            </div>
+            
+            <label>Description:</label>
+            <div class="form-group">
+                <textarea name="description" placeholder="Ex.: Missing Person" class="form-control" id="description" rows="3"></textarea>
+            </div>
+    
+            <div class="form-group">
+                <button type="submit" name="bt_1" class="btn btn-info"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Insert </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+

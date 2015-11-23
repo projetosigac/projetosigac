@@ -111,6 +111,56 @@ exports.logout = function (req, res) {
     });
 };
 
+/*Insert Occurrence Report*/
+exports.insertOR = function (req, res) {
+    var sess = req.session;
+    var input = JSON.parse(JSON.stringify(req.body));
+
+    req.getConnection(function(err,connection){
+       
+        var bulletin = {  
+            por_officer_id          : input.officerid,
+            pol_victim_ident        : input.id,
+            pol_victim_name         : input.name,
+            pol_address             : input.adress,
+            pol_city                : input.city,
+            pol_state               : input.state,
+            pol_dt_fact             : input.date_fact,
+            pol_time_fact           : input.time_fact,
+            pol_dt_start_attend     : input.dt_start_attend,
+            pol_time_start_attend   : input.time_start_attend,
+            pol_desc                : input.description,
+            pol_incid_type          : input.inc_type,
+            pol_num_missing_people  : input.missing,
+            pol_dt_end_attend       : input.dt_end_attend,
+            pol_time_end_attend     : input.time_end_attend,
+        };
+        
+        var query = connection.query("INSERT INTO PoliceReport set ? ",bulletin, function(err, rows)
+        {
+            if (err) {
+                console.log("Error inserting : %s ",err );
+                return res.json({status: 'Error 401', message: 'Nao foi possivel inserir no banco de dados', body: req.body});      
+            }
+            return res.json({'status': 'OK'});
+        });
+    });
+};
+
+/*Show Occurrence Reports*/
+exports.showORs = function (req, res) {
+    var sess = req.session;
+    req.getConnection(function(err,connection){
+        var query = connection.query('SELECT * from PoliceReport;', function(err,rows,fields) {
+            if(err) {
+                return console.log("Error Query : %s ",err );
+            }
+            return res.json({status: 'OK', 'rows' : rows, token: sess.token});
+        });
+    });
+};
+
+
 /*cadastrar equipamento no bd*/
 exports.insertEquip = function (req, res) {
     var sess = req.session;
@@ -205,6 +255,8 @@ exports.deleteEquipAmb = function (req, res) {
     });
 };
 
+exports.registrarObito = function(req,res){}
+
 /*Get Equip*/
 exports.getEquipAmb = function (req, res) {
     var sess = req.session;
@@ -253,13 +305,14 @@ exports.showAmb = function (req, res) {
 
 exports.leituraSinais = function (req, res) {
     var id_vitima  = req.body.id_vitima;
-    var batimentos  = req.body.batimentos;
+    var pulso  = req.body.pulso;
+    var bpm  = req.body.bpm;
     var temperatura = req.body.temperatura;
     var oximetria   = req.body.oximetria;
 
     req.getConnection(function(err,connection) {
-        var query = connection.query('INSERT INTO vitimas_status (id_vitima, batimento_cardiaco, temperatura, oximetria, timestamp) VALUES (?,?,?,?,NOW());',
-            [id_vitima, batimentos, temperatura, oximetria],
+        var query = connection.query('INSERT INTO vitimas_status (id_vitima, pulso, bpm, temperatura, oximetria, timestamp) VALUES (?,?,?,?,?,NOW());',
+            [id_vitima, pulso, bpm, temperatura, oximetria],
 
             function(err, result) {
                 if(err) {

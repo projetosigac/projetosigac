@@ -1,0 +1,33 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Occurrence Reports
+                </div>
+                <div class="panel-body">
+                    <div class="dataTable_wrapper table-responsive">
+                        <table class="table table-striped table-bordered table-hover table-condensed table-responsive" id="tableOR">
+                            <thead>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <%- include OR_register %>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/../js/pages/getOR.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        getOR.show_OR();
+    });
+</script>
