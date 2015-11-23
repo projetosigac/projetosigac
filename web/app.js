@@ -140,9 +140,9 @@ app.use(app.router);
 //apis bombeiros
 
 app.post('/tag',apiBombeiro.iniVictim)
-app.get('/api/bombeiro',apiBombeiro.list)
+app.get('/api/bombeiro',customers.list)
 app.get('/api/bombeiro/getBraceletList',apiBombeiro.getList)
-app.post('/api/bombeiro/',apiBombeiro.classifyVictim)
+//app.post('/api/bombeiro/',apiBombeiro.classifyVictim)
 app.get('/api/bombeiro/victimsOfColor/:color',apiBombeiro.getVictimsOfColor) //typeof(getNames) = boolean
 app.get('/api/bombeiro/countVictims/:color',apiBombeiro.colorCounter)
 //app.get('/api/bombeiro/:token',apiBombeiro.deleteBracelet)
