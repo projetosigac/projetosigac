@@ -122,9 +122,44 @@ exports.getParameters = function (req, res, next) {
             else{
                 args.push(result);
                 console.log(args);
+                //flowController.emit('occPositions',args)
                 res.json(args);
             }
         });
     })
+
+    //ESTA FUNÇÃO NÃO ESTÁ SENDO CHAMADA NA ATUALIZAÇÃO PARA NÃO CAUSAR OVERHEAD NO PAINEL
+
+        .on('occPositions',function(args){
+            panelDAO.getOccurrencesPositions(function(err, result) {
+                if (err) 
+                    return next(err);
+                else{
+                    args.push(result);
+                    console.log(args);
+                    res.json(args);
+                }
+            });
+        })
+
+    //FIM
+
     flowController.emit('start',[]);
+};
+
+
+exports.getOccurrencesPositions = function (req, res) {    
+
+    panelDAO.getOccurrencesPositions(function(err, result) {
+        if(err) {
+            console.log(err);
+            res.statusCode = 401;
+            return res.json({status: 'Error 401', message: 'Nao foi possivel consultar as posições das ocorrências', body: req.body});
+        }
+        else{
+            //return res.json(result);
+            res.send(JSON.stringify(result, null, 3));
+        }
+    });
+   
 };

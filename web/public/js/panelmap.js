@@ -8,12 +8,18 @@
     function initialize() {
       initMap();
       bindFormToMap();
-      map.checkResize(); 
+      startMapPanel();     
+    }
+
+    function startMapPanel(){
+      $("a[href='#mapa']").on('shown.bs.tab', function(){
+        google.maps.event.trigger(map, 'resize');
+      });
     }
 
     function updatePoints(finished) {
       $.ajax({ 
-        url: "reports/get_list", 
+        url: "/defcivil/getOccPositions", 
         type: "get",
         data: {
           "r": heatmapCircle.getRadius(),
@@ -25,7 +31,7 @@
         success: function(resp) {
           while(pointMvc.getLength() > 0) pointMvc.pop();
 
-          var points = JSON.parse(resp).reports;
+          var points = JSON.parse(resp);
 
           for (var i=0; i<points.length; i++) {
             var p = points[i];

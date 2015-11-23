@@ -84,6 +84,7 @@ app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
 app.get('/defcivil', util.autenticarSessao, defCivil.carregarPagina);
 app.get('/defcivil/getParams', util.autenticarSessao, defCivil.getParameters);
+app.get('/defcivil/getOccPositions', util.autenticarSessao, defCivil.getOccurrencesPositions);
 
 //temporary route for heatmap - rshigemura
 app.get('/defcivil/relatorio', util.autenticarSessao, routes.relatorio);

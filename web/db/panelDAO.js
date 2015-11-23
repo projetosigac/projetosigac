@@ -97,10 +97,28 @@ function PanelDAO(pool) {
             }
         });
     };
+
+    this.getOccurrencesPositions = function(callback) {
+      var queryString = this.queryGenerateBatch("id,latitude as lat,longitude as lng","ocorrencia","id","Where status = 'ABERTO'");
+        var query = self.pool.query(queryString, function (err, rows) {
+            if (err) {
+                callback(err, {});
+            } else {
+                var result = (rows ? rows : {});
+                callback(null, result);
+            }
+        });
+    };
+
     this.queryGenerate = function(col,table,id){
       var queryString = "SELECT " + col +" FROM " + table + " ORDER BY " + id + " DESC LIMIT 1";
       return queryString;
-    };           
+    };
+
+    this.queryGenerateBatch = function(cols,table,id,criteria){
+      var queryString = "SELECT " + cols + " FROM " + table + " " + criteria + " ORDER by " + id;
+      return queryString;
+    };                      
 }
 
 var panelDAO = null;
