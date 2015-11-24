@@ -1,5 +1,6 @@
 from flask import *
 
+from util import *
 from drone_control import DroneController
 
 app = Flask(__name__)
@@ -11,8 +12,8 @@ def home():
 
 @app.route('/send')
 def send():
-    latitude = request.args.get('lat')
-    longitude = request.args.get('lng')
+    latitude = float_or(request.args.get('lat'), 0.0)
+    longitude = float_or(request.args.get('lng'), 0.0)
 
     controller.start_drone_mission(latitude, longitude)
 
