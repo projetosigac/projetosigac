@@ -13,7 +13,7 @@ def home():
 @app.route('/send')
 def send():
     latitude = request.args.get('lat')
-    longitude = request.args.get('long')
+    longitude = request.args.get('lng')
 
     controller.drone_mission(latitude, longitude)
 

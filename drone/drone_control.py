@@ -16,7 +16,7 @@ class DroneController ( object ):
     elif forward < 0:
       self.drone.move_backward()
     if forward != 0:
-      time.sleep(2 * forward)
+      time.sleep(2 * abs(forward))
       self.drone.hover()
 
     if side > 0:
@@ -24,7 +24,7 @@ class DroneController ( object ):
     elif side < 0:
       self.drone.move_left()
     if side != 0:
-      time.sleep(2 * side);
+      time.sleep(2 * abs(side));
       self.drone.hover()
 
   def __drone_mission_sync(self, lat, lng):
