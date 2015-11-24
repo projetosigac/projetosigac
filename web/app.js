@@ -56,6 +56,7 @@ require("./db/ocorrenciaDAO")(pool);
 require("./db/localizacaoAmbulanciaDAO")(pool);
 require("./db/hospitalDAO")(pool);
 require('./db/stationDAO')(pool);
+require("./db/panelDAO")(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.
@@ -71,8 +72,9 @@ var apiBombeiro = require('./routes/bombeiro')
 var util = require('./routes/utils');
 var atendimento = require('./routes/atendimento');
 var hospital = require('./routes/hospital');
-var ambEquipamento = require('./routes/ambEquipamento')
-var defc = require('./routes/defc')
+var ambEquipamento = require('./routes/ambEquipamento');
+var defc = require('./routes/defc');
+var reports = require('./routes/reports');
 
 app.get('/', routes.index);
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
@@ -87,7 +89,13 @@ app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
-app.get('/defc', util.autenticarSessao, defc.carregarPagina)
+app.get('/defc', util.autenticarSessao, defc.carregarPagina);
+app.get('/defc/panel', util.autenticarSessao, defc.carregarPainel);
+app.get('/defc/getParams', util.autenticarSessao, defc.getParameters);
+app.get('/defc/getOccPositions', util.autenticarSessao, defc.getOccurrencesPositions);
+app.get('/defc/getAmbPositions', util.autenticarSessao, defc.getAmbulancesPositions);
+app.get('/defc/getSensPositions', util.autenticarSessao, defc.getSensorsPositions);
+app.get('/defc/getStaPositions', util.autenticarSessao, defc.getStationsPositions);
 
 
 //var policia = require('./routes/policia');

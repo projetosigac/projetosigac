@@ -1,0 +1,42 @@
+  
+
+      <div class="col-md-3">
+                <div class="alert alert-info" role="alert">
+                    <b>Heatmap:</b> Please set the focal point and parameters.
+                </div>
+                <form id="heatmap_form">
+                    
+                    <label>Focal Point:</label>
+                    <div class="input-group form-group">
+                        <input type="text" class="form-control" id="heatmapCenter" value="São José dos Campos" />
+                        <span class="input-group-btn">
+                            <button id="searchCenterButton" type="button" class="btn btn-default" aria-label="Search">
+                              <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                    </div>
+                    <label>Search Radius (Km):</label>
+                    <div class="input-group form-group">                        
+                        <input type="number" value="1" min=".5" step=".1" class="form-control" id="searchRadius" />
+                        <span class="input-group-addon" id="basic-addon2">km</span>
+                    </div>
+
+                    <label>Resources:</label>
+                    <div class="form-group">
+                      <select class="form-control" id="occurrence_type">
+                        <option>All</option>
+                        <option>Ambulances</option>
+                        <option>Sensors</option>
+                        <option>Stations</option>
+                        <option>None</option>
+                      </select>
+                    </div>
+                        <button type="submit" id="generate_heatmap" class="btn btn-primary">Generate Map</button>
+                                    
+                </form>
+            </div>
+      <div class="col-md-9">
+                <div id="map"></div>
+      </div>
+
+
