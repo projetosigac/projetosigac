@@ -10,8 +10,13 @@ class DroneController ( object ):
     self.debug = debug
     self.drone = libardrone.ARDrone()
     self.drone_lock = threading.Lock()
+
     self.mission_picture = self.cam = None
     self.cam_lock = threading.RLock()
+
+    self.is_running = True
+    self.grabber_thread = threading.Thread(target=self.__grab_frames)
+    self.grabber_thread.start()
 
   def shutdown(self):
     if self.drone != None:
@@ -24,6 +29,10 @@ class DroneController ( object ):
     if self.cam != None:
       self.cam.release()
       self.cam = None
+
+    self.is_running = False
+    self.grabber_thread.join()
+
     cv2.destroyAllWindows()
 
   def __move_drone(self, forward, side):
@@ -95,11 +104,30 @@ class DroneController ( object ):
     finally:
       self.cam_lock.release()
 
+  def __grab_frames(self, fps=25):
+    start_time = time.time()
+    grab_count = 0
+    while self.is_running:
+      time.sleep(1)
+      target_grabs = (time.time() - start_time) * fps
+      if not self.cam or not self.cam.isOpened():
+        grab_count = target_grabs
+        continue
+
+      self.cam_lock.acquire()
+      try:
+        while grab_count < target_grabs:
+          grab_count += 1
+          self.cam.grab()
+      finally:
+        self.cam_lock.release()
+
   def take_picture(self, max_retries=5):
     self.cam_lock.acquire()
     try:
       try_count = 0
-      while ++try_count <= max_retries and self.__init_cam():
+      while try_count <= max_retries and self.__init_cam():
+        try_count += 1
         running, frame = self.cam.read()
         if not running:
           self.cam.release()
@@ -111,8 +139,6 @@ class DroneController ( object ):
           return img.tostring()
       return None
     finally:
-      if self.cam != None:
-        self.cam.release()
       self.cam_lock.release()
 
   def get_mission_picture(self):
