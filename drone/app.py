@@ -1,12 +1,10 @@
 from flask import Flask
 from flask import request
-import time
-import threading
 
-import autonomous
+from drone_control import DroneController
 
 app = Flask(__name__)
-drone = autonomous.Drone()
+controller = DroneController()
 
 @app.route('/')
 def home():
@@ -17,9 +15,7 @@ def send():
     latitude = request.args.get('lat')
     longitude = request.args.get('long')
 
-    t = threading.Thread(target=drone.move_drone,
-                         args=[latitude, longitude])
-    t.start()
+    controller.drone_mission(latitude, longitude)
 
     return 'Drone sent to lat=%s long=%s' %(latitude, longitude)
 
