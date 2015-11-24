@@ -50,5 +50,11 @@ class DroneController ( object ):
   def get_image(self):
     return self.image
 
-  def drone_mission(self, lat, lng):
+  def start_drone_mission(self, lat, lng):
     thread.start_new_thread(self.__drone_mission_sync, (lat, lng))
+
+  def drone_busy(self):
+    if not self.lock.acquire(False):
+      return True
+    self.lock.release()
+    return False
