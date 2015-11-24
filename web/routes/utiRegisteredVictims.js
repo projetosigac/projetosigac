@@ -5,7 +5,11 @@
 exports.carregarPagina = function(req, res){
 
 	req.getConnection(function(err,connection){  
-		var queryStr = 'SELECT * FROM sigac.vitimas';
+        var queryStr;
+        if (req.params.cId)
+            queryStr = 'SELECT * FROM sigac.vitimas WHERE crise=' + req.params.cId;
+        else
+            queryStr = 'SELECT * FROM sigac.vitimas';
         var query = connection.query(queryStr, function(err,rows,fields)
         {
             if(err)

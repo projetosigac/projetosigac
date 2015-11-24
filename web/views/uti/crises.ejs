@@ -29,77 +29,24 @@
                                     <thead>
                                         <tr>
                                             <th>Crisis</th>
-                                            <th>Occurence Date</th>
+                                            <th>Description</th>
+                                            <th>Category</th>
+                                            <th>Victims</th>
                                             <th>Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="odd gradeX">
-                                            <td><a href="vitimas">Large-scale accident Explosion</a></td>
-                                            <td>10/10/2015 09h50</td>
-                                            <td class="text-danger">In progress</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-                                                                                <tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
+                                        <% for(var i = 0; i < dados.length; i++) { %>
+                                            <tr class="odd gradeX">
+                                                <td class="text-danger text-center"><%= dados[i].cri_id %></td>
+                                                <td class="text-danger text-center"><%= dados[i].cri_ds %></td>
+                                                <td class="text-danger text-center"><%= dados[i].cri_cat %></td>
+                                                <td class="text-danger text-center">
+                                                    <a href="<%= "registeredVictims" + dados[i].cri_id %>"><%= dados[i].cri_afetados %></a>
+                                                </td>
+                                                <td class="text-danger text-center"><%= dados[i].cri_status %></td>
+                                            </tr>
+                                        <% } %>
                                     </tbody>
                                 </table>
                             </div>

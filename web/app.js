@@ -77,9 +77,11 @@ var defc = require('./routes/defc')
 app.get('/', routes.index);
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
 app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
+app.get('/uti/crises:cId', util.autenticarSessao, utiCrises.carregarPagina);
 app.get('/uti/vitimas', util.autenticarSessao, utiVitimas.carregarPagina);
 app.get('/uti/registeredVictims', util.autenticarSessao, utiRegisteredVictims.carregarPagina);
-app.get('/uti/vitima/:pId', util.autenticarSessao, utiVitima.carregarPagina);
+app.get('/uti/registeredVictims:cId', util.autenticarSessao, utiRegisteredVictims.carregarPagina);
+app.get('/uti/vitima:pId', util.autenticarSessao, utiVitima.carregarPagina);
 app.get('/uti/bedsAvailable', util.autenticarSessao, utiBedsAvailable.carregarPagina);
 app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
