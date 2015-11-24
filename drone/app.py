@@ -18,6 +18,20 @@ def send():
 
     return 'Drone sent to lat=%s long=%s' %(latitude, longitude)
 
+@app.route('/mission-photo')
+def mission_pic():
+    pic = controller.get_mission_picture()
+    if not pic:
+        return send_file('drone.jpg')
+    return Response(pic, mimetype='image/jpeg')
+
+@app.route('/live-photo')
+def live_pic():
+    pic = controller.take_picture(debug=app.debug)
+    if not pic:
+        return send_file('drone.jpg')
+    return Response(pic, mimetype='image/jpeg')
+
 @app.route('/busy')
 def busy():
     return 'Yes' if controller.drone_busy() else 'No'
