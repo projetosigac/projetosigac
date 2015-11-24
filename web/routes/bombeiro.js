@@ -25,7 +25,7 @@ exports.iniVictim = function(req, res){
         });
         console.log(query.sql);
         
-        query = connection.query("INSERT INTO customer (pes_bra_token) VALUES (?) ",[data.bra_tag], function(err, rows)
+        query = connection.query("INSERT INTO vitimas (token) VALUES (?) ",[data.bra_tag], function(err, rows)
         {
   
           if (err)
