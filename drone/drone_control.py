@@ -62,7 +62,7 @@ class DroneController ( object ):
       self.cam = cv2.VideoCapture('tcp://192.168.1.1:5555')
       if not self.cam.isOpened() and debug:
         self.cam.release()
-        self.cam = cv2.VideoCapture(0)
+        self.cam = cv2.VideoCapture(0)  # from webcam
       if not self.cam.isOpened():
         self.cam.release()
         self.cam = None
@@ -91,7 +91,10 @@ class DroneController ( object ):
     return self.mission_picture
 
   def start_drone_mission(self, lat, lng):
+    if self.drone_busy():
+      return False
     thread.start_new_thread(self.__drone_mission_sync, (lat, lng))
+    return True
 
   def drone_busy(self):
     if not self.drone_lock.acquire(False):

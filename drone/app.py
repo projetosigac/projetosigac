@@ -15,9 +15,10 @@ def send():
     latitude = float_or(request.args.get('lat'), 0.0)
     longitude = float_or(request.args.get('lng'), 0.0)
 
-    controller.start_drone_mission(latitude, longitude)
-
-    return 'Drone sent to lat=%s long=%s' %(latitude, longitude)
+    if controller.start_drone_mission(latitude, longitude):
+        return 'Drone sent to lat=%s long=%s' %(latitude, longitude)
+    else:
+        return 'Drone busy! Try again later'
 
 @app.route('/mission-photo')
 def mission_pic():
