@@ -39,7 +39,7 @@
                                         <% for(var i = 0; i < dados.length; i++) { %>
                                             <tr class="odd gradeX">
                                                 <td class="text-danger text-center"><%= dados[i].cri_id %></td>
-                                                <td class="text-danger text-center"><%= dados[i].cri_ds %></td>
+                                                <td class="text-danger text-center"><a href="<%= "registeredVictims" + dados[i].cri_id %>"><%= dados[i].cri_ds %></a></td>
                                                 <td class="text-danger text-center"><%= dados[i].cri_cat %></td>
                                                 <td class="text-danger text-center">
                                                     <a href="<%= "registeredVictims" + dados[i].cri_id %>"><%= dados[i].cri_afetados %></a>

@@ -11,7 +11,7 @@
             <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Large-scale accident Explosion - ID: <%= dados[0].id_vitima %></h1>
+                    <h1 class="page-header">Large-scale accident Explosion - Victim: <%= dados[0].nome %></h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -20,7 +20,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                           Victim Historic ID: <%= dados[0].id_vitima %>
+                           Victim Historic Token: <%= dados[0].token %>
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
@@ -50,7 +50,7 @@
                                     </tbody>
                                 </table>
 
-                                <a href="../vitimas"><< Go Back</a>
+                                <a href="javascript:history.back()"><< Go Back</a>
                             </div>
                             <!-- /.table-responsive -->
 
