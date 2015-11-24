@@ -111,6 +111,8 @@ class DroneController ( object ):
           return img.tostring()
       return None
     finally:
+      if self.cam != None:
+        self.cam.release()
       self.cam_lock.release()
 
   def get_mission_picture(self):
