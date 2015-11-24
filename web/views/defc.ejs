@@ -130,14 +130,19 @@ for (var i = 0; i <= 48; i += 2) {
     time_slots.push('-' + (48 - i)/2 + 'h');
 
     if (i == 0) {
-        light_data.push(5 + Math.floor(4 * factor * Math.random()));
-        severe_data.push(3 + Math.floor(2 * factor * Math.random()));
+        light_data.push(1 + Math.floor(2 * factor * Math.random()));
+        severe_data.push(1 + Math.floor(2 * factor * Math.random()));
         dead_data.push(1 + Math.floor(1 * factor * Math.random()));
     } else {
-        light_data.push(light_data[i/2 - 1] + Math.floor(18 * factor * factor * Math.random()));
-        severe_data.push(severe_data[i/2 - 1] + Math.floor(12 * Math.sqrt(factor) * factor * Math.random()));
-        dead_data.push(dead_data[i/2 - 1] + Math.floor(6 * Math.sqrt(factor) * Math.random()));
+        light_data.push(light_data[i/2 - 1] + Math.floor(3 * factor * factor * Math.random()));
+        severe_data.push(severe_data[i/2 - 1] + Math.floor(2.5 * Math.sqrt(factor) * factor * Math.random()));
+        dead_data.push(dead_data[i/2 - 1] + Math.floor(1.5 * Math.sqrt(factor) * Math.random()));
     }
+}
+
+delta = 24 - light_data[48/2] - severe_data[48/2] - dead_data[48/2];
+for (i = 0; i <= 48/2; ++i) {
+    light_data[i] += delta;
 }
 
 var smoke_time = [];
@@ -149,12 +154,17 @@ for (var i = 0; i <= 24; ++i) {
 }
 
 for (var i = 0; i <= 5000; ++i) {
-    base = 0.75*Math.sqrt(5000/(5000 + 4*i));
-    smoke_data.push([i*24/5000, base + base*Math.random()/6]);
+    base = 0.65*Math.pow(5000/(5000 + 4*i), 1.5) - 0.33;
+
+    if (base < 0.02) {
+        base = 0.02 - 0.000005*i;
+    }
+
+    smoke_data.push([i*24/5000, base + (base + 0.3)*Math.random()/4]);
 }
 
 for (var i = 0; i <= 5000; ++i) {
-    gases_data.push([i*24/5000, 0.02 + Math.random()/10]);
+    gases_data.push([i*24/5000, 0.012 + Math.random()/10]);
 }
 
 $(function () {
@@ -219,10 +229,10 @@ for (var i = 0; i <= 48; i += 2) {
     factor = Math.sqrt((48 - i)/48);
 
     if (i == 0) {
-        defc_data.push(2 + Math.floor(2 * Math.random()));
-        firefighter_data.push(15 + Math.floor(6 * Math.random()));
-        police_data.push(5 + Math.floor(4 * Math.random()));
-        health_data.push(15 + Math.floor(6 * Math.random()));
+        defc_data.push(9);
+        firefighter_data.push(9);
+        police_data.push(9);
+        health_data.push(30);
     } else {
         if (Math.random() > 0.9 ) {
             defc_data.push(defc_data[i/2 - 1] + 1);
@@ -234,7 +244,7 @@ for (var i = 0; i <= 48; i += 2) {
         
         if (Math.random() > 0.9) {
             firefighter_data.push(firefighter_data[i/2 - 1] + 1);
-        } else if (Math.random() > 0.4 && firefighter_data[i/2 - 1] > 0) {
+        } else if (Math.random() > 0.75 && firefighter_data[i/2 - 1] > 0) {
             firefighter_data.push(firefighter_data[i/2 - 1] - 1);
         } else {
             firefighter_data.push(firefighter_data[i/2 - 1]);
@@ -242,7 +252,7 @@ for (var i = 0; i <= 48; i += 2) {
         
         if (Math.random() > 0.9) {
             police_data.push(police_data[i/2 - 1] + 1);
-        } else if (Math.random() > 0.75 && police_data[i/2 - 1] > 0) {
+        } else if (Math.random() > 0.7 && police_data[i/2 - 1] > 0) {
             police_data.push(police_data[i/2 - 1] - 1);
         } else {
             police_data.push(police_data[i/2 - 1]);
@@ -250,7 +260,7 @@ for (var i = 0; i <= 48; i += 2) {
         
         if (Math.random() > 0.9) {
             health_data.push(health_data[i/2 - 1] + 1);
-        } else if (Math.random() > 0.6 && health_data[i/2 - 1] > 0) {
+        } else if (Math.random() > 0.5 && health_data[i/2 - 1] > 0) {
             health_data.push(health_data[i/2 - 1] - 1);
         } else {
             health_data.push(health_data[i/2 - 1]);
