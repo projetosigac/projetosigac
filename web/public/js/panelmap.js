@@ -86,7 +86,7 @@
 
        function updatePoints(finished) {
           $.ajax({ 
-            url: "/defcivil/getOccPositions", 
+            url: "/defc/getOccPositions", 
             type: "get",
             data: {
               "r": heatmapCircle.getRadius(),
@@ -115,7 +115,7 @@
 
     function updatePointsAmbulances(finished) {
       $.ajax({ 
-        url: "/defcivil/getAmbPositions", 
+        url: "/defc/getAmbPositions", 
         type: "get",
         data: {
           "r": heatmapCircle.getRadius(),
@@ -156,7 +156,7 @@
 
       function updatePointsStations(finished) {
         $.ajax({ 
-          url: "/defcivil/getStaPositions", 
+          url: "/defc/getStaPositions", 
           type: "get",
           data: {
             "r": heatmapCircle.getRadius(),
@@ -197,7 +197,7 @@
    
       function updatePointsSensors(finished) {
         $.ajax({ 
-          url: "/defcivil/getSensPositions", 
+          url: "/defc/getSensPositions", 
           type: "get",
           data: {
             "r": heatmapCircle.getRadius(),
