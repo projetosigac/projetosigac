@@ -13,6 +13,19 @@ class DroneController ( object ):
     self.mission_picture = self.cam = None
     self.cam_lock = threading.RLock()
 
+  def shutdown(self):
+    if self.drone != None:
+      self.drone_lock.acquire()
+      self.drone.land()
+      self.drone.halt()
+      self.drone = None
+      self.drone_lock.release()
+
+    if self.cam != None:
+      self.cam.release()
+      self.cam = None
+    cv2.destroyAllWindows()
+
   def __move_drone(self, forward, side):
     if forward != 0:
       if forward > 0:
@@ -21,7 +34,7 @@ class DroneController ( object ):
       else:
         self.drone.move_backward()
         if self.debug: print 'Drone moving backward'
-      time.sleep(2 * abs(forward))
+      time.sleep(5 * abs(forward))
       self.drone.hover()
       if self.debug: print 'Drone stopped'
 
@@ -32,7 +45,7 @@ class DroneController ( object ):
       else:
         self.drone.move_left()
         if self.debug: print 'Drone moving left'
-      time.sleep(2 * abs(side));
+      time.sleep(5 * abs(side));
       self.drone.hover()
       if self.debug: print 'Drone stopped'
 

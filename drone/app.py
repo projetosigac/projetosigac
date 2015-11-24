@@ -1,3 +1,5 @@
+import signal
+import sys
 from flask import *
 
 from util import *
@@ -44,5 +46,14 @@ def release():
 
     return 'Drone released the package'
 
+
+orig_sighandler = signal.getsignal(signal.SIGINT)
+def shutdown_controller(signal, frame):
+    print 'Shutting down drone controller'
+    controller.shutdown()
+    orig_sighandler(signal, frame)
+    sys.exit(0)
+
 if __name__ == '__main__':
+    signal.signal(signal.SIGINT, shutdown_controller)
     app.run()
