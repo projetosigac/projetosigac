@@ -29,7 +29,7 @@ def mission_pic():
 
 @app.route('/live-photo')
 def live_pic():
-    pic = controller.take_picture(debug=app.debug)
+    pic = controller.take_picture()
     if not pic:
         return send_file('drone.jpg')
     return Response(pic, mimetype='image/jpeg')
