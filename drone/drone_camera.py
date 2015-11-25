@@ -13,9 +13,13 @@ class DroneCamera ( object ):
     self.grabber_thread.start()
 
   def shutdown(self):
-    if self.cam != None:
-      self.cam.release()
-      self.cam = None
+    self.lock.acquire()
+    try:
+      if self.cam != None:
+        self.cam.release()
+        self.cam = None
+    finally:
+      self.lock.release()
 
     self.is_running = False
     self.grabber_thread.join()
@@ -32,13 +36,14 @@ class DroneCamera ( object ):
         grab_count = target_grabs
         continue
 
-      self.lock.acquire()
-      try:
-        while grab_count < target_grabs:
-          grab_count += 1
-          self.cam.grab()
-      finally:
-        self.lock.release()
+      while grab_count < target_grabs:
+        grab_count += 1
+        self.lock.acquire()
+        try:
+          if self.cam and self.cam.isOpened():
+            self.cam.grab()
+        finally:
+          self.lock.release()
 
   def __init_cam(self):
     self.lock.acquire()
