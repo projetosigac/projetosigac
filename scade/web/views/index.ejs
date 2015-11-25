@@ -1,0 +1,31 @@
+<%- include layouts/header.ejs %>
+     <link href="/../css/login.css" rel="stylesheet">
+    </head>
+    <body>
+    
+	<div class="container">
+	  
+	  <div class="row">
+		<div class="col-md-6 text-right"><img src="/../images/icon-sigac.png" style="width:100px;"></div>
+		<div class="col-md-6 text-left"><h1><b>SIGAC</b></h1></div>
+	  </div>
+      <form class="form-signin" id="formLogin" onsubmit="return index.api_user_login();">
+        <h4 class="form-signin-heading">Informe o login</h4>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="login" class="form-control" placeholder="Email" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="senha" class="form-control" placeholder="Senha" required>
+        <div class="checkbox hide">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-lg btn-primary btn-block">Entrar</button>
+      </form>
+		<div class="row text-center"><small>Projeto do Sistema Integrado de Gerenciamento de Acidentes e Crises</small></div>
+    </div>
+	
+   <%- include layouts/footer.ejs %>
+	<script type="text/javascript" src="/../js/pages/index.js"></script>	
+
+</html>
