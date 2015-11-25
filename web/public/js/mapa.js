@@ -9,7 +9,7 @@ mapa = function(){
     google.maps.event.addDomListener(window, 'load', _initialize());
     }
 
-    var _initialize = function (){
+    var _initialize = function (callback){
 
         var latlng = new google.maps.LatLng(-23.19586486253487, -45.89185186132812);
         var options = {
@@ -21,7 +21,8 @@ mapa = function(){
 
         google.maps.event.addDomListener(window, 'resize', _initialize);
         //google.maps.event.addDomListener(window, 'load', _initialize);
-
+        if(callback)
+          callback();
     }
 
     var _calcularRota = function (origin, destination, customIcon, callback) {
@@ -76,7 +77,7 @@ mapa = function(){
         }
       });
     }
-    var _carregarNoMapa = function (endereco) {
+    var _carregarNoMapa = function (endereco, callback) {
 
         _deleteMarkers();
 
@@ -105,7 +106,8 @@ mapa = function(){
                     google.maps.event.addDomListener(window, 'resize', _initialize);
                     google.maps.event.addDomListener(window, 'load', _initialize)
 
-
+                    if(callback)
+                      callback();
                 }
             }
         });
@@ -171,9 +173,9 @@ mapa = function(){
       _clearMarkers();
       markers = [];
     }
-    var _clearMap = function(){
+    var _clearMap = function(callback){
       $("#map").html("");
-      _initialize();
+      mapa.initialize(callback);
     }
     return {
         start: _start,

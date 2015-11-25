@@ -30,10 +30,12 @@ atendimento = function () {
       $("#enderecoAtendimentoGoogle").val(resultGeocode.formatted_address);
     };
 
-    var _pesquisarEndereco = function () {
+    var _pesquisarEndereco = function (callback) {
         if($("#localEmergencia").val() && $("#listaCriseSelecao").val()) {
             mapa.carregarNoMapa($("#localEmergencia").val());
             _passoMensagem(2);
+            if(callback)
+              callback();
         }
 
         return false;
@@ -66,29 +68,41 @@ atendimento = function () {
         });
     }
 
-    var _listarHospital = function (){
-      $.ajax({
-          url:          '/atendimento/listar-hospital-leito-disponivel',
-          type:         'GET',
-          contentType:  'application/json; charset=utf-8',
-          dataType:     'json',
-      }).done(function(data, textStatus, jqXHR) {
-        listaHospitais = data;
-        numeroVitimasSemHospital = parseInt($("#qtdVitimas").val());
-        var hospitaisSelecionados = [];
-        var hospitais = [];
-        var localEmergencia = [];
-        //laço pra agrupar por pipe
-        for (var i = 0; i < data.length; i++) {
-          hospitais.push(data[i].endereco);
-          localEmergencia.push($("#enderecoAtendimentoGoogle").val());
-        }
-        util.calcularMatrixDistancia(localEmergencia, hospitais, _ordernarHospitalDistancia);
+    var _validaMapa = function (){
 
-      }).fail(function(jqXHR, textStatus, errorThrown) {
-          alert(jqXHR.responseJSON);
-          $("#btnChamarAmbulancia").button('reset');
-      });
+        mapa.clearMap(function (){
+          _pesquisarEndereco(_chamarAmbulancia);
+        });
+    };
+
+    var _listarHospital = function (){
+
+        $.ajax({
+            url:          '/atendimento/listar-hospital-leito-disponivel',
+            type:         'GET',
+            contentType:  'application/json; charset=utf-8',
+            dataType:     'json',
+        }).done(function(data, textStatus, jqXHR) {
+
+
+
+          listaHospitais = data;
+          numeroVitimasSemHospital = parseInt($("#qtdVitimas").val());
+          var hospitaisSelecionados = [];
+          var hospitais = [];
+          var localEmergencia = [];
+          //laço pra agrupar por pipe
+          for (var i = 0; i < data.length; i++) {
+            hospitais.push(data[i].endereco);
+            localEmergencia.push($("#enderecoAtendimentoGoogle").val());
+          }
+          util.calcularMatrixDistancia(localEmergencia, hospitais, _ordernarHospitalDistancia);
+
+        }).fail(function(jqXHR, textStatus, errorThrown) {
+            alert(jqXHR.responseJSON);
+            $("#btnChamarAmbulancia").button('reset');
+        });
+
 
     }
     var _ordernarMatrixDistancia = function (responseAPI, listaObjeto){
@@ -396,7 +410,8 @@ atendimento = function () {
         salvarOcorrencia: _salvarOcorrencia,
         show_crisis: _show_crisis,
         api_get_crisis: _api_get_crisis,
-        preencherCrise: _preencherCrise
+        preencherCrise: _preencherCrise,
+        validaMapa: _validaMapa
     }
 }();
 
