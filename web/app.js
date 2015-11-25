@@ -96,7 +96,7 @@ app.get('/defc', util.autenticarSessao, defc.carregarPagina)
 /*
 métodos internos do sistema que necessita de sessão
 */
-app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.carregarBaseSamu);
+app.get('/atendimento/carregar-ambulancia-ativa', util.autenticarSessao, atendimento.carregarAmbulanciaAtiva);
 app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.salvarOcorrencia);
 app.get('/atendimento/listar-hospital-leito-disponivel', util.autenticarSessao, hospital.listarLeitoDisponivel);
 app.get('/ambulancia/listar-ocorrencias', util.autenticarSessao, atendimento.listarOcorrencia);

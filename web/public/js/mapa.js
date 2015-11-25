@@ -43,11 +43,15 @@ mapa = function(){
                 directionsDisplay.setDirections(response);
                 if(customIcon){
                   for(var i in customIcon){
-                    _setMarkerDirections(customIcon[i], customIcon[i].address);
+                    var address = customIcon[i].address;
+                    if(typeof address != 'string'){
+                      address = response.routes[0].legs[0].end_address;
+                    }
+                    _setMarkerDirections(customIcon[i], address);
                   }
                 }
                 if(callback)
-                  callback(true);
+                  callback();
 
             } else {
                 window.alert('Directions request failed due to ' + status);
@@ -142,7 +146,6 @@ mapa = function(){
       geocoder.geocode({'location': latlng}, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
           if (results[1]) {
-            _carregarNoMapa(results[1].formatted_address);
             callback(results[1]);
           } else {
             window.alert('No results found');

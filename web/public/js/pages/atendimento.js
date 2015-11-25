@@ -1,7 +1,8 @@
     //variaveis globais
     var listaHospitais;
+    var listaAmbulancias;
     var numeroVitimasSemHospital;
-    var processarRotas = [];
+    var numeroVitimasSemAmbulancia;
     var objCrise;
 
 atendimento = function () {
@@ -24,6 +25,7 @@ atendimento = function () {
       }
     };
     var _preencherLocalEmergencia = function (resultGeocode){
+      mapa.carregarNoMapa(resultGeocode.formatted_address);
       $("#localEmergencia").val(resultGeocode.formatted_address);
       $("#enderecoAtendimentoGoogle").val(resultGeocode.formatted_address);
     };
@@ -41,28 +43,22 @@ atendimento = function () {
         $("#btnChamarAmbulancia").button('loading');
         $("#listaHospitais").html("");
         $.ajax({
-            url:          '/atendimento/carregar-base-samu',
+            url:          '/atendimento/carregar-ambulancia-ativa',
             type:         'GET',
             contentType:  'application/json; charset=utf-8',
             dataType:     'json',
         }).done(function(data, textStatus, jqXHR) {
-            //futuro: calcular a base mais próxima da ocorrência, hoje é sempre a primeira
-            //var enderecoSamuMaisProxima = _analisarEnderecoProximo(enderecoAtendimento, listaEnderecos);
-            mapa.clearMap();
-            //mapa.deleteMarkers();
-            iconCustom = [];
-            iconCustom.push({title: 'Ambulance Station', image: '../images/marker-ambulance.png', address: data[0].samu_endereco});
-            iconCustom.push({title: 'Crisis Location', image: '../images/marker-crisis.png', address: $("#enderecoAtendimentoGoogle").val()});
-            mapa.calcularRota(data[0].samu_endereco, $("#enderecoAtendimentoGoogle").val(), iconCustom);
+            listaAmbulancias = data;
+            numeroVitimasSemAmbulancia = parseInt($("#qtdVitimas").val());
 
-            _numeroAmbulancias($("#qtdVitimas").val());
-            _numeroMedicos($("#qtdVitimas").val());
-
-            $("#btnRegistrarOcorrencia").attr('disabled',false);
-
-            _listarHospital();
-
-            _passoMensagem(3);
+            var ambulancias = [];
+            var localEmergencia = [];
+            //laço pra agrupar por pipe
+            for (var i = 0; i < data.length; i++) {
+              ambulancias.push(new google.maps.LatLng(data[i].latitude, data[i].longitude));
+              localEmergencia.push($("#enderecoAtendimentoGoogle").val());
+            }
+            util.calcularMatrixDistancia(localEmergencia, ambulancias, _ordernarAmbulanciaDistancia);
 
         }).fail(function(jqXHR, textStatus, errorThrown) {
             alert(jqXHR.responseJSON);
@@ -95,8 +91,76 @@ atendimento = function () {
       });
 
     }
+    var _ordernarMatrixDistancia = function (responseAPI, listaObjeto){
+      var enderecosOrdenados = [];
+
+      for (var i = 0; i < responseAPI.rows.length; i++) {
+
+        enderecosOrdenados.push(
+          {
+            identificacao: listaObjeto[i],
+            endereco: responseAPI.destinationAddresses[i],
+            kmValue: responseAPI.rows[i].elements[i].distance.value,
+            kmText: responseAPI.rows[i].elements[i].distance.text,
+            tempoValue:responseAPI.rows[i].elements[i].duration.value,
+            tempoText:responseAPI.rows[i].elements[i].duration.text
+          });
+      }
+      enderecosOrdenados.sort(function(a, b) {
+        return a.kmValue - b.kmValue;
+      });
+
+      return enderecosOrdenados;
+
+    };
+
+    var _ordernarAmbulanciaDistancia = function (response){
+
+      var ambulanciasOrdenadas = _ordernarMatrixDistancia(response, listaAmbulancias);
+      var processarRotas = [];
+
+      for(var i in ambulanciasOrdenadas){
+        if(numeroVitimasSemAmbulancia == 0)
+          break;
+
+        if(ambulanciasOrdenadas[i].identificacao.qtd_passageiros >= numeroVitimasSemAmbulancia)
+        {
+          vitimasAtendidas = numeroVitimasSemAmbulancia;
+          numeroVitimasSemAmbulancia = 0;
+        }else{
+          numeroVitimasSemAmbulancia = numeroVitimasSemAmbulancia - ambulanciasOrdenadas[i].identificacao.qtd_passageiros;
+          vitimasAtendidas = ambulanciasOrdenadas[i].identificacao.qtd_passageiros;
+        }
+
+          iconCustom = [];
+          iconCustom.push({
+            title: 'Ambulância: '+ ambulanciasOrdenadas[i].identificacao.placa,
+            image: '../images/marker-ambulance.png',
+            address: new google.maps.LatLng(ambulanciasOrdenadas[i].identificacao.latitude,ambulanciasOrdenadas[i].identificacao.longitude)
+          });
+
+          processarRotas.push(
+            {
+              detail: iconCustom,
+              addressOrigin:$("#enderecoAtendimentoGoogle").val(),
+              addressDestination: iconCustom[0].address
+            });
+
+      }
+
+      _calcularMultiRotas(processarRotas, function (){
+        _numeroAmbulancias($("#qtdVitimas").val());
+        _numeroMedicos($("#qtdVitimas").val());
+        $("#btnRegistrarOcorrencia").attr('disabled',false);
+        _listarHospital();
+        _passoMensagem(3);
+      });
+
+    };
+
     var _ordernarHospitalDistancia = function (response){
-      var hospitaisOrdenados = [];
+
+/*
       for (var i = 0; i < response.rows.length; i++) {
 
         hospitaisOrdenados.push(
@@ -112,8 +176,14 @@ atendimento = function () {
       hospitaisOrdenados.sort(function(a, b) {
         return a.kmValue - b.kmValue;
       });
+
+      */
+
+      var hospitaisOrdenados = _ordernarMatrixDistancia(response, listaHospitais);
       processarRotas = [];
       var nroHospitais = 0;
+      var processarRotas = [];
+
       for(var i in hospitaisOrdenados){
         if(numeroVitimasSemHospital == 0)
           break;
@@ -152,22 +222,38 @@ atendimento = function () {
             });
 
       }
-      if(numeroVitimasSemHospital > 0){
-        $('#myModal2').modal('toggle');
-      }
-      _calcularMultiRotas();
+      _calcularMultiRotas(processarRotas);
 
       $("#nroHospitais").val(nroHospitais);
 
     };
-    var _calcularMultiRotas = function (deleteObj){
-      if(deleteObj)
-        processarRotas.splice(0, 1);
+    var _calcularMultiRotas = function (processarRotas, callback){
 
       if(processarRotas.length > 0)
-        mapa.calcularRota(processarRotas[0].addressOrigin, processarRotas[0].addressDestination, processarRotas[0].detail, _calcularMultiRotas);
-        else {
-          $("#btnChamarAmbulancia").button('reset');
+      {
+        mapa.calcularRota(processarRotas[0].addressOrigin, processarRotas[0].addressDestination, processarRotas[0].detail, function (){_calcularMultiRotas(processarRotas, callback);});
+        if(processarRotas)
+          processarRotas.splice(0, 1);
+      }else {
+        if(callback)
+          callback();
+        else{
+            var alerta = false;
+            $("#msgLimiteHospital").hide();
+            $("#msgLimiteAmbulancia").hide();
+            if(numeroVitimasSemHospital > 0){
+              $("#msgLimiteHospital").show();
+              alerta = true;
+            }
+            if(numeroVitimasSemAmbulancia > 0){
+              $("#msgLimiteAmbulancia").show();
+              alerta = true;
+            }
+            if(alerta)
+              $('#myModal2').modal('toggle');
+
+            $("#btnChamarAmbulancia").button('reset');
+            }
         }
 
     }

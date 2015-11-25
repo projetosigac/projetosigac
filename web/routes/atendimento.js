@@ -8,7 +8,7 @@ exports.carregarPagina = function(req, res){
   res.render('ambulancia/atendimento', { title: 'Hello World' });
 };
 /**
- * Retorna a base de samu que contém a ambulância com a configuração adequada para atendimento a ocorrência
+ * Retorna a lista de ambulância com status Ativo para atendimento a ocorrência
  * Esse método é utilizado pela tela de atendimento para abrir uma ocorrência
  *
  * @author Danilo Ramalho
@@ -16,8 +16,8 @@ exports.carregarPagina = function(req, res){
  * @param req HTTP request
  * @param res HHTP response
  */
-exports.carregarBaseSamu = function (req, res, next) {
-    ocorrenciaDAO.obterBaseSamuAtiva(function(err, result) {
+exports.carregarAmbulanciaAtiva = function (req, res, next) {
+    ocorrenciaDAO.obterAmbulanciaAtiva(function(err, result) {
         if (err) return next(err);
         else res.json(result);
     });
