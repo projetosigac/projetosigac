@@ -1,0 +1,155 @@
+<%- include ../layouts/header.ejs %>
+<link href="/../css/defcivil.css" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/slate/bootstrap.min.css" rel="stylesheet" integrity="sha256-JcgoO7qVianjbv43Z5KinReHzk9/rEZg5m6z/ZZy3DI= sha512-rYMbEYJa5+7VkGdfAypdYHqwIdCNEBKh8lhKUNIv58tgHQuHHzXC/Bzf66BFDkTjq970Lc6OIEpgllKINGDCKQ==" crossorigin="anonymous">
+
+</head>
+<body>
+   <div id="wrapper">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-lg-12 bg-primary">
+               <div class="col-lg-3">
+                  <img src="/../images/ita.png" class="resize">  
+               </div>
+               <div class="col-lg-9">
+                  <p class="h2">SI-GAC v.1.0</p>
+                  <p class="h3">Sistema Interdisciplinar para Gerenciamento de Acidentes e Crises</p>
+               </div>
+            </div>
+         </div>
+         <div class="d30"></div>
+         <div class="row">
+            <!-- Nav tabs -->
+            <ul class="nav nav-pills nav-justified" role="tablist">
+               <li role="presentation">
+                  <a href="#panel" aria-controls="panel" role="tab" data-toggle="tab" class="panel-heading darken text-uppercase">Control Panel</a>
+               </li>
+               <li role="presentation">
+                  <a href="#mapa" aria-controls="mapa" role="tab" data-toggle="tab" class="panel-heading darken text-uppercase">Map</a>
+               </li>
+            </ul>
+         </div>
+         <div class="row well">
+            <!-- Tab panes -->
+            <div class="tab-content">
+               <div role="tabpanel" class="tab-pane text-center fade in active" id="panel">
+                  <div class="jumbotron control-panel">
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="col-lg-12 well data">
+                              <p class="text-uppercase text-left">number of victims</p>
+                              <div class="col-lg-4">
+                                 <p class="panel-strong" id="survivors">50</p>
+                                 <span class="text-uppercase">survivors</span>
+                              </div>
+                              <div class="col-lg-4">
+                                 <p class="panel-strong" id="dead">70</p>
+                                 <span class="text-uppercase">dead</span>
+                              </div>
+                              <div class="col-lg-4">
+                                 <p class="panel-strong" id="missing">10</p>
+                                 <span class="text-uppercase">missing</span>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="col-lg-12 well data">
+                              <p class="text-uppercase text-left">number of specialists</p>
+                              <div class="col-lg-3">
+                                 <p class="panel-strong" id-"paramedics">50</p>
+                                 <span class="text-uppercase">paramedics</span>
+                              </div>
+                              <div class="col-lg-3">
+                                 <p class="panel-strong" id="ambulances">70</p>
+                                 <span class="text-uppercase">ambulances</span>
+                              </div>
+                              <div class="col-lg-3">
+                                 <p class="panel-strong" id="firemen">10</p>
+                                 <span class="text-uppercase">firemen</span>
+                              </div>
+                              <div class="col-lg-3">
+                                 <p class="panel-strong" id="policemen">10</p>
+                                 <span class="text-uppercase">policemen</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="col-lg-12 well data">
+                              <p class="text-uppercase text-left">level of fuel gases</p>
+                              <div class="progress">
+                                 <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40% Complete (success)</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="col-lg-12 well data">
+                              <p class="text-uppercase text-left">temperature</p>
+                              <h2 class="panel-strong" id="temperature">24˚C</h2>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-lg-6">
+                           <div class="col-lg-12 well data">
+                              <p class="text-uppercase text-left">Crisis Classification</p>
+                              <p class="critical" id="classif">CRITICAL</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-6">
+                           <div class="col-lg-12 well data">
+                              <p class="text-uppercase text-left">Notifications</p>
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div role="tabpanel" class="tab-pane fade in" id="mapa">
+
+                  <%- include ./relatorio.ejs %>
+
+                  <div id="floating-panel">
+                    <button class="btn btn-primary" onclick="toggleHeatmap()">Toggle Heatmap</button>
+                    <button class="btn btn-primary" onclick="changeGradient()">Change gradient</button>
+                    <button class="btn btn-primary" onclick="changeRadius()">Change radius</button>
+                    <button class="btn btn-primary" onclick="changeOpacity()">Change opacity</button>
+                  </div>
+                 
+                  <div id="map"></div>
+
+                  <script src="https://maps.googleapis.com/maps/api/js"></script>
+                  <script type="text/javascript" src="/../js/mapa.js"></script> 
+
+                  
+                  <script type="text/javascript" src="/../js/panelmap.js"></script>  
+                          
+                  <script async defer
+                      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzFcZBLzUFQAOvmNJgCYQh0jVK2DAVnhQ&libraries=visualization&callback=initialize">
+                  </script>
+
+
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- /#page-wrapper -->
+   </div>
+
+   <%- include ../layouts/footer.ejs %>
+
+<script type="text/javascript" src="/../js/pages/panel.js"></script>  
+
+
+</body>
+
+</html>
