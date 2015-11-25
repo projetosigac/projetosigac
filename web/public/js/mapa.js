@@ -98,7 +98,7 @@ mapa = function(){
                     var location = new google.maps.LatLng(latitude, longitude);
                     var marker = _addMarker(location, '../images/marker-crisis.png');
 
-                    _createInfoWindow('Local da emergência', enderecoFormatado, marker);
+                    _createInfoWindow('Local crises', enderecoFormatado, marker);
 
                     map.setCenter(location);
                     map.setZoom(16);

@@ -148,7 +148,7 @@ atendimento = function () {
 
           iconCustom = [];
           iconCustom.push({
-            title: 'Ambulância: '+ ambulanciasOrdenadas[i].identificacao.placa,
+            title: 'Ambulance: '+ ambulanciasOrdenadas[i].identificacao.placa,
             image: '../images/marker-ambulance.png',
             address: new google.maps.LatLng(ambulanciasOrdenadas[i].identificacao.latitude,ambulanciasOrdenadas[i].identificacao.longitude)
           });
@@ -222,8 +222,13 @@ atendimento = function () {
           nroHospitais++;
 
           iconCustom = [];
+
+          var titleTemp = hospitaisOrdenados[i].identificacao.hospital;
+          if(titleTemp.indexOf("Hospital") == -1)
+            titleTemp = 'Hospital: '+ hospitaisOrdenados[i].identificacao.hospital
+
           iconCustom.push({
-            title: 'Hospital: '+ hospitaisOrdenados[i].identificacao.hospital,
+            title: titleTemp,
             image: '../images/marker-hospital.png',
             address: hospitaisOrdenados[i].identificacao.endereco
           });
