@@ -4,7 +4,7 @@
 exports.carregarPagina = function(req, res){
 
 	req.getConnection(function(err,connection){  
-		var queryStr = 'SELECT * FROM sigac.vitimas AS v INNER JOIN sigac.vitimas_status as vs ON vs.id_status = v.status WHERE v.id=' + req.params.pId + ' ORDER BY timestamp DESC';
+		var queryStr = 'SELECT * FROM sigac.vitimas_status  WHERE id_vitima=' + req.params.pId + ' ORDER BY timestamp DESC';
         var query = connection.query(queryStr, function(err,rows,fields)
         {
             if(err)
@@ -12,7 +12,8 @@ exports.carregarPagina = function(req, res){
 
             else
             {
-				res.render('uti/vitima', { dados: rows });              
+                console.log("bla");
+                res.render('uti/vitima', { dados: rows });              
             }                
         });
     }); 
