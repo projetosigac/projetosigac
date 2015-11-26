@@ -57,6 +57,7 @@ require("./db/localizacaoAmbulanciaDAO")(pool);
 require("./db/hospitalDAO")(pool);
 require('./db/stationDAO')(pool);
 require("./db/panelDAO")(pool);
+require("./db/victimsDAO")(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.
