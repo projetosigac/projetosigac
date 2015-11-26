@@ -119,6 +119,20 @@ if(typeof stationDAO === 'undefined')
                 }
             );
         };
+
+        dao.getStationDevicesWithReadings = function(stationID, callback) {
+            return _pool.query(
+                {
+                    sql: 'SELECT * FROM station_device_readings INNER JOIN station_devices ON station_device_readings.device_id = station_devices.device_id WHERE station_id = ' + stationID + ' AND reading_timestamp > 1448500000;'
+                },
+                function(err, results, fields) {
+                    if(err)
+                        return callback(err, {});
+                    return callback(null, results);
+                }
+            );
+        }
+
     }(stationDAO));
 }
 

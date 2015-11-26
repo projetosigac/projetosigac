@@ -97,6 +97,8 @@ app.get('/defc/getOccPositions', util.autenticarSessao, defc.getOccurrencesPosit
 app.get('/defc/getAmbPositions', util.autenticarSessao, defc.getAmbulancesPositions);
 app.get('/defc/getSensPositions', util.autenticarSessao, defc.getSensorsPositions);
 app.get('/defc/getStaPositions', util.autenticarSessao, defc.getStationsPositions);
+app.get('/defc/getClosOccPositions', util.autenticarSessao, defc.getClosedOccurrencesPositions);
+app.get('/defc/getHospPositions', util.autenticarSessao, defc.getHospitalsPositions);
 
 
 //var policia = require('./routes/policia');
@@ -145,14 +147,15 @@ app.post('/api/delete-equip-amb', util.autenticarSessao, api.deleteEquipAmb);
 
 app.post('/api/show-crisis', util.autenticarSessao, api.showCrisis);
 app.post('/api/get-crisis', util.autenticarSessao, api.getCrisis);
+app.post('/api/show-amb-list', util.autenticarSessao, api.showAmbList);
 
 app.use(app.router);
 
 //apis bombeiros
 
 app.post('/tag',apiBombeiro.iniVictim)
-app.get('/api/bombeiro',customers.list)
-app.get('/api/bombeiro/getBraceletList',apiBombeiro.getList)
+app.get('/api/bombeiro/getVictimList',apiBombeiro.getVictimList)
+app.get('/api/bombeiro/getBraceletList',apiBombeiro.getBraceletList)
 //app.post('/api/bombeiro/',apiBombeiro.classifyVictim)
 app.get('/api/bombeiro/victimsOfColor/:color',apiBombeiro.getVictimsOfColor) //typeof(getNames) = boolean
 app.get('/api/bombeiro/countVictims/:color',apiBombeiro.colorCounter)

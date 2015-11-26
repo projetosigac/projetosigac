@@ -116,7 +116,7 @@ chamados = function () {
             }
         });*/
 
-        enderecosAmbulancias.push("Rua H8B, 232");
+       // enderecosAmbulancias.push("Rua H8B, 232");
         enderecosAmbulancias.push("Avenida 9 de Julho, 200");
         enderecosAmbulancias.push("R. Dr. José Cândido de Souza - Jardim Novo Mundo");
         enderecosAmbulancias.push("Av. Andrômeda - São José dos Campos");

@@ -135,6 +135,22 @@ exports.getOccurrencesPositions = function (req, res) {
    
 };
 
+exports.getClosedOccurrencesPositions = function (req, res) {    
+
+    panelDAO.getClosedOccurrencesPositions(function(err, result) {
+        if(err) {
+            console.log(err);
+            res.statusCode = 401;
+            return res.json({status: 'Error 401', message: 'Nao foi possivel consultar as posições das ocorrências passadas', body: req.body});
+        }
+        else{
+            //return res.json(result);
+            res.send(JSON.stringify(result, null, 3));
+        }
+    });
+   
+};
+
 exports.getAmbulancesPositions = function (req, res) {    
 
     panelDAO.getAmbulancesPositions(function(err, result) {
@@ -170,6 +186,22 @@ exports.getSensorsPositions = function (req, res) {
 exports.getStationsPositions = function (req, res) {    
 
     panelDAO.getStationsPositions(function(err, result) {
+        if(err) {
+            console.log(err);
+            res.statusCode = 401;
+            return res.json({status: 'Error 401', message: 'Nao foi possivel consultar as posições das estações', body: req.body});
+        }
+        else{
+            //return res.json(result);
+            res.send(JSON.stringify(result, null, 3));
+        }
+    });
+   
+};
+
+exports.getHospitalsPositions = function (req, res) {    
+
+    panelDAO.getHospitalsPositions(function(err, result) {
         if(err) {
             console.log(err);
             res.statusCode = 401;

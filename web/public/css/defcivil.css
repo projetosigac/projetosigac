@@ -76,8 +76,8 @@ li.active{
 
 #floating-panel {
   position: absolute;
-  top: 640px;
-  left: 60%;
+  top: 650px;
+  left: 50%;
   z-index: 5;
   padding: 5px;
   text-align: center;

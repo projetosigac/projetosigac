@@ -99,7 +99,22 @@ function PanelDAO(pool) {
     };
 
     this.getOccurrencesPositions = function(callback) {
-      var queryString = this.queryGenerateBatch("id,latitude as lat,longitude as lng","ocorrencia","id","Where status = 'ABERTO'");
+      var queryString = this.queryGenerateBatch("ocorrencia.id As ID, obito,  n_vitimas, latitude As lat, longitude As lng"," ocorrencia Left Join crise On ocorrencia.id_crise = crise.cri_id Left Join vitimas On vitimas.crise = crise.cri_id ","id","WHERE ocorrencia.status = 'ABERTO'");
+        var query = self.pool.query(queryString, function (err, rows) {
+            if (err) {
+                callback(err, {});
+            } else {
+                var result = (rows ? rows : {});
+                callback(null, result);
+            }
+        });
+    };
+
+
+
+
+    this.getClosedOccurrencesPositions = function(callback) {
+      var queryString = this.queryGenerateBatch("ID,latitude as lat,longitude as lng","ocorrencia","id","Where status = 'FECHADO'");
         var query = self.pool.query(queryString, function (err, rows) {
             if (err) {
                 callback(err, {});
@@ -111,7 +126,7 @@ function PanelDAO(pool) {
     };
 
     this.getAmbulancesPositions = function(callback) {
-      var queryString = this.queryGenerateBatch("placa_ambulancia as id, latitude As lat, longitude As lng","localizacao_ambulancia","placa_ambulancia","");
+      var queryString = this.queryGenerateBatch("placa_ambulancia as ID, latitude As lat, longitude As lng","localizacao_ambulancia","placa_ambulancia","");
         var query = self.pool.query(queryString, function (err, rows) {
             if (err) {
                 callback(err, {});
@@ -123,7 +138,7 @@ function PanelDAO(pool) {
     };
 
     this.getSensorsPositions = function(callback) {
-      var queryString = this.queryGenerateBatch("stu_id as id, stu_lat as lat,stu_long as lng","SenTempUmid","stu_id","");
+      var queryString = this.queryGenerateBatch("stu_id as ID, stu_lat as lat,stu_long as lng","SenTempUmid","stu_id","");
         var query = self.pool.query(queryString, function (err, rows) {
             if (err) {
                 callback(err, {});
@@ -135,7 +150,7 @@ function PanelDAO(pool) {
     };
 
     this.getStationsPositions = function(callback) {
-      var queryString = this.queryGenerateBatch(" station_name As id, station_lat As lat, station_lon As lng","stations","station_name","");
+      var queryString = this.queryGenerateBatch(" station_name As ID, station_lat As lat, station_lon As lng","stations","station_name","");
         var query = self.pool.query(queryString, function (err, rows) {
             if (err) {
                 callback(err, {});
@@ -145,6 +160,19 @@ function PanelDAO(pool) {
             }
         });
     };
+
+    this.getHospitalsPositions = function(callback) {
+      var queryString = this.queryGenerateBatch(" id_hospital As ID, hospital, leitos_total,leitos_ocupados,latitude As lat, longitude As lng ","hospitais","ID","");
+        var query = self.pool.query(queryString, function (err, rows) {
+            if (err) {
+                callback(err, {});
+            } else {
+                var result = (rows ? rows : {});
+                callback(null, result);
+            }
+        });
+    };
+
 
 
 
