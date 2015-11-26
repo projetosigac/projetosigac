@@ -96,6 +96,8 @@ app.get('/defc/getOccPositions', util.autenticarSessao, defc.getOccurrencesPosit
 app.get('/defc/getAmbPositions', util.autenticarSessao, defc.getAmbulancesPositions);
 app.get('/defc/getSensPositions', util.autenticarSessao, defc.getSensorsPositions);
 app.get('/defc/getStaPositions', util.autenticarSessao, defc.getStationsPositions);
+app.get('/defc/getClosOccPositions', util.autenticarSessao, defc.getClosedOccurrencesPositions);
+app.get('/defc/getHospPositions', util.autenticarSessao, defc.getHospitalsPositions);
 
 
 //var policia = require('./routes/policia');

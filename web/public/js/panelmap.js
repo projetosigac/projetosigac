@@ -6,6 +6,8 @@
     var pointMvcAmb = new google.maps.MVCArray([]);
     var pointMvcSens = new google.maps.MVCArray([]);
     var pointMvcStat = new google.maps.MVCArray([]);
+    var pointMvcOpen = new google.maps.MVCArray([]);
+    var pointMvcHosp = new google.maps.MVCArray([]);
 
     var markers = [];
 
@@ -86,7 +88,7 @@
 
        function updatePoints(finished) {
           $.ajax({ 
-            url: "/defc/getOccPositions", 
+            url: "/defc/getClosOccPositions", 
             type: "get",
             data: {
               "r": heatmapCircle.getRadius(),
@@ -113,6 +115,120 @@
       }
 
 
+ function updatePointsOpen(finished) {
+      $.ajax({ 
+        url: "/defc/getOccPositions", 
+        type: "get",
+        data: {
+          "r": heatmapCircle.getRadius(),
+          "center": {
+            "lat": heatmapCircle.getCenter().H,
+            "lng": heatmapCircle.getCenter().L
+          }
+        },
+        success: function(resp) {
+
+          var image = '../images/marker-soft-crisis.png';
+          var txtTitle = '';
+
+          while(pointMvcOpen.getLength() > 0) pointMvcOpen.pop();
+
+          var points = JSON.parse(resp);
+
+          for (var i=0; i<points.length; i++) {
+            var p = points[i];
+
+            if (p.obito == 'S') {
+              image = '../images/marker-death.png';
+              txtTitle =  ''.concat('Ocorrência: ', p.n_vitimas ,' Vítima(s) - CONSTA ÓBITO');
+            }
+            else{
+              if (p.n_vitimas > 6) {
+                image = '../images/marker-hard-crisis.png';
+                txtTitle = ''.concat('Ocorrência: ', p.n_vitimas ,' Vítima(s) - SUPER CRÍTICA');
+              }else{
+                var image = '../images/marker-soft-crisis.png';
+                txtTitle = ''.concat('Ocorrência: ', p.n_vitimas ,' Vítima(s) - CRÍTICA');
+              }
+            }
+
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(p.lat, p.lng),
+                map: map,
+                icon: image,
+                animation: google.maps.Animation.DROP,
+                //shape: shape,
+                title: txtTitle
+              }); 
+
+            markers.push(marker);
+
+          }
+          if (finished) finished(true);
+        },
+        error: function() {
+          if (finished) finished(false);
+        }
+      });
+    }
+
+function updatePointsHospitals(finished) {
+      $.ajax({ 
+        url: "/defc/getHospPositions", 
+        type: "get",
+        data: {
+          "r": heatmapCircle.getRadius(),
+          "center": {
+            "lat": heatmapCircle.getCenter().H,
+            "lng": heatmapCircle.getCenter().L
+          }
+        },
+        success: function(resp) {
+
+          var image = '../images/marker-hospital.png';
+          var txtTitle = '';
+
+          while(pointMvcHosp.getLength() > 0) pointMvcHosp.pop();
+
+          var points = JSON.parse(resp);
+
+          for (var i=0; i<points.length; i++) {
+            var p = points[i];
+
+            txOcupacao = p.leitos_ocupados / p.leitos_total;
+
+            if (txOcupacao <= .7) {
+              image = '../images/marker-hospital.png';
+              txtTitle =  ''.concat('Hospital: ', p.hospital ,' / Leitos: ', p.leitos_total, ' / Ocup: ', p.leitos_ocupados, ' / ', Math.round(txOcupacao * 100), '% Ocup. - OK');
+            }
+            else{
+              if (p.leitos_ocupados / p.leitos_total > .7) {
+                image = '../images/marker-hospital-full.png';
+                txtTitle = ''.concat('Hospital: ', p.hospital ,' / Leitos: ', p.leitos_total, ' / Ocup: ', p.leitos_ocupados, ' / ', Math.round(txOcupacao * 100), '% Ocup. - CRÍTICO');
+              }
+            }
+
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(p.lat, p.lng),
+                map: map,
+                icon: image,
+                animation: google.maps.Animation.DROP,
+                //shape: shape,
+                title: txtTitle
+              }); 
+
+            markers.push(marker);
+
+          }
+          if (finished) finished(true);
+        },
+        error: function() {
+          if (finished) finished(false);
+        }
+      });
+    }
+
+
     function updatePointsAmbulances(finished) {
       $.ajax({ 
         url: "/defc/getAmbPositions", 
@@ -126,21 +242,23 @@
         },
         success: function(resp) {
 
-          var image = '../images/Ambulance.png';
+          var image = '../images/marker-ambulance.png';
+          var txtTitle = '';
 
           while(pointMvcAmb.getLength() > 0) pointMvcAmb.pop();
 
           var points = JSON.parse(resp);
 
           for (var i=0; i<points.length; i++) {
-            var p = points[i];
+            var p = points[i];            
+            txtTitle =  ''.concat('Ambulância: ', p.ID ,' - OK');
             var marker = new google.maps.Marker({
                 position: new google.maps.LatLng(p.lat, p.lng),
                 map: map,
                 icon: image,
                 animation: google.maps.Animation.DROP,
                 //shape: shape,
-                title: p.id
+                title: txtTitle
               }); 
 
             markers.push(marker);
@@ -166,7 +284,8 @@
             }
           },
           success: function(resp) {
-             var image = '../images/station.png';
+             var image = '../images/marker-station.png';
+             var txtTitle = '';
 
             while(pointMvcStat.getLength() > 0) pointMvcStat.pop();
 
@@ -174,13 +293,16 @@
 
             for (var i=0; i<points.length; i++) {
               var p = points[i];
+
+              txtTitle =  ''.concat('Station: ', p.ID ,'- OK');
+
               var marker = new google.maps.Marker({
                   position: new google.maps.LatLng(p.lat, p.lng),
                   map: map,
                   icon: image,
                   animation: google.maps.Animation.DROP,
                   //shape: shape,
-                  title: p.id
+                  title: txtTitle
                 });                    
 
               markers.push(marker);
@@ -207,7 +329,8 @@
             }
           },
           success: function(resp) {
-           var image = '../images/Sensor.png';
+           var image = '../images/marker-sensor.png';
+           var txtTitle = '';
 
              while(pointMvcSens.getLength() > 0) pointMvcSens.pop();
 
@@ -215,13 +338,16 @@
 
              for (var i=0; i<points.length; i++) {
                var p = points[i];
+
+              txtTitle =  ''.concat('Sensor: ', p.ID ,'- OK');
+
                var marker = new google.maps.Marker({
                    position: new google.maps.LatLng(p.lat, p.lng),
                    map: map,
                    icon: image,
                    animation: google.maps.Animation.DROP,
                    //shape: shape,
-                   title: p.id
+                   title: txtTitle
                  });  
 
                  markers.push(marker);
@@ -363,6 +489,8 @@
                   updatePointsAmbulances(updateViewsForHeatmap);
                   updatePointsSensors(updateViewsForHeatmap);
                   updatePointsStations(updateViewsForHeatmap);
+                  updatePointsOpen(updateViewsForHeatmap);
+                  updatePointsHospitals(updateViewsForHeatmap);
                   break;
               case "Ambulances":
                   updatePointsAmbulances(updateViewsForHeatmap);
@@ -372,6 +500,12 @@
                   break;
               case "Stations":
                   updatePointsStations(updateViewsForHeatmap);
+                  break;
+              case "Occurrences":
+                  updatePointsOpen(updateViewsForHeatmap);
+                  break;
+              case "Hospitals":
+                  updatePointsHospitals(updateViewsForHeatmap);
                   break;
               case "None":  
                   break;            
@@ -387,7 +521,7 @@
     }
 
     function updateViewsForHeatmap(generated) {
-      $('#generate_heatmap').text(generated ? 'Redo Search' : 'Gerar Heatmap');
+      $('#generate_heatmap').text(generated ? 'New Search' : 'Generate Map');
       heatmapCircle.setVisible(!generated);
      
       $('#occurrence_type, #searchRadius, #heatmapCenter, #searchCenterButton').prop('disabled', generated);
@@ -464,4 +598,31 @@
 
     function changeOpacity() {
       heatmap.set('opacity', heatmap.get('opacity') ? null : 0.2);
+    }
+
+    function fullScreenMap() {    
+
+      mapForm = document.getElementById('mapForm');
+      mapContainer = document.getElementById('mapContainer');
+
+       if (mapForm.style.display != 'none') {
+            mapForm.style.display = 'None';
+            mapContainer.style.width = '100%';
+            google.maps.event.trigger(map, 'resize');
+
+            $('#btnFullScreen').text('Full Screen Map' ? 'Exit Full Screen' : 'Exit Full Screen');
+
+        }
+      else{
+          mapForm.style.display = 'inline-block';
+          mapContainer.style.width = '75%';
+          google.maps.event.trigger(map, 'resize');
+
+          $('#btnFullScreen').text('Exit Full Screen' ? 'Full Screen Map' : 'Full Screen Map');
+
+        }
+
+
+
+      
     }

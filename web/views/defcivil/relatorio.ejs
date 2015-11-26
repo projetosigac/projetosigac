@@ -1,6 +1,6 @@
   
 
-      <div class="col-md-3">
+      <div class="col-md-3" id="mapForm">
                 <div class="alert alert-info" role="alert">
                     <b>Heatmap:</b> Please set the focal point and parameters.
                 </div>
@@ -25,6 +25,8 @@
                     <div class="form-group">
                       <select class="form-control" id="occurrence_type">
                         <option>All</option>
+                        <option>Occurrences</option>
+                        <option>Hospitals</option>
                         <option>Ambulances</option>
                         <option>Sensors</option>
                         <option>Stations</option>
@@ -35,7 +37,7 @@
                                     
                 </form>
             </div>
-      <div class="col-md-9">
+      <div class="col-md-9" id="mapContainer">
                 <div id="map"></div>
       </div>
 
