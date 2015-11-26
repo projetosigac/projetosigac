@@ -17,7 +17,29 @@ exports.iniVictim = function(req, res){
         
         };
         
-         var query = connection.query("INSERT INTO bracelet_info (bra_token) VALUES (?)",[data.bra_tag], function(err, rows)
+        var flagCommit = true
+        
+        var query = connection.query('SELECT COUNT(bra_token) AS braceletCount FROM bracelet_info WHERE bra_token = ?',[data.bra_tag],function(err, rows)
+        {
+            console.log('Query result: ', rows[0].braceletCount);
+            if(err)
+            {
+                console.log("Error counting Bracelet Token %s!",[data.bra_tag])
+                res.status(404).send("Error counting Bracelet Token %s!",[data.bra_tag])
+                flagCommit = true
+            }
+            if(rows[0].braceletCount>=1)
+            {
+                console.log("Bracelet Token %s already exists!",[data.bra_tag])
+                res.status(400).send("Bracelet Token  already exists!")//,[data.bra_tag])
+                flagCommit = true
+            }
+                
+        })
+        
+        if(!flagCommit)
+        {
+            var query = connection.query("INSERT INTO bracelet_info (bra_token) VALUES (?)",[data.bra_tag], function(err, rows)
         {
   
           if (err)
@@ -34,11 +56,13 @@ exports.iniVictim = function(req, res){
           
         });
          console.log(query.sql);
+        }
+         
     });
   
 };
 
-exports.list = function(req, res){
+exports.getBraceletList = function(req, res){
     
   req.getConnection(function(err,connection){
 
@@ -47,8 +71,9 @@ exports.list = function(req, res){
 
             if(err)
                 console.log("Error Selecting : %s ",err );
-     
-            res.render('bombeiro',{page_title:"Bombeiro - Node.js",data:rows});
+            
+            res.json(rows)
+            //res.render('bombeiro',{page_title:"Bombeiro - Node.js",data:rows});
 
          });
          
@@ -57,17 +82,17 @@ exports.list = function(req, res){
   
 };
 
-exports.getList = function(req, res){
+exports.getVictimList = function(req, res){
     
   req.getConnection(function(err,connection){
       
-        var query = connection.query('SELECT * FROM bracelet_info',function(err,rows)
+        var query = connection.query('SELECT * FROM vitimas',function(err,rows)
         {
 
             if(err)
                 console.log("Error Selecting : %s ",err );
      
-            res.json(rows[0])
+            res.json(rows)
             
          });
          
