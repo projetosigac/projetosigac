@@ -1,4 +1,4 @@
-chamados = function () {
+ambLista = function () {
 
     var enderecosAmbulancias = [];
 
@@ -8,38 +8,42 @@ chamados = function () {
     }
     var _listarOcorrencia = function () {
         $.ajax({
-            url: '/api/show-crisis',
+            url: '/api/show-amb-list',
             type: 'POST',
             async: false,
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
             success: function (data){
-                var objCrise = data.rows;
+                var objAmb = data.rows;
                 var resultHtml = "";
                 $('#tableOcorrencia tbody').html('');
-                for (var i = 0; i < objCrise.length; i++) {
+                for (var i = 0; i < objAmb.length; i++) {
 
                 //tr.append("<td>"+_maisProxima(data[i])+"</td>");
-
-                _enderecoLatLng(function(address, crise) {
+                        
                         tr = $('<tr/>');
-                        tr.append("<td>"+crise.cri_id+"</td>");
-                        tr.append("<td>"+crise.cri_afetados+"</td>");
-                        tr.append("<td>"+Math.ceil(2*crise.cri_afetados*0.12)+"</td>");
-                        tr.append("<td>"+address+"</td>");
+                        tr.append("<td>"+objAmb[i].placa+"</td>");
+                        if(objAmb[i].qtd_passageiros == null){
+                            tr.append("<td> -- </td>");
+                        }
+                        else tr.append("<td>"+objAmb[i].qtd_passageiros+"</td>");
+                        if(objAmb[i].tipo == null){
+                            tr.append("<td> -- </td>");
+                        }
+                        else tr.append("<td>"+objAmb[i].tipo+"</td>");
+                        tr.append("<td>"+objAmb[i].status+"</td>");
                         $('#tableOcorrencia tbody').append(tr);
-                    }, objCrise[i]);
 
                 var marker = new google.maps.Marker({
                     map: map,
-                    position: new google.maps.LatLng(objCrise[i].latitudeBoxValue, objCrise[i].LongitudeBoxValue),
-                    title: 'Ocurrence ID '+objCrise[i].cri_id
+                    position: new google.maps.LatLng(objAmb[i].latitude, objAmb[i].longitude),
+                    title: 'Ambulance Status: '+objAmb[i].status
                 });
 
                 var infowindow = new google.maps.InfoWindow({
                     maxWidth: 250
                 });
-                var content = "<b>Ocurrence ID:</b> ".concat(objCrise[i].cri_id);
+                var content = "<b>Ambulance License Plate:</b> ".concat(objAmb[i].placa);
 
                 google.maps.event.addListener(marker,'click', function(marker, content, infowindow){
                     return function() {
@@ -64,13 +68,13 @@ chamados = function () {
         armazenado no banco de dados. O endereço é necessário para o cálculo
         de ambulância mais próxima a uma dada ocorrência
     */
-    var _enderecoLatLng = function (callback, crise) {
-        var latlng = {lat: Number(crise.latitudeBoxValue), lng: Number(crise.LongitudeBoxValue)};
+    var _enderecoLatLng = function (callback, ambLista) {
+        var latlng = {lat: Number(ambLista.latitudeBoxValue), lng: Number(ambLista.LongitudeBoxValue)};
         var geocoder = new google.maps.Geocoder();
         geocoder.geocode({'location': latlng}, function(results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
                 if (results[0]) {
-                    callback(results[0].formatted_address, crise);
+                    callback(results[0].formatted_address, ambLista);
                 }
             }
             else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {

@@ -11,7 +11,25 @@
 
             <h1> Ambulances </h1>
 
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            </div>
+
+            <table id="tableOcorrencia" class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>Placa</th>
+                        <th>Passengers</th>
+                        <th>Ambulance Type</th>
+                        <!--<th>Address SAMU</th>-->
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+    <!--div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="headingOne">
           <h4 class="panel-title">
@@ -55,7 +73,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div-->
 
             </div>
 
@@ -68,9 +86,13 @@
     <%- include ../layouts/footer.ejs %>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="/../js/mapa.js"></script>
+    <script type="text/javascript" src="/../js/pages/ambLista.js"></script>
     <script>
         mapa.start();
-        var marker_1 = new google.maps.Marker({
+        $(document).ready(function(){
+          ambLista.init();
+        });
+        /*var marker_1 = new google.maps.Marker({
                 map: map,
                 position: new google.maps.LatLng(-23.29486486253487, -45.99185186132812),
                 title: 'Ambulance 1'
@@ -88,7 +110,7 @@
                 map: map,
                 position: new google.maps.LatLng(-23.49586486253487, -45.9185186132812),
                 title: 'Ambulance 3'
-            });
+            });*/
     </script>
     </body>
 </html>
