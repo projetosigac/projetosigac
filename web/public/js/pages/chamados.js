@@ -6,39 +6,40 @@ chamados = function () {
         mapa.start();
         _carregarAmbulancias();
     }
-
     var _listarOcorrencia = function () {
         $.ajax({
-            type: "GET",
-            url: '/ambulancia/listar-ocorrencias',
+            url: '/api/show-crisis',
+            type: 'POST',
             async: false,
             contentType: 'application/json; charset=utf-8',
             dataType: 'json',
-            data: {status:'ABERTO'},
             success: function (data){
+                var objCrise = data.rows;
                 var resultHtml = "";
                 $('#tableOcorrencia tbody').html('');
-                for (var i = 0; i < data.length; i++) {
+                for (var i = 0; i < objCrise.length; i++) {
 
-                tr = $('<tr/>');
-                tr.append("<td>"+data[i].id+"</td>");
-                tr.append("<td>"+data[i].n_vitimas+"</td>");
-                tr.append("<td>"+data[i].n_ambulancias_necessarias+"</td>");
                 //tr.append("<td>"+_maisProxima(data[i])+"</td>");
-                tr.append("<td>"+data[i].endereco+"</td>");
 
-                $('#tableOcorrencia tbody').append(tr);
+                _enderecoLatLng(function(address, crise) {
+                        tr = $('<tr/>');
+                        tr.append("<td>"+crise.cri_id+"</td>");
+                        tr.append("<td>"+crise.cri_afetados+"</td>");
+                        tr.append("<td>"+Math.ceil(2*crise.cri_afetados*0.12)+"</td>");
+                        tr.append("<td>"+address+"</td>");
+                        $('#tableOcorrencia tbody').append(tr);
+                    }, objCrise[i]);
 
                 var marker = new google.maps.Marker({
                     map: map,
-                    position: new google.maps.LatLng(data[i].latitude, data[i].longitude),
-                    title: 'Ocurrence ID '+data[i].id
+                    position: new google.maps.LatLng(objCrise[i].latitudeBoxValue, objCrise[i].LongitudeBoxValue),
+                    title: 'Ocurrence ID '+objCrise[i].cri_id
                 });
 
                 var infowindow = new google.maps.InfoWindow({
                     maxWidth: 250
                 });
-                var content = "<b>Ocurrence ID:</b> ".concat(data[i].id);
+                var content = "<b>Ocurrence ID:</b> ".concat(objCrise[i].cri_id);
 
                 google.maps.event.addListener(marker,'click', function(marker, content, infowindow){
                     return function() {
@@ -63,13 +64,13 @@ chamados = function () {
         armazenado no banco de dados. O endereço é necessário para o cálculo
         de ambulância mais próxima a uma dada ocorrência
     */
-    var _enderecoLatLng = function (callback, lat, lng) {
-        var latlng = {lat: lat, lng: lng};
+    var _enderecoLatLng = function (callback, crise) {
+        var latlng = {lat: Number(crise.latitudeBoxValue), lng: Number(crise.LongitudeBoxValue)};
         var geocoder = new google.maps.Geocoder();
         geocoder.geocode({'location': latlng}, function(results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
                 if (results[0]) {
-                    callback(results[0].formatted_address);
+                    callback(results[0].formatted_address, crise);
                 }
             }
             else if (status == google.maps.GeocoderStatus.OVER_QUERY_LIMIT) {
@@ -115,7 +116,7 @@ chamados = function () {
             }
         });*/
 
-        enderecosAmbulancias.push("Rua H8B, 232");
+       // enderecosAmbulancias.push("Rua H8B, 232");
         enderecosAmbulancias.push("Avenida 9 de Julho, 200");
         enderecosAmbulancias.push("R. Dr. José Cândido de Souza - Jardim Novo Mundo");
         enderecosAmbulancias.push("Av. Andrômeda - São José dos Campos");

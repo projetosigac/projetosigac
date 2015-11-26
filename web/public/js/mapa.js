@@ -9,7 +9,7 @@ mapa = function(){
     google.maps.event.addDomListener(window, 'load', _initialize());
     }
 
-    var _initialize = function (){
+    var _initialize = function (callback){
 
         var latlng = new google.maps.LatLng(-23.19586486253487, -45.89185186132812);
         var options = {
@@ -21,7 +21,8 @@ mapa = function(){
 
         google.maps.event.addDomListener(window, 'resize', _initialize);
         //google.maps.event.addDomListener(window, 'load', _initialize);
-
+        if(callback)
+          callback();
     }
 
     var _calcularRota = function (origin, destination, customIcon, callback) {
@@ -43,11 +44,15 @@ mapa = function(){
                 directionsDisplay.setDirections(response);
                 if(customIcon){
                   for(var i in customIcon){
-                    _setMarkerDirections(customIcon[i], customIcon[i].address);
+                    var address = customIcon[i].address;
+                    if(typeof address != 'string'){
+                      address = response.routes[0].legs[0].end_address;
+                    }
+                    _setMarkerDirections(customIcon[i], address);
                   }
                 }
                 if(callback)
-                  callback(true);
+                  callback();
 
             } else {
                 window.alert('Directions request failed due to ' + status);
@@ -72,7 +77,7 @@ mapa = function(){
         }
       });
     }
-    var _carregarNoMapa = function (endereco) {
+    var _carregarNoMapa = function (endereco, callback) {
 
         _deleteMarkers();
 
@@ -93,7 +98,7 @@ mapa = function(){
                     var location = new google.maps.LatLng(latitude, longitude);
                     var marker = _addMarker(location, '../images/marker-crisis.png');
 
-                    _createInfoWindow('Local da emergência', enderecoFormatado, marker);
+                    _createInfoWindow('Local crises', enderecoFormatado, marker);
 
                     map.setCenter(location);
                     map.setZoom(16);
@@ -101,7 +106,8 @@ mapa = function(){
                     google.maps.event.addDomListener(window, 'resize', _initialize);
                     google.maps.event.addDomListener(window, 'load', _initialize)
 
-
+                    if(callback)
+                      callback();
                 }
             }
         });
@@ -142,7 +148,6 @@ mapa = function(){
       geocoder.geocode({'location': latlng}, function(results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
           if (results[1]) {
-            _carregarNoMapa(results[1].formatted_address);
             callback(results[1]);
           } else {
             window.alert('No results found');
@@ -168,9 +173,9 @@ mapa = function(){
       _clearMarkers();
       markers = [];
     }
-    var _clearMap = function(){
+    var _clearMap = function(callback){
       $("#map").html("");
-      _initialize();
+      mapa.initialize(callback);
     }
     return {
         start: _start,

@@ -338,7 +338,8 @@ exports.showCrisis = function (req, res) {
     var sess = req.session;
 
     req.getConnection(function(err,connection){
-        var query = connection.query('SELECT cri_id, cri_ds, cri_afetados, latitudeBoxValue, LongitudeBoxValue from crise  where cri_id not in (select id_crise from ocorrencia);', function(err,rows,fields) {
+        var query = connection.query('SELECT cri_id, cri_ds, cri_afetados, latitudeBoxValue, LongitudeBoxValue from crise  where cri_id not in (select id_crise from ocorrencia);', 
+            function(err,rows,fields) {
             if(err) {
                 return console.log("Error Query : %s ",err );
             }else
@@ -361,6 +362,22 @@ exports.getCrisis = function (req, res) {
                 return console.log("Error Query : %s ",err );
             }
             return res.json({status: 'OK', 'rows' : rows, token: sess.token});
+        });
+    });
+};
+
+
+/*Show AmbList*/
+exports.showAmbList = function (req, res) {
+    var sess = req.session;
+
+    req.getConnection(function(err,connection){   
+            var query = connection.query('SELECT A.placa, A.qtd_passageiros, A.tipo, A.status, L.latitude, L.longitude from ambulancia as A LEFT JOIN localizacao_ambulancia as L ON (A.placa = L.placa_ambulancia)  ;', function(err,rows,fields) {
+            if(err) {
+                return console.log("Error Query : %s ",err );
+            }else
+              return res.json({status: 'OK', 'rows' : rows, token: sess.token});
+
         });
     });
 };

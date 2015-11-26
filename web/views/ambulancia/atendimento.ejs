@@ -34,7 +34,7 @@
                         <input type="number" min="1" value="1" class="form-control" name="qtdVitimas" id="qtdVitimas" />
                     </div>
                     <div class="form-group">
-                        <button type="button" id="btnChamarAmbulancia" class="btn btn-info" disabled onclick="atendimento.chamarAmbulancia();"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Calculate Ambulances</button>
+                        <button type="button" id="btnChamarAmbulancia" class="btn btn-info" disabled onclick="atendimento.validaMapa();"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Calculate Ambulances</button>
                     </div>
                     <ul class="list-inline">
                       <li>
@@ -97,7 +97,9 @@
             <center>
                 <img src="/../images/attention.png" style="width:150px;" />
                 <br />
-                <label>The number of victims is higher than the number of beds available!</label>
+                <label id="msgLimiteHospital">The number of victims is higher than the number of hospital room available!</label>
+                <br />
+                <label id="msgLimiteAmbulancia">The number of victims is higher than the number of ambulance available!</label>
             </center>
           </div>
           <div class="modal-footer">

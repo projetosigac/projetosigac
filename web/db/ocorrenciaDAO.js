@@ -62,6 +62,18 @@ function OcorrenciaDAO(pool) {
         });
     };
 
+    this.obterAmbulanciaAtiva = function(callback){
+      var query = self.pool.query("SELECT * FROM localizacao_ambulancia la  \
+      INNER JOIN ambulancia a ON a.placa=la.placa_ambulancia AND a.status='Ativo'", function (err, rows) {
+          if (err) {
+              callback(err, {});
+          } else {
+              var result = (rows ? rows : {});
+              callback(null, result);
+          }
+      });
+    };
+
     this.obterBaseSamuAtiva = function(callback){
       var query = self.pool.query("SELECT * FROM cadastro_samu s\
        WHERE EXISTS (SELECT placa FROM ambulancia a WHERE s.samu_id=a.samu_id AND a.status = 'Ativo')", function (err, rows) {

@@ -44,6 +44,7 @@
                                             <th>Status</th>
                                             <th>Crisis</th>
                                             <th>Hospital</th>
+                                            <th>Status</th>
                                             <th>Death</th>
                                             <th>Communicate Death</th>
 
@@ -55,9 +56,10 @@
                                                 <td class="text-danger text-center"><%= dados[i].token %></td>
                                                 <td class="text-danger text-center"><%= dados[i].nome %></td>
                                                 <td class="text-danger text-center"><%= dados[i].sexo %></td>
-                                                <td class="text-danger text-center"><a href="<%= "vitima" + dados[i].status %>"> Vital Signs</a></td>
+                                                <td class="text-danger text-center"><a href="<%= "vitima" + dados[i].id %>"> Vital Signs</a></td>
                                                 <td class="text-danger text-center"><a href="<%= "crises" + dados[i].crise %>"><%= dados[i].crise %></a></td>
                                                 <td class="text-danger text-center"><%= dados[i].hospital %></td>
+                                                <td class="text-danger text-center"><%= dados[i].status %></td>
 												<td class="text-danger text-center"><%= dados[i].obito %></td>			
 												<td class="text-danger text-center">
 													<form action="/uti/comunicarObito" method = "post">
