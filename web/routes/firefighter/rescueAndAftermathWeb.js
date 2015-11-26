@@ -81,7 +81,6 @@ module.exports = function (app) {
 
     //app.get('/dashboard/firefighter/raa/station/:station_id', util.autenticarSessao, function(req, res) {
     app.get('/dashboard/firefighter/raa/station/:station_id', function(req, res) {
-
         return stationDAO.getStationDevices(req.params.station_id, function(err, result, fields) {
             if(err)
             {
@@ -91,17 +90,21 @@ module.exports = function (app) {
 
             var options = Object.create(commonOptions);
 
-            options.content = result.map(function(row) {
+            options.customFooterJavascriptURLs = [
+                'https://www.google.com/jsapi',
+                '/js/firefighter/stationDevicesGraphs.js'];
+            options.content = {};
+            options.content.results = result.map(function(row) {
                 return {
                     'id': row.device_id,
                     'name': row.device_name,
                     'last_reading': row.device_last_reading ? row.device_last_reading : 'Nunca' };
             });
+            options.content.station_id = req.params.station_id;
 
             options.contentTemplate = 'station_details';
             return res.render('firefighter/rescueandaftermath/index', options);
         });
-
     });
 
     app.get('/dashboard/firefighter/raa/device/:device_id', function(req, res) {

@@ -59,6 +59,38 @@ module.exports = function (app) {
         });
     });
 
+    app.get('/api/firefighter/raa/station/deviceswithreadings/:station_id', /* util.autenticarSessao,*/ function(req, res) {
+        return stationDAO.getStationDevicesWithReadings(req.params.station_id, function(err, result, fields) {
+            if(err)
+            {
+                console.log(err);
+                return res.status(500).send('DB Error');
+            }
+            var ans = {devices:{}, readings:{}};
+            result.forEach(function(reading) {
+                var device_id = reading.device_id;
+                if (ans['devices'][device_id] == undefined) {
+                    ans['devices'][device_id] = {
+                        name: reading.device_name,
+                        last_reading: reading.device_last_reading,
+                        latitude: reading.device_latitude,
+                        longitude: reading.device_longitude,
+                        description: reading.device_description
+                    };
+                }
+
+                if (ans['readings'][device_id] === undefined) {
+                    ans['readings'][device_id] = [];
+                }
+                ans['readings'][device_id].push({
+                    'timestamp': reading.reading_timestamp,
+                    'value': reading.reading_value
+                });
+            });
+            return res.json(ans);
+        });
+    });
+
     app.post('/api/firefighter/raa/station/devices/register', function(req, res) {
         var stationID = req.body.stationID;
         var device = req.body.device;
