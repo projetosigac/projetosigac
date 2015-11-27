@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+        <preview height="52" width="128">
+            <raw numberOfBytes="1423">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,52,8,2,0,0,0,-51,7,-89,-1,0,0,5,86,73,68,65,84,120,-38,-19,-101,73,72,92,89,20,-122,-17,70,34,-110,64,18,16,7,76,22,9,-72,-119,-120,-67,80,-29,-100,-115,-124,44,-100,-37,-95,-75,28,-38,42,-89,114,42,-59,40,-50,74,-20,77,-125,-96,-63,-128,3,109,107,28,-119,70,-115,40,-88,4,84,80,52,26,-107,-120,24,113,-118,104,92,104,39,38,6,-121,109,-1,-26,72,-7,-46,-23,87,72,-13,110,87,18,-18,71,45,-34,59,-25,-66,-78,60,-33,-69,-9,-98,87,80,-116,9,4,2,-127,64,32,-8,38,48,49,49,49,55,55
+,-73,18,24,-60,-46,-46,-46,-44,-44,-108,-117,0,11,11,11,123,123,123,47,47,-81,59,2,121,-18,-35,-69,103,103,103,-57,69,-128,-115,-115,13,-86,31,19,19,-13,-85,64,-98,-76,-76,52,87,87,87,94,2,96,88,-83,86,107,4,-14,-24,116,58,-114,2,48,3,98,99,99,-43,2,121,-72,11,-64,44,-117,21,-56,35,4,-4,-24,2,-60,38,108,-104,-12,-12,116,-114,2,60,61,61,99,4,6,-31,-37,5,65,64,116,116,-76,-88,-78,49,5,68,69,69,69,11,-28,-31,43,-64,-61,-61,67,8,48,-78,-128,-56,-56,-56,40,-127,60,-87,-87,-87,28,5,-72,-69,-69,-85,84,-86,72,-127,60,66,-128,-111,73,73,73,-31,43,32,34,34,66,-91,52
+,-103,-103,-103,-65,75,40,41,41,-47,104,52,-120,-57,-57,-57,-105,-107,-107,73,83,-55,-55,-55,116,73,65,65,-127,52,94,84,84,68,113,-83,86,43,-115,-29,-14,-124,-124,4,-60,-43,106,53,-58,72,83,89,89,89,42,14,-100,9,-80,-78,98,119,-17,-98,-67,-36,-35,-39,-107,43,39,-15,-117,23,-103,-117,-53,23,-87,27,55,-116,41,0,-69,-42,-8,-8,-8,95,18,-42,-41,-41,-85,-86,-86,80,-78,-90,-90,-90,-83,-83,45,105,106,116,116,20,27,29,74,-71,-80,-80,-80,-69,-69,-85,-113,47,45,45,-107,-106,-106,98,9,30,26,26,-110,-114,127,-5,-10,109,91,91,27,116,86,84,84,-84,-82,-82,74,83,-45,-45,-45,120,104,-30,37,-32,-14,101,-10,-24
+,17,123,-13,-26,-20,-11,-22,21,75,77,101,-105,46,49,-107,-118,-51,-52,124,-111,-22,-22,98,87,-81,-98,87,64,120,120,120,-124,-94,20,22,22,-66,127,-1,-2,-27,-53,-105,127,126,-90,-77,-77,19,-89,125,125,125,73,73,73,-88,17,4,60,121,-14,-124,82,-117,-117,-117,7,7,7,120,-38,-84,-83,-83,61,60,60,-60,24,-118,-9,-12,-12,28,29,29,53,54,54,-94,13,-57,-75,43,43,43,20,111,111,111,-33,-40,-40,-104,-99,-99,-59,-68,-23,-18,-18,-2,-16,-31,3,70,82,106,114,114,-14,-29,-57,-113,-59,-59,-59,17,74,115,42,-32,-38,53,-74,-70,-54,-122,-121,-103,86,123,-14,-54,-51,101,-81,95,-77,-26,102,102,97,-63,30,62,60,41,-6,-125
+,7,-89,-87,103,-49,-40,-89,79,-25,-102,4,16,-32,-26,-26,-58,67,-64,-69,119,-17,112,-97,-46,105,70,70,-58,-26,-26,102,127,127,127,98,98,34,-84,-52,-51,-51,97,-118,80,106,112,112,16,-123,70,-107,-21,-22,-22,112,-96,47,95,78,78,-50,-15,-15,-15,-29,-57,-113,-111,66,-107,49,75,40,-114,-27,8,10,-15,14,16,-128,-46,111,111,111,99,36,-91,96,11,35,121,8,-64,-33,58,17,112,-3,58,91,91,59,-87,53,-127,-27,-24,-7,115,-42,-38,-54,44,45,89,85,21,123,-15,-126,-35,-70,117,-102,-54,-53,99,-5,-5,-20,-26,-51,-13,10,-8,69,105,-80,-102,67,64,107,107,43,-99,-22,116,58,8,-64,-35,-115,-75,-101,4,-32,-98,-94,20,9
+,-64,18,68,2,-80,16,81,60,59,59,27,2,80,83,-92,72,0,-59,105,14,-31,29,112,-128,25,-128,-27,8,35,41,-43,-48,-48,64,2,20,-1,119,-72,11,8,11,11,-29,33,-96,-91,-91,-27,95,5,96,1,-7,90,0,-106,32,28,96,-22,80,-4,-2,-3,-5,36,0,123,-64,-34,-34,-34,-56,-56,-120,94,-64,-44,-44,-108,84,0,70,74,5,-24,21,126,55,2,-16,-42,-95,-95,-95,97,-118,-110,-97,-97,79,2,-24,20,27,35,9,64,11,-124,-5,-105,86,112,74,13,12,12,-96,-18,-88,50,9,-128,57,-118,-93,-97,-127,0,-44,20,93,32,9,-96,56,22,49,8,-64,59,-32,-96,-85,-85,-117,4,80,-118,4,64,97,-104,-46,96,-35,19,2,126
+,116,1,-54,-110,-105,-105,71,2,-24,20,91,46,9,-120,-117,-117,-45,11,-96,20,9,64,-107,107,106,106,-48,5,65,0,-59,-65,22,64,113,44,98,-1,16,-128,-111,-108,66,35,68,2,20,-1,119,-80,-36,113,20,-32,-30,-30,18,18,18,-94,-20,39,-50,-51,-51,69,-17,-120,74,-3,-15,-103,-114,-114,14,-100,-10,-10,-10,66,0,-126,-112,-127,110,-110,82,104,67,81,119,84,-71,-70,-70,26,7,24,67,113,20,23,98,-22,-21,-21,-47,-122,-29,-38,-27,-27,101,-118,99,99,71,27,58,51,51,3,19,79,-97,62,-123,27,-116,-92,-44,-60,-60,-60,-2,-2,-66,94,-95,-14,2,12,-73,-95,-21,-21,-1,-79,13,-123,-128,-32,-32,-32,16,69,-63,39,30,27,27
+,-37,-107,-80,-74,-74,86,89,89,-119,66,-29,-90,-122,0,105,106,120,120,24,27,29,-100,-51,-49,-49,-17,-20,-20,80,16,7,112,-125,106,34,-123,89,34,29,-113,-57,-120,-26,-26,102,-20,-37,-27,-27,-27,120,62,-112,-90,96,23,-53,69,-120,-46,-100,10,-32,-12,32,-58,67,0,64,-97,-13,-101,4,44,74,88,-24,17,71,95,-113,78,81,-102,-62,-58,64,-105,-96,-95,-108,-58,-95,-124,-30,120,126,-106,-58,113,57,30,-36,16,-121,78,-116,-111,-90,-80,-39,-124,112,-32,84,0,-89,-81,34,110,-33,-66,-3,-77,-64,32,-40,111,56,126,25,7,1,65,65,65,-94,-54,66,-64,-73,11,54,124,-114,2,-100,-99,-99,3,3,3,-125,4,-14,-4,31,2,4,6,-32
+,46,32,32,32,64,84,-39,104,2,-100,-100,-100,-4,-3,-3,3,4,-14,-96,81,-26,46,64,96,0,60,-64,-13,21,-32,-25,-25,39,-86,108,76,1,-66,-66,-66,126,2,121,-8,10,112,116,116,20,2,-116,44,-64,-57,-57,-57,87,32,-113,70,-93,-31,43,64,-36,-29,70,-101,1,-42,-42,-42,-34,-34,-34,-30,71,122,-122,-47,106,-75,14,14,14,92,4,92,-72,112,-63,-42,-42,-10,39,-127,65,-20,-20,-20,-52,-52,-52,-60,-49,-6,5,2,-127,64,32,-8,-98,-7,27,17,93,-111,69,114,97,24,116,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                <control oid="807cb722-cbf1-49ef-9058-68e70fc0684b" plug="thirdPoint_x"/>
+                <init>150.0</init>
+            </input>
+            <input name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                <control oid="807cb722-cbf1-49ef-9058-68e70fc0684b" plug="thirdPoint_y"/>
+                <init>50.0</init>
+            </input>
+            <input name="Enable" oid="5c2bc57c-bac9-46cd-944e-0dc6c364202a" type="bool">
+                <init>true</init>
+            </input>
+            <input name="Style" oid="f5c1daa7-19d2-419f-927d-db7833c23a63" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="BackColor" oid="48990530-0056-4f27-a7b1-5ee5bf013c76" representation="color" type="int">
+                <init>6</init>
+            </input>
+            <input name="Font" oid="f601ee89-655e-4546-b4cb-5029c0c43a04" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="TextColor" oid="5f374ea6-4205-415e-9b0d-de2330711344" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="TextAlignment" oid="dab3f2f1-cd4c-45da-8e6d-b1f35036189e" representation="horizontal_alignment" type="int">
+                <init>1</init>
+            </input>
+            <input name="MinValue" oid="30352750-23db-4387-97f1-5add36efe644" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="MaxValue" oid="22b3800a-ea18-4b92-859b-779ca9fa9730" type="real">
+                <init>1000000.0</init>
+            </input>
+            <input name="LegendAreaWidth" oid="ccd7297d-3cce-4fde-b9d8-6b764b4709a9" type="real">
+                <init>25.0</init>
+            </input>
+            <input name="LegendString" oid="56c4b305-5734-430f-b312-f235248b2ae4" representation="as_string" type="char^255">
+                <init>[76, 68, 0]</init>
+            </input>
+            <input name="LegendPosition" oid="856ada60-8474-4923-b107-89b80180e60a" representation="index" type="int">
+                <init>2</init>
+            </input>
+            <input name="LegendFont" oid="d173175d-51e5-45c3-bf88-7fa2b79ac230" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="LegendTextColor" oid="7141d1aa-ddd2-4e72-b9a7-5a13755814cf" representation="color" type="int">
+                <init>51</init>
+            </input>
+            <input name="NbDigitsIntPart" oid="b4a304fe-e9b8-4607-8ddb-b649a1257c47" type="int">
+                <init>7</init>
+            </input>
+            <input name="NbDigitsFractionalPart" oid="6882380d-0a23-4631-8050-bca4fd1cab89" type="int">
+                <init>2</init>
+            </input>
+            <input name="DisplaySign" oid="493cdabe-ed90-42f4-87fe-b1d024104da5" representation="index" type="int">
+                <init>2</init>
+            </input>
+            <input name="LeadingZeros" oid="94b328c5-1dd2-4969-a509-82ac2ef7cf30" type="bool">
+                <init>false</init>
+            </input>
+            <input name="IncrValueFine" oid="1e2a981e-4426-4d0b-95b8-a97eed5873aa" type="real">
+                <init>0.1</init>
+            </input>
+            <input name="IncrValueCoarse" oid="b697b45c-d877-42a8-ac30-50b1e366cc1b" type="real">
+                <init>10.0</init>
+            </input>
+            <input name="InValue" oid="79abdc40-02ce-441e-8bf2-20a5493f5324" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="InValueSet" oid="1eb04baf-4ac7-4183-8de2-500d86c5a239" type="bool">
+                <init>false</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="false" name="ValueChangeEmit" oid="c768c830-d6fd-4d78-9065-b9a29d2a3973" type="bool">
+                <init>false</init>
+            </output>
+            <output memory="false" name="Value" oid="84ca25c7-7269-47ff-a265-40ac5123cbb7" type="real">
+                <init>0.0</init>
+            </output>
+        </outputs>
+        <locals>
+            <local memory="false" name="DisplayedString" oid="d2e65f78-27b9-428f-a6c4-2cf67fdbe5ba" representation="as_string" type="char^255">
+                <init>[0]</init>
+            </local>
+            <local memory="true" name="MouseInside" oid="85407497-7e58-470c-864a-7d625ba54918" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="KeyPressed" oid="17026acb-1237-4261-ae56-d42553baaa6e" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="KeyCode" oid="786f961c-555f-49b7-9d5b-6ef150dcb279" type="int">
+                <init>0</init>
+            </local>
+            <local memory="false" name="KeyModifier" oid="4290f317-58bb-465b-9b82-c484c4f20979" type="int">
+                <init>0</init>
+            </local>
+            <local memory="false" name="MousePressed" oid="8630da19-a7d3-430c-959e-777df879be38" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="MouseButton" oid="e52e8201-582d-46a5-b92a-fefe8b0db3b0" type="int">
+                <init>0</init>
+            </local>
+            <local memory="false" name="CursorVisible" oid="57f555b3-2a73-40c0-bf93-9d45fd78f20a" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="CursorPos" oid="611fd5f9-5161-451b-a591-e6f70eee9bda" type="int">
+                <init>0</init>
+            </local>
+            <local memory="false" name="EditMode" oid="67c59181-f6c4-4240-9be0-8878960b4426" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="LineSize" oid="894d6b4b-7427-4383-9ce7-d98b38e98cd8" type="real">
+                <init>0.0</init>
+            </local>
+            <local memory="true" name="PositionClicked" oid="18f2d9cc-b336-4dd2-b3e7-bd2edaf5afae" type="real">
+                <init>0.0</init>
+            </local>
+            <local memory="true" name="LineFull" oid="819472b3-1fb4-4b41-9aaf-d3420b698e23" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="NewIndexAfterClick" oid="ec17defd-04cc-44e5-b526-3cfc6cd08ba8" type="int">
+                <init>0</init>
+            </local>
+            <local memory="false" name="TotalBorder" oid="b8f175ec-8b35-48f9-8b81-7f75d50e4483" type="real">
+                <init>6.0</init>
+            </local>
+            <local memory="true" name="HasFocus" oid="37dd6435-55f3-4e3f-bb96-177be2976a78" type="bool">
+                <init>false</init>
+            </local>
+        </locals>
+    </declaration>
+    <children>
+        <container oid="9b8f4b1d-260a-4290-8873-5bb9f64f54fe">
+            <pathFromRoot value="0"/>
+            <properties name="NumericEditBox">
+                <comment>The NumericEditBox widget enables editing a numeric value. A user can modify the numeric value using input devices. Since a numeric value is used, the value can be incremented. The widget can receive a number of incremental values or a numeric key value.
+
+When the mouse wheel is used, the current value is incremented (or decremented) by IncrValueCoarse, but remains in the range [MinValue,MaxValue]
+When keyboard keys are used, the user can type any string; when the return key is pressed, the value is interpreted, constrained in the allowed range, and formated with FormatString.
+
+When the return key is pressed or the wheel is used:
+* ChangeEmit is true
+* ValueChange and StringChange are refreshed with the current value.
+
+FormatString is interpreted as such:
+* &apos;#&apos; is a digit that is always displayed
+* &apos;_&apos; is a digit that may be skipped if it&apos;s a leading or trailing zero.
+* &apos;.&apos; is the decimal separator
+* any other character is kept as-is.</comment>
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="156.0" maxY="56.0" minX="0.0" minY="-6.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <rectangle oid="807cb722-cbf1-49ef-9058-68e70fc0684b">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="control">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>150.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>50.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>true</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>-1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>-1</init>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <textureControl>
+                            <init>false</init>
+                        </textureControl>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <tessellate>
+                            <init>false</init>
+                        </tessellate>
+                    </properties>
+                </rectangle>
+                <condContainer oid="080f3351-eb68-4316-954b-3d34decfbbb4">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="LegendPosition">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>LegendPosition</expr>
+                        </index>
+                        <indexes default="other">
+                            <index value="1"/>
+                            <index value="2"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="55e431d8-3be7-401c-8bb2-3aae5a770fda">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties name="LEFT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>15.0</init>
+                                        </x>
+                                        <y>
+                                            <init>17.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>33.0</init>
+                                        </x>
+                                        <y>
+                                            <init>31.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>49.0</init>
+                                        </x>
+                                        <y>
+                                            <init>18.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>41</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="034099db-0397-42b7-8203-a670c5aa3a14">
+                            <pathFromRoot value="1,1,0"/>
+                            <properties name="RIGHT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>19.0</init>
+                                        </x>
+                                        <y>
+                                            <init>13.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>27.0</init>
+                                        </x>
+                                        <y>
+                                            <init>33.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>14.0</init>
+                                        </x>
+                                        <y>
+                                            <init>34.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>41</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <condContainer oid="0c2b2085-04bc-4e10-81be-e49691e76319">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="DisplaySign">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>DisplaySign</expr>
+                        </index>
+                        <indexes default="other">
+                            <index value="0"/>
+                            <index value="1"/>
+                            <index value="2"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="713e38ce-aee6-4272-acd1-a58cf37ca495">
+                            <pathFromRoot value="0,2,0"/>
+                            <properties name="SIGN_ALWAYS">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>15.0</init>
+                                        </x>
+                                        <y>
+                                            <init>17.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>33.0</init>
+                                        </x>
+                                        <y>
+                                            <init>31.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>49.0</init>
+                                        </x>
+                                        <y>
+                                            <init>18.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>41</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="283d15a2-cf44-4ed6-98f0-76d8775e307b">
+                            <pathFromRoot value="1,2,0"/>
+                            <properties name="SIGN_NEVER">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>19.0</init>
+                                        </x>
+                                        <y>
+                                            <init>13.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>27.0</init>
+                                        </x>
+                                        <y>
+                                            <init>33.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>14.0</init>
+                                        </x>
+                                        <y>
+                                            <init>34.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>41</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="b438559f-778e-4483-9dfa-4995e14232bd">
+                            <pathFromRoot value="2,2,0"/>
+                            <properties name="SIGN_WHEN_NEGATIVE">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>19.0</init>
+                                        </x>
+                                        <y>
+                                            <init>13.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>27.0</init>
+                                        </x>
+                                        <y>
+                                            <init>33.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>14.0</init>
+                                        </x>
+                                        <y>
+                                            <init>34.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>41</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <referenceContainer oid="85cb4986-5f81-43c4-bd55-f40ca7ea0fb0">
+                    <pathFromRoot value="3,0"/>
+                    <properties modular="false" name="3DBackground">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                                <expr>(LegendPosition = 1) ? LegendAreaWidth : 0.0</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="3DBackground.ogfx" path="Common"/>
+                        <crc value="2880543057"/>
+                        <inputParameters>
+                            <parameter control="false" name="SizeX" oid="1567db4f-d5b7-45ac-a492-37a604b6c49a" type="real">
+                                <expr>SizeX - LegendAreaWidth</expr>
+                                <init>125.0</init>
+                            </parameter>
+                            <parameter control="false" name="SizeY" oid="ff8689f8-eca1-414d-bbe3-d097ae184da7" type="real">
+                                <expr>SizeY</expr>
+                                <init>50.0</init>
+                            </parameter>
+                            <parameter control="false" name="BackgroundColor" oid="e34cba86-f2b3-4943-8d08-71b1c1a3fa67" representation="color" type="int">
+                                <expr>BackColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="PoppingOutward" oid="81dadf9e-8012-4548-8eb4-2ef402242f93" type="bool">
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="Enable" oid="40bccd91-f2ea-4227-a3a6-e2d66c48c81c" type="bool">
+                                <expr>Enable</expr>
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="3c43a032-be6b-4a91-a8df-8985c699dcde" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="DownHalo" oid="2db0af55-687b-48ec-8de2-73996e59d8fe" type="bool">
+                                <init>false</init>
+                            </parameter>
+                        </inputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <referenceContainer oid="df79b24d-e2cd-4995-b890-d859540260ce">
+                    <pathFromRoot value="4,0"/>
+                    <properties modular="false" name="IndividualFocus">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="IndividualFocus.ogfx" path="Common"/>
+                        <crc value="1244254813"/>
+                        <inputParameters>
+                            <parameter control="false" name="Requestfocus" oid="51ba8016-ef03-4f7c-8249-e2524097b493" type="bool">
+                                <expr>MouseInside</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="NextWidgetId" oid="56ba4cfa-e949-4dde-96af-8fb68b21421a" type="int32">
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="IsContainer" oid="a3ce082f-4ed5-43e2-b2d9-e6ed5d84eb77" type="bool">
+                                <init>false</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="HasFocus" oid="6029da93-0cb5-4223-9c14-dacbf6da20d7" type="bool">
+                                <expr>HasFocus</expr>
+                            </parameter>
+                            <parameter name="WidgetId" oid="74947212-4f07-43d2-8791-6c3b1be76b1a" type="int32"/>
+                            <parameter name="Pressed" oid="5f51c1a5-92ea-4b1b-bf5a-a72ef8df097d" type="bool"/>
+                            <parameter name="Released" oid="c86f6eb3-5003-416b-9802-d582d0500662" type="bool"/>
+                            <parameter name="Button" oid="1a70175b-edaf-4fa1-89e1-829943c6314c" type="int"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <keyboardEventListener oid="2ff4b99a-6812-4a58-bebc-1f7b68eb548c">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="keyboard event listener">
+                        <enable>
+                            <init>true</init>
+                            <expr>Enable and HasFocus</expr>
+                        </enable>
+                        <eventId>
+                            <init>0</init>
+                        </eventId>
+                        <output>
+                            <pressed>
+                                <expr>KeyPressed</expr>
+                            </pressed>
+                            <keyCode>
+                                <expr>KeyCode</expr>
+                            </keyCode>
+                        </output>
+                    </properties>
+                </keyboardEventListener>
+                <pointerEventListener oid="fea20ae3-3622-4857-8f2f-2330e965ea78">
+                    <pathFromRoot value="6,0"/>
+                    <properties name="pointer event listener">
+                        <enable>
+                            <init>true</init>
+                            <expr>Enable and HasFocus</expr>
+                        </enable>
+                        <eventId>
+                            <init>0</init>
+                        </eventId>
+                        <relative>
+                            <init>false</init>
+                        </relative>
+                        <output>
+                            <pressed>
+                                <expr>MousePressed</expr>
+                            </pressed>
+                            <button>
+                                <expr>MouseButton</expr>
+                            </button>
+                            <pointerPosition/>
+                            <modifiers>
+                                <expr>KeyModifier</expr>
+                            </modifiers>
+                        </output>
+                    </properties>
+                </pointerEventListener>
+                <referenceContainer oid="d229607d-2217-433c-99f5-4fe00284d7f1">
+                    <pathFromRoot value="7,0"/>
+                    <properties modular="false" name="Highlight">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                                <expr>(LegendPosition = 1) ? LegendAreaWidth : 0.0</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="Highlight.ogfx" path="Common"/>
+                        <crc value="1177902794"/>
+                        <inputParameters>
+                            <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                <expr>SizeX - LegendAreaWidth</expr>
+                                <init>125.0</init>
+                            </parameter>
+                            <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                <expr>SizeY</expr>
+                                <init>50.0</init>
+                            </parameter>
+                            <parameter control="false" name="Highlight" oid="2eca2a68-7a23-42d1-936d-e17e796f6599" type="bool">
+                                <expr>HasFocus</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="eaaebb87-724f-4502-bfdd-3c5d035c5925" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>1</init>
+                            </parameter>
+                        </inputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <imported oid="0f38f1a5-aa2d-46da-b053-0d4eb45106a3">
+                    <pathFromRoot value="8,0"/>
+                    <properties name="wrapper_NumericEditBox">
+                        <function name="wrapper_NumericEditBox"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>false</init>
+                        </restoreStates>
+                        <memory>
+                            <init>true</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="MouseInside" oid="" type="bool">
+                                <expr>MouseInside</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="MousePressed" oid="" type="bool">
+                                <expr>MousePressed</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="MouseButton" oid="" type="int">
+                                <expr>MouseButton</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="KeyPressed" oid="" type="bool">
+                                <expr>KeyPressed and (((((not LineFull) or (KeyCode = 8)) or (KeyCode = 127)) or (KeyCode = 13)) or (KeyCode = 27))</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="KeyCode" oid="" type="int">
+                                <expr>KeyCode</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="KeyModifier" oid="" type="int">
+                                <expr>KeyModifier</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="Value" oid="" type="real">
+                                <expr>InValue</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="SetValue" oid="" type="bool">
+                                <expr>InValueSet</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="MinValue" oid="" type="real">
+                                <expr>MinValue</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="MaxValue" oid="" type="real">
+                                <expr>MaxValue</expr>
+                                <init>100.0</init>
+                            </parameter>
+                            <parameter name="IncrValueCoarse" oid="" type="real">
+                                <expr>IncrValueCoarse</expr>
+                                <init>10.0</init>
+                            </parameter>
+                            <parameter name="IncrValueFine" oid="" type="real">
+                                <expr>IncrValueFine</expr>
+                                <init>0.1</init>
+                            </parameter>
+                            <parameter name="NewCursorIndex" oid="" type="bool">
+                                <expr>MouseInside and MousePressed</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="CursorIndex" oid="" type="int">
+                                <expr>NewIndexAfterClick</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="LeadingZeros" oid="" type="bool">
+                                <expr>LeadingZeros</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="DisplaySign" oid="" type="int">
+                                <expr>DisplaySign</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="NbDigitsIntPart" oid="" type="int">
+                                <expr>NbDigitsIntPart</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="NbDigitsFractionalPart" oid="" type="int">
+                                <expr>NbDigitsFractionalPart</expr>
+                                <init>0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="DisplayedString" oid="" type="char^255">
+                                <expr>DisplayedString</expr>
+                            </parameter>
+                            <parameter name="ChangeEmit" oid="" type="bool">
+                                <expr>ValueChangeEmit</expr>
+                            </parameter>
+                            <parameter name="ValueChange" oid="" type="real">
+                                <expr>Value</expr>
+                            </parameter>
+                            <parameter name="CursorVisible" oid="" type="bool">
+                                <expr>CursorVisible</expr>
+                            </parameter>
+                            <parameter name="CursorPos" oid="" type="int">
+                                <expr>CursorPos</expr>
+                            </parameter>
+                            <parameter name="EditMode" oid="" type="bool">
+                                <expr>EditMode</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <textArea oid="6edbd71b-5b3b-4043-83a3-0904a6916189">
+                    <pathFromRoot value="9,0"/>
+                    <properties name="Legend">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <firstPoint>
+                            <x>
+                                <init>125.0</init>
+                                <expr>(LegendPosition = 1) ? 0.0 : (SizeX - LegendAreaWidth)</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>150.0</init>
+                                <expr>(LegendPosition = 1) ? LegendAreaWidth : SizeX</expr>
+                            </x>
+                            <y>
+                                <init>50.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <maxLength>
+                            <init>255</init>
+                        </maxLength>
+                        <textValue type="char">
+                            <expr>LegendString</expr>
+                            <init>[76, 68, 0]</init>
+                        </textValue>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>51</init>
+                            <expr>LegendTextColor</expr>
+                        </outlineColor>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <font>
+                            <init>1</init>
+                            <expr>LegendFont</expr>
+                        </font>
+                        <horizAlign>
+                            <init>center</init>
+                        </horizAlign>
+                        <vertAlign>
+                            <init>middle</init>
+                        </vertAlign>
+                    </properties>
+                </textArea>
+                <container oid="c2ce5ae0-0c5b-4468-8874-1d19431f0fb0">
+                    <pathFromRoot value="10,0"/>
+                    <properties name="Text">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                                <expr>(LegendPosition = 1) ? LegendAreaWidth : 0.0</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="125.0" maxY="56.0" minX="0.0" minY="-6.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <referenceContainer oid="d4c1aaa3-5d6b-43d2-a3da-855dac01c587">
+                            <pathFromRoot value="0,10,0"/>
+                            <properties modular="false" name="ClippedLabel">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="ClippedLabel.ogfx" path="Common"/>
+                                <crc value="924931843"/>
+                                <inputParameters>
+                                    <parameter control="false" name="Enable" oid="b0e1db70-000a-4b22-8cd6-9095ae620941" type="bool">
+                                        <expr>Enable</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="false" name="SizeX" oid="7d0fb331-2362-4f4f-936d-83948765cb30" type="real">
+                                        <expr>SizeX - LegendAreaWidth</expr>
+                                        <init>125.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="SizeY" oid="789d99c2-2e5d-4ad8-9d15-da1c27716dd0" type="real">
+                                        <expr>SizeY</expr>
+                                        <init>50.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="LabelString" oid="c1bfbac2-57f7-49d1-b6de-49deb933e28f" representation="as_string" type="char^255">
+                                        <expr>DisplayedString</expr>
+                                        <init>[76, 97, 98, 101, 108, 0]</init>
+                                    </parameter>
+                                    <parameter control="false" name="Font" oid="285a7f9f-0976-4ef4-8bf2-5cbc0ef73435" representation="font" type="int">
+                                        <expr>Font</expr>
+                                        <init>1</init>
+                                    </parameter>
+                                    <parameter control="false" name="TextColor" oid="d0bff17b-693e-491e-b068-944a9f3672d8" representation="color" type="int">
+                                        <expr>TextColor</expr>
+                                        <init>2</init>
+                                    </parameter>
+                                    <parameter control="false" name="Alignment" oid="6f91ec91-1a79-41ba-a955-519c0ba930ac" representation="horizontal_alignment" type="int">
+                                        <expr>TextAlignment</expr>
+                                        <init>1</init>
+                                    </parameter>
+                                    <parameter control="false" name="AlignmentVertical" oid="cdca2481-07bb-4c14-9520-f9c9c72320d4" representation="vertical_alignment" type="int">
+                                        <init>1</init>
+                                    </parameter>
+                                </inputParameters>
+                                <outputParameters>
+                                    <parameter name="TotalBorder" oid="1da85933-98da-45b8-9874-a391373f70ec" type="real">
+                                        <expr>TotalBorder</expr>
+                                    </parameter>
+                                </outputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                        <rectangleArea oid="518fb67f-475f-4e6d-b3e8-20df9f57045d">
+                            <pathFromRoot value="1,10,0"/>
+                            <properties name="rectangle area">
+                                <enable>
+                                    <init>true</init>
+                                    <expr>Enable</expr>
+                                </enable>
+                                <pointerId>
+                                    <init>-1</init>
+                                </pointerId>
+                                <firstPoint>
+                                    <x>
+                                        <init>6.0</init>
+                                        <expr>TotalBorder</expr>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </firstPoint>
+                                <thirdPoint>
+                                    <x>
+                                        <init>119.0</init>
+                                        <expr>(SizeX - LegendAreaWidth) - TotalBorder</expr>
+                                    </x>
+                                    <y>
+                                        <init>50.0</init>
+                                        <expr>SizeY</expr>
+                                    </y>
+                                </thirdPoint>
+                                <output>
+                                    <inside>
+                                        <expr>MouseInside</expr>
+                                    </inside>
+                                    <percentWidth>
+                                        <expr>PositionClicked</expr>
+                                    </percentWidth>
+                                </output>
+                            </properties>
+                        </rectangleArea>
+                        <referenceContainer oid="53df0b66-914d-4355-aecc-51ba1b45c035">
+                            <pathFromRoot value="2,10,0"/>
+                            <properties modular="false" name="Cursor">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>6.0</init>
+                                        <expr>TotalBorder</expr>
+                                    </x>
+                                    <y>
+                                        <init>25.0</init>
+                                        <expr>((SizeY / 2.0) + (LineSize / 2.0)) + 2.003</expr>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="Cursor.ogfx" path="Common"/>
+                                <crc value="4081317863"/>
+                                <inputParameters>
+                                    <parameter control="false" name="AreaSizeX" oid="e91762c9-01cc-408e-95b3-67d73cc86e96" type="real">
+                                        <expr>(SizeX - LegendAreaWidth) - (2.0 * TotalBorder)</expr>
+                                        <init>113.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="AreaSizeY" oid="4ede80a0-db04-416a-a436-1d834f877abd" type="real">
+                                        <init>0.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="String" oid="66f1731f-613c-485f-868d-722124abab50" representation="as_string" type="char^255">
+                                        <expr>DisplayedString</expr>
+                                        <init>[0]</init>
+                                    </parameter>
+                                    <parameter control="false" name="HorizontalAlignment" oid="16140c80-80a0-44c3-813c-5c31c97703a7" representation="horizontal_alignment" type="int">
+                                        <expr>TextAlignment</expr>
+                                        <init>1</init>
+                                    </parameter>
+                                    <parameter control="false" name="CharIndex" oid="457ddb7a-ee65-42f3-8e71-711f6a0137e8" type="int">
+                                        <expr>CursorPos</expr>
+                                        <init>0</init>
+                                    </parameter>
+                                    <parameter control="false" name="Font" oid="441bf50a-9942-4c46-ac5a-c9ef0a25c6b0" representation="font" type="int">
+                                        <expr>Font</expr>
+                                        <init>1</init>
+                                    </parameter>
+                                    <parameter control="false" name="EnablePositionComputation" oid="5a79a064-a7be-4169-aed4-16e3468b26a4" type="bool">
+                                        <expr>EditMode</expr>
+                                        <init>false</init>
+                                    </parameter>
+                                    <parameter control="false" name="CursorVisibility" oid="65ce4116-bd04-4c35-8a8a-ec0804569f50" type="bool">
+                                        <expr>CursorVisible</expr>
+                                        <init>false</init>
+                                    </parameter>
+                                    <parameter control="false" name="ClickedPositionX" oid="2dbeb3d7-de1b-4018-afac-f7e1c0c967ed" type="real">
+                                        <expr>PositionClicked</expr>
+                                        <init>0.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="ClickedPositionY" oid="c7b31a03-75a2-4cf8-87de-dfb78d8a5a72" type="real">
+                                        <init>0.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="NewClick" oid="547cbfc9-bd8d-42aa-946d-b80018553e1f" type="bool">
+                                        <expr>MouseInside and MousePressed</expr>
+                                        <init>false</init>
+                                    </parameter>
+                                    <parameter control="false" name="EnableLineSizeComputation" oid="b0a07bd8-6e7f-424d-a844-c860dcda1a9b" type="bool">
+                                        <expr>MouseInside</expr>
+                                        <init>false</init>
+                                    </parameter>
+                                    <parameter control="false" name="TextColor" oid="a7d62877-2405-431c-9c1f-187ba443db60" representation="color" type="int">
+                                        <expr>TextColor</expr>
+                                        <init>2</init>
+                                    </parameter>
+                                </inputParameters>
+                                <outputParameters>
+                                    <parameter name="CursorPosY" oid="8bb80a52-e41b-4def-a389-99f4025375b3" type="real"/>
+                                    <parameter name="NewIndexAfterClick" oid="d198df53-4ec8-4aa4-b28f-cadd52415bcc" type="int">
+                                        <expr>NewIndexAfterClick</expr>
+                                    </parameter>
+                                    <parameter name="LineFull" oid="6a119fb9-487e-495e-82d6-567ee67c5cd8" type="bool">
+                                        <expr>LineFull</expr>
+                                    </parameter>
+                                    <parameter name="LineSizeY" oid="e3ed508a-7b82-43c3-8989-3db57b46677c" type="real">
+                                        <expr>LineSize</expr>
+                                    </parameter>
+                                    <parameter name="NbLines" oid="ec2a51ce-55ee-49b8-a924-cde3d8aaf67e" type="int"/>
+                                </outputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                    </children>
+                </container>
+                <text oid="3a66dad3-9321-4426-b061-baa93114cc8a">
+                    <pathFromRoot value="11,0"/>
+                    <properties name="text">
+                        <visible>
+                            <init>false</init>
+                            <expr>MinValue &gt; MaxValue</expr>
+                        </visible>
+                        <multiline>
+                            <init>false</init>
+                        </multiline>
+                        <position>
+                            <x>
+                                <init>-70.0</init>
+                            </x>
+                            <y>
+                                <init>20.0</init>
+                            </y>
+                        </position>
+                        <maxLength>
+                            <init>255</init>
+                        </maxLength>
+                        <textValue type="char">
+                            <init>[87, 97, 114, 110, 105, 110, 103, 58, 32, 77, 105, 110, 86, 97, 108, 117, 101, 32, 62, 32, 77, 97, 120, 86, 97, 108, 117, 101, 0]</init>
+                        </textValue>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>11</init>
+                        </outlineColor>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <font>
+                            <init>0</init>
+                        </font>
+                        <horizAlign>
+                            <init>left</init>
+                        </horizAlign>
+                        <vertAlign>
+                            <init>top</init>
+                        </vertAlign>
+                    </properties>
+                </text>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 2024335279 -->
+

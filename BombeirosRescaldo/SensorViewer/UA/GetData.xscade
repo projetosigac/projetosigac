@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/5" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" xmlns:SMP="unknown_address">
+	<declarations>
+		<Operator kind="function" external="imported" name="GetData">
+			<inputs>
+				<Variable name="sensor_code">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/47ac/52E6/B098/5657a189360f"/>
+						<SMP:Pragma>
+							set varSmpUnit {}&#xA;set varSmpType {}&#xA;set varSmpInfo {}
+						</SMP:Pragma>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="result">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/47ab/52E6/B098/5657a17947e1"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<pragmas>
+				<ed:Operator oid="!ed/47aa/52E6/B098/5657a15e29f0"/>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

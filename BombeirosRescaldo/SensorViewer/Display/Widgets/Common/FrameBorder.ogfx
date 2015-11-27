@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="9" width="128">
+            <raw numberOfBytes="572">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,9,8,2,0,0,0,117,-29,-77,-116,0,0,2,3,73,68,65,84,120,-38,-19,-43,-71,47,-124,65,28,-58,-15,-41,125,-20,-70,-62,30,-20,98,-35,-57,58,-78,98,101,-105,13,17,-84,-72,-30,-114,72,68,33,18,-119,-40,66,20,26,-107,70,-91,-47,-88,52,42,-115,74,-93,-47,-88,52,42,-1,-112,-17,-13,-50,68,66,-44,86,-15,62,121,-117,-49,-66,-103,119,-26,-35,-103,-33,-52,-21,56,94,-68,120,-79,73,5,-99,-77,33,103,-70,73,30,-88,-109,87,90,-27,88,-107,-68,-37,33,7,-54,-27,-61,94,-71,-94,88,62,29,-76,-113,3,126,114,-109,-48,0
+,-45,-104,-16,32,-90,19,66,-121,-104,-50,9,3,97,6,37,-55,-128,60,27,-111,-5,106,-27,-43,-104,-36,-30,-105,-9,-70,-28,-70,50,-7,-88,79,46,45,-108,-71,76,114,113,-39,95,34,31,-12,-56,-31,74,121,-69,93,-18,-84,-106,23,-101,-27,-31,122,121,-78,81,-98,8,-55,35,13,-14,124,84,-18,-82,-111,55,-37,-28,38,-97,-68,-33,45,-41,-108,-54,-57,-3,114,81,-127,29,26,16,110,98,26,16,26,99,30,36,116,-126,-23,-112,-48,57,102,32,-62,-96,-104,23,-8,37,-4,-73,-113,45,-25,124,88,94,-113,-55,-41,41,57,19,-106,-17,-89,-19,43,-30,-25,5,59,35,-8,125,-61,62,14,-8,-55,77,66,3,108,-122,-25,65,76,39,-124,14,-15,-70
+,59,-71,12,-124,-51,-124,50,107,-8,34,33,47,-73,-56,55,-29,-14,88,64,126,-104,-79,117,-128,95,-106,100,95,-79,-52,101,-14,-74,38,7,43,-28,-89,121,57,-18,-82,-15,-35,-108,108,74,-22,106,76,-34,-23,-80,-75,-126,79,-30,50,-85,-117,47,71,-27,108,84,-66,-51,-56,-119,122,-7,113,78,-114,-8,-28,-41,21,-69,-10,102,104,64,-72,-119,35,-18,-92,-45,24,39,-36,53,-90,19,-100,117,-41,-107,-50,-79,41,35,6,-59,95,85,107,-109,14,105,37,-67,-21,-49,-82,116,-24,-5,2,-4,-109,-118,-96,60,49,-91,106,14,40,76,9,19,-54,25,83,-38,-124,50,-57,-108,-68,-119,25,-38,-25,-98,123,108,14,108,-50,58,54,13,102,3,17,54,19,102
+,99,17,54,25,102,-61,-27,119,-57,-1,-52,63,57,19,57,-96,49,-121,53,-31,-32,-58,28,-30,-124,3,29,-101,89,-29,-96,-57,-71,-72,125,115,51,-76,89,123,-2,27,54,51,-62,-22,98,62,33,-124,-49,9,-26,-45,66,-8,-52,-32,100,32,-49,-33,60,47,94,-68,-72,-7,4,101,-104,34,110,122,83,92,-111,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="Width" oid="ff505124-3e76-43c5-882e-45b0739055d8" type="real">
+                <init>10.0</init>
+            </input>
+            <input name="Length" oid="97d96056-4a28-4cbe-b9c0-6e9b29f74345" type="real">
+                <init>10.0</init>
+            </input>
+            <input name="TotalLength" oid="7ffb1bac-2b28-4def-969c-90e179bf95c5" type="real">
+                <init>300.0</init>
+            </input>
+            <input name="OffsetIn" oid="c11daddf-5304-4364-b8fd-156e9c83b5d5" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="BorderColor" oid="64dec50a-3c9d-4cc6-a99f-7ee21ab27678" representation="color" type="int">
+                <init>25</init>
+            </input>
+            <input name="Style" oid="ce15c59f-27fe-4867-a9bb-09582f29b4a6" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="Alpha" oid="44abecb4-0141-43c4-9fb0-cf09fccfac9e" type="int">
+                <init>0</init>
+            </input>
+            <input name="Rotate" oid="4598da40-dd7e-4849-b56f-0f3cc845a291" type="bool">
+                <init>true</init>
+            </input>
+            <input name="NbStyles" oid="f97fea51-e8b1-42ce-b700-f58244572695" type="real">
+                <init>2.0</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="false" name="OffsetOut" oid="9a0a13e3-8b48-407c-90dd-8ecb01e8213f" type="real">
+                <init>0.0</init>
+            </output>
+        </outputs>
+    </declaration>
+    <children>
+        <container oid="4db923b2-0e8b-4ec4-8a12-369e0e9bbce6">
+            <pathFromRoot value="0"/>
+            <properties name="FrameBorder">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="16.0" maxY="306.0" minX="-6.0" minY="-6.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <container oid="9f605ffc-49ed-4b4f-b1b5-a9fd1f61a48a">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="group">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>10.0</init>
+                                <expr>Rotate ? Width : 0.0</expr>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>270.0</init>
+                                <expr>Rotate ? 270.0 : 0.0</expr>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="16.0" maxY="306.0" minX="-6.0" minY="-6.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <shape oid="37f5f54a-0ae2-4db9-bab9-a1404dedb5fc">
+                            <pathFromRoot value="0,0,0"/>
+                            <properties name="shape">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </y>
+                                        <u>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </u>
+                                        <v>
+                                            <init>1.0</init>
+                                            <expr>((real Style) + ( Rotate ? 0.0 : 1.0 )) / NbStyles</expr>
+                                        </v>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>10.0</init>
+                                            <expr>Width</expr>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </y>
+                                        <u>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </u>
+                                        <v>
+                                            <init>0.5</init>
+                                            <expr>((real Style) + ( Rotate ? 1.0 : 0.0 )) / NbStyles</expr>
+                                        </v>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>10.0</init>
+                                            <expr>Width</expr>
+                                        </x>
+                                        <y>
+                                            <init>300.0</init>
+                                            <expr>TotalLength</expr>
+                                        </y>
+                                        <u>
+                                            <init>30.0</init>
+                                            <expr>TotalLength / Length</expr>
+                                        </u>
+                                        <v>
+                                            <init>0.5</init>
+                                            <expr>((real Style) + ( Rotate ? 1.0 : 0.0 )) / NbStyles</expr>
+                                        </v>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>300.0</init>
+                                            <expr>TotalLength</expr>
+                                        </y>
+                                        <u>
+                                            <init>30.0</init>
+                                            <expr>TotalLength / Length</expr>
+                                        </u>
+                                        <v>
+                                            <init>1.0</init>
+                                            <expr>((real Style) + ( Rotate ? 0.0 : 1.0 )) / NbStyles</expr>
+                                        </v>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>-1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                                <fillColor>
+                                    <init>25</init>
+                                    <expr>BorderColor</expr>
+                                </fillColor>
+                                <fillOpacity>
+                                    <init>255</init>
+                                    <expr>Alpha</expr>
+                                </fillOpacity>
+                                <polygonSmooth>
+                                    <init>false</init>
+                                </polygonSmooth>
+                                <textureControl>
+                                    <init>true</init>
+                                </textureControl>
+                                <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                    <textureId>
+                                        <init>250</init>
+                                    </textureId>
+                                </texture>
+                                <modulate>
+                                    <init>true</init>
+                                </modulate>
+                                <tessellate>
+                                    <init>false</init>
+                                </tessellate>
+                            </properties>
+                        </shape>
+                    </children>
+                </container>
+                <assignment oid="7b1ff9ab-08ac-4d5f-ae28-62dd5bedceae">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="OffsetOut">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>0.0</init>
+                            <expr>(OffsetIn + (TotalLength / Length)) - (real (int (OffsetIn + (TotalLength / Length))))</expr>
+                        </input>
+                        <output>
+                            <expr>OffsetOut</expr>
+                        </output>
+                    </properties>
+                </assignment>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 325582439 -->
+

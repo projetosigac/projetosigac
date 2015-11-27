@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+        <preview height="128" width="128">
+            <raw numberOfBytes="389">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,-128,8,2,0,0,0,76,92,-10,-100,0,0,1,76,73,68,65,84,120,-38,-19,-43,49,74,66,113,0,-57,-15,-89,-117,7,72,16,92,-108,64,17,4,7,79,80,13,-127,83,68,-56,11,122,62,34,8,87,23,105,-110,36,-80,65,109,16,-126,-74,104,-85,-122,102,-49,-48,69,28,36,-24,10,62,58,-60,-65,30,125,62,-4,110,-16,29,126,81,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-4,25,-5,81,116,-112,-49,9,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2
+,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,2,8,32,-128,0,-1,37,64,-95,112,-104,77,-128,95,8,80,42,29,-9,-5,-73,-109,-55,-13,120,-4,-44,-23,92,9,16,58,-64,112,-8,-48,-21,-35,84,-85,103,-75,90,60,-99,-66,84,42,-89,2,4,13,48,-97,-65,-74,90,-23,118,-5,-67,94,127,-74,-37,-105,-125,-63,76,-128,-96,1,22,-117,-73,70,-29,98,-77,-7,90,46,-33,-69,-35,-21,56
+,-66,19,32,104,-128,52,-67,79,-110,89,-67,126,-34,108,38,-85,-43,71,-71,124,34,64,-48,0,-59,-30,81,-10,1,-39,3,-113,70,-113,89,6,39,28,-46,-34,79,-125,60,14,-56,-81,29,4,-44,-46,60,14,-54,50,-91,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="ca7f6aac-8230-43a0-a2f9-97fbdd41010e" type="real">
+                <control oid="b9a09a46-0b10-4818-a814-33de76e8ad52" plug="thirdPoint_x"/>
+                <init>300.0</init>
+            </input>
+            <input name="SizeY" oid="80b035e3-90b6-4f9e-8248-ae55a36968e6" type="real">
+                <control oid="b9a09a46-0b10-4818-a814-33de76e8ad52" plug="thirdPoint_y"/>
+                <init>300.0</init>
+            </input>
+            <input name="IgnoreBorders" oid="c6a65763-5486-4e64-b1d1-21af665f1b30" type="bool">
+                <init>false</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="false" name="HoldBegin" oid="fd885df6-0572-491a-bf57-59f67b35365b" type="bool">
+                <init>false</init>
+            </output>
+            <output memory="false" name="Holding" oid="6e6119f8-f6b3-4edd-b8a8-964c5e167d94" type="bool">
+                <init>false</init>
+            </output>
+            <output memory="false" name="HoldEnd" oid="9f13541c-c7e5-4656-96af-6108e924019e" type="bool">
+                <init>false</init>
+            </output>
+            <output memory="false" name="PosX" oid="41baeab7-ab66-47b9-a3d7-2d6ef2374a78" type="real">
+                <init>0.0</init>
+            </output>
+            <output memory="false" name="PosY" oid="097289d7-5a8c-4474-a73e-8c017549ff34" type="real">
+                <init>0.0</init>
+            </output>
+        </outputs>
+        <locals>
+            <local memory="false" name="MouseInside" oid="08acf639-9acf-48fc-a50e-9b19266fc776" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="MousePressed" oid="2f1fdbe1-c7ef-4aeb-9fd0-d2166e82dc27" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="MouseReleased" oid="81a1c6a2-cf70-4253-b470-7fac38e6484b" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="CyclePeriod" oid="b8c0df71-80ad-47f1-9266-16ef65e2f649" type="int">
+                <init>0</init>
+            </local>
+            <local memory="false" name="PosXPercent" oid="4d37b2cb-8711-43c2-9827-79456953903e" type="real">
+                <init>0.0</init>
+            </local>
+            <local memory="false" name="PosYPercent" oid="56d5e848-c936-41f5-8403-7cf48482e637" type="real">
+                <init>0.0</init>
+            </local>
+            <local memory="true" name="IsInit" oid="7b3be00c-6f18-488e-b940-0f4c5da1854f" type="bool">
+                <init>true</init>
+            </local>
+        </locals>
+        <localConstants>
+            <localConstant name="HoldDelay" oid="e15cfb3d-5905-42c4-a02e-64c1b7e13a7b" type="real">
+                <init>1000.0</init>
+            </localConstant>
+            <localConstant name="PosTolerance" oid="459cae93-807f-413b-979b-544427708738" type="real">
+                <init>50.0</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="c422d1ca-8bd5-440d-9080-92713b9746e9">
+            <pathFromRoot value="0"/>
+            <properties name="GesturePressHold">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="306.0" maxY="306.0" minX="-6.0" minY="-6.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <referenceContainer oid="ae2fbf13-a7e8-4faf-8657-4b565d0c62ef">
+                    <pathFromRoot value="0,0"/>
+                    <properties modular="false" name="Init">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="Init.ogfx" path="Common"/>
+                        <crc value="3318522236"/>
+                        <outputParameters>
+                            <parameter name="IsInit" oid="58176aa8-8cdd-456f-98eb-0cc30e86f3be" type="bool">
+                                <expr>IsInit</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <container oid="496c720d-e70d-4e83-9d53-6e4699df0733">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="Icon">
+                        <visible>
+                            <init>true</init>
+                            <expr>IsInit</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <rectangle oid="e9024f69-1656-40b1-964f-cc6d4f09d840">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties name="rectangle">
+                                <visible>
+                                    <init>true</init>
+                                    <expr>not IgnoreBorders</expr>
+                                </visible>
+                                <firstPoint>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </firstPoint>
+                                <thirdPoint>
+                                    <x>
+                                        <init>150.0</init>
+                                        <expr>SizeX</expr>
+                                    </x>
+                                    <y>
+                                        <init>150.0</init>
+                                        <expr>SizeY</expr>
+                                    </y>
+                                </thirdPoint>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>-1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>64</init>
+                                </outlineOpacity>
+                                <fillColor>
+                                    <init>61</init>
+                                </fillColor>
+                                <fillOpacity>
+                                    <init>64</init>
+                                </fillOpacity>
+                                <polygonSmooth>
+                                    <init>true</init>
+                                </polygonSmooth>
+                                <textureControl>
+                                    <init>false</init>
+                                </textureControl>
+                                <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                    <textureId>
+                                        <init>-1</init>
+                                    </textureId>
+                                </texture>
+                                <modulate>
+                                    <init>false</init>
+                                </modulate>
+                                <tessellate>
+                                    <init>false</init>
+                                </tessellate>
+                            </properties>
+                        </rectangle>
+                        <container oid="c4e3a650-1f26-4bae-90cc-d860d495e412">
+                            <pathFromRoot value="1,1,0"/>
+                            <properties name="group">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>10.5</init>
+                                    </x>
+                                    <y>
+                                        <init>8.75</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>30.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <circle oid="390e278c-b699-4442-a685-231cd87b3d2e">
+                                    <pathFromRoot value="0,1,1,0"/>
+                                    <properties name="circle">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <center>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </center>
+                                        <radius>
+                                            <init>1.5</init>
+                                        </radius>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>2</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>2</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                    </properties>
+                                </circle>
+                                <circle oid="9dce6f3e-20f1-4405-b964-ddc3d40846b1">
+                                    <pathFromRoot value="1,1,1,0"/>
+                                    <properties name="circle">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <center>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </center>
+                                        <radius>
+                                            <init>6.0</init>
+                                        </radius>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>2</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>-1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                    </properties>
+                                </circle>
+                            </children>
+                        </container>
+                    </children>
+                </container>
+                <rectangleArea oid="b9a09a46-0b10-4818-a814-33de76e8ad52">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="rectangle area">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <pointerId>
+                            <init>-1</init>
+                        </pointerId>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>300.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>300.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <output>
+                            <inside>
+                                <expr>MouseInside</expr>
+                            </inside>
+                            <percentWidth>
+                                <expr>PosXPercent</expr>
+                            </percentWidth>
+                            <percentHeight>
+                                <expr>PosYPercent</expr>
+                            </percentHeight>
+                        </output>
+                    </properties>
+                </rectangleArea>
+                <pointerEventListener oid="798995bb-be5a-4f78-aab9-7509c9c9cce4">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="pointer event listener">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <eventId>
+                            <init>0</init>
+                        </eventId>
+                        <relative>
+                            <init>false</init>
+                        </relative>
+                        <output>
+                            <pressed>
+                                <expr>MousePressed</expr>
+                            </pressed>
+                            <released>
+                                <expr>MouseReleased</expr>
+                            </released>
+                            <pointerPosition/>
+                        </output>
+                    </properties>
+                </pointerEventListener>
+                <referenceContainer oid="7f086983-5983-4167-84d8-fdb58eebe9d2">
+                    <pathFromRoot value="4,0"/>
+                    <properties modular="false" name="GetCycleDuration">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>-7.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="GetCycleDuration.ogfx" path="Common"/>
+                        <crc value="824613808"/>
+                        <outputParameters>
+                            <parameter name="period_ms" oid="1758275a-00b7-43a6-bba8-182a0b205a32" type="int">
+                                <expr>CyclePeriod</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <imported oid="314e0bc7-1b8b-4d85-b642-e6952ef2c374">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="wrapper_GesturePressHold">
+                        <function name="wrapper_GesturePressHold"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>false</init>
+                        </restoreStates>
+                        <memory>
+                            <init>true</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="MousePressed" oid="" type="bool">
+                                <expr>MousePressed</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="MouseReleased" oid="" type="bool">
+                                <expr>MouseReleased</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="MouseInside" oid="" type="bool">
+                                <expr>IgnoreBorders or MouseInside</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="PosXPx" oid="" type="real">
+                                <expr>PosXPercent * SizeX</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="PosYPx" oid="" type="real">
+                                <expr>PosYPercent * SizeY</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="PosTolerance" oid="" type="real">
+                                <expr>PosTolerance</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="CyclePeriod" oid="" type="real">
+                                <expr>real CyclePeriod</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="DelayHold" oid="" type="real">
+                                <expr>HoldDelay</expr>
+                                <init>0.0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="HoldBegin" oid="" type="bool">
+                                <expr>HoldBegin</expr>
+                            </parameter>
+                            <parameter name="Holding" oid="" type="bool">
+                                <expr>Holding</expr>
+                            </parameter>
+                            <parameter name="HoldEnd" oid="" type="bool">
+                                <expr>HoldEnd</expr>
+                            </parameter>
+                            <parameter name="PosOutX" oid="" type="real">
+                                <expr>PosX</expr>
+                            </parameter>
+                            <parameter name="PosOutY" oid="" type="real">
+                                <expr>PosY</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 2765742857 -->
+

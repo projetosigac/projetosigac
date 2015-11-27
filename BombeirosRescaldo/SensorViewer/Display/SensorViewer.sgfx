@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<specification>
+    <IDE>
+        <project path="SensorViewer.etp"/>
+        <ratio horizontal="1" vertical="1"/>
+    </IDE>
+    <symbology>
+        <colorMode value="RGBA"/>
+        <dimension height="512" width="512"/>
+    </symbology>
+    <children>
+        <layer oid="5a674b83-9ac6-4c3b-926a-692fe9ba6ab2">
+            <pathFromRoot value=""/>
+            <declaration>
+                <inputs>
+                    <input name="GaugeValue" oid="b3b085b2-3ab8-4b64-ac6b-b0beb78d75c3" type="real">
+                        <init>75.0</init>
+                    </input>
+                    <input name="GaugeMinValue" oid="a17b742f-f7d9-463f-8b35-d3d7a55c5243" type="real">
+                        <init>0.0</init>
+                    </input>
+                    <input name="GaugeMaxValue" oid="e8248ab6-069a-48e2-83a5-4fc53204f700" type="real">
+                        <init>100.0</init>
+                    </input>
+                    <input name="GaugeLegend" oid="53a94547-0ac0-45ef-ae73-42b6e35d2629" representation="as_string" type="char^255">
+                        <init>[71, 97, 117, 103, 101, 0]</init>
+                    </input>
+                    <input name="Text" oid="5cd709ee-f33b-4d10-af70-5db1a75b870c" type="char^10">
+                        <init>[0]</init>
+                    </input>
+                    <input name="RectFilledColor" oid="335f2279-cf52-478e-84c3-3985281ab2fd" type="int32">
+                        <init>0</init>
+                    </input>
+                </inputs>
+            </declaration>
+            <properties name="symbology_layer">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>-256.0</init>
+                    </x>
+                    <y>
+                        <init>256.0</init>
+                    </y>
+                </origin>
+                <id>
+                    <init>1</init>
+                </id>
+                <ratio horizontal="1" vertical="1"/>
+            </properties>
+            <children>
+                <referenceContainer oid="74ba5f14-21d4-4a79-a965-cd30ef096d1f">
+                    <pathFromRoot value="0"/>
+                    <properties modular="false" name="Gauge">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>76.0</init>
+                            </x>
+                            <y>
+                                <init>-92.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="Gauge.ogfx" path="Widgets"/>
+                        <crc value="2262594954"/>
+                        <inputParameters>
+                            <parameter control="true" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                <init>378.0</init>
+                            </parameter>
+                            <parameter control="true" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                <init>43.0</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="f5c1daa7-19d2-419f-927d-db7833c23a63" representation="index" type="int">
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="BackColor" oid="3df8cd5e-e430-4bd3-928e-b74773b0ad8e" representation="color" type="int">
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="FrontColor" oid="7c066c7f-ec2a-46c5-949e-68e8a83efff9" representation="color" type="int">
+                                <init>41</init>
+                            </parameter>
+                            <parameter control="false" name="Font" oid="bb0cf042-eef5-4803-9fa3-2e7c85ae21b3" representation="font" type="int">
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="TextColor" oid="97660f81-528a-4a57-92b6-6fe673480ea4" representation="color" type="int">
+                                <init>2</init>
+                            </parameter>
+                            <parameter control="false" name="Value" oid="8adfe35c-90d6-4746-9a07-fd66eb0d3d76" type="real">
+                                <expr>GaugeValue</expr>
+                                <init>75.0</init>
+                            </parameter>
+                            <parameter control="false" name="MinValue" oid="f0090185-f195-4b87-96f1-e4882306f136" type="real">
+                                <expr>GaugeMinValue</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter control="false" name="MaxValue" oid="4a42e74f-d11c-488f-abe2-4aa05393598d" type="real">
+                                <expr>GaugeMaxValue</expr>
+                                <init>100.0</init>
+                            </parameter>
+                            <parameter control="false" name="Orientation" oid="d97c8e64-c266-43f7-85f5-ea5b5e5b589e" representation="index" type="int">
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="ShowGraduation" oid="bfa366b6-49ee-489a-a167-28e54ee27cbc" representation="index" type="int">
+                                <init>2</init>
+                            </parameter>
+                            <parameter control="false" name="ShowValue" oid="37cb13c1-dbcf-454d-88ae-0b8e0df3894f" type="bool">
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="Legend" oid="c2ea84ed-d7c4-4a9f-9daa-7e55a6e624a0" representation="as_string" type="char^255">
+                                <expr>GaugeLegend</expr>
+                                <init>[71, 97, 117, 103, 101, 0]</init>
+                            </parameter>
+                        </inputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <referenceContainer oid="6432dd98-c62e-4882-af5a-7a5e49ebd0db">
+                    <pathFromRoot value="1"/>
+                    <properties modular="false" name="RoundedRectangle">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>108.0</init>
+                            </x>
+                            <y>
+                                <init>-237.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="RoundedRectangle.ogfx" path="Widgets"/>
+                        <crc value="3426542585"/>
+                        <inputParameters>
+                            <parameter control="true" name="SizeX" oid="9923f0bc-1bb6-4340-b679-e688318fe3b0" type="real">
+                                <init>297.0</init>
+                            </parameter>
+                            <parameter control="true" name="SizeY" oid="01a7a3f0-8822-4ecb-a3eb-6634ee6c86af" type="real">
+                                <init>77.0</init>
+                            </parameter>
+                            <parameter control="true" name="Radius" oid="b7873b2d-ce57-4189-ad0f-c43eb17e4de9" type="real">
+                                <init>28.178</init>
+                            </parameter>
+                            <parameter control="false" name="LineWidth" oid="910720c7-6644-49e4-8098-5a7a41049f12" representation="line_width" type="int">
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="LineStipple" oid="7e68e400-3874-4838-bdfb-a183e793e299" representation="line_stipple" type="int">
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="LineCap" oid="3a528049-851d-44ce-b059-27ef49b057af" representation="line_cap" type="int">
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="Haloing" oid="f6ceea74-2e2e-4614-a0cd-b46afce79a95" type="bool">
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="OutlineColor" oid="99614a2d-0c40-4e4d-abe6-3f3be0bfa0cf" representation="color" type="int">
+                                <init>2</init>
+                            </parameter>
+                            <parameter control="false" name="OutlineOpacity" oid="f7f41887-9424-467a-b12c-68bad0a3ffe4" representation="opacity" type="int">
+                                <init>255</init>
+                            </parameter>
+                            <parameter control="false" name="FilledColor" oid="18031fdf-3c8d-4c79-a93e-afe7de56f955" representation="color" type="int">
+                                <expr>RectFilledColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="FilledOpacity" oid="e6902994-d073-4abf-ae4b-3ebe680ec3b4" representation="opacity" type="int">
+                                <init>255</init>
+                            </parameter>
+                            <parameter control="false" name="PolygonSmooth" oid="e787c06a-20f1-4c33-b1d2-11e22c0629ad" type="bool">
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="TextureId" oid="6984f273-e1fd-44f0-bdc8-a9c4ded3a8d9" representation="texture" type="int">
+                                <init>-1</init>
+                            </parameter>
+                        </inputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <text oid="7aab605d-e3c8-44bb-bed4-a97c5ca0e5cd">
+                    <pathFromRoot value="2"/>
+                    <properties name="text">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <multiline>
+                            <init>false</init>
+                        </multiline>
+                        <position>
+                            <x>
+                                <init>255.0</init>
+                            </x>
+                            <y>
+                                <init>-199.0</init>
+                            </y>
+                        </position>
+                        <maxLength>
+                            <init>10</init>
+                        </maxLength>
+                        <textValue type="char">
+                            <expr>Text</expr>
+                            <init>[65, 65, 65, 65, 65, 66, 66, 66, 66, 66]</init>
+                        </textValue>
+                        <haloing>
+                            <init>true</init>
+                        </haloing>
+                        <haloColor>
+                            <init>6</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>1</init>
+                        </outlineColor>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <font>
+                            <init>4</init>
+                        </font>
+                        <horizAlign>
+                            <init>center</init>
+                        </horizAlign>
+                        <vertAlign>
+                            <init>middle</init>
+                        </vertAlign>
+                    </properties>
+                </text>
+            </children>
+        </layer>
+    </children>
+</specification>
+
+<!-- crc32 : 1618350310 -->
+

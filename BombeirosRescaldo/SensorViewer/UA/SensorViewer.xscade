@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/5" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Constant name="ALERT_TEXT">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="10"/>
+					</size>
+				</Table>
+			</type>
+			<value>
+				<!-- ['W', 'A', 'R', 'N', 'I', 'N', 'G', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'W'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'G'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4533/52E6/B098/565796e57f9d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="NORMAL_TEXT">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="10"/>
+					</size>
+				</Table>
+			</type>
+			<value>
+				<!-- ['N', 'O', 'R', 'M', 'A', 'L', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'O'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'M'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'L'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4631/52E6/B098/5657a09a66c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="DANGER_TEXT">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="10"/>
+					</size>
+				</Table>
+			</type>
+			<value>
+				<!-- ['D', 'A', 'N', 'G', 'E', 'R', ' ', ' ', ' ', ' '] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'D'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'G'"/>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/468f/52E6/B098/5657a0a44b1e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="ALERT_COLOR">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="31"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/46ed/52E6/B098/5657a0ab116f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="DANGER_COLOR">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="11"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/474b/52E6/B098/5657a0ad7676"/>
+			</pragmas>
+		</Constant>
+		<Constant name="NORMAL_COLOR">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="41"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/47a9/52E6/B098/5657a0ad641f"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

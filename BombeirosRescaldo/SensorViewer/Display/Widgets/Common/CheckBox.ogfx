@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="128" width="128">
+            <raw numberOfBytes="439">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,-128,8,2,0,0,0,76,92,-10,-100,0,0,1,126,73,68,65,84,120,-38,-19,-37,-79,109,-62,64,0,-123,97,70,73,-97,-106,5,82,83,70,66,76,-110,-84,-110,20,40,59,100,0,-96,-95,96,3,6,-128,34,43,68,10,-92,125,69,44,97,-62,-127,-71,-5,-2,1,-48,-55,95,-15,36,-97,25,-115,36,73,-110,36,73,-110,36,73,-110,36,73,-6,-93,89,-12,-34,88,-109,8,0,0,0,0,90,4,120,-117,90,3,88,70,0,0,0,0,-48,58,64,-10,19,29,42,109,17,1,0,0,0,64,-117,0,93,3,-107,7,61,86,-38,32,70,24,0
+,0,0,0,0,0,0,0,0,0,0,0,39,-11,17,-3,-25,-100,0,0,0,0,0,-32,62,0,-26,81,-98,-1,41,2,0,0,0,0,0,117,2,60,70,121,-2,-124,1,0,0,0,0,0,-11,0,116,13,111,98,120,25,7,0,0,0,0,117,2,-108,24,94,0,0,0,0,0,112,121,-128,-41,-24,43,26,-38,-16,126,71,-85,8,0,0,0,0,0,-12,3,-56,-121,-98,-65,57,-114,-6,98,-108,30,-34,125,-76,-114,0,0,0,0,0,-64,-7,35,-100,15,-67,47,70,-23,-31,5,0,0,0,0,0,-41,123,25,-41,23,-93,-12,-16,2,0,0,0,0,-128,-37,92,-56,116,97,60,68,-91,-121,23,0,0,0,0,0,-36,-2,82,-66,11
+,-93,-12,-16,2,0,0,0,0,-128,97,125,-104,-11,18,-27,31,-81,75,127,-20,5,0,0,0,0,0,-18,-29,-29,92,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,-105,45,47,64,62,-93,93,-76,-81,-88,109,-76,-119,0,0,0,0,-96,69,-128,105,-76,110,-96,124,-24,-49,17,0,0,0,0,-76,8,32,73,-110,36,73,-110,36,73,-110,36,73,26,116,-65,-82,68,45,22,75,-69,59,36,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="Checked" oid="b0e1db70-000a-4b22-8cd6-9095ae620941" type="bool">
+                <init>true</init>
+            </input>
+            <input name="Enable" oid="b75f5f06-93d4-4056-abc6-c24bae0009bc" type="bool">
+                <init>true</init>
+            </input>
+        </inputs>
+        <localConstants>
+            <localConstant name="BackColor" oid="5f9ed417-aad3-47ab-aafe-04263d2e3364" representation="color" type="int">
+                <init>2</init>
+            </localConstant>
+            <localConstant name="OutlineColorTL" oid="47043994-fb21-489b-890a-b117286870fc" representation="color" type="int">
+                <init>5</init>
+            </localConstant>
+            <localConstant name="OutlineColorBR" oid="e1082e3d-65d7-471c-83ce-10da5feaf97a" representation="color" type="int">
+                <init>4</init>
+            </localConstant>
+            <localConstant name="TickColor" oid="ede24e3e-6bcb-4cd9-86aa-e98389c837d9" representation="color" type="int">
+                <init>1</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="a460f2f6-76e6-451d-ae49-867d3dd7acea">
+            <pathFromRoot value="0"/>
+            <properties name="CheckBox">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="16.0" maxY="16.0" minX="-16.0" minY="-16.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <rectangle oid="521c02f4-f294-4720-8303-545e33275d4f">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="Background">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <firstPoint>
+                            <x>
+                                <init>-10.0</init>
+                            </x>
+                            <y>
+                                <init>-10.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>10.0</init>
+                            </x>
+                            <y>
+                                <init>10.0</init>
+                            </y>
+                        </thirdPoint>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>-1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>2</init>
+                            <expr>BackColor</expr>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <textureControl>
+                            <init>false</init>
+                        </textureControl>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <tessellate>
+                            <init>false</init>
+                        </tessellate>
+                    </properties>
+                </rectangle>
+                <line oid="3576ff21-7a70-4e1b-b59f-ea2019a85574">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="BorderTL">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <points>
+                            <point>
+                                <x>
+                                    <init>-10.0</init>
+                                </x>
+                                <y>
+                                    <init>-10.0</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>-10.0</init>
+                                </x>
+                                <y>
+                                    <init>10.0</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>10.0</init>
+                                </x>
+                                <y>
+                                    <init>10.0</init>
+                                </y>
+                            </point>
+                        </points>
+                        <lineWidth>
+                            <init>1</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>5</init>
+                            <expr>OutlineColorTL</expr>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                    </properties>
+                </line>
+                <line oid="a70b6611-8fb3-4059-a75f-b4957b78e6cb">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="BorderBR">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <points>
+                            <point>
+                                <x>
+                                    <init>-10.0</init>
+                                </x>
+                                <y>
+                                    <init>-10.0</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>10.0</init>
+                                </x>
+                                <y>
+                                    <init>-10.0</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>10.0</init>
+                                </x>
+                                <y>
+                                    <init>0.0</init>
+                                </y>
+                            </point>
+                        </points>
+                        <lineWidth>
+                            <init>1</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>4</init>
+                            <expr>OutlineColorBR</expr>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>128</init>
+                        </outlineOpacity>
+                    </properties>
+                </line>
+                <line oid="f90d4a06-4a92-4794-a108-d8a2114a21b3">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="line">
+                        <visible>
+                            <init>true</init>
+                            <expr>Checked</expr>
+                        </visible>
+                        <points>
+                            <point>
+                                <x>
+                                    <init>-5.0</init>
+                                </x>
+                                <y>
+                                    <init>0.0</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>0.0</init>
+                                </x>
+                                <y>
+                                    <init>-5.0</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>5.0</init>
+                                </x>
+                                <y>
+                                    <init>5.0</init>
+                                </y>
+                            </point>
+                        </points>
+                        <lineWidth>
+                            <init>1</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>1</init>
+                            <expr>Enable ? TickColor : OutlineColorBR</expr>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                    </properties>
+                </line>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 3903618298 -->
+

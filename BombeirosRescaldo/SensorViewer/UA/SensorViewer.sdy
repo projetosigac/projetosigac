@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="main" oid="!ed/4390/52E6/B098/56577cc711ef">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Variable name="MinValue" type="float32" oid="!ed/43be/52E6/B098/565780b07a1a" instancepath="main/"/>
+					</output>
+					<inputs>
+						<Plug name="GaugeMinValue" type="real" pathname="..\Display\SensorViewer.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Value" type="float32" oid="!ed/43c4/52E6/B098/565780b4260c" instancepath="main/"/>
+					</output>
+					<inputs>
+						<Plug name="GaugeValue" type="real" pathname="..\Display\SensorViewer.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="MaxValue" type="float32" oid="!ed/43ca/52E6/B098/565780b51462" instancepath="main/"/>
+					</output>
+					<inputs>
+						<Plug name="GaugeMaxValue" type="real" pathname="..\Display\SensorViewer.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Text" type="char^25" oid="!ed/44d3/52E6/B098/5657955d5f85" instancepath="main/"/>
+					</output>
+					<inputs>
+						<Plug name="Text" type="char^25" pathname="..\Display\SensorViewer.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RectColor" type="int32" oid="!ed/44d9/52E6/B098/565795ea4e90" instancepath="main/"/>
+					</output>
+					<inputs>
+						<Plug name="RectFilledColor" type="int32" pathname="..\Display\SensorViewer.sgfx" layer="symbology_layer"/>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>

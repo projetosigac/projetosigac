@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+        <preview height="128" width="128">
+            <raw numberOfBytes="916">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,-128,8,2,0,0,0,76,92,-10,-100,0,0,3,91,73,68,65,84,120,-38,-19,-35,93,79,-38,80,24,-64,113,62,6,-60,47,97,80,-80,33,-102,-112,112,-95,-112,110,99,27,-37,-92,27,-116,55,13,4,13,-96,-83,34,-74,-46,-105,-128,-47,79,-67,39,-96,-62,8,-41,-25,52,-31,-1,-65,48,-75,70,72,-98,95,-23,57,-11,-58,68,98,-47,100,50,73,-89,-45,-39,108,-42,-13,-68,-105,-105,23,-45,52,-61,48,-108,-29,-12,90,-107,74,37,8,-126,110,-73,-21,-5,-2,-6,-7,-53,-53,-53,66,-95,-112,74,-91,-110,107,-55,-73,-14,-93,-63,96,-112,-34,-115
+,74,-91,-110,-29,56,-74,109,-69,-82,-101,-49,-25,63,-50,31,31,31,-53,60,-57,-29,-79,101,89,114,-48,-23,116,-28,-28,-23,-23,-87,12,-83,94,-81,-53,-112,19,-21,0,82,46,-105,-101,78,-89,-122,97,20,-117,69,121,-71,-115,-73,-55,100,50,-75,90,77,126,109,-3,-28,-31,-31,97,-69,-35,-106,89,-9,-5,-3,-34,123,-93,-47,72,-88,-28,-43,118,4,64,46,-63,-7,124,46,23,-18,-58,121,-103,-128,92,-57,50,-49,114,-71,44,35,58,56,56,88,2,-56,112,26,-115,-122,-52,-19,13,96,54,-101,93,-112,-86,-82,-81,-81,-101,-51,-26,-7,-94,55,-128,40,-118,6,-92,42,-7,-84,-76,90,-83,-36,-94,55,0,-71,-19,124,34,85,-119,-127,124,14,-106,-9
+,40,0,-76,1,-56,122,32,107,50,0,-38,0,-28,-85,-20,-117,0,-48,6,32,-5,34,-39,-101,-82,0,62,-109,-86,-122,-61,-95,0,28,29,29,-55,70,31,0,109,0,-14,-20,-11,-6,-6,10,-128,54,0,-39,-125,-98,-100,-100,0,-96,13,96,115,27,-6,-123,84,-75,5,-64,-9,125,-26,-94,-84,-47,104,4,64,44,0,-14,-7,60,0,58,1,92,-41,5,64,27,-128,105,-102,-85,-25,0,1,40,-109,-86,-106,0,-13,-7,-36,113,28,0,-76,1,20,10,-123,82,-87,4,-128,54,-128,-51,93,16,115,1,0,0,2,96,23,-70,-71,-71,-39,2,-16,-107,84,5,0,0,0,0,16,59,-128,111,-92,-86,-37,-37,91,0,0,0,0,-128,120,1,124,39,85
+,1,-96,57,-37,-74,1,0,0,0,0,-30,5,80,33,85,1,0,0,0,0,0,0,0,0,-79,2,-8,65,-86,114,28,7,0,0,0,0,0,0,0,-42,0,126,-110,-86,-18,-18,-18,0,0,0,0,0,0,0,-32,29,32,8,-126,95,-92,-86,-5,-5,123,0,0,0,0,-128,120,1,-100,-109,-86,0,0,0,0,0,0,0,0,0,0,118,-77,-15,120,-68,5,-96,74,-86,2,0,0,0,0,-120,29,-128,69,-86,122,120,120,0,0,0,0,0,0,0,-128,119,-128,48,12,127,-109,-86,38,-109,9,0,0,0,0,64,-68,0,-2,-112,-86,0,0,0,0,0,0,0,0,0,0,0,88,1,-44,72,85,-113,-113,-113,0,0,0,0,0,-15,2
+,-88,-109,-86,0,-48,-100,-21,-70,0,0,0,0,0,49,2,-120,-94,-24,47,-87,10,0,0,0,0,64,59,-128,97,24,-85,-1,39,44,0,13,82,-107,-25,121,2,112,117,117,-75,-65,-65,15,-128,54,-128,-31,112,-104,74,-91,0,-48,6,-48,-21,-11,-110,-55,36,0,0,0,0,-128,22,-128,126,-65,15,-128,78,-128,-63,96,-80,-73,-73,-73,2,104,-110,-86,-98,-98,-98,4,-96,90,-83,-98,-99,-99,1,-96,13,32,-109,-55,-56,49,0,-38,0,54,-1,20,-63,92,52,3,-76,72,85,0,104,110,58,-99,2,-96,31,32,12,67,-33,-9,1,-48,6,80,-85,-43,-70,-35,46,0,-38,0,100,27,26,4,-63,10,-96,77,-86,-6,88,3,42,-107,10,0,58
+,1,-2,91,-124,-103,11,0,0,-112,-110,100,-9,-71,5,-96,67,-86,90,2,-40,-74,-19,121,30,0,-38,0,-118,-59,-94,60,-117,1,-96,13,-64,48,12,-45,52,1,-48,6,32,-9,-97,-39,108,6,-128,54,-128,92,46,-57,26,-96,19,64,-74,64,-39,108,118,5,112,65,-86,10,-126,96,115,27,106,89,86,68,-86,122,126,126,-106,-69,-1,100,81,-126,104,-89,-5,7,-32,65,-49,-85,60,-57,-19,81,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="5e5d4e1a-8978-471c-8376-f3058e20d4ec" type="real">
+                <control oid="8d760561-ca31-4275-9589-a242b66e41bd" plug="thirdPoint_x"/>
+                <init>300.0</init>
+            </input>
+            <input name="SizeY" oid="c12f9a86-59cf-49d8-aa2a-9be4b984ae30" type="real">
+                <control oid="8d760561-ca31-4275-9589-a242b66e41bd" plug="thirdPoint_y"/>
+                <init>300.0</init>
+            </input>
+            <input name="Enable" oid="880672c6-de44-4b2f-8e18-dae15c3b4b64" type="bool">
+                <init>true</init>
+            </input>
+            <input name="Style" oid="bbfeb0d1-e2b9-4900-90b6-037a6de17aef" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="BackColor" oid="9d1bcd1b-f0eb-465c-be2d-b53d464b60c2" representation="color" type="int">
+                <init>6</init>
+            </input>
+            <input name="SheetSizeX" oid="19f1f901-00c0-445b-95af-f24f297733f6" type="real">
+                <init>500.0</init>
+            </input>
+            <input name="SheetSizeY" oid="f5157871-6785-4b4f-b559-a5c5d395c879" type="real">
+                <init>500.0</init>
+            </input>
+            <input name="DeltaX" oid="1c008625-b018-4104-80d0-8e7e1a86dd88" type="real">
+                <init>10.0</init>
+            </input>
+            <input name="DeltaY" oid="05750588-dbfa-4770-90e8-a4af776a8412" type="real">
+                <init>10.0</init>
+            </input>
+            <input name="PageDeltaX" oid="dadfebd9-112b-4343-aaa2-c3b73ae6fffe" type="real">
+                <init>50.0</init>
+            </input>
+            <input name="PageDeltaY" oid="4c60bdea-f848-4d19-8f96-52cc8ae48407" type="real">
+                <init>50.0</init>
+            </input>
+            <input name="VerticalScroll" oid="22f8d6cc-af10-49f5-894b-753231096777" representation="index" type="int">
+                <init>2</init>
+            </input>
+            <input name="HorizontalScroll" oid="69443ad1-f615-4416-a00a-69f4b692a3e9" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="HomeX" oid="4463fcbc-49b0-4f10-9454-516320195bd3" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="HomeY" oid="72628463-e10a-4e7d-a1ef-7ad1cbd76c83" type="real">
+                <init>0.0</init>
+            </input>
+        </inputs>
+        <locals>
+            <local memory="true" name="HomeClicked" oid="2c83d983-0ef9-4c2b-b4db-4a4c0096c03e" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="PosX" oid="683684e2-a2e8-470b-884b-0b60e32e5c26" type="real">
+                <init>0.0</init>
+            </local>
+            <local memory="true" name="PosY" oid="005848c8-5ef1-4901-a17e-00277e4c68a5" type="real">
+                <init>0.0</init>
+            </local>
+            <local memory="true" name="RequestFocus" oid="72dcae0c-2ef0-4fcd-8a20-808f4221b6fd" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="WidgetId" oid="3077a576-771e-4754-8bb6-cca3d19942e3" type="int32">
+                <init>0</init>
+            </local>
+            <local memory="true" name="HasFocus" oid="44f138ea-b6bb-4b87-902e-2f8a8047b0ff" type="bool">
+                <init>false</init>
+            </local>
+        </locals>
+        <localConstants>
+            <localConstant name="ScrollBarWidth" oid="563ef2da-38ef-4c8f-b869-ef96a3ddf3fc" type="real">
+                <init>25.0</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="90fe3714-819c-410a-a4bc-ef07b9c41816">
+            <pathFromRoot value="0"/>
+            <properties name="ScrollPanel">
+                <comment>A ScrollPanel is a container composed of two elements:
+- A Frame, at fixed location. This location is the position and size of the widget.
+- A Sheet, larger than the Frame, at a variable location with respect to the Frame. This location is defined by the variables SheetPosX, SheetPosY, SheetSizeX, SheetSizeY. Indeed, the sheet X/Y coordinates should in fact be interpreted as the offset of the sheet relative to the frame.
+The scrolling function is allowed by:
+- horizontal and vertical scrollbars which allow continuous scrolling (enabled only when sheet size is superior to the ScrollPanel size)
+- DeltaX, DeltaY parameters, which provide the displacement of the sheet to apply when a user initiates an action with the scroll controls (Up / Down / Left / Right / PageUp / PageDown / PageLeft / PageRight).
+
+HomeX and HomeY control the initial position of the sheet.</comment>
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="381.0" maxY="381.0" minX="-5.0" minY="-5.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <rectangle oid="8d760561-ca31-4275-9589-a242b66e41bd">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="control">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>400.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>400.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <lineWidth>
+                            <init>1</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>true</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>-1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>-1</init>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <textureControl>
+                            <init>false</init>
+                        </textureControl>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <tessellate>
+                            <init>false</init>
+                        </tessellate>
+                    </properties>
+                </rectangle>
+                <condContainer oid="c7218140-0823-4d40-891b-82ec45b9bd57">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="HorizontalBarPosition">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>HorizontalScroll</expr>
+                        </index>
+                        <indexes default="other">
+                            <index value="1"/>
+                            <index value="2"/>
+                            <index value="3"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="14812b2b-2f62-467a-be39-15766d460983">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties name="TOP">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>163.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-98.0</init>
+                                        </x>
+                                        <y>
+                                            <init>244.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-18.0</init>
+                                        </x>
+                                        <y>
+                                            <init>272.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="7d5ad5f7-9d10-4955-807d-aa5f97dce19b">
+                            <pathFromRoot value="1,1,0"/>
+                            <properties name="BOTTOM">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>163.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-98.0</init>
+                                        </x>
+                                        <y>
+                                            <init>244.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-18.0</init>
+                                        </x>
+                                        <y>
+                                            <init>272.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="7824c4aa-84ec-4661-9ef4-d2413970df05">
+                            <pathFromRoot value="2,1,0"/>
+                            <properties name="ABSENT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>163.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-98.0</init>
+                                        </x>
+                                        <y>
+                                            <init>244.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-18.0</init>
+                                        </x>
+                                        <y>
+                                            <init>272.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <condContainer oid="1c17c867-af5c-4931-9f4e-ca37c01febf6">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="VerticalBarPosition">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>VerticalScroll</expr>
+                        </index>
+                        <indexes default="other">
+                            <index value="1"/>
+                            <index value="2"/>
+                            <index value="3"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="fc95d4bc-6fbc-4831-94ef-a717394825fa">
+                            <pathFromRoot value="0,2,0"/>
+                            <properties name="LEFT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>163.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-98.0</init>
+                                        </x>
+                                        <y>
+                                            <init>244.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-18.0</init>
+                                        </x>
+                                        <y>
+                                            <init>272.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="927fdd0c-f1e3-4e16-8b86-d5fd13057d8d">
+                            <pathFromRoot value="1,2,0"/>
+                            <properties name="RIGHT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>163.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-98.0</init>
+                                        </x>
+                                        <y>
+                                            <init>244.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-18.0</init>
+                                        </x>
+                                        <y>
+                                            <init>272.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="be0f8f94-575c-48d4-9b5d-b48714fa3613">
+                            <pathFromRoot value="2,2,0"/>
+                            <properties name="ABSENT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>163.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-98.0</init>
+                                        </x>
+                                        <y>
+                                            <init>244.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-18.0</init>
+                                        </x>
+                                        <y>
+                                            <init>272.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <container oid="f2807b40-ebf5-4116-b1c4-8f715b5a5275">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="Background">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <referenceContainer oid="b5efa8ee-7a4d-4bcf-a216-908d50bc4992">
+                            <pathFromRoot value="0,3,0"/>
+                            <properties modular="false" name="2DBackground">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                        <expr>(VerticalScroll = 1) ? ScrollBarWidth : 0.0</expr>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                        <expr>(HorizontalScroll = 2) ? ScrollBarWidth : 0.0</expr>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="2DBackground.ogfx" path="Common"/>
+                                <crc value="3189411601"/>
+                                <inputParameters>
+                                    <parameter control="true" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                        <expr>(VerticalScroll = 3) ? SizeX : (SizeX - ScrollBarWidth)</expr>
+                                        <init>375.0</init>
+                                    </parameter>
+                                    <parameter control="true" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                        <expr>(HorizontalScroll = 3) ? SizeY : (SizeY - ScrollBarWidth)</expr>
+                                        <init>375.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="BackgroundColor" oid="b7f5a822-fec4-4823-83f2-a993cc331c9f" representation="color" type="int">
+                                        <expr>BackColor</expr>
+                                        <init>6</init>
+                                    </parameter>
+                                    <parameter control="false" name="OutlineColor" oid="0b5b664e-3363-4626-b579-ea483e4d8dc0" representation="color" type="int">
+                                        <init>2</init>
+                                    </parameter>
+                                    <parameter control="false" name="Enable" oid="1d442878-97f7-4a57-b4be-0816426c6ba3" type="bool">
+                                        <expr>Enable</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="false" name="Style" oid="193de2ef-1488-4794-b4be-0ee06aec3082" representation="index" type="int">
+                                        <expr>Style</expr>
+                                        <init>1</init>
+                                    </parameter>
+                                </inputParameters>
+                                <outputParameters>
+                                    <parameter name="Clicked" oid="16d6856f-cdef-4bad-bce4-8f6794b982b7" type="bool"/>
+                                </outputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                    </children>
+                </container>
+                <referenceContainer oid="cb208608-8a04-4d7d-af4c-47f2b1aa8b56">
+                    <pathFromRoot value="4,0"/>
+                    <properties modular="false" name="IndividualFocus">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="IndividualFocus.ogfx" path="Common"/>
+                        <crc value="1244254813"/>
+                        <inputParameters>
+                            <parameter control="false" name="Requestfocus" oid="51ba8016-ef03-4f7c-8249-e2524097b493" type="bool">
+                                <expr>RequestFocus</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="NextWidgetId" oid="56ba4cfa-e949-4dde-96af-8fb68b21421a" type="int32">
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="IsContainer" oid="a3ce082f-4ed5-43e2-b2d9-e6ed5d84eb77" type="bool">
+                                <init>false</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="HasFocus" oid="6029da93-0cb5-4223-9c14-dacbf6da20d7" type="bool">
+                                <expr>HasFocus</expr>
+                            </parameter>
+                            <parameter name="WidgetId" oid="74947212-4f07-43d2-8791-6c3b1be76b1a" type="int32">
+                                <expr>WidgetId</expr>
+                            </parameter>
+                            <parameter name="Pressed" oid="5f51c1a5-92ea-4b1b-bf5a-a72ef8df097d" type="bool"/>
+                            <parameter name="Released" oid="c86f6eb3-5003-416b-9802-d582d0500662" type="bool"/>
+                            <parameter name="Button" oid="1a70175b-edaf-4fa1-89e1-829943c6314c" type="int"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <panelContainer oid="f28e4f3d-d528-4df0-b515-b0c2a5873f9c">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="panel group">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>1.0</init>
+                                <expr>(VerticalScroll = 1) ? (ScrollBarWidth + 1.0) : 1.0</expr>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                                <expr>(HorizontalScroll = 2) ? (ScrollBarWidth + 1.0) : 1.0</expr>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <width>
+                            <init>374.0</init>
+                            <expr>(VerticalScroll = 3) ? (SizeX - 1.0) : ((SizeX - ScrollBarWidth) - 1.0)</expr>
+                        </width>
+                        <height>
+                            <init>374.0</init>
+                            <expr>(HorizontalScroll = 3) ? (SizeY - 1.0) : ((SizeY - ScrollBarWidth) - 1.0)</expr>
+                        </height>
+                    </properties>
+                    <children>
+                        <container oid="6627dd0d-2751-4e98-a6b5-2aa3adb914f8">
+                            <pathFromRoot value="0,5,0"/>
+                            <properties name="group">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                        <expr>(HorizontalScroll &lt;&gt; 3) ? ((-PosX) - 1.0) : ((-HomeX) - 1.0)</expr>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                        <expr>(VerticalScroll &lt;&gt; 3) ? ((-PosY) - 1.0) : ((-HomeY) - 1.0)</expr>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <hook oid="9df88ca0-84d4-4610-b795-eacf9cc0a6a3">
+                                    <pathFromRoot value="0,0,5,0"/>
+                                    <properties name="hook">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>-1</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                            </children>
+                        </container>
+                    </children>
+                </panelContainer>
+                <referenceContainer oid="42221270-941d-443f-abbf-a74c906fb90d">
+                    <pathFromRoot value="6,0"/>
+                    <properties modular="false" name="VerticalScrollBar">
+                        <visible>
+                            <init>true</init>
+                            <expr>VerticalScroll &lt;&gt; 3</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>375.0</init>
+                                <expr>(VerticalScroll = 2) ? (SizeX - ScrollBarWidth) : 0.0</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                                <expr>(HorizontalScroll = 2) ? ScrollBarWidth : 0.0</expr>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="ScrollBar.ogfx" path="Common"/>
+                        <crc value="3006702700"/>
+                        <inputParameters>
+                            <parameter control="false" name="Enable" oid="0f5e386a-cdf3-4370-9533-08c6363ac1c9" type="bool">
+                                <expr>Enable and (SheetSizeY &gt; SizeY)</expr>
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="Orientation" oid="b4287fb1-8828-47b1-a7cd-18436f6394a1" representation="index" type="int">
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="TickCoarse" oid="fab8a986-44f2-4b0e-9b73-45b96898b242" type="real">
+                                <expr>PageDeltaY</expr>
+                                <init>20.0</init>
+                            </parameter>
+                            <parameter control="false" name="TickFine" oid="97c325db-e10e-47c9-97ef-5ba1c6bb858d" type="real">
+                                <expr>DeltaY</expr>
+                                <init>1.0</init>
+                            </parameter>
+                            <parameter control="false" name="ResetValue" oid="20201103-b4cd-40df-97ce-2b63fa3b00ea" type="bool">
+                                <expr>HomeClicked</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="true" name="Height" oid="c12f9a86-59cf-49d8-aa2a-9be4b984ae30" type="real">
+                                <expr>SizeY - ScrollBarWidth</expr>
+                                <init>375.0</init>
+                            </parameter>
+                            <parameter control="true" name="Width" oid="a0d4d729-d0bc-4681-b1e9-df5f8fc94239" type="real">
+                                <expr>ScrollBarWidth</expr>
+                                <init>25.0</init>
+                            </parameter>
+                            <parameter control="false" name="MaxValue" oid="38a5a7a5-89ab-4505-83a9-c600e8be3a45" type="real">
+                                <expr>(HorizontalScroll &lt;&gt; 3) ? ( (SheetSizeY &gt;= SizeY) ? ((SheetSizeY - SizeY) + ScrollBarWidth) : 0.0 ) : ( (SheetSizeY &gt;= SizeY) ? (SheetSizeY - SizeY) : 0.0 )</expr>
+                                <init>115.0</init>
+                            </parameter>
+                            <parameter control="false" name="InitValue" oid="cb17469f-0ad1-4ec4-bc5d-cfbdbbdad320" type="real">
+                                <expr>(SheetSizeY &gt;= SizeY) ? HomeY : 0.0</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="ff0fa274-0a64-4572-badd-2e964caec359" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="BackColor" oid="cdd70b0b-23e0-495b-abea-906de1b8a52d" representation="color" type="int">
+                                <expr>BackColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="ArrowBorder" oid="bb762aa1-540f-4c52-915c-18d99d2844cd" representation="color" type="int">
+                                <init>2</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="Value" oid="6ec90a8f-ad14-4d5e-ac45-27fca311ac68" type="real">
+                                <expr>PosY</expr>
+                            </parameter>
+                            <parameter name="MousePressed" oid="f0db89e6-ce68-414a-9fe2-5c0b81351e2d" type="bool"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <referenceContainer oid="03c6a487-54f1-43e6-992b-0e606bdb9407">
+                    <pathFromRoot value="7,0"/>
+                    <properties modular="false" name="HorizontalScrollBar">
+                        <visible>
+                            <init>true</init>
+                            <expr>HorizontalScroll &lt;&gt; 3</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                                <expr>(VerticalScroll = 1) ? ScrollBarWidth : 0.0</expr>
+                            </x>
+                            <y>
+                                <init>400.0</init>
+                                <expr>(HorizontalScroll = 1) ? SizeY : ScrollBarWidth</expr>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="ScrollBar.ogfx" path="Common"/>
+                        <crc value="3006702700"/>
+                        <inputParameters>
+                            <parameter control="false" name="Enable" oid="0f5e386a-cdf3-4370-9533-08c6363ac1c9" type="bool">
+                                <expr>Enable and (SheetSizeX &gt; SizeX)</expr>
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="Orientation" oid="b4287fb1-8828-47b1-a7cd-18436f6394a1" representation="index" type="int">
+                                <init>2</init>
+                            </parameter>
+                            <parameter control="false" name="TickCoarse" oid="fab8a986-44f2-4b0e-9b73-45b96898b242" type="real">
+                                <expr>PageDeltaX</expr>
+                                <init>20.0</init>
+                            </parameter>
+                            <parameter control="false" name="TickFine" oid="97c325db-e10e-47c9-97ef-5ba1c6bb858d" type="real">
+                                <expr>DeltaX</expr>
+                                <init>1.0</init>
+                            </parameter>
+                            <parameter control="false" name="ResetValue" oid="20201103-b4cd-40df-97ce-2b63fa3b00ea" type="bool">
+                                <expr>HomeClicked</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="true" name="Height" oid="c12f9a86-59cf-49d8-aa2a-9be4b984ae30" type="real">
+                                <expr>SizeX - ScrollBarWidth</expr>
+                                <init>375.0</init>
+                            </parameter>
+                            <parameter control="true" name="Width" oid="a0d4d729-d0bc-4681-b1e9-df5f8fc94239" type="real">
+                                <expr>ScrollBarWidth</expr>
+                                <init>25.0</init>
+                            </parameter>
+                            <parameter control="false" name="MaxValue" oid="38a5a7a5-89ab-4505-83a9-c600e8be3a45" type="real">
+                                <expr>(VerticalScroll &lt;&gt; 3) ? ( (SheetSizeX &gt;= SizeX) ? ((SheetSizeX - SizeX) + ScrollBarWidth) : 0.0 ) : ( (SheetSizeX &gt;= SizeX) ? (SheetSizeX - SizeX) : 0.0 )</expr>
+                                <init>115.0</init>
+                            </parameter>
+                            <parameter control="false" name="InitValue" oid="cb17469f-0ad1-4ec4-bc5d-cfbdbbdad320" type="real">
+                                <expr>(SheetSizeX &gt;= SizeX) ? HomeX : 0.0</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="ff0fa274-0a64-4572-badd-2e964caec359" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="BackColor" oid="cdd70b0b-23e0-495b-abea-906de1b8a52d" representation="color" type="int">
+                                <expr>BackColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="ArrowBorder" oid="bb762aa1-540f-4c52-915c-18d99d2844cd" representation="color" type="int">
+                                <init>2</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="Value" oid="6ec90a8f-ad14-4d5e-ac45-27fca311ac68" type="real">
+                                <expr>PosX</expr>
+                            </parameter>
+                            <parameter name="MousePressed" oid="f0db89e6-ce68-414a-9fe2-5c0b81351e2d" type="bool"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <container oid="48f1a69a-81ec-401b-b1dc-501fa04a5f56">
+                    <pathFromRoot value="8,0"/>
+                    <properties name="HomeButton">
+                        <visible>
+                            <init>true</init>
+                            <expr>(HorizontalScroll &lt;&gt; 3) or (VerticalScroll &lt;&gt; 3)</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>375.0</init>
+                                <expr>(VerticalScroll = 1) ? 0.0 : (SizeX - ScrollBarWidth)</expr>
+                            </x>
+                            <y>
+                                <init>375.0</init>
+                                <expr>(HorizontalScroll &lt;&gt; 2) ? (SizeY - ScrollBarWidth) : 0.0</expr>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="23.385323" maxY="25.370518" minX="0.61467695" minY="-1.3705168">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <referenceContainer oid="e7319a90-90b9-4488-b9ad-5756ccc575fd">
+                            <pathFromRoot value="0,8,0"/>
+                            <properties modular="false" name="3DBackground">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="3DBackground.ogfx" path="Common"/>
+                                <crc value="2880543057"/>
+                                <inputParameters>
+                                    <parameter control="true" name="SizeX" oid="1567db4f-d5b7-45ac-a492-37a604b6c49a" type="real">
+                                        <expr>ScrollBarWidth</expr>
+                                        <init>25.0</init>
+                                    </parameter>
+                                    <parameter control="true" name="SizeY" oid="ff8689f8-eca1-414d-bbe3-d097ae184da7" type="real">
+                                        <expr>ScrollBarWidth</expr>
+                                        <init>25.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="BackgroundColor" oid="e34cba86-f2b3-4943-8d08-71b1c1a3fa67" representation="color" type="int">
+                                        <expr>BackColor</expr>
+                                        <init>6</init>
+                                    </parameter>
+                                    <parameter control="false" name="PoppingOutward" oid="81dadf9e-8012-4548-8eb4-2ef402242f93" type="bool">
+                                        <expr>not HomeClicked</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="false" name="Enable" oid="40bccd91-f2ea-4227-a3a6-e2d66c48c81c" type="bool">
+                                        <expr>Enable</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="false" name="Style" oid="3c43a032-be6b-4a91-a8df-8985c699dcde" representation="index" type="int">
+                                        <expr>Style</expr>
+                                        <init>1</init>
+                                    </parameter>
+                                    <parameter control="false" name="DownHalo" oid="2db0af55-687b-48ec-8de2-73996e59d8fe" type="bool">
+                                        <init>false</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                        <text oid="82bcb771-644f-4fe0-8888-88cb33876d74">
+                            <pathFromRoot value="1,8,0"/>
+                            <properties name="text">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <multiline>
+                                    <init>false</init>
+                                </multiline>
+                                <position>
+                                    <x>
+                                        <init>12.0</init>
+                                        <expr>ScrollBarWidth / 2.0</expr>
+                                    </x>
+                                    <y>
+                                        <init>12.0</init>
+                                        <expr>ScrollBarWidth / 2.0</expr>
+                                    </y>
+                                </position>
+                                <maxLength>
+                                    <init>255</init>
+                                </maxLength>
+                                <textValue type="char">
+                                    <init>[72, 0]</init>
+                                </textValue>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>2</init>
+                                </outlineColor>
+                                <lineWidth>
+                                    <init>2</init>
+                                </lineWidth>
+                                <font>
+                                    <init>0</init>
+                                </font>
+                                <horizAlign>
+                                    <init>center</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>middle</init>
+                                </vertAlign>
+                            </properties>
+                        </text>
+                        <referenceContainer oid="3818d98f-462a-4e46-9345-d5858e8adbe9">
+                            <pathFromRoot value="2,8,0"/>
+                            <properties modular="false" name="ClickArea">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="ClickArea.ogfx" path="Common"/>
+                                <crc value="3024767512"/>
+                                <inputParameters>
+                                    <parameter control="false" name="Enable" oid="145ec9be-bf00-4cd6-af4e-aa5ae7378275" type="bool">
+                                        <expr>Enable</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="true" name="SizeX" oid="ca7f6aac-8230-43a0-a2f9-97fbdd41010e" type="real">
+                                        <expr>ScrollBarWidth</expr>
+                                        <init>25.0</init>
+                                    </parameter>
+                                    <parameter control="true" name="SizeY" oid="80b035e3-90b6-4f9e-8248-ae55a36968e6" type="real">
+                                        <expr>ScrollBarWidth</expr>
+                                        <init>25.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="EnableHighlight" oid="d2f0a770-27ed-48e9-8e55-255d25202c60" type="bool">
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="false" name="Style" oid="c13ca85a-81ff-41d6-8341-2dfec4f330b4" representation="index" type="int">
+                                        <init>1</init>
+                                    </parameter>
+                                </inputParameters>
+                                <outputParameters>
+                                    <parameter name="Pressed" oid="9d9e638b-8ba6-4e66-bbd6-d09ed5eaccf0" type="bool"/>
+                                    <parameter name="Released" oid="943c6c44-f17e-4c9c-937f-64cf576a74a0" type="bool">
+                                        <expr>HomeClicked</expr>
+                                    </parameter>
+                                </outputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                    </children>
+                </container>
+                <imported oid="e54f3486-51de-4cee-ad72-e0609b5bfa26">
+                    <pathFromRoot value="9,0"/>
+                    <properties name="ReleaseContainer">
+                        <function name="ResetInteractivityStatus"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>true</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="WidgetId" oid="" type="int32">
+                                <expr>WidgetId</expr>
+                                <init>0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters/>
+                    </properties>
+                </imported>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 3099968472 -->
+

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="Requestfocus" oid="51ba8016-ef03-4f7c-8249-e2524097b493" type="bool">
+                <init>false</init>
+            </input>
+            <input name="NextWidgetId" oid="56ba4cfa-e949-4dde-96af-8fb68b21421a" type="int32">
+                <init>0</init>
+            </input>
+            <input name="IsContainer" oid="a3ce082f-4ed5-43e2-b2d9-e6ed5d84eb77" type="bool">
+                <init>false</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="true" name="HasFocus" oid="6029da93-0cb5-4223-9c14-dacbf6da20d7" type="bool">
+                <init>false</init>
+            </output>
+            <output memory="true" name="WidgetId" oid="74947212-4f07-43d2-8791-6c3b1be76b1a" type="int32">
+                <init>0</init>
+            </output>
+            <output memory="true" name="Pressed" oid="5f51c1a5-92ea-4b1b-bf5a-a72ef8df097d" type="bool">
+                <init>false</init>
+            </output>
+            <output memory="true" name="Released" oid="c86f6eb3-5003-416b-9802-d582d0500662" type="bool">
+                <init>false</init>
+            </output>
+            <output memory="true" name="Button" oid="1a70175b-edaf-4fa1-89e1-829943c6314c" type="int">
+                <init>0</init>
+            </output>
+        </outputs>
+        <locals>
+            <local memory="true" name="LocalReleased" oid="430e2256-8407-41ff-8a4b-02a8ce0420f2" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="PreviousLocalPressed" oid="9e53b318-4cd1-4a64-b400-9d11f3fa5f4d" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="LocalPressed" oid="48894d65-56f7-4d8d-8d31-f45128f87ba6" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="PreviousPressed" oid="c3c71927-c7f4-411a-9e45-8345ccae9364" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="LocalButton" oid="37cf70f4-47b9-45c1-a2fa-c9d561d0d522" type="int">
+                <init>0</init>
+            </local>
+        </locals>
+    </declaration>
+    <children>
+        <container oid="de0c67ea-05d9-4d0b-9de8-5f0c47a1b63c">
+            <pathFromRoot value="0"/>
+            <properties name="Focus">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <imported oid="5e9529d3-a928-4f3f-8411-1246fccf0975">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="GetId">
+                        <function name="GetId"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>true</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters/>
+                        <outputParameters>
+                            <parameter name="WidgetId" oid="" type="int32">
+                                <expr>WidgetId</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <assignment oid="6f089526-8a3e-4ecc-872e-fb82bc515b9b">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="PreviousLocalPressed">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>false</init>
+                            <expr>LocalPressed</expr>
+                        </input>
+                        <output>
+                            <expr>PreviousLocalPressed</expr>
+                        </output>
+                    </properties>
+                </assignment>
+                <assignment oid="63ba24ae-bd39-47b9-b178-3c54f196790b">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="PreviousPressed">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>false</init>
+                            <expr>Pressed</expr>
+                        </input>
+                        <output>
+                            <expr>PreviousPressed</expr>
+                        </output>
+                    </properties>
+                </assignment>
+                <imported oid="d339740f-0c33-4cf9-a828-6d6ca3c4a9b5">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="ManageIndividualFocus">
+                        <function name="ManageIndividualFocus"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>true</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="RequestFocus" oid="" type="bool">
+                                <expr>Requestfocus</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="WidgetId" oid="" type="int32">
+                                <expr>WidgetId</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="IsContainer" oid="" type="bool">
+                                <expr>IsContainer</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="NextWidgetId" oid="" type="int32">
+                                <expr>NextWidgetId</expr>
+                                <init>0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="HasFocus" oid="" type="bool">
+                                <expr>HasFocus</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <pointerEventListener oid="bfe2bd31-7368-456d-a1fd-52e95163c997">
+                    <pathFromRoot value="4,0"/>
+                    <properties name="pointer event listener">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <eventId>
+                            <init>0</init>
+                        </eventId>
+                        <relative>
+                            <init>false</init>
+                        </relative>
+                        <output>
+                            <pressed>
+                                <expr>LocalPressed</expr>
+                            </pressed>
+                            <released>
+                                <expr>LocalReleased</expr>
+                            </released>
+                            <button>
+                                <expr>LocalButton</expr>
+                            </button>
+                            <pointerPosition/>
+                        </output>
+                    </properties>
+                </pointerEventListener>
+                <assignment oid="6083d933-2d19-4adf-ae18-4571e471fa6c">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="Pressed">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>false</init>
+                            <expr>(HasFocus and (LocalPressed or PreviousLocalPressed)) and (not PreviousPressed)</expr>
+                        </input>
+                        <output>
+                            <expr>Pressed</expr>
+                        </output>
+                    </properties>
+                </assignment>
+                <assignment oid="4241469f-f908-4f36-8bd2-9f380a5c2870">
+                    <pathFromRoot value="6,0"/>
+                    <properties name="Released">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>false</init>
+                            <expr>LocalReleased and HasFocus</expr>
+                        </input>
+                        <output>
+                            <expr>Released</expr>
+                        </output>
+                    </properties>
+                </assignment>
+                <assignment oid="417caabe-dd47-47be-8eb3-713dbd45f3ab">
+                    <pathFromRoot value="7,0"/>
+                    <properties name="Button">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>0</init>
+                            <expr>(Pressed or Released) ? LocalButton : 0</expr>
+                        </input>
+                        <output>
+                            <expr>Button</expr>
+                        </output>
+                    </properties>
+                </assignment>
+                <container oid="a15bd08d-75e9-4ec8-a140-4775b3ac2b9a">
+                    <pathFromRoot value="8,0"/>
+                    <properties name="debug">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>4</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <text oid="b1a13fb3-5b2a-4293-9f01-b2e156946c33">
+                            <pathFromRoot value="0,8,0"/>
+                            <properties name="text">
+                                <visible>
+                                    <init>true</init>
+                                    <expr>HasFocus</expr>
+                                </visible>
+                                <multiline>
+                                    <init>false</init>
+                                </multiline>
+                                <position>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </position>
+                                <maxLength>
+                                    <init>255</init>
+                                </maxLength>
+                                <textValue type="char">
+                                    <init>[72, 97, 115, 70, 111, 99, 117, 115, 0]</init>
+                                </textValue>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>76</init>
+                                </outlineColor>
+                                <lineWidth>
+                                    <init>2</init>
+                                </lineWidth>
+                                <font>
+                                    <init>5</init>
+                                </font>
+                                <horizAlign>
+                                    <init>left</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </text>
+                    </children>
+                </container>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 801954489 -->
+

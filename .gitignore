@@ -71,6 +71,5 @@ Icon
 *.pyc
 **/lib
 **/include
-BombeirosRescaldo/EmbeddedAPI/node_modules/
-BombeirosRescaldo/EmbeddedAPI/database
-BombeirosRescaldo/EmbeddedAPI/entries
+
+**/node_modules

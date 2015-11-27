@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="128" width="49">
+            <raw numberOfBytes="263">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,49,0,0,0,-128,8,2,0,0,0,45,104,22,-101,0,0,0,-50,73,68,65,84,120,-38,-19,-37,49,10,-125,64,16,64,81,59,-63,3,44,-40,-120,-67,71,-56,13,-68,-118,-89,-53,-47,20,-73,77,50,4,98,37,41,68,-52,6,-34,-81,-90,112,-121,87,-88,-35,86,-107,36,73,122,-105,82,-22,-70,110,28,-57,-5,-47,-30,108,108,-120,61,-89,-103,-6,-66,31,-122,97,-102,-90,-25,-47,-30,108,108,-120,61,76,76,85,93,-41,77,-45,-76,109,123,-37,107,93,-41,-57,-89,-104,119,-97,-119,-77,-79,33,-10,92,-12,85,-50,-13,-68,-103,98,46,-30,79,81,-94,105,89,-106
+,-19,-67,-119,-103,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-119,-23,39,-90,-17,119,-72,114,-50,-101,41,-26,-117,-18,112,-71,127,-57,116,-90,-87,-60,-69,-72,-110,36,-3,121,47,77,92,-78,-95,-55,-8,-34,-71,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="AreaSizeX" oid="e91762c9-01cc-408e-95b3-67d73cc86e96" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="AreaSizeY" oid="4ede80a0-db04-416a-a436-1d834f877abd" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="String" oid="66f1731f-613c-485f-868d-722124abab50" representation="as_string" type="char^255">
+                <init>[0]</init>
+            </input>
+            <input name="HorizontalAlignment" oid="16140c80-80a0-44c3-813c-5c31c97703a7" representation="horizontal_alignment" type="int">
+                <init>0</init>
+            </input>
+            <input name="CharIndex" oid="457ddb7a-ee65-42f3-8e71-711f6a0137e8" type="int">
+                <init>0</init>
+            </input>
+            <input name="Font" oid="441bf50a-9942-4c46-ac5a-c9ef0a25c6b0" representation="font" type="int">
+                <init>0</init>
+            </input>
+            <input name="EnablePositionComputation" oid="5a79a064-a7be-4169-aed4-16e3468b26a4" type="bool">
+                <init>false</init>
+            </input>
+            <input name="CursorVisibility" oid="65ce4116-bd04-4c35-8a8a-ec0804569f50" type="bool">
+                <init>false</init>
+            </input>
+            <input name="ClickedPositionX" oid="2dbeb3d7-de1b-4018-afac-f7e1c0c967ed" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="ClickedPositionY" oid="c7b31a03-75a2-4cf8-87de-dfb78d8a5a72" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="NewClick" oid="547cbfc9-bd8d-42aa-946d-b80018553e1f" type="bool">
+                <init>false</init>
+            </input>
+            <input name="EnableLineSizeComputation" oid="b0a07bd8-6e7f-424d-a844-c860dcda1a9b" type="bool">
+                <init>false</init>
+            </input>
+            <input name="TextColor" oid="a7d62877-2405-431c-9c1f-187ba443db60" representation="color" type="int">
+                <init>2</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="false" name="CursorPosY" oid="8bb80a52-e41b-4def-a389-99f4025375b3" type="real">
+                <init>-20.0</init>
+            </output>
+            <output memory="false" name="NewIndexAfterClick" oid="d198df53-4ec8-4aa4-b28f-cadd52415bcc" type="int">
+                <init>0</init>
+            </output>
+            <output memory="false" name="LineFull" oid="6a119fb9-487e-495e-82d6-567ee67c5cd8" type="bool">
+                <init>false</init>
+            </output>
+            <output memory="false" name="LineSizeY" oid="e3ed508a-7b82-43c3-8989-3db57b46677c" type="real">
+                <init>10.0</init>
+            </output>
+            <output memory="false" name="NbLines" oid="ec2a51ce-55ee-49b8-a924-cde3d8aaf67e" type="int">
+                <init>0</init>
+            </output>
+        </outputs>
+        <locals>
+            <local memory="false" name="CursorPosX" oid="aa6f4263-ff4d-4a3d-a3de-2519f84977e1" type="real">
+                <init>20.0</init>
+            </local>
+            <local memory="false" name="CharSize" oid="ab8cc568-4759-4fa9-99d5-c46ec48d9eef" type="real">
+                <init>10.0</init>
+            </local>
+        </locals>
+    </declaration>
+    <children>
+        <container oid="6dc182f3-d59c-4b95-a867-33cf83eda51c">
+            <pathFromRoot value="0"/>
+            <properties name="Cursor">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="10.0" maxY="46.0" minX="-10.0" minY="-6.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <imported oid="27c205b2-82b7-43fe-b6d9-c8ff8df93049">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="CursorBehavior">
+                        <function name="CursorBehavior"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>true</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="EnableCursorPosComputation" oid="" type="bool">
+                                <expr>EnablePositionComputation</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="EnableLineSizeComputation" oid="" type="bool">
+                                <expr>EnableLineSizeComputation</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="AreaSizeX" oid="" type="real">
+                                <expr>AreaSizeX</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="AreaSizeY" oid="" type="real">
+                                <expr>AreaSizeY</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="String" oid="" type="char^255">
+                                <expr>String</expr>
+                                <init>[0]</init>
+                            </parameter>
+                            <parameter name="CharIndex" oid="" type="int">
+                                <expr>CharIndex</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="Font" oid="" type="int">
+                                <expr>Font</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="ClickedPositionX" oid="" type="real">
+                                <expr>ClickedPositionX</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="ClickedPositionY" oid="" type="real">
+                                <expr>ClickedPositionY</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="NewClick" oid="" type="bool">
+                                <expr>NewClick</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="HorizontalAlignment" oid="" type="int">
+                                <expr>HorizontalAlignment</expr>
+                                <init>0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="CursorPosX" oid="" type="real">
+                                <expr>CursorPosX</expr>
+                            </parameter>
+                            <parameter name="CursorPosY" oid="" type="real">
+                                <expr>CursorPosY</expr>
+                            </parameter>
+                            <parameter name="LineFull" oid="" type="bool">
+                                <expr>LineFull</expr>
+                            </parameter>
+                            <parameter name="LineSizeY" oid="" type="real">
+                                <expr>LineSizeY</expr>
+                            </parameter>
+                            <parameter name="NbLines" oid="" type="int">
+                                <expr>NbLines</expr>
+                            </parameter>
+                            <parameter name="CharSize" oid="" type="real">
+                                <expr>CharSize</expr>
+                            </parameter>
+                            <parameter name="NewIndexAfterClick" oid="" type="int">
+                                <expr>NewIndexAfterClick</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <container oid="f632d7c1-0d1d-4141-aa95-267ea2e19e76">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="Cursor">
+                        <visible>
+                            <init>true</init>
+                            <expr>CursorVisibility</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                                <expr>CursorPosX</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                                <expr>CursorPosY</expr>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="10.0" maxY="46.0" minX="-10.0" minY="-6.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <line oid="cad89664-141c-4b4c-97db-508e6515f53a">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties name="line">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>40.0</init>
+                                            <expr>CharSize + ((LineSizeY - CharSize) / 2.0)</expr>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>2</init>
+                                    <expr>TextColor</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="98c6a89d-ed77-416d-a155-0623343101c8">
+                            <pathFromRoot value="1,1,0"/>
+                            <properties name="line">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-4.0</init>
+                                        </x>
+                                        <y>
+                                            <init>40.0</init>
+                                            <expr>CharSize + ((LineSizeY - CharSize) / 2.0)</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>4.0</init>
+                                        </x>
+                                        <y>
+                                            <init>40.0</init>
+                                            <expr>CharSize + ((LineSizeY - CharSize) / 2.0)</expr>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>2</init>
+                                    <expr>TextColor</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="9153b56d-5113-40ce-aa05-ad42004be068">
+                            <pathFromRoot value="2,1,0"/>
+                            <properties name="line">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-4.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>4.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>2</init>
+                                    <expr>TextColor</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </container>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 3903563452 -->
+

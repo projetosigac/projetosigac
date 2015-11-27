@@ -1,0 +1,2624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+        <preview height="44" width="128">
+            <raw numberOfBytes="2419">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,44,8,2,0,0,0,34,-126,39,9,0,0,9,58,73,68,65,84,120,-38,-19,-101,121,80,-113,-19,26,-57,95,67,-123,68,-111,-22,-96,77,-52,-108,50,-107,37,83,-58,-116,-119,-62,100,87,-74,100,-55,26,34,-39,74,-74,-112,-108,-91,44,37,-99,78,83,73,-101,-92,93,-91,-108,-45,-66,73,-117,74,-54,17,115,-20,-61,48,-2,-31,-81,-13,-103,-18,-7,53,-25,15,61,121,-121,-73,-9,61,103,-98,-17,31,-49,-36,-41,115,95,-9,117,93,-49,-11,-67,-105,-21,-10,-53,111,-65,-55,-112,33,67,-58,95,21,3,7,14,28,-34,5,53,53,53,-60,65,-125,6
+,9,81,85,85,21,-111,-89,16,121,-113,-120,-114,16,25,-123,56,108,-40,48,33,42,43,43,35,-86,-85,-85,-45,-42,-48,-48,24,48,96,-128,-100,-40,31,69,68,68,68,67,67,67,93,93,93,85,85,-107,-90,-90,102,122,122,-6,-61,-121,15,-21,-21,-21,115,114,114,-76,-76,-76,-18,-33,-65,79,23,10,113,113,113,6,6,6,101,101,101,-120,-115,-115,-115,33,33,33,38,38,38,15,30,60,64,108,106,106,-14,-13,-13,-77,-76,-76,124,-12,-24,17,34,79,15,15,15,57,-79,63,-118,-110,-110,18,83,83,83,38,56,4,-24,-21,-21,-73,-73,-73,67,-125,-74,-74,54,-87,31,63,126,124,71,71,7,93,-29,-58,-115,-53,-53,-53,-101,54,109,26,-54,-120
+,22,22,22,-39,-39,-39,-10,-10,-10,41,41,41,-120,54,54,54,-103,-103,-103,75,-105,46,-67,118,-19,26,34,13,72,-107,19,-5,59,8,32,-65,-3,-6,-11,-85,-84,-84,20,4,12,25,50,-124,-51,-92,-88,-88,8,2,16,-47,-47,-43,-43,-51,-51,-51,-123,-128,-30,-30,98,68,99,99,-29,-84,-84,44,8,72,78,78,70,-100,50,101,-118,32,32,52,52,20,113,-2,-4,-7,50,1,50,1,-1,71,91,16,-25,109,-9,22,84,90,90,-118,104,110,110,-34,-67,5,33,118,111,65,97,97,97,-120,-14,22,-12,-5,16,31,31,-49,-95,-54,113,-54,-31,57,114,-28,-56,-62,-62,-62,-121,93,96,-78,67,67,109,109,45,93,28,-62,105,105,105,70,70,70,52
+,16,57,117,-93,-94,-94,38,78,-100,-40,-46,-46,-126,-40,-36,-36,28,20,20,100,101,101,5,91,-120,-83,-83,-83,94,94,94,114,98,127,20,-52,-3,17,93,24,58,116,40,27,17,117,-89,16,-39,-120,-24,-27,41,-60,-63,-125,7,35,-94,35,68,81,-107,-78,83,9,81,69,69,-123,-79,20,-96,-76,-87,68,-107,-108,-108,-28,-60,-2,40,-28,-102,-3,79,3,59,12,7,102,64,64,-128,-75,-75,-75,-104,-47,50,-6,14,108,38,-34,-34,-34,-63,-63,-63,-127,-127,-127,60,-19,-20,-20,-28,-100,-12,41,102,-52,-104,-63,-67,-23,-68,2,-18,-18,-18,98,-45,-105,-47,71,112,114,114,-94,88,12,81,-64,-33,-33,-97,-13,83,78,75,-33,-63,-47,-47,49,38,38,38
+,66,1,-22,72,45,45,45,57,45,125,-70,2,18,18,18,-82,43,-64,37,86,71,71,-89,-97,-116,95,-124,-34,9,88,-79,98,69,106,106,-22,77,5,34,35,35,-115,-115,-115,-1,38,-29,23,-95,-9,-86,114,-27,-54,-107,119,-18,-36,73,87,32,54,54,-42,-51,-51,-19,-112,-116,95,1,31,31,-97,-59,-117,23,-9,66,-64,-86,85,-85,10,10,10,114,21,96,17,-124,-121,-121,-105,-54,-8,57,-108,-107,-107,85,84,84,84,85,85,69,71,71,-9,66,-128,-77,-77,51,3,-2,-87,0,-117,32,46,46,-82,73,-58,-49,-95,-71,-71,-71,-75,-75,-75,-83,-83,45,49,49,-79,23,2,-42,-84,89,83,83,83,83,-95,0,-117,-32,-20,-39,-77,73,-33,3,59,85
+,90,90,90,82,-49,-72,125,-5,54,-61,-109,36,113,-9,-18,-35,-28,-28,100,9,-123,-116,-116,-116,-52,-52,76,9,5,-42,104,126,126,-66,-76,-105,-100,-100,28,14,54,9,5,122,-47,-111,54,-126,23,124,73,40,16,39,-47,74,-121,-22,-23,-23,-39,11,1,46,46,46,-30,-105,72,-127,-62,-62,66,75,75,75,-67,-17,97,-49,-98,61,14,14,14,122,61,-61,-58,-58,-58,-41,-41,87,79,18,92,-74,77,77,77,37,20,86,-81,94,-19,-22,-22,42,-95,96,100,100,20,22,22,38,-19,-123,-69,-67,-83,-83,-83,-124,-62,-84,89,-77,-48,-111,54,-62,-3,20,95,18,10,27,55,110,100,3,-105,54,34,126,81,-105,-62,-38,-75,107,89,41,-83,10,-108,-105,-105
+,27,26,26,-10,-1,30,-42,-81,95,63,117,-22,-44,-2,61,-125,112,33,-68,-65,36,78,-98,60,57,124,-8,112,9,5,123,123,-5,69,-117,22,73,40,80,87,-100,59,119,78,-38,11,117,-124,-103,-103,-103,-124,2,-67,-24,72,27,57,127,-2,60,-66,36,20,56,96,-19,-20,-20,-92,-115,-12,94,-119,-110,-42,-50,-50,-50,127,41,80,91,91,107,96,96,-48,19,85,-109,39,79,-106,48,-59,64,86,-119,-76,-69,19,39,78,-88,-85,-85,75,40,-52,-98,61,123,-63,-126,5,18,10,-54,-54,-54,-127,-127,-127,-46,94,-74,109,-37,102,98,98,34,-95,48,97,-62,-124,-83,91,-73,74,27,97,43,22,127,-28,-47,19,22,46,92,-56,74,-6,-39,-117,24,-21,-24
+,-43,-85,87,-1,86,-96,-66,-66,94,95,95,95,38,-96,-17,8,-32,34,-10,-31,-65,80,93,93,-51,-11,65,38,-96,-17,8,24,54,108,24,-43,-53,-101,55,111,-66,124,-7,-14,-6,-11,107,-118,34,-119,-45,66,38,-32,-41,19,32,126,11,-77,-74,-74,-26,-85,40,99,36,-2,45,90,38,-32,-113,34,64,-32,-52,-103,51,-67,-42,75,50,1,127,32,1,23,47,94,-108,9,-8,51,9,-32,6,36,-83,48,125,-6,-12,-98,42,84,1,77,77,77,-86,120,105,35,75,-106,44,17,127,87,33,-111,26,11,11,11,-23,13,115,-7,-14,-27,-46,94,102,-50,-100,57,106,-44,40,9,5,122,-47,-23,-75,60,-95,-112,-105,80,32,78,-94,-107,127,-47,-8,31,-60
+,-24,-47,-93,89,-59,-105,46,93,-70,112,-31,-126,-71,-71,-71,-79,-79,49,119,75,68,94,114,-75,-29,6,-8,-113,46,4,4,4,32,6,5,5,9,77,45,45,45,78,105,-38,-36,-47,35,34,34,104,-8,-6,-6,-14,-4,123,23,104,56,56,56,-80,-67,112,-41,13,9,9,97,120,104,104,-88,-65,-65,63,-106,105,32,94,-71,114,-27,-48,-95,67,76,127,103,103,103,49,10,59,-62,-56,-27,-53,-105,81,8,11,11,67,100,78,-115,29,59,-106,6,34,47,-23,18,94,-124,83,68,46,46,42,42,42,-5,-9,-17,-57,-96,24,69,108,126,126,126,-35,78,9,123,-60,-120,17,108,14,-116,10,15,15,23,-79,117,-121,-54,27,26,-74,-74,-74,-84,87,52
+,69,108,-116,-59,2,118,-82,94,-67,42,66,-35,-73,111,31,94,54,109,-38,-124,71,-4,126,55,84,67,67,67,83,83,-45,75,93,-32,51,41,-33,-87,101,-124,120,-22,-44,41,46,-4,61,18,-80,97,-61,6,74,79,-106,24,-114,9,-62,-57,-57,39,50,50,18,49,46,46,-82,-95,-95,-31,-29,-57,-113,-68,-89,-3,-19,-37,-73,-10,-10,118,-94,-95,11,125,70,-35,-72,113,-125,15,104,110,110,-82,-88,-88,32,-90,79,-97,62,17,13,-105,103,-15,55,113,-59,-59,-59,16,86,84,84,84,94,94,-114,-66,-8,39,-39,-84,-84,-84,-57,-113,31,-89,-92,-92,-28,-28,-28,-44,-43,-43,-103,-103,-103,61,125,-6,20,-114,25,-123,-81,-88,-88,40,-116,96,-109,-79,-115
+,-115,-115,-79,-79,-79,76,-126,-61,-121,15,39,37,37,-47,91,88,88,24,29,29,-3,-2,-3,123,-98,-72,-64,44,-127,113,91,-28,-86,-40,-46,-46,-126,11,-116,63,121,-14,-28,-42,-83,91,-36,31,11,10,10,50,50,50,106,106,106,112,-76,108,-39,50,-70,80,70,-83,-78,-78,-110,-68,-29,-123,39,109,-34,-16,30,77,71,71,71,52,9,-125,118,126,126,62,-18,-110,-109,-109,-79,-58,64,-94,69,77,79,79,-17,-27,-53,-105,40,-13,33,120,39,-122,-73,111,-33,-58,-60,-60,-36,-69,119,15,119,68,-56,124,-30,-100,16,-7,73,77,77,117,117,117,-27,115,78,-97,62,-115,72,18,-26,-52,-103,35,69,0,115,-109,-58,-70,117,-21,-8,96,8,-40,-71,115,39
+,-94,-105,-105,23,113,112,27,-32,3,118,-17,-34,-3,-11,-21,87,8,16,55,3,-12,5,1,91,-74,108,-31,83,-95,103,-13,-26,-51,-17,-34,-67,-37,-66,125,59,-31,-14,-58,-55,-55,73,16,64,-96,4,119,-28,-56,-111,-60,-60,-60,-101,55,111,6,7,7,-105,-108,-108,-112,83,-26,78,110,110,-82,32,-128,-109,64,80,-78,107,-41,46,-116,96,19,34,-13,-14,-14,-104,-41,-126,0,-122,-45,-53,124,-12,-16,-16,120,-15,-30,5,103,59,-97,125,-3,-6,117,23,23,-105,-50,-50,78,8,40,45,45,61,-35,5,56,102,98,98,25,22,89,124,-23,-23,-23,-92,76,16,64,-43,-64,40,-62,-32,-68,-59,11,-49,-124,-124,4,72,-27,-67,32,-128,-36,-95,-49,108,101
+,44,-34,-113,31,63,14,67,124,41,-85,-127,-92,67,0,-66,72,17,126,-79,67,12,-120,-98,-98,-98,44,26,98,59,122,-12,-88,32,-128,-112,68,126,32,-128,121,60,119,-18,92,68,-104,-112,9,-112,9,-112,9,-112,-8,17,-122,77,-118,-17,100,-41,35,104,62,-101,-128,16,-79,-53,-9,-80,93,102,102,102,18,40,4,-80,-39,-111,68,-70,16,-87,83,73,19,-101,-35,-77,103,-49,90,91,91,105,124,-2,-4,-103,-127,109,109,109,68,22,31,31,-49,78,74,109,87,93,93,-51,110,-50,7,-16,-124,78,50,69,47,79,118,-16,-90,-90,38,-54,115,-74,87,-120,100,-73,-123,9,-46,-124,17,76,-47,-123,72,0,-60,-61,1,-120,-87,-114,-114,14,-68,-93,-16,-31
+,-61,-121,-20,-20,108,-100,50,-112,-128,105,-24,-22,-22,114,-82,-16,9,85,85,85,-48,67,118,16,-59,-49,74,4,-122,107,110,18,28,12,40,-29,-102,-82,-76,-76,52,-68,-16,-92,-9,-7,-13,-25,-55,93,-96,-118,39,42,-34,-112,116,98,70,-115,105,-124,53,108,98,25,113,-52,-104,49,-8,66,-109,3,-128,6,49,112,26,-15,36,42,-26,37,-54,123,-9,-18,37,90,20,-56,15,67,40,46,56,23,-103,127,-120,4,-61,57,-33,35,1,20,9,76,7,119,119,119,55,55,55,-114,114,60,-47,64,-28,37,87,45,86,-61,-15,46,32,78,-102,52,105,-57,-114,29,66,-109,10,-121,-12,-47,-122,-7,99,-57,-114,-47,-96,32,-31,41,38,44,13,43,43,43,85
+,85,85,22,10,-111,49,-100,60,98,-127,-127,52,16,-103,65,80,72,105,65,100,76,124,102,16,43,79,24,65,68,-127,-11,-121,-56,-68,-45,-47,-47,-95,113,-16,-32,65,94,-78,2,-124,23,111,111,111,-122,-80,46,-103,98,74,74,74,92,5,-24,66,-31,-64,-127,3,68,-56,114,100,110,10,-89,-76,-43,-44,-44,40,-46,69,108,-116,-22,14,-107,56,121,67,-125,94,116,-48,20,-79,49,-106,54,118,-80,38,66,-59,62,94,-26,-51,-101,-121,71,44,-32,93,24,17,78,69,-88,-38,-38,-38,68,-21,-34,5,62,83,67,67,67,-28,7,-112,4,-15,127,29,101,-56,-112,33,-29,47,-126,-1,0,53,120,-80,-4,-33,127,45,-58,0,0,0,0,73,69,78,68
+,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                <control oid="fc1b982c-c76c-4fac-b3c6-1f3efe5d54fa" plug="thirdPoint_x"/>
+                <init>250.0</init>
+            </input>
+            <input name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                <control oid="fc1b982c-c76c-4fac-b3c6-1f3efe5d54fa" plug="thirdPoint_y"/>
+                <init>50.0</init>
+            </input>
+            <input name="Enable" oid="5c2bc57c-bac9-46cd-944e-0dc6c364202a" type="bool">
+                <init>true</init>
+            </input>
+            <input name="Style" oid="f5c1daa7-19d2-419f-927d-db7833c23a63" representation="index" type="int">
+                <init>3</init>
+            </input>
+            <input name="TextColor" oid="2699036d-dc80-4230-885f-164b88a0fad4" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="Font" oid="e0fb27a0-c70c-4d8c-bbe7-32f9a343a250" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="BackColor" oid="3df8cd5e-e430-4bd3-928e-b74773b0ad8e" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="InValue" oid="8adfe35c-90d6-4746-9a07-fd66eb0d3d76" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="MinValue" oid="f0090185-f195-4b87-96f1-e4882306f136" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="MaxValue" oid="4a42e74f-d11c-488f-abe2-4aa05393598d" type="real">
+                <init>100.0</init>
+            </input>
+            <input name="ValueDelta" oid="72d8f3b6-62ed-46e4-8af2-4c96cd7176b9" type="real">
+                <init>1.0</init>
+            </input>
+            <input name="Orientation" oid="380c148f-af0a-463f-9189-3ec1cfc72160" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="GraduationsPosition" oid="dab3f2f1-cd4c-45da-8e6d-b1f35036189e" representation="index" type="int">
+                <init>4</init>
+            </input>
+            <input name="ShowGraduations" oid="bae06267-2b53-452b-9291-366306b011d9" representation="index" type="int">
+                <init>4</init>
+            </input>
+            <input name="InValueSet" oid="eaeedacf-1731-4708-9d37-4cfa266cc796" type="bool">
+                <init>false</init>
+            </input>
+            <input name="Legend" oid="cc04bd11-aa8e-4295-9946-6d81b533fe64" representation="as_string" type="char^255">
+                <init>[0]</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="false" name="Value" oid="e63bae09-bbf2-4952-af67-66ae4a06d88a" type="real">
+                <init>0.0</init>
+            </output>
+            <output memory="false" name="ValueChangeEmit" oid="f8af6416-bb96-4454-979a-e52e877bfe2b" type="bool">
+                <init>false</init>
+            </output>
+        </outputs>
+        <locals>
+            <local memory="false" name="MouseInside" oid="85407497-7e58-470c-864a-7d625ba54918" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="MouseReleased" oid="9024d52b-0708-44aa-80c2-4ffc292993d3" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="MousePressed" oid="9cb44a69-2250-453a-acf0-ff066df0a2f7" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="ClickedValueX" oid="9ce9b97a-b7a9-473f-9516-25d5a913eb70" type="real">
+                <init>0.0</init>
+            </local>
+            <local memory="false" name="ClickedValueY" oid="7b960e75-7110-48c4-8ee1-f09570c8b726" type="real">
+                <init>0.0</init>
+            </local>
+            <local memory="false" name="MouseButton" oid="52e385e7-d8a4-4657-868e-b9887f458fad" type="int">
+                <init>0</init>
+            </local>
+            <local memory="true" name="InsideThumb" oid="fcc6ec06-ed2f-4646-bcbd-eab5efe5386d" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="HasFocus" oid="88dfe1e4-2873-48b3-92e9-5af8e1c6333a" type="bool">
+                <init>false</init>
+            </local>
+        </locals>
+        <localConstants>
+            <localConstant name="HighlightThickness" oid="8628c8e4-4926-4ddb-851c-0a266e19af0e" type="real">
+                <init>2.0</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="f663571f-7ff0-4a44-b429-930d250a02dc">
+            <pathFromRoot value="0"/>
+            <properties name="Slider">
+                <comment>A Slider allows the user to select a value between the range of MinValue and MaxValue. The Slider can be displayed in either the horizontal or vertical axis.
+
+The Orientation specifies direction of increasing values. The event is reported upon selection by a user with a click. The thumb is then moved to the clicked position.
+
+MinorTickMultiple is the number of minor graduations between each major graduation.
+LsbMultiple is the number of discrete positions of the thumb between each minor graduation.</comment>
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="131.0" maxY="47.458374" minX="-131.0" minY="-31.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <condContainer oid="3f3abef2-6ad9-46c0-9a85-4237d50f23f7">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="Alignment">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>GraduationsPosition</expr>
+                        </index>
+                        <indexes default="other">
+                            <index value="1"/>
+                            <index value="2"/>
+                            <index value="3"/>
+                            <index value="4"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="3cfb090e-d06f-4bea-98c0-1d47e30d1a3a">
+                            <pathFromRoot value="0,0,0"/>
+                            <properties name="LEFT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-1.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>3.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="acc08d99-c764-478a-a661-9629cae0411f">
+                            <pathFromRoot value="1,0,0"/>
+                            <properties name="RIGHT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-1.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>3.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="bea2f8fe-31c2-40e4-9f72-03bdf55b555e">
+                            <pathFromRoot value="2,0,0"/>
+                            <properties name="TOP">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-1.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>3.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="2301fbc4-88ba-4e77-bd36-4769a52e2b77">
+                            <pathFromRoot value="3,0,0"/>
+                            <properties name="BOTTOM">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-1.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>3.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <condContainer oid="f38333dd-545a-4dd7-8087-219d99eb7d78">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="ShowGraduations">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>ShowGraduations</expr>
+                        </index>
+                        <indexes default="other">
+                            <index value="1"/>
+                            <index value="2"/>
+                            <index value="3"/>
+                            <index value="4"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="efdb9842-192b-4493-a23b-e9fe5ab445d2">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties name="NONE">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-1.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>3.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="1d55bb4f-314f-4f4b-907b-dfc55adf819f">
+                            <pathFromRoot value="1,1,0"/>
+                            <properties name="MINMAX">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-1.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>3.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="bcfaca67-9873-4363-89cd-09f1b2e9e0e5">
+                            <pathFromRoot value="2,1,0"/>
+                            <properties name="MAJOR">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-1.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>3.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="d224adea-433a-428f-b1c7-1a9afb5e1e85">
+                            <pathFromRoot value="3,1,0"/>
+                            <properties name="ALL">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-1.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>47.0</init>
+                                        </x>
+                                        <y>
+                                            <init>3.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <container oid="f8dd008c-df83-4de6-b4b3-7edadc6f2dac">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="Control">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>-125.0</init>
+                                <expr>(Orientation &lt;= 2) ? 0.0 : ((-SizeX) / 2.0)</expr>
+                            </x>
+                            <y>
+                                <init>-25.0</init>
+                                <expr>(Orientation &lt;= 2) ? ((-SizeY) / 2.0) : 0.0</expr>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <rectangle oid="fc1b982c-c76c-4fac-b3c6-1f3efe5d54fa">
+                            <pathFromRoot value="0,2,0"/>
+                            <properties name="control_point">
+                                <visible>
+                                    <init>false</init>
+                                </visible>
+                                <firstPoint>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </firstPoint>
+                                <thirdPoint>
+                                    <x>
+                                        <init>250.0</init>
+                                        <expr>SizeX</expr>
+                                    </x>
+                                    <y>
+                                        <init>50.0</init>
+                                        <expr>SizeY</expr>
+                                    </y>
+                                </thirdPoint>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>-1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                                <fillColor>
+                                    <init>-1</init>
+                                </fillColor>
+                                <fillOpacity>
+                                    <init>255</init>
+                                </fillOpacity>
+                                <polygonSmooth>
+                                    <init>true</init>
+                                </polygonSmooth>
+                                <textureControl>
+                                    <init>false</init>
+                                </textureControl>
+                                <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                    <textureId>
+                                        <init>-1</init>
+                                    </textureId>
+                                </texture>
+                                <modulate>
+                                    <init>false</init>
+                                </modulate>
+                                <tessellate>
+                                    <init>false</init>
+                                </tessellate>
+                            </properties>
+                        </rectangle>
+                    </children>
+                </container>
+                <rectangleArea oid="11d9aa35-b1db-44a8-a73c-be4e225ffcb0">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="rectangle area">
+                        <enable>
+                            <init>true</init>
+                            <expr>Enable</expr>
+                        </enable>
+                        <pointerId>
+                            <init>0</init>
+                        </pointerId>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                                <expr>(Orientation &lt;= 2) ? 0.0 : ((-SizeX) / 2.0)</expr>
+                            </x>
+                            <y>
+                                <init>-25.0</init>
+                                <expr>(Orientation &lt;= 2) ? ((-SizeY) / 2.0) : 0.0</expr>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>250.0</init>
+                                <expr>(Orientation &lt;= 2) ? SizeX : (SizeX / 2.0)</expr>
+                            </x>
+                            <y>
+                                <init>25.0</init>
+                                <expr>(Orientation &lt;= 2) ? (SizeY / 2.0) : SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <output>
+                            <inside>
+                                <expr>MouseInside</expr>
+                            </inside>
+                            <percentWidth>
+                                <expr>ClickedValueX</expr>
+                            </percentWidth>
+                            <percentHeight>
+                                <expr>ClickedValueY</expr>
+                            </percentHeight>
+                        </output>
+                    </properties>
+                </rectangleArea>
+                <referenceContainer oid="9398e036-0466-48b5-87fb-8132328b1777">
+                    <pathFromRoot value="4,0"/>
+                    <properties modular="false" name="IndividualFocus">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="IndividualFocus.ogfx" path="Common"/>
+                        <crc value="1244254813"/>
+                        <inputParameters>
+                            <parameter control="false" name="Requestfocus" oid="51ba8016-ef03-4f7c-8249-e2524097b493" type="bool">
+                                <expr>MouseInside or InsideThumb</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="NextWidgetId" oid="56ba4cfa-e949-4dde-96af-8fb68b21421a" type="int32">
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="IsContainer" oid="a3ce082f-4ed5-43e2-b2d9-e6ed5d84eb77" type="bool">
+                                <init>false</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="HasFocus" oid="6029da93-0cb5-4223-9c14-dacbf6da20d7" type="bool">
+                                <expr>HasFocus</expr>
+                            </parameter>
+                            <parameter name="WidgetId" oid="74947212-4f07-43d2-8791-6c3b1be76b1a" type="int32"/>
+                            <parameter name="Pressed" oid="5f51c1a5-92ea-4b1b-bf5a-a72ef8df097d" type="bool">
+                                <expr>MousePressed</expr>
+                            </parameter>
+                            <parameter name="Released" oid="c86f6eb3-5003-416b-9802-d582d0500662" type="bool">
+                                <expr>MouseReleased</expr>
+                            </parameter>
+                            <parameter name="Button" oid="1a70175b-edaf-4fa1-89e1-829943c6314c" type="int">
+                                <expr>MouseButton</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <imported oid="53f7b8ce-21cf-4872-9f20-35708ab4d05b">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="wrapper_Slider">
+                        <function name="wrapper_Slider"/>
+                        <enable>
+                            <init>true</init>
+                            <expr>Enable</expr>
+                        </enable>
+                        <restoreStates>
+                            <init>false</init>
+                        </restoreStates>
+                        <memory>
+                            <init>true</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="MinValue" oid="" type="real">
+                                <expr>MinValue</expr>
+                                <init>40.0</init>
+                            </parameter>
+                            <parameter name="MaxValue" oid="" type="real">
+                                <expr>(MinValue &lt; MaxValue) ? MaxValue : (MinValue + 10.0)</expr>
+                                <init>140.0</init>
+                            </parameter>
+                            <parameter name="Value" oid="" type="real">
+                                <expr>InValue</expr>
+                                <init>71.0</init>
+                            </parameter>
+                            <parameter name="SetValue" oid="" type="bool">
+                                <expr>InValueSet</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="Orientation" oid="" type="int">
+                                <expr>Orientation</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter name="ValueDelta" oid="" type="real">
+                                <expr>ValueDelta</expr>
+                                <init>41.0</init>
+                            </parameter>
+                            <parameter name="MousePressed" oid="" type="bool">
+                                <expr>MousePressed</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="MouseReleased" oid="" type="bool">
+                                <expr>MouseReleased</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="MouseButton" oid="" type="int">
+                                <expr>MouseButton</expr>
+                                <init>40</init>
+                            </parameter>
+                            <parameter name="MouseInside" oid="" type="bool">
+                                <expr>MouseInside or InsideThumb</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="ClickedValueX" oid="" type="real">
+                                <expr>ClickedValueX</expr>
+                                <init>40.0</init>
+                            </parameter>
+                            <parameter name="ClickedValueY" oid="" type="real">
+                                <expr>ClickedValueY</expr>
+                                <init>40.0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="OutValue" oid="" type="real">
+                                <expr>Value</expr>
+                            </parameter>
+                            <parameter name="OutValueEmit" oid="" type="bool">
+                                <expr>ValueChangeEmit</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <condContainer oid="7908e8ad-6573-47af-8ad9-5ede435b63bf">
+                    <pathFromRoot value="6,0"/>
+                    <properties name="Orientation">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>Orientation</expr>
+                        </index>
+                        <indexes default="1">
+                            <index value="1"/>
+                            <index value="2"/>
+                            <index value="3"/>
+                            <index value="4"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <container oid="917805c4-3b21-4024-b3eb-e89755bc7284">
+                            <pathFromRoot value="0,6,0"/>
+                            <properties name="LEFT_TO_RIGHT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="-46.83912" maxY="47.458374" minX="-131.0" minY="19.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <text oid="18e14cfc-f3ff-493e-8169-419da9e63102">
+                                    <pathFromRoot value="0,0,6,0"/>
+                                    <properties name="Legend">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>Legend[0] &lt;&gt; 0</expr>
+                                        </visible>
+                                        <multiline>
+                                            <init>false</init>
+                                        </multiline>
+                                        <position>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>25.0</init>
+                                                <expr>SizeY / 2.0</expr>
+                                            </y>
+                                        </position>
+                                        <maxLength>
+                                            <init>255</init>
+                                        </maxLength>
+                                        <textValue type="char">
+                                            <expr>Legend</expr>
+                                            <init>[83, 108, 105, 100, 101, 114, 0]</init>
+                                        </textValue>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>2</init>
+                                            <expr>TextColor</expr>
+                                        </outlineColor>
+                                        <lineWidth>
+                                            <init>2</init>
+                                        </lineWidth>
+                                        <font>
+                                            <init>1</init>
+                                            <expr>Font</expr>
+                                        </font>
+                                        <horizAlign>
+                                            <init>left</init>
+                                        </horizAlign>
+                                        <vertAlign>
+                                            <init>bottom</init>
+                                        </vertAlign>
+                                    </properties>
+                                </text>
+                                <referenceContainer oid="52e2b9af-2713-4f45-8780-442c5f4eec18">
+                                    <pathFromRoot value="1,0,6,0"/>
+                                    <properties modular="false" name="Scale">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>ShowGraduations &gt; 1</expr>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="Scale.ogfx" path="."/>
+                                        <crc value="2400530567"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="Length" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                <expr>SizeX</expr>
+                                                <init>250.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Width" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                <expr>SizeY / 2.0</expr>
+                                                <init>25.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Angle" oid="2551bc37-e022-4b45-92f7-445f6e7cb0f7" type="real">
+                                                <init>0.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Value" oid="8adfe35c-90d6-4746-9a07-fd66eb0d3d76" type="real">
+                                                <expr>(MaxValue + MinValue) / 2.0</expr>
+                                                <init>50.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Range" oid="4a42e74f-d11c-488f-abe2-4aa05393598d" type="real">
+                                                <expr>MaxValue - MinValue</expr>
+                                                <init>100.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="TextColor" oid="97660f81-528a-4a57-92b6-6fe673480ea4" representation="color" type="int">
+                                                <expr>TextColor</expr>
+                                                <init>2</init>
+                                            </parameter>
+                                            <parameter control="false" name="Font" oid="bb0cf042-eef5-4803-9fa3-2e7c85ae21b3" representation="font" type="int">
+                                                <expr>Font</expr>
+                                                <init>1</init>
+                                            </parameter>
+                                            <parameter control="false" name="DistLargeGrad" oid="ce16e0eb-2a69-4015-9057-8826c3a42e7e" type="real">
+                                                <expr>(ShowGraduations = 2) ? (MaxValue - MinValue) : 0.0</expr>
+                                                <init>0.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="NumberOfSmallGradPerLargeGrad" oid="ea6ee21c-f9f5-4041-9f2f-e627aa6b8233" type="int">
+                                                <expr>(ShowGraduations &lt;= 3) ? 1 : 5</expr>
+                                                <init>5</init>
+                                            </parameter>
+                                            <parameter control="false" name="InvertTextSide" oid="7d278475-47f2-44fe-9cdf-dcda0194d6c8" type="bool">
+                                                <expr>GraduationsPosition = 3</expr>
+                                                <init>false</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <referenceContainer oid="42a2983e-af7a-4842-93ec-937a85e67988">
+                                    <pathFromRoot value="2,0,6,0"/>
+                                    <properties modular="false" name="Back">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>-3.0</init>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="3DBackground.ogfx" path="Common"/>
+                                        <crc value="2880543057"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="SizeX" oid="1567db4f-d5b7-45ac-a492-37a604b6c49a" type="real">
+                                                <expr>SizeX</expr>
+                                                <init>250.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="SizeY" oid="ff8689f8-eca1-414d-bbe3-d097ae184da7" type="real">
+                                                <init>6.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="BackgroundColor" oid="e34cba86-f2b3-4943-8d08-71b1c1a3fa67" representation="color" type="int">
+                                                <expr>BackColor</expr>
+                                                <init>2</init>
+                                            </parameter>
+                                            <parameter control="false" name="PoppingOutward" oid="81dadf9e-8012-4548-8eb4-2ef402242f93" type="bool">
+                                                <init>false</init>
+                                            </parameter>
+                                            <parameter control="false" name="Enable" oid="40bccd91-f2ea-4227-a3a6-e2d66c48c81c" type="bool">
+                                                <expr>Enable</expr>
+                                                <init>false</init>
+                                            </parameter>
+                                            <parameter control="false" name="Style" oid="3c43a032-be6b-4a91-a8df-8985c699dcde" representation="index" type="int">
+                                                <init>1</init>
+                                            </parameter>
+                                            <parameter control="false" name="DownHalo" oid="2db0af55-687b-48ec-8de2-73996e59d8fe" type="bool">
+                                                <init>false</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <referenceContainer oid="377c109d-e2b8-4867-8d93-40405e15623c">
+                                    <pathFromRoot value="3,0,6,0"/>
+                                    <properties modular="false" name="Highlight">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>-1.0</init>
+                                                <expr>(-HighlightThickness) / 2.0</expr>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="Highlight.ogfx" path="Common"/>
+                                        <crc value="1177902794"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                <expr>SizeX</expr>
+                                                <init>250.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                <expr>HighlightThickness</expr>
+                                                <init>2.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Highlight" oid="2eca2a68-7a23-42d1-936d-e17e796f6599" type="bool">
+                                                <expr>HasFocus</expr>
+                                                <init>true</init>
+                                            </parameter>
+                                            <parameter control="false" name="Style" oid="eaaebb87-724f-4502-bfdd-3c5d035c5925" representation="index" type="int">
+                                                <init>1</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <translationContainer oid="a140e0e9-7057-4fed-bdf6-87c313a02c8c">
+                                    <pathFromRoot value="4,0,6,0"/>
+                                    <properties name="translate group">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <priority>
+                                            <init>-1</init>
+                                        </priority>
+                                        <refPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </refPoint>
+                                        <startTranslationPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </startTranslationPoint>
+                                        <endTranslationPoint>
+                                            <x>
+                                                <init>250.0</init>
+                                                <expr>SizeX</expr>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </endTranslationPoint>
+                                        <startTranslationValue>
+                                            <init>0.0</init>
+                                            <expr>MinValue</expr>
+                                        </startTranslationValue>
+                                        <endTranslationValue>
+                                            <init>100.0</init>
+                                            <expr>MaxValue</expr>
+                                        </endTranslationValue>
+                                        <startTranslationLocked>
+                                            <init>false</init>
+                                        </startTranslationLocked>
+                                        <endTranslationLocked>
+                                            <init>false</init>
+                                        </endTranslationLocked>
+                                        <functionalTranslationValue>
+                                            <init>0.0</init>
+                                            <expr>(Value &lt; MinValue) ? MinValue : ( (Value &gt; MaxValue) ? MaxValue : Value )</expr>
+                                        </functionalTranslationValue>
+                                    </properties>
+                                    <children>
+                                        <referenceContainer oid="5f6af627-b4a8-41b1-be58-08004dca8aac">
+                                            <pathFromRoot value="0,4,0,6,0"/>
+                                            <properties modular="false" name="SliderThumb">
+                                                <visible>
+                                                    <init>true</init>
+                                                </visible>
+                                                <origin>
+                                                    <x>
+                                                        <init>-6.0</init>
+                                                    </x>
+                                                    <y>
+                                                        <init>-18.75</init>
+                                                        <expr>(-3.0 * SizeY) / 8.0</expr>
+                                                    </y>
+                                                </origin>
+                                                <scale>
+                                                    <x>
+                                                        <init>1.0</init>
+                                                    </x>
+                                                    <y>
+                                                        <init>1.0</init>
+                                                    </y>
+                                                </scale>
+                                                <rotate>
+                                                    <angle>
+                                                        <init>0.0</init>
+                                                    </angle>
+                                                </rotate>
+                                                <orientation clockwise="false"/>
+                                                <file name="SliderThumb.ogfx" path="Common"/>
+                                                <crc value="43256586"/>
+                                                <inputParameters>
+                                                    <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                        <init>12.0</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                        <expr>(SizeY * 3.0) / 4.0</expr>
+                                                        <init>37.5</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="BackgroundColor" oid="b7f5a822-fec4-4823-83f2-a993cc331c9f" representation="color" type="int">
+                                                        <expr>BackColor</expr>
+                                                        <init>2</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="PoppingOutward" oid="825916eb-393f-427f-a13a-ed365b0a56a8" type="bool">
+                                                        <init>true</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Enable" oid="1d442878-97f7-4a57-b4be-0816426c6ba3" type="bool">
+                                                        <expr>Enable</expr>
+                                                        <init>true</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Style" oid="193de2ef-1488-4794-b4be-0ee06aec3082" representation="index" type="int">
+                                                        <expr>Style</expr>
+                                                        <init>2</init>
+                                                    </parameter>
+                                                </inputParameters>
+                                                <outputParameters>
+                                                    <parameter name="Inside" oid="5d55b05c-3c61-4a1e-825d-d4f181a8dbf5" type="bool">
+                                                        <expr>InsideThumb</expr>
+                                                    </parameter>
+                                                </outputParameters>
+                                            </properties>
+                                            <children/>
+                                        </referenceContainer>
+                                    </children>
+                                </translationContainer>
+                            </children>
+                        </container>
+                        <container oid="f38626a6-a848-4b67-9b66-8e60db705309">
+                            <pathFromRoot value="1,6,0"/>
+                            <properties name="RIGHT_TO_LEFT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="-46.83912" maxY="47.458374" minX="-131.0" minY="19.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <text oid="d0f0f7c3-3ee4-4d9d-bda5-a3664abd3888">
+                                    <pathFromRoot value="0,1,6,0"/>
+                                    <properties name="Legend">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>Legend[0] &lt;&gt; 0</expr>
+                                        </visible>
+                                        <multiline>
+                                            <init>false</init>
+                                        </multiline>
+                                        <position>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>25.0</init>
+                                                <expr>SizeY / 2.0</expr>
+                                            </y>
+                                        </position>
+                                        <maxLength>
+                                            <init>255</init>
+                                        </maxLength>
+                                        <textValue type="char">
+                                            <expr>Legend</expr>
+                                            <init>[83, 108, 105, 100, 101, 114, 0]</init>
+                                        </textValue>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>2</init>
+                                            <expr>TextColor</expr>
+                                        </outlineColor>
+                                        <lineWidth>
+                                            <init>2</init>
+                                        </lineWidth>
+                                        <font>
+                                            <init>1</init>
+                                            <expr>Font</expr>
+                                        </font>
+                                        <horizAlign>
+                                            <init>left</init>
+                                        </horizAlign>
+                                        <vertAlign>
+                                            <init>bottom</init>
+                                        </vertAlign>
+                                    </properties>
+                                </text>
+                                <referenceContainer oid="bf7be282-847d-4560-af1c-15cef97310ee">
+                                    <pathFromRoot value="1,1,6,0"/>
+                                    <properties modular="false" name="Scale">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>ShowGraduations &gt; 1</expr>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>250.0</init>
+                                                <expr>SizeX</expr>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="Scale.ogfx" path="."/>
+                                        <crc value="2400530567"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="Length" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                <expr>SizeX</expr>
+                                                <init>250.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Width" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                <expr>SizeY / 2.0</expr>
+                                                <init>25.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Angle" oid="2551bc37-e022-4b45-92f7-445f6e7cb0f7" type="real">
+                                                <init>180.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Value" oid="8adfe35c-90d6-4746-9a07-fd66eb0d3d76" type="real">
+                                                <expr>(MaxValue + MinValue) / 2.0</expr>
+                                                <init>50.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Range" oid="4a42e74f-d11c-488f-abe2-4aa05393598d" type="real">
+                                                <expr>MaxValue - MinValue</expr>
+                                                <init>100.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="TextColor" oid="97660f81-528a-4a57-92b6-6fe673480ea4" representation="color" type="int">
+                                                <expr>TextColor</expr>
+                                                <init>2</init>
+                                            </parameter>
+                                            <parameter control="false" name="Font" oid="bb0cf042-eef5-4803-9fa3-2e7c85ae21b3" representation="font" type="int">
+                                                <expr>Font</expr>
+                                                <init>1</init>
+                                            </parameter>
+                                            <parameter control="false" name="DistLargeGrad" oid="ce16e0eb-2a69-4015-9057-8826c3a42e7e" type="real">
+                                                <expr>(ShowGraduations = 2) ? (MaxValue - MinValue) : 0.0</expr>
+                                                <init>0.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="NumberOfSmallGradPerLargeGrad" oid="ea6ee21c-f9f5-4041-9f2f-e627aa6b8233" type="int">
+                                                <expr>(ShowGraduations &lt;= 3) ? 1 : 5</expr>
+                                                <init>5</init>
+                                            </parameter>
+                                            <parameter control="false" name="InvertTextSide" oid="7d278475-47f2-44fe-9cdf-dcda0194d6c8" type="bool">
+                                                <expr>GraduationsPosition &lt;&gt; 3</expr>
+                                                <init>true</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <referenceContainer oid="45f22e16-e732-4159-9f4c-564fc34e763e">
+                                    <pathFromRoot value="2,1,6,0"/>
+                                    <properties modular="false" name="Back">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>-3.0</init>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="3DBackground.ogfx" path="Common"/>
+                                        <crc value="2880543057"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="SizeX" oid="1567db4f-d5b7-45ac-a492-37a604b6c49a" type="real">
+                                                <expr>SizeX</expr>
+                                                <init>250.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="SizeY" oid="ff8689f8-eca1-414d-bbe3-d097ae184da7" type="real">
+                                                <init>6.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="BackgroundColor" oid="e34cba86-f2b3-4943-8d08-71b1c1a3fa67" representation="color" type="int">
+                                                <expr>BackColor</expr>
+                                                <init>1</init>
+                                            </parameter>
+                                            <parameter control="false" name="PoppingOutward" oid="81dadf9e-8012-4548-8eb4-2ef402242f93" type="bool">
+                                                <init>false</init>
+                                            </parameter>
+                                            <parameter control="false" name="Enable" oid="40bccd91-f2ea-4227-a3a6-e2d66c48c81c" type="bool">
+                                                <expr>Enable</expr>
+                                                <init>false</init>
+                                            </parameter>
+                                            <parameter control="false" name="Style" oid="3c43a032-be6b-4a91-a8df-8985c699dcde" representation="index" type="int">
+                                                <init>1</init>
+                                            </parameter>
+                                            <parameter control="false" name="DownHalo" oid="2db0af55-687b-48ec-8de2-73996e59d8fe" type="bool">
+                                                <init>false</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <referenceContainer oid="084d141e-d496-4f3f-9ce3-e37cdb3631b7">
+                                    <pathFromRoot value="3,1,6,0"/>
+                                    <properties modular="false" name="Highlight">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>-1.0</init>
+                                                <expr>(-HighlightThickness) / 2.0</expr>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="Highlight.ogfx" path="Common"/>
+                                        <crc value="1177902794"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                <expr>SizeX</expr>
+                                                <init>250.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                <expr>HighlightThickness</expr>
+                                                <init>2.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Highlight" oid="2eca2a68-7a23-42d1-936d-e17e796f6599" type="bool">
+                                                <expr>HasFocus</expr>
+                                                <init>true</init>
+                                            </parameter>
+                                            <parameter control="false" name="Style" oid="eaaebb87-724f-4502-bfdd-3c5d035c5925" representation="index" type="int">
+                                                <init>1</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <translationContainer oid="83e8422a-3859-480d-b800-7841cdebcd5c">
+                                    <pathFromRoot value="4,1,6,0"/>
+                                    <properties name="translate group">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <priority>
+                                            <init>-1</init>
+                                        </priority>
+                                        <refPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </refPoint>
+                                        <startTranslationPoint>
+                                            <x>
+                                                <init>250.0</init>
+                                                <expr>SizeX</expr>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </startTranslationPoint>
+                                        <endTranslationPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </endTranslationPoint>
+                                        <startTranslationValue>
+                                            <init>0.0</init>
+                                            <expr>MinValue</expr>
+                                        </startTranslationValue>
+                                        <endTranslationValue>
+                                            <init>100.0</init>
+                                            <expr>MaxValue</expr>
+                                        </endTranslationValue>
+                                        <startTranslationLocked>
+                                            <init>false</init>
+                                        </startTranslationLocked>
+                                        <endTranslationLocked>
+                                            <init>false</init>
+                                        </endTranslationLocked>
+                                        <functionalTranslationValue>
+                                            <init>100.0</init>
+                                            <expr>(Value &lt; MinValue) ? MinValue : ( (Value &gt; MaxValue) ? MaxValue : Value )</expr>
+                                        </functionalTranslationValue>
+                                    </properties>
+                                    <children>
+                                        <referenceContainer oid="f0111ecd-b7fd-4927-bbaa-76ae2226e5dc">
+                                            <pathFromRoot value="0,4,1,6,0"/>
+                                            <properties modular="false" name="SliderThumb">
+                                                <visible>
+                                                    <init>true</init>
+                                                </visible>
+                                                <origin>
+                                                    <x>
+                                                        <init>-6.0</init>
+                                                    </x>
+                                                    <y>
+                                                        <init>-18.75</init>
+                                                        <expr>(-3.0 * SizeY) / 8.0</expr>
+                                                    </y>
+                                                </origin>
+                                                <scale>
+                                                    <x>
+                                                        <init>1.0</init>
+                                                    </x>
+                                                    <y>
+                                                        <init>1.0</init>
+                                                    </y>
+                                                </scale>
+                                                <rotate>
+                                                    <angle>
+                                                        <init>0.0</init>
+                                                    </angle>
+                                                </rotate>
+                                                <orientation clockwise="false"/>
+                                                <file name="SliderThumb.ogfx" path="Common"/>
+                                                <crc value="43256586"/>
+                                                <inputParameters>
+                                                    <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                        <init>12.0</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                        <expr>(SizeY * 3.0) / 4.0</expr>
+                                                        <init>37.5</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="BackgroundColor" oid="b7f5a822-fec4-4823-83f2-a993cc331c9f" representation="color" type="int">
+                                                        <expr>BackColor</expr>
+                                                        <init>2</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="PoppingOutward" oid="825916eb-393f-427f-a13a-ed365b0a56a8" type="bool">
+                                                        <init>true</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Enable" oid="1d442878-97f7-4a57-b4be-0816426c6ba3" type="bool">
+                                                        <expr>Enable</expr>
+                                                        <init>false</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Style" oid="193de2ef-1488-4794-b4be-0ee06aec3082" representation="index" type="int">
+                                                        <expr>Style</expr>
+                                                        <init>1</init>
+                                                    </parameter>
+                                                </inputParameters>
+                                                <outputParameters>
+                                                    <parameter name="Inside" oid="5d55b05c-3c61-4a1e-825d-d4f181a8dbf5" type="bool">
+                                                        <expr>InsideThumb</expr>
+                                                    </parameter>
+                                                </outputParameters>
+                                            </properties>
+                                            <children/>
+                                        </referenceContainer>
+                                    </children>
+                                </translationContainer>
+                            </children>
+                        </container>
+                        <container oid="27425d41-b705-4b9e-8017-eddeddef1362">
+                            <pathFromRoot value="2,6,0"/>
+                            <properties name="BOTTOM_TO_TOP">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="-119.0" maxY="31.0" minX="-203.16089" minY="2.541625">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <text oid="433726ec-a051-44c2-972f-d65b53bb4e73">
+                                    <pathFromRoot value="0,2,6,0"/>
+                                    <properties name="Legend">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>Legend[0] &lt;&gt; 0</expr>
+                                        </visible>
+                                        <multiline>
+                                            <init>false</init>
+                                        </multiline>
+                                        <position>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>-10.0</init>
+                                            </y>
+                                        </position>
+                                        <maxLength>
+                                            <init>255</init>
+                                        </maxLength>
+                                        <textValue type="char">
+                                            <expr>Legend</expr>
+                                            <init>[83, 108, 105, 100, 101, 114, 0]</init>
+                                        </textValue>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>2</init>
+                                            <expr>TextColor</expr>
+                                        </outlineColor>
+                                        <lineWidth>
+                                            <init>2</init>
+                                        </lineWidth>
+                                        <font>
+                                            <init>1</init>
+                                            <expr>Font</expr>
+                                        </font>
+                                        <horizAlign>
+                                            <init>center</init>
+                                        </horizAlign>
+                                        <vertAlign>
+                                            <init>top</init>
+                                        </vertAlign>
+                                    </properties>
+                                </text>
+                                <referenceContainer oid="7fceaea1-dc16-4275-b437-5a0b770febac">
+                                    <pathFromRoot value="1,2,6,0"/>
+                                    <properties modular="false" name="Scale">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>ShowGraduations &gt; 1</expr>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="Scale.ogfx" path="."/>
+                                        <crc value="2400530567"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="Length" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                <expr>SizeY</expr>
+                                                <init>250.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Width" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                <expr>SizeX / 2.0</expr>
+                                                <init>25.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Angle" oid="2551bc37-e022-4b45-92f7-445f6e7cb0f7" type="real">
+                                                <init>90.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Value" oid="8adfe35c-90d6-4746-9a07-fd66eb0d3d76" type="real">
+                                                <expr>(MaxValue + MinValue) / 2.0</expr>
+                                                <init>50.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Range" oid="4a42e74f-d11c-488f-abe2-4aa05393598d" type="real">
+                                                <expr>MaxValue - MinValue</expr>
+                                                <init>100.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="TextColor" oid="97660f81-528a-4a57-92b6-6fe673480ea4" representation="color" type="int">
+                                                <expr>TextColor</expr>
+                                                <init>2</init>
+                                            </parameter>
+                                            <parameter control="false" name="Font" oid="bb0cf042-eef5-4803-9fa3-2e7c85ae21b3" representation="font" type="int">
+                                                <expr>Font</expr>
+                                                <init>1</init>
+                                            </parameter>
+                                            <parameter control="false" name="DistLargeGrad" oid="ce16e0eb-2a69-4015-9057-8826c3a42e7e" type="real">
+                                                <expr>(ShowGraduations = 2) ? (MaxValue - MinValue) : 0.0</expr>
+                                                <init>0.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="NumberOfSmallGradPerLargeGrad" oid="ea6ee21c-f9f5-4041-9f2f-e627aa6b8233" type="int">
+                                                <expr>(ShowGraduations &lt;= 3) ? 1 : 5</expr>
+                                                <init>5</init>
+                                            </parameter>
+                                            <parameter control="false" name="InvertTextSide" oid="7d278475-47f2-44fe-9cdf-dcda0194d6c8" type="bool">
+                                                <expr>GraduationsPosition = 1</expr>
+                                                <init>false</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <referenceContainer oid="14a57fb4-9a94-43bc-9a74-63942dcc1959">
+                                    <pathFromRoot value="2,2,6,0"/>
+                                    <properties modular="false" name="Back">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>-3.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="3DBackground.ogfx" path="Common"/>
+                                        <crc value="2880543057"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="SizeX" oid="1567db4f-d5b7-45ac-a492-37a604b6c49a" type="real">
+                                                <init>6.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="SizeY" oid="ff8689f8-eca1-414d-bbe3-d097ae184da7" type="real">
+                                                <expr>SizeY</expr>
+                                                <init>250.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="BackgroundColor" oid="e34cba86-f2b3-4943-8d08-71b1c1a3fa67" representation="color" type="int">
+                                                <expr>BackColor</expr>
+                                                <init>2</init>
+                                            </parameter>
+                                            <parameter control="false" name="PoppingOutward" oid="81dadf9e-8012-4548-8eb4-2ef402242f93" type="bool">
+                                                <init>false</init>
+                                            </parameter>
+                                            <parameter control="false" name="Enable" oid="40bccd91-f2ea-4227-a3a6-e2d66c48c81c" type="bool">
+                                                <expr>Enable</expr>
+                                                <init>false</init>
+                                            </parameter>
+                                            <parameter control="false" name="Style" oid="3c43a032-be6b-4a91-a8df-8985c699dcde" representation="index" type="int">
+                                                <init>1</init>
+                                            </parameter>
+                                            <parameter control="false" name="DownHalo" oid="2db0af55-687b-48ec-8de2-73996e59d8fe" type="bool">
+                                                <init>false</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <referenceContainer oid="8188f79a-3990-4a2d-b4ae-1c01722ed530">
+                                    <pathFromRoot value="3,2,6,0"/>
+                                    <properties modular="false" name="Highlight">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>-1.0</init>
+                                                <expr>(-HighlightThickness) / 2.0</expr>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="Highlight.ogfx" path="Common"/>
+                                        <crc value="1177902794"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                <expr>HighlightThickness</expr>
+                                                <init>2.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                <expr>SizeY</expr>
+                                                <init>250.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Highlight" oid="2eca2a68-7a23-42d1-936d-e17e796f6599" type="bool">
+                                                <expr>HasFocus</expr>
+                                                <init>true</init>
+                                            </parameter>
+                                            <parameter control="false" name="Style" oid="eaaebb87-724f-4502-bfdd-3c5d035c5925" representation="index" type="int">
+                                                <init>1</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <translationContainer oid="3aaa86db-da11-481a-967c-69c8edc7e1c9">
+                                    <pathFromRoot value="4,2,6,0"/>
+                                    <properties name="translate group">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <priority>
+                                            <init>-1</init>
+                                        </priority>
+                                        <refPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </refPoint>
+                                        <startTranslationPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </startTranslationPoint>
+                                        <endTranslationPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>250.0</init>
+                                                <expr>SizeY</expr>
+                                            </y>
+                                        </endTranslationPoint>
+                                        <startTranslationValue>
+                                            <init>0.0</init>
+                                            <expr>MinValue</expr>
+                                        </startTranslationValue>
+                                        <endTranslationValue>
+                                            <init>100.0</init>
+                                            <expr>MaxValue</expr>
+                                        </endTranslationValue>
+                                        <startTranslationLocked>
+                                            <init>false</init>
+                                        </startTranslationLocked>
+                                        <endTranslationLocked>
+                                            <init>false</init>
+                                        </endTranslationLocked>
+                                        <functionalTranslationValue>
+                                            <init>0.0</init>
+                                            <expr>(Value &lt; MinValue) ? MinValue : ( (Value &gt; MaxValue) ? MaxValue : Value )</expr>
+                                        </functionalTranslationValue>
+                                    </properties>
+                                    <children>
+                                        <referenceContainer oid="acbb98f7-f3e7-4182-91fb-ef0ddacebd8f">
+                                            <pathFromRoot value="0,4,2,6,0"/>
+                                            <properties modular="false" name="SliderThumb">
+                                                <visible>
+                                                    <init>true</init>
+                                                </visible>
+                                                <origin>
+                                                    <x>
+                                                        <init>-93.75</init>
+                                                        <expr>(-3.0 * SizeX) / 8.0</expr>
+                                                    </x>
+                                                    <y>
+                                                        <init>-6.0</init>
+                                                    </y>
+                                                </origin>
+                                                <scale>
+                                                    <x>
+                                                        <init>1.0</init>
+                                                    </x>
+                                                    <y>
+                                                        <init>1.0</init>
+                                                    </y>
+                                                </scale>
+                                                <rotate>
+                                                    <angle>
+                                                        <init>0.0</init>
+                                                    </angle>
+                                                </rotate>
+                                                <orientation clockwise="false"/>
+                                                <file name="SliderThumb.ogfx" path="Common"/>
+                                                <crc value="43256586"/>
+                                                <inputParameters>
+                                                    <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                        <expr>(SizeX * 3.0) / 4.0</expr>
+                                                        <init>187.5</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                        <init>12.0</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="BackgroundColor" oid="b7f5a822-fec4-4823-83f2-a993cc331c9f" representation="color" type="int">
+                                                        <expr>BackColor</expr>
+                                                        <init>2</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="PoppingOutward" oid="825916eb-393f-427f-a13a-ed365b0a56a8" type="bool">
+                                                        <init>true</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Enable" oid="1d442878-97f7-4a57-b4be-0816426c6ba3" type="bool">
+                                                        <expr>Enable</expr>
+                                                        <init>false</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Style" oid="193de2ef-1488-4794-b4be-0ee06aec3082" representation="index" type="int">
+                                                        <expr>Style</expr>
+                                                        <init>1</init>
+                                                    </parameter>
+                                                </inputParameters>
+                                                <outputParameters>
+                                                    <parameter name="Inside" oid="5d55b05c-3c61-4a1e-825d-d4f181a8dbf5" type="bool">
+                                                        <expr>InsideThumb</expr>
+                                                    </parameter>
+                                                </outputParameters>
+                                            </properties>
+                                            <children/>
+                                        </referenceContainer>
+                                    </children>
+                                </translationContainer>
+                            </children>
+                        </container>
+                        <container oid="aeee6d8b-73e4-4a71-b06e-d74e7a2c1872">
+                            <pathFromRoot value="3,6,0"/>
+                            <properties name="TOP_TO_BOTTOM">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="-119.0" maxY="31.0" minX="-203.16089" minY="2.541625">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <text oid="24427b07-c6c5-44c1-b276-4bee29e7f64b">
+                                    <pathFromRoot value="0,3,6,0"/>
+                                    <properties name="Legend">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>Legend[0] &lt;&gt; 0</expr>
+                                        </visible>
+                                        <multiline>
+                                            <init>false</init>
+                                        </multiline>
+                                        <position>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>-10.0</init>
+                                            </y>
+                                        </position>
+                                        <maxLength>
+                                            <init>255</init>
+                                        </maxLength>
+                                        <textValue type="char">
+                                            <expr>Legend</expr>
+                                            <init>[83, 108, 105, 100, 101, 114, 0]</init>
+                                        </textValue>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>2</init>
+                                            <expr>TextColor</expr>
+                                        </outlineColor>
+                                        <lineWidth>
+                                            <init>2</init>
+                                        </lineWidth>
+                                        <font>
+                                            <init>1</init>
+                                            <expr>Font</expr>
+                                        </font>
+                                        <horizAlign>
+                                            <init>center</init>
+                                        </horizAlign>
+                                        <vertAlign>
+                                            <init>top</init>
+                                        </vertAlign>
+                                    </properties>
+                                </text>
+                                <referenceContainer oid="61868887-4326-4a18-b625-2eedd6419c42">
+                                    <pathFromRoot value="1,3,6,0"/>
+                                    <properties modular="false" name="Scale">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>ShowGraduations &gt; 1</expr>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>50.0</init>
+                                                <expr>SizeY</expr>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="Scale.ogfx" path="."/>
+                                        <crc value="2400530567"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="Length" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                <expr>SizeY</expr>
+                                                <init>50.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Width" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                <expr>SizeX / 2.0</expr>
+                                                <init>125.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Angle" oid="2551bc37-e022-4b45-92f7-445f6e7cb0f7" type="real">
+                                                <init>270.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Value" oid="8adfe35c-90d6-4746-9a07-fd66eb0d3d76" type="real">
+                                                <expr>(MaxValue + MinValue) / 2.0</expr>
+                                                <init>50.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Range" oid="4a42e74f-d11c-488f-abe2-4aa05393598d" type="real">
+                                                <expr>MaxValue - MinValue</expr>
+                                                <init>100.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="TextColor" oid="97660f81-528a-4a57-92b6-6fe673480ea4" representation="color" type="int">
+                                                <expr>TextColor</expr>
+                                                <init>2</init>
+                                            </parameter>
+                                            <parameter control="false" name="Font" oid="bb0cf042-eef5-4803-9fa3-2e7c85ae21b3" representation="font" type="int">
+                                                <expr>Font</expr>
+                                                <init>1</init>
+                                            </parameter>
+                                            <parameter control="false" name="DistLargeGrad" oid="ce16e0eb-2a69-4015-9057-8826c3a42e7e" type="real">
+                                                <expr>(ShowGraduations = 2) ? (MaxValue - MinValue) : 0.0</expr>
+                                                <init>0.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="NumberOfSmallGradPerLargeGrad" oid="ea6ee21c-f9f5-4041-9f2f-e627aa6b8233" type="int">
+                                                <expr>(ShowGraduations &lt;= 3) ? 1 : 5</expr>
+                                                <init>5</init>
+                                            </parameter>
+                                            <parameter control="false" name="InvertTextSide" oid="7d278475-47f2-44fe-9cdf-dcda0194d6c8" type="bool">
+                                                <expr>GraduationsPosition &lt;&gt; 1</expr>
+                                                <init>true</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <referenceContainer oid="0f995d9e-1599-4bbf-9ff6-bed54ea2b0f4">
+                                    <pathFromRoot value="2,3,6,0"/>
+                                    <properties modular="false" name="Back">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>-3.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="3DBackground.ogfx" path="Common"/>
+                                        <crc value="2880543057"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="SizeX" oid="1567db4f-d5b7-45ac-a492-37a604b6c49a" type="real">
+                                                <init>6.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="SizeY" oid="ff8689f8-eca1-414d-bbe3-d097ae184da7" type="real">
+                                                <expr>SizeY</expr>
+                                                <init>50.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="BackgroundColor" oid="e34cba86-f2b3-4943-8d08-71b1c1a3fa67" representation="color" type="int">
+                                                <expr>BackColor</expr>
+                                                <init>2</init>
+                                            </parameter>
+                                            <parameter control="false" name="PoppingOutward" oid="81dadf9e-8012-4548-8eb4-2ef402242f93" type="bool">
+                                                <init>false</init>
+                                            </parameter>
+                                            <parameter control="false" name="Enable" oid="40bccd91-f2ea-4227-a3a6-e2d66c48c81c" type="bool">
+                                                <expr>Enable</expr>
+                                                <init>false</init>
+                                            </parameter>
+                                            <parameter control="false" name="Style" oid="3c43a032-be6b-4a91-a8df-8985c699dcde" representation="index" type="int">
+                                                <init>1</init>
+                                            </parameter>
+                                            <parameter control="false" name="DownHalo" oid="2db0af55-687b-48ec-8de2-73996e59d8fe" type="bool">
+                                                <init>false</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <referenceContainer oid="50b4af89-9c05-4169-ade4-e14e04ab5578">
+                                    <pathFromRoot value="3,3,6,0"/>
+                                    <properties modular="false" name="Highlight">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>-1.0</init>
+                                                <expr>(-HighlightThickness) / 2.0</expr>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <file name="Highlight.ogfx" path="Common"/>
+                                        <crc value="1177902794"/>
+                                        <inputParameters>
+                                            <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                <expr>HighlightThickness</expr>
+                                                <init>2.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                <expr>SizeY</expr>
+                                                <init>50.0</init>
+                                            </parameter>
+                                            <parameter control="false" name="Highlight" oid="2eca2a68-7a23-42d1-936d-e17e796f6599" type="bool">
+                                                <expr>HasFocus</expr>
+                                                <init>true</init>
+                                            </parameter>
+                                            <parameter control="false" name="Style" oid="eaaebb87-724f-4502-bfdd-3c5d035c5925" representation="index" type="int">
+                                                <init>1</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </referenceContainer>
+                                <translationContainer oid="5745ff8d-7885-4b7d-a4d9-564e017dff3d">
+                                    <pathFromRoot value="4,3,6,0"/>
+                                    <properties name="translate group">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <priority>
+                                            <init>-1</init>
+                                        </priority>
+                                        <refPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </refPoint>
+                                        <startTranslationPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>50.0</init>
+                                                <expr>SizeY</expr>
+                                            </y>
+                                        </startTranslationPoint>
+                                        <endTranslationPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </endTranslationPoint>
+                                        <startTranslationValue>
+                                            <init>0.0</init>
+                                            <expr>MinValue</expr>
+                                        </startTranslationValue>
+                                        <endTranslationValue>
+                                            <init>100.0</init>
+                                            <expr>MaxValue</expr>
+                                        </endTranslationValue>
+                                        <startTranslationLocked>
+                                            <init>false</init>
+                                        </startTranslationLocked>
+                                        <endTranslationLocked>
+                                            <init>false</init>
+                                        </endTranslationLocked>
+                                        <functionalTranslationValue>
+                                            <init>100.0</init>
+                                            <expr>(Value &lt; MinValue) ? MinValue : ( (Value &gt; MaxValue) ? MaxValue : Value )</expr>
+                                        </functionalTranslationValue>
+                                    </properties>
+                                    <children>
+                                        <referenceContainer oid="b75cc450-25a2-4ed2-b492-348d7c7a2488">
+                                            <pathFromRoot value="0,4,3,6,0"/>
+                                            <properties modular="false" name="SliderThumb">
+                                                <visible>
+                                                    <init>true</init>
+                                                </visible>
+                                                <origin>
+                                                    <x>
+                                                        <init>-93.75</init>
+                                                        <expr>(-3.0 * SizeX) / 8.0</expr>
+                                                    </x>
+                                                    <y>
+                                                        <init>-6.0</init>
+                                                    </y>
+                                                </origin>
+                                                <scale>
+                                                    <x>
+                                                        <init>1.0</init>
+                                                    </x>
+                                                    <y>
+                                                        <init>1.0</init>
+                                                    </y>
+                                                </scale>
+                                                <rotate>
+                                                    <angle>
+                                                        <init>0.0</init>
+                                                    </angle>
+                                                </rotate>
+                                                <orientation clockwise="false"/>
+                                                <file name="SliderThumb.ogfx" path="Common"/>
+                                                <crc value="43256586"/>
+                                                <inputParameters>
+                                                    <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                                        <expr>(SizeX * 3.0) / 4.0</expr>
+                                                        <init>187.5</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                                        <init>12.0</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="BackgroundColor" oid="b7f5a822-fec4-4823-83f2-a993cc331c9f" representation="color" type="int">
+                                                        <expr>BackColor</expr>
+                                                        <init>2</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="PoppingOutward" oid="825916eb-393f-427f-a13a-ed365b0a56a8" type="bool">
+                                                        <init>true</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Enable" oid="1d442878-97f7-4a57-b4be-0816426c6ba3" type="bool">
+                                                        <expr>Enable</expr>
+                                                        <init>false</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Style" oid="193de2ef-1488-4794-b4be-0ee06aec3082" representation="index" type="int">
+                                                        <expr>Style</expr>
+                                                        <init>1</init>
+                                                    </parameter>
+                                                </inputParameters>
+                                                <outputParameters>
+                                                    <parameter name="Inside" oid="5d55b05c-3c61-4a1e-825d-d4f181a8dbf5" type="bool">
+                                                        <expr>InsideThumb</expr>
+                                                    </parameter>
+                                                </outputParameters>
+                                            </properties>
+                                            <children/>
+                                        </referenceContainer>
+                                    </children>
+                                </translationContainer>
+                            </children>
+                        </container>
+                    </children>
+                </condContainer>
+                <text oid="f646e705-7cb7-482e-9e2c-1c33d0272b33">
+                    <pathFromRoot value="7,0"/>
+                    <properties name="text">
+                        <visible>
+                            <init>false</init>
+                            <expr>MinValue &gt;= MaxValue</expr>
+                        </visible>
+                        <multiline>
+                            <init>false</init>
+                        </multiline>
+                        <position>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </position>
+                        <maxLength>
+                            <init>255</init>
+                        </maxLength>
+                        <textValue type="char">
+                            <init>[87, 97, 114, 110, 105, 110, 103, 58, 32, 77, 105, 110, 86, 97, 108, 117, 101, 32, 62, 61, 32, 77, 97, 120, 86, 97, 108, 117, 101, 0]</init>
+                        </textValue>
+                        <haloing>
+                            <init>true</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>11</init>
+                        </outlineColor>
+                        <lineWidth>
+                            <init>2</init>
+                        </lineWidth>
+                        <font>
+                            <init>1</init>
+                        </font>
+                        <horizAlign>
+                            <init>center</init>
+                        </horizAlign>
+                        <vertAlign>
+                            <init>middle</init>
+                        </vertAlign>
+                    </properties>
+                </text>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 2750022841 -->
+

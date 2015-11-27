@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="57" width="128">
+            <raw numberOfBytes="1117">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,57,8,2,0,0,0,113,-103,-76,33,0,0,4,36,73,68,65,84,120,-38,-19,-102,-19,43,-21,97,24,-57,-49,97,-65,-103,121,-102,-59,104,-98,25,-10,66,-111,53,47,68,25,-103,-110,-76,-107,114,90,-65,24,41,97,37,-10,-54,-45,11,35,9,75,72,-101,-102,-92,24,-117,-111,121,24,97,50,-61,97,-5,-93,-50,55,114,-22,-68,56,-99,115,-90,-33,125,94,-20,-6,-68,-70,-38,-117,-5,-82,-21,123,95,-33,-21,-70,-17,-3,-66,124,33,8,-126,32,8,-126,32,8,-126,-8,20,28,-57,-91,-91,-91,37,36,36,80,42,-30,-30,-30,-30,63,96,-73,-85,86
+,-85,-35,-38,-38,-46,-21,-11,36,-128,76,38,43,-7,64,36,18,9,-66,31,78,125,125,125,125,111,111,-81,-41,-21,29,24,24,-88,-82,-82,78,74,74,-118,101,1,-54,-53,-53,-65,125,32,-107,74,5,-33,47,51,51,-13,-31,-31,-31,-23,-23,41,18,-119,-100,-98,-98,-94,14,84,42,85,44,11,96,50,-103,34,31,40,20,10,97,55,-29,121,-34,106,-75,126,127,-29,-7,-7,121,105,105,9,-65,64,18,18,-128,-111,0,71,71,71,-95,80,8,59,-67,-68,-68,-96,14,96,65,69,69,69,49,-34,-118,25,9,0,-45,95,93,93,69,-46,-111,-6,-57,-57,71,-105,-53,-43,-38,-38,90,90,90,42,-111,72,48,6,-112,0,-126,11,96,-77,-39,-112,-3,-16
+,27,8,-20,118,59,-50,62,38,81,-102,-126,4,23,-96,-93,-93,-29,-10,-10,22,-114,-113,13,-32,63,62,-97,-81,-84,-84,76,-87,84,126,125,-125,4,16,80,0,-40,11,76,-58,98,-79,-64,115,-48,117,95,95,95,61,30,-49,-6,-6,122,78,78,-114,92,46,-89,-44,11,46,64,69,69,5,-36,-26,-3,-20,99,-18,68,-84,-47,104,-14,-14,-14,40,-23,44,4,48,24,12,-125,-125,-125,-49,111,-32,-8,111,108,108,76,79,79,23,22,22,-90,-89,-89,83,-46,89,8,-128,-13,14,-25,-63,-94,-56,62,-30,-50,-50,78,116,93,22,87,109,18,-96,-69,-69,123,124,124,28,-29,38,82,15,-25,113,58,-99,93,93,93,106,-75,58,57,57,-103,-70,46,11,1
+,28,14,7,-114,60,-106,67,-41,69,48,49,49,-127,-77,31,-29,15,62,-116,4,-32,121,126,103,103,39,24,12,98,-40,-57,-60,-23,118,-69,107,107,107,75,74,74,56,-114,-117,-15,-37,-106,-32,2,-64,-36,-31,48,86,-85,21,121,-57,-63,-121,0,87,87,87,40,-123,-126,-126,2,-22,-70,44,4,-48,-23,116,112,27,-104,62,86,65,-17,69,12,-37,-63,109,-117,-14,43,-72,0,-80,-105,-54,-54,-54,-98,-98,30,-28,29,-115,23,-85,96,-18,68,108,52,26,-37,-38,-38,106,-119,63,-127,-127,-27,83,2,-32,78,11,-81,-9,-7,124,-31,95,-119,16,-1,-62,123,-46,-94,17,64,38,-109,-83,-84,-84,-20,-18,-18,-2,92,-123,4,-120,-126,-51,-51,-51,-71,-71,-71
+,104,94,39,83,83,83,39,39,39,-47,111,73,-128,-49,48,60,60,-36,-48,-48,16,-51,95,35,-104,127,48,104,-62,-15,-67,94,111,32,16,-64,90,103,103,103,-120,-11,122,125,83,83,19,89,-4,95,-126,113,17,102,30,-3,-80,94,83,83,-77,-67,-67,-115,-47,19,2,28,28,28,32,-58,-12,-103,-110,-110,66,67,14,35,-30,-29,-29,-91,82,-87,-39,108,-58,69,-20,-2,-2,30,-29,-112,-45,-23,28,27,27,67,-121,72,76,76,-92,-4,48,2,115,-25,-4,-4,-68,-33,-17,-57,24,-70,-65,-65,-65,-72,-72,-88,86,-85,-77,-78,-78,32,15,-67,2,-79,99,106,106,10,22,4,47,10,6,-125,8,112,69,-128,29,-119,-59,98,-54,12,35,-38,-37,-37,-5
+,-6,-6,110,110,110,-48,18,78,78,78,108,54,91,75,75,75,110,110,46,52,-96,58,96,7,-50,62,-70,49,-22,0,50,32,-42,-23,116,-88,3,122,-110,99,71,99,99,-93,-55,100,-62,13,-7,-30,-30,-30,-6,-6,122,102,102,-90,-65,-65,63,35,35,-125,122,50,59,84,42,21,-50,62,-82,5,-88,-125,-29,-29,99,-60,-12,41,10,83,112,-81,-53,-49,-49,-25,121,-34,-29,-15,-96,8,66,-95,-112,-35,110,-57,108,-118,-53,51,-43,1,59,-102,-101,-101,93,46,23,4,8,-121,-61,123,123,123,107,107,107,10,-123,2,26,80,67,102,-54,-48,-48,16,44,-24,-3,35,9,4,35,35,35,-24,-55,18,-119,-124,50,-61,8,-93,-47,8,-13,-63,68,116,119
+,119,119,120,120,56,59,59,-85,-43,106,-107,74,-91,72,36,-94,82,96,-57,-14,-14,-78,-37,-19,70,79,14,4,2,-88,3,-88,-126,58,-96,111,85,-104,-66,85,-104,-51,-26,-53,-53,75,-65,-33,127,126,126,62,58,58,90,87,87,71,111,118,76,-111,-53,-27,56,-5,-104,74,81,7,14,-121,-61,98,-79,100,103,103,83,90,-40,33,22,-117,53,26,-115,-63,96,88,88,88,-128,5,21,23,23,83,43,-2,63,119,52,-100,-3,-86,-86,42,74,-59,-1,-31,-3,-1,3,-114,-29,40,21,4,65,16,4,65,16,4,65,16,-65,-31,7,-28,123,-72,-9,25,-107,30,55,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="BackColor" oid="c1374b2a-2e6f-4bb2-a1e9-7338d77aa84c" representation="color" type="int">
+                <init>6</init>
+            </input>
+            <input name="OutlineColor" oid="86bbdd3e-ddda-4a90-9a1d-70df32721a8f" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="Font" oid="9f818359-65fd-42b4-b592-af3c11949851" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="SizeX" oid="55271573-3228-42db-96bf-b33a5e8abca2" type="real">
+                <init>60.0</init>
+            </input>
+            <input name="Kind" oid="09cf4615-94e5-474a-976a-0f2a20bc335f" representation="index" type="int">
+                <init>2</init>
+            </input>
+            <input name="Enable" oid="5eb9303e-e66f-40b8-8581-94cba53e4498" type="bool">
+                <init>false</init>
+            </input>
+        </inputs>
+        <locals>
+            <local memory="false" name="Size" oid="e6d51a9b-bbb8-4057-867e-316084b67aed" type="real">
+                <init>20.0</init>
+            </local>
+        </locals>
+        <localConstants>
+            <localConstant name="DisableColor" oid="9edf8cb5-7132-4c4d-9607-e9eb15a84991" representation="color" type="int">
+                <init>4</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="e635b4f0-0727-456d-ab9a-0f2bb7ee1acb">
+            <pathFromRoot value="0"/>
+            <properties name="group">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="36.0" maxY="16.0" minX="-36.0" minY="-16.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <imported oid="8c476c44-da3b-4d2e-a2b3-26f2da7df06c">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="GetFontSizeY">
+                        <function name="GetFontSizeY"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>true</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="Font" oid="" type="int">
+                                <expr>Font</expr>
+                                <init>1</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="FontSizeY" oid="" type="real">
+                                <expr>Size</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <condContainer oid="62dba74b-9912-4fe4-8e75-ea79b84e06cb">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="conditional group">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>2</init>
+                            <expr>Kind</expr>
+                        </index>
+                        <indexes default="1">
+                            <index value="1"/>
+                            <index value="2"/>
+                            <index value="3"/>
+                            <index value="4"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <shape oid="031622b4-8105-4e93-b54f-72fc9312ba50">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties name="RIGHT_ARROW">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>-10.0</init>
+                                            <expr>(-Size) / 2.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>10.0</init>
+                                            <expr>Size / 2.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>10.0</init>
+                                            <expr>Size / 2.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>4</init>
+                                    <expr>Enable ? OutlineColor : DisableColor</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                                <fillColor>
+                                    <init>6</init>
+                                    <expr>BackColor</expr>
+                                </fillColor>
+                                <fillOpacity>
+                                    <init>255</init>
+                                </fillOpacity>
+                                <polygonSmooth>
+                                    <init>false</init>
+                                </polygonSmooth>
+                                <textureControl>
+                                    <init>false</init>
+                                </textureControl>
+                                <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                    <textureId>
+                                        <init>-1</init>
+                                    </textureId>
+                                </texture>
+                                <modulate>
+                                    <init>false</init>
+                                </modulate>
+                                <tessellate>
+                                    <init>false</init>
+                                </tessellate>
+                            </properties>
+                        </shape>
+                        <line oid="9abe394b-ab89-48a6-8156-6d9b4dad827c">
+                            <pathFromRoot value="1,1,0"/>
+                            <properties name="RETURN">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>30.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>10.0</init>
+                                            <expr>Size / 2.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>30.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-30.0</init>
+                                            <expr>(-SizeX) / 2.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-20.0</init>
+                                            <expr>((-SizeX) / 2.0) + (Size / 2.0)</expr>
+                                        </x>
+                                        <y>
+                                            <init>10.0</init>
+                                            <expr>Size / 2.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-30.0</init>
+                                            <expr>(-SizeX) / 2.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-20.0</init>
+                                            <expr>((-SizeX) / 2.0) + (Size / 2.0)</expr>
+                                        </x>
+                                        <y>
+                                            <init>-10.0</init>
+                                            <expr>(-Size) / 2.0</expr>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>4</init>
+                                    <expr>Enable ? OutlineColor : DisableColor</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="ced8bc26-f566-4883-ace0-46c255301234">
+                            <pathFromRoot value="2,1,0"/>
+                            <properties name="SPACE">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>6.6</init>
+                                            <expr>Size * 0.33</expr>
+                                        </x>
+                                        <y>
+                                            <init>-3.332</init>
+                                            <expr>Size * -0.167</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>6.6</init>
+                                            <expr>Size * 0.33</expr>
+                                        </x>
+                                        <y>
+                                            <init>-10.0</init>
+                                            <expr>Size * -0.5</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-6.6</init>
+                                            <expr>(-Size) * 0.33</expr>
+                                        </x>
+                                        <y>
+                                            <init>-10.0</init>
+                                            <expr>Size * -0.5</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-6.6</init>
+                                            <expr>(-Size) * 0.33</expr>
+                                        </x>
+                                        <y>
+                                            <init>-3.332</init>
+                                            <expr>Size * -0.167</expr>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>4</init>
+                                    <expr>Enable ? OutlineColor : DisableColor</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="6567c392-e531-4c94-8b30-49875dae4726">
+                            <pathFromRoot value="3,1,0"/>
+                            <properties name="BACK_SPACE">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>30.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-30.0</init>
+                                            <expr>(-SizeX) / 2.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-20.0</init>
+                                            <expr>((-SizeX) / 2.0) + (Size / 2.0)</expr>
+                                        </x>
+                                        <y>
+                                            <init>10.0</init>
+                                            <expr>Size / 2.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-30.0</init>
+                                            <expr>(-SizeX) / 2.0</expr>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                            <expr>0.0</expr>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-20.0</init>
+                                            <expr>((-SizeX) / 2.0) + (Size / 2.0)</expr>
+                                        </x>
+                                        <y>
+                                            <init>-10.0</init>
+                                            <expr>(-Size) / 2.0</expr>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>1</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>4</init>
+                                    <expr>Enable ? OutlineColor : DisableColor</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 331438713 -->
+

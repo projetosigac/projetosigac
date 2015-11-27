@@ -1,0 +1,1746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project id="1" oid_count="879" defaultConfiguration="16">
+	<props>
+		<Prop id="1" name="@STUDIO:PRODUCT">
+			<value>DISPLAY</value>
+		</Prop>
+		<Prop id="3" name="@SDY:RELEASE">
+			<value>R16.2</value>
+		</Prop>
+		<Prop id="4" name="@SDY:RATIO">
+			<value>1.0</value>
+			<value>1.0</value>
+		</Prop>
+		<Prop id="5" name="@SDY:DEFAULTCOLORTABLE">
+			<value>Widgets_colors.sct</value>
+		</Prop>
+		<Prop id="6" name="@SDY:DEFAULTLWTABLE">
+			<value>Widgets_line_width.swt</value>
+		</Prop>
+		<Prop id="7" name="@SDY:DEFAULTLSTABLE">
+			<value>Widgets_line_stipple.sst</value>
+		</Prop>
+		<Prop id="8" name="@SDY:TEXTURETABLE">
+			<value>Widgets_textures.stt</value>
+		</Prop>
+		<Prop id="9" name="@SDY:FONTTABLE">
+			<value>Widgets_fonts.sft</value>
+		</Prop>
+		<Prop id="10" name="@SDY:FONTLIBRARY">
+			<value>Fonts.dll</value>
+		</Prop>
+		<Prop id="759" name="@SDY:CONFTARGET">
+			<value>Simulation</value>
+			<configuration>758</configuration>
+		</Prop>
+		<Prop id="760" name="CONFIGURATIONS">
+			<value>758</value>
+		</Prop>
+		<Prop id="761" name="@SDY:CONFSOURCE">
+			<configuration>758</configuration>
+		</Prop>
+		<Prop id="762" name="@SDY:KCGTEMPLATE">
+			<configuration>758</configuration>
+		</Prop>
+		<Prop id="763" name="@SDY:CONFOUTPUT">
+			<value>%ModelDir%\%ModelName%_Simulation</value>
+			<configuration>758</configuration>
+		</Prop>
+	</props>
+	<roots>
+		<Folder id="11" extensions="" name="Resource tables">
+			<elements>
+				<FileRef id="12" persistAs="Common\Widgets_colors.sct"/>
+				<FileRef id="17" persistAs="Common\textures\Widgets_textures.stt"/>
+				<FileRef id="194" persistAs="Common\Widgets_fonts.sft"/>
+				<FileRef id="195" persistAs="Common\Widgets_line_stipple.sst"/>
+				<FileRef id="196" persistAs="Common\Widgets_line_width.swt"/>
+			</elements>
+		</Folder>
+		<Folder id="19" extensions="ogfx" name="Widgets">
+			<elements>
+				<FileRef id="21" persistAs="AlphaNumKeypad.ogfx">
+					<props>
+						<Prop id="230" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="231" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="232" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="233" name="@SDY:MODELEXTSOURCES">
+							<value>Code/lib_strings.c</value>
+							<value>Code/lib_unicode.c</value>
+							<value>Code/CursorBehavior.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_AlphaNumKeypad.c</value>
+							<value>Code/AlphaNumKeypad.c</value>
+							<value>Code/FormatNumValue.c</value>
+							<value>Code/lib_strings.c</value>
+						</Prop>
+						<Prop id="234" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="235" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="236" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="237" name="@SDY:MODELLWTABLE"/>
+						<Prop id="238" name="@SDY:MODELLSTABLE"/>
+						<Prop id="846" name="@SDY:MODELCATEGORY">
+							<value>Sensors</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="22" persistAs="Animation.ogfx">
+					<props>
+						<Prop id="239" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="240" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="241" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="242" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Animations.c</value>
+							<value>Code/Animations.c</value>
+						</Prop>
+						<Prop id="243" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="244" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="245" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="246" name="@SDY:MODELLWTABLE"/>
+						<Prop id="247" name="@SDY:MODELLSTABLE"/>
+						<Prop id="825" name="@SDY:MODELCATEGORY">
+							<value>Animations</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="23" persistAs="AnimationRotate.ogfx">
+					<props>
+						<Prop id="248" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="249" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="250" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="251" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Animations.c</value>
+							<value>Code/Animations.c</value>
+						</Prop>
+						<Prop id="252" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="253" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="254" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="255" name="@SDY:MODELLWTABLE"/>
+						<Prop id="256" name="@SDY:MODELLSTABLE"/>
+						<Prop id="826" name="@SDY:MODELCATEGORY">
+							<value>Animations</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="24" persistAs="AnimationTranslate.ogfx">
+					<props>
+						<Prop id="257" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="258" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="259" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="260" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Animations.c</value>
+							<value>Code/Animations.c</value>
+						</Prop>
+						<Prop id="261" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="262" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="263" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="264" name="@SDY:MODELLWTABLE"/>
+						<Prop id="265" name="@SDY:MODELLSTABLE"/>
+						<Prop id="827" name="@SDY:MODELCATEGORY">
+							<value>Animations</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="25" persistAs="AnimationZoom.ogfx">
+					<props>
+						<Prop id="266" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="267" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="268" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="269" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Animations.c</value>
+							<value>Code/Animations.c</value>
+						</Prop>
+						<Prop id="270" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="271" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="272" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="273" name="@SDY:MODELLWTABLE"/>
+						<Prop id="274" name="@SDY:MODELLSTABLE"/>
+						<Prop id="828" name="@SDY:MODELCATEGORY">
+							<value>Animations</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="26" persistAs="CheckButton.ogfx">
+					<props>
+						<Prop id="275" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="276" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="277" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="278" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_CheckButton.c</value>
+							<value>Code/CheckButton.c</value>
+						</Prop>
+						<Prop id="279" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="280" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="281" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="282" name="@SDY:MODELLWTABLE"/>
+						<Prop id="283" name="@SDY:MODELLSTABLE"/>
+						<Prop id="829" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="27" persistAs="ComboBox.ogfx">
+					<props>
+						<Prop id="284" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="285" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="286" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="287" name="@SDY:MODELEXTSOURCES">
+							<value>Code/CursorBehavior.c</value>
+							<value>Code/lib_unicode.c</value>
+							<value>Code/lib_strings.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_ComboBox.c</value>
+							<value>Code/ComboBox.c</value>
+						</Prop>
+						<Prop id="288" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="289" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="290" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="291" name="@SDY:MODELLWTABLE"/>
+						<Prop id="292" name="@SDY:MODELLSTABLE"/>
+						<Prop id="817" name="@SDY:ANIMATIONFILE">
+							<value>ComboBox.ogfx.asfx</value>
+						</Prop>
+						<Prop id="824" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="28" persistAs="Counter.ogfx">
+					<props>
+						<Prop id="293" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="294" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="295" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="296" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+						</Prop>
+						<Prop id="297" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="298" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="299" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="300" name="@SDY:MODELLWTABLE"/>
+						<Prop id="301" name="@SDY:MODELLSTABLE"/>
+						<Prop id="830" name="@SDY:MODELCATEGORY">
+							<value>Indicators</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="29" persistAs="Frame.ogfx">
+					<props>
+						<Prop id="302" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="303" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="304" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="305" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+						</Prop>
+						<Prop id="306" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="307" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="308" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="309" name="@SDY:MODELLWTABLE"/>
+						<Prop id="310" name="@SDY:MODELLSTABLE"/>
+						<Prop id="822" name="@SDY:MODELCATEGORY">
+							<value>Containers</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="30" persistAs="Gauge.ogfx">
+					<props>
+						<Prop id="311" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="312" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="313" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="314" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+						</Prop>
+						<Prop id="315" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="316" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="317" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="318" name="@SDY:MODELLWTABLE"/>
+						<Prop id="319" name="@SDY:MODELLSTABLE"/>
+						<Prop id="823" name="@SDY:MODELCATEGORY">
+							<value>Indicators</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="31" persistAs="GestureDrag.ogfx">
+					<props>
+						<Prop id="320" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="321" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="322" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="323" name="@SDY:MODELEXTSOURCES">
+							<value>Code/General.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_GestureDrag.c</value>
+							<value>Code/GestureDrag.c</value>
+						</Prop>
+						<Prop id="324" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="325" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="326" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="327" name="@SDY:MODELLWTABLE"/>
+						<Prop id="328" name="@SDY:MODELLSTABLE"/>
+						<Prop id="835" name="@SDY:MODELCATEGORY">
+							<value>Gestures</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="32" persistAs="GestureFlick.ogfx">
+					<props>
+						<Prop id="329" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="330" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="331" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="332" name="@SDY:MODELEXTSOURCES">
+							<value>Code/General.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_GestureFlick.c</value>
+							<value>Code/GestureFlick.c</value>
+						</Prop>
+						<Prop id="333" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="334" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="335" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="336" name="@SDY:MODELLWTABLE"/>
+						<Prop id="337" name="@SDY:MODELLSTABLE"/>
+						<Prop id="839" name="@SDY:MODELCATEGORY">
+							<value>Gestures</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="33" persistAs="GesturePinchExpandRotate.ogfx">
+					<props>
+						<Prop id="338" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="339" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="340" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="341" name="@SDY:MODELEXTSOURCES">
+							<value>Code/General.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_GesturePinchExpandRotate.c</value>
+							<value>Code/GesturePinchExpandRotate.c</value>
+						</Prop>
+						<Prop id="342" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="343" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="344" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="345" name="@SDY:MODELLWTABLE"/>
+						<Prop id="346" name="@SDY:MODELLSTABLE"/>
+						<Prop id="836" name="@SDY:MODELCATEGORY">
+							<value>Gestures</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="34" persistAs="GesturePressHold.ogfx">
+					<props>
+						<Prop id="347" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="348" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="349" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="350" name="@SDY:MODELEXTSOURCES">
+							<value>Code/General.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_GesturePressHold.c</value>
+							<value>Code/GesturePressHold.c</value>
+						</Prop>
+						<Prop id="351" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="352" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="353" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="354" name="@SDY:MODELLWTABLE"/>
+						<Prop id="355" name="@SDY:MODELLSTABLE"/>
+						<Prop id="837" name="@SDY:MODELCATEGORY">
+							<value>Gestures</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="35" persistAs="GestureTap.ogfx">
+					<props>
+						<Prop id="356" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="357" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="358" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="359" name="@SDY:MODELEXTSOURCES">
+							<value>Code/General.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_GestureTap.c</value>
+							<value>Code/GestureTap.c</value>
+						</Prop>
+						<Prop id="360" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="361" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="362" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="363" name="@SDY:MODELLWTABLE"/>
+						<Prop id="364" name="@SDY:MODELLSTABLE"/>
+						<Prop id="838" name="@SDY:MODELCATEGORY">
+							<value>Gestures</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="36" persistAs="Graph_F_X.ogfx">
+					<props>
+						<Prop id="365" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="366" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="367" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="368" name="@SDY:MODELEXTSOURCES">
+							<value>Code/GraphNotTimed.c</value>
+							<value>Code/General.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Graph_F_X.c</value>
+							<value>Code/Graph_F_X.c</value>
+						</Prop>
+						<Prop id="369" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="370" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="371" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="372" name="@SDY:MODELLWTABLE"/>
+						<Prop id="373" name="@SDY:MODELLSTABLE"/>
+						<Prop id="833" name="@SDY:MODELCATEGORY">
+							<value>Indicators</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="37" persistAs="Graph_F_T.ogfx">
+					<props>
+						<Prop id="374" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="375" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="376" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="377" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_GraphTimed.c</value>
+							<value>Code/GraphTimed.c</value>
+						</Prop>
+						<Prop id="378" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="379" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="380" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="381" name="@SDY:MODELLWTABLE"/>
+						<Prop id="382" name="@SDY:MODELLSTABLE"/>
+						<Prop id="834" name="@SDY:MODELCATEGORY">
+							<value>Indicators</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="38" persistAs="InfiniteKnob.ogfx">
+					<props>
+						<Prop id="383" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="384" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="385" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="386" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_InfiniteKnob.c</value>
+							<value>Code/InfiniteKnob.c</value>
+						</Prop>
+						<Prop id="387" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="388" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="389" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="390" name="@SDY:MODELLWTABLE"/>
+						<Prop id="391" name="@SDY:MODELLSTABLE"/>
+						<Prop id="815" name="@SDY:ANIMATIONFILE">
+							<value>InfiniteKnob.ogfx.asfx</value>
+						</Prop>
+						<Prop id="840" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="40" persistAs="Knob.ogfx">
+					<props>
+						<Prop id="401" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="402" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="403" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="404" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Knob.c</value>
+							<value>Code/Knob.c</value>
+						</Prop>
+						<Prop id="405" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="406" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="407" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="408" name="@SDY:MODELLWTABLE"/>
+						<Prop id="409" name="@SDY:MODELLSTABLE"/>
+						<Prop id="842" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="42" persistAs="MultilineEditBox.ogfx">
+					<props>
+						<Prop id="419" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="420" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="421" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="422" name="@SDY:MODELEXTSOURCES">
+							<value>Code/General.c</value>
+							<value>Code/lib_unicode.c</value>
+							<value>Code/lib_strings.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_MultilineEditBox.c</value>
+							<value>Code/MultilineEditBox.c</value>
+							<value>Code/FormatNumValue.c</value>
+							<value>Code/lib_strings.c</value>
+						</Prop>
+						<Prop id="423" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="424" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="425" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="426" name="@SDY:MODELLWTABLE"/>
+						<Prop id="427" name="@SDY:MODELLSTABLE"/>
+						<Prop id="852" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="44" persistAs="NumKeypad.ogfx">
+					<props>
+						<Prop id="437" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="438" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="439" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="440" name="@SDY:MODELEXTSOURCES">
+							<value>Code/CursorBehavior.c</value>
+							<value>Code/lib_unicode.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_NumKeypad.c</value>
+							<value>Code/NumKeypad.c</value>
+							<value>Code/FormatNumValue.c</value>
+							<value>Code/lib_strings.c</value>
+						</Prop>
+						<Prop id="441" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="442" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="443" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="444" name="@SDY:MODELLWTABLE"/>
+						<Prop id="445" name="@SDY:MODELLSTABLE"/>
+						<Prop id="848" name="@SDY:MODELCATEGORY">
+							<value>Sensors</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="46" persistAs="NumericEditBox.ogfx">
+					<props>
+						<Prop id="444" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="445" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="446" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="447" name="@SDY:MODELEXTSOURCES">
+							<value>Code/CursorBehavior.c</value>
+							<value>Code/FormatNumValue.c</value>
+							<value>Code/lib_unicode.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_NumericEditBox.c</value>
+							<value>Code/NumericEditBox.c</value>
+							<value>Code/FormatNumValue.c</value>
+							<value>Code/lib_strings.c</value>
+						</Prop>
+						<Prop id="448" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="449" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="450" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="451" name="@SDY:MODELLWTABLE"/>
+						<Prop id="452" name="@SDY:MODELLSTABLE"/>
+						<Prop id="853" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="47" persistAs="Panel.ogfx">
+					<props>
+						<Prop id="453" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="454" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="455" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="456" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+						</Prop>
+						<Prop id="457" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="458" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="459" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="460" name="@SDY:MODELLWTABLE"/>
+						<Prop id="461" name="@SDY:MODELLSTABLE"/>
+						<Prop id="849" name="@SDY:MODELCATEGORY">
+							<value>Containers</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="49" persistAs="PiecewiseRotationGroup.ogfx">
+					<props>
+						<Prop id="471" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="472" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="473" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="474" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_PiecewiseRotation.c</value>
+							<value>Code/PiecewiseRotation.c</value>
+						</Prop>
+						<Prop id="475" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="476" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="477" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="478" name="@SDY:MODELLWTABLE"/>
+						<Prop id="479" name="@SDY:MODELLSTABLE"/>
+						<Prop id="874" name="@SDY:MODELCATEGORY">
+							<value>Animations</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="50" persistAs="PiecewiseTranslationGroup.ogfx">
+					<props>
+						<Prop id="480" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="481" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="482" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="483" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_PiecewiseTranslation.c</value>
+							<value>Code/PiecewiseTranslation.c</value>
+						</Prop>
+						<Prop id="484" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="485" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="486" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="487" name="@SDY:MODELLWTABLE"/>
+						<Prop id="488" name="@SDY:MODELLSTABLE"/>
+						<Prop id="873" name="@SDY:MODELCATEGORY">
+							<value>Animations</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="51" persistAs="PopUpMenu.ogfx">
+					<props>
+						<Prop id="489" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="490" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="491" name="@SDY:MODELEXTSOURCES">
+							<value>Code/CursorBehavior.c</value>
+							<value>Code/lib_unicode.c</value>
+							<value>Code/lib_strings.c</value>
+							<value>Code/General.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_PopUpMenu.c</value>
+							<value>Code/PopUpMenu.c</value>
+						</Prop>
+						<Prop id="492" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="493" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="872" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="52" persistAs="PopUpPanel.ogfx">
+					<props>
+						<Prop id="494" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="495" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="496" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="497" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_PopUpPanel.c</value>
+							<value>Code/PopUpPanel.c</value>
+						</Prop>
+						<Prop id="498" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="499" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="500" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="501" name="@SDY:MODELLWTABLE"/>
+						<Prop id="502" name="@SDY:MODELLSTABLE"/>
+						<Prop id="871" name="@SDY:MODELCATEGORY">
+							<value>Containers</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="53" persistAs="PushButton.ogfx">
+					<props>
+						<Prop id="503" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="504" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="505" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="506" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_PushButton.c</value>
+							<value>Code/PushButton.c</value>
+						</Prop>
+						<Prop id="507" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="508" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="509" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="510" name="@SDY:MODELLWTABLE"/>
+						<Prop id="511" name="@SDY:MODELLSTABLE"/>
+						<Prop id="854" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="54" persistAs="RadioBox.ogfx">
+					<props>
+						<Prop id="512" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="513" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="514" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="515" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_RadioBox.c</value>
+							<value>Code/RadioBox.c</value>
+						</Prop>
+						<Prop id="516" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="517" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="518" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="519" name="@SDY:MODELLWTABLE"/>
+						<Prop id="520" name="@SDY:MODELLSTABLE"/>
+						<Prop id="855" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="57" persistAs="RegularPolygon.ogfx">
+					<props>
+						<Prop id="539" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="540" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="541" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="542" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+						</Prop>
+						<Prop id="543" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="544" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="545" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="546" name="@SDY:MODELLWTABLE"/>
+						<Prop id="547" name="@SDY:MODELLSTABLE"/>
+						<Prop id="832" name="@SDY:MODELCATEGORY">
+							<value>Graphical primitives</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="58" persistAs="RollingDigits.ogfx">
+					<props>
+						<Prop id="548" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="549" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="550" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="551" name="@SDY:MODELEXTSOURCES">
+							<value>Code/CursorBehavior.c</value>
+							<value>Code/lib_unicode.c</value>
+							<value>Code/General.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_RollingDigits.c</value>
+							<value>Code/RollingDigits.c</value>
+						</Prop>
+						<Prop id="552" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="553" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="554" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="555" name="@SDY:MODELLWTABLE"/>
+						<Prop id="556" name="@SDY:MODELLSTABLE"/>
+						<Prop id="868" name="@SDY:MODELCATEGORY">
+							<value>Avionics</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="59" persistAs="Rose.ogfx">
+					<props>
+						<Prop id="557" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="558" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="559" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="560" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+						</Prop>
+						<Prop id="561" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="562" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="563" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="564" name="@SDY:MODELLWTABLE"/>
+						<Prop id="565" name="@SDY:MODELLSTABLE"/>
+						<Prop id="867" name="@SDY:MODELCATEGORY">
+							<value>Avionics</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="60" persistAs="RotarySwitch.ogfx">
+					<props>
+						<Prop id="566" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="567" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="568" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="569" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_RotarySwitch.c</value>
+							<value>Code/RotarySwitch.c</value>
+						</Prop>
+						<Prop id="570" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="571" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="572" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="573" name="@SDY:MODELLWTABLE"/>
+						<Prop id="574" name="@SDY:MODELLSTABLE"/>
+						<Prop id="876" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="61" persistAs="RoundedRectangle.ogfx">
+					<props>
+						<Prop id="575" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="576" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="577" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="578" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+						</Prop>
+						<Prop id="579" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="580" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="581" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="582" name="@SDY:MODELLWTABLE"/>
+						<Prop id="583" name="@SDY:MODELLSTABLE"/>
+						<Prop id="866" name="@SDY:MODELCATEGORY">
+							<value>Graphical primitives</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="62" persistAs="Scale.ogfx">
+					<props>
+						<Prop id="584" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="585" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="586" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="587" name="@SDY:MODELEXTSOURCES">
+							<value>Code/lib_unicode.c</value>
+							<value>Code/CursorBehavior.c</value>
+							<value>Code/General.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Scale.c</value>
+							<value>Code/Scale.c</value>
+						</Prop>
+						<Prop id="588" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="589" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="590" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="591" name="@SDY:MODELLWTABLE"/>
+						<Prop id="592" name="@SDY:MODELLSTABLE"/>
+						<Prop id="870" name="@SDY:MODELCATEGORY">
+							<value>Avionics</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="63" persistAs="ScrollList.ogfx">
+					<props>
+						<Prop id="593" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="594" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="595" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="596" name="@SDY:MODELEXTSOURCES">
+							<value>Code/CursorBehavior.c</value>
+							<value>Code/lib_unicode.c</value>
+							<value>Code/lib_strings.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_ScrollList.c</value>
+							<value>Code/ScrollList.c</value>
+						</Prop>
+						<Prop id="597" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="598" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="599" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="600" name="@SDY:MODELLWTABLE"/>
+						<Prop id="601" name="@SDY:MODELLSTABLE"/>
+						<Prop id="856" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="64" persistAs="ScrollPanel.ogfx">
+					<props>
+						<Prop id="602" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="603" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="604" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="605" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+						</Prop>
+						<Prop id="606" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="607" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="608" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="609" name="@SDY:MODELLWTABLE"/>
+						<Prop id="610" name="@SDY:MODELLSTABLE"/>
+						<Prop id="869" name="@SDY:MODELCATEGORY">
+							<value>Containers</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="66" persistAs="Slider.ogfx">
+					<props>
+						<Prop id="620" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="621" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="622" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="623" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Slider.c</value>
+							<value>Code/Slider.c</value>
+						</Prop>
+						<Prop id="624" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="625" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="626" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="627" name="@SDY:MODELLWTABLE"/>
+						<Prop id="628" name="@SDY:MODELLSTABLE"/>
+						<Prop id="857" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="67" persistAs="TabbedPanelGroup.ogfx">
+					<props>
+						<Prop id="629" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="630" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="631" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="632" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_RadioBox.c</value>
+							<value>Code/RadioBox.c</value>
+						</Prop>
+						<Prop id="633" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="634" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="635" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="636" name="@SDY:MODELLWTABLE"/>
+						<Prop id="637" name="@SDY:MODELLSTABLE"/>
+						<Prop id="850" name="@SDY:MODELCATEGORY">
+							<value>Containers</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="69" persistAs="TextEditBox.ogfx">
+					<props>
+						<Prop id="647" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="648" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="649" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="650" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_TextEditBox.c</value>
+							<value>Code/TextEditBox.c</value>
+							<value>Code/FormatNumValue.c</value>
+							<value>Code/lib_strings.c</value>
+						</Prop>
+						<Prop id="651" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="652" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="653" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="654" name="@SDY:MODELLWTABLE"/>
+						<Prop id="655" name="@SDY:MODELLSTABLE"/>
+						<Prop id="858" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="70" persistAs="ToggleButton.ogfx">
+					<props>
+						<Prop id="656" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="657" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="658" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="659" name="@SDY:MODELEXTSOURCES">
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_ToggleButton.c</value>
+							<value>Code/ToggleButton.c</value>
+						</Prop>
+						<Prop id="660" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="661" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="662" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="663" name="@SDY:MODELLWTABLE"/>
+						<Prop id="664" name="@SDY:MODELLSTABLE"/>
+						<Prop id="859" name="@SDY:MODELCATEGORY">
+							<value>Buttons</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="72" persistAs="VirtualKeyboard.ogfx">
+					<props>
+						<Prop id="674" name="@SDY:MODELVISIBILITY">
+							<value>true</value>
+						</Prop>
+						<Prop id="675" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="676" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="678" name="@SDY:MODELEXTSOURCES">
+							<value>Code/KeyLabels_VirtualKeyboard_.c</value>
+							<value>Code/CursorBehavior.c</value>
+							<value>Code/lib_unicode.c</value>
+							<value>Code/General.c</value>
+							<value>Code/lib_strings.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_VirtualKeyboard.c</value>
+							<value>Code/VirtualKeyboard.c</value>
+						</Prop>
+						<Prop id="679" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="680" name="@SDY:MODELDYNAMICLIBRARY">
+							<value>%ModelName%.dll</value>
+						</Prop>
+						<Prop id="681" name="@SDY:MODELCOLORTABLE"/>
+						<Prop id="682" name="@SDY:MODELLWTABLE"/>
+						<Prop id="683" name="@SDY:MODELLSTABLE"/>
+						<Prop id="847" name="@SDY:MODELCATEGORY">
+							<value>Sensors</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<Folder id="113" extensions="ogfx" name="Elements">
+					<elements>
+						<FileRef id="114" persistAs="Common/2DBackground.ogfx">
+							<props>
+								<Prop id="153" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="115" persistAs="Common/3DBackground.ogfx">
+							<props>
+								<Prop id="154" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="757" name="@SDY:ANIMATIONFILE">
+									<value>3DBackground.ogfx.asfx</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="116" persistAs="Common/Axis.ogfx">
+							<props>
+								<Prop id="155" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="117" persistAs="Common/CheckBox.ogfx">
+							<props>
+								<Prop id="156" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="118" persistAs="Common/ClickArea.ogfx">
+							<props>
+								<Prop id="157" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="119" persistAs="Common/ClippedLabel.ogfx">
+							<props>
+								<Prop id="158" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="120" persistAs="Common/ComboBoxItem.ogfx">
+							<props>
+								<Prop id="159" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="121" persistAs="Common/Cursor.ogfx">
+							<props>
+								<Prop id="160" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="684" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="685" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="686" name="@SDY:MODELEXTSOURCES">
+									<value>Code/CursorBehavior.c</value>
+									<value>Code/lib_unicode.c</value>
+								</Prop>
+								<Prop id="687" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="688" name="@SDY:MODELDYNAMICLIBRARY"/>
+								<Prop id="689" name="@SDY:MODELCOLORTABLE"/>
+								<Prop id="690" name="@SDY:MODELLWTABLE"/>
+								<Prop id="691" name="@SDY:MODELLSTABLE"/>
+							</props>
+						</FileRef>
+						<FileRef id="122" persistAs="Common/Curve.ogfx">
+							<props>
+								<Prop id="161" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="746" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="747" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="748" name="@SDY:MODELEXTSOURCES">
+									<value>Code/wrapper_Curve.c</value>
+									<value>Code/Curve.c</value>
+								</Prop>
+								<Prop id="749" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="750" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="123" persistAs="Common/Curve_point.ogfx">
+							<props>
+								<Prop id="162" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="124" persistAs="Common/Curve_segment.ogfx">
+							<props>
+								<Prop id="163" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="125" persistAs="Common/FallingDigit.ogfx">
+							<props>
+								<Prop id="164" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="126" persistAs="Common/FrameBorder.ogfx">
+							<props>
+								<Prop id="165" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="127" persistAs="Common/GaugeCircular.ogfx">
+							<props>
+								<Prop id="166" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="703" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="704" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="705" name="@SDY:MODELEXTSOURCES">
+									<value>Code/CursorBehavior.c</value>
+									<value>Code/lib_unicode.c</value>
+									<value>Code/General.c</value>
+									<value>Code/wrapper_Scale.c</value>
+									<value>Code/Scale.c</value>
+								</Prop>
+								<Prop id="706" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="707" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="128" persistAs="Common/GaugeHorizontal.ogfx">
+							<props>
+								<Prop id="167" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="731" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="732" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="733" name="@SDY:MODELEXTSOURCES">
+									<value>Code/General.c</value>
+									<value>Code/CursorBehavior.c</value>
+									<value>Code/lib_unicode.c</value>
+									<value>Code/wrapper_Scale.c</value>
+									<value>Code/Scale.c</value>
+								</Prop>
+								<Prop id="734" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="735" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="129" persistAs="Common/GaugeVertical.ogfx">
+							<props>
+								<Prop id="168" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="708" name="@SDY:MODELCOLORTABLE"/>
+								<Prop id="709" name="@SDY:MODELLWTABLE"/>
+								<Prop id="710" name="@SDY:MODELLSTABLE"/>
+								<Prop id="736" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="737" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="738" name="@SDY:MODELEXTSOURCES">
+									<value>Code/General.c</value>
+									<value>Code/CursorBehavior.c</value>
+									<value>Code/lib_unicode.c</value>
+									<value>Code/wrapper_Scale.c</value>
+									<value>Code/Scale.c</value>
+								</Prop>
+								<Prop id="739" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="740" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="130" persistAs="Common/GenericPolygon.ogfx">
+							<props>
+								<Prop id="169" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="831" name="@SDY:MODELCATEGORY"/>
+							</props>
+						</FileRef>
+						<FileRef id="131" persistAs="Common/GetCycleDuration.ogfx">
+							<props>
+								<Prop id="170" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="711" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="712" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="713" name="@SDY:MODELEXTSOURCES">
+									<value>Code/General.c</value>
+								</Prop>
+								<Prop id="714" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="715" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="132" persistAs="Common/Graduation_element.ogfx">
+							<props>
+								<Prop id="171" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="766" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="767" name="@SDY:MODELEXTINCLUDES"/>
+								<Prop id="768" name="@SDY:MODELEXTSOURCES"/>
+								<Prop id="769" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="770" name="@SDY:MODELDYNAMICLIBRARY">
+									<value>%ModelName%.dll</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="133" persistAs="Common/Graduation_element_Text.ogfx">
+							<props>
+								<Prop id="172" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="134" persistAs="Common/Grid.ogfx">
+							<props>
+								<Prop id="173" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="135" persistAs="Common/Grid_Element.ogfx">
+							<props>
+								<Prop id="174" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="136" persistAs="Common/Highlight.ogfx">
+							<props>
+								<Prop id="175" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="137" persistAs="Common/Identity_bool.ogfx">
+							<props>
+								<Prop id="176" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="716" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="717" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="718" name="@SDY:MODELEXTSOURCES">
+									<value>Code/General.c</value>
+								</Prop>
+								<Prop id="719" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="720" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="138" persistAs="Common/Identity_int.ogfx">
+							<props>
+								<Prop id="177" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="721" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="722" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="723" name="@SDY:MODELEXTSOURCES">
+									<value>Code/General.c</value>
+								</Prop>
+								<Prop id="724" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="725" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="139" persistAs="Common/Identity_real.ogfx">
+							<props>
+								<Prop id="178" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="726" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="727" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="728" name="@SDY:MODELEXTSOURCES">
+									<value>Code/General.c</value>
+								</Prop>
+								<Prop id="729" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="730" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="141" persistAs="Common/Polygon_element.ogfx">
+							<props>
+								<Prop id="180" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="142" persistAs="Common/RadioButton.ogfx">
+							<props>
+								<Prop id="181" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="697" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="698" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="699" name="@SDY:MODELEXTSOURCES"/>
+								<Prop id="700" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="701" name="@SDY:MODELDYNAMICLIBRARY">
+									<value>%ModelName%.dll</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="143" persistAs="Common/RightArrow.ogfx">
+							<props>
+								<Prop id="182" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="144" persistAs="Common/RollingDigit.ogfx">
+							<props>
+								<Prop id="183" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="145" persistAs="Common/Rose_element.ogfx">
+							<props>
+								<Prop id="184" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="146" persistAs="Common/Scale_element.ogfx">
+							<props>
+								<Prop id="185" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="147" persistAs="Common/ScrollBar.ogfx">
+							<props>
+								<Prop id="186" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="751" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="752" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="753" name="@SDY:MODELEXTSOURCES">
+									<value>Code/General.c</value>
+									<value>Code/wrapper_ScrollBar.c</value>
+									<value>Code/ScrollBar.c</value>
+								</Prop>
+								<Prop id="754" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="755" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="148" persistAs="Common/ScrollList_generic.ogfx">
+							<props>
+								<Prop id="187" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="741" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="742" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="743" name="@SDY:MODELEXTSOURCES">
+									<value>Code/lib_strings.c</value>
+									<value>Code/CursorBehavior.c</value>
+									<value>Code/lib_unicode.c</value>
+									<value>Code/wrapper_ScrollList.c</value>
+									<value>Code/ScrollList.c</value>
+								</Prop>
+								<Prop id="744" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="745" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="149" persistAs="Common/Signals.ogfx">
+							<props>
+								<Prop id="188" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="150" persistAs="Common/SimpleScrollBar.ogfx">
+							<props>
+								<Prop id="189" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="151" persistAs="Common/SliderThumb.ogfx">
+							<props>
+								<Prop id="190" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="765" name="@SDY:ANIMATIONFILE">
+									<value>SliderThumb.ogfx.asfx</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="152" persistAs="Common/Symbol.ogfx">
+							<props>
+								<Prop id="191" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+								<Prop id="692" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="693" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="694" name="@SDY:MODELEXTSOURCES">
+									<value>Code/CursorBehavior.c</value>
+								</Prop>
+								<Prop id="695" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="696" name="@SDY:MODELDYNAMICLIBRARY"/>
+							</props>
+						</FileRef>
+						<FileRef id="782" persistAs="Common/Init.ogfx">
+							<props>
+								<Prop id="783" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="808" persistAs="Common/IndividualFocus.ogfx">
+							<props>
+								<Prop id="809" name="@SDY:MODELDEFINITIONS"/>
+								<Prop id="810" name="@SDY:MODELEXTINCLUDES">
+									<value>include</value>
+								</Prop>
+								<Prop id="811" name="@SDY:MODELEXTSOURCES">
+									<value>Code/Focus.c</value>
+								</Prop>
+								<Prop id="812" name="@SDY:MODELEXTLIBRARIES"/>
+								<Prop id="813" name="@SDY:MODELDYNAMICLIBRARY"/>
+								<Prop id="875" name="@SDY:MODELVISIBILITY">
+									<value>false</value>
+								</Prop>
+							</props>
+						</FileRef>
+					</elements>
+				</Folder>
+				<FileRef id="788" persistAs="Accelerometer.ogfx">
+					<props>
+						<Prop id="793" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="794" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="795" name="@SDY:MODELEXTSOURCES">
+							<value>Code/Accelerometer.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Accelerometer.c</value>
+							<value>Code/Accelerometer.c</value>
+						</Prop>
+						<Prop id="796" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="797" name="@SDY:MODELDYNAMICLIBRARY"/>
+						<Prop id="820" name="@SDY:MODELCATEGORY">
+							<value>Sensors</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="790" persistAs="Gyro.ogfx">
+					<props>
+						<Prop id="803" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="804" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="805" name="@SDY:MODELEXTSOURCES">
+							<value>Code/Gyro.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Gyro.c</value>
+							<value>Code/Gyro.c</value>
+						</Prop>
+						<Prop id="806" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="807" name="@SDY:MODELDYNAMICLIBRARY"/>
+						<Prop id="821" name="@SDY:MODELCATEGORY">
+							<value>Sensors</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="792" persistAs="Magnetometer.ogfx">
+					<props>
+						<Prop id="798" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="799" name="@SDY:MODELEXTINCLUDES">
+							<value>include</value>
+						</Prop>
+						<Prop id="800" name="@SDY:MODELEXTSOURCES">
+							<value>Code/Magnetometer.c</value>
+							<value>Code/wid_kcg_consts.c</value>
+							<value>Code/wid_kcg_types.c</value>
+							<value>Code/wrapper_Magnetometer.c</value>
+							<value>Code/Magnetometer.c</value>
+						</Prop>
+						<Prop id="801" name="@SDY:MODELEXTLIBRARIES"/>
+						<Prop id="802" name="@SDY:MODELDYNAMICLIBRARY"/>
+						<Prop id="841" name="@SDY:MODELCATEGORY">
+							<value>Sensors</value>
+						</Prop>
+					</props>
+				</FileRef>
+			</elements>
+		</Folder>
+	</roots>
+	<configurations>
+		<Configuration id="16" name="Simulation"/>
+		<Configuration id="758" name="NewConf_Simulation"/>
+	</configurations>
+</Project>

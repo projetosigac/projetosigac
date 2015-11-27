@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="89" width="128">
+            <raw numberOfBytes="1503">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,89,8,2,0,0,0,121,109,-69,123,0,0,5,-90,73,68,65,84,120,-38,-19,-100,-57,79,35,73,20,-58,9,6,-117,28,77,50,96,-124,64,-28,17,-47,38,89,24,45,-80,3,7,-126,96,8,6,-77,32,68,-38,-111,45,4,18,24,-103,32,114,16,121,-56,25,9,-119,-53,48,92,64,-126,19,7,-40,19,-30,95,106,-17,-101,-74,-60,90,-34,-79,113,-73,-57,102,-106,-3,62,-11,-95,-28,-22,-81,-38,-3,126,93,85,-81,-70,48,78,78,16,4,-3,-93,-56,-56,72,-95,80,72,5,87,87,87,-103,76,22,21,21,-11,82,-114,-114,-114,70,124,-20,-85
+,-32,-32,-32,-57,-57,71,67,-48,-101,-101,-101,-121,-122,-122,-50,-50,-50,2,2,2,-108,74,-91,86,-85,53,-108,17,37,59,-86,-72,-72,120,127,127,63,34,34,-126,-54,35,35,35,-66,-66,-66,-67,-67,-67,-23,-23,-23,84,-10,-13,-13,-21,-23,-23,-55,-56,-56,64,-108,-20,-85,-127,-127,-127,23,0,62,62,62,-122,-96,27,-54,-35,-35,-35,84,78,74,74,-6,-109,-43,-14,-14,-14,-63,-63,-127,90,-83,-2,97,59,-127,-84,-52,93,-59,114,-83,-73,-73,-124,14,126,-34,95,-77,-42,90,121,120,120,-116,-115,-115,37,39,39,-69,-72,-72,-12,-9,-9,-25,-28,-28,-52,-50,-50,74,36,18,-29,-78,-15,-7,98,-79,-40,92,83,98,86,-4,106,3,3,-45,-24,-80,71,-53
+,-81,-42,26,30,-66,-97,94,107,-83,-78,-78,-78,116,58,-99,70,-93,-15,-12,-12,12,11,11,-21,-21,-21,-85,-83,-83,117,118,118,14,13,13,125,41,3,-128,29,1,112,21,0,0,0,0,0,-64,27,2,-96,57,67,108,70,89,-84,-8,-43,38,38,-2,70,-121,61,90,126,-75,54,51,51,-45,30,-75,22,-88,3,-64,127,25,0,-122,32,-52,1,0,0,0,0,0,0,0,-16,70,0,42,42,42,114,-52,-88,-126,21,-65,90,-71,-68,-119,14,123,-76,-4,86,-75,36,-12,0,12,65,0,0,0,0,0,0,0,0,0,0,-128,52,20,105,40,122,0,0,0,0,0,0,0,0,0,-128,77,-62,-106,36,-10,-124,-79,39,-116,33,8,115,-64,-5,4
+,32,16,8,-124,-84,12,127,15,-22,-26,-26,-26,-30,-30,2,0,-114,3,-96,-43,106,-41,-42,-42,22,22,22,-88,105,-87,84,122,120,120,-72,-79,-79,-31,-18,-18,14,0,14,2,48,62,62,-82,80,40,68,34,17,-107,-121,-121,-121,13,127,32,-99,-102,-102,10,0,14,2,-112,-99,-99,-83,82,-87,78,79,79,-29,-29,-29,-51,-3,64,-29,-4,-4,-100,56,-31,101,-100,93,94,-58,25,70,-1,-122,-122,-122,-54,-54,74,-99,78,71,93,65,-83,86,-89,-92,-92,-96,7,56,-88,7,84,85,85,-47,-96,-65,-72,-72,-24,-27,-27,37,-109,-55,-74,-74,-74,86,87,87,105,42,6,0,-92,-95,0,0,0,0,0,0,0,-16,11,0,-64,-98,48,-10,-124,49,4,1
+,0,0,0,0,0,0,-64,-1,19,0,-74,36,-79,39,-116,61,97,12,65,-104,3,0,0,0,0,0,0,0,0,47,-29,-16,50,14,61,0,67,16,0,0,0,0,0,0,0,0,0,-46,80,-92,-95,72,67,49,4,1,0,0,-68,15,0,-95,-95,-95,35,35,35,74,-91,18,-1,61,-3,109,0,-12,-11,-11,-27,-26,-26,-50,-51,-51,-59,-60,-60,-68,124,40,-107,74,21,10,5,-65,91,85,-80,-30,7,-64,-78,-41,-106,-21,90,14,34,25,-117,-118,-118,-8,121,-91,-84,-8,3,48,-2,-127,-122,72,36,50,76,-21,58,-99,110,114,114,-110,-66,22,-113,-51,-65,63,88,-15,-37,-110,-76,-20,-75,-27,-70,-106,-73,21,-37,-38,-38,120,123,91,90,90,-54
+,-53,-53,-7,3,24,29,29,-11,-11,-11,53,1,48,60,60,76,12,-8,-127,-3,-99,-107,-7,122,103,-10,-32,-25,-75,-27,-70,-81,120,-53,-54,-54,28,-17,-3,-82,-90,-90,-90,-63,-63,-63,-29,-29,99,127,127,-1,-105,15,109,73,111,-31,-27,38,55,55,-73,-28,-28,-28,-16,-16,112,4,-15,109,0,-4,80,34,86,-16,-38,-37,107,86,37,37,37,-19,-19,-19,30,30,30,-100,92,50,-103,76,-83,86,75,36,18,87,87,-41,-58,-58,-58,-102,-102,-102,127,-1,-2,-37,-14,-93,68,-61,32,15,111,94,94,30,93,55,49,49,-111,-121,55,59,59,-101,-68,97,97,97,-100,-68,116,14,77,-68,-122,51,95,98,-27,-23,-23,73,83,105,97,97,-95,-83,-47,15,14
+,14,-2,-14,-27,75,103,103,103,93,93,-99,-11,46,119,119,-9,-27,-27,101,-54,22,118,118,118,-46,-46,-46,40,-71,-102,-98,-98,-90,-126,-107,118,-95,80,-8,-12,-12,-108,-112,-112,-64,-43,75,119,126,112,112,64,39,23,23,23,27,-68,51,51,51,86,122,41,-126,23,23,23,5,5,5,-13,-13,-13,-100,-68,52,-15,62,60,60,-48,45,27,-57,-118,-94,95,91,91,123,114,114,-62,-11,-63,53,85,108,108,44,45,14,104,98,-96,22,57,25,41,-120,-108,15,80,-20,-28,114,57,125,-59,-6,-6,122,42,88,-23,-19,-24,-24,-72,-70,-70,-118,-113,-113,-25,-22,-11,-13,-13,123,126,126,-34,-35,-35,-91,-101,-25,-22,-91,-75,-25,-19,-19,-19,-27,-27,-27,-44,-44
+,20,39,47,-11,-14,-51,-51,77,2,96,28,-85,-119,-119,-119,-64,-64,64,90,81,121,121,121,-39,4,-128,86,100,90,-83,-106,-110,95,10,-118,-11,46,-127,64,48,62,62,-82,-47,104,-24,107,-27,-25,-25,87,87,87,-73,-74,-74,-46,18,-49,74,114,-9,-9,-9,119,119,119,-108,-113,113,-11,18,-128,-83,-83,45,-70,-24,-34,-34,30,121,-85,-86,-86,40,-93,-73,-46,75,11,32,-22,-81,-28,-91,22,-72,122,-105,-106,-106,-56,104,28,43,74,-24,105,89,64,-61,0,-115,69,54,1,-96,-68,104,101,101,-27,-24,-24,40,46,46,-50,122,-105,-73,-73,-9,-11,-11,53,117,97,-22,-113,65,65,65,-121,-121,-121,-37,-37,-37,116,-121,86,62,-119,-12,-20,116,117,117,-91
+,-92,-92,112,-11,-46,48,66,23,93,95,95,-89,5,17,121,-23,107,115,-14,-46,3,75,55,-85,82,-87,56,121,75,75,75,111,110,110,-24,41,49,-114,21,97,-96,2,13,0,38,47,117,-34,64,33,33,33,98,94,34,-93,19,100,-69,74,75,-1,18,-117,-11,38,-57,-36,28,-77,-66,-50,76,77,49,25,25,-52,-73,111,-52,-41,-81,76,90,26,99,114,14,25,17,-67,-97,-96,-100,-100,71,39,39,-67,-55,33,20,50,42,21,-77,-78,-62,20,20,-24,43,42,24,-91,-110,-111,-53,25,-109,115,88,35,100,31,0,2,-127,-2,-13,103,102,117,-107,-30,-82,-1,-8,-111,-87,-81,7,0,-57,2,-24,-17,103,40,-18,-44,3,-110,-110,-66,15,71,68,34,54
+,86,15,0,-114,-101,3,-118,-118,24,-115,-122,-7,-16,-127,-119,-118,-46,-45,88,-12,-23,19,19,25,-87,-57,28,-128,44,8,122,-65,-6,27,58,75,-45,-110,88,79,-91,114,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="602559d1-dec6-4fad-a9c8-59eaced4705f" type="real">
+                <init>300.0</init>
+            </input>
+            <input name="SizeY" oid="fd8f5af3-7e5d-4593-b1ac-77a322febd7f" type="real">
+                <init>200.0</init>
+            </input>
+            <input name="GridHorizontalColor" oid="bd911dc1-31d4-4e84-a6e4-3fc20f3a51bc" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="GridVerticalColor" oid="4dd73b12-1644-40f3-b587-32651c5e8d5d" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="GridOpacity" oid="db4da30a-53b4-438b-8e2d-3dd15efcc516" representation="opacity" type="int">
+                <init>25</init>
+            </input>
+            <input name="minY" oid="a4a2f933-6667-4eca-a88e-463018b41597" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="maxY" oid="3c37dc9c-6cfc-4219-819a-78ce7e578200" type="real">
+                <init>100.0</init>
+            </input>
+            <input name="Font" oid="32af2d0b-6c92-4d77-81fa-14389560d083" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="TextColor" oid="5963fc29-eef2-48b6-bc8d-e64d3f0d9bb0" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="ShowCrossline" oid="bda87e56-329a-4552-bbdb-b91022f9fd6b" type="bool">
+                <init>true</init>
+            </input>
+            <input name="AxisMinX" oid="90c57a4d-950c-4794-94fa-c07992be9cc9" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="AxisMaxX" oid="34c3951d-b8c8-4260-b075-406ac774ef78" type="real">
+                <init>100.0</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="false" name="WidthPercent" oid="0653aea2-09cc-4381-bb7b-d12a18154d7c" type="real">
+                <init>0.3</init>
+            </output>
+            <output memory="false" name="MouseIn" oid="d88dea5b-8aa3-4941-9bf5-201ee7273eb7" type="bool">
+                <init>false</init>
+            </output>
+        </outputs>
+        <localConstants>
+            <localConstant name="CrosslineColor" oid="26d73429-1df7-477b-a911-fe32e5698b00" representation="color" type="int">
+                <init>61</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="a336ec46-5096-4750-be5a-90d66fac2ace">
+            <pathFromRoot value="0"/>
+            <properties name="Axis">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="306.0" maxY="206.0" minX="-35.0" minY="-51.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <rectangleArea oid="c71d8846-0fd5-41f6-b80b-74ddbded739f">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="rectangle area">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <pointerId>
+                            <init>-1</init>
+                        </pointerId>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>300.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>200.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <output>
+                            <inside>
+                                <expr>MouseIn</expr>
+                            </inside>
+                            <percentWidth>
+                                <expr>WidthPercent</expr>
+                            </percentWidth>
+                        </output>
+                    </properties>
+                </rectangleArea>
+                <panelContainer oid="4093100d-4f03-4848-9f36-c5e7b5e611e8">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="Scopes Placeholder">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <width>
+                            <init>300.0</init>
+                            <expr>SizeX</expr>
+                        </width>
+                        <height>
+                            <init>200.0</init>
+                            <expr>SizeY</expr>
+                        </height>
+                    </properties>
+                    <children>
+                        <referenceContainer oid="b13aa1ad-9e06-4788-ad75-bcd85c71ef03">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties modular="false" name="Grid">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="Grid.ogfx" path="."/>
+                                <crc value="2372727588"/>
+                                <inputParameters>
+                                    <parameter control="false" name="SizeX" oid="dcd41488-b320-4e76-9c64-2da5525063bc" type="real">
+                                        <expr>SizeX</expr>
+                                        <init>300.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="SizeY" oid="aec37c97-e810-472d-9f5a-264486af3b61" type="real">
+                                        <expr>SizeY</expr>
+                                        <init>200.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="MinX" oid="e9dda501-a20b-405b-8f93-3002e8ea93b7" type="real">
+                                        <expr>AxisMinX</expr>
+                                        <init>10.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="MaxX" oid="d0ad4e6f-242d-40a2-868e-7f212c5cdb1f" type="real">
+                                        <expr>AxisMaxX</expr>
+                                        <init>110.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="MinY" oid="becaadb3-8afa-4ec7-bb52-5740a259aa3e" type="real">
+                                        <expr>minY</expr>
+                                        <init>15.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="MaxY" oid="b8049a30-302a-475f-831a-deeca5d48b0b" type="real">
+                                        <expr>maxY</expr>
+                                        <init>215.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="Font" oid="bb0cf042-eef5-4803-9fa3-2e7c85ae21b3" representation="font" type="int">
+                                        <expr>Font</expr>
+                                        <init>0</init>
+                                    </parameter>
+                                    <parameter control="false" name="ColorX" oid="8f22dd93-c1ca-4974-949b-49b12a2f44f7" representation="color" type="int">
+                                        <expr>GridVerticalColor</expr>
+                                        <init>2</init>
+                                    </parameter>
+                                    <parameter control="false" name="ColorY" oid="b72d83a0-e21f-480a-a68d-84cb91487e95" representation="color" type="int">
+                                        <expr>GridHorizontalColor</expr>
+                                        <init>2</init>
+                                    </parameter>
+                                    <parameter control="false" name="Opacity" oid="7bf7541d-1b26-4a4e-a94d-6e5d3d2e40a1" type="int">
+                                        <expr>GridOpacity</expr>
+                                        <init>128</init>
+                                    </parameter>
+                                    <parameter control="false" name="DistLargeGrad" oid="ce16e0eb-2a69-4015-9057-8826c3a42e7e" type="real">
+                                        <init>0.0</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                        <hook oid="beb888a9-ad99-4243-84cd-1b33ca264a73">
+                            <pathFromRoot value="1,1,0"/>
+                            <properties name="hook">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <index>
+                                    <init>-1</init>
+                                </index>
+                            </properties>
+                        </hook>
+                    </children>
+                </panelContainer>
+                <referenceContainer oid="043c763a-e346-4c2a-a3fa-310fbad32d61">
+                    <pathFromRoot value="2,0"/>
+                    <properties modular="false" name="AxisX">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>5.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="Scale.ogfx" path="../"/>
+                        <crc value="2400530567"/>
+                        <inputParameters>
+                            <parameter control="true" name="Length" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                <expr>SizeX</expr>
+                                <init>300.0</init>
+                            </parameter>
+                            <parameter control="true" name="Width" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                <init>15.0</init>
+                            </parameter>
+                            <parameter control="true" name="Angle" oid="2551bc37-e022-4b45-92f7-445f6e7cb0f7" type="real">
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter control="false" name="Value" oid="8adfe35c-90d6-4746-9a07-fd66eb0d3d76" type="real">
+                                <expr>(AxisMinX + AxisMaxX) / 2.0</expr>
+                                <init>50.0</init>
+                            </parameter>
+                            <parameter control="false" name="Range" oid="4a42e74f-d11c-488f-abe2-4aa05393598d" type="real">
+                                <expr>AxisMaxX - AxisMinX</expr>
+                                <init>100.0</init>
+                            </parameter>
+                            <parameter control="false" name="TextColor" oid="97660f81-528a-4a57-92b6-6fe673480ea4" representation="color" type="int">
+                                <expr>TextColor</expr>
+                                <init>2</init>
+                            </parameter>
+                            <parameter control="false" name="Font" oid="bb0cf042-eef5-4803-9fa3-2e7c85ae21b3" representation="font" type="int">
+                                <expr>Font</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="DistLargeGrad" oid="ce16e0eb-2a69-4015-9057-8826c3a42e7e" type="real">
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter control="false" name="NumberOfSmallGradPerLargeGrad" oid="ea6ee21c-f9f5-4041-9f2f-e627aa6b8233" type="int">
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="InvertTextSide" oid="7d278475-47f2-44fe-9cdf-dcda0194d6c8" type="bool">
+                                <init>false</init>
+                            </parameter>
+                        </inputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <referenceContainer oid="731b0518-11b7-4b5a-bbfc-c9740251c27c">
+                    <pathFromRoot value="3,0"/>
+                    <properties modular="false" name="AxisY">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>5.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="Scale.ogfx" path="../"/>
+                        <crc value="2400530567"/>
+                        <inputParameters>
+                            <parameter control="true" name="Length" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                <expr>SizeY</expr>
+                                <init>200.0</init>
+                            </parameter>
+                            <parameter control="true" name="Width" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                <init>15.0</init>
+                            </parameter>
+                            <parameter control="true" name="Angle" oid="2551bc37-e022-4b45-92f7-445f6e7cb0f7" type="real">
+                                <init>90.0</init>
+                            </parameter>
+                            <parameter control="false" name="Value" oid="8adfe35c-90d6-4746-9a07-fd66eb0d3d76" type="real">
+                                <expr>(maxY + minY) / 2.0</expr>
+                                <init>50.0</init>
+                            </parameter>
+                            <parameter control="false" name="Range" oid="4a42e74f-d11c-488f-abe2-4aa05393598d" type="real">
+                                <expr>maxY - minY</expr>
+                                <init>100.0</init>
+                            </parameter>
+                            <parameter control="false" name="TextColor" oid="97660f81-528a-4a57-92b6-6fe673480ea4" representation="color" type="int">
+                                <expr>TextColor</expr>
+                                <init>2</init>
+                            </parameter>
+                            <parameter control="false" name="Font" oid="bb0cf042-eef5-4803-9fa3-2e7c85ae21b3" representation="font" type="int">
+                                <expr>Font</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="DistLargeGrad" oid="ce16e0eb-2a69-4015-9057-8826c3a42e7e" type="real">
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter control="false" name="NumberOfSmallGradPerLargeGrad" oid="ea6ee21c-f9f5-4041-9f2f-e627aa6b8233" type="int">
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="InvertTextSide" oid="7d278475-47f2-44fe-9cdf-dcda0194d6c8" type="bool">
+                                <init>true</init>
+                            </parameter>
+                        </inputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <container oid="28d4284b-f1ab-4995-9a92-fb038257a3a8">
+                    <pathFromRoot value="4,0"/>
+                    <properties name="Crossline">
+                        <visible>
+                            <init>true</init>
+                            <expr>MouseIn and ShowCrossline</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>90.0</init>
+                                <expr>WidthPercent * SizeX</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="35.0" maxY="206.0" minX="-35.0" minY="-51.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <line oid="9a5107ad-2c7d-498d-b32b-aaf28a99098e">
+                            <pathFromRoot value="0,4,0"/>
+                            <properties name="Crossline">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>200.0</init>
+                                            <expr>SizeY</expr>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>61</init>
+                                    <expr>CrosslineColor</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>128</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <rectangle oid="1e415004-a474-44a4-8038-d5c6753e8aff">
+                            <pathFromRoot value="1,4,0"/>
+                            <properties name="rectangle">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <firstPoint>
+                                    <x>
+                                        <init>-29.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-30.0</init>
+                                    </y>
+                                </firstPoint>
+                                <thirdPoint>
+                                    <x>
+                                        <init>29.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-45.0</init>
+                                    </y>
+                                </thirdPoint>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>2</init>
+                                    <expr>TextColor</expr>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>128</init>
+                                </outlineOpacity>
+                                <fillColor>
+                                    <init>61</init>
+                                    <expr>CrosslineColor</expr>
+                                </fillColor>
+                                <fillOpacity>
+                                    <init>255</init>
+                                </fillOpacity>
+                                <polygonSmooth>
+                                    <init>false</init>
+                                </polygonSmooth>
+                                <textureControl>
+                                    <init>false</init>
+                                </textureControl>
+                                <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                    <textureId>
+                                        <init>-1</init>
+                                    </textureId>
+                                </texture>
+                                <modulate>
+                                    <init>false</init>
+                                </modulate>
+                                <tessellate>
+                                    <init>false</init>
+                                </tessellate>
+                            </properties>
+                        </rectangle>
+                        <biFont oid="3f25b739-2196-4ad1-9597-a2ac61d3761d">
+                            <pathFromRoot value="2,4,0"/>
+                            <properties name="bi-font">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-37.0</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>30.0</init>
+                                    <expr>AxisMinX + ((AxisMaxX - AxisMinX) * WidthPercent)</expr>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>8</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>0</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>1</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>never</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>2</init>
+                                    <expr>TextColor</expr>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>0</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>center</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>middle</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                    </children>
+                </container>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 3814028157 -->
+

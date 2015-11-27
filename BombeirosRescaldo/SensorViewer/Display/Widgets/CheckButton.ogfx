@@ -1,0 +1,973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+        <preview height="43" width="128">
+            <raw numberOfBytes="1960">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,43,8,2,0,0,0,63,-121,23,-79,0,0,7,111,73,68,65,84,120,-38,-19,-102,87,104,84,105,20,-57,125,112,-16,81,-63,-120,43,26,-13,40,14,-84,15,66,-84,121,-119,70,-125,37,38,51,-103,100,-45,-85,-35,-40,13,4,107,-20,-82,-67,-29,-38,81,-44,16,52,118,52,-106,-88,-40,-59,-34,125,80,33,-10,-70,-22,-78,-10,-72,-5,-29,30,-4,-72,-34,-103,-119,115,103,103,88,-63,-17,-1,32,55,-33,-55,-67,-33,-99,-13,59,-33,41,19,-21,-44,-47,-46,-46,-46,-46,-46,-46,-46,-46,50,84,-81,94,-67,-88,-88,-88,86,-83,90,-3,-86,21,58,53
+,107,-42,-52,-31,112,4,4,32,50,50,50,35,35,99,-64,-128,1,-67,-75,66,-92,-36,-36,-36,78,-99,58,53,108,-40,48,32,0,78,-89,-77,127,-1,-2,-7,-7,-7,-65,105,-123,72,9,9,9,49,49,49,-115,27,55,14,8,64,-53,-106,45,-5,-12,-23,-109,-98,-98,-98,-88,21,34,117,-18,-36,57,58,58,-70,81,-93,70,54,0,-112,-123,-110,-76,66,-92,-72,-72,-72,-32,1,20,21,21,77,-99,58,-11,-9,-96,84,92,92,-84,-67,31,36,-128,-52,-52,76,-105,-95,-119,19,39,46,91,-74,-20,-113,-96,116,-24,-48,33,-105,-106,-53,-43,-91,75,23,123,0,-6,-10,-19,-101,-107,-107,-27,54,52,121,-14,100,0,-36,-65,127,-1,111,-5,-70,122,-11,-86
+,91,-53,-19,-18,-38,-75,107,-101,54,109,-20,1,-56,-50,-50,78,54,52,101,-54,20,98,-7,-7,-13,-25,-1,-40,-41,-11,-21,-41,-109,-3,43,37,37,-59,-69,97,-16,120,60,98,-27,-62,-82,-107,7,42,107,106,106,-86,63,43,-86,-35,26,114,5,3,32,39,39,-57,99,-120,2,16,32,-128,15,31,62,124,-6,-12,-55,-68,114,-29,-58,13,-113,31,-91,-91,-91,81,36,118,-18,-36,89,-7,-83,6,15,30,44,-50,45,41,41,-79,-104,118,-17,-34,61,118,-20,88,113,-42,-88,81,-93,118,-20,-40,97,-74,-14,40,30,-56,99,113,-18,-56,-111,35,55,110,-36,104,-71,125,-10,-20,-39,20,54,30,78,-126,45,47,47,-73,88,23,45,90,-108,-105,-105,-25,9
+,-113,-30,-29,-29,-61,14,-32,-19,-37,-73,91,-73,110,61,120,-16,32,-103,39,16,0,-91,-91,-91,-100,15,126,-7,-43,-85,87,127,126,-43,-105,47,95,-82,92,-71,-126,-107,49,16,43,56,-107,-11,-11,-21,-41,-17,-33,-65,63,127,-2,-4,-16,-31,-61,-15,-44,-39,-77,103,63,126,-4,-88,-84,92,-16,2,-36,50,126,-4,120,-122,-104,93,-69,118,-3,101,72,61,-103,-32,120,-6,-12,41,-4,104,-81,-73,108,-39,-62,47,-101,-83,-4,-8,-30,-59,-117,57,115,-26,-4,40,0,-6,-11,-21,-57,-16,-106,98,40,64,0,-72,-98,61,-38,-75,107,-121,-113,-52,0,82,-4,104,-18,-36,-71,15,30,60,-72,116,-23,-46,-54,-107,43,-25,27,90,-80,96,1,46,126,-13,-26
+,13,-42,-95,67,-121,-30,-105,-22,-22,106,-54,-113,88,-41,-84,89,115,-5,-10,109,86,70,-113,30,77,8,115,47,30,92,-70,116,-87,88,-105,47,95,78,-67,97,113,-42,-84,89,67,-122,12,57,126,-4,-8,-109,39,79,112,-12,-4,-81,-126,43,56,-89,79,-97,78,115,113,-12,-24,81,-18,-35,-66,125,-69,-78,-78,2,-5,21,43,86,112,122,82,-62,-96,110,-35,-70,-75,109,-37,-42,30,0,-94,44,-43,80,32,0,8,79,-4,18,17,17,49,110,-36,-72,103,-49,-98,-103,1,-92,-6,-111,0,-40,-73,111,31,1,43,43,100,15,14,4,0,-72,30,54,108,-40,-53,-105,47,-15,41,115,-68,88,73,77,68,61,0,-58,-116,25,-61,1,-27,94,94,-119,40
+,17,43,72,-24,-72,30,62,124,72,-98,1,-34,-119,19,39,-18,-36,-71,51,105,-46,36,-75,93,85,85,21,39,102,-58,-116,25,52,23,-57,-114,29,35,-34,-55,87,-54,-70,97,-61,6,0,16,10,-28,-73,-44,48,40,24,0,-22,-85,-120,105,-45,-90,125,23,-128,-124,127,-21,-42,-83,9,37,75,13,-16,55,-99,-49,-101,55,79,0,-112,109,100,-123,-28,32,0,-72,38,-49,112,2,0,-128,103,-59,74,92,3,-32,-34,-67,123,-92,17,94,79,0,16,37,98,5,-119,0,32,-115,0,79,0,-48,-65,-87,-19,4,0,78,-89,-71,16,0,51,103,-50,84,86,1,-80,106,-43,42,-126,32,28,95,69,116,-17,-34,-35,30,0,-7,46,40,-51,-112,5,-64,-25
+,-49,-97,-49,-100,57,-13,-18,-35,59,-27,101,62,12,78,-31,-23,-106,-16,-81,-87,-87,1,64,-102,31,113,-16,5,-64,-64,-127,3,101,-123,10,41,0,-72,30,49,98,-124,2,32,86,-30,-38,27,-128,122,73,86,14,31,62,44,0,-128,7,-128,-69,119,-17,-46,-65,-87,-19,20,0,106,27,9,74,0,40,43,21,91,1,8,-121,122,-12,-24,65,114,-74,7,-96,-96,-96,32,-35,-112,5,0,-11,-115,-90,106,-19,-38,-75,-118,1,-95,23,109,-120,11,75,94,-62,-125,108,-97,-18,75,0,-64,95,2,64,86,20,0,-82,-51,0,-60,-86,0,-128,-103,-41,83,0,-60,-86,0,-112,-39,0,112,-14,-28,73,1,-96,-74,19,0,56,-35,12,64,89,5,-64,-22,-43
+,-85,-45,-61,-93,96,0,20,22,22,102,24,-78,0,-64,101,-111,-111,-111,78,-89,-109,120,-95,121,32,-28,-15,8,-113,38,48,-7,84,102,0,-113,31,63,-90,-58,-118,103,-67,69,-55,-59,95,-5,-9,-17,31,52,104,-112,-84,80,30,5,0,-41,-12,-111,2,0,-49,-118,-107,-60,114,-18,-36,57,51,0,-74,35,74,-60,-54,-118,2,0,60,1,64,-11,82,-37,17,28,2,-128,-78,33,0,40,-41,-54,-86,0,100,-124,71,61,123,-10,-76,7,64,-2,24,-112,105,-120,-50,-63,12,-128,94,98,-3,-6,-11,-51,-101,55,-121,1,109,3,60,72,-3,20,0,-54,-128,-91,48,8,0,-15,-84,-73,20,-128,-94,-94,34,89,-95,60,2,-128,-2,-124,107,-38,124,0,92
+,-69,118,13,-49,-118,-107,-72,22,0,52,-102,-68,-98,0,32,74,-60,-54,-118,0,-96,-76,0,79,0,16,58,106,59,1,-128,-45,41,27,2,-128,114,-83,-84,-101,54,109,2,0,-115,86,102,120,-108,-112,-112,-48,-66,125,123,123,0,56,-5,89,-122,44,0,16,-51,34,85,43,42,42,-86,69,-117,22,-79,-79,-79,52,63,-76,64,36,28,-97,0,-60,-77,-34,90,-72,112,33,-2,58,112,-32,0,-19,-115,-84,80,30,-91,61,-25,-70,-72,-72,88,0,-16,38,98,37,-82,5,-64,-124,9,19,-56,90,-36,-117,19,-119,18,-79,-78,114,-28,-56,-111,71,-113,30,-111,-39,-128,119,-22,-44,41,1,-96,-74,3,15,0,112,58,89,-117,10,33,93,-65,-78,-106,-107,-107
+,1,-128,-68,-102,21,30,-11,-22,-43,43,-108,0,100,-20,34,106,56,7,14,-121,-61,103,-8,127,23,0,-109,39,78,-92,61,39,-18,22,27,90,-78,100,9,-29,-110,2,-64,108,-123,-69,105,13,-59,-70,110,-35,58,26,27,1,64,-42,-30,94,126,-109,23,19,43,-7,-112,41,-52,12,-128,-79,107,-37,-74,109,-117,-65,10,-106,-76,15,0,32,107,1,-128,123,41,102,-54,-54,-54,-113,8,32,-37,-112,79,0,-120,34,-68,119,-17,94,-30,-105,1,24,30,-2,0,72,104,123,-117,-57,-34,-68,121,-109,-100,-61,-47,49,79,-62,-8,17,43,9,7,-85,121,-42,-107,73,-8,-30,-59,-117,37,37,37,-28,-91,11,23,46,64,-53,108,-27,29,110,-35,-70,69,-34,-89
+,92,-13,98,-34,-109,48,-27,-118,-55,-128,19,-64,8,102,-103,-124,-7,44,-4,75,76,100,-121,71,-119,-119,-119,-10,0,112,-94,-27,-37,8,-60,-16,-30,111,14,-96,30,80,51,-7,108,62,-121,3,1,-64,-10,57,-66,68,36,18,-83,120,-86,-22,91,17,-5,88,113,83,105,105,-87,-59,84,89,89,73,107,-113,-119,66,74,-51,-33,-77,103,-113,-39,-54,-113,60,-112,-57,-110,-27,25,-42,54,111,-34,108,-71,29,-1,-110,-78,120,56,35,69,69,69,-123,-59,-54,44,77,-40,-27,-124,71,73,73,73,29,58,116,-80,7,64,-66,-115,64,-75,0,-88,93,0,-72,124,-7,50,-37,-25,-6,17,-82,44,-12,18,-18,19,43,23,-75,91,-15,-75,-39,-60,-113,-62,-58,-89
+,21,41,43,-86,-35,26,114,-71,92,46,-37,0,56,-26,121,-122,0,64,-73,-61,-7,-83,-79,41,50,50,0,-60,29,63,-71,-2,19,0,-90,71,-86,25,-23,-75,-38,-90,72,-30,-89,79,-97,-42,0,-112,-37,-19,-74,7,-128,54,-125,-124,-104,111,-120,22,-77,-68,-68,-100,12,91,105,95,12,62,108,-97,-1,-45,43,57,57,-71,99,-57,-114,-10,0,112,8,10,-76,66,36,-113,-57,99,27,0,42,-44,10,-111,108,3,-112,-65,7,-24,-1,-47,-10,-1,124,29,-35,-76,105,-45,-8,-8,-8,-72,-72,-72,24,-83,16,9,-17,59,-99,-50,-6,-11,-21,7,4,-64,-31,112,68,68,68,52,105,-46,-28,23,-83,-48,-87,65,-125,6,117,-21,-42,-43,-1,-9,94,75,75
+,75,75,75,75,75,75,-12,47,5,-49,115,-82,106,16,22,46,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="7d0fb331-2362-4f4f-936d-83948765cb30" type="real">
+                <control oid="4d57582b-ecdf-4aba-a9db-34ff0b5d099f" plug="thirdPoint_x"/>
+                <init>150.0</init>
+            </input>
+            <input name="SizeY" oid="789d99c2-2e5d-4ad8-9d15-da1c27716dd0" type="real">
+                <control oid="4d57582b-ecdf-4aba-a9db-34ff0b5d099f" plug="thirdPoint_y"/>
+                <init>50.0</init>
+            </input>
+            <input name="Enable" oid="b0e1db70-000a-4b22-8cd6-9095ae620941" type="bool">
+                <init>true</init>
+            </input>
+            <input name="Style" oid="52381052-7c71-4624-959b-227a02b14ff3" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="LabelString" oid="c1bfbac2-57f7-49d1-b6de-49deb933e28f" representation="as_string" type="char^255">
+                <init>[76, 97, 98, 101, 108, 0]</init>
+            </input>
+            <input name="ButtonColor" oid="c5b79381-caf0-428f-b2b7-406d9062176d" representation="color" type="int">
+                <init>6</init>
+            </input>
+            <input name="Font" oid="285a7f9f-0976-4ef4-8bf2-5cbc0ef73435" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="TextColor" oid="d0bff17b-693e-491e-b068-944a9f3672d8" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="TextAlignment" oid="6f91ec91-1a79-41ba-a955-519c0ba930ac" representation="horizontal_alignment" type="int">
+                <init>1</init>
+            </input>
+            <input name="PicturePosition" oid="8598b1d4-b2b1-41a5-ae42-0ea37e8966bb" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="EmitCondition" oid="2221abab-0ad7-48b9-b211-254535e08d35" representation="index" type="int">
+                <init>2</init>
+            </input>
+            <input name="InState" oid="e65907c5-d676-4ef3-9f80-f69796cb45eb" type="bool">
+                <init>false</init>
+            </input>
+            <input name="InStateSet" oid="67319d05-2da5-45c5-a240-143aadaeb88d" type="bool">
+                <init>false</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="false" name="State" oid="86e84871-fd65-4233-b647-32e8a6bf0376" type="bool">
+                <init>false</init>
+            </output>
+            <output memory="false" name="StateChangeEmit" oid="962f1186-f68b-40d2-b6c0-fc00d6cce9b3" type="bool">
+                <init>false</init>
+            </output>
+        </outputs>
+        <locals>
+            <local memory="false" name="MouseReleased" oid="70f2a05f-a9c4-4e8f-85c2-934d69b7322e" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="MouseInside" oid="5bc0afc2-d72a-4c08-bba3-69b5d34773b4" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="MousePressed" oid="2759fb21-15bc-4a1c-a346-6a370fcd77db" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="false" name="MouseButton" oid="308d23e9-4cb3-4142-b078-68077bc3d940" type="int">
+                <init>0</init>
+            </local>
+            <local memory="true" name="HasFocus" oid="e16a9aef-87d4-478d-858b-be25fa80628c" type="bool">
+                <init>false</init>
+            </local>
+        </locals>
+        <localConstants>
+            <localConstant name="PictureSize" oid="44e1c087-1f45-4dfe-8225-6d842ecf90a2" type="real">
+                <init>30.0</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="5779ead9-d4bc-4514-be41-90ac35ca98d1">
+            <pathFromRoot value="0"/>
+            <properties name="CheckButton">
+                <comment>A check button allows the user to select, or not select an option.
+
+The Outputs are the following:
+StateChangeValue is the current state of the check button (&apos;true&apos; for &apos;checked&apos;)
+StateChangeEmit is true only when the user clicks on the check button
+
+the EmitCondition parameter defines if the widget reacts when the mouse button is pressed down or released.
+
+The current state can be modified: when SetCheckButtonState, the check button takes the state of CheckButtonState</comment>
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="126.0" maxY="36.0" minX="-6.0" minY="-6.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <referenceContainer oid="be5186c7-1970-4027-a92e-1a1470c05720">
+                    <pathFromRoot value="0,0"/>
+                    <properties modular="false" name="3DBackground">
+                        <visible>
+                            <init>true</init>
+                            <expr>Style &lt; 3</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="3DBackground.ogfx" path="Common"/>
+                        <crc value="2880543057"/>
+                        <inputParameters>
+                            <parameter control="false" name="SizeX" oid="1567db4f-d5b7-45ac-a492-37a604b6c49a" type="real">
+                                <expr>SizeX</expr>
+                                <init>120.0</init>
+                            </parameter>
+                            <parameter control="false" name="SizeY" oid="ff8689f8-eca1-414d-bbe3-d097ae184da7" type="real">
+                                <expr>SizeY</expr>
+                                <init>30.0</init>
+                            </parameter>
+                            <parameter control="false" name="BackgroundColor" oid="e34cba86-f2b3-4943-8d08-71b1c1a3fa67" representation="color" type="int">
+                                <expr>ButtonColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="PoppingOutward" oid="81dadf9e-8012-4548-8eb4-2ef402242f93" type="bool">
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="Enable" oid="40bccd91-f2ea-4227-a3a6-e2d66c48c81c" type="bool">
+                                <expr>Enable</expr>
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="3c43a032-be6b-4a91-a8df-8985c699dcde" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="DownHalo" oid="2db0af55-687b-48ec-8de2-73996e59d8fe" type="bool">
+                                <init>false</init>
+                            </parameter>
+                        </inputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <referenceContainer oid="30173c8c-32d8-496d-a905-977af02ca3a2">
+                    <pathFromRoot value="1,0"/>
+                    <properties modular="false" name="ClippedLabel">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>30.0</init>
+                                <expr>(PicturePosition = 1) ? PictureSize : 0.0</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="ClippedLabel.ogfx" path="Common"/>
+                        <crc value="924931843"/>
+                        <inputParameters>
+                            <parameter control="false" name="Enable" oid="b0e1db70-000a-4b22-8cd6-9095ae620941" type="bool">
+                                <expr>Enable</expr>
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="SizeX" oid="7d0fb331-2362-4f4f-936d-83948765cb30" type="real">
+                                <expr>SizeX - PictureSize</expr>
+                                <init>90.0</init>
+                            </parameter>
+                            <parameter control="false" name="SizeY" oid="789d99c2-2e5d-4ad8-9d15-da1c27716dd0" type="real">
+                                <expr>SizeY</expr>
+                                <init>30.0</init>
+                            </parameter>
+                            <parameter control="false" name="LabelString" oid="c1bfbac2-57f7-49d1-b6de-49deb933e28f" representation="as_string" type="char^255">
+                                <expr>LabelString</expr>
+                                <init>[76, 97, 98, 101, 108, 0]</init>
+                            </parameter>
+                            <parameter control="false" name="Font" oid="285a7f9f-0976-4ef4-8bf2-5cbc0ef73435" representation="font" type="int">
+                                <expr>Font</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="TextColor" oid="d0bff17b-693e-491e-b068-944a9f3672d8" representation="color" type="int">
+                                <expr>TextColor</expr>
+                                <init>2</init>
+                            </parameter>
+                            <parameter control="false" name="Alignment" oid="6f91ec91-1a79-41ba-a955-519c0ba930ac" representation="horizontal_alignment" type="int">
+                                <expr>TextAlignment</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="AlignmentVertical" oid="cdca2481-07bb-4c14-9520-f9c9c72320d4" representation="vertical_alignment" type="int">
+                                <init>1</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="TotalBorder" oid="1da85933-98da-45b8-9874-a391373f70ec" type="real"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <condContainer oid="04db941d-5aab-46be-aae2-76d8514c0ea0">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="EmitCondition">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>EmitCondition</expr>
+                        </index>
+                        <indexes default="other">
+                            <index value="1"/>
+                            <index value="2"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="b5f78d2a-936d-49d1-a68b-751cd1a51f3f">
+                            <pathFromRoot value="0,2,0"/>
+                            <properties name="ON_PRESSED">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-15.0</init>
+                                        </x>
+                                        <y>
+                                            <init>169.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>59.0</init>
+                                        </x>
+                                        <y>
+                                            <init>237.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>116.0</init>
+                                        </x>
+                                        <y>
+                                            <init>182.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>5</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="a59ac261-582d-4ead-8008-36fd4eba042b">
+                            <pathFromRoot value="1,2,0"/>
+                            <properties name="ON_RELEASED">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>19.0</init>
+                                        </x>
+                                        <y>
+                                            <init>220.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>98.0</init>
+                                        </x>
+                                        <y>
+                                            <init>161.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>117.0</init>
+                                        </x>
+                                        <y>
+                                            <init>230.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>5</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <rectangleArea oid="4d57582b-ecdf-4aba-a9db-34ff0b5d099f">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="rectangle area">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <pointerId>
+                            <init>-1</init>
+                        </pointerId>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>120.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>30.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <output>
+                            <inside>
+                                <expr>MouseInside</expr>
+                            </inside>
+                        </output>
+                    </properties>
+                </rectangleArea>
+                <referenceContainer oid="f55e99fc-d241-478f-a16f-f4305fca4677">
+                    <pathFromRoot value="4,0"/>
+                    <properties modular="false" name="IndividualFocus">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="IndividualFocus.ogfx" path="Common"/>
+                        <crc value="1244254813"/>
+                        <inputParameters>
+                            <parameter control="false" name="Requestfocus" oid="51ba8016-ef03-4f7c-8249-e2524097b493" type="bool">
+                                <expr>MouseInside and Enable</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="NextWidgetId" oid="56ba4cfa-e949-4dde-96af-8fb68b21421a" type="int32">
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="IsContainer" oid="a3ce082f-4ed5-43e2-b2d9-e6ed5d84eb77" type="bool">
+                                <init>false</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="HasFocus" oid="6029da93-0cb5-4223-9c14-dacbf6da20d7" type="bool">
+                                <expr>HasFocus</expr>
+                            </parameter>
+                            <parameter name="WidgetId" oid="74947212-4f07-43d2-8791-6c3b1be76b1a" type="int32"/>
+                            <parameter name="Pressed" oid="5f51c1a5-92ea-4b1b-bf5a-a72ef8df097d" type="bool">
+                                <expr>MousePressed</expr>
+                            </parameter>
+                            <parameter name="Released" oid="c86f6eb3-5003-416b-9802-d582d0500662" type="bool">
+                                <expr>MouseReleased</expr>
+                            </parameter>
+                            <parameter name="Button" oid="1a70175b-edaf-4fa1-89e1-829943c6314c" type="int">
+                                <expr>MouseButton</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <imported oid="4891ca29-949c-4003-a589-95d1829b773f">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="wrapper_CheckButton">
+                        <function name="wrapper_CheckButton"/>
+                        <enable>
+                            <init>true</init>
+                            <expr>Enable</expr>
+                        </enable>
+                        <restoreStates>
+                            <init>false</init>
+                        </restoreStates>
+                        <memory>
+                            <init>true</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="CheckButtonState" oid="" type="bool">
+                                <expr>InState</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="SetCheckButtonState" oid="" type="bool">
+                                <expr>InStateSet</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="EmitCondition" oid="" type="int">
+                                <expr>EmitCondition</expr>
+                                <init>2</init>
+                            </parameter>
+                            <parameter name="MousePressed" oid="" type="bool">
+                                <expr>MousePressed</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="MouseReleased" oid="" type="bool">
+                                <expr>MouseReleased</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter name="MouseButton" oid="" type="int">
+                                <expr>MouseButton</expr>
+                                <init>59</init>
+                            </parameter>
+                            <parameter name="MouseInside" oid="" type="bool">
+                                <expr>MouseInside</expr>
+                                <init>true</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="StateChangeValue" oid="" type="bool">
+                                <expr>State</expr>
+                            </parameter>
+                            <parameter name="StateChangeValueEmit" oid="" type="bool">
+                                <expr>StateChangeEmit</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <condContainer oid="fa32a57a-6716-475f-b15b-41482839edd3">
+                    <pathFromRoot value="6,0"/>
+                    <properties name="Style">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>Style</expr>
+                        </index>
+                        <indexes default="1">
+                            <index value="1"/>
+                            <index value="2"/>
+                            <index value="3"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <referenceContainer oid="ed842ef3-985b-4f16-800b-a9b82baf0643">
+                            <pathFromRoot value="0,6,0"/>
+                            <properties modular="false" name="RECT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>15.0</init>
+                                        <expr>(PicturePosition = 1) ? (PictureSize / 2.0) : (SizeX - (PictureSize / 2.0))</expr>
+                                    </x>
+                                    <y>
+                                        <init>15.0</init>
+                                        <expr>SizeY / 2.0</expr>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="CheckBox.ogfx" path="Common"/>
+                                <crc value="3759677366"/>
+                                <inputParameters>
+                                    <parameter control="false" name="Checked" oid="b0e1db70-000a-4b22-8cd6-9095ae620941" type="bool">
+                                        <expr>State</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="false" name="Enable" oid="b75f5f06-93d4-4056-abc6-c24bae0009bc" type="bool">
+                                        <expr>Enable</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                        <referenceContainer oid="9e55aaaf-3495-44a3-9bfd-c88207af5b39">
+                            <pathFromRoot value="1,6,0"/>
+                            <properties modular="false" name="RND">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>15.0</init>
+                                        <expr>(PicturePosition = 1) ? (PictureSize / 2.0) : (SizeX - (PictureSize / 2.0))</expr>
+                                    </x>
+                                    <y>
+                                        <init>15.0</init>
+                                        <expr>SizeY / 2.0</expr>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="CheckBox.ogfx" path="Common"/>
+                                <crc value="3759677366"/>
+                                <inputParameters>
+                                    <parameter control="false" name="Checked" oid="b0e1db70-000a-4b22-8cd6-9095ae620941" type="bool">
+                                        <expr>State</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="false" name="Enable" oid="b75f5f06-93d4-4056-abc6-c24bae0009bc" type="bool">
+                                        <expr>Enable</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                        <referenceContainer oid="8e8e0484-88c4-40fd-9d1e-8b3d51241f2e">
+                            <pathFromRoot value="2,6,0"/>
+                            <properties modular="false" name="RadioBox">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>15.0</init>
+                                        <expr>(PicturePosition = 1) ? (PictureSize / 2.0) : (SizeX - (PictureSize / 2.0))</expr>
+                                    </x>
+                                    <y>
+                                        <init>15.0</init>
+                                        <expr>SizeY / 2.0</expr>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="RadioButton.ogfx" path="Common"/>
+                                <crc value="2547312050"/>
+                                <inputParameters>
+                                    <parameter control="false" name="Checked" oid="b0e1db70-000a-4b22-8cd6-9095ae620941" type="bool">
+                                        <expr>State</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="false" name="Enable" oid="614fa43f-bbc9-44c3-adc8-6208e9687657" type="bool">
+                                        <expr>Enable</expr>
+                                        <init>true</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                    </children>
+                </condContainer>
+                <condContainer oid="c8f6f43e-aa51-4450-8df4-2ff372da159b">
+                    <pathFromRoot value="7,0"/>
+                    <properties name="PicturePosition">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>PicturePosition</expr>
+                        </index>
+                        <indexes default="other">
+                            <index value="1"/>
+                            <index value="2"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="918cefff-d4ff-4aca-b3f3-663d6465f127">
+                            <pathFromRoot value="0,7,0"/>
+                            <properties name="LEFT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-15.0</init>
+                                        </x>
+                                        <y>
+                                            <init>169.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>59.0</init>
+                                        </x>
+                                        <y>
+                                            <init>237.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>116.0</init>
+                                        </x>
+                                        <y>
+                                            <init>182.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>5</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="f282fad9-b42d-4b03-8dbb-0d3a0d57dd0e">
+                            <pathFromRoot value="1,7,0"/>
+                            <properties name="RIGHT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>19.0</init>
+                                        </x>
+                                        <y>
+                                            <init>220.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>98.0</init>
+                                        </x>
+                                        <y>
+                                            <init>161.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>117.0</init>
+                                        </x>
+                                        <y>
+                                            <init>230.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>5</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <referenceContainer oid="930c338c-4805-4027-9409-f8461c6a4584">
+                    <pathFromRoot value="8,0"/>
+                    <properties modular="false" name="Highlight">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="Highlight.ogfx" path="Common"/>
+                        <crc value="1177902794"/>
+                        <inputParameters>
+                            <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                <expr>SizeX</expr>
+                                <init>120.0</init>
+                            </parameter>
+                            <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                <expr>SizeY</expr>
+                                <init>30.0</init>
+                            </parameter>
+                            <parameter control="false" name="Highlight" oid="2eca2a68-7a23-42d1-936d-e17e796f6599" type="bool">
+                                <expr>HasFocus and MouseInside</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="eaaebb87-724f-4502-bfdd-3c5d035c5925" representation="index" type="int">
+                                <expr>((Style = 1) or (Style = 2)) ? 1 : 2</expr>
+                                <init>0</init>
+                            </parameter>
+                        </inputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 2103428662 -->
+

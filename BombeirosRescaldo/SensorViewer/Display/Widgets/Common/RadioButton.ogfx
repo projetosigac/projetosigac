@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="128" width="128">
+            <raw numberOfBytes="738">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,-128,8,2,0,0,0,76,92,-10,-100,0,0,2,-87,73,68,65,84,120,-38,-19,-35,77,75,21,81,0,-128,-31,-119,-10,66,20,-71,-23,99,93,43,55,-43,-81,112,-41,-78,86,-91,81,-92,-117,-64,8,23,-127,10,65,-124,-122,-91,-88,65,95,-124,-94,-85,22,65,70,45,-38,-28,-94,-74,17,-120,-96,104,-101,64,-124,2,117,97,-62,-99,-74,-17,-62,-117,92,-25,-116,115,-90,-13,62,63,-32,50,115,-34,11,-121,-103,51,115,38,-53,36,73,-110,36,73,-110,36,73,-110,34,119,4,28,13,3,24,64,6,-88,-73,43,48,14,-113,97,26,94,-63,4,12,66
+,55,56,-62,6,48,-128,12,80,-67,123,-64,-127,-18,-121,-5,-16,8,38,-31,37,12,1,127,-121,49,-98,-63,117,48,-128,1,12,96,0,3,-124,-41,6,35,-64,-63,29,-125,-49,-80,9,121,-117,-74,-32,43,60,-128,-121,-16,28,12,96,0,3,24,-64,0,7,119,14,-34,-64,109,-8,0,121,69,62,2,-1,16,-17,-31,4,24,-64,0,6,48,-128,1,-10,55,5,60,49,78,-122,121,100,-42,-96,1,95,-64,0,6,48,-128,1,12,-80,-73,27,112,7,56,-95,-27,53,-47,104,-94,23,12,96,0,3,24,32,-11,0,-57,97,6,-98,-62,97,14,86,-39,-65,-65,14,71,-63,0,6,48,-128,1,82,12,112,25,-72,-72,17,-22,-126,107,21,110,-62,105
+,-72,8,93,-80,8,-95,2,-4,1,30,-113,1,12,96,0,3,-92,24,96,0,122,-96,-56,-60,-72,2,-105,-96,-43,99,59,5,63,33,-44,69,25,31,16,54,-128,1,12,96,-128,20,3,-68,-122,39,80,100,-46,-29,68,26,-22,56,111,65,-88,9,-103,127,20,3,24,-64,0,6,72,49,-64,44,-68,-128,34,39,-39,14,-95,-114,-13,36,-108,-79,80,115,21,12,96,0,3,24,32,-107,0,124,-79,34,-44,36,-36,1,-95,-114,-109,81,67,5,-40,-127,-54,38,97,3,24,-64,0,6,-88,48,-64,28,-116,66,-111,-109,-68,6,-95,-114,-109,-117,39,-95,2,124,7,3,24,-64,0,6,72,49,-64,48,-12,-63,95,40,-78,32,115,30,90,61,-74,51,-64
+,-33,12,117,-15,-11,22,12,96,0,3,24,32,-59,0,-99,112,23,-72,-31,70,-111,73,-113,-117,-23,92,-12,63,11,23,-128,19,-8,15,40,-29,6,92,20,27,1,26,-64,0,6,48,64,-123,1,-72,113,-10,60,-16,-27,-20,13,40,-29,5,-118,93,40,-5,5,-115,95,-112,-59,-64,0,6,48,-128,1,34,-63,11,49,62,-80,-59,27,118,121,77,112,-48,-73,-127,-101,-51,26,-64,0,6,48,-128,1,-10,-58,-121,-76,56,33,47,67,-52,-125,78,11,80,-101,15,6,25,-64,0,6,48,64,-123,-8,-126,28,55,104,109,118,-110,-79,13,58,111,-28,113,-13,-15,-84,46,12,96,0,3,24,32,18,-36,-4,-6,19,52,90,20,106,112,-101,-7,6,-4,3
+,101,117,103,0,3,24,-64,0,17,-30,-57,-43,126,67,-93,4,92,-76,-31,-90,75,-4,-96,68,-106,26,3,24,-64,0,6,-120,16,55,2,124,7,75,-64,-59,113,46,-104,-16,33,92,126,60,-120,31,-119,62,6,-114,-74,1,12,32,3,72,-110,36,73,-110,36,73,-110,36,73,-110,-2,83,-1,0,108,26,81,-120,64,-8,-31,-64,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="Checked" oid="b0e1db70-000a-4b22-8cd6-9095ae620941" type="bool">
+                <init>false</init>
+            </input>
+            <input name="Enable" oid="614fa43f-bbc9-44c3-adc8-6208e9687657" type="bool">
+                <init>true</init>
+            </input>
+        </inputs>
+    </declaration>
+    <children>
+        <container oid="74d66256-8054-4137-bfaa-f9ff55526518">
+            <pathFromRoot value="0"/>
+            <properties name="RadioButton">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="16.000004" maxY="16.000004" minX="-16.0" minY="-16.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <circle oid="5bc71b31-91f9-4e13-bdd6-8bc105eff429">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="circle">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <center>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </center>
+                        <radius>
+                            <init>10.0</init>
+                        </radius>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>-1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>2</init>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                    </properties>
+                </circle>
+                <arc oid="2cff0c29-24ca-4fa3-aec5-42d4478097c1">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="arc">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <center>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </center>
+                        <radius>
+                            <init>10.0</init>
+                        </radius>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>128</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>-1</init>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <startAngle>
+                            <angle>
+                                <init>45.0</init>
+                            </angle>
+                        </startAngle>
+                        <endAngle>
+                            <angle>
+                                <init>225.0</init>
+                            </angle>
+                        </endAngle>
+                        <orientation clockwise="false"/>
+                    </properties>
+                </arc>
+                <arc oid="18987fc0-8a93-46ee-a356-48327819fc8e">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="arc">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <center>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </center>
+                        <radius>
+                            <init>10.0</init>
+                        </radius>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>2</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>128</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>-1</init>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <startAngle>
+                            <angle>
+                                <init>225.0</init>
+                            </angle>
+                        </startAngle>
+                        <endAngle>
+                            <angle>
+                                <init>45.0</init>
+                            </angle>
+                        </endAngle>
+                        <orientation clockwise="false"/>
+                    </properties>
+                </arc>
+                <circle oid="999b6697-91d0-453a-864f-7eef4c2957a9">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="circle">
+                        <visible>
+                            <init>true</init>
+                            <expr>Checked</expr>
+                        </visible>
+                        <center>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </center>
+                        <radius>
+                            <init>3.0</init>
+                        </radius>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>-1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>1</init>
+                            <expr>Enable ? 1 : 21</expr>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                    </properties>
+                </circle>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 2129506245 -->
+

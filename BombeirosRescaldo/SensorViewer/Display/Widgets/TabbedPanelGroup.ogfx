@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+        <preview height="128" width="109">
+            <raw numberOfBytes="1313">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,109,0,0,0,-128,8,2,0,0,0,-114,64,112,93,0,0,4,-24,73,68,65,84,120,-38,-19,-100,71,79,35,73,24,-122,7,-63,-127,19,92,23,-79,43,-62,79,-40,11,-15,-78,92,-56,12,-52,12,-98,-63,4,-101,12,62,-64,-123,12,2,108,14,8,28,-55,81,4,33,1,23,114,70,-120,-100,69,-8,75,-5,-54,-67,-22,-75,-35,90,85,107,-123,90,-123,-12,62,-121,86,81,-3,-47,-11,-6,-87,-86,-18,6,36,-66,124,33,-124,16,66,8,33,-124,16,66,8,33,-124,16,66,8,33,-124,16,66,8,33,-124,16,66,8,33,-124,16,66,8,33,-124,16,66,8,33
+,-124,16,66,8,33,-124,16,66,8,33,-124,-4,67,84,84,-44,31,114,16,19,19,-13,-101,-97,-40,-40,-40,-33,53,-88,103,-115,36,50,50,82,-79,20,29,29,-83,61,27,22,22,-10,-81,-57,-52,-52,-52,95,114,-112,-111,-111,-15,-105,31,-85,-43,-86,61,-5,-45,112,-118,-117,-117,19,18,18,20,75,-123,-123,-123,-38,-126,-120,-120,-120,32,-113,95,37,-96,-96,-96,32,41,41,-23,79,63,37,37,37,50,68,-54,-49,-49,-113,-117,-117,83,44,33,-98,-74,32,60,60,60,-56,99,-95,28,36,39,39,43,30,-51,102,-77,12,121,-32,78,-11,8,107,-38,-126,80,-113,-33,36,-96,-88,-88,40,-48,-93,12,-111,96,74,-11,-120,-74,-74,32,104,95,103,101,101,125
+,-105,3,-43,99,105,105,-87,12,121,48,-75,-127,30,-75,5,-95,30,127,-24,-64,100,50,41,55,123,-36,125,-107,27,-65,-55,-49,127,117,2,124,-105,-38,-87,103,-120,64,-113,-1,47,18,26,-6,115,10,-81,-113,21,23,-24,81,91,16,-28,49,59,59,-37,-92,-125,-35,-35,-35,-85,-85,-85,-105,-105,-105,-18,-18,-18,-73,-73,-73,-37,-37,-37,-91,-91,-91,-51,-51,-51,-101,-101,27,124,-39,-43,-43,-91,116,-82,-84,-84,108,108,108,-96,-14,-3,-3,-67,-93,-93,3,71,20,-84,-82,-82,-22,25,34,37,37,69,-15,88,86,86,38,44,-122,-108,-93,-93,35,12,-12,-12,-12,-44,-41,-41,-9,-6,-6,122,127,127,63,59,59,-69,-65,-65,127,125,125,-115,47,-107,72,119
+,119,119,11,11,11,123,123,123,74,-8,-98,-98,30,-91,115,113,113,81,56,4,76,-59,-57,-57,43,-106,-80,54,-75,5,-95,30,-11,-68,-108,96,108,28,97,-45,-21,-11,46,47,47,-41,-41,-41,31,28,28,-100,-99,-99,85,86,86,-18,-20,-20,120,60,30,24,-84,-83,-83,85,62,27,22,20,20,59,-99,-50,-75,-75,-75,-22,-22,-22,-45,-45,83,-31,-11,-31,37,-48,-93,-80,30,-49,116,-52,16,26,-120,49,62,62,62,61,61,-35,-44,-44,-124,65,-49,-49,-49,43,42,42,-114,-113,-113,17,105,110,110,-82,-95,-95,1,5,-104,96,84,34,-89,-49,-25,-125,-63,-58,-58,70,-104,21,14,1,83,-86,71,-84,77,109,65,-112,-57,-100,-100,-100,18,29,-64,35,-114
+,-86,71,37,31,60,86,85,85,-87,30,-21,-22,-22,-32,17,-53,1,34,-16,-111,92,46,-41,-6,-6,122,77,77,13,60,10,-81,-113,88,-86,-57,-14,-14,114,97,61,-98,69,-80,-125,-122,-30,113,102,102,-90,-71,-71,121,107,107,-21,-30,-30,-62,98,-79,-100,-100,-100,32,-46,-4,-4,60,-108,-95,64,13,63,50,50,-126,109,100,-77,-39,-80,108,-123,67,96,106,3,61,106,11,66,61,-106,-22,-32,-31,-31,97,112,112,16,-127,-32,17,94,70,71,71,15,15,15,47,47,47,-35,110,55,58,17,26,78,49,-37,-8,0,88,38,67,67,67,56,-62,35,62,-107,114,74,120,125,120,73,77,77,85,61,10,-21,49,85,-113,-113,-113,-120,-124,-19,12,-113,-112,53
+,53,53,-75,-67,-67,13,-71,-40,7,-49,-49,-49,24,23,-109,-118,-100,56,-91,84,34,39,18,34,-4,-40,-40,24,58,-123,67,-64,-108,-22,17,79,21,109,65,-88,-57,50,29,-32,30,-124,-69,15,18,96,-47,33,49,-38,-19,-19,-19,-67,-67,-67,74,39,118,-12,-28,-28,36,-38,-72,39,-30,30,-124,-58,-60,-60,4,86,-94,-46,-39,-39,-39,41,-68,62,98,-87,30,-79,49,-11,68,114,56,28,-72,56,-44,96,115,40,-111,90,90,90,-20,118,59,26,-48,-121,72,-40,-20,104,-73,-74,-74,42,-31,-47,-87,-122,111,107,107,19,94,31,83,-85,122,-60,-67,82,91,16,-28,49,55,55,-73,92,14,2,61,-54,-112,7,83,-85,-2,92,8,-113,-38,-126,80,-113,22
+,9,-128,-69,-76,-76,52,-59,-93,69,14,96,42,-48,-93,-74,32,-56,99,94,94,94,-91,4,88,-83,-42,64,-113,50,68,-62,-44,-86,30,-15,-30,-87,45,8,-11,88,37,1,-120,-91,122,-124,83,25,34,33,-122,-22,17,-17,64,-38,-126,80,-113,53,18,-128,-41,-52,-12,-12,116,-43,-93,12,-111,48,-75,-119,-119,-119,-86,71,109,65,-112,-57,-2,-2,-2,25,57,-64,35,126,-36,-49,-116,52,-32,85,-60,-21,7,47,30,113,26,-126,126,-113,-117,119,-126,124,34,2,111,-60,-126,-65,43,-64,99,1,17,65,-113,6,122,-4,74,68,12,15,15,-45,-93,33,30,-15,-68,46,36,34,-24,-111,30,63,-99,-57,34,34,-126,30,63,6,-89,-45,41,-10,-8,-115,-120,-48
+,-27,-15,59,17,65,-113,6,122,-4,65,68,-48,35,61,-54,-124,-53,-27,18,123,44,38,34,116,121,52,17,17,-12,104,-96,-57,-97,68,4,61,126,12,110,-73,91,-32,-47,110,-73,-1,34,34,-24,-111,30,63,-99,-57,18,34,-126,30,13,-12,104,38,34,60,30,-113,-40,99,41,17,65,-113,6,122,44,35,34,-24,-47,40,-113,14,-121,-125,-102,62,-58,99,57,17,65,-113,6,122,-84,32,34,116,121,-76,16,17,98,-113,3,3,3,-44,-12,49,30,-83,68,-124,-41,-21,-91,71,122,-4,92,30,43,-119,8,122,52,-48,99,21,17,-31,-13,-7,-60,30,-85,-119,8,122,52,-48,99,13,17,65,-113,-12,-8,-71,60,-102,-51,-26,1,34,-62,102,-77,-15,95
+,-41,-110,-49,-64,-33,-100,-84,46,68,64,54,-29,31,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="7975b600-a81c-48de-891e-9c5dbf85baa1" type="real">
+                <control oid="44e1e496-a7c6-4c2d-b5e1-20f4eeff59f0" plug="thirdPoint_x"/>
+                <init>300.0</init>
+            </input>
+            <input name="SizeY" oid="9236e79b-3a08-4b68-8213-58266403b6f5" type="real">
+                <control oid="44e1e496-a7c6-4c2d-b5e1-20f4eeff59f0" plug="thirdPoint_y"/>
+                <init>300.0</init>
+            </input>
+            <input name="Style" oid="72f7b616-9979-45a2-a20d-2b1bacac57b5" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="ButtonColor" oid="7465b806-b665-4c03-a227-e7cf9861b185" representation="color" type="int">
+                <init>6</init>
+            </input>
+            <input name="BackColor" oid="1688ed14-ad44-40f0-84de-f5ee0e21abe4" representation="color" type="int">
+                <init>6</init>
+            </input>
+            <input name="Font" oid="ba5d14f7-c49e-4b05-8675-9de8f0c605e0" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="TextColor" oid="37a0f282-fba3-4518-8b0e-5eb7589c5e88" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="TextAlignment" oid="a526591f-b345-41ed-b5ea-ca2bd0aa0567" representation="horizontal_alignment" type="int">
+                <init>1</init>
+            </input>
+            <input name="TabPosition" oid="1ea24848-6551-4105-91d6-f2bc7ea77554" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="ButtonSize" oid="22c350ab-fa20-412d-9629-0809d6c1ad2d" type="real">
+                <init>50.0</init>
+            </input>
+            <input name="NumberOfItems" oid="6181327e-e71f-4e5f-8ecb-7ec21c23e993" type="int">
+                <init>3</init>
+            </input>
+            <input name="LabelStringArray" oid="9a7b710b-1553-4bfc-a31c-80b6f6a7a6d5" representation="as_string" type="char^255^16">
+                <init>[[84, 97, 98, 49, 0], [84, 97, 98, 50, 0], [84, 97, 98, 51, 0], [84, 97, 98, 52, 0], [84, 97, 98, 53, 0], [84, 97, 98, 54, 0], [84, 97, 98, 55, 0], [84, 97, 98, 56, 0], [84, 97, 98, 57, 0], [84, 97, 98, 49, 48, 0], [84, 97, 98, 49, 49, 0], [84, 97, 98, 49, 50, 0], [84, 97, 98, 49, 51, 0], [84, 97, 98, 49, 52, 0], [84, 97, 98, 49, 53, 0], [84, 97, 98, 49, 54, 0]]</init>
+            </input>
+            <input name="EnableArray" oid="f37ff163-0067-4616-ac78-9c670bb0037e" type="bool^16">
+                <init>[true]</init>
+            </input>
+            <input name="EmitCondition" oid="7e17c163-cb4c-4d68-b1e6-b4742be9f382" representation="index" type="int">
+                <init>2</init>
+            </input>
+            <input name="InSelectedTab" oid="c841043f-e9fd-4892-8f83-5936cda855e5" type="int">
+                <init>0</init>
+            </input>
+            <input name="InSelectedTabSet" oid="06cc604f-ddbc-4335-b661-ddfcfe5bb091" type="bool">
+                <init>false</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="false" name="SelectedTab" oid="43fbec54-8091-4ed7-aa96-604b7580e015" type="int">
+                <init>0</init>
+            </output>
+            <output memory="false" name="SelectedTabChangeEmit" oid="be718323-0c25-40c7-b04e-3cb1d8932ed8" type="bool">
+                <init>false</init>
+            </output>
+        </outputs>
+        <locals>
+            <local memory="false" name="SelectedTable" oid="0da1fa4b-6b49-44f5-bfa3-3a01232e392c" type="bool^16">
+                <init>[false]</init>
+            </local>
+            <local memory="true" name="Pressed" oid="f8766a10-faf7-4d56-8d62-cd6ce317fed0" type="bool^16">
+                <init>[false]</init>
+            </local>
+            <local memory="true" name="Released" oid="83cfd61d-0304-4b31-8ed3-9e8bc2a41be4" type="bool^16">
+                <init>[false]</init>
+            </local>
+            <local memory="false" name="currentSelectedTab" oid="f3d77a76-0ed2-4743-8490-390755f3c3ee" type="int">
+                <init>0</init>
+            </local>
+            <local memory="true" name="Inside" oid="34ebde27-3872-49a2-88a7-b973c8b795c1" type="bool">
+                <init>false</init>
+            </local>
+            <local memory="true" name="HasFocus" oid="23408e39-73f8-4241-86da-5b1df1f87360" type="bool">
+                <init>false</init>
+            </local>
+        </locals>
+    </declaration>
+    <children>
+        <container oid="f048c750-06e2-4cbc-8ce5-7b329268780f">
+            <pathFromRoot value="0"/>
+            <properties name="TabbedPanelGroup">
+                <comment>A TabbedPanel group provides a panel background and a set of buttons (&apos;tabs&apos;). The main output of this widget is TabbedPanelChangeValue, an index that can be used to select some content in a conditional container.
+
+The size of the buttons is computed in one direction by dividing the size of the tabbed panel group by the number of buttons, and in the other direction by ButtonSize.
+
+NumberOfItems gives the number of visible buttons (out of a maximum of 16).</comment>
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="326.0" maxY="276.0" minX="-6.0" minY="-6.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <condContainer oid="89edf9ae-3cde-4c74-bde1-2d337eda4312">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="TabPosition">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>TabPosition</expr>
+                        </index>
+                        <indexes default="1">
+                            <index value="1"/>
+                            <index value="2"/>
+                            <index value="3"/>
+                            <index value="4"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="cc3ef86d-669c-4569-9d4c-9759cb44a575">
+                            <pathFromRoot value="0,0,0"/>
+                            <properties name="TOP">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>72.0</init>
+                                        </x>
+                                        <y>
+                                            <init>1.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="26664b46-53b4-44d3-89be-57df3ca8f377">
+                            <pathFromRoot value="1,0,0"/>
+                            <properties name="BOTTOM">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>72.0</init>
+                                        </x>
+                                        <y>
+                                            <init>1.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="763fe6a7-123e-40bd-9aba-dc4e0f19454f">
+                            <pathFromRoot value="2,0,0"/>
+                            <properties name="LEFT">
+                                <comment>Not Implemented</comment>
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>72.0</init>
+                                        </x>
+                                        <y>
+                                            <init>1.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="e21077a1-cd92-40b9-97cc-c1558e67c3c9">
+                            <pathFromRoot value="3,0,0"/>
+                            <properties name="RIGHT">
+                                <comment>Not Implemented</comment>
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>72.0</init>
+                                        </x>
+                                        <y>
+                                            <init>1.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <condContainer oid="98f23aae-d5e9-4649-a7de-d24e14fa8cc3">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="EmitCondition">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>EmitCondition</expr>
+                        </index>
+                        <indexes default="1">
+                            <index value="1"/>
+                            <index value="2"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="56052ba6-2e2d-4c47-ad17-5062b9080480">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties name="ON_PRESSED">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>72.0</init>
+                                        </x>
+                                        <y>
+                                            <init>1.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="cf94b45b-83c3-49fe-bb5f-d29d3dbdc3cc">
+                            <pathFromRoot value="1,1,0"/>
+                            <properties name="ON_RELEASED">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>0.0</init>
+                                        </x>
+                                        <y>
+                                            <init>0.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>72.0</init>
+                                        </x>
+                                        <y>
+                                            <init>1.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+                <rectangle oid="35ee1949-09e6-4002-9f34-4489b7091634">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="ButtonSize">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>50.0</init>
+                                <expr>ButtonSize</expr>
+                            </x>
+                            <y>
+                                <init>50.0</init>
+                                <expr>ButtonSize</expr>
+                            </y>
+                        </thirdPoint>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>true</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>-1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>-1</init>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <textureControl>
+                            <init>false</init>
+                        </textureControl>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <tessellate>
+                            <init>false</init>
+                        </tessellate>
+                    </properties>
+                </rectangle>
+                <rectangleArea oid="44e1e496-a7c6-4c2d-b5e1-20f4eeff59f0">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="rectangle area">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <pointerId>
+                            <init>-1</init>
+                        </pointerId>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>300.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>300.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <output>
+                            <inside>
+                                <expr>Inside</expr>
+                            </inside>
+                        </output>
+                    </properties>
+                </rectangleArea>
+                <referenceContainer oid="5d27fe99-ae87-4574-9570-2ad105cc9558">
+                    <pathFromRoot value="4,0"/>
+                    <properties modular="false" name="IndividualFocus">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="IndividualFocus.ogfx" path="Common"/>
+                        <crc value="1244254813"/>
+                        <inputParameters>
+                            <parameter control="false" name="Requestfocus" oid="51ba8016-ef03-4f7c-8249-e2524097b493" type="bool">
+                                <expr>Inside</expr>
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="NextWidgetId" oid="56ba4cfa-e949-4dde-96af-8fb68b21421a" type="int32">
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="IsContainer" oid="a3ce082f-4ed5-43e2-b2d9-e6ed5d84eb77" type="bool">
+                                <init>true</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="HasFocus" oid="6029da93-0cb5-4223-9c14-dacbf6da20d7" type="bool">
+                                <expr>HasFocus</expr>
+                            </parameter>
+                            <parameter name="WidgetId" oid="74947212-4f07-43d2-8791-6c3b1be76b1a" type="int32"/>
+                            <parameter name="Pressed" oid="5f51c1a5-92ea-4b1b-bf5a-a72ef8df097d" type="bool"/>
+                            <parameter name="Released" oid="c86f6eb3-5003-416b-9802-d582d0500662" type="bool"/>
+                            <parameter name="Button" oid="1a70175b-edaf-4fa1-89e1-829943c6314c" type="int"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <imported oid="b8ab0a76-1a74-48d9-9db1-f84ef3af82f6">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="FocusOverride">
+                        <function name="FocusOverride"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>true</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="override" oid="" type="int">
+                                <expr>HasFocus ? 1 : 2</expr>
+                                <init>0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters/>
+                    </properties>
+                </imported>
+                <imported oid="661f0cfe-4fbd-40c7-9312-354802a51b01">
+                    <pathFromRoot value="6,0"/>
+                    <properties name="wrapper_RadioBox">
+                        <function name="wrapper_RadioBox"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>false</init>
+                        </restoreStates>
+                        <memory>
+                            <init>true</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="NumberOfItems" oid="" type="int">
+                                <expr>NumberOfItems</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="StateChangeEmitTable" oid="" type="bool^16">
+                                <expr>(EmitCondition = 1) ? Pressed : Released</expr>
+                                <init>[false]</init>
+                            </parameter>
+                            <parameter name="SelectedItem" oid="" type="int">
+                                <expr>InSelectedTab - 1</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter name="SetSelectedItem" oid="" type="bool">
+                                <expr>InSelectedTabSet</expr>
+                                <init>false</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="SelectedTable" oid="" type="bool^16">
+                                <expr>SelectedTable</expr>
+                            </parameter>
+                            <parameter name="SelectedItemEmit" oid="" type="bool">
+                                <expr>SelectedTabChangeEmit</expr>
+                            </parameter>
+                            <parameter name="SelectedItemValue" oid="" type="int">
+                                <expr>currentSelectedTab</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <container oid="631cda00-05b3-4d0e-90f5-6a9be4ffbf88">
+                    <pathFromRoot value="7,0"/>
+                    <properties name="Tabs">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                                <expr>(TabPosition = 4) ? (SizeX - ButtonSize) : 0.0</expr>
+                            </x>
+                            <y>
+                                <init>150.0</init>
+                                <expr>(TabPosition = 1) ? (SizeY - ButtonSize) : 0.0</expr>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="326.0" maxY="276.0" minX="-6.0" minY="-6.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <referenceContainer oid="6038ebfb-2f71-4863-bcf4-3817616a0ae8">
+                            <pathFromRoot value="0,7,0"/>
+                            <properties modular="false" name="3DBackground">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <file name="3DBackground.ogfx" path="Common"/>
+                                <crc value="2880543057"/>
+                                <inputParameters>
+                                    <parameter control="false" name="SizeX" oid="1567db4f-d5b7-45ac-a492-37a604b6c49a" type="real">
+                                        <expr>(TabPosition &lt;= 2) ? SizeX : ButtonSize</expr>
+                                        <init>170.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="SizeY" oid="ff8689f8-eca1-414d-bbe3-d097ae184da7" type="real">
+                                        <expr>(TabPosition &gt;= 3) ? SizeY : ButtonSize</expr>
+                                        <init>50.0</init>
+                                    </parameter>
+                                    <parameter control="false" name="BackgroundColor" oid="e34cba86-f2b3-4943-8d08-71b1c1a3fa67" representation="color" type="int">
+                                        <expr>ButtonColor</expr>
+                                        <init>6</init>
+                                    </parameter>
+                                    <parameter control="false" name="PoppingOutward" oid="81dadf9e-8012-4548-8eb4-2ef402242f93" type="bool">
+                                        <init>true</init>
+                                    </parameter>
+                                    <parameter control="false" name="Enable" oid="40bccd91-f2ea-4227-a3a6-e2d66c48c81c" type="bool">
+                                        <init>false</init>
+                                    </parameter>
+                                    <parameter control="false" name="Style" oid="3c43a032-be6b-4a91-a8df-8985c699dcde" representation="index" type="int">
+                                        <expr>Style</expr>
+                                        <init>1</init>
+                                    </parameter>
+                                    <parameter control="false" name="DownHalo" oid="2db0af55-687b-48ec-8de2-73996e59d8fe" type="bool">
+                                        <init>false</init>
+                                    </parameter>
+                                </inputParameters>
+                            </properties>
+                            <children/>
+                        </referenceContainer>
+                        <panelContainer oid="b8eac460-f015-4754-bb0f-69a04d6f09c0">
+                            <pathFromRoot value="1,7,0"/>
+                            <properties name="panel group">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <width>
+                                    <init>320.0</init>
+                                    <expr>( (TabPosition &lt;= 2) ? SizeX : ButtonSize ) + 0.0</expr>
+                                </width>
+                                <height>
+                                    <init>270.0</init>
+                                    <expr>( (TabPosition &gt;= 3) ? SizeY : ButtonSize ) + 0.0</expr>
+                                </height>
+                            </properties>
+                            <children>
+                                <container oid="ebd94fe7-44b6-439e-a48f-447c904e0433">
+                                    <pathFromRoot value="0,1,7,0"/>
+                                    <properties name="group">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </origin>
+                                        <priority>
+                                            <init>-1</init>
+                                        </priority>
+                                        <scale>
+                                            <x>
+                                                <init>1.0</init>
+                                            </x>
+                                            <y>
+                                                <init>1.0</init>
+                                            </y>
+                                        </scale>
+                                        <rotate>
+                                            <angle>
+                                                <init>0.0</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                                            <init>false</init>
+                                        </static>
+                                    </properties>
+                                    <children>
+                                        <nplicatorContainer oid="1ac3efdb-3301-457b-afc9-f06c382874cc">
+                                            <pathFromRoot value="0,0,1,7,0"/>
+                                            <properties modular="false" name="ToggleButton_np" replication="16">
+                                                <file name="ToggleButton.ogfx" path="."/>
+                                                <crc value="2123476476"/>
+                                                <visible>
+                                                    <expr>[(NumberOfItems &gt;= 1),(NumberOfItems &gt;= 2),(NumberOfItems &gt;= 3),(NumberOfItems &gt;= 4),(NumberOfItems &gt;= 5),(NumberOfItems &gt;= 6),(NumberOfItems &gt;= 7),(NumberOfItems &gt;= 8),(NumberOfItems &gt;= 9),(NumberOfItems &gt;= 10),(NumberOfItems &gt;= 11),(NumberOfItems &gt;= 12),(NumberOfItems &gt;= 13),(NumberOfItems &gt;= 14),(NumberOfItems &gt;= 15),(NumberOfItems &gt;= 16)]</expr>
+                                                    <init>[true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]</init>
+                                                </visible>
+                                                <origin>
+                                                    <x>
+                                                        <expr>(TabPosition &gt;= 3) ? [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0] : [(0.0 * (SizeX / (real NumberOfItems))),(1.0 * (SizeX / (real NumberOfItems))),(2.0 * (SizeX / (real NumberOfItems))),(3.0 * (SizeX / (real NumberOfItems))),(4.0 * (SizeX / (real NumberOfItems))),(5.0 * (SizeX / (real NumberOfItems))),(6.0 * (SizeX / (real NumberOfItems))),(7.0 * (SizeX / (real NumberOfItems))),(8.0 * (SizeX / (real NumberOfItems))),(9.0 * (SizeX / (real NumberOfItems))),(10.0 * (SizeX / (real NumberOfItems))),(11.0 * (SizeX / (real NumberOfItems))),(12.0 * (SizeX / (real NumberOfItems))),(13.0 * (SizeX / (real NumberOfItems))),(14.0 * (SizeX / (real NumberOfItems))),(15.0 * (SizeX / (real NumberOfItems)))]</expr>
+                                                        <init>[0.0, 150.0, 300.0, 450.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                                    </x>
+                                                    <y>
+                                                        <expr>(TabPosition &lt;= 2) ? [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0] : [(SizeY - (SizeY / (real NumberOfItems))),(SizeY - (2.0 * (SizeY / (real NumberOfItems)))),(SizeY - (3.0 * (SizeY / (real NumberOfItems)))),(SizeY - (4.0 * (SizeY / (real NumberOfItems)))),(SizeY - (5.0 * (SizeY / (real NumberOfItems)))),(SizeY - (6.0 * (SizeY / (real NumberOfItems)))),(SizeY - (7.0 * (SizeY / (real NumberOfItems)))),(SizeY - (8.0 * (SizeY / (real NumberOfItems)))),(SizeY - (9.0 * (SizeY / (real NumberOfItems)))),(SizeY - (10.0 * (SizeY / (real NumberOfItems)))),(SizeY - (11.0 * (SizeY / (real NumberOfItems)))),(SizeY - (12.0 * (SizeY / (real NumberOfItems)))),(SizeY - (13.0 * (SizeY / (real NumberOfItems)))),(SizeY - (14.0 * (SizeY / (real NumberOfItems)))),(SizeY - (15.0 * (SizeY / (real NumberOfItems)))),(SizeY - (16.0 * (SizeY / (real NumberOfItems))))]</expr>
+                                                        <init>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                                    </y>
+                                                </origin>
+                                                <rotate>
+                                                    <angle>
+                                                        <init>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                                    </angle>
+                                                </rotate>
+                                                <orientation clockwise="false"/>
+                                                <scale>
+                                                    <x>
+                                                        <init>[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]</init>
+                                                    </x>
+                                                    <y>
+                                                        <init>[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]</init>
+                                                    </y>
+                                                </scale>
+                                                <inputParameters>
+                                                    <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real^16">
+                                                        <expr>(TabPosition &gt;= 3) ? [ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize] : [(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems))]</expr>
+                                                        <init>[140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0, 140.0]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real^16">
+                                                        <expr>(TabPosition &lt;= 2) ? [ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize] : [(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems))]</expr>
+                                                        <init>[50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Enable" oid="5c2bc57c-bac9-46cd-944e-0dc6c364202a" type="bool^16">
+                                                        <expr>EnableArray</expr>
+                                                        <init>[true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Style" oid="f5c1daa7-19d2-419f-927d-db7833c23a63" representation="index" type="int^16">
+                                                        <expr>[Style,Style,Style,Style,Style,Style,Style,Style,Style,Style,Style,Style,Style,Style,Style,Style]</expr>
+                                                        <init>[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="LabelString" oid="a66f3a55-db83-4c95-b633-badf3e42a6f5" representation="as_string" type="char^255^16">
+                                                        <expr>LabelStringArray</expr>
+                                                        <init>[[76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 50, 0], [76, 97, 98, 101, 108, 51, 0], [76, 97, 98, 101, 108, 52, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0], [76, 97, 98, 101, 108, 49, 0]]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="ButtonColor" oid="69934d48-1501-4cad-a291-cc26bae78005" representation="color" type="int^16">
+                                                        <expr>[ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor,ButtonColor]</expr>
+                                                        <init>[6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Font" oid="f601ee89-655e-4546-b4cb-5029c0c43a04" representation="font" type="int^16">
+                                                        <expr>[Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font]</expr>
+                                                        <init>[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="TextColor" oid="5f374ea6-4205-415e-9b0d-de2330711344" representation="color" type="int^16">
+                                                        <expr>[TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor]</expr>
+                                                        <init>[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="TextAlignment" oid="dab3f2f1-cd4c-45da-8e6d-b1f35036189e" representation="horizontal_alignment" type="int^16">
+                                                        <expr>[TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment,TextAlignment]</expr>
+                                                        <init>[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="AlternateLabelString" oid="2aa929f1-3443-46e4-a8f8-fb84663d581f" representation="as_string" type="char^255^16">
+                                                        <expr>LabelStringArray</expr>
+                                                        <init>[[65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0], [65, 108, 116, 101, 114, 110, 97, 116, 101, 0]]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="AlternateButtonColor" oid="0e4b5948-2010-4703-ba4a-79080ce0514e" representation="color" type="int^16">
+                                                        <init>[7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="EmitCondition" oid="33bb7f1c-15c7-4ab3-a93a-9669dd94fb3a" representation="index" type="int^16">
+                                                        <expr>[EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition,EmitCondition]</expr>
+                                                        <init>[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="InState" oid="01f56506-4c2b-4433-8f95-4db29377166e" type="bool^16">
+                                                        <expr>[(not SelectedTable[0]),(not SelectedTable[1]),(not SelectedTable[2]),(not SelectedTable[3]),(not SelectedTable[4]),(not SelectedTable[5]),(not SelectedTable[6]),(not SelectedTable[7]),(not SelectedTable[8]),(not SelectedTable[9]),(not SelectedTable[10]),(not SelectedTable[11]),(not SelectedTable[12]),(not SelectedTable[13]),(not SelectedTable[14]),(not SelectedTable[15])]</expr>
+                                                        <init>[false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="InStateSet" oid="0e03061e-2bc7-4ddd-9f77-035b0890aed3" type="bool^16">
+                                                        <expr>[true,true,true,true,true,true,true,true,true,true,true,true,true,true,true,true]</expr>
+                                                        <init>[false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]</init>
+                                                    </parameter>
+                                                </inputParameters>
+                                                <outputParameters>
+                                                    <parameter name="State" oid="e4875b49-1eb2-4b2f-a89a-beca1d380fe2" type="bool^16"/>
+                                                    <parameter name="StateChangeEmit" oid="f8af6416-bb96-4454-979a-e52e877bfe2b" type="bool^16"/>
+                                                </outputParameters>
+                                            </properties>
+                                            <children/>
+                                        </nplicatorContainer>
+                                        <nplicatorContainer oid="57c1947e-3c3e-46fe-a508-7db93d3d4a3a">
+                                            <pathFromRoot value="1,0,1,7,0"/>
+                                            <properties modular="false" name="ClickArea_np" replication="16">
+                                                <file name="ClickArea.ogfx" path="Common"/>
+                                                <crc value="3024767512"/>
+                                                <visible>
+                                                    <expr>[(NumberOfItems &gt;= 1),(NumberOfItems &gt;= 2),(NumberOfItems &gt;= 3),(NumberOfItems &gt;= 4),(NumberOfItems &gt;= 5),(NumberOfItems &gt;= 6),(NumberOfItems &gt;= 7),(NumberOfItems &gt;= 8),(NumberOfItems &gt;= 9),(NumberOfItems &gt;= 10),(NumberOfItems &gt;= 11),(NumberOfItems &gt;= 12),(NumberOfItems &gt;= 13),(NumberOfItems &gt;= 14),(NumberOfItems &gt;= 15),(NumberOfItems &gt;= 16)]</expr>
+                                                    <init>[true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]</init>
+                                                </visible>
+                                                <origin>
+                                                    <x>
+                                                        <expr>(TabPosition &gt;= 3) ? [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0] : [(0.0 * (SizeX / (real NumberOfItems))),(1.0 * (SizeX / (real NumberOfItems))),(2.0 * (SizeX / (real NumberOfItems))),(3.0 * (SizeX / (real NumberOfItems))),(4.0 * (SizeX / (real NumberOfItems))),(5.0 * (SizeX / (real NumberOfItems))),(6.0 * (SizeX / (real NumberOfItems))),(7.0 * (SizeX / (real NumberOfItems))),(8.0 * (SizeX / (real NumberOfItems))),(9.0 * (SizeX / (real NumberOfItems))),(10.0 * (SizeX / (real NumberOfItems))),(11.0 * (SizeX / (real NumberOfItems))),(12.0 * (SizeX / (real NumberOfItems))),(13.0 * (SizeX / (real NumberOfItems))),(14.0 * (SizeX / (real NumberOfItems))),(15.0 * (SizeX / (real NumberOfItems)))]</expr>
+                                                        <init>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                                    </x>
+                                                    <y>
+                                                        <expr>(TabPosition &lt;= 2) ? [0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0] : [(SizeY - (SizeY / (real NumberOfItems))),(SizeY - (2.0 * (SizeY / (real NumberOfItems)))),(SizeY - (3.0 * (SizeY / (real NumberOfItems)))),(SizeY - (4.0 * (SizeY / (real NumberOfItems)))),(SizeY - (5.0 * (SizeY / (real NumberOfItems)))),(SizeY - (6.0 * (SizeY / (real NumberOfItems)))),(SizeY - (7.0 * (SizeY / (real NumberOfItems)))),(SizeY - (8.0 * (SizeY / (real NumberOfItems)))),(SizeY - (9.0 * (SizeY / (real NumberOfItems)))),(SizeY - (10.0 * (SizeY / (real NumberOfItems)))),(SizeY - (11.0 * (SizeY / (real NumberOfItems)))),(SizeY - (12.0 * (SizeY / (real NumberOfItems)))),(SizeY - (13.0 * (SizeY / (real NumberOfItems)))),(SizeY - (14.0 * (SizeY / (real NumberOfItems)))),(SizeY - (15.0 * (SizeY / (real NumberOfItems)))),(SizeY - (16.0 * (SizeY / (real NumberOfItems))))]</expr>
+                                                        <init>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                                    </y>
+                                                </origin>
+                                                <rotate>
+                                                    <angle>
+                                                        <init>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                                    </angle>
+                                                </rotate>
+                                                <orientation clockwise="false"/>
+                                                <scale>
+                                                    <x>
+                                                        <init>[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]</init>
+                                                    </x>
+                                                    <y>
+                                                        <init>[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]</init>
+                                                    </y>
+                                                </scale>
+                                                <inputParameters>
+                                                    <parameter control="false" name="Enable" oid="145ec9be-bf00-4cd6-af4e-aa5ae7378275" type="bool^16">
+                                                        <expr>EnableArray</expr>
+                                                        <init>[false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="SizeX" oid="ca7f6aac-8230-43a0-a2f9-97fbdd41010e" type="real^16">
+                                                        <expr>(TabPosition &gt;= 3) ? [ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize] : [(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems)),(SizeX / (real NumberOfItems))]</expr>
+                                                        <init>[150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0, 150.0]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="SizeY" oid="80b035e3-90b6-4f9e-8248-ae55a36968e6" type="real^16">
+                                                        <expr>(TabPosition &lt;= 2) ? [ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize,ButtonSize] : [(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems)),(SizeY / (real NumberOfItems))]</expr>
+                                                        <init>[50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="EnableHighlight" oid="d2f0a770-27ed-48e9-8e55-255d25202c60" type="bool^16">
+                                                        <init>[false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false]</init>
+                                                    </parameter>
+                                                    <parameter control="false" name="Style" oid="c13ca85a-81ff-41d6-8341-2dfec4f330b4" representation="index" type="int^16">
+                                                        <init>[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</init>
+                                                    </parameter>
+                                                </inputParameters>
+                                                <outputParameters>
+                                                    <parameter name="Pressed" oid="9d9e638b-8ba6-4e66-bbd6-d09ed5eaccf0" type="bool^16">
+                                                        <expr>Pressed</expr>
+                                                    </parameter>
+                                                    <parameter name="Released" oid="943c6c44-f17e-4c9c-937f-64cf576a74a0" type="bool^16">
+                                                        <expr>Released</expr>
+                                                    </parameter>
+                                                </outputParameters>
+                                            </properties>
+                                            <children/>
+                                        </nplicatorContainer>
+                                    </children>
+                                </container>
+                            </children>
+                        </panelContainer>
+                        <textArea oid="ecf1e5a1-1e7e-46d8-a757-1e0b35ee3126">
+                            <pathFromRoot value="2,7,0"/>
+                            <properties name="text area">
+                                <visible>
+                                    <init>false</init>
+                                    <expr>(NumberOfItems &lt; 1) or (NumberOfItems &gt; 16)</expr>
+                                </visible>
+                                <firstPoint>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>-2.0</init>
+                                    </y>
+                                </firstPoint>
+                                <thirdPoint>
+                                    <x>
+                                        <init>140.0</init>
+                                    </x>
+                                    <y>
+                                        <init>50.0</init>
+                                    </y>
+                                </thirdPoint>
+                                <maxLength>
+                                    <init>255</init>
+                                </maxLength>
+                                <textValue type="char">
+                                    <init>[87, 97, 114, 110, 105, 110, 103, 58, 32, 78, 117, 109, 98, 101, 114, 79, 102, 73, 116, 101, 109, 115, 32, 111, 117, 116, 32, 111, 102, 32, 114, 97, 110, 103, 101, 0]</init>
+                                </textValue>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>36</init>
+                                </outlineColor>
+                                <lineWidth>
+                                    <init>2</init>
+                                </lineWidth>
+                                <font>
+                                    <init>0</init>
+                                </font>
+                                <horizAlign>
+                                    <init>left</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>top</init>
+                                </vertAlign>
+                            </properties>
+                        </textArea>
+                    </children>
+                </container>
+                <assignment oid="c78ab4f9-a08d-4554-91f7-8f317fe303b5">
+                    <pathFromRoot value="8,0"/>
+                    <properties name="assignment">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>0</init>
+                            <expr>currentSelectedTab + 1</expr>
+                        </input>
+                        <output>
+                            <expr>SelectedTab</expr>
+                        </output>
+                    </properties>
+                </assignment>
+                <referenceContainer oid="1b2a607c-27da-42e8-9f21-72852a131698">
+                    <pathFromRoot value="9,0"/>
+                    <properties modular="false" name="Panel">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                                <expr>(TabPosition = 3) ? ButtonSize : 0.0</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                                <expr>(TabPosition = 2) ? ButtonSize : 0.0</expr>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="Panel.ogfx" path="."/>
+                        <crc value="3386670974"/>
+                        <inputParameters>
+                            <parameter control="false" name="SizeX" oid="5e5d4e1a-8978-471c-8376-f3058e20d4ec" type="real">
+                                <expr>(TabPosition &lt;= 2) ? SizeX : (SizeX - ButtonSize)</expr>
+                                <init>300.0</init>
+                            </parameter>
+                            <parameter control="false" name="SizeY" oid="c12f9a86-59cf-49d8-aa2a-9be4b984ae30" type="real">
+                                <expr>(TabPosition &gt;= 3) ? SizeY : (SizeY - ButtonSize)</expr>
+                                <init>150.0</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="bbfeb0d1-e2b9-4900-90b6-037a6de17aef" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>0</init>
+                            </parameter>
+                            <parameter control="false" name="BackColor" oid="9d1bcd1b-f0eb-465c-be2d-b53d464b60c2" representation="color" type="int">
+                                <expr>BackColor</expr>
+                                <init>6</init>
+                            </parameter>
+                        </inputParameters>
+                    </properties>
+                    <children>
+                        <condContainer oid="b54161f2-ed1d-4da2-bbcb-13de055baea0">
+                            <pathFromRoot value="0,9,0"/>
+                            <properties name="conditional_group">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <index allVisible="false">
+                                    <init>default</init>
+                                    <expr>SelectedTab</expr>
+                                </index>
+                                <indexes default="1">
+                                    <index value="1"/>
+                                    <index value="2"/>
+                                    <index value="3"/>
+                                    <index value="4"/>
+                                    <index value="5"/>
+                                    <index value="6"/>
+                                    <index value="7"/>
+                                    <index value="8"/>
+                                    <index value="9"/>
+                                    <index value="10"/>
+                                    <index value="11"/>
+                                    <index value="12"/>
+                                    <index value="13"/>
+                                    <index value="14"/>
+                                    <index value="15"/>
+                                    <index value="16"/>
+                                </indexes>
+                            </properties>
+                            <children>
+                                <hook oid="063bb09d-864f-4234-858b-494ab970e2f2">
+                                    <pathFromRoot value="0,0,9,0"/>
+                                    <properties name="hook">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>0</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="f43e9cb0-4a62-4129-8260-1f802cceb78c">
+                                    <pathFromRoot value="1,0,9,0"/>
+                                    <properties name="hook1">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>1</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="bfe535f4-dd1d-4ad8-b5b5-e2b65ad753d3">
+                                    <pathFromRoot value="2,0,9,0"/>
+                                    <properties name="hook2">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>2</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="8878ecd7-0029-48d3-bf6f-1f98ac85ff74">
+                                    <pathFromRoot value="3,0,9,0"/>
+                                    <properties name="hook3">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>3</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="14bfe3cf-8ac3-4399-9cd7-5e29db6cdb40">
+                                    <pathFromRoot value="4,0,9,0"/>
+                                    <properties name="hook4">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>4</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="ab5b4f68-5c0c-4dd0-b4c6-c5d6e0e8af55">
+                                    <pathFromRoot value="5,0,9,0"/>
+                                    <properties name="hook5">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>5</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="b80b4ba6-8069-4ca8-83ec-8439e0edada1">
+                                    <pathFromRoot value="6,0,9,0"/>
+                                    <properties name="hook6">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>6</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="59e0abfd-9965-4b7b-90b7-cb90b32861aa">
+                                    <pathFromRoot value="7,0,9,0"/>
+                                    <properties name="hook7">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>7</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="7f0a91ad-deac-4e50-a4bf-6b53ebe44ac8">
+                                    <pathFromRoot value="8,0,9,0"/>
+                                    <properties name="hook8">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>8</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="7a503681-993c-481f-8da0-17f57db524a1">
+                                    <pathFromRoot value="9,0,9,0"/>
+                                    <properties name="hook9">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>9</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="1c22e3f9-e80e-42d9-af39-b7fdeb3905b0">
+                                    <pathFromRoot value="10,0,9,0"/>
+                                    <properties name="hook10">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>10</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="16af591e-1ada-481a-a66e-2baff56429b7">
+                                    <pathFromRoot value="11,0,9,0"/>
+                                    <properties name="hook11">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>11</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="b049e298-d71a-4b88-a0b3-e8c4700a4ea1">
+                                    <pathFromRoot value="12,0,9,0"/>
+                                    <properties name="hook12">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>12</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="1abeebd3-f183-4e1d-a8a5-1e34704b39ac">
+                                    <pathFromRoot value="13,0,9,0"/>
+                                    <properties name="hook13">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>13</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="45f18965-f71a-48ea-8115-e8b0b633fac4">
+                                    <pathFromRoot value="14,0,9,0"/>
+                                    <properties name="hook14">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>14</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                                <hook oid="33d2bf82-61e8-49f0-b692-a6ac034bac18">
+                                    <pathFromRoot value="15,0,9,0"/>
+                                    <properties name="hook15">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>15</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                            </children>
+                        </condContainer>
+                    </children>
+                </referenceContainer>
+                <imported oid="dd8f3ca5-8198-424c-b625-489cb169cc53">
+                    <pathFromRoot value="10,0"/>
+                    <properties name="ReleaseOverride">
+                        <function name="ReleaseOverride"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>true</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters/>
+                        <outputParameters/>
+                    </properties>
+                </imported>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 1473197230 -->
+

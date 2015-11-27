@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="94" width="128">
+            <raw numberOfBytes="1554">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,94,8,2,0,0,0,100,104,-117,-61,0,0,5,-39,73,68,65,84,120,-38,-19,-99,121,111,84,85,24,-121,-97,-74,88,-96,-45,-94,32,6,108,41,-32,-62,86,40,-35,75,87,-90,116,-93,-128,40,24,118,-120,-127,80,-64,64,91,-86,45,109,5,-53,78,75,-127,46,32,66,1,-127,8,101,17,-118,65,66,4,-62,63,66,20,53,96,-128,8,86,37,-118,-118,18,19,-123,-8,17,60,119,-122,40,34,93,-90,51,119,102,-18,-36,-9,-51,-13,9,-98,-68,-13,59,-17,61,-25,-34,51,32,37,37,37,37,-27,13,21,0,-59,16,33,34,60,84,125,122,16
+,-3,37,-44,-126,-97,-56,112,123,-123,6,-79,-41,-54,27,13,60,113,13,-62,-60,-121,123,107,64,48,77,99,56,59,-114,-61,-77,-24,119,11,-26,-118,18,-9,-10,-2,126,43,31,-25,61,-32,-27,-109,112,86,82,-56,93,21,102,97,87,58,-89,-13,-2,101,99,41,-35,-17,-61,-13,-30,70,-1,-22,31,-52,62,43,-89,-58,-2,-121,35,-81,18,-85,-106,-30,-75,-74,-95,72,74,-41,-34,-33,51,-6,81,-5,118,-106,52,-64,101,-24,43,-110,116,-85,126,22,26,-45,31,111,95,-47,52,21,-117,74,-95,-15,-30,73,-73,-28,-39,111,109,-43,-66,-30,-93,60,114,-50,-64,113,-24,34,-74,116,-24,-3,-42,-110,-25,97,42,43,-79,-76,64,-92,8,115,-75,-3,-99,105
+,-100,-52,109,-97,-61,-109,24,116,3,-54,-60,-103,-21,42,60,-104,-9,-84,124,-104,-37,81,-26,54,66,-117,-92,-112,-21,122,-1,-35,52,-102,115,28,-96,110,1,-67,-2,-128,84,-111,-25,124,-17,43,-5,-87,52,103,59,-58,-31,-15,-116,62,15,59,33,80,20,58,103,127,79,-70,-61,-10,-19,84,-106,-61,109,24,36,22,-99,73,-98,-44,78,-38,87,28,25,79,-97,-33,96,-95,-120,-20,-20,-68,-81,-20,31,-49,118,-118,41,7,-15,-5,4,-126,68,-89,-29,-67,-65,123,52,-57,-78,-99,-91,122,49,61,-65,-121,76,49,-22,-96,-3,109,41,28,-51,114,1,77,121,-60,126,6,-11,-78,65,-19,72,-14,40,-5,71,-78,92,70,-31,58,-8,29,122,-120,-38,-114,-11
+,-2,-114,52,14,101,-70,-110,109,-45,9,-1,17,102,-117,-35,14,-40,-81,79,118,-79,125,-59,-127,28,38,28,-123,19,16,34,-114,-37,75,30,-105,-37,-73,83,-107,-113,-65,122,42,78,16,-51,-83,84,-104,-123,-99,-23,122,-39,87,52,101,51,-28,58,84,-117,-23,86,118,-39,-22,-110,105,-54,-44,-105,121,-11,116,-7,10,122,-117,-17,-1,37,79,67,10,7,-57,-24,-50,-106,57,-12,81,15,4,-45,68,-7,67,21,26,-60,-10,84,-34,-49,112,7,-5,51,-55,60,105,91,-118,101,-125,-6,-97,-103,103,-45,40,-19,112,-47,109,84,20,17,112,95,-3,-24,-60,-67,45,121,84,-18,-17,-77,-70,-107,119,38,50,-28,42,-108,-53,-52,99,97,107,-118,-69,-19,43,-10
+,102,48,107,43,-2,23,-51,-3,-58,74,-72,45,121,-36,111,-33,-50,-106,41,4,-34,-125,60,-77,-38,31,16,-84,61,-21,122,-54,-66,-99,81,-25,-31,-96,105,119,26,82,-76,-105,-56,61,75,-63,114,-70,-75,-64,96,-13,-39,-81,78,-44,94,-23,-15,56,-75,-81,16,126,19,10,-51,-76,65,-83,102,-98,-38,36,118,-89,123,11,-109,118,-63,37,-24,102,-90,85,-73,49,-35,-117,88,61,7,-53,-97,-112,108,-114,-119,115,67,60,-115,105,-34,-59,-42,28,-94,47,-40,-114,-55,-4,77,-112,60,-34,102,-33,-50,-62,21,4,124,13,47,-6,-12,30,-25,-90,68,47,-75,111,-1,17,-12,-70,3,-13,125,56,121,18,-76,23,105,-67,-103,-52,15,-32,-100,47,-50,66,42
+,121,-74,36,105,71,-69,94,78,-23,34,122,-36,-126,20,-97,75,30,-43,-5,-37,83,13,64,109,22,67,63,-121,26,31,-38,-96,14,13,98,117,-100,118,-76,107,20,102,86,-61,-73,-66,114,88,-81,-110,-89,102,-108,-74,-51,105,32,-42,-67,68,-17,95,97,-86,79,-40,95,27,111,48,-5,-118,58,43,105,-51,-8,53,67,119,-125,-49,60,42,121,12,103,-33,78,65,1,-127,106,41,-114,-110,-28,-15,28,3,110,-64,106,-61,-38,95,19,71,67,-78,-79,-103,-44,-128,-1,53,3,-66,-62,-34,-49,-62,-54,88,-22,-110,12,79,-39,108,122,125,7,19,-116,-74,-57,89,-107,-96,109,-11,-8,0,-101,-109,73,56,5,77,-48,-43,56,-55,-77,34,70,-37,100,-10,25
+,-14,-117,-16,-65,-85,-38,-54,32,-55,-29,99,-10,21,107,-78,9,107,-127,37,70,-80,-65,62,-34,-41,-20,43,106,-110,-56,-37,-127,-1,5,120,90,-110,-57,67,-108,-52,-64,114,27,-78,-68,120,-43,125,-37,119,-19,-37,-119,-72,104,-5,-80,-37,59,-109,103,93,60,53,-119,62,-50,-20,10,-70,-36,-127,80,-17,75,-98,-118,104,-86,18,125,-97,-14,-119,-124,94,-121,124,111,58,-91,81,-67,-81,-20,-81,79,48,11,-42,125,112,6,-126,-67,102,127,127,85,-84,54,-10,-104,-121,-62,-23,4,-2,5,-79,-34,-111,60,101,35,-51,101,95,-79,50,-115,-63,-97,-62,70,79,-65,-79,-94,102,-98,-118,40,-45,-39,-73,51,121,13,1,87,60,-6,29,-121,125,-105,-51,-100,-10
+,21,21,-71,-12,-4,1,102,121,46,121,74,71,106,-57,91,102,38,-15,24,-100,-14,68,10,-87,-28,89,22,-91,29,111,-103,-100,-71,-117,-24,122,-41,-19,127,69,-96,-110,-25,-83,104,86,-59,9,-108,103,-16,-126,90,-118,87,-71,-15,-2,-29,-16,96,-118,35,-87,-116,21,30,48,-82,10,-82,-72,-21,-61,110,-43,-5,42,-9,69,-6,-61,20,-113,37,-24,62,-116,115,-117,-3,-78,40,49,-2,40,-53,19,-119,57,-127,-33,33,-99,47,93,-108,-28,105,-125,25,69,4,-34,-48,-13,-2,99,101,-65,84,122,-65,117,-54,83,-23,123,19,74,116,-77,95,50,82,59,96,17,-38,32,-77,30,-82,-22,112,88,-81,-26,-3,-62,-31,-38,-48,41,-76,-51,-4,105,-124,-4,4
+,86,87,-81,-70,-59,35,-76,77,102,-95,93,74,19,-119,56,-19,-46,-5,-113,85,-17,23,-115,-48,-58,30,-95,-125,76,89,2,-22,71,-16,-100,-117,122,127,113,-124,56,117,-116,-91,-87,60,-11,-77,43,-66,38,-45,-110,39,82,-124,58,-52,-78,24,82,26,-15,59,-25,-36,49,89,-1,96,73,-98,-50,-13,-38,76,-126,-100,-71,-1,-40,-98,60,-53,-94,-124,78,82,18,-57,-64,75,80,-41,-39,-81,39,-106,-114,-48,-74,122,4,103,-104,80,-122,-1,47,-16,-92,-29,79,91,-86,-9,-33,-116,20,-100,37,127,44,-67,-65,113,-16,-2,99,-43,-5,11,-122,105,11,-81,-32,60,75,-93,-119,57,0,-51,29,94,-118,-107,-3,-126,-31,-38,3,-105,-32,42,-26,76,-58,-17,30
+,-60,116,108,-26,121,125,-104,40,115,49,-123,49,-124,93,-74,-3,77,104,-69,-67,-65,112,-88,-8,-46,-127,72,50,54,16,-16,5,60,-45,-90,-3,66,73,30,-35,-104,-105,75,-56,45,-104,-34,-6,-52,-93,86,93,-11,-64,37,-24,68,97,36,17,-51,-74,-5,-113,31,91,3,67,-120,-24,41,-24,-53,-77,105,70,-8,-110,73,74,74,-54,28,-11,55,-12,-125,39,91,117,-104,-12,-66,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="Radius" oid="4ed8a612-9d79-40e8-8d44-1a67e1e566bb" type="real">
+                <init>200.0</init>
+            </input>
+            <input name="BackColor" oid="d30798be-38aa-4590-80a4-3713c5374a71" representation="color" type="int">
+                <init>25</init>
+            </input>
+            <input name="OutlineColor" oid="4a6485d8-3221-4f56-b7b9-bd2f337f5152" representation="color" type="int">
+                <init>41</init>
+            </input>
+            <input name="Cos1" oid="6098717e-1e7e-4e34-9032-e0176b5b6377" type="real">
+                <init>1.0</init>
+            </input>
+            <input name="Cos2" oid="c22100d9-103b-4cf5-bfdc-ab6bbd45ded8" type="real">
+                <init>0.72</init>
+            </input>
+            <input name="Sin1" oid="ebbebdb0-8ec5-4fbf-bac3-4c8aa2376088" type="real">
+                <init>0.0</init>
+            </input>
+            <input name="Sin2" oid="d68284cb-f131-4763-96b4-dc3c22ae4d4c" type="real">
+                <init>0.72</init>
+            </input>
+            <input name="Texture" oid="e0582e9e-0471-44e6-a1e1-95c03e3c67cf" representation="texture" type="int">
+                <init>240</init>
+            </input>
+            <input name="StarRadius" oid="9dd63576-dc17-4575-ab3c-70893c311bd8" type="real">
+                <init>150.0</init>
+            </input>
+            <input name="Star" oid="884ecc69-f9e1-415b-a5cd-b205aa22cdde" type="bool">
+                <init>false</init>
+            </input>
+            <input name="StarCosine" oid="e9a20614-8dac-47b3-ab36-b9c946d5eda0" type="real">
+                <init>0.85</init>
+            </input>
+            <input name="StarSine" oid="8a869e44-8dfa-46f5-85b8-d181ec49e304" type="real">
+                <init>0.37</init>
+            </input>
+        </inputs>
+    </declaration>
+    <children>
+        <container oid="2c799372-fa48-4716-9c93-e93181a7e67c">
+            <pathFromRoot value="0"/>
+            <properties name="Polygon_element">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="206.0" maxY="150.0" minX="-6.0" minY="-6.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <condContainer oid="23de04e7-4c55-43e9-990b-f6b556ed11d4">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="conditional group">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>1</init>
+                            <expr>Star ? 2 : 1</expr>
+                        </index>
+                        <indexes default="1">
+                            <index value="1"/>
+                            <index value="2"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <container oid="25a32b1b-8425-42b2-8d3d-6f8e1cbf450a">
+                            <pathFromRoot value="0,0,0"/>
+                            <properties name="Polygon">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="206.0" maxY="150.0" minX="-6.0" minY="-6.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <shape oid="b783d34a-19e0-4dd6-8698-29ce9a04439d">
+                                    <pathFromRoot value="0,0,0,0"/>
+                                    <properties name="with_texture">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>Texture &gt; 0</expr>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </y>
+                                                <u>
+                                                    <init>0.5</init>
+                                                    <expr>0.5</expr>
+                                                </u>
+                                                <v>
+                                                    <init>0.5</init>
+                                                    <expr>0.5</expr>
+                                                </v>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>200.0</init>
+                                                    <expr>Radius * Cos1</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>Radius * Sin1</expr>
+                                                </y>
+                                                <u>
+                                                    <init>1.0</init>
+                                                    <expr>0.5 + (Cos1 / 2.0)</expr>
+                                                </u>
+                                                <v>
+                                                    <init>0.5</init>
+                                                    <expr>0.5 + (Sin1 / 2.0)</expr>
+                                                </v>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Cos2</expr>
+                                                </x>
+                                                <y>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Sin2</expr>
+                                                </y>
+                                                <u>
+                                                    <init>0.86</init>
+                                                    <expr>0.5 + (Cos2 / 2.0)</expr>
+                                                </u>
+                                                <v>
+                                                    <init>0.86</init>
+                                                    <expr>0.5 + (Sin2 / 2.0)</expr>
+                                                </v>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>true</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>25</init>
+                                            <expr>BackColor</expr>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>true</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>240</init>
+                                                <expr>Texture</expr>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>true</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </shape>
+                                <shape oid="c9f8f43d-b54f-4f4a-9754-61d649239106">
+                                    <pathFromRoot value="1,0,0,0"/>
+                                    <properties name="without_texture">
+                                        <visible>
+                                            <init>false</init>
+                                            <expr>Texture &lt;= 0</expr>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>200.0</init>
+                                                    <expr>Radius * Cos1</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>Radius * Sin1</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Cos2</expr>
+                                                </x>
+                                                <y>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Sin2</expr>
+                                                </y>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>true</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>25</init>
+                                            <expr>BackColor</expr>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>false</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </shape>
+                                <line oid="1654650b-2be6-44b9-b953-6e4c9a9f6782">
+                                    <pathFromRoot value="2,0,0,0"/>
+                                    <properties name="line">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>200.0</init>
+                                                    <expr>Radius * Cos1</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>Radius * Sin1</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Cos2</expr>
+                                                </x>
+                                                <y>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Sin2</expr>
+                                                </y>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>41</init>
+                                            <expr>OutlineColor</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                    </properties>
+                                </line>
+                            </children>
+                        </container>
+                        <container oid="98b1ced0-2395-4206-98de-245b41c78116">
+                            <pathFromRoot value="1,0,0"/>
+                            <properties name="Star">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="206.0" maxY="150.0" minX="-6.0" minY="-6.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <shape oid="6c0df332-91f3-47ad-9117-9cb627f57712">
+                                    <pathFromRoot value="0,1,0,0"/>
+                                    <properties name="with_texture">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>Texture &gt; 0</expr>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </y>
+                                                <u>
+                                                    <init>0.5</init>
+                                                    <expr>0.5</expr>
+                                                </u>
+                                                <v>
+                                                    <init>0.5</init>
+                                                    <expr>0.5</expr>
+                                                </v>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>200.0</init>
+                                                    <expr>Radius * Cos1</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>Radius * Sin1</expr>
+                                                </y>
+                                                <u>
+                                                    <init>1.0</init>
+                                                    <expr>0.5 + (Cos1 / 2.0)</expr>
+                                                </u>
+                                                <v>
+                                                    <init>0.5</init>
+                                                    <expr>0.5 + (Sin1 / 2.0)</expr>
+                                                </v>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>127.5</init>
+                                                    <expr>StarRadius * StarCosine</expr>
+                                                </x>
+                                                <y>
+                                                    <init>55.5</init>
+                                                    <expr>StarRadius * StarSine</expr>
+                                                </y>
+                                                <u>
+                                                    <init>0.694</init>
+                                                    <expr>0.5 + ((StarCosine / 2.0) * (StarRadius / Radius))</expr>
+                                                </u>
+                                                <v>
+                                                    <init>0.514</init>
+                                                    <expr>0.5 + ((StarSine / 2.0) * (StarRadius / Radius))</expr>
+                                                </v>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Cos2</expr>
+                                                </x>
+                                                <y>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Sin2</expr>
+                                                </y>
+                                                <u>
+                                                    <init>0.86</init>
+                                                    <expr>0.5 + (Cos2 / 2.0)</expr>
+                                                </u>
+                                                <v>
+                                                    <init>0.86</init>
+                                                    <expr>0.5 + (Sin2 / 2.0)</expr>
+                                                </v>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>true</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>25</init>
+                                            <expr>BackColor</expr>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>true</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>240</init>
+                                                <expr>Texture</expr>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>true</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </shape>
+                                <shape oid="036cfe1a-087a-4dbf-8bb1-678e230f708d">
+                                    <pathFromRoot value="1,1,0,0"/>
+                                    <properties name="without_texture">
+                                        <visible>
+                                            <init>false</init>
+                                            <expr>Texture &lt;= 0</expr>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>200.0</init>
+                                                    <expr>Radius * Cos1</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>Radius * Sin1</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>127.5</init>
+                                                    <expr>StarRadius * StarCosine</expr>
+                                                </x>
+                                                <y>
+                                                    <init>55.5</init>
+                                                    <expr>StarRadius * StarSine</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Cos2</expr>
+                                                </x>
+                                                <y>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Sin2</expr>
+                                                </y>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>true</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>25</init>
+                                            <expr>BackColor</expr>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>false</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </shape>
+                                <line oid="d271f31d-80c9-4966-be48-65ba1606daa4">
+                                    <pathFromRoot value="2,1,0,0"/>
+                                    <properties name="line">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>200.0</init>
+                                                    <expr>Radius * Cos1</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>Radius * Sin1</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>127.5</init>
+                                                    <expr>StarRadius * StarCosine</expr>
+                                                </x>
+                                                <y>
+                                                    <init>55.5</init>
+                                                    <expr>StarRadius * StarSine</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Cos2</expr>
+                                                </x>
+                                                <y>
+                                                    <init>144.0</init>
+                                                    <expr>Radius * Sin2</expr>
+                                                </y>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>41</init>
+                                            <expr>OutlineColor</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                    </properties>
+                                </line>
+                            </children>
+                        </container>
+                    </children>
+                </condContainer>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 3878593568 -->
+

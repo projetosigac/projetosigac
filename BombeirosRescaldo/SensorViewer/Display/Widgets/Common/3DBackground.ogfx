@@ -1,0 +1,1875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="89" width="128">
+            <raw numberOfBytes="520">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,89,8,2,0,0,0,121,109,-69,123,0,0,1,-49,73,68,65,84,120,-38,-19,-35,-71,110,-62,64,24,69,-31,32,33,11,76,11,-95,-29,1,88,-67,-127,67,-10,-60,-39,43,-98,-128,-34,-20,123,-119,8,-48,-62,51,103,-108,-76,-15,82,-28,-105,-116,114,78,-21,-18,126,-42,84,35,-51,-39,25,17,17,-111,42,-107,74,-27,114,-71,98,-79,120,78,2,21,10,-123,76,38,-93,70,14,4,-48,117,-67,-45,-23,28,14,-121,79,18,104,-67,94,-69,-82,-85,105,90,32,-128,34,82,-21,31,-113,71,-97,4,-22,118,-69,-98,-25,101,-77,-39,64,-128,124,62,-65
+,-35,110,123,-67,94,-101,4,-86,84,42,-106,101,-87,83,8,-128,-60,3,92,-110,64,0,0,0,64,28,-128,126,-65,127,69,2,85,-85,85,0,0,0,0,0,0,0,0,32,-55,0,-125,-63,-32,-102,4,-86,-43,106,0,0,0,64,28,-128,27,18,8,0,0,0,-120,3,48,28,14,111,73,-96,122,-67,14,0,0,0,0,0,0,0,0,0,0,0,0,73,5,24,-115,70,119,36,80,-93,-47,0,-32,68,0,-18,73,32,0,78,4,96,60,30,51,-106,68,-122,97,68,3,-20,118,59,5,-16,64,2,41,0,-37,-74,1,0,0,0,0,0,0,0,0,0,0,-8,29,96,50,-103,60,-110,64,-90,105,2,0,0,0,-111,0,-45,-23,-44,35
+,-127,44,-53,2,0,0,0,-30,0,60,-111,64,113,1,102,-77,25,99,73,100,127,7,0,0,0,0,0,0,0,0,36,22,96,62,-97,63,-109,64,-114,-29,0,0,0,0,-111,0,-117,-59,-30,-123,4,106,54,-101,0,0,0,64,28,-128,87,18,8,0,0,0,0,0,0,0,0,0,0,-128,48,-128,-27,114,-7,70,2,-75,90,45,0,18,15,-80,-33,-17,1,-112,3,112,28,39,26,96,-75,90,-67,-109,64,-82,-21,2,112,34,0,31,36,16,0,0,0,0,0,0,0,0,0,0,0,-127,0,-101,-51,-58,-9,-3,11,18,-88,92,46,27,-122,17,6,-96,-66,-75,-37,-19,-97,27,44,-12,-25,-103,-90,89,42,-107,-46,-23,116,-40,123,-62,-102
+,-90,-23,-70,-98,37,-127,-44,-1,29,-74,62,17,17,-3,-73,-66,0,-100,76,23,-103,-66,-58,37,61,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="1567db4f-d5b7-45ac-a492-37a604b6c49a" type="real">
+                <control oid="3afec7db-7fe8-44de-be77-32a2103b4540" plug="thirdPoint_x"/>
+                <init>120.0</init>
+            </input>
+            <input name="SizeY" oid="ff8689f8-eca1-414d-bbe3-d097ae184da7" type="real">
+                <control oid="3afec7db-7fe8-44de-be77-32a2103b4540" plug="thirdPoint_y"/>
+                <init>80.0</init>
+            </input>
+            <input name="BackgroundColor" oid="e34cba86-f2b3-4943-8d08-71b1c1a3fa67" representation="color" type="int">
+                <init>6</init>
+            </input>
+            <input name="PoppingOutward" oid="81dadf9e-8012-4548-8eb4-2ef402242f93" type="bool">
+                <init>true</init>
+            </input>
+            <input name="Enable" oid="40bccd91-f2ea-4227-a3a6-e2d66c48c81c" type="bool">
+                <init>true</init>
+            </input>
+            <input name="Style" oid="3c43a032-be6b-4a91-a8df-8985c699dcde" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="DownHalo" oid="2db0af55-687b-48ec-8de2-73996e59d8fe" type="bool">
+                <init>false</init>
+            </input>
+        </inputs>
+        <locals>
+            <local memory="true" name="ellipse_top_right" oid="beab36e5-7c40-40c4-bae2-aff210912e7e" type="real">
+                <init>0.0</init>
+            </local>
+            <local memory="true" name="ellipse_bottom_left" oid="12186753-6594-4ddd-b7e0-dc08ffafcfd2" type="real">
+                <init>0.0</init>
+            </local>
+        </locals>
+        <localConstants>
+            <localConstant name="OutlineRadius" oid="6b107942-55f4-45f2-85c4-0818459cad2b" type="real">
+                <init>8.0</init>
+            </localConstant>
+            <localConstant name="UnLit_color" oid="27151eac-80b4-4845-8224-e2b8b573c8c3" representation="color" type="int">
+                <init>1</init>
+            </localConstant>
+            <localConstant name="Mid_color" oid="568d59d8-c42e-42e8-b70b-638ea28a6e53" representation="color" type="int">
+                <init>6</init>
+            </localConstant>
+            <localConstant name="Lit_color" oid="9e6734af-8a93-44ef-b313-8513f36dbdde" representation="color" type="int">
+                <init>5</init>
+            </localConstant>
+            <localConstant name="TopDark" oid="c5dd1ff2-d95f-4201-979a-9883f1c8d016" representation="texture" type="int">
+                <init>242</init>
+            </localConstant>
+            <localConstant name="inv_sqrt2" oid="6c57af79-c5da-4804-95c1-cd3e72d70a39" type="real">
+                <init>0.707</init>
+            </localConstant>
+            <localConstant name="BottomDark" oid="01f328f4-ae84-4eb5-92f1-f58029d42089" representation="texture" type="int">
+                <init>249</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="a705ac84-5086-4254-b32b-749d616f7b39">
+            <pathFromRoot value="0"/>
+            <properties name="3DBackground">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="126.0" maxY="27.0" minX="-6.0" minY="-6.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <condContainer oid="4910101e-a0c0-49b4-b9c1-aedf8bcaa5d5">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="Style">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>Style</expr>
+                        </index>
+                        <indexes default="1">
+                            <index value="1"/>
+                            <index value="2"/>
+                            <index value="3"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <container oid="24250e8e-989a-4635-9cb2-a32533ad4866">
+                            <pathFromRoot value="0,0,0"/>
+                            <properties name="RECT">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="126.0" maxY="27.0" minX="-6.0" minY="-6.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <rectangle oid="3afec7db-7fe8-44de-be77-32a2103b4540">
+                                    <pathFromRoot value="0,0,0,0"/>
+                                    <properties name="Background">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <firstPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </firstPoint>
+                                        <thirdPoint>
+                                            <x>
+                                                <init>120.0</init>
+                                                <expr>SizeX</expr>
+                                            </x>
+                                            <y>
+                                                <init>80.0</init>
+                                                <expr>SizeY</expr>
+                                            </y>
+                                        </thirdPoint>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>6</init>
+                                            <expr>BackgroundColor</expr>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>false</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="0.95" vertAlign="middle" vertPattern="0.95">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </rectangle>
+                                <rectangle oid="19746042-3484-4317-a5f7-6b14000a2c6a">
+                                    <pathFromRoot value="1,0,0,0"/>
+                                    <properties name="Button">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>Enable and (BackgroundColor &gt; 0)</expr>
+                                        </visible>
+                                        <firstPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </firstPoint>
+                                        <thirdPoint>
+                                            <x>
+                                                <init>120.0</init>
+                                                <expr>SizeX</expr>
+                                            </x>
+                                            <y>
+                                                <init>80.0</init>
+                                                <expr>SizeY</expr>
+                                            </y>
+                                        </thirdPoint>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>false</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="0.95" vertAlign="middle" vertPattern="0.95">
+                                            <textureId>
+                                                <init>242</init>
+                                                <expr>PoppingOutward ? TopDark : BottomDark</expr>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>true</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </rectangle>
+                                <rectangle oid="5c73016a-4162-40b7-b1dc-aca3b001e064">
+                                    <pathFromRoot value="2,0,0,0"/>
+                                    <properties name="DownHalo">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>DownHalo or (not Enable)</expr>
+                                        </visible>
+                                        <firstPoint>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </firstPoint>
+                                        <thirdPoint>
+                                            <x>
+                                                <init>120.0</init>
+                                                <expr>SizeX</expr>
+                                            </x>
+                                            <y>
+                                                <init>80.0</init>
+                                                <expr>SizeY</expr>
+                                            </y>
+                                        </thirdPoint>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>64</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>64</init>
+                                            <expr>(not Enable) ? 128 : 64</expr>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>false</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>false</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="0.95" vertAlign="middle" vertPattern="0.95">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </rectangle>
+                                <line oid="d3859228-a7bb-4212-afeb-338522352a10">
+                                    <pathFromRoot value="3,0,0,0"/>
+                                    <properties name="BorderBR">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>1</init>
+                                            <expr>PoppingOutward ? UnLit_color : Lit_color</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>128</init>
+                                        </outlineOpacity>
+                                    </properties>
+                                </line>
+                                <line oid="50baa3da-ee06-4bee-998b-f202b647acc4">
+                                    <pathFromRoot value="4,0,0,0"/>
+                                    <properties name="BorderTL">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>2</init>
+                                            <expr>PoppingOutward ? Lit_color : UnLit_color</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>128</init>
+                                        </outlineOpacity>
+                                    </properties>
+                                </line>
+                            </children>
+                        </container>
+                        <container oid="49f63596-1643-472c-90ce-c73eebbd4bd5">
+                            <pathFromRoot value="1,0,0"/>
+                            <properties name="RND">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="125.99999" maxY="27.0" minX="-6.106574" minY="-6.106574">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <shape oid="b028d039-b10f-4f42-a5bc-21228369869f">
+                                    <pathFromRoot value="0,1,0,0"/>
+                                    <properties name="Background">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                </x>
+                                                <y>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                </x>
+                                                <y>
+                                                    <init>72.0</init>
+                                                    <expr>SizeY - OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>112.0</init>
+                                                    <expr>SizeX - OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>72.0</init>
+                                                    <expr>SizeY - OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>112.0</init>
+                                                    <expr>SizeX - OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                        </points>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>6</init>
+                                            <expr>BackgroundColor</expr>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>false</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>false</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </shape>
+                                <shape oid="a242a47e-4712-4c1d-bcd5-26f42b33aea0">
+                                    <pathFromRoot value="1,1,0,0"/>
+                                    <properties name="Button">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>Enable and (BackgroundColor &gt; 0)</expr>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                </x>
+                                                <y>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                </x>
+                                                <y>
+                                                    <init>72.0</init>
+                                                    <expr>SizeY - OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>112.0</init>
+                                                    <expr>SizeX - OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>72.0</init>
+                                                    <expr>SizeY - OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>112.0</init>
+                                                    <expr>SizeX - OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                        </points>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>false</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>false</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>242</init>
+                                                <expr>PoppingOutward ? TopDark : BottomDark</expr>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>true</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </shape>
+                                <shape oid="59fb28e8-e314-49e2-8224-6c00c5b0f828">
+                                    <pathFromRoot value="2,1,0,0"/>
+                                    <properties name="DownHalo">
+                                        <visible>
+                                            <init>false</init>
+                                            <expr>DownHalo or (not Enable)</expr>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                </x>
+                                                <y>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                </x>
+                                                <y>
+                                                    <init>72.0</init>
+                                                    <expr>SizeY - OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>112.0</init>
+                                                    <expr>SizeX - OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>72.0</init>
+                                                    <expr>SizeY - OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>112.0</init>
+                                                    <expr>SizeX - OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                        </points>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>64</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>64</init>
+                                            <expr>(not Enable) ? 128 : 64</expr>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>false</init>
+                                        </polygonSmooth>
+                                        <textureControl>
+                                            <init>false</init>
+                                        </textureControl>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <tessellate>
+                                            <init>false</init>
+                                        </tessellate>
+                                    </properties>
+                                </shape>
+                                <line oid="68cbadf8-a1ff-4e45-b505-6007b4b3d66b">
+                                    <pathFromRoot value="3,1,0,0"/>
+                                    <properties name="BorderBR">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>2.344</init>
+                                                    <expr>OutlineRadius * (1.0 - inv_sqrt2)</expr>
+                                                </x>
+                                                <y>
+                                                    <init>2.344</init>
+                                                    <expr>OutlineRadius * (1.0 - inv_sqrt2)</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="false"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>45.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>112.0</init>
+                                                    <expr>SizeX - OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="false"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>120.0</init>
+                                                    <expr>SizeX</expr>
+                                                </x>
+                                                <y>
+                                                    <init>72.0</init>
+                                                    <expr>SizeY - OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="false"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>45.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>117.656</init>
+                                                    <expr>SizeX - (OutlineRadius * (1.0 - inv_sqrt2))</expr>
+                                                </x>
+                                                <y>
+                                                    <init>77.656</init>
+                                                    <expr>SizeY - (OutlineRadius * (1.0 - inv_sqrt2))</expr>
+                                                </y>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>square</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>1</init>
+                                            <expr>PoppingOutward ? UnLit_color : Lit_color</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                    </properties>
+                                </line>
+                                <line oid="c61e5425-baeb-4b3e-8db8-8a17edddb777">
+                                    <pathFromRoot value="4,1,0,0"/>
+                                    <properties name="BorderTL">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <points>
+                                            <point>
+                                                <x>
+                                                    <init>2.344</init>
+                                                    <expr>OutlineRadius * (1.0 - inv_sqrt2)</expr>
+                                                </x>
+                                                <y>
+                                                    <init>2.344</init>
+                                                    <expr>OutlineRadius * (1.0 - inv_sqrt2)</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>45.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </x>
+                                                <y>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>0.0</init>
+                                                    <expr>0.0</expr>
+                                                </x>
+                                                <y>
+                                                    <init>72.0</init>
+                                                    <expr>SizeY - OutlineRadius</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>90.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>8.0</init>
+                                                    <expr>OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                            <point>
+                                                <x>
+                                                    <init>112.0</init>
+                                                    <expr>SizeX - OutlineRadius</expr>
+                                                </x>
+                                                <y>
+                                                    <init>80.0</init>
+                                                    <expr>SizeY</expr>
+                                                </y>
+                                            </point>
+                                            <arcSegment>
+                                                <orientation clockwise="true"/>
+                                                <angle>
+                                                    <angle>
+                                                        <init>45.0</init>
+                                                    </angle>
+                                                </angle>
+                                            </arcSegment>
+                                            <point>
+                                                <x>
+                                                    <init>117.656</init>
+                                                    <expr>SizeX - (OutlineRadius * (1.0 - inv_sqrt2))</expr>
+                                                </x>
+                                                <y>
+                                                    <init>77.656</init>
+                                                    <expr>SizeY - (OutlineRadius * (1.0 - inv_sqrt2))</expr>
+                                                </y>
+                                            </point>
+                                        </points>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>square</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>2</init>
+                                            <expr>PoppingOutward ? Lit_color : UnLit_color</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                    </properties>
+                                </line>
+                            </children>
+                        </container>
+                        <container oid="97722f9e-a947-40c0-8ec1-6a9c5fc79e63">
+                            <pathFromRoot value="2,0,0"/>
+                            <properties name="ELLIPSE">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="126.0" maxY="27.0" minX="-6.0" minY="-6.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <assignment oid="f1cfe868-eb09-47e4-92be-86f301745337">
+                                    <pathFromRoot value="0,2,0,0"/>
+                                    <properties name="ellipse_top_right">
+                                        <enable>
+                                            <init>true</init>
+                                        </enable>
+                                        <input>
+                                            <init>23.800162512122878</init>
+                                            <expr>(SizeY &lt; SizeX) ? ((180.0 / 3.14) * (((SizeY * SizeY) / (SizeX * SizeX)) - ((((((SizeY * SizeY) * SizeY) * SizeY) * SizeY) * SizeY) / ((((((3.0 * SizeX) * SizeX) * SizeX) * SizeX) * SizeX) * SizeX)))) : (90.0 - ((180.0 / 3.14) * (((SizeX * SizeX) / (SizeY * SizeY)) - ((((((SizeX * SizeX) * SizeX) * SizeX) * SizeX) * SizeX) / ((((((3.0 * SizeY) * SizeY) * SizeY) * SizeY) * SizeY) * SizeY)))))</expr>
+                                        </input>
+                                        <output>
+                                            <expr>ellipse_top_right</expr>
+                                        </output>
+                                    </properties>
+                                </assignment>
+                                <assignment oid="c1de4cf7-f0b9-43ce-b44c-85014d68f3e3">
+                                    <pathFromRoot value="1,2,0,0"/>
+                                    <properties name="ellipse_bottom_left">
+                                        <enable>
+                                            <init>true</init>
+                                        </enable>
+                                        <input>
+                                            <init>203.80016251212288</init>
+                                            <expr>( (SizeY &lt; SizeX) ? ((180.0 / 3.14) * (((SizeY * SizeY) / (SizeX * SizeX)) - ((((((SizeY * SizeY) * SizeY) * SizeY) * SizeY) * SizeY) / ((((((3.0 * SizeX) * SizeX) * SizeX) * SizeX) * SizeX) * SizeX)))) : (90.0 - ((180.0 / 3.14) * (((SizeX * SizeX) / (SizeY * SizeY)) - ((((((SizeX * SizeX) * SizeX) * SizeX) * SizeX) * SizeX) / ((((((3.0 * SizeY) * SizeY) * SizeY) * SizeY) * SizeY) * SizeY))))) ) + 180.0</expr>
+                                        </input>
+                                        <output>
+                                            <expr>ellipse_bottom_left</expr>
+                                        </output>
+                                    </properties>
+                                </assignment>
+                                <ellipse oid="61cf310c-7f18-4362-adec-d14513188ce9">
+                                    <pathFromRoot value="2,2,0,0"/>
+                                    <properties name="Background">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <center>
+                                            <x>
+                                                <init>60.0</init>
+                                                <expr>SizeX / 2.0</expr>
+                                            </x>
+                                            <y>
+                                                <init>40.0</init>
+                                                <expr>SizeY / 2.0</expr>
+                                            </y>
+                                        </center>
+                                        <horzRadius>
+                                            <init>60.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </horzRadius>
+                                        <vertRadius>
+                                            <init>40.0</init>
+                                            <expr>SizeY / 2.0</expr>
+                                        </vertRadius>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>6</init>
+                                            <expr>BackgroundColor</expr>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>false</init>
+                                        </polygonSmooth>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                    </properties>
+                                </ellipse>
+                                <ellipse oid="c6c70236-5113-43fb-a833-d73a1e9afaa6">
+                                    <pathFromRoot value="3,2,0,0"/>
+                                    <properties name="Button">
+                                        <visible>
+                                            <init>true</init>
+                                            <expr>Enable and (BackgroundColor &gt; 0)</expr>
+                                        </visible>
+                                        <center>
+                                            <x>
+                                                <init>60.0</init>
+                                                <expr>SizeX / 2.0</expr>
+                                            </x>
+                                            <y>
+                                                <init>40.0</init>
+                                                <expr>SizeY / 2.0</expr>
+                                            </y>
+                                        </center>
+                                        <horzRadius>
+                                            <init>60.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </horzRadius>
+                                        <vertRadius>
+                                            <init>40.0</init>
+                                            <expr>SizeY / 2.0</expr>
+                                        </vertRadius>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>-1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>255</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>false</init>
+                                        </polygonSmooth>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>242</init>
+                                                <expr>PoppingOutward ? TopDark : BottomDark</expr>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>true</init>
+                                        </modulate>
+                                    </properties>
+                                </ellipse>
+                                <ellipse oid="0f2a339b-35b4-4c64-bae9-8e1c359f7bd7">
+                                    <pathFromRoot value="4,2,0,0"/>
+                                    <properties name="DownHalo">
+                                        <visible>
+                                            <init>false</init>
+                                            <expr>DownHalo or (not Enable)</expr>
+                                        </visible>
+                                        <center>
+                                            <x>
+                                                <init>60.0</init>
+                                                <expr>SizeX / 2.0</expr>
+                                            </x>
+                                            <y>
+                                                <init>40.0</init>
+                                                <expr>SizeY / 2.0</expr>
+                                            </y>
+                                        </center>
+                                        <horzRadius>
+                                            <init>60.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </horzRadius>
+                                        <vertRadius>
+                                            <init>40.0</init>
+                                            <expr>SizeY / 2.0</expr>
+                                        </vertRadius>
+                                        <lineWidth>
+                                            <init>0</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>1</init>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>128</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>64</init>
+                                            <expr>(not Enable) ? 128 : 64</expr>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                    </properties>
+                                </ellipse>
+                                <arcEllipse oid="39454992-fe29-4172-b658-285e946460e8">
+                                    <pathFromRoot value="5,2,0,0"/>
+                                    <properties name="BorderTL">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <center>
+                                            <x>
+                                                <init>60.0</init>
+                                                <expr>SizeX / 2.0</expr>
+                                            </x>
+                                            <y>
+                                                <init>40.0</init>
+                                                <expr>SizeY / 2.0</expr>
+                                            </y>
+                                        </center>
+                                        <horzRadius>
+                                            <init>60.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </horzRadius>
+                                        <vertRadius>
+                                            <init>40.0</init>
+                                            <expr>SizeY / 2.0</expr>
+                                        </vertRadius>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>5</init>
+                                            <expr>PoppingOutward ? Lit_color : UnLit_color</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>-1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>64</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>false</init>
+                                        </polygonSmooth>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <startAngle>
+                                            <angle>
+                                                <init>90.0</init>
+                                                <expr>PoppingOutward ? 90.0 : ellipse_top_right</expr>
+                                            </angle>
+                                        </startAngle>
+                                        <endAngle>
+                                            <angle>
+                                                <init>180.0</init>
+                                                <expr>PoppingOutward ? 180.0 : ellipse_bottom_left</expr>
+                                            </angle>
+                                        </endAngle>
+                                        <orientation clockwise="false"/>
+                                    </properties>
+                                </arcEllipse>
+                                <arcEllipse oid="49b01e53-3397-4518-bd8a-ab5f950dea79">
+                                    <pathFromRoot value="6,2,0,0"/>
+                                    <properties name="BorderBR">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <center>
+                                            <x>
+                                                <init>60.0</init>
+                                                <expr>SizeX / 2.0</expr>
+                                            </x>
+                                            <y>
+                                                <init>40.0</init>
+                                                <expr>SizeY / 2.0</expr>
+                                            </y>
+                                        </center>
+                                        <horzRadius>
+                                            <init>60.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </horzRadius>
+                                        <vertRadius>
+                                            <init>40.0</init>
+                                            <expr>SizeY / 2.0</expr>
+                                        </vertRadius>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>1</init>
+                                            <expr>PoppingOutward ? UnLit_color : Lit_color</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>-1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>64</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>true</init>
+                                        </polygonSmooth>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <startAngle>
+                                            <angle>
+                                                <init>203.8</init>
+                                                <expr>PoppingOutward ? ellipse_bottom_left : 270.0</expr>
+                                            </angle>
+                                        </startAngle>
+                                        <endAngle>
+                                            <angle>
+                                                <init>23.8</init>
+                                                <expr>PoppingOutward ? ellipse_top_right : 0.0</expr>
+                                            </angle>
+                                        </endAngle>
+                                        <orientation clockwise="false"/>
+                                    </properties>
+                                </arcEllipse>
+                                <arcEllipse oid="0b11944f-31be-463f-ad5d-a68a64535e08">
+                                    <pathFromRoot value="7,2,0,0"/>
+                                    <properties name="BorderTR">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <center>
+                                            <x>
+                                                <init>60.0</init>
+                                                <expr>SizeX / 2.0</expr>
+                                            </x>
+                                            <y>
+                                                <init>40.0</init>
+                                                <expr>SizeY / 2.0</expr>
+                                            </y>
+                                        </center>
+                                        <horzRadius>
+                                            <init>60.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </horzRadius>
+                                        <vertRadius>
+                                            <init>40.0</init>
+                                            <expr>SizeY / 2.0</expr>
+                                        </vertRadius>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>6</init>
+                                            <expr>Mid_color</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>-1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>64</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>false</init>
+                                        </polygonSmooth>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <startAngle>
+                                            <angle>
+                                                <init>23.8</init>
+                                                <expr>PoppingOutward ? ellipse_top_right : 0.0</expr>
+                                            </angle>
+                                        </startAngle>
+                                        <endAngle>
+                                            <angle>
+                                                <init>90.0</init>
+                                                <expr>PoppingOutward ? 90.0 : ellipse_top_right</expr>
+                                            </angle>
+                                        </endAngle>
+                                        <orientation clockwise="false"/>
+                                    </properties>
+                                </arcEllipse>
+                                <arcEllipse oid="8bf6a3d0-ea1c-4c7d-b88e-e95c4da78dff">
+                                    <pathFromRoot value="8,2,0,0"/>
+                                    <properties name="BorderBL">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <center>
+                                            <x>
+                                                <init>60.0</init>
+                                                <expr>SizeX / 2.0</expr>
+                                            </x>
+                                            <y>
+                                                <init>40.0</init>
+                                                <expr>SizeY / 2.0</expr>
+                                            </y>
+                                        </center>
+                                        <horzRadius>
+                                            <init>60.0</init>
+                                            <expr>SizeX / 2.0</expr>
+                                        </horzRadius>
+                                        <vertRadius>
+                                            <init>40.0</init>
+                                            <expr>SizeY / 2.0</expr>
+                                        </vertRadius>
+                                        <lineWidth>
+                                            <init>1</init>
+                                        </lineWidth>
+                                        <lineStipple>
+                                            <init>0</init>
+                                        </lineStipple>
+                                        <lineCap>
+                                            <init>round</init>
+                                        </lineCap>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <outlineColor>
+                                            <init>6</init>
+                                            <expr>Mid_color</expr>
+                                        </outlineColor>
+                                        <outlineOpacity>
+                                            <init>255</init>
+                                        </outlineOpacity>
+                                        <fillColor>
+                                            <init>-1</init>
+                                        </fillColor>
+                                        <fillOpacity>
+                                            <init>64</init>
+                                        </fillOpacity>
+                                        <polygonSmooth>
+                                            <init>false</init>
+                                        </polygonSmooth>
+                                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                                            <textureId>
+                                                <init>-1</init>
+                                            </textureId>
+                                        </texture>
+                                        <modulate>
+                                            <init>false</init>
+                                        </modulate>
+                                        <startAngle>
+                                            <angle>
+                                                <init>180.0</init>
+                                                <expr>PoppingOutward ? 180.0 : ellipse_bottom_left</expr>
+                                            </angle>
+                                        </startAngle>
+                                        <endAngle>
+                                            <angle>
+                                                <init>203.8</init>
+                                                <expr>PoppingOutward ? ellipse_bottom_left : 270.0</expr>
+                                            </angle>
+                                        </endAngle>
+                                        <orientation clockwise="false"/>
+                                    </properties>
+                                </arcEllipse>
+                            </children>
+                        </container>
+                    </children>
+                </condContainer>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 302441771 -->
+

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+        <preview height="128" width="128">
+            <raw numberOfBytes="720">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,-128,8,2,0,0,0,76,92,-10,-100,0,0,2,-105,73,68,65,84,120,-38,-19,-40,-71,-82,-38,96,20,69,97,106,-16,35,-72,-122,-46,-30,61,50,-49,-77,-63,55,-111,-72,32,10,-26,-47,102,-18,16,32,-124,16,18,92,104,25,94,50,-89,-115,98,92,113,-62,47,101,-83,-10,116,-5,-61,70,16,-117,17,17,25,83,34,-111,72,-89,-45,-59,98,-79,80,40,60,-46,-19,-54,102,-77,-114,-29,88,-106,21,-75,-66,109,-37,-85,-43,106,-69,-35,-6,-66,95,-85,-43,-86,116,-69,-126,32,56,28,14,-101,-51,70,70,14,95,95,112,-28,92,42,-107,-98,-111,90
+,50,-17,114,-71,-116,-57,-29,33,0,-14,-128,-20,-9,123,54,-46,-18,-23,-23,41,-103,76,-122,0,120,-98,-41,-19,118,-97,-109,114,-67,94,-49,117,-35,16,0,-7,-94,40,-105,-53,12,-92,-99,-116,44,83,3,112,79,-128,92,46,7,0,0,0,-124,2,-68,32,-27,42,-107,10,0,0,0,16,10,32,-73,-105,-92,28,0,0,0,0,-128,-95,0,-43,106,-107,-127,-76,-109,-111,-93,0,94,-111,114,50,-14,-43,-1,-126,0,0,0,0,2,0,0,-70,19,64,-83,86,123,77,-54,-55,-56,0,0,0,0,0,-122,2,-68,33,-27,-22,-11,-6,85,0,-71,49,16,0,0,-48,29,1,-34,-110,114,-115,70,3,0,0,0,0,-64,68,0,-71,-67,35,-27,0,0
+,0,0,0,0,0,0,0,0,-2,-49,-102,-51,-26,85,0,-71,-67,39,-27,0,0,0,0,0,12,5,104,-75,90,31,72,57,25,25,0,0,0,0,-64,80,-128,-113,-92,92,20,64,-69,-35,102,32,-19,100,100,0,0,0,-32,26,-64,39,82,14,-128,59,-41,-23,116,0,0,0,0,0,0,0,-32,47,0,-71,49,-48,-99,1,62,-109,114,0,0,0,0,0,119,-84,-37,-19,94,5,-112,-37,23,82,14,0,0,0,0,-64,80,0,-33,-9,-65,-110,114,50,50,0,0,0,0,-128,-95,0,-33,72,-71,32,8,0,0,0,0,0,0,0,0,0,-45,0,-28,-10,-99,-108,3,0,0,0,0,48,20,-96,-41,-21,49,-112,118,50,114,20,-64,15,82
+,14,0,0,0,0,-64,68,-128,124,62,-33,-17,-9,93,82,78,70,6,0,0,0,0,48,17,96,48,24,100,72,57,25,25,0,0,0,0,0,0,0,0,48,16,32,75,-54,13,-121,67,0,0,0,0,0,19,1,-28,-26,-111,114,0,0,0,0,0,-122,2,-116,70,35,6,-46,78,70,-114,2,120,32,-27,0,0,0,0,0,12,5,24,-113,-57,63,73,57,25,25,0,0,0,0,0,0,0,-2,-84,80,40,0,-16,15,-102,76,38,-14,89,15,1,-56,100,50,-117,-59,-30,23,41,55,-101,-51,60,-49,11,1,72,-91,82,-89,-45,-119,-127,-76,-69,92,46,-114,-29,-124,0,-60,-29,-15,-11,122,45,15,8,27,-23,37,-13,-18,118,59,-53,-78
+,98,-95,-39,-74,45,-25,-13,-7,60,-99,78,-27,7,-37,-112,110,-108,-116,57,-97,-49,-113,-57,-93,124,-60,101,-28,88,68,-126,35,15,-120,-68,-92,-28,-117,-30,-111,110,-108,-116,-23,-70,-82,-68,-28,-27,53,19,35,34,50,-90,-33,107,96,125,37,-90,85,91,-62,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="5e5d4e1a-8978-471c-8376-f3058e20d4ec" type="real">
+                <control oid="fbf1d7c9-afaa-4e8b-a2aa-1d397b4f5d32" plug="thirdPoint_x"/>
+                <init>300.0</init>
+            </input>
+            <input name="SizeY" oid="c12f9a86-59cf-49d8-aa2a-9be4b984ae30" type="real">
+                <control oid="fbf1d7c9-afaa-4e8b-a2aa-1d397b4f5d32" plug="thirdPoint_y"/>
+                <init>300.0</init>
+            </input>
+            <input name="Style" oid="bbfeb0d1-e2b9-4900-90b6-037a6de17aef" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="BackColor" oid="9d1bcd1b-f0eb-465c-be2d-b53d464b60c2" representation="color" type="int">
+                <init>6</init>
+            </input>
+        </inputs>
+    </declaration>
+    <children>
+        <container oid="4161abf6-82db-46ef-8aa6-00ea1849f776">
+            <pathFromRoot value="0"/>
+            <properties name="Panel">
+                <comment>A Panel is a container that groups several widgets together in a rectangular area with clipping capabilities. Widgets placed within a Panel widget have their coordinates referenced to the PosX, PosY reference point of the Panel.</comment>
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="257.5" maxY="257.5" minX="-4.5" minY="-4.5">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <rectangle oid="fbf1d7c9-afaa-4e8b-a2aa-1d397b4f5d32">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="control">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>10.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>10.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>true</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>-1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>-1</init>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <textureControl>
+                            <init>false</init>
+                        </textureControl>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <tessellate>
+                            <init>false</init>
+                        </tessellate>
+                    </properties>
+                </rectangle>
+                <referenceContainer oid="b79e5b05-63ab-4c57-a0ac-6a9f484bc549">
+                    <pathFromRoot value="1,0"/>
+                    <properties modular="false" name="Background">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="2DBackground.ogfx" path="Common"/>
+                        <crc value="3189411601"/>
+                        <inputParameters>
+                            <parameter control="false" name="SizeX" oid="45d4cf7f-e024-41b5-83a9-84a92e7aa620" type="real">
+                                <expr>SizeX</expr>
+                                <init>250.0</init>
+                            </parameter>
+                            <parameter control="false" name="SizeY" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                                <expr>SizeY</expr>
+                                <init>250.0</init>
+                            </parameter>
+                            <parameter control="false" name="BackgroundColor" oid="b7f5a822-fec4-4823-83f2-a993cc331c9f" representation="color" type="int">
+                                <expr>BackColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="OutlineColor" oid="0b5b664e-3363-4626-b579-ea483e4d8dc0" representation="color" type="int">
+                                <init>2</init>
+                            </parameter>
+                            <parameter control="false" name="Enable" oid="1d442878-97f7-4a57-b4be-0816426c6ba3" type="bool">
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="193de2ef-1488-4794-b4be-0ee06aec3082" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>2</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="Clicked" oid="16d6856f-cdef-4bad-bce4-8f6794b982b7" type="bool"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <panelContainer oid="caacc7ff-4f6b-48c6-bf57-4ce3dfd70795">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="panel group">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>1.5</init>
+                            </x>
+                            <y>
+                                <init>1.5</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <width>
+                            <init>250.0</init>
+                            <expr>SizeX - 3.0</expr>
+                        </width>
+                        <height>
+                            <init>250.0</init>
+                            <expr>SizeY - 3.0</expr>
+                        </height>
+                    </properties>
+                    <children>
+                        <container oid="201a48dd-fbb0-4973-a1cd-6b75ff773092">
+                            <pathFromRoot value="0,2,0"/>
+                            <properties name="group">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>-1.5</init>
+                                    </x>
+                                    <y>
+                                        <init>-1.5</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <hook oid="d3866125-a393-4dd1-8718-b0bbfb9cf5ec">
+                                    <pathFromRoot value="0,0,2,0"/>
+                                    <properties name="hook">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <index>
+                                            <init>-1</init>
+                                        </index>
+                                    </properties>
+                                </hook>
+                            </children>
+                        </container>
+                    </children>
+                </panelContainer>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 421538420 -->
+

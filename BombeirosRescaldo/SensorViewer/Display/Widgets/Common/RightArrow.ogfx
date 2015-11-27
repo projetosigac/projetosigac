@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="128" width="88">
+            <raw numberOfBytes="284">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,88,0,0,0,-128,8,2,0,0,0,0,-102,57,33,0,0,0,-29,73,68,65,84,120,-38,-19,-36,-47,13,64,48,20,64,81,75,-104,-62,-96,-122,-80,-111,-95,-16,-5,34,-126,80,68,-33,-71,3,72,-100,-113,70,-86,125,77,35,73,-110,36,73,-110,36,73,-107,-44,-123,-122,80,27,2,1,2,68,94,-120,41,52,-121,-58,80,10,20,16,32,64,108,22,95,62,53,10,8,16,32,14,33,82,-93,-128,0,1,-30,50,68,10,20,16,32,64,20,89,44,-85,69,1,1,2,68,17,-120,106,81,64,-128,0,81,28,-94,42,20,16,32,64,60,10,-15,123,20,16,32
+,64,-68,6,-15,75,20,16,32,64,124,2,113,102,67,-72,15,-127,0,1,2,-60,-6,-103,32,64,-128,-56,11,-31,-125,10,4,8,16,54,102,64,-128,0,-31,7,15,8,16,32,28,20,1,1,2,-60,93,8,7,78,65,-128,0,-31,-30,10,8,16,32,-82,46,-106,110,2,-125,0,-111,23,-62,32,13,16,32,64,-84,51,-112,11,4,8,16,123,25,-20,9,2,4,8,73,-110,36,73,-110,36,73,122,-79,5,-48,87,-72,6,-88,-73,-5,41,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="Size" oid="4ed8a612-9d79-40e8-8d44-1a67e1e566bb" type="real">
+                <init>20.0</init>
+            </input>
+            <input name="OutlineColor" oid="4a6485d8-3221-4f56-b7b9-bd2f337f5152" representation="color" type="int">
+                <init>2</init>
+            </input>
+        </inputs>
+    </declaration>
+    <children>
+        <container oid="283a935f-5315-4986-b129-693e2bf02111">
+            <pathFromRoot value="0"/>
+            <properties name="group">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="16.0" maxY="16.0" minX="-6.0" minY="-16.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <shape oid="ccdafe22-69ac-44ce-a6db-ab089110c994">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="shape">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <points>
+                            <point>
+                                <x>
+                                    <init>0.0</init>
+                                </x>
+                                <y>
+                                    <init>-10.0</init>
+                                    <expr>(-Size) / 2.0</expr>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>0.0</init>
+                                </x>
+                                <y>
+                                    <init>10.0</init>
+                                    <expr>Size / 2.0</expr>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>10.0</init>
+                                    <expr>Size / 2.0</expr>
+                                </x>
+                                <y>
+                                    <init>0.0</init>
+                                </y>
+                            </point>
+                        </points>
+                        <lineWidth>
+                            <init>1</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>2</init>
+                            <expr>OutlineColor</expr>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>2</init>
+                            <expr>OutlineColor</expr>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>false</init>
+                        </polygonSmooth>
+                        <textureControl>
+                            <init>false</init>
+                        </textureControl>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <tessellate>
+                            <init>false</init>
+                        </tessellate>
+                    </properties>
+                </shape>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 1280021723 -->
+

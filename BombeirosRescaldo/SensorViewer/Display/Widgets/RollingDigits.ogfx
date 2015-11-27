@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+        <preview height="79" width="128">
+            <raw numberOfBytes="1518">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,79,8,2,0,0,0,-84,-30,90,-3,0,0,5,-75,73,68,65,84,120,-38,-19,-99,89,72,27,107,20,-57,-43,-72,-30,-126,27,-30,46,90,92,90,-75,46,112,-35,-117,112,69,109,109,-21,70,75,105,-19,-125,11,86,-59,5,21,124,81,16,-82,-6,34,-66,9,-118,-126,-118,-69,-96,21,-86,-75,-91,45,36,-118,11,45,93,-84,-83,65,-101,-104,40,-42,13,5,69,-44,71,-123,-2,-55,71,62,-122,-56,-11,22,-29,-67,-22,-11,-4,-98,-110,115,-66,25,103,-50,127,-52,-4,79,-66,-103,-119,-114,14,65,16,4,65,16,4,65,-100,-120,-93,-93,99,106,106,-22
+,19,53,17,17,17,6,6,6,-120,-121,-121,-121,63,17,96,111,111,-113,-96,-119,-119,-55,-93,71,-113,120,-16,-18,-35,-69,84,64,-83,48,55,55,111,106,106,-38,-40,-40,-104,87,-95,84,42,127,-2,-4,-119,-46,-121,-123,-123,73,-91,82,-68,69,-16,-57,-113,31,-101,-101,-101,67,67,67,24,95,85,85,-75,-77,-77,-61,6,43,20,10,44,-104,-110,-110,66,101,60,61,86,86,86,-81,94,-67,26,25,25,-7,67,69,90,90,-38,-2,-2,126,124,124,124,66,66,-62,-42,-42,-42,-45,-89,79,17,-124,30,29,29,29,-112,1,-29,123,122,122,-66,124,-7,18,18,18,-126,-8,-61,-121,15,-27,114,121,65,65,1,-107,81,91,1,-38,-37,-37,-39,-37,-128,-128,-128
+,-35,-35,93,46,64,80,80,16,-126,-8,68,-86,-83,-83,-27,2,-116,-114,-114,-22,-22,-22,-30,-11,-11,-21,-41,-65,125,-5,70,2,-112,0,36,0,65,2,-112,0,-60,-87,-80,-76,-76,124,-15,-30,-59,-12,-12,-12,95,42,96,73,-31,-126,98,99,99,-95,-63,-6,-6,122,115,115,51,-126,-43,-43,-43,-109,-109,-109,51,51,51,24,-33,-42,-42,-74,-76,-76,4,51,-118,120,99,99,-29,-38,-38,90,78,78,14,-107,-15,-12,24,26,26,102,100,100,-120,-59,-30,-9,106,58,59,59,-35,-35,-35,-99,-99,-99,81,-3,-9,2,-40,-111,126,-5,-10,-19,-119,-119,9,30,-124,127,-11,-15,-15,-95,50,106,5,-102,91,-108,-37,77,-115,-83,-83,-83,-98,-98,30,-30,54,54,54
+,110,2,-116,-115,-115,17,20,-119,68,-82,-82,-82,60,-120,46,-102,10,72,16,4,113,-119,-79,-77,-77,-125,-19,-71,-89,6,-42,83,95,95,31,-15,-64,-64,-64,123,2,112,110,64,16,103,-126,59,119,-18,-16,96,116,116,52,21,80,43,76,77,77,-31,-15,-31,44,-27,42,-108,74,37,-84,125,112,112,48,-86,15,-73,-125,-73,44,-66,-70,-70,10,3,-118,-15,37,37,37,-80,-98,50,-103,-116,13,94,88,88,-128,120,84,70,109,27,-79,-73,111,-33,-2,-87,34,59,59,91,-8,109,-24,-77,103,-49,16,-116,-117,-117,-21,-21,-21,-29,-115,24,26,-126,-104,-104,24,-60,-45,-45,-45,21,10,5,53,98,-44,9,-109,0,4,9,64,2,16,36,-64,101,-60,-46,-46
+,-14,-27,-53,-105,83,83,83,-39,42,-86,-86,-86,14,14,14,96,123,96,-10,55,55,55,-85,-85,-85,17,-52,-53,-53,123,-13,-26,-115,84,42,-59,-8,-50,-50,78,40,1,119,-124,120,101,101,-27,-14,-14,50,-78,84,-58,-45,99,100,100,84,88,88,-8,-15,-29,71,-87,-102,-95,-95,33,47,47,47,15,15,15,88,-49,-39,-39,89,68,102,85,84,84,84,96,-4,-125,7,15,-66,126,-3,-54,-29,-29,-29,-29,-20,-65,-124,56,61,-26,-26,-26,55,110,-36,-72,-87,-58,-59,-59,69,36,18,33,-114,23,55,5,-104,-103,-103,-79,-113,35,63,63,63,30,-124,84,84,64,-126,32,8,77,-12,-11,-11,-3,-3,-3,111,-87,9,13,13,53,53,53,101,41,61,61,61
+,124,116,-14,84,120,120,-72,-75,-75,53,75,-63,-34,-71,-70,-70,-14,84,100,100,-92,-125,-125,3,95,-89,-99,-99,-35,45,1,-18,-18,-18,60,101,97,97,33,76,9,-89,9,13,13,13,-93,-94,-94,120,-22,-8,57,19,127,29,-101,-57,7,120,123,123,-77,115,-128,112,35,1,-4,18,91,27,-74,-118,7,-125,-125,-125,47,-88,0,-40,-54,15,31,62,40,-44,-52,-49,-49,115,-65,-20,-23,-23,41,-111,72,120,74,38,-109,-63,-19,97,-57,-72,41,84,42,-107,44,-75,-80,-80,-48,-48,-48,96,99,99,-61,22,-20,-18,-18,-26,41,-68,-24,-19,-19,117,115,115,99,41,-84,97,113,113,-111,-89,-32,26,125,125,125,89,10,126,81,-72,-44,-25,-49,-97,-61,-62,-62
+,-8,118,-102,-104,-104,-108,-105,-105,-49,-51,-51,-15,1,99,99,99,56,-51,66,66,-12,7,124,35,-79,-14,-70,-70,58,-116,-49,-52,-52,-60,86,-15,-63,112,68,17,17,17,23,81,-128,-84,-84,-84,-93,-93,-93,-44,-44,-44,-60,-60,-60,-57,-113,31,79,76,76,60,127,-2,-100,-91,-94,-93,-93,-111,-54,-49,-49,71,42,57,57,25,21,-97,-100,-100,-124,21,65,-54,-55,-55,-23,-16,-16,-80,-90,-90,38,81,69,75,75,11,58,-99,107,-41,-82,-79,5,-9,-9,-9,91,91,91,89,10,21,95,90,90,-30,59,-113,66,-68,126,-3,-102,-91,-54,-54,-54,96,-49,-7,53,-77,3,3,3,-56,38,37,37,33,-123,-125,0,-91,-52,-51,-51,-43,104,-60,-60,98,49,91,-74
+,-88,-88,8,125,0,111,-60,-118,-117,-117,17,-60,-86,6,7,7,121,35,6,-9,-55,-42,-122,93,-64,-38,46,104,35,-58,4,-32,-57,117,127,127,-65,-122,0,112,126,58,-86,57,-18,-6,-6,122,13,1,-80,111,108,100,73,73,-55,-9,-17,-33,-123,2,-108,-106,-106,-78,46,-12,-2,-3,-5,26,2,52,54,54,-78,20,14,112,28,-98,66,1,-34,-67,123,-57,-26,-39,-15,111,-127,-14,29,23,-32,127,-40,9,-109,0,36,0,9,64,2,-112,0,87,93,0,-18,-126,80,-30,-65,115,65,35,35,35,39,-72,32,13,1,-76,119,65,88,-22,74,-72,32,-115,62,0,70,91,-40,7,96,-121,121,10,59,38,-20,3,-122,-121,-121,-71,109,-105,-53,-27,-62,62,-96
+,-85,-85,-117,-89,-64,41,-6,0,112,-122,125,0,-104,-98,-98,-66,-96,125,0,117,-62,4,65,16,-60,37,-128,102,-60,-50,19,54,39,-4,-23,-45,-89,19,-26,-124,25,124,78,120,102,102,-122,-57,105,78,88,91,-114,95,21,-127,110,-125,-82,-118,-8,-17,-96,-21,-126,72,0,18,-128,4,32,1,72,0,18,-32,92,5,16,-34,33,35,-4,54,-108,-18,-112,-7,-41,97,-9,-120,45,46,46,-98,124,-113,-40,-54,-54,10,-65,71,108,117,117,-107,-35,35,-58,-82,-37,-96,123,-60,-76,-123,-18,-110,36,8,-126,-72,-70,-48,-45,82,-50,19,-10,-68,32,-119,68,66,-49,11,58,31,-114,63,49,107,111,111,-17,-9,-97,-104,5,75,74,79,-52,-94,78,-104,4,32,72
+,0,18,-128,32,1,46,-81,0,-1,-8,-12,116,54,21,-84,67,79,79,63,115,-40,-17,7,-64,113,-2,-2,-17,7,108,111,111,-45,-17,7,-100,37,-12,11,26,4,65,16,4,65,16,103,-59,47,-45,101,67,127,119,-7,75,-67,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="900" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="8abd5870-78a8-4da1-827d-1932ab9ee6bd" type="real">
+                <init>170.0</init>
+            </input>
+            <input name="SizeY" oid="4d454eb6-0e03-4301-9908-8388a8b6da3d" type="real">
+                <init>100.0</init>
+            </input>
+            <input name="TextColor" oid="9206dcf9-5528-49f9-b2e2-896ce8d914a9" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="Font" oid="1bda54a3-3ecb-446a-8384-650e4e4947c0" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="Multiplier" oid="56cf5604-871c-4b1e-9834-5719c9bc08b2" type="real">
+                <init>100.0</init>
+            </input>
+            <input name="Value" oid="eb1bf83d-88aa-4b68-a7e9-36aff267027a" type="real">
+                <init>0.0</init>
+            </input>
+        </inputs>
+        <locals>
+            <local memory="false" name="CharHorizontalAdvance" oid="f808b47f-9e75-447c-b6ad-4fed24bf24c0" type="real">
+                <init>13.0</init>
+            </local>
+            <local memory="false" name="CharHeight" oid="cf63ab71-6a02-4af0-a94a-28c4fec87ec8" type="real">
+                <init>20.0</init>
+            </local>
+            <local memory="false" name="Pos1" oid="e6c2b507-978d-44ba-a0cc-aa00639b5a86" type="real^6">
+                <init>[0.0]</init>
+            </local>
+            <local memory="false" name="Pos2" oid="1a273a70-2297-49da-966e-97bbec5d9d2a" type="real^6">
+                <init>[200.0]</init>
+            </local>
+            <local memory="false" name="Char1" oid="cb9bc0f8-f29a-45f1-b20e-c6cedbfa3c9f" representation="as_string" type="char^1^6">
+                <init>[[48]]</init>
+            </local>
+            <local memory="false" name="Char2" oid="88c446b5-58f4-408b-b470-7f0f87d84aae" representation="as_string" type="char^1^6">
+                <init>[[57]]</init>
+            </local>
+            <local memory="false" name="NbDigitsRolling" oid="7960b968-c2af-481b-9cd8-5b93150ebc0e" type="int">
+                <init>3</init>
+            </local>
+            <local memory="false" name="PosRoll" oid="8e595201-aa09-4e74-95fd-c90b7b3ad687" type="real^16">
+                <init>[-80.0, -60.0, -40.0, -20.0, 0.0, 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0]</init>
+            </local>
+            <local memory="false" name="TextRoll" oid="aaed8d70-8e44-45a6-a29f-b0bfa99c1ef1" type="real^16">
+                <init>[0.0, 100.0, 200.0, 300.0, 400.0, 500.0, 600.0, 700.0, 800.0, 900.0, 0.0, 100.0, 200.0, 300.0, 400.0, 500.0]</init>
+            </local>
+        </locals>
+        <localConstants>
+            <localConstant name="MarginRight" oid="b754f928-af18-42a8-b55f-dddb3a970415" type="real">
+                <init>2.0</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="a45e1f7b-9a2b-4038-ab56-359a76925344">
+            <pathFromRoot value="0"/>
+            <properties name="RollingDigits">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="6.0" maxY="56.0" minX="-176.0" minY="-56.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <imported oid="45e8715e-93d5-4a98-af0b-a208354bd969">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="GetFontSize">
+                        <function name="GetFontSize_Strings"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>true</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="Font" oid="" type="int">
+                                <expr>Font</expr>
+                                <init>1</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="CharHorizontalAdvance" oid="" type="real">
+                                <expr>CharHorizontalAdvance</expr>
+                            </parameter>
+                            <parameter name="CharHeight" oid="" type="real">
+                                <expr>CharHeight</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <imported oid="3ee05e42-6a9c-4268-97f9-8135652acca2">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="wrapper_RollingDigits">
+                        <function name="wrapper_RollingDigits"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>false</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters>
+                            <parameter name="Value" oid="" type="real">
+                                <expr>Value</expr>
+                                <init>0.0</init>
+                            </parameter>
+                            <parameter name="Mult" oid="" type="real">
+                                <expr>Multiplier</expr>
+                                <init>100.0</init>
+                            </parameter>
+                            <parameter name="FontSize" oid="" type="real">
+                                <expr>CharHeight + 4.0</expr>
+                                <init>18.0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="Pos1" oid="" type="real^6">
+                                <expr>Pos1</expr>
+                            </parameter>
+                            <parameter name="Pos2" oid="" type="real^6">
+                                <expr>Pos2</expr>
+                            </parameter>
+                            <parameter name="Char1" oid="" type="char^1^6">
+                                <expr>Char1</expr>
+                            </parameter>
+                            <parameter name="Char2" oid="" type="char^1^6">
+                                <expr>Char2</expr>
+                            </parameter>
+                            <parameter name="NbDigitsRolling" oid="" type="int">
+                                <expr>NbDigitsRolling</expr>
+                            </parameter>
+                            <parameter name="PosRoll" oid="" type="real^16">
+                                <expr>PosRoll</expr>
+                            </parameter>
+                            <parameter name="TextRoll" oid="" type="real^16">
+                                <expr>TextRoll</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+                <container oid="beb572a4-8573-4f9e-b567-9f3df65d1a89">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="debug">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="197.4039" maxY="57.325" minX="92.0" minY="7.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <biFont oid="29a44836-69ba-492c-9fab-cf03b4f4ff5a">
+                            <pathFromRoot value="0,2,0"/>
+                            <properties name="bi-font">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>98.0</init>
+                                    </x>
+                                    <y>
+                                        <init>40.0</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>-12345.12</init>
+                                    <expr>CharHeight</expr>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>5</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>2</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>whenNegative</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>0</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>left</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                        <biFont oid="d2e29d68-a7c8-4fa8-a081-4a5e85933586">
+                            <pathFromRoot value="1,2,0"/>
+                            <properties name="bi-font">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <position>
+                                    <x>
+                                        <init>98.0</init>
+                                    </x>
+                                    <y>
+                                        <init>13.0</init>
+                                    </y>
+                                </position>
+                                <value>
+                                    <init>13.0</init>
+                                    <expr>CharHorizontalAdvance</expr>
+                                </value>
+                                <format separator="46">
+                                    <integralPart>
+                                        <init>5</init>
+                                    </integralPart>
+                                    <fractionalPart>
+                                        <init>2</init>
+                                    </fractionalPart>
+                                    <secondFontPos>
+                                        <init>0</init>
+                                    </secondFontPos>
+                                    <leadingZeros>
+                                        <init>false</init>
+                                    </leadingZeros>
+                                    <displaySign>
+                                        <init>whenNegative</init>
+                                    </displaySign>
+                                </format>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <outlineColor>
+                                    <init>16</init>
+                                </outlineColor>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <firstLineWidth>
+                                    <init>2</init>
+                                </firstLineWidth>
+                                <firstFont>
+                                    <init>0</init>
+                                </firstFont>
+                                <secondLineWidth>
+                                    <init>2</init>
+                                </secondLineWidth>
+                                <secondFont>
+                                    <init>0</init>
+                                </secondFont>
+                                <horizAlign>
+                                    <init>left</init>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>bottom</init>
+                                </vertAlign>
+                            </properties>
+                        </biFont>
+                    </children>
+                </container>
+                <panelContainer oid="17baf34b-1b18-4ae5-bb5a-3eea998e498e">
+                    <pathFromRoot value="3,0"/>
+                    <properties name="panel group">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>-170.0</init>
+                                <expr>-SizeX</expr>
+                            </x>
+                            <y>
+                                <init>-50.0</init>
+                                <expr>(-SizeY) / 2.0</expr>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <width>
+                            <init>170.0</init>
+                            <expr>SizeX</expr>
+                        </width>
+                        <height>
+                            <init>100.0</init>
+                            <expr>SizeY</expr>
+                        </height>
+                    </properties>
+                    <children>
+                        <container oid="0a9ea3fa-5271-4e40-a315-984e4aa63d02">
+                            <pathFromRoot value="0,3,0"/>
+                            <properties name="MarginRight">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>168.0</init>
+                                        <expr>SizeX - MarginRight</expr>
+                                    </x>
+                                    <y>
+                                        <init>50.0</init>
+                                        <expr>SizeY / 2.0</expr>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <nplicatorContainer oid="977bf41d-a2f2-47d0-b7af-88bfb19663db">
+                                    <pathFromRoot value="0,0,3,0"/>
+                                    <properties modular="false" name="fallingPart" replication="6">
+                                        <file name="FallingDigit.ogfx" path="Common"/>
+                                        <crc value="913218890"/>
+                                        <visible>
+                                            <init>[true, true, true, true, true, true]</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <expr>[((-CharHorizontalAdvance) * (0.0 + (real NbDigitsRolling))),((-CharHorizontalAdvance) * (1.0 + (real NbDigitsRolling))),((-CharHorizontalAdvance) * (2.0 + (real NbDigitsRolling))),((-CharHorizontalAdvance) * (3.0 + (real NbDigitsRolling))),((-CharHorizontalAdvance) * (4.0 + (real NbDigitsRolling))),((-CharHorizontalAdvance) * (5.0 + (real NbDigitsRolling)))]</expr>
+                                                <init>[-39.0, -52.0, -65.0, -78.0, -91.0, -104.0]</init>
+                                            </x>
+                                            <y>
+                                                <init>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                            </y>
+                                        </origin>
+                                        <rotate>
+                                            <angle>
+                                                <init>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <scale>
+                                            <x>
+                                                <init>[1.0, 1.0, 1.0, 1.0, 1.0, 1.0]</init>
+                                            </x>
+                                            <y>
+                                                <init>[1.0, 1.0, 1.0, 1.0, 1.0, 1.0]</init>
+                                            </y>
+                                        </scale>
+                                        <inputParameters>
+                                            <parameter control="false" name="color" oid="" representation="color" type="int^6">
+                                                <expr>[TextColor,TextColor,TextColor,TextColor,TextColor,TextColor]</expr>
+                                                <init>[2, 2, 2, 2, 2, 2]</init>
+                                            </parameter>
+                                            <parameter control="false" name="Font" oid="" representation="font" type="int^6">
+                                                <expr>[Font,Font,Font,Font,Font,Font]</expr>
+                                                <init>[1, 1, 1, 1, 1, 1]</init>
+                                            </parameter>
+                                            <parameter control="false" name="Pos1" oid="" type="real^6">
+                                                <expr>Pos1</expr>
+                                                <init>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                            </parameter>
+                                            <parameter control="false" name="Pos2" oid="" type="real^6">
+                                                <expr>Pos2</expr>
+                                                <init>[200.0, 200.0, 200.0, 200.0, 200.0, 200.0]</init>
+                                            </parameter>
+                                            <parameter control="false" name="Char1" oid="" representation="as_string" type="char^1^6">
+                                                <expr>Char1</expr>
+                                                <init>[[48], [48], [48], [48], [48], [48]]</init>
+                                            </parameter>
+                                            <parameter control="false" name="Char2" oid="" representation="as_string" type="char^1^6">
+                                                <expr>Char2</expr>
+                                                <init>[[57], [57], [57], [57], [57], [57]]</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </nplicatorContainer>
+                                <nplicatorContainer oid="cb932491-27ee-4a80-9d02-d5cdf20a410c">
+                                    <pathFromRoot value="1,0,3,0"/>
+                                    <properties modular="false" name="RollingDigit_np" replication="16">
+                                        <file name="RollingDigit.ogfx" path="Common"/>
+                                        <crc value="317898718"/>
+                                        <visible>
+                                            <init>[true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true]</init>
+                                        </visible>
+                                        <origin>
+                                            <x>
+                                                <init>[-2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0, -2.0]</init>
+                                            </x>
+                                            <y>
+                                                <expr>PosRoll</expr>
+                                                <init>[-80.0, -60.0, -40.0, -20.0, 0.0, 20.0, 40.0, 60.0, 80.0, 100.0, 120.0, 140.0, 160.0, 180.0, 200.0, 220.0]</init>
+                                            </y>
+                                        </origin>
+                                        <rotate>
+                                            <angle>
+                                                <init>[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]</init>
+                                            </angle>
+                                        </rotate>
+                                        <orientation clockwise="false"/>
+                                        <scale>
+                                            <x>
+                                                <init>[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]</init>
+                                            </x>
+                                            <y>
+                                                <init>[1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]</init>
+                                            </y>
+                                        </scale>
+                                        <inputParameters>
+                                            <parameter control="false" name="value" oid="" type="real^16">
+                                                <expr>TextRoll</expr>
+                                                <init>[0.0, 100.0, 200.0, 300.0, 400.0, 500.0, 600.0, 700.0, 800.0, 900.0, 0.0, 100.0, 200.0, 300.0, 400.0, 500.0]</init>
+                                            </parameter>
+                                            <parameter control="false" name="nbDigits" oid="" type="int^16">
+                                                <expr>[NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling,NbDigitsRolling]</expr>
+                                                <init>[3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]</init>
+                                            </parameter>
+                                            <parameter control="false" name="color" oid="" representation="color" type="int^16">
+                                                <expr>[TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor,TextColor]</expr>
+                                                <init>[2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2]</init>
+                                            </parameter>
+                                            <parameter control="false" name="Font" oid="" representation="font" type="int^16">
+                                                <expr>[Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font,Font]</expr>
+                                                <init>[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]</init>
+                                            </parameter>
+                                        </inputParameters>
+                                    </properties>
+                                    <children/>
+                                </nplicatorContainer>
+                            </children>
+                        </container>
+                    </children>
+                </panelContainer>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 983589306 -->
+

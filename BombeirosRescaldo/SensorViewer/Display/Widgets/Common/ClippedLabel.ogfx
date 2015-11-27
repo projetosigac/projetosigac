@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="37" width="128">
+            <raw numberOfBytes="578">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,37,8,2,0,0,0,5,-115,118,-63,0,0,2,9,73,68,65,84,120,-38,-19,-104,59,-113,105,81,24,-122,39,46,83,-13,3,-76,66,-79,11,-83,-124,2,9,10,-123,70,50,-123,-28,-4,5,-2,-128,-122,70,57,42,-99,106,-118,81,32,-47,40,-12,36,-90,-111,61,104,81,-72,20,-62,-76,20,-13,100,118,70,-10,-95,-101,-109,115,78,-62,-5,116,107,125,-17,119,-55,122,87,118,-78,-10,-61,-125,16,66,8,33,-124,16,66,8,33,-60,45,-29,-9,-5,127,93,17,-113,-57,-83,-88,-37,-19,14,4,2,23,-47,124,62,31,-115,70,45,-127,-45,-23,12,-123
+,66,-41,21,-40,36,100,105,16,-109,114,33,-96,44,-59,45,1,-19,-82,43,48,-40,-19,-97,126,48,24,124,126,126,-98,78,-89,51,27,44,-69,-35,110,50,-103,116,56,28,28,83,-93,-47,-104,-3,-50,-5,-5,123,-89,-45,-119,68,34,28,-79,97,24,-81,-81,-81,-77,43,-40,36,-124,0,25,98,-45,52,47,4,-108,-91,56,45,104,68,-69,-117,25,-128,-63,24,-17,-58,13,-56,100,50,-109,-55,100,-71,92,-74,90,-83,-105,47,-102,-51,-26,-37,-37,-37,102,-77,-87,84,42,46,-105,-117,-69,-71,-37,-19,86,-85,-43,-53,55,8,-58,-29,-15,118,-69,45,22,-117,92,-31,108,54,123,56,28,-26,-13,-7,-117,13,-106,-5,-3,-98,16,2,100,-120,73,33,-15,44
+,88,-81,-41,-108,-115,-59,98,-76,-96,17,-19,70,-93,-47,89,-48,110,-73,23,-117,5,-125,49,-34,-115,27,-112,-53,-27,56,-3,126,-65,-97,72,36,-116,47,-62,-31,112,-75,90,-27,-8,106,-75,26,-89,-109,78,-89,79,-89,-45,96,48,48,-66,65,80,-81,-41,63,62,62,74,-91,-46,-29,-29,-29,-45,-45,19,-126,94,-81,103,-40,96,-55,38,33,4,-56,16,-109,66,-30,89,48,28,14,17,-92,82,41,90,-48,-120,118,52,61,11,24,-122,-111,24,-116,-15,-18,-62,0,-82,-65,-49,-25,-77,118,-68,94,111,-95,80,-80,27,112,60,30,57,-114,115,-118,-57,-29,41,-105,-53,118,3,16,-16,-63,-79,-105,101,-55,-90,-35,0,82,72,60,11,40,-120,-64,110,0,77
+,105,109,69,25,-122,-111,100,-128,12,-112,1,50,64,6,-56,0,25,32,3,100,-128,-34,1,122,7,-4,-61,-105,48,-113,-46,63,127,9,-77,-7,-29,-105,-80,117,-3,-17,-30,37,-4,-77,127,65,-90,105,-2,-19,127,65,44,-17,-30,95,-112,-2,-122,10,33,-124,16,66,8,33,-124,16,66,-4,63,62,1,20,-119,35,-102,-110,-84,21,-32,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="Enable" oid="b0e1db70-000a-4b22-8cd6-9095ae620941" type="bool">
+                <init>true</init>
+            </input>
+            <input name="SizeX" oid="7d0fb331-2362-4f4f-936d-83948765cb30" type="real">
+                <control oid="819e8cf5-c095-4db1-af46-b5a41f99c91a" plug="thirdPoint_x"/>
+                <init>120.0</init>
+            </input>
+            <input name="SizeY" oid="789d99c2-2e5d-4ad8-9d15-da1c27716dd0" type="real">
+                <control oid="819e8cf5-c095-4db1-af46-b5a41f99c91a" plug="thirdPoint_y"/>
+                <init>30.0</init>
+            </input>
+            <input name="LabelString" oid="c1bfbac2-57f7-49d1-b6de-49deb933e28f" representation="as_string" type="char^255">
+                <init>[76, 97, 98, 101, 108, 0]</init>
+            </input>
+            <input name="Font" oid="285a7f9f-0976-4ef4-8bf2-5cbc0ef73435" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="TextColor" oid="d0bff17b-693e-491e-b068-944a9f3672d8" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="Alignment" oid="6f91ec91-1a79-41ba-a955-519c0ba930ac" representation="horizontal_alignment" type="int">
+                <init>1</init>
+            </input>
+            <input name="AlignmentVertical" oid="cdca2481-07bb-4c14-9520-f9c9c72320d4" representation="vertical_alignment" type="int">
+                <init>1</init>
+            </input>
+        </inputs>
+        <outputs>
+            <output memory="false" name="TotalBorder" oid="1da85933-98da-45b8-9874-a391373f70ec" type="real">
+                <init>6.0</init>
+            </output>
+        </outputs>
+        <localConstants>
+            <localConstant name="BorderSize" oid="b7755369-86a9-4c4a-9ae9-3d058f66add8" type="real">
+                <init>3.0</init>
+            </localConstant>
+            <localConstant name="InnerBorder" oid="9f21aa01-6d6b-4cae-bf29-f8520d7a9baf" type="real">
+                <init>3.0</init>
+            </localConstant>
+            <localConstant name="TextDisableColor" oid="418d73b7-0549-4dbe-b9a3-815817f766d7" representation="color" type="int">
+                <init>4</init>
+            </localConstant>
+        </localConstants>
+    </declaration>
+    <children>
+        <container oid="652cd27c-4b2b-440f-92af-e46ced6c2e21">
+            <pathFromRoot value="0"/>
+            <properties name="ClippedLabel">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="123.0" maxY="33.0" minX="-3.0" minY="-3.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <assignment oid="995c2380-20b1-4f3a-997d-1dab7233155c">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="TotalBorder">
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <input>
+                            <init>0.0</init>
+                            <expr>BorderSize + InnerBorder</expr>
+                        </input>
+                        <output>
+                            <expr>TotalBorder</expr>
+                        </output>
+                    </properties>
+                </assignment>
+                <panelContainer oid="de9b76a3-8fe7-4b2a-9801-d615a32b52d0">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="panel group">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>3.0</init>
+                                <expr>BorderSize</expr>
+                            </x>
+                            <y>
+                                <init>3.0</init>
+                                <expr>BorderSize</expr>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <width>
+                            <init>114.0</init>
+                            <expr>SizeX - (2.0 * BorderSize)</expr>
+                        </width>
+                        <height>
+                            <init>24.0</init>
+                            <expr>SizeY - (2.0 * BorderSize)</expr>
+                        </height>
+                    </properties>
+                    <children>
+                        <textArea oid="db901c3f-f49a-4bb2-a293-b8910b58e29a">
+                            <pathFromRoot value="0,1,0"/>
+                            <properties name="text area">
+                                <visible>
+                                    <init>true</init>
+                                    <expr>(SizeY &gt; (2.0 * TotalBorder)) and (SizeX &gt; (2.0 * TotalBorder))</expr>
+                                </visible>
+                                <firstPoint>
+                                    <x>
+                                        <init>3.0</init>
+                                        <expr>InnerBorder</expr>
+                                    </x>
+                                    <y>
+                                        <init>3.0</init>
+                                        <expr>InnerBorder</expr>
+                                    </y>
+                                </firstPoint>
+                                <thirdPoint>
+                                    <x>
+                                        <init>111.0</init>
+                                        <expr>(SizeX - (2.0 * BorderSize)) - InnerBorder</expr>
+                                    </x>
+                                    <y>
+                                        <init>21.0</init>
+                                        <expr>(SizeY - (2.0 * BorderSize)) - InnerBorder</expr>
+                                    </y>
+                                </thirdPoint>
+                                <maxLength>
+                                    <init>255</init>
+                                </maxLength>
+                                <textValue type="char">
+                                    <expr>LabelString</expr>
+                                    <init>[76, 97, 98, 101, 108, 0]</init>
+                                </textValue>
+                                <haloing>
+                                    <init>false</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>2</init>
+                                    <expr>Enable ? TextColor : TextDisableColor</expr>
+                                </outlineColor>
+                                <lineWidth>
+                                    <init>2</init>
+                                </lineWidth>
+                                <font>
+                                    <init>0</init>
+                                    <expr>Font</expr>
+                                </font>
+                                <horizAlign>
+                                    <init>center</init>
+                                    <expr>Alignment</expr>
+                                </horizAlign>
+                                <vertAlign>
+                                    <init>middle</init>
+                                    <expr>AlignmentVertical</expr>
+                                </vertAlign>
+                            </properties>
+                        </textArea>
+                    </children>
+                </panelContainer>
+                <rectangle oid="819e8cf5-c095-4db1-af46-b5a41f99c91a">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="rectangle">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>1.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>true</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>16</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>6</init>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <textureControl>
+                            <init>false</init>
+                        </textureControl>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <tessellate>
+                            <init>false</init>
+                        </tessellate>
+                    </properties>
+                </rectangle>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 3843899426 -->
+

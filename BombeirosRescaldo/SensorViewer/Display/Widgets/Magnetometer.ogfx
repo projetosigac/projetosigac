@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+    </IDE>
+    <symbology>
+        <dimension height="256" width="256"/>
+    </symbology>
+    <declaration>
+        <outputs>
+            <output memory="true" name="x" oid="a11a199b-d4ab-4c69-ad00-32dd6aeceea4" type="real">
+                <init>0.0</init>
+            </output>
+            <output memory="true" name="y" oid="231a75d7-d389-4d4d-aaa2-afb81337d937" type="real">
+                <init>0.0</init>
+            </output>
+            <output memory="true" name="z" oid="675d64a4-6999-4525-ba62-55b4e2ab8d0e" type="real">
+                <init>0.0</init>
+            </output>
+        </outputs>
+    </declaration>
+    <children>
+        <container oid="c17bd630-2b19-401c-9ff0-e77e065ecbe4">
+            <pathFromRoot value="0"/>
+            <properties name="group">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="0.0" maxY="0.0" minX="0.0" minY="0.0">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <imported oid="b7e3a973-296f-4327-b384-a7bc1c77382a">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="magnetometer">
+                        <function name="magnetometer"/>
+                        <enable>
+                            <init>true</init>
+                        </enable>
+                        <restoreStates>
+                            <init>true</init>
+                        </restoreStates>
+                        <memory>
+                            <init>false</init>
+                        </memory>
+                        <inputParameters/>
+                        <outputParameters>
+                            <parameter name="x" oid="" type="real">
+                                <expr>x</expr>
+                            </parameter>
+                            <parameter name="y" oid="" type="real">
+                                <expr>y</expr>
+                            </parameter>
+                            <parameter name="z" oid="" type="real">
+                                <expr>z</expr>
+                            </parameter>
+                        </outputParameters>
+                    </properties>
+                </imported>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 520621637 -->
+

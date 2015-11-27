@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="libWidgets.etp"/>
+        <preview height="128" width="128">
+            <raw numberOfBytes="2647">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,-128,8,2,0,0,0,76,92,-10,-100,0,0,10,30,73,68,65,84,120,-38,-19,-99,123,87,26,-39,18,-59,-93,104,20,-115,32,-120,-96,-30,3,84,80,-116,10,18,-115,-88,-96,40,15,21,4,21,84,-120,-81,-60,-60,-71,-33,-1,35,-36,61,-75,-57,-77,88,40,-109,-101,75,-81,-112,-75,-88,-3,87,-50,111,122,-16,-12,-82,115,-86,-86,-127,110,-34,-67,83,-87,84,127,-21,-67,-88,-65,-65,-97,-61,-98,-98,30,-110,-66,-66,62,-110,-34,-34,-34,86,-60,102,-77,-111,-32,31,36,-8,79,36,56,-72,21,-63,-97,32,-63,31,37,105,-102,-52,107,-14,103,78,-49
+,76,-58,76,-17,95,38,99,72,-77,-5,-1,17,-35,-34,-34,-110,-72,92,-82,-65,68,-27,114,-103,100,102,102,-122,-28,-24,-24,-120,36,18,-119,-112,108,111,111,-109,108,110,110,-110,124,-4,-8,-111,36,-99,78,-109,-52,-51,-51,-111,-100,-99,-99,-111,120,60,30,-110,90,-83,70,50,56,56,72,-14,-29,-57,15,12,-97,-98,-98,56,-76,-37,-19,60,-32,-26,-26,-122,100,124,124,-100,-92,80,40,-112,4,2,1,-110,-125,-125,3,-110,-43,-43,85,-110,79,-97,62,-111,36,18,9,-110,-27,-27,101,-110,76,38,67,50,61,61,77,114,126,126,78,50,58,58,74,114,119,119,71,66,127,97,55,-121,-113,-113,-113,60,96,100,100,-124,-92,82,-87,-112,76,78,78,-110,28
+,31,31,-109,44,46,46,-110,-20,-19,-19,-67,17,0,-60,103,69,-124,73,39,69,102,102,26,-128,-33,17,0,-93,15,31,62,112,43,60,63,63,-33,-118,78,78,78,-122,69,-13,-13,-13,36,56,67,18,-72,76,-78,-75,-75,69,-126,0,-112,-84,-83,-83,-111,-92,82,41,18,-52,-128,36,-97,-49,-109,-8,-3,126,18,-100,51,-119,-37,-19,38,-87,-41,-21,24,34,48,28,-114,-115,-115,-15,0,-84,6,18,-8,69,-110,-53,-27,72,66,-95,16,9,86,15,-55,-6,-6,58,9,2,64,-126,-123,66,-126,-91,70,-126,115,33,9,6,-125,36,56,95,-110,-119,-119,9,-110,-53,-53,75,18,-89,-45,-119,33,-20,-26,-16,-22,-22,-118,7,96,53,-112,20,-117,69,-110,-39,-39
+,89,18,44,86,-110,-91,-91,37,-110,-99,-99,29,12,77,126,107,25,0,-68,58,-119,-49,-25,99,-24,48,51,-110,-123,-123,5,18,-100,42,9,78,-107,100,99,99,-125,100,119,119,-105,4,-66,-112,-64,119,18,-84,14,18,-100,24,-119,-61,-31,32,121,120,120,32,97,70,70,-70,-28,-16,-2,-2,-98,7,-64,2,-110,-117,-117,11,18,68,-111,4,-111,32,9,-121,-61,36,56,85,-110,120,60,78,-126,101,65,-126,101,65,-126,85,69,114,122,122,74,-30,-11,122,73,-82,-81,-81,73,-122,-122,-122,72,-66,125,-5,-122,33,-106,38,-121,3,3,3,60,0,-53,-123,4,11,-123,4,-69,-100,4,-111,32,57,60,60,36,65,-20,49,108,-84,40,-1,84,-98,35,-47,-2
+,-2,-2,-94,8,-1,-89,6,-32,-9,5,-32,117,17,54,-62,-117,94,-119,76,-14,66,49,32,-63,-119,-103,115,38,49,-71,53,22,-117,-111,-104,-44,-113,-112,-112,96,-61,-102,-4,75,-126,109,71,82,42,-107,72,24,0,52,45,28,-102,-13,-63,-10,39,49,117,8,126,-111,24,-69,81,12,72,-94,-47,-88,-87,85,36,-104,39,9,-110,18,-119,73,-3,8,9,9,-46,-96,89,49,36,-88,64,36,-120,58,-122,-43,106,-43,-104,-58,3,16,60,-77,62,72,76,29,-62,106,-61,16,37,13,-53,23,-81,-116,-13,66,-56,65,76,-65,-12,-13,0,-88,-38,23,28,-89,-67,102,-87,-67,-47,5,-51,-118,-112,94,78,68,63,41,-42,-86,95,17,-10,1,-19,-59,-90,-89,-67
+,111,95,13,-68,89,-124,85,22,10,9,-122,-10,54,-41,0,13,64,-121,3,-128,29,81,18,-31,-62,97,82,100,-82,-110,84,-19,11,87,-93,-76,23,45,9,-19,53,-17,124,104,17,-2,51,-118,-80,6,-96,-61,1,-64,-107,-15,-104,104,106,106,-86,42,-54,102,-77,106,-100,85,26,29,29,-91,-67,-72,-96,-95,-67,-51,-41,1,90,-124,-75,11,-22,-18,0,96,71,124,17,-31,106,123,68,52,60,60,-84,126,89,-91,66,-95,64,123,-67,94,47,-19,109,126,55,84,-117,-80,118,65,-35,29,-128,119,-14,-26,42,-28,114,-71,-66,-118,-52,7,97,-86,-10,-123,-11,77,123,-81,-81,-81,105,-81,22,97,-19,-126,52,0,77,123,-124,31,-36,-96,82,-9,-68,72,-3
+,-78,-80,6,-48,94,-10,63,111,120,-85,69,-72,-13,93,-48,-109,-88,86,-85,-11,-117,90,126,98,-96,-6,117,-31,-22,-118,-10,58,-99,78,-38,-37,-14,80,-42,0,108,22,-83,1,-99,44,-62,26,-128,-33,29,0,-108,-123,33,-111,-57,-29,-71,-65,-65,-65,-69,-69,43,22,-117,-22,-105,85,-78,-37,-19,-76,-73,82,-87,-36,-117,-12,91,17,-6,86,-124,6,-96,81,-40,17,55,-94,114,-71,60,42,66,-57,-86,-58,89,-91,-29,-29,99,-38,59,49,49,65,123,127,-14,-35,80,45,-62,-38,5,117,95,23,-28,21,-51,-52,-52,-32,-86,-31,-4,-4,-36,124,-103,84,-43,-66,-36,110,55,-19,61,61,61,-67,16,53,95,-25,106,17,-42,46,-88,-69,3,-128,29,81,16
+,-27,114,-71,105,-111,-49,-25,83,-29,-84,82,42,-107,-94,-67,-63,96,-112,-10,54,127,51,78,-117,-80,118,65,-35,29,0,-34,-71,1,-123,-61,-31,108,54,-101,-55,100,18,-119,-124,-6,101,-107,-112,115,104,111,58,-99,-50,-118,-76,11,-46,46,72,3,-48,-44,5,-19,-117,-110,-55,-28,-78,40,16,8,-88,113,86,105,115,115,-109,-10,-82,-84,-84,-48,94,-19,-126,-76,11,-46,0,52,-54,102,-77,-83,-117,-94,-47,104,66,-124,127,-85,95,86,9,-67,37,-19,-35,-34,-34,-90,-67,-26,1,46,90,-124,-75,11,-46,0,48,5,-59,95,-12,73,-124,122,-83,-58,89,37,-104,73,111,55,95,-44,-100,-126,26,-117,48,-65,68,-89,69,-72,99,93,-112,6,-96,51,93,-48
+,-82,8,5,122,85,-76,-72,-72,-88,126,89,-91,88,44,70,123,-47,8,-47,94,-67,81,91,-69,32,13,64,-93,-80,35,-106,68,-88,-41,7,34,84,106,53,-50,42,5,2,1,-38,-101,76,38,105,111,-53,47,-97,15,15,15,107,17,-18,100,23,-92,1,-24,76,0,-80,35,114,-94,-61,-61,-61,-128,-56,-17,-9,-85,95,86,105,103,103,-121,-10,-122,66,-95,-96,72,-69,32,-19,-126,52,0,77,93,-112,95,-124,-28,-61,111,-80,-92,82,41,53,-50,42,121,-67,94,-38,-101,-49,-25,-117,34,-19,-126,-76,11,-46,0,52,-86,-65,-65,-1,82,-124,-28,51,46,114,-71,92,-22,-105,85,-54,100,50,-76,119,122,122,-102,-10,-22,-29,106,-76,11,-46,0,52,10,59
+,-62,41,-14,-7,124,-68,-101,-55,-4,-14,-128,-86,125,-115,-116,-116,-48,-34,114,-71,92,19,-75,-68,89,94,-117,-80,118,65,-35,-38,5,61,-120,42,-107,-118,93,100,126,-50,69,-43,-66,74,-91,18,-19,29,27,27,-93,-67,90,-124,-75,11,-46,0,52,-87,79,-28,112,56,-8,100,27,92,53,-88,113,86,-55,102,-77,-47,-34,122,-67,-2,93,-92,69,-8,-49,-21,-126,122,69,-24,88,127,-120,-52,111,-110,-87,-38,87,-17,-117,-80,3,-98,69,-65,-16,43,74,42,45,-62,93,16,0,92,7,60,-118,-86,-43,-22,-96,104,96,96,64,-115,-77,74,-27,114,-103,-10,-70,-35,110,-38,-37,-14,80,45,-62,-6,86,68,87,6,-96,-89,-89,-57,33,-14,122,-67,124,-69,-50
+,-4,114,-92,-86,125,33,-11,-45,-34,-117,-117,-117,-70,72,31,-38,-89,93,-112,6,-96,-87,11,-86,-120,10,-123,-126,71,100,126,79,90,-43,-66,-78,-39,44,-19,-11,-5,-3,-76,-73,-27,67,-5,-76,8,107,23,-44,-107,1,-24,-19,-19,-99,-102,-102,-102,-100,-100,-100,-101,-101,59,19,-103,-97,36,86,-75,-81,-15,-15,-15,41,81,62,-97,-89,-67,111,63,-82,6,11,95,-117,112,39,-69,32,13,64,-57,2,-128,29,-111,23,29,30,30,-50,-119,-80,95,-44,56,-85,-76,-69,-69,75,123,23,23,23,121,-5,69,-53,-57,-43,104,17,-42,46,-88,91,-69,-96,112,56,28,10,-123,-106,-105,-105,-45,-94,-83,-83,45,-11,-53,42,33,-91,-121,69,-87,84,-118,-10,106,23,-92
+,93,-112,6,-96,81,54,-101,109,111,111,-113,-49,-118,-8,40,-46,103,69,88,-88,88,44,-74,39,90,91,91,-93,-67,-38,5,105,23,-92,1,104,74,65,27,47,-30,35,-99,-80,77,-44,47,-85,20,-119,68,-116,-73,91,-94,-73,31,-38,-89,69,88,-69,-96,46,-18,-126,-94,-47,-24,-6,-6,58,-22,-11,-74,8,-11,90,-115,-77,74,75,75,75,81,-47,-25,-49,-97,105,111,-53,-121,-10,105,17,-42,46,-88,43,3,-48,-41,-41,-105,74,-91,-110,-55,36,-82,-59,34,-94,-7,-7,121,-11,-53,42,-59,-29,-15,-108,8,-67,37,-19,125,-29,113,53,92,-8,90,-124,59,-42,5,105,0,58,25,0,-20,-120,5,81,56,28,62,18,-95,82,-85,113,86,105,102,102,-122
+,-10,30,28,28,100,68,-6,-72,26,-19,-126,52,0,77,93,-48,-119,8,-69,99,70,52,49,49,-95,126,89,37,-76,-105,-89,34,-12,-106,-76,87,-69,32,-19,-126,52,0,-115,-22,-23,-23,-15,-119,-80,59,-54,34,-3,61,97,11,-27,-15,120,38,68,72,-14,-76,87,-69,32,-19,-126,52,0,-115,-22,-17,-17,-65,18,-107,74,37,-105,8,-71,-120,-60,-28,34,-20,32,18,115,-115,-122,-102,78,98,126,-13,106,117,117,-107,-60,124,-90,-65,-75,-75,69,98,-66,-21,-120,-117,17,18,115,15,8,-38,3,18,115,111,108,-91,82,-63,-48,-36,-83,63,56,56,-56,3,-52,-99,107,110,-73,-101,100,127,127,-97,-60,-17,-9,-109,-104,-25,-66,-121,66,33,18,-13,-23,30,-26
+,73,18,12,6,73,18,-119,4,-119,-7,-3,100,92,-124,-110,56,28,14,-110,-77,-77,51,18,-26,13,-92,107,14,-111,73,-52,-86,37,-55,-27,114,38,-25,-112,-20,-19,-19,97,-104,-49,-25,57,-100,-100,-100,116,-117,126,-2,-48,62,28,68,98,-2,12,66,66,-126,86,-107,36,18,-119,-112,-104,-112,-64,110,18,115,-50,-23,116,-102,-60,-4,54,34,-50,-121,4,-77,36,-87,-41,-21,36,-26,6,-38,-25,-25,103,12,-65,127,-1,-50,-95,-35,110,-25,1,-75,90,-115,100,124,124,-100,-92,88,44,-110,-64,83,18,-13,-59,122,-84,6,18,19,18,-40,77,-78,-68,-68,76,-110,-51,102,73,-90,-89,-89,73,46,46,46,72,-52,-6,-72,-65,-65,39,-31,-99,117,-16,-114,-61
+,-81,95,-65,-14,-128,-111,-111,17,-110,106,-75,74,2,-93,73,-72,98,-2,-97,123,-60,52,0,-65,53,0,120,-47,15,34,-100,-40,-83,8,-71,-120,100,118,118,-106,4,115,37,89,90,90,34,-63,-2,34,-119,-59,98,36,-15,120,-100,100,103,103,-121,4,65,34,-63,-42,38,65,36,72,-32,29,-119,-41,-21,37,-63,68,73,-80,-3,121,107,39,-121,56,49,30,-128,52,72,82,40,20,72,-16,106,36,72,-107,36,43,43,43,36,-80,-101,4,-77,34,-119,70,-93,36,-72,50,34,9,-121,-61,36,-56,30,36,88,103,36,88,121,36,88,40,36,8,63,-122,95,-66,124,-31,16,-119,-102,7,32,102,36,72,-77,36,-57,-57,-57,36,11,11,11,24,34,30,28
+,94,94,94,-14,-128,-106,15,-19,-29,111,73,66,-90,8,-29,-100,73,-112,-87,73,-16,-94,36,-26,-7,-46,56,49,-110,-115,-115,13,18,-60,-122,4,103,72,-126,60,72,98,-118,1,82,60,-119,-55,-74,-113,-113,-113,36,-68,80,68,-50,-27,-16,-31,-31,-127,7,56,-99,78,18,-13,56,35,-92,126,18,-109,127,-79,62,72,118,119,119,73,16,0,18,83,-85,80,57,72,-52,-57,30,-120,40,9,86,3,-55,-51,-51,13,-55,-48,-48,16,-55,-45,-45,19,63,57,-25,16,21,-117,7,32,36,36,99,99,99,36,88,-66,36,88,-66,24,34,-99,-4,-81,93,-112,6,-96,-61,1,64,46,122,47,50,123,-60,16,115,-19,0,119,-102,-120,-51,102,35,49,-97,53,27
+,98,-34,-12,-64,-63,77,4,127,-126,-60,-76,4,-122,52,22,-89,55,39,99,-56,-21,-55,24,-14,122,50,-122,-68,-98,-116,33,-81,39,99,-56,-5,23,-3,116,122,77,-109,-7,-105,19,84,-87,-70,91,-1,5,-12,-54,93,-39,-22,-86,-100,-94,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="SizeX" oid="ff505124-3e76-43c5-882e-45b0739055d8" type="real">
+                <control oid="04b6950a-2d10-42c8-9b34-e44f0f95b869" plug="thirdPoint_x"/>
+                <init>300.0</init>
+            </input>
+            <input name="SizeY" oid="97d96056-4a28-4cbe-b9c0-6e9b29f74345" type="real">
+                <control oid="04b6950a-2d10-42c8-9b34-e44f0f95b869" plug="thirdPoint_y"/>
+                <init>300.0</init>
+            </input>
+            <input name="Style" oid="ce15c59f-27fe-4867-a9bb-09582f29b4a6" representation="index" type="int">
+                <init>1</init>
+            </input>
+            <input name="BorderColor" oid="64dec50a-3c9d-4cc6-a99f-7ee21ab27678" representation="color" type="int">
+                <init>6</init>
+            </input>
+            <input name="BorderWidth" oid="8aac049a-58c2-43be-923c-0b8609ca6d6f" type="real">
+                <init>16.0</init>
+            </input>
+        </inputs>
+    </declaration>
+    <children>
+        <container oid="e8320715-111a-4daa-9cdb-16a22857666f">
+            <pathFromRoot value="0"/>
+            <properties name="Frame">
+                <comment>A Panel is a container that groups several widgets together in a rectangular area with clipping capabilities. Widgets placed within a Panel widget have their coordinates referenced to the PosX, PosY reference point of the Panel.</comment>
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="307.5" maxY="307.5" minX="-4.5" minY="-4.5">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <panelContainer oid="a8ce0a53-7a11-4cc2-8d8f-fe84a4394f15">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="panel group">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>1.5</init>
+                            </x>
+                            <y>
+                                <init>1.5</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <width>
+                            <init>300.0</init>
+                            <expr>SizeX</expr>
+                        </width>
+                        <height>
+                            <init>300.0</init>
+                            <expr>SizeY</expr>
+                        </height>
+                    </properties>
+                    <children>
+                        <hook oid="b6cb5753-1e5b-4c93-a94b-dda14dd10fd8">
+                            <pathFromRoot value="0,0,0"/>
+                            <properties name="hook">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <index>
+                                    <init>-1</init>
+                                </index>
+                            </properties>
+                        </hook>
+                    </children>
+                </panelContainer>
+                <referenceContainer oid="3fbe8eb1-a70c-4d7c-8de9-afd0e964a1cb">
+                    <pathFromRoot value="1,0"/>
+                    <properties modular="false" name="FrameBorder">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>-16.0</init>
+                                <expr>-BorderWidth</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                                <expr>0.0</expr>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="FrameBorder.ogfx" path="Common"/>
+                        <crc value="3097154587"/>
+                        <inputParameters>
+                            <parameter control="false" name="Width" oid="ff505124-3e76-43c5-882e-45b0739055d8" type="real">
+                                <expr>BorderWidth</expr>
+                                <init>16.0</init>
+                            </parameter>
+                            <parameter control="false" name="Length" oid="97d96056-4a28-4cbe-b9c0-6e9b29f74345" type="real">
+                                <expr>BorderWidth</expr>
+                                <init>16.0</init>
+                            </parameter>
+                            <parameter control="false" name="TotalLength" oid="7ffb1bac-2b28-4def-969c-90e179bf95c5" type="real">
+                                <expr>SizeY + BorderWidth</expr>
+                                <init>316.0</init>
+                            </parameter>
+                            <parameter control="false" name="OffsetIn" oid="c11daddf-5304-4364-b8fd-156e9c83b5d5" type="real">
+                                <expr>0.0</expr>
+                                <init>1.2</init>
+                            </parameter>
+                            <parameter control="false" name="BorderColor" oid="64dec50a-3c9d-4cc6-a99f-7ee21ab27678" representation="color" type="int">
+                                <expr>BorderColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="ce15c59f-27fe-4867-a9bb-09582f29b4a6" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="Alpha" oid="44abecb4-0141-43c4-9fb0-cf09fccfac9e" type="int">
+                                <init>255</init>
+                            </parameter>
+                            <parameter control="false" name="Rotate" oid="4598da40-dd7e-4849-b56f-0f3cc845a291" type="bool">
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="NbStyles" oid="f97fea51-e8b1-42ce-b700-f58244572695" type="real">
+                                <init>2.0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="OffsetOut" oid="9a0a13e3-8b48-407c-90dd-8ecb01e8213f" type="real"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <referenceContainer oid="65aef033-e6d9-463a-b291-75fc74d4629d">
+                    <pathFromRoot value="2,0"/>
+                    <properties modular="false" name="FrameBorder">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                                <expr>0.0</expr>
+                            </x>
+                            <y>
+                                <init>300.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="FrameBorder.ogfx" path="Common"/>
+                        <crc value="3097154587"/>
+                        <inputParameters>
+                            <parameter control="false" name="Width" oid="ff505124-3e76-43c5-882e-45b0739055d8" type="real">
+                                <expr>BorderWidth</expr>
+                                <init>16.0</init>
+                            </parameter>
+                            <parameter control="false" name="Length" oid="97d96056-4a28-4cbe-b9c0-6e9b29f74345" type="real">
+                                <expr>BorderWidth</expr>
+                                <init>16.0</init>
+                            </parameter>
+                            <parameter control="false" name="TotalLength" oid="7ffb1bac-2b28-4def-969c-90e179bf95c5" type="real">
+                                <expr>SizeX + BorderWidth</expr>
+                                <init>316.0</init>
+                            </parameter>
+                            <parameter control="false" name="OffsetIn" oid="c11daddf-5304-4364-b8fd-156e9c83b5d5" type="real">
+                                <expr>0.0</expr>
+                                <init>1.2</init>
+                            </parameter>
+                            <parameter control="false" name="BorderColor" oid="64dec50a-3c9d-4cc6-a99f-7ee21ab27678" representation="color" type="int">
+                                <expr>BorderColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="ce15c59f-27fe-4867-a9bb-09582f29b4a6" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="Alpha" oid="44abecb4-0141-43c4-9fb0-cf09fccfac9e" type="int">
+                                <init>255</init>
+                            </parameter>
+                            <parameter control="false" name="Rotate" oid="4598da40-dd7e-4849-b56f-0f3cc845a291" type="bool">
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="NbStyles" oid="f97fea51-e8b1-42ce-b700-f58244572695" type="real">
+                                <init>2.0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="OffsetOut" oid="9a0a13e3-8b48-407c-90dd-8ecb01e8213f" type="real"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <referenceContainer oid="46b6f0c0-e735-469a-b412-ed1e8bbc121c">
+                    <pathFromRoot value="3,0"/>
+                    <properties modular="false" name="FrameBorder">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>300.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>-16.0</init>
+                                <expr>-BorderWidth</expr>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="FrameBorder.ogfx" path="Common"/>
+                        <crc value="3097154587"/>
+                        <inputParameters>
+                            <parameter control="false" name="Width" oid="ff505124-3e76-43c5-882e-45b0739055d8" type="real">
+                                <expr>BorderWidth</expr>
+                                <init>16.0</init>
+                            </parameter>
+                            <parameter control="false" name="Length" oid="97d96056-4a28-4cbe-b9c0-6e9b29f74345" type="real">
+                                <expr>BorderWidth</expr>
+                                <init>16.0</init>
+                            </parameter>
+                            <parameter control="false" name="TotalLength" oid="7ffb1bac-2b28-4def-969c-90e179bf95c5" type="real">
+                                <expr>SizeY + BorderWidth</expr>
+                                <init>316.0</init>
+                            </parameter>
+                            <parameter control="false" name="OffsetIn" oid="c11daddf-5304-4364-b8fd-156e9c83b5d5" type="real">
+                                <init>1.2</init>
+                            </parameter>
+                            <parameter control="false" name="BorderColor" oid="64dec50a-3c9d-4cc6-a99f-7ee21ab27678" representation="color" type="int">
+                                <expr>BorderColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="ce15c59f-27fe-4867-a9bb-09582f29b4a6" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="Alpha" oid="44abecb4-0141-43c4-9fb0-cf09fccfac9e" type="int">
+                                <init>255</init>
+                            </parameter>
+                            <parameter control="false" name="Rotate" oid="4598da40-dd7e-4849-b56f-0f3cc845a291" type="bool">
+                                <init>false</init>
+                            </parameter>
+                            <parameter control="false" name="NbStyles" oid="f97fea51-e8b1-42ce-b700-f58244572695" type="real">
+                                <init>2.0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="OffsetOut" oid="9a0a13e3-8b48-407c-90dd-8ecb01e8213f" type="real"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <referenceContainer oid="a78d8256-e1e1-4f16-87a6-0a1cfe5effcb">
+                    <pathFromRoot value="4,0"/>
+                    <properties modular="false" name="FrameBorder">
+                        <visible>
+                            <init>true</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>-16.0</init>
+                                <expr>-BorderWidth</expr>
+                            </x>
+                            <y>
+                                <init>-16.0</init>
+                                <expr>-BorderWidth</expr>
+                            </y>
+                        </origin>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <file name="FrameBorder.ogfx" path="Common"/>
+                        <crc value="3097154587"/>
+                        <inputParameters>
+                            <parameter control="false" name="Width" oid="ff505124-3e76-43c5-882e-45b0739055d8" type="real">
+                                <expr>BorderWidth</expr>
+                                <init>16.0</init>
+                            </parameter>
+                            <parameter control="false" name="Length" oid="97d96056-4a28-4cbe-b9c0-6e9b29f74345" type="real">
+                                <expr>BorderWidth</expr>
+                                <init>16.0</init>
+                            </parameter>
+                            <parameter control="false" name="TotalLength" oid="7ffb1bac-2b28-4def-969c-90e179bf95c5" type="real">
+                                <expr>SizeX + BorderWidth</expr>
+                                <init>316.0</init>
+                            </parameter>
+                            <parameter control="false" name="OffsetIn" oid="c11daddf-5304-4364-b8fd-156e9c83b5d5" type="real">
+                                <init>1.2</init>
+                            </parameter>
+                            <parameter control="false" name="BorderColor" oid="64dec50a-3c9d-4cc6-a99f-7ee21ab27678" representation="color" type="int">
+                                <expr>BorderColor</expr>
+                                <init>6</init>
+                            </parameter>
+                            <parameter control="false" name="Style" oid="ce15c59f-27fe-4867-a9bb-09582f29b4a6" representation="index" type="int">
+                                <expr>Style</expr>
+                                <init>1</init>
+                            </parameter>
+                            <parameter control="false" name="Alpha" oid="44abecb4-0141-43c4-9fb0-cf09fccfac9e" type="int">
+                                <init>255</init>
+                            </parameter>
+                            <parameter control="false" name="Rotate" oid="4598da40-dd7e-4849-b56f-0f3cc845a291" type="bool">
+                                <init>true</init>
+                            </parameter>
+                            <parameter control="false" name="NbStyles" oid="f97fea51-e8b1-42ce-b700-f58244572695" type="real">
+                                <init>2.0</init>
+                            </parameter>
+                        </inputParameters>
+                        <outputParameters>
+                            <parameter name="OffsetOut" oid="9a0a13e3-8b48-407c-90dd-8ecb01e8213f" type="real"/>
+                        </outputParameters>
+                    </properties>
+                    <children/>
+                </referenceContainer>
+                <rectangle oid="04b6950a-2d10-42c8-9b34-e44f0f95b869">
+                    <pathFromRoot value="5,0"/>
+                    <properties name="control">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <firstPoint>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </firstPoint>
+                        <thirdPoint>
+                            <x>
+                                <init>300.0</init>
+                                <expr>SizeX</expr>
+                            </x>
+                            <y>
+                                <init>300.0</init>
+                                <expr>SizeY</expr>
+                            </y>
+                        </thirdPoint>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>true</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>-1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>1</init>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <textureControl>
+                            <init>false</init>
+                        </textureControl>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>-1</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>false</init>
+                        </modulate>
+                        <tessellate>
+                            <init>false</init>
+                        </tessellate>
+                    </properties>
+                </rectangle>
+                <condContainer oid="46625294-c5ab-4030-81ca-312b7767b630">
+                    <pathFromRoot value="6,0"/>
+                    <properties name="conditional group">
+                        <visible>
+                            <init>false</init>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>0.0</init>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <index allVisible="false">
+                            <init>default</init>
+                            <expr>Style</expr>
+                        </index>
+                        <indexes default="1">
+                            <index value="1"/>
+                            <index value="2"/>
+                        </indexes>
+                    </properties>
+                    <children>
+                        <line oid="ec505050-f0eb-490b-bddc-130fc99dcbd1">
+                            <pathFromRoot value="0,6,0"/>
+                            <properties name="CHECKER">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-248.0</init>
+                                        </x>
+                                        <y>
+                                            <init>165.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-187.0</init>
+                                        </x>
+                                        <y>
+                                            <init>249.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-68.0</init>
+                                        </x>
+                                        <y>
+                                            <init>164.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>-1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                        <line oid="2922d3f2-ab47-4aa4-b89e-7f9c272d583f">
+                            <pathFromRoot value="1,6,0"/>
+                            <properties name="STRIPE">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <points>
+                                    <point>
+                                        <x>
+                                            <init>-271.0</init>
+                                        </x>
+                                        <y>
+                                            <init>170.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-169.0</init>
+                                        </x>
+                                        <y>
+                                            <init>222.0</init>
+                                        </y>
+                                    </point>
+                                    <point>
+                                        <x>
+                                            <init>-146.0</init>
+                                        </x>
+                                        <y>
+                                            <init>152.0</init>
+                                        </y>
+                                    </point>
+                                </points>
+                                <lineWidth>
+                                    <init>0</init>
+                                </lineWidth>
+                                <lineStipple>
+                                    <init>0</init>
+                                </lineStipple>
+                                <lineCap>
+                                    <init>round</init>
+                                </lineCap>
+                                <haloing>
+                                    <init>true</init>
+                                </haloing>
+                                <haloColor>
+                                    <init>-1</init>
+                                </haloColor>
+                                <outlineColor>
+                                    <init>-1</init>
+                                </outlineColor>
+                                <outlineOpacity>
+                                    <init>255</init>
+                                </outlineOpacity>
+                            </properties>
+                        </line>
+                    </children>
+                </condContainer>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 167806002 -->
+

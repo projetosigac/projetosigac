@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<fontTable generateAsBitmap="true" generateHalo="true" name="font_table" size="13">
+    <fontDefinition index="0" path="../../../../config/fonts/Font T1.nfd"/>
+    <fontDefinition index="1" path="../../../../config/fonts/Font T2.nfd"/>
+    <fontDefinition index="2" path="../../../../config/fonts/Font T3.nfd"/>
+    <fontDefinition index="3" path="../../../../config/fonts/Font T4.nfd"/>
+    <fontDefinition index="4" path="../../../../config/fonts/Font T5.nfd"/>
+    <fontDefinition index="5" path="../../../../config/fonts/Sans18.nfd"/>
+    <fontDefinition index="6" path="../../../../config/fonts/Sans26.nfd"/>
+    <fontDefinition index="7" path="../../../../config/fonts/SansBold18.nfd"/>
+    <fontDefinition index="8" path="../../../../config/fonts/SansBold26.nfd"/>
+    <fontDefinition index="9" path="../../../../config/fonts/Mono18.nfd"/>
+    <fontDefinition index="10" path="../../../../config/fonts/Mono26.nfd"/>
+    <fontDefinition index="11" path="../../../../config/fonts/MonoBold18.nfd"/>
+    <fontDefinition index="12" path="../../../../config/fonts/MonoBold26.nfd"/>
+</fontTable>
+
+<!-- crc32 : 4241679090 -->
+

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="R16" ?>
+
+<?scade_release version="R16.2.1" ?>
+
+<object>
+    <IDE>
+        <ratio horizontal="1" vertical="1"/>
+        <project path="../libWidgets.etp"/>
+        <preview height="22" width="128">
+            <raw numberOfBytes="1282">-119,80,78,71,13,10,26,10,0,0,0,13,73,72,68,82,0,0,0,-128,0,0,0,22,8,2,0,0,0,-121,99,3,-62,0,0,4,-55,73,68,65,84,120,-38,-19,-104,71,72,44,89,20,-122,-97,109,-50,58,-70,-80,21,3,-30,70,-59,22,-60,-39,40,-70,80,16,68,49,-114,17,-19,65,109,115,-106,-63,-44,6,20,81,-97,-72,113,-93,46,20,-61,48,-26,-8,76,-116,105,-52,110,-116,-104,69,17,101,-116,-104,3,98,-98,-97,42,-68,-44,-85,97,16,102,51,35,-44,-65,104,-86,-6,-85,123,-5,-34,-13,-97,123,-84,-29,-105,47,-100,56,113,-30,-60,-23,35,41,41,41,-87,-85,-85,-1,-64,16,-66,-111,-112,-112,-96,-87,-78,-78,50,19,-31
+,73,80,26,-15,120,60,92,-77,-88,-126,-126,2,77,37,37,37,89,99,33,57,57,57,66,85,85,85,89,84,70,70,-122,-52,-52,66,-104,-103,80,41,41,41,-42,-126,49,21,-95,-97,76,26,26,26,97,97,97,5,5,5,95,25,-118,-118,-118,-46,-45,-45,3,-27,-13,-7,-47,-47,-47,76,84,88,88,24,17,17,-95,-87,-87,-119,24,25,25,25,-3,-99,10,-123,66,53,53,53,-60,-56,-44,-44,52,62,62,-2,-21,-9,-14,-10,-10,-122,67,-96,2,-127,64,44,22,-77,-88,-109,-109,19,28,-126,-9,-26,-26,-26,44,-108,-97,-97,111,103,103,7,10,-25,-84,-83,-83,89,11,-50,-56,-56,-80,-75,-75,37,-18,126,38,121,122,122,110,108,108,-100,-99,-99,-3
+,-7,46,-6,90,36,18,-127,-122,-124,-124,-20,-18,-18,-98,-98,-98,-46,104,127,127,31,116,115,115,-45,-57,-57,71,94,94,62,38,38,6,-33,16,10,93,94,94,46,45,45,57,56,56,32,43,83,82,82,14,14,14,-104,-12,-18,-18,110,101,101,-59,-60,-60,4,14,33,106,-25,-25,-25,39,39,39,-124,-34,-33,-33,-49,-52,-52,104,107,107,35,-60,-75,-75,-75,-113,-113,-113,-121,-121,-121,52,-62,-59,-51,-51,77,91,91,27,44,-57,-87,-22,-20,-20,124,120,120,32,3,-113,-113,-113,-15,43,-107,-107,-107,-96,-97,-49,-128,-76,-76,-76,-117,-117,-117,-118,-118,-118,-97,-34,-123,-48,-68,-68,-68,32,-59,64,-117,-118,-118,16,53,124,34,-30,64,-66,-66,-66,-91,-91,-91
+,8,92,86,86,22,-118,79,113,113,49,-30,-126,-25,-55,-40,-26,-26,102,-52,22,26,26,-118,56,-106,-107,-107,33,58,56,19,-124,14,15,15,63,61,61,33,127,-75,-76,-76,16,-60,-99,-99,29,100,46,-95,-120,-2,-21,-21,43,-126,40,45,45,-67,-67,-67,13,107,113,52,105,20,30,30,62,61,61,-67,-66,-66,110,105,105,-119,35,11,95,97,9,25,-104,-108,-108,52,59,59,-117,-55,65,63,-85,1,-56,101,-70,-24,-29,-45,-51,-51,-115,101,-128,-69,-69,59,-118,6,110,81,103,113,38,-104,6,-32,64,-72,-70,-70,-110,-39,114,114,114,-104,6,-84,-82,-82,-70,-72,-72,16,90,93,93,-115,-52,37,6,-52,-49,-49,-37,-40,-40,16,-38,-43,-43,-11,-10,-10
+,70,12,64,-72,117,116,116,104,-92,-85,-85,-37,-46,-46,-62,52,96,107,107,-117,12,52,51,51,-21,-23,-23,-31,12,-32,12,-32,12,-32,12,-32,12,-32,12,-32,12,-32,12,-8,23,6,36,36,36,-96,-117,-111,-107,-107,-59,-89,-105,-105,23,-53,0,116,79,-118,-118,-118,-96,120,7,-57,27,33,-45,0,92,-29,69,80,-10,93,121,121,121,76,3,-42,-42,-42,-48,103,16,74,-65,-35,19,3,22,22,22,-20,-19,-19,9,69,16,-103,6,-96,59,49,52,52,-92,17,-66,68,19,-64,52,0,15,-112,-127,22,22,22,125,125,125,31,24,-128,12,66,111,-7,-29,-1,67,-40,24,-99,-47,-60,-128,-122,-122,-122,-120,119,33,112,44,3,-54,-53,-53,-47,27,3,-95
+,-17,69,16,-103,6,-36,-34,-34,-94,51,32,99,-69,-69,-69,-103,6,-32,109,-99,73,-89,-90,-90,-98,-97,-97,-119,1,123,123,123,-104,-127,-48,-59,-59,69,-90,1,71,71,71,-87,-87,-87,52,-62,34,-25,-26,-26,-104,6,-96,-125,35,3,115,115,115,-47,-3,125,96,0,50,-56,-33,-33,31,103,-80,-90,-90,6,123,-8,-107,-46,111,-108,-22,-22,-22,-22,-21,-21,17,-126,-58,-58,-58,-90,-90,-90,102,74,56,113,-83,-83,-83,-80,-67,-67,-67,-67,-93,-93,3,-53,-3,70,9,-25,20,-101,68,-78,-12,-10,-10,-10,81,-6,-99,82,127,127,-1,-64,-64,-64,-32,-32,-32,-48,-48,16,-106,-14,7,-91,-111,-111,-111,-47,-47,-47,-79,-79,-79,-15,-15,-15,-119,-119,-119,-55,-55
+,-55,41,74,-103,-103,-103,-56,101,122,97,-114,-114,-114,-24,-128,-82,-82,-82,110,24,66,-23,-16,-13,-13,3,69,-1,-75,-68,-68,-52,68,120,18,93,-113,-77,-77,51,82,47,56,56,24,65,97,81,-4,10,10,11,122,93,-108,53,20,-118,-101,-17,5,-118,16,-85,-88,-88,-96,5,67,-85,-59,-94,-40,5,-68,65,39,92,82,82,-126,-37,-21,-21,107,-126,-48,99,87,85,85,-23,-21,-21,35,-110,-120,33,107,-63,112,26,67,12,12,12,-2,-47,0,-72,42,16,8,80,76,61,60,60,112,42,113,108,113,-46,125,40,-95,-67,-60,110,97,79,64,64,64,96,96,-96,80,40,-4,-103,82,80,80,16,118,-120,-102,43,18,-119,-112,83,104,11,113,-4,97,120,100
+,100,36,-14,17,-55,-120,29,-58,-58,-58,-58,83,66,13,73,76,76,68,79,-8,11,-91,-28,-28,-28,20,74,-56,-99,-12,-12,116,-79,88,-116,13,35,-18,-56,-36,-20,-20,108,-44,101,-124,-113,-4,83,12,-73,-104,33,-111,33,-108,117,-38,33,60,-122,-43,50,17,126,8,-108,62,64,72,70,-20,-120,69,29,28,28,48,39,-2,-106,-16,-7,124,-44,46,38,-59,-14,-84,-84,-84,120,60,30,40,2,-115,13,-78,40,66,68,102,-58,45,-109,-58,-59,-59,25,27,27,-45,127,-88,16,104,-42,-126,17,37,66,57,113,-30,-60,-119,19,39,78,-1,-75,-2,2,-51,-69,103,109,124,-12,-67,10,0,0,0,0,73,69,78,68,-82,66,96,-126</raw>
+        </preview>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <declaration>
+        <inputs>
+            <input name="Size" oid="103e257b-3b48-40ee-baac-71e8678c71ed" type="real">
+                <init>50.0</init>
+            </input>
+            <input name="Value" oid="8adfe35c-90d6-4746-9a07-fd66eb0d3d76" type="real">
+                <init>10.0</init>
+            </input>
+            <input name="Angle" oid="33df0c93-559e-4f70-af57-deddd492fc8c" type="real">
+                <init>45.0</init>
+            </input>
+            <input name="Fractional" oid="9757877d-d42a-4367-95f3-79fe9535c3bd" type="int">
+                <init>1</init>
+            </input>
+            <input name="Integral" oid="0a72acfe-839f-4726-ac10-0485cd2aeae5" type="int">
+                <init>3</init>
+            </input>
+            <input name="OriginOffset" oid="74e0484b-748c-4b56-9fb2-a084eddf58ce" type="real">
+                <init>10.0</init>
+            </input>
+            <input name="DisplayValue" oid="6602ab2b-8b12-4023-af99-e4785f913956" type="bool">
+                <init>true</init>
+            </input>
+            <input name="FontColor" oid="97660f81-528a-4a57-92b6-6fe673480ea4" representation="color" type="int">
+                <init>2</init>
+            </input>
+            <input name="Font" oid="bb0cf042-eef5-4803-9fa3-2e7c85ae21b3" representation="font" type="int">
+                <init>1</init>
+            </input>
+            <input name="Style" oid="33f60c56-62a0-4db2-aa9f-88a1677f0965" type="int">
+                <init>1</init>
+            </input>
+        </inputs>
+    </declaration>
+    <children>
+        <container oid="3b5e4e3f-335c-4092-a7eb-0d2a8d9857ac">
+            <pathFromRoot value="0"/>
+            <properties name="Graduation">
+                <visible>
+                    <init>true</init>
+                </visible>
+                <origin>
+                    <x>
+                        <init>0.0</init>
+                    </x>
+                    <y>
+                        <init>0.0</init>
+                    </y>
+                </origin>
+                <priority>
+                    <init>-1</init>
+                </priority>
+                <scale>
+                    <x>
+                        <init>1.0</init>
+                    </x>
+                    <y>
+                        <init>1.0</init>
+                    </y>
+                </scale>
+                <rotate>
+                    <angle>
+                        <init>0.0</init>
+                    </angle>
+                </rotate>
+                <orientation clockwise="false"/>
+                <static editorLinked="true" generateStaticSequence="true" maxX="86.275406" maxY="18.644001" minX="-6.0" minY="-6.5">
+                    <init>false</init>
+                </static>
+            </properties>
+            <children>
+                <shape oid="de65e72f-c22f-4b28-a9be-7cf74d875d1a">
+                    <pathFromRoot value="0,0"/>
+                    <properties name="shape">
+                        <visible>
+                            <init>true</init>
+                            <expr>Style = 1</expr>
+                        </visible>
+                        <points>
+                            <point>
+                                <x>
+                                    <init>60.0</init>
+                                    <expr>Size + OriginOffset</expr>
+                                </x>
+                                <y>
+                                    <init>0.5</init>
+                                </y>
+                                <u>
+                                    <init>0.0</init>
+                                </u>
+                                <v>
+                                    <init>0.0</init>
+                                </v>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>60.0</init>
+                                    <expr>Size + OriginOffset</expr>
+                                </x>
+                                <y>
+                                    <init>-0.5</init>
+                                </y>
+                                <u>
+                                    <init>1.0</init>
+                                </u>
+                                <v>
+                                    <init>0.0</init>
+                                </v>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>10.0</init>
+                                    <expr>OriginOffset</expr>
+                                </x>
+                                <y>
+                                    <init>-0.5</init>
+                                </y>
+                                <u>
+                                    <init>1.0</init>
+                                </u>
+                                <v>
+                                    <init>1.0</init>
+                                </v>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>10.0</init>
+                                    <expr>OriginOffset</expr>
+                                </x>
+                                <y>
+                                    <init>0.5</init>
+                                </y>
+                                <u>
+                                    <init>0.0</init>
+                                </u>
+                                <v>
+                                    <init>1.0</init>
+                                </v>
+                            </point>
+                        </points>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>-1</init>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                        <fillColor>
+                            <init>2</init>
+                            <expr>FontColor</expr>
+                        </fillColor>
+                        <fillOpacity>
+                            <init>255</init>
+                        </fillOpacity>
+                        <polygonSmooth>
+                            <init>true</init>
+                        </polygonSmooth>
+                        <textureControl>
+                            <init>true</init>
+                        </textureControl>
+                        <texture horizAlign="center" horizPattern="1.0" vertAlign="middle" vertPattern="1.0">
+                            <textureId>
+                                <init>247</init>
+                            </textureId>
+                        </texture>
+                        <modulate>
+                            <init>true</init>
+                        </modulate>
+                        <tessellate>
+                            <init>false</init>
+                        </tessellate>
+                    </properties>
+                </shape>
+                <line oid="273bbbf1-f041-4083-87e5-364b2533c0a2">
+                    <pathFromRoot value="1,0"/>
+                    <properties name="Style=2">
+                        <visible>
+                            <init>true</init>
+                            <expr>Style &lt;&gt; 1</expr>
+                        </visible>
+                        <points>
+                            <point>
+                                <x>
+                                    <init>60.0</init>
+                                    <expr>Size + OriginOffset</expr>
+                                </x>
+                                <y>
+                                    <init>0.0</init>
+                                </y>
+                            </point>
+                            <point>
+                                <x>
+                                    <init>10.0</init>
+                                    <expr>OriginOffset</expr>
+                                </x>
+                                <y>
+                                    <init>0.0</init>
+                                </y>
+                            </point>
+                        </points>
+                        <lineWidth>
+                            <init>0</init>
+                        </lineWidth>
+                        <lineStipple>
+                            <init>0</init>
+                        </lineStipple>
+                        <lineCap>
+                            <init>round</init>
+                        </lineCap>
+                        <haloing>
+                            <init>false</init>
+                        </haloing>
+                        <haloColor>
+                            <init>-1</init>
+                        </haloColor>
+                        <outlineColor>
+                            <init>2</init>
+                            <expr>FontColor</expr>
+                        </outlineColor>
+                        <outlineOpacity>
+                            <init>255</init>
+                        </outlineOpacity>
+                    </properties>
+                </line>
+                <container oid="a5777963-01da-43d7-a7c1-07fc86e94971">
+                    <pathFromRoot value="2,0"/>
+                    <properties name="group">
+                        <visible>
+                            <init>true</init>
+                            <expr>DisplayValue</expr>
+                        </visible>
+                        <origin>
+                            <x>
+                                <init>65.0</init>
+                                <expr>(Size + OriginOffset) + 5.0</expr>
+                            </x>
+                            <y>
+                                <init>0.0</init>
+                            </y>
+                        </origin>
+                        <priority>
+                            <init>-1</init>
+                        </priority>
+                        <scale>
+                            <x>
+                                <init>1.0</init>
+                            </x>
+                            <y>
+                                <init>1.0</init>
+                            </y>
+                        </scale>
+                        <rotate>
+                            <angle>
+                                <init>0.0</init>
+                            </angle>
+                        </rotate>
+                        <orientation clockwise="false"/>
+                        <static editorLinked="true" generateStaticSequence="true" maxX="86.275406" maxY="18.644001" minX="-6.0" minY="-6.0">
+                            <init>false</init>
+                        </static>
+                    </properties>
+                    <children>
+                        <container oid="26a836ae-166f-4a9f-af86-ffc0d3b288e6">
+                            <pathFromRoot value="0,2,0"/>
+                            <properties name="group">
+                                <visible>
+                                    <init>true</init>
+                                </visible>
+                                <origin>
+                                    <x>
+                                        <init>0.0</init>
+                                    </x>
+                                    <y>
+                                        <init>0.0</init>
+                                    </y>
+                                </origin>
+                                <priority>
+                                    <init>-1</init>
+                                </priority>
+                                <scale>
+                                    <x>
+                                        <init>1.0</init>
+                                    </x>
+                                    <y>
+                                        <init>1.0</init>
+                                    </y>
+                                </scale>
+                                <rotate>
+                                    <angle>
+                                        <init>0.0</init>
+                                        <expr>Angle</expr>
+                                    </angle>
+                                </rotate>
+                                <orientation clockwise="false"/>
+                                <static editorLinked="true" generateStaticSequence="true" maxX="86.275406" maxY="18.644001" minX="-6.0" minY="-6.0">
+                                    <init>false</init>
+                                </static>
+                            </properties>
+                            <children>
+                                <biFont oid="df81af13-2b7e-4361-bd5d-173ff8add996">
+                                    <pathFromRoot value="0,0,2,0"/>
+                                    <properties name="bi-font">
+                                        <visible>
+                                            <init>true</init>
+                                        </visible>
+                                        <position>
+                                            <x>
+                                                <init>0.0</init>
+                                            </x>
+                                            <y>
+                                                <init>0.0</init>
+                                            </y>
+                                        </position>
+                                        <value>
+                                            <init>-12.12</init>
+                                            <expr>Value</expr>
+                                        </value>
+                                        <format separator="46">
+                                            <integralPart>
+                                                <init>3</init>
+                                                <expr>Integral</expr>
+                                            </integralPart>
+                                            <fractionalPart>
+                                                <init>3</init>
+                                                <expr>Fractional</expr>
+                                            </fractionalPart>
+                                            <secondFontPos>
+                                                <init>0</init>
+                                            </secondFontPos>
+                                            <leadingZeros>
+                                                <init>false</init>
+                                            </leadingZeros>
+                                            <displaySign>
+                                                <init>whenNegative</init>
+                                            </displaySign>
+                                        </format>
+                                        <haloing>
+                                            <init>false</init>
+                                        </haloing>
+                                        <outlineColor>
+                                            <init>2</init>
+                                            <expr>FontColor</expr>
+                                        </outlineColor>
+                                        <haloColor>
+                                            <init>-1</init>
+                                        </haloColor>
+                                        <firstLineWidth>
+                                            <init>2</init>
+                                        </firstLineWidth>
+                                        <firstFont>
+                                            <init>1</init>
+                                            <expr>Font</expr>
+                                        </firstFont>
+                                        <secondLineWidth>
+                                            <init>2</init>
+                                        </secondLineWidth>
+                                        <secondFont>
+                                            <init>1</init>
+                                            <expr>Font</expr>
+                                        </secondFont>
+                                        <horizAlign>
+                                            <init>left</init>
+                                            <expr>(Angle &lt; -290.0) ? 0 : ( (Angle &lt; -250.0) ? 1 : ( (Angle &lt; -110.0) ? 2 : ( (Angle &lt; -70.0) ? 1 : ( (Angle &lt; 70.0) ? 0 : ( (Angle &lt; 110.0) ? 1 : ( (Angle &lt; 250.0) ? 2 : ( (Angle &lt; 290.0) ? 1 : 0 ) ) ) ) ) ) )</expr>
+                                        </horizAlign>
+                                        <vertAlign>
+                                            <init>bottom</init>
+                                            <expr>(Angle &lt; -340.0) ? 1 : ( (Angle &lt; -200.0) ? 2 : ( (Angle &lt; -160.0) ? 1 : ( (Angle &lt; -20.0) ? 0 : ( (Angle &lt; 20.0) ? 1 : ( (Angle &lt; 160.0) ? 2 : ( (Angle &lt; 200.0) ? 1 : ( (Angle &lt; 340.0) ? 0 : 1 ) ) ) ) ) ) )</expr>
+                                        </vertAlign>
+                                    </properties>
+                                </biFont>
+                            </children>
+                        </container>
+                    </children>
+                </container>
+            </children>
+        </container>
+    </children>
+</object>
+
+<!-- crc32 : 938955706 -->
+
