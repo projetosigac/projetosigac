@@ -336,7 +336,7 @@ atendimento = function () {
     var _passoMensagem = function (passo) {
         switch(passo) {
             case 1:
-                $("#passo").html("<b>1º Step:</b> Select the crisi.");
+                $("#passo").html("<b>1º Step:</b> Select the crisis.");
                 break;
             case 2:
                 $("#passo").html("<b>2º Step:</b> Enter the number of victims and calculate ambulances.");
@@ -357,7 +357,7 @@ atendimento = function () {
             dataType: 'json'
         }).done(function(data, textStatus, jqXHR) {
           if(data.status == "OK"){
-            $('<option>').val('').text('Select Crise').appendTo('#listaCriseSelecao');
+            $('<option>').val('').text('Select Crisis').appendTo('#listaCriseSelecao');
 
             for(i in data.rows){
               $('<option>').val(data.rows[i].cri_id).text(data.rows[i].cri_ds).appendTo('#listaCriseSelecao');

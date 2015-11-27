@@ -381,3 +381,19 @@ exports.showAmbList = function (req, res) {
         });
     });
 };
+
+/*Show Active Occurrences*/
+exports.showOccurrences = function (req, res) {
+    var sess = req.session;
+
+    req.getConnection(function(err,connection){
+        //var query = connection.query('SELECT cri_id, cri_ds, cri_afetados, latitudeBoxValue, LongitudeBoxValue from crise  where cri_id in (select id_crise from ocorrencia);', function(err,rows,fields) {
+        var query = connection.query('SELECT * from ocorrencia WHERE id_crise <> 0;', function(err,rows,fields) {
+            if(err) {
+                return console.log("Error Query : %s ",err );
+            }else
+              return res.json({status: 'OK', 'rows' : rows, token: sess.token});
+
+        });
+    });
+};
