@@ -12,7 +12,6 @@ exports.carregarPagina = function(req, res){
 
             else
             {
-                console.log("bla");
                 res.render('uti/vitima', { dados: rows });              
             }                
         });

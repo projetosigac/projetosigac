@@ -199,6 +199,22 @@ exports.getStationsPositions = function (req, res) {
    
 };
 
+exports.getStationsSensorsPositions = function (req, res) {    
+
+    panelDAO.getStationsSensorsPositions(function(err, result) {
+        if(err) {
+            console.log(err);
+            res.statusCode = 401;
+            return res.json({status: 'Error 401', message: 'Nao foi possivel consultar as posições dos sensores das estações', body: req.body});
+        }
+        else{
+            //return res.json(result);
+            res.send(JSON.stringify(result, null, 3));
+        }
+    });
+   
+};
+
 exports.getHospitalsPositions = function (req, res) {    
 
     panelDAO.getHospitalsPositions(function(err, result) {

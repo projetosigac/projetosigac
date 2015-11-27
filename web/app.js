@@ -99,6 +99,7 @@ app.get('/defc/getSensPositions', util.autenticarSessao, defc.getSensorsPosition
 app.get('/defc/getStaPositions', util.autenticarSessao, defc.getStationsPositions);
 app.get('/defc/getClosOccPositions', util.autenticarSessao, defc.getClosedOccurrencesPositions);
 app.get('/defc/getHospPositions', util.autenticarSessao, defc.getHospitalsPositions);
+app.get('/defc/getStSenPositions', util.autenticarSessao, defc.getStationsSensorsPositions);
 
 
 //var policia = require('./routes/policia');
