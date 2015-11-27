@@ -8,6 +8,7 @@
     var pointMvcStat = new google.maps.MVCArray([]);
     var pointMvcOpen = new google.maps.MVCArray([]);
     var pointMvcHosp = new google.maps.MVCArray([]);
+    var pointMvcSmart = new google.maps.MVCArray([]);
 
     var markers = [];
 
@@ -81,9 +82,11 @@
 
 
     function startMapPanel(){
+    
         $("a[href='#mapa']").on('shown.bs.tab', function(){
           google.maps.event.trigger(map, 'resize');
         });
+
     }
 
        function updatePoints(finished) {
@@ -228,6 +231,53 @@ function updatePointsHospitals(finished) {
       });
     }
 
+function updatePointsSmartPlaces(finished) {
+      $.ajax({ 
+        url: "/defc/getStSenPositions", 
+        type: "get",
+        data: {
+          "r": heatmapCircle.getRadius(),
+          "center": {
+            "lat": heatmapCircle.getCenter().H,
+            "lng": heatmapCircle.getCenter().L
+          }
+        },
+        success: function(resp) {
+
+          var image = '../images/marker-crisis.png';
+          var txtTitle = '';
+
+          while(pointMvcSmart.getLength() > 0) pointMvcSmart.pop();
+
+          var points = JSON.parse(resp);
+
+          for (var i=0; i<points.length; i++) {
+            var p = points[i];
+
+            var status_device = (p.device_last_reading == 1 ? 'Power ON' : 'Power OFF - Verify');
+
+            txtTitle =  ''.concat('Control Station: ', p.station_name ,' / Device: ', p.device_name, ' / LastRd: ', status_device);
+            
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(p.lat, p.lng),
+                map: map,
+                icon: image,
+                animation: google.maps.Animation.DROP,
+                //shape: shape,
+                title: txtTitle
+              }); 
+
+            markers.push(marker);
+
+          }
+          if (finished) finished(true);
+        },
+        error: function() {
+          if (finished) finished(false);
+        }
+      });
+    }
+
 
     function updatePointsAmbulances(finished) {
       $.ajax({ 
@@ -294,7 +344,7 @@ function updatePointsHospitals(finished) {
             for (var i=0; i<points.length; i++) {
               var p = points[i];
 
-              txtTitle =  ''.concat('Station: ', p.ID ,'- OK');
+              txtTitle =  ''.concat('Control Station: ', p.ID ,' - OK');
 
               var marker = new google.maps.Marker({
                   position: new google.maps.LatLng(p.lat, p.lng),
@@ -339,7 +389,7 @@ function updatePointsHospitals(finished) {
              for (var i=0; i<points.length; i++) {
                var p = points[i];
 
-              txtTitle =  ''.concat('Sensor: ', p.ID ,'- OK');
+              txtTitle =  ''.concat('Sensor: ', p.ID ,' / Temp: ', p.stu_temp, ' °C / Umid: ', p.stu_umid, ' % - OK');
 
                var marker = new google.maps.Marker({
                    position: new google.maps.LatLng(p.lat, p.lng),
@@ -491,6 +541,7 @@ function updatePointsHospitals(finished) {
                   updatePointsStations(updateViewsForHeatmap);
                   updatePointsOpen(updateViewsForHeatmap);
                   updatePointsHospitals(updateViewsForHeatmap);
+                  updatePointsSmartPlaces(updateViewsForHeatmap);
                   break;
               case "Ambulances":
                   updatePointsAmbulances(updateViewsForHeatmap);
@@ -506,6 +557,9 @@ function updatePointsHospitals(finished) {
                   break;
               case "Hospitals":
                   updatePointsHospitals(updateViewsForHeatmap);
+                  break;
+              case "SmartPlaces":
+                  updatePointsSmartPlaces(updateViewsForHeatmap);
                   break;
               case "None":  
                   break;            
@@ -623,6 +677,10 @@ function updatePointsHospitals(finished) {
         }
 
 
+    }
 
-      
+    function floodingMap() { 
+
+           window.open('http://www.floodmap.net/?ll=-23.200374,-45.900907&z=11&e=599', '_blank');
+
     }

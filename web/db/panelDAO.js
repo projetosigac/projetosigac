@@ -138,7 +138,19 @@ function PanelDAO(pool) {
     };
 
     this.getSensorsPositions = function(callback) {
-      var queryString = this.queryGenerateBatch("stu_id as ID, stu_lat as lat,stu_long as lng","SenTempUmid","stu_id","");
+      var queryString = this.queryGenerateBatch("stu_id as ID, stu_lat as lat,stu_long as lng, stu_temp, stu_umid ","SenTempUmid","stu_id","");
+        var query = self.pool.query(queryString, function (err, rows) {
+            if (err) {
+                callback(err, {});
+            } else {
+                var result = (rows ? rows : {});
+                callback(null, result);
+            }
+        });
+    };
+
+    this.getStationsSensorsPositions = function(callback) {
+      var queryString = this.queryGenerateBatch("device_id,station_name,device_name,device_last_reading,device_latitude as lat ,device_longitude as lng","stations Inner Join station_devices On stations.station_id = station_devices.station_id","device_id","Where  station_devices.device_latitude <> '' And   station_devices.device_longitude <> ''");
         var query = self.pool.query(queryString, function (err, rows) {
             if (err) {
                 callback(err, {});
