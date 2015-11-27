@@ -35,42 +35,17 @@
                <div role="tabpanel" class="tab-pane text-center fade in active" id="panel">
                   <div class="jumbotron control-panel">
                      <div class="row">
+                        
                         <div class="col-lg-6">
                            <div class="col-lg-12 well data">
                               <p class="text-uppercase text-left">number of victims</p>
-                              <div class="col-lg-4">
-                                 <p class="panel-strong" id="survivors">50</p>
-                                 <span class="text-uppercase">survivors</span>
-                              </div>
-                              <div class="col-lg-4">
-                                 <p class="panel-strong" id="dead">70</p>
-                                 <span class="text-uppercase">dead</span>
-                              </div>
-                              <div class="col-lg-4">
-                                 <p class="panel-strong" id="missing">10</p>
-                                 <span class="text-uppercase">missing</span>
-                              </div>
+                              <canvas id="victims-chart" width="80" height="20"></canvas>                                                           
                            </div>
                         </div>
                         <div class="col-lg-6">
                            <div class="col-lg-12 well data">
                               <p class="text-uppercase text-left">number of specialists</p>
-                              <div class="col-lg-3">
-                                 <p class="panel-strong" id-"paramedics">50</p>
-                                 <span class="text-uppercase">paramedics</span>
-                              </div>
-                              <div class="col-lg-3">
-                                 <p class="panel-strong" id="ambulances">70</p>
-                                 <span class="text-uppercase">ambulances</span>
-                              </div>
-                              <div class="col-lg-3">
-                                 <p class="panel-strong" id="firemen">10</p>
-                                 <span class="text-uppercase">firemen</span>
-                              </div>
-                              <div class="col-lg-3">
-                                 <p class="panel-strong" id="policemen">10</p>
-                                 <span class="text-uppercase">policemen</span>
-                              </div>
+                              <canvas id="specialists-chart" width="80" height="20"></canvas>
                            </div>
                         </div>
                      </div>
@@ -79,7 +54,7 @@
                            <div class="col-lg-12 well data">
                               <p class="text-uppercase text-left">level of fuel gases</p>
                               <div class="progress">
-                                 <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                 <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
                                     <span class="sr-only">40% Complete (success)</span>
                                  </div>
                               </div>
@@ -148,8 +123,9 @@
 
    <%- include ../layouts/footer.ejs %>
 
+<script type="text/javascript" src="/../js/Chart.min.js"></script>
+<script type="text/javascript" src="/../js/Chart.HorizontalBar.js"></script>
 <script type="text/javascript" src="/../js/pages/panel.js"></script>  
-
 
 </body>
 
