@@ -74,10 +74,11 @@ li.active{
 
 #map {width:100%;height:450px;}
 
+
 #floating-panel {
   position: absolute;
   top: 650px;
-  left: 50%;
+  left: 40%;
   z-index: 5;
   padding: 5px;
   text-align: center;

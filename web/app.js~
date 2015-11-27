@@ -76,7 +76,6 @@ var hospital = require('./routes/hospital');
 var ambEquipamento = require('./routes/ambEquipamento');
 var defc = require('./routes/defc');
 var reports = require('./routes/reports');
-var registroPedido = require('./routes/registroPedido')
 
 app.get('/', routes.index);
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
