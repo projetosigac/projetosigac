@@ -127,6 +127,5 @@ module.exports = function (app) {
             options.contentTemplate = 'device_details';
             return res.render('firefighter/rescueandaftermath/index', options);
         });
-
     });
 }

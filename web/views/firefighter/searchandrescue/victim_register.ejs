@@ -7,20 +7,36 @@
             <fieldset>
                 <legend></legend>
                 <div class="form-group">
-                    <label class="control-label">Tag ID</label>
-                    <input type="text" class="form-control" value="AA-BB-CC-DD" disabled>
+                    <label class="control-label">Token ID</label>
+                    <input type="text" class="form-control" name="token" value="" disabled>
                 </div>
                 <div class="form-group">
                     <label class="control-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" name="name" placeholder="optional">
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="sel1">Select list:</label>
+                    <label class="control-label">Sex</label>
                     <select class="form-control">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option selected value=""> - </option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Age Group</label>
+                    <select class="form-control">
+                        <option selected value="adult">Adult</option>
+                        <option value="child">Child</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Status</label>
+                    <select class="form-control">
+                        <option selected value=""> - </option>
+                        <option class="btn-danger" value="red">Red</option>
+                        <option class="btn-warning" value="yellow">Yellow</option>
+                        <option class="btn-success" value="green">Green</option>
+                        <option class="btn-default" value="black">Black</option>
                     </select>
                 </div>
                 <div class="form-actions">

@@ -56,6 +56,7 @@ require("./db/ocorrenciaDAO")(pool);
 require("./db/localizacaoAmbulanciaDAO")(pool);
 require("./db/hospitalDAO")(pool);
 require('./db/stationDAO')(pool);
+require('./db/crisisDAO')(pool);
 require("./db/panelDAO")(pool);
 require("./db/victimsDAO")(pool);
 
@@ -179,6 +180,7 @@ require('./routes/firefighter/rescueAndAftermathApi')(app);
  * @author
  */
 require('./routes/firefighter/searchAndRescue')(app);
+require('./routes/firefighter/searchAndRescueApi')(app);
 
 
 

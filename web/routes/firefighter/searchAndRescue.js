@@ -1,4 +1,6 @@
 var util = require('../utils');
+var crisisDAO = require('../../db/crisisDAO')();
+var victimsDAO = require('../../db/victimsDAO')();
 
 module.exports = function (app) {
     //TODO remove hard-coded data
@@ -10,11 +12,6 @@ module.exports = function (app) {
         'navbarbrand': 'SIGAC Web - Firefighter - Search and Rescue',
         'toprightlinks':
         [
-            /*{
-                'text': 'On Field Stations',
-                'href': '/dashboard/firefighter/raa/onfieldstations',
-                'faicon': 'fa-wifi',
-            },*/
             {
                 'text': 'Dashboard',
                 'href': '/dashboard',
@@ -23,10 +20,56 @@ module.exports = function (app) {
         ]
     };
 
-    app.get('/dashboard/firefighter/sar', /*util.autenticarSessao,*/ function(req, res) {
-        var options = Object.create(commonOptions);
+    app.get('/firefighter/sar', /*util.autenticarSessao,*/ function(req, res) {
+        return crisisDAO.getCurrentCrisis(function (err, result, fields){
+            if(err)
+            {
+                console.log(err);
+                return res.status(500).send('DB Error');
+            }
 
-        options.contentTemplate = 'victims_view';
-        return res.render('firefighter/searchandrescue/index', options);
+            var options = Object.create(commonOptions);
+
+            options.content = {};
+            options.content.results = result.map(function(row) {
+                return {
+                    'id': row.cri_id,
+                    'description': row.cri_ds,
+                    'category': row.cri_cat,
+                    'affected': row.cri_afetados };
+            });
+
+            options.contentTemplate = 'crisis_view';
+
+            return res.render('firefighter/searchandrescue/index', options);
+        });
+    });
+
+    app.get('/firefighter/sar/crisis/:crisis_id/victim', util.autenticarSessao, function(req, res) {
+        return victimsDAO.getVictimsByCrisisID(req.params.crisis_id, function (err, result, fields){
+            if(err)
+            {
+                console.log(err);
+                return res.status(500).send('DB Error');
+            }
+
+            var options = Object.create(commonOptions);
+
+            options.content = {};
+            options.content.results = result.map(function(row) {
+                return {
+                    'token': row.token,
+                    'name': row.nome,
+                    'sex': row.sexo,
+                    'status': row.status,
+                    'age': row.age,
+                    'crisis': row.cri_ds
+                };
+            });
+
+            options.contentTemplate = 'victims_view';
+
+            return res.render('firefighter/searchandrescue/index', options);
+        });
     });
 }

@@ -4,11 +4,11 @@
  */
 
 var db = require("./db");
-var stationDAO;
+var victimsDAO;
 
-if(typeof stationDAO === 'undefined')
+if(typeof victimsDAO === 'undefined')
 {
-    stationDAO = {};
+    victimsDAO = {};
 
     (function(dao) {
         var _pool;
@@ -23,9 +23,10 @@ if(typeof stationDAO === 'undefined')
         dao.getVictimsByCrisisID = function(crisisID, callback) {
             return _pool.query(
                 {
-                    sql: 'SELECT * FROM vitimas WHERE crise = ' + crisisID + ' ORDER BY id ASC;'
+                    sql: 'SELECT * FROM sigac.vitimas as v INNER JOIN sigac.crise as c ON c.cri_id = v.crise WHERE crise=' + crisisID + ' ORDER BY id ASC;'
                 },
                 function(err, results, fields) {
+                    console.log(fields)
                     if(err)
                         return callback(err, {});
                     return callback(null, results);
@@ -82,12 +83,12 @@ if(typeof stationDAO === 'undefined')
                 }
             );
         };
-    }(stationDAO));
+    }(victimsDAO));
 }
 
 module.exports = function(pool) {
     if(pool)
-        return stationDAO.setPool(pool);
-    return stationDAO;
+        return victimsDAO.setPool(pool);
+    return victimsDAO;
 }
 
