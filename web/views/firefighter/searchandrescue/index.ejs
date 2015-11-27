@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
 <%- include partials/header %>
 
 <body>
     <div id="wrapper">
         <%- include partials/navbar %>
 
-        <% if(typeof contentTemplate !== 'undefined') { %>
-            <%- include(contentTemplate) %>
-        <% } %>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <%- include victims_view %>
+                </div>
+                <div class="col-md-4">
+                    <%- include victim_register %>
+                </div>
+            </div>
+        </div>
 
         <%- include partials/footer %>
-
-        <script>
-        $(document).ready(function(){
-            //atendimento.init();
-            //atendimento.show_crisis();
-        });
-        </script>
     </div>
 </body>
 </html>

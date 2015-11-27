@@ -15,7 +15,7 @@ $RECYCLE.BIN/
 *.msm
 *.msp
 
-
+npm-debug.log
 
 # =========================
 # Operating System Files

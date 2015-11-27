@@ -5,28 +5,42 @@
     <div class="panel-body">
         <form class="form-vertical">
             <fieldset>
-                <legend></legend>
                 <div class="form-group">
-                    <label class="control-label">Tag ID</label>
-                    <input type="text" class="form-control" value="AA-BB-CC-DD" disabled>
+                    <label class="control-label">Token</label>
+                    <input id="token" type="text" class="form-control" name="token">
                 </div>
                 <div class="form-group">
                     <label class="control-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input id="name" type="text" class="form-control" name="name">
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="sel1">Select list:</label>
-                    <select class="form-control">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                    <label class="control-label" for="sel1">Gender</label>
+                    <select id="gender" class="form-control" name="gender">
+                        <option value="female" selected>Female</option>
+                        <option value="male">Male</option>
                     </select>
                 </div>
                 <div class="form-actions">
-                    <button type="submit" class="btn btn-primary">Register</button>
+                    <button id="register-button" class="btn btn-primary">Register</button>
                 </div>
             </fieldset>
         </form>
+
+        <script>
+            $(document).ready(function() {
+                $('#register-button').click(function(event) {
+                    event.preventDefault();
+
+                    $.post('/dashboard/firefighter/sar', 
+                    {
+                        token: $('#token').val(),
+                        name: $('#name').val(),
+                        gender: $('#gender').val()
+                    }, function(data) {
+                        location.reload();
+                    });
+                });
+            });
+        </script>
     </div>
 </div>
