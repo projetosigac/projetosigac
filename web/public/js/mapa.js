@@ -1,4 +1,4 @@
-var map;
+﻿var map;
 var markers = [];
 var directionsService = new google.maps.DirectionsService;
 var directionsDisplay = new google.maps.DirectionsRenderer;
@@ -98,7 +98,7 @@ mapa = function(){
                     var location = new google.maps.LatLng(latitude, longitude);
                     var marker = _addMarker(location, '../images/marker-crisis.png');
 
-                    _createInfoWindow('Local crises', enderecoFormatado, marker);
+                    _createInfoWindow('Crisis Location', enderecoFormatado, marker);
 
                     map.setCenter(location);
                     map.setZoom(16);
