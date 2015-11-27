@@ -11,7 +11,7 @@
                 <div class="alert alert-info" >
                   <center> <b> Register new Item </b> </center>
                 </div>
-                <form onsubmit="return !!(getPedidoSeg.show_equip());"  id="formInsertEquip">
+                <form onsubmit="return !!(getPedidoSeg._reg_equip() & getPedidoSeg.show_equip());"  id="formInsertEquip">
 
                     <label>Equipment Description:</label>
                     <div class="form-group">
@@ -39,7 +39,7 @@
                 <div class="alert alert-info" >
                   <center> <b> Insert Equipment in Request </b> </center>
                 </div>
-                <form onsubmit="return cadastroEquipamentoAmb.api_insert_equip_amb();" id="formInsertEquipAmb">
+                <form onsubmit="return getPedidoSeg.api_insert_equip_amb();" id="formInsertEquipAmb">
 
                      <label>Equipment Description:</label>
                     <div class="form-group">

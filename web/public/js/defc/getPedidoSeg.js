@@ -1,5 +1,37 @@
+var alldata = {
+    recursos : ["Vehicle", "Ambulance", "Drone", "Extinguishers", "Provisions", "Traffic Signs", "Additional Human Resource"],
+    segments : ["FireFighters", "Health", "Police"],
+    recursosPorSegmento : {
+        FireFighters : ["Vehicle"],
+        Health : ["Ambulance", "Vehicle", "Provisions", "Additional Human Resource"],
+        Police : ["Vehicle"]
+    }
+};
+
+// var recursosPorSegmento = {}
+// recursosPorSegmento["FireFighters"] = ["Vehicle"];
+// recursosPorSegmento["Health"] = ["Ambulance", "Vehicle", "Provisions"];
+// recursosPorSegmento["Police"] = ["Vehicle"];
+
 getPedidoSeg = function(){
+
+    var _reg_equip = function(){
+        var objForm = $('#formInsertEquip').serializeObject();
+
+        if (!objForm.equipDesc) {
+            alert("The field can not be empty");
+            return false;
+        }
+
+        var requestData = JSON.stringify(objForm);
+
+        alldata.recursos.push(requestData);
+
+        return false;
+    }
+
     var _api_get_equip_amb = function (){
+
 
         var aux;
         var objForm = $('#formGetEquipAmb').serializeObject();
@@ -43,23 +75,17 @@ getPedidoSeg = function(){
 
         var vtext="";
         $('#tableEquipamentoPlaca tbody').html('');
-
-        for(i = 0; i<aux.length;i++){
-            if(aux[i] == "\""){
-                vtext=""
-
-                for(j = i+1; aux[j] != "\"";j++ ){
-                    vtext += aux[j];
-                }
-
-                i=j;
-
-                tr = $('<tr/>');
-                            tr.append("<td><i style='cursor:pointer;' class='glyphicon glyphicon-trash' onclick=cadastroEquipamentoAmb.api_delete_equip_amb('"+objForm.placaAmbGet+"','"+vtext.replace(' ', '_')+"');></i></td>");
-                            tr.append("<td>"+vtext+"</td>");
-                $('#tableEquipamentoPlaca tbody').append(tr);
-            }
+        var escrita = requestData
+        escrita = escrita.substring(16);
+        escrita = escrita.substring(0, escrita.length-2);
+        
+        for(i = 0; i < alldata.recursosPorSegmento[escrita].length; i++){
+            tr = $('<tr/>');
+        tr.append("<td><i style='cursor:pointer;' class='glyphicon glyphicon-trash';></i></td>");
+            tr.append("<td>"+alldata.recursosPorSegmento[escrita][i]+"\n"+"</td>");
+            $('#tableEquipamentoPlaca tbody').append(tr);
         }
+        
 
         $("#equipamento_id").val(
                 vtext
@@ -90,12 +116,10 @@ getPedidoSeg = function(){
             $('#tableEquipamento tbody').html('');
             $('#nomeEquipamentoAmb').find('option').remove().end().append('<option value="">Select an equipament</option>').val('');
 
-            var recursos = ["Vehicle", "Ambulance", "Drone", "Extinguishers", "Provisions"];
-
-            for (i = 0; i < recursos.length; i++) {
+            for (i = 0; i < alldata.recursos.length; i++) {
                 //textEquip += jobject[i].replace(/["]/g,"") + "\n";
                 //var nomeEquipamento = jobject[i].replace(/["]/g,"");
-                var nomeEquipamento = recursos[i];
+                var nomeEquipamento = alldata.recursos[i];
                 tr = $('<tr/>');
                 tr.append("<td><i style='cursor:pointer;' class='glyphicon glyphicon-trash' onclick=cadastroEquipamento.api_delete_equip('"+nomeEquipamento+"');></i></td>");
                 tr.append("<td>"+nomeEquipamento+"</td>");
@@ -130,11 +154,10 @@ getPedidoSeg = function(){
             }
 
             textAmb = "";
-            jobject = ["Fire Fighters", "Health", "Police"]
             $('.placa').find('option').remove().end().append('<option value="">Select a segment</option>').val('');
-            for (i = 0; i < jobject.length; i++) {
+            for (i = 0; i < alldata.segments.length; i++) {
                 //textAmb += jobject[i].replace(/["]/g,"") + "\n";
-                var placa = jobject[i].replace(/["]/g,"");
+                var placa = alldata.segments[i].replace(/["]/g,"");
                 $('<option>').val(placa).text(placa).appendTo('.placa');
             }
 
@@ -147,9 +170,18 @@ getPedidoSeg = function(){
         return false;
     }
 
+    var _api_insert_equip_amb = function(){
+        $("#labelMsg").html("Equipment registered successfully!");
+        $("#imgMsg").attr("src","/../images/ok.png");
+        $('#myModal').modal('toggle');
+
+        return false;
+    }
+
     return {
         api_get_equip_amb: _api_get_equip_amb,
         show_equip: _show_equip,
-        show_amb: _show_amb
+        show_amb: _show_amb,
+        api_insert_equip_amb: _api_insert_equip_amb
     }
 }();
