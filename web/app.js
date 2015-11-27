@@ -3,7 +3,7 @@
  */
 
 var express = require('express');
-var session	= require('express-session');
+var session = require('express-session');
 var routes = require('./routes');
 var http = require('http');
 var path = require('path');
@@ -147,6 +147,7 @@ app.post('/api/delete-equip-amb', util.autenticarSessao, api.deleteEquipAmb);
 
 app.post('/api/show-crisis', util.autenticarSessao, api.showCrisis);
 app.post('/api/get-crisis', util.autenticarSessao, api.getCrisis);
+app.post('/api/show-occurrences', util.autenticarSessao, api.showOccurrences);
 app.post('/api/show-amb-list', util.autenticarSessao, api.showAmbList);
 
 app.use(app.router);
