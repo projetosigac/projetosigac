@@ -78,6 +78,6 @@ exports.carregarPagina = function(req, res){
                                 }) 
                             }
             });
-            res.redirect('uti/registeredVictims');
+            res.redirect(req.get('referer'));
         };
 
