@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2" xmlns:asammcd2mc="unknown_address">
+	<declarations>
+		<Package name="utils">
+			<pragmas>
+				<ed:Package oid="!ed/462c/38F6/B40/563e55293b39" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/462d/38F6/B40/563e5529c6b" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/462e/38F6/B40/563e55296054" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/462f/38F6/B40/563e55293512" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+				<asammcd2mc:Pragma>
+					CalibrationVector:&#xA;CalibVect=0
+				</asammcd2mc:Pragma>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

@@ -1,75 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <File xmlns="http://www.esterel-technologies.com/ns/scade/4" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/2">
 	<declarations>
-		<Type name="Ocorrencia">
+		<Type name="Ocurrence">
 			<definition>
 				<Struct>
 					<fields>
-						<Field name="endereco">
+						<Field name="location">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="StringM"/>
+										<TypeRef name="str255"/>
 									</type>
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/3c84/4226/610/562d518c3f66"/>
+								<ed:Field oid="!ed/3ce9/38F6/B40/563e3388595"/>
 							</pragmas>
 						</Field>
-						<Field name="comentarios">
+						<Field name="nVictims">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="StringG"/>
+										<TypeRef name="str32"/>
 									</type>
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/3ce3/4226/610/562d52f43cd0"/>
+								<ed:Field oid="!ed/3d27/38F6/B40/563e34e724cc"/>
 							</pragmas>
 						</Field>
-						<Field name="nVitimas">
+						<Field name="comments">
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="int"/>
+										<TypeRef name="str255"/>
 									</type>
 								</NamedType>
 							</type>
 							<pragmas>
-								<ed:Field oid="!ed/3cda/4226/610/562d52e21313"/>
+								<ed:Field oid="!ed/3d30/38F6/B40/563e350d5e70"/>
 							</pragmas>
 						</Field>
 					</fields>
 				</Struct>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/3c77/4226/610/562d4f7a79b7"/>
+				<ed:Type oid="!ed/3ce8/38F6/B40/563e337d3120"/>
 			</pragmas>
 		</Type>
-		<Type name="Estado">
-			<definition>
-				<Enum>
-					<values>
-						<Value name="Atendendo">
-							<pragmas>
-								<ed:Value oid="!ed/3c82/4226/610/562d508f90d"/>
-							</pragmas>
-						</Value>
-						<Value name="Livre">
-							<pragmas>
-								<ed:Value oid="!ed/3c83/4226/610/562d50b710c0"/>
-							</pragmas>
-						</Value>
-					</values>
-				</Enum>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/3c81/4226/610/562d505a5fd8"/>
-			</pragmas>
-		</Type>
-		<Type name="StringG">
+		<Type name="str32">
 			<definition>
 				<Table>
 					<type>
@@ -80,128 +59,150 @@
 						</NamedType>
 					</type>
 					<size>
-						<ConstValue value="1024"/>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="STR_32_SIZE"/>
+							</path>
+						</IdExpression>
 					</size>
 				</Table>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/3c85/4226/610/562d51a03325"/>
+				<ed:Type oid="!ed/3cea/38F6/B40/563e339815d4"/>
 			</pragmas>
 		</Type>
-		<Type name="StringM">
-			<definition>
-				<Table>
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="char"/>
-							</type>
-						</NamedType>
-					</type>
-					<size>
-						<ConstValue value="255"/>
-					</size>
-				</Table>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/3ca6/4226/610/562d52683897"/>
-			</pragmas>
-		</Type>
-		<Type name="StringP">
-			<definition>
-				<Table>
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="char"/>
-							</type>
-						</NamedType>
-					</type>
-					<size>
-						<ConstValue value="32"/>
-					</size>
-				</Table>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/3cb7/4226/610/562d52802754"/>
-			</pragmas>
-		</Type>
-		<Type name="Color">
-			<definition>
+		<Constant name="STR_32_SIZE">
+			<type>
 				<NamedType>
 					<type>
 						<TypeRef name="int"/>
 					</type>
 				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="32"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3ceb/38F6/B40/563e345f1cae"/>
+			</pragmas>
+		</Constant>
+		<Constant name="STR_255_SIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="255"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3cec/38F6/B40/563e346c9"/>
+			</pragmas>
+		</Constant>
+		<Type name="str255">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="STR_255_SIZE"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
 			</definition>
 			<pragmas>
-				<ed:Type oid="!ed/3d79/4226/610/562d56ed29b3"/>
+				<ed:Type oid="!ed/3d15/38F6/B40/563e34b63634"/>
 			</pragmas>
 		</Type>
-		<Constant name="WHITE">
+		<Constant name="COLOR_GREEN">
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="Color"/>
+						<TypeRef name="int"/>
 					</type>
 				</NamedType>
 			</type>
 			<value>
-				<ConstValue value="0"/>
+				<ConstValue value="56"/>
 			</value>
 			<pragmas>
-				<ed:Constant oid="!ed/3d8a/4226/610/562d5709191f"/>
+				<ed:Constant oid="!ed/3d74/38F6/B40/563e37554f81"/>
 			</pragmas>
 		</Constant>
-		<Constant name="GREEN">
+		<Constant name="COLOR_YELLOW">
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="Color"/>
+						<TypeRef name="int"/>
 					</type>
 				</NamedType>
 			</type>
 			<value>
-				<ConstValue value="0"/>
+				<ConstValue value="45"/>
 			</value>
 			<pragmas>
-				<ed:Constant oid="!ed/3d94/4226/610/562d571d7115"/>
+				<ed:Constant oid="!ed/3d92/38F6/B40/563e37687125"/>
 			</pragmas>
 		</Constant>
-		<Constant name="YELLOW">
+		<Constant name="BLINKING">
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="Color"/>
+						<TypeRef name="int"/>
 					</type>
 				</NamedType>
 			</type>
 			<value>
-				<ConstValue value="0"/>
+				<ConstValue value="4"/>
 			</value>
 			<pragmas>
-				<ed:Constant oid="!ed/3d9e/4226/610/562d57294b62"/>
+				<ed:Constant oid="!ed/3dd1/38F6/B40/563e384f7039"/>
 			</pragmas>
 		</Constant>
-		<Constant name="LIVRE_TEXT">
+		<Constant name="STATIC">
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="StringP"/>
+						<TypeRef name="int"/>
 					</type>
 				</NamedType>
 			</type>
 			<value>
-				<!-- ['W', 'A', 'I', 'T', 'I', 'N', 'G', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/3df0/38F6/B40/563e3869154d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="IDLE_TXT">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="str32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['I', 'D', 'L', 'E', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
 				<DataArrayOp>
 					<data>
-						<ConstValue value="'W'"/>
-						<ConstValue value="'A'"/>
 						<ConstValue value="'I'"/>
-						<ConstValue value="'T'"/>
-						<ConstValue value="'I'"/>
-						<ConstValue value="'N'"/>
-						<ConstValue value="'G'"/>
+						<ConstValue value="'D'"/>
+						<ConstValue value="'L'"/>
+						<ConstValue value="'E'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
@@ -231,39 +232,39 @@
 				</DataArrayOp>
 			</value>
 			<pragmas>
-				<ed:Constant oid="!ed/3e59/4226/610/562d5afc99"/>
+				<ed:Constant oid="!ed/3dff/38F6/B40/563e38b31ad"/>
 			</pragmas>
 		</Constant>
-		<Constant name="EM_ATENDIMENTO_TEXT">
+		<Constant name="OCURRENCE_RCV_TXT">
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="StringP"/>
+						<TypeRef name="str32"/>
 					</type>
 				</NamedType>
 			</type>
 			<value>
-				<!-- ['B', 'U', 'S', 'Y', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<!-- ['O', 'C', 'U', 'R', 'R', 'E', 'N', 'C', 'E', ' ', 'R', 'E', 'C', 'E', 'I', 'V', ... -->
 				<DataArrayOp>
 					<data>
-						<ConstValue value="'B'"/>
+						<ConstValue value="'O'"/>
+						<ConstValue value="'C'"/>
 						<ConstValue value="'U'"/>
-						<ConstValue value="'S'"/>
-						<ConstValue value="'Y'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'N'"/>
+						<ConstValue value="'C'"/>
+						<ConstValue value="'E'"/>
 						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'C'"/>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'V'"/>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'D'"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
@@ -282,31 +283,31 @@
 				</DataArrayOp>
 			</value>
 			<pragmas>
-				<ed:Constant oid="!ed/3e5a/4226/610/562d5b082195"/>
+				<ed:Constant oid="!ed/3f17/38F6/B40/563e38dc1886"/>
 			</pragmas>
 		</Constant>
-		<Constant name="ATENCAO_TEXT">
+		<Constant name="IN_SERVICE_TXT">
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="StringP"/>
+						<TypeRef name="str32"/>
 					</type>
 				</NamedType>
 			</type>
 			<value>
-				<!-- ['W', 'A', 'R', 'N', 'I', 'N', 'G', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<!-- ['I', 'N', ' ', 'S', 'E', 'R', 'V', 'I', 'C', 'E', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
 				<DataArrayOp>
 					<data>
-						<ConstValue value="'W'"/>
-						<ConstValue value="'A'"/>
-						<ConstValue value="'R'"/>
-						<ConstValue value="'N'"/>
 						<ConstValue value="'I'"/>
 						<ConstValue value="'N'"/>
-						<ConstValue value="'G'"/>
 						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'E'"/>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'V'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'C'"/>
+						<ConstValue value="'E'"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
@@ -333,10 +334,10 @@
 				</DataArrayOp>
 			</value>
 			<pragmas>
-				<ed:Constant oid="!ed/3e5b/4226/610/562d5b136219"/>
+				<ed:Constant oid="!ed/4027/38F6/B40/563e39243ee5"/>
 			</pragmas>
 		</Constant>
-		<Constant name="RED">
+		<Constant name="COLOR_RED">
 			<type>
 				<NamedType>
 					<type>
@@ -345,10 +346,10 @@
 				</NamedType>
 			</type>
 			<value>
-				<ConstValue value="0"/>
+				<ConstValue value="25"/>
 			</value>
 			<pragmas>
-				<ed:Constant oid="!ed/3f4d/4226/610/562d8359964"/>
+				<ed:Constant oid="!ed/41f4/38F6/B40/563e428a391d"/>
 			</pragmas>
 		</Constant>
 	</declarations>
