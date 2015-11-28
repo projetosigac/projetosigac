@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<server_conf>
+    <options>
+        <pointers n="2"/>
+        <keyboards n="2"/>
+        <dev_buffer_size n="32"/>
+        <event_queue size="64"/>
+        <event_commands pool="false"/>
+    </options>
+    <display_conf>
+        <du width="768" height="768" ratio_x="20.0" ratio_y="20.0"/>
+        <conf>
+            <window du_id="1" x1="0.0" y1="0.0" x2="15359.0" y2="15359.0">
+                <layer app_id="1" layer_id="1" visible="true"/>
+            </window>
+        </conf>
+    </display_conf>
+</server_conf>
