@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project id="1" oid_count="109">
+	<props>
+		<Prop id="1" name="@STUDIO:PRODUCT">
+			<value>DISPLAY</value>
+		</Prop>
+		<Prop id="3" name="@SDY:RELEASE">
+			<value>R16.2</value>
+		</Prop>
+		<Prop id="4" name="@SDY:RATIO">
+			<value>1.0</value>
+			<value>1.0</value>
+		</Prop>
+		<Prop id="5" name="@SDY:DEFAULTCOLORTABLE">
+			<value>color_table.sct</value>
+		</Prop>
+		<Prop id="6" name="@SDY:DEFAULTLWTABLE">
+			<value>line_width_table.swt</value>
+		</Prop>
+		<Prop id="7" name="@SDY:DEFAULTLSTABLE">
+			<value>line_stipple_table.sst</value>
+		</Prop>
+		<Prop id="8" name="@SDY:TEXTURETABLE">
+			<value>texture_table.stt</value>
+		</Prop>
+		<Prop id="9" name="@SDY:FONTTABLE">
+			<value>font_table.sft</value>
+		</Prop>
+		<Prop id="18" name="@SDY:FONTLIBRARY">
+			<value>Fonts.dll</value>
+		</Prop>
+		<Prop id="22" name="@SDY:CONFTARGET">
+			<value>codegen</value>
+			<configuration>21</configuration>
+		</Prop>
+		<Prop id="23" name="CONFIGURATIONS">
+			<value>21</value>
+			<value>29</value>
+			<value>34</value>
+			<value>42</value>
+			<value>50</value>
+			<value>57</value>
+			<value>64</value>
+		</Prop>
+		<Prop id="24" name="@SDY:CONFSOURCE">
+			<configuration>21</configuration>
+		</Prop>
+		<Prop id="25" name="@SDY:KCGTEMPLATE">
+			<configuration>21</configuration>
+		</Prop>
+		<Prop id="26" name="@SDY:CONFOUTPUT">
+			<value>%ModelName%_Code</value>
+			<configuration>21</configuration>
+		</Prop>
+		<Prop id="27" name="@SDY:CODEGENERATOR">
+			<value>KCG66</value>
+			<configuration>21</configuration>
+		</Prop>
+		<Prop id="28" name="@SDY:CODEGENCHECK">
+			<value>false</value>
+			<configuration>21</configuration>
+		</Prop>
+		<Prop id="30" name="@SDY:CONFTARGET">
+			<value>Simulation</value>
+			<configuration>29</configuration>
+		</Prop>
+		<Prop id="31" name="@SDY:CONFSOURCE">
+			<configuration>29</configuration>
+		</Prop>
+		<Prop id="32" name="@SDY:KCGTEMPLATE">
+			<configuration>29</configuration>
+		</Prop>
+		<Prop id="33" name="@SDY:CONFOUTPUT">
+			<value>%ModelName%_Simulation</value>
+			<configuration>29</configuration>
+		</Prop>
+		<Prop id="35" name="@SDY:CONFTARGET">
+			<value>SuiteCosimulation</value>
+			<configuration>34</configuration>
+		</Prop>
+		<Prop id="36" name="@SDY:CONFSOURCE">
+			<configuration>34</configuration>
+		</Prop>
+		<Prop id="37" name="@SDY:KCGTEMPLATE">
+			<configuration>34</configuration>
+		</Prop>
+		<Prop id="38" name="@SDY:APPPERIODICITY">
+			<value>33</value>
+			<configuration>34</configuration>
+		</Prop>
+		<Prop id="39" name="@SDY:INTEGRATIONMODE">
+			<value>synchronous</value>
+			<configuration>34</configuration>
+		</Prop>
+		<Prop id="40" name="@SDY:POINTERID">
+			<value>0</value>
+			<configuration>34</configuration>
+		</Prop>
+		<Prop id="41" name="@SDY:KEYBOARDID">
+			<value>0</value>
+			<configuration>34</configuration>
+		</Prop>
+		<Prop id="43" name="@SDY:CONFTARGET">
+			<value>Windows</value>
+			<configuration>42</configuration>
+		</Prop>
+		<Prop id="44" name="@SDY:CONFSOURCE">
+			<configuration>42</configuration>
+		</Prop>
+		<Prop id="45" name="@SDY:KCGTEMPLATE">
+			<configuration>42</configuration>
+		</Prop>
+		<Prop id="46" name="@SDY:CONFOUTPUT">
+			<value>%ModelName%_Exe</value>
+			<configuration>42</configuration>
+		</Prop>
+		<Prop id="47" name="@SDY:APPPERIODICITY">
+			<value>33</value>
+			<configuration>42</configuration>
+		</Prop>
+		<Prop id="48" name="@SDY:POINTERID">
+			<value>0</value>
+			<configuration>42</configuration>
+		</Prop>
+		<Prop id="49" name="@SDY:KEYBOARDID">
+			<value>0</value>
+			<configuration>42</configuration>
+		</Prop>
+		<Prop id="51" name="@SDY:CONFTARGET">
+			<value>Android</value>
+			<configuration>50</configuration>
+		</Prop>
+		<Prop id="52" name="@SDY:CONFSOURCE">
+			<configuration>50</configuration>
+		</Prop>
+		<Prop id="53" name="@SDY:KCGTEMPLATE">
+			<configuration>50</configuration>
+		</Prop>
+		<Prop id="54" name="@SDY:CONFOUTPUT">
+			<value>%ModelName%_%Target%</value>
+			<configuration>50</configuration>
+		</Prop>
+		<Prop id="55" name="@SDY:APPPERIODICITY">
+			<value>33</value>
+			<configuration>50</configuration>
+		</Prop>
+		<Prop id="56" name="@SDY:APPORIENTATION">
+			<value>Landscape</value>
+			<configuration>50</configuration>
+		</Prop>
+		<Prop id="58" name="@SDY:CONFTARGET">
+			<value>iOS</value>
+			<configuration>57</configuration>
+		</Prop>
+		<Prop id="59" name="@SDY:CONFSOURCE">
+			<configuration>57</configuration>
+		</Prop>
+		<Prop id="60" name="@SDY:KCGTEMPLATE">
+			<configuration>57</configuration>
+		</Prop>
+		<Prop id="61" name="@SDY:CONFOUTPUT">
+			<value>%ModelName%_%Target%</value>
+			<configuration>57</configuration>
+		</Prop>
+		<Prop id="62" name="@SDY:APPPERIODICITY">
+			<value>33</value>
+			<configuration>57</configuration>
+		</Prop>
+		<Prop id="63" name="@SDY:APPORIENTATION">
+			<value>Landscape</value>
+			<configuration>57</configuration>
+		</Prop>
+		<Prop id="65" name="@SDY:CONFTARGET">
+			<value>FMU</value>
+			<configuration>64</configuration>
+		</Prop>
+		<Prop id="66" name="@SDY:CONFSOURCE">
+			<configuration>64</configuration>
+		</Prop>
+		<Prop id="67" name="@SDY:KCGTEMPLATE">
+			<configuration>64</configuration>
+		</Prop>
+		<Prop id="68" name="@SDY:CONFOUTPUT">
+			<value>%ModelName%_%Target%</value>
+			<configuration>64</configuration>
+		</Prop>
+		<Prop id="69" name="@SDY:APPPERIODICITY">
+			<value>33</value>
+			<configuration>64</configuration>
+		</Prop>
+		<Prop id="71" name="REPCONFIGURATIONS">
+			<value>70</value>
+		</Prop>
+		<Prop id="72" name="@SDYREP:CONFSOURCE">
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="73" name="@SDY:@SDYREP:OUTPUT">
+			<value>%ModelName%_Report</value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="74" name="@SDYREP:INTERNATIONALIZATION">
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="75" name="@SDYREP:AUTHORS">
+			<value>&lt;authors></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="76" name="@SDYREP:CLASSIFICATION">
+			<value>&lt;document classification></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="77" name="@SDYREP:COMPANYINFO">
+			<value>&lt;company></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="78" name="@SDYREP:DISTLIST">
+			<value>&lt;distribution list></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="79" name="@SDYREP:IMAGEPATH">
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="80" name="@SDYREP:LOGOPATH">
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="81" name="@SDYREP:BANNERPATH">
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="82" name="@SDYREP:SUMMARY">
+			<value>&lt;summary></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="83" name="@SDYREP:DATE">
+			<value>&lt;date></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="84" name="@SDYREP:DESCRIPTION">
+			<value>&lt;description></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="85" name="@SDYREP:INDEX">
+			<value>&lt;index></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="86" name="@SDYREP:ISSUE">
+			<value>&lt;issue number></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="87" name="@SDYREP:REFERENCE">
+			<value>&lt;reference></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="88" name="@SDYREP:REFERENCENB">
+			<value>&lt;reference number></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="89" name="@SDYREP:SUBTITLE">
+			<value>&lt;subtitle></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="90" name="@SDYREP:TITLE">
+			<value>&lt;title></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="91" name="@SDYREP:HEADERLEFT">
+			<value>$(ReferenceNr)&#xA;$(CreatedDate)</value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="92" name="@SDYREP:HEADERCENTER">
+			<value>$(IssueNr)</value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="93" name="@SDYREP:HEADERRIGHT">
+			<value>$(PageNumbering)</value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="94" name="@SDYREP:FOOTERLEFT">
+			<value></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="95" name="@SDYREP:FOOTERCENTER">
+			<value>&lt;Corporate Info></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="96" name="@SDYREP:FOOTERRIGHT">
+			<value></value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="97" name="@SDYREP:SUBMODELS">
+			<value>false</value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="98" name="@SDYREP:SYMBOLS">
+			<value>false</value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="99" name="@SDYREP:WIDGETSETS">
+			<value>false</value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="100" name="@SDYREP:SCREENSHOTS">
+			<value>true</value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="101" name="@SDYREP:RESOURCES">
+			<value>$(CONFIG)/default</value>
+			<configuration>70</configuration>
+		</Prop>
+		<Prop id="102" name="@SDYREP:FORMAT">
+			<value>HTML</value>
+			<configuration>70</configuration>
+		</Prop>
+	</props>
+	<roots>
+		<Folder id="11" extensions="sct;swt;sst;sft;stt" name="Resource Files">
+			<elements>
+				<FileRef id="12" persistAs=".\color_table.sct"/>
+				<FileRef id="13" persistAs=".\line_width_table.swt"/>
+				<FileRef id="14" persistAs=".\line_stipple_table.sst"/>
+				<FileRef id="15" persistAs=".\font_table.sft"/>
+				<FileRef id="17" persistAs=".\texture_table.stt"/>
+			</elements>
+		</Folder>
+		<Folder id="19" extensions="sgfx;ogfx;pgfx;asfx;trace" name="Model Files">
+			<elements>
+				<FileRef id="105" persistAs="SensorGraphs.sgfx">
+					<props>
+						<Prop id="106" name="@SDY:MODELDEFINITIONS"/>
+						<Prop id="107" name="@SDY:MODELEXTINCLUDES"/>
+						<Prop id="108" name="@SDY:MODELEXTSOURCES">
+							<value>get_values.c</value>
+						</Prop>
+						<Prop id="109" name="@SDY:MODELEXTLIBRARIES"/>
+					</props>
+				</FileRef>
+			</elements>
+		</Folder>
+		<Folder id="103" extensions="etp" name="Libraries">
+			<elements>
+				<FileRef id="104" persistAs="$(SCADEDISPLAY_HOME)\examples\objects\Widgets\libWidgets.etp"/>
+			</elements>
+		</Folder>
+	</roots>
+	<configurations>
+		<Configuration id="21" name="Code"/>
+		<Configuration id="29" name="Simulation"/>
+		<Configuration id="34" name="Co-simulation"/>
+		<Configuration id="42" name="Windows"/>
+		<Configuration id="50" name="Android"/>
+		<Configuration id="57" name="iOS"/>
+		<Configuration id="64" name="FMU"/>
+		<Configuration id="70" name="Reporter"/>
+	</configurations>
+</Project>
