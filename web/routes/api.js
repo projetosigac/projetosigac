@@ -1,7 +1,7 @@
 
 var ocorrenciaDAO = require('../db/ocorrenciaDAO')(); // load the database library
-//var localicazaoAmbulanciaDAO = require('../db/localizacaoAmbulanciaDAO')(); // load the database library
-
+var localizacaoAmbulanciaDAO = require('../db/localizacaoAmbulanciaDAO')(); // load the database library
+var utils = require('./utils');
 /*
  * APIS do Sistema.
  */
@@ -36,15 +36,21 @@ exports.verificarOcorrencia = function (req, res, next) {
             latitude: latAsDouble,
             longitude: longAsDouble
         }
-        localicazaoAmbulanciaDAO.salvarLocalizacao(localizacao, function(err) {
+        localizacaoAmbulanciaDAO.salvarLocalizacao(localizacao, function(err) {
             if (err) {
                 console.log(err);
             }
         });
     }
-    ocorrenciaDAO.obterOcorrenciaAberta(function(err, result) {
+    ocorrenciaDAO.obterOcorrenciaAberta(req.query.placa, function(err, result) {
         if (err) return next(err);
-        res.json(result);
+		if (result != null) {
+			result.endereco = utils.removeSpecialChars(result.endereco);
+			result.comentarios = utils.removeSpecialChars(result.comentarios);
+			res.json(result);
+		} else {
+			res.json({});
+		}        
     });
 
 }

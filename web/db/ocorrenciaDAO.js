@@ -17,11 +17,15 @@ function OcorrenciaDAO(pool) {
         this.pool = pool;
     }
 
-    this.obterOcorrenciaAberta = function(callback) {
-        var query = self.pool.query("SELECT * FROM ocorrencia AS ocr WHERE ocr.status LIKE 'ABERTO' AND\
-            ocr.n_ambulancias_necessarias > (\
+    this.obterOcorrenciaAberta = function(placaAmbulancia, callback) {
+        var query = self.pool.query("SELECT * FROM ocorrencia AS ocr WHERE ocr.status LIKE 'ABERTO' \
+            AND ocr.n_ambulancias_necessarias > (\
                 SELECT COUNT(*) FROM atendimento_ambulancia WHERE ocorrencia_id = ocr.id\
-            ) ORDER BY ocr.data_abertura DESC LIMIT 1", function (err, rows) {
+            ) AND (SELECT COUNT(*) FROM atendimento_ambulancia WHERE ocorrencia_id = ocr.id \
+                AND placa_ambulancia = ?) = 0 \
+                ORDER BY ocr.data_abertura DESC LIMIT 1",
+            [placaAmbulancia],
+            function (err, rows) {
             if (err) {
                 callback(err, {});
             } else {
