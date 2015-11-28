@@ -10,8 +10,10 @@
 #ifndef UTILS_H
 #define	UTILS_H
 
-#define log_error(str)     fprintf(stderr, str);
-#define log(str)           fprintf(stdin, str);
+#define STR_END '\0';
+
+#define log_error(str, ...)     fprintf(stderr, str, ##__VA_ARGS__)
+#define log(str, ...)           fprintf(stdout, str, ##__VA_ARGS__)
 
 #ifdef  DEBUG   
 #define debug printf

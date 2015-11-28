@@ -5,8 +5,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "config.h"
+
 #include "utils.h"
+#include "config.h"
 
 #define CONFILE_FILE_LOCATION   "./panel.cfg"
 #define PROPERTY_SEPARATOR      "="

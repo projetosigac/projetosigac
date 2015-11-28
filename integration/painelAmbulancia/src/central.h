@@ -12,12 +12,21 @@
 #ifndef CENTRAL_H
 #define	CENTRAL_H
 
+#include "kcg_types.h"
+#include "utils.h"
+
+typedef struct {
+	char plate[10];
+	double latitude;
+	double longitude;
+} AmbulanceInfo;
+
 #ifdef	__cplusplus
 extern "C" {
 #endif
 
-    void checkOccurrence(void);
-    void confirmService(void);
+    int checkOccurrence(AmbulanceInfo* info, Ocurrence* occurence);
+    void confirmService(char* plate, int occurenceId);
 
 
 #ifdef	__cplusplus
