@@ -4,7 +4,7 @@
 exports.carregarPagina = function(req, res){
 
 	req.getConnection(function(err,connection){  
-		var queryStr = 'SELECT * FROM sigac.paciente_status WHERE paciente_id=' + req.params.pId + ' ORDER BY timestamp DESC';
+		var queryStr = 'SELECT * FROM sigac.vitimas_status  WHERE id_vitima=' + req.params.pId + ' ORDER BY timestamp DESC';
         var query = connection.query(queryStr, function(err,rows,fields)
         {
             if(err)
@@ -12,7 +12,7 @@ exports.carregarPagina = function(req, res){
 
             else
             {
-				res.render('uti/vitima', { dados: rows });              
+                res.render('uti/vitima', { dados: rows });              
             }                
         });
     }); 

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://sigac.herokuapp.com/" />
+<title>Teste_cadastro_equip</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Teste_cadastro_equip</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//button[@type='submit']</td>
+	<td></td>
+</tr>
+<tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>//div[@id='wrapper']/div/div[3]/div[2]/a/div/div/div/div/i</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>//div[@id='wrapper']/div/div[3]/div[2]/a/div/div/div/div[2]/div[2]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=Equipment Register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>EQUIPAMENTO 3</td>
+	<td>equipamento</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>id=equipDesc</td>
+	<td>${equipamento}</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=bt_1</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.modal-footer &gt; button.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=nomeEquipamentoAmb</td>
+	<td>label=${equipamento}</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=placaAmb</td>
+	<td>label=FKO-9789</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=#formInsertEquipAmb &gt; div.form-group &gt; button.btn.btn-info</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=div.modal-footer &gt; button.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>id=placaAmbGet</td>
+	<td>label=FKO-9789</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>css=button.btn.btn-default</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>10000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>//table/tbody/tr/td[contains(text(),'${equipamento}')]</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

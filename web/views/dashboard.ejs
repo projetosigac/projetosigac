@@ -1,55 +1,51 @@
 <%- include layouts/header.ejs %>
 </head>
-	<body>
-		<div id="wrapper">
-			<%- include layouts/navigation.ejs %>
-			<div class="container-fluid">
+    <body>
+        <div id="wrapper">
+            <%- include layouts/navigation.ejs %>
+            <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Control Panel</h1>
-                </div>
+                <br />
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /.row -->
             <div class="row">
-							<div class="col-lg-3 col-md-6">
-                  <a href="uti/crises">
-                    <div class="panel panel-saude">
-
+                          <div class="col-lg-3 col-md-6">
+                  <a href="/defc">
+                    <div class="panel panel-defesa">
                         <div class="panel-heading">
                           <div class="row">
                               <div class="col-xs-3">
-                                  <i class="fa fa-heartbeat fa-4x"></i>
+                                  <i class="fa fa-bar-chart fa-4x"></i>
                               </div>
                               <div class="col-xs-9 text-right">
-                                  <div class="huge">HEALTH</div>
-                                  <div>Emergency Room</div>
+                                  <div class="huge">CIVIL DEFENCE</div>
+                                  <div>Monitoring Room</div>
                               </div>
                           </div>
                         </div>
                     </div>
                   </a>
               </div>
-							<div class="col-lg-3 col-md-6">
-                  <a href="ambulancia/atendimento">
-                    <div class="panel panel-saude">
-
+                <div class="col-lg-3 col-md-6">
+                  <a href="/defc/panel">
+                    <div class="panel panel-defesa">
                         <div class="panel-heading">
                           <div class="row">
                               <div class="col-xs-3">
-                                  <i class="fa fa-ambulance fa-4x"></i>
+                                  <i class="fa fa-cogs fa-4x"></i>
                               </div>
                               <div class="col-xs-9 text-right">
-                                  <div class="huge">HEALTH</div>
-                                  <div>Ambulance</div>
+                                  <div class="huge">CIVIL DEFENCE</div>
+                                  <div>Coordenation</div>
                               </div>
                           </div>
                         </div>
                     </div>
                   </a>
-              </div>
-							<div class="col-lg-3 col-md-6">
-                  <a href="#">
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <a href="/firefighter/sar">
                     <div class="panel panel-bomb">
 
                         <div class="panel-heading">
@@ -66,8 +62,8 @@
                     </div>
                   </a>
               </div>
-							<div class="col-lg-3 col-md-6">
-                  <a href="#">
+                <div class="col-lg-3 col-md-6">
+                  <a href="/dashboard/firefighter/raa">
                     <div class="panel panel-bomb">
 
                         <div class="panel-heading">
@@ -86,46 +82,46 @@
               </div>
             </div>
 
-						<!-- /.row -->
-						<div class="row">
-							<div class="col-lg-3 col-md-6">
-                  <a href="#">
-                    <div class="panel panel-defesa">
+            <!-- /.row -->
+              <div class="row">
+                            <div class="col-lg-3 col-md-6">
+                  <a href="uti/crises">
+                    <div class="panel panel-saude">
 
                         <div class="panel-heading">
                           <div class="row">
                               <div class="col-xs-3">
-                                  <i class="fa fa-cogs fa-4x"></i>
+                                  <i class="fa fa-heartbeat fa-4x"></i>
                               </div>
                               <div class="col-xs-9 text-right">
-                                  <div class="huge">CIVIL DEF</div>
-                                  <div>Coordenation</div>
+                                  <div class="huge">HEALTH</div>
+                                  <div>Emergency Room</div>
                               </div>
                           </div>
                         </div>
                     </div>
                   </a>
               </div>
-							<div class="col-lg-3 col-md-6">
-                  <a href="#">
-                    <div class="panel panel-defesa">
+                            <div class="col-lg-3 col-md-6">
+                  <a href="ambulancia/atendimento">
+                    <div class="panel panel-saude">
 
                         <div class="panel-heading">
                           <div class="row">
                               <div class="col-xs-3">
-                                  <i class="fa fa-users fa-4x"></i>
+                                  <i class="fa fa-ambulance fa-4x"></i>
                               </div>
                               <div class="col-xs-9 text-right">
-                                  <div class="huge">CIVIL DEF</div>
-                                  <div>Communication</div>
+                                  <div class="huge">HEALTH</div>
+                                  <div>Ambulance</div>
                               </div>
                           </div>
                         </div>
                     </div>
                   </a>
               </div>
-							<div class="col-lg-3 col-md-6">
-                  <a href="#">
+              <div class="col-lg-3 col-md-6">
+                  <a href="/dashboard/police/OR">
                     <div class="panel panel-policia">
 
                         <div class="panel-heading">
@@ -142,7 +138,7 @@
                     </div>
                   </a>
               </div>
-							<div class="col-lg-3 col-md-6">
+                            <div class="col-lg-3 col-md-6">
                   <a href="#">
                     <div class="panel panel-policia">
 
@@ -178,43 +174,18 @@
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <i class="fa fa-envelope fa-fw"></i> New Message
                                     <span class="pull-right text-muted small"><em>27 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    <i class="fa fa-exclamation-triangle fa-fw"></i> New Accident!
+                                    <span class="pull-right text-muted small"><em>24 hours ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-money fa-fw"></i> Payment Received
-                                    <span class="pull-right text-muted small"><em>Yesterday</em>
+                                    <span class="pull-right text-muted small"><em>2 days ago</em>
                                     </span>
                                 </a>
                             </div>
@@ -230,7 +201,7 @@
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
-		</div>
-		<%- include layouts/footer.ejs %>
-	</body>
+        </div>
+        <%- include layouts/footer.ejs %>
+    </body>
 </html>

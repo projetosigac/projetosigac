@@ -300,73 +300,77 @@ table.dataTable thead .sorting:after {
 }
 
 .panel-policia {
-    border-color: #2C3539;
+    border-color: #34495e;
 }
 
 .panel-policia .panel-heading {
-    border-color: #2C3539;
+    border-color: #34495e;
     color: #fff;
-    background-color: #2C3539;
+    background-color: #34495e;
 }
 
 .panel-policia a {
-    color: #2C3539;
+    color: #34495e;
 }
 
 .panel-policia a:hover {
-    color: #3d8b3d;
+    color: #2c3e50;
 }
 
 .panel-saude {
-    border-color: #d9534f;
+    border-color: #1abc9c;
 }
 
 .panel-saude .panel-heading {
-    border-color: #d9534f;
-    color: #d9534f;
-    background-color: #ffffff;
+    border-color: #1abc9c;
+    color: #fff;
+    background-color: #1abc9c;
 }
 
 .panel-saude a {
-    color: #d9534f;
+    color: #1abc9c;
 }
 
 .panel-saude a:hover {
-    color: #b52b27;
+    color: #16a085;
 }
 
 .panel-bomb {
-    border-color: #d9534f;
+    border-color: #e74c3c;
 }
 
 .panel-bomb .panel-heading {
-    border-color: #d9534f;
+    border-color: #e74c3c;
     color: #fff;
-    background-color: #d9534f;
+    background-color: #e74c3c;
 }
 
 .panel-bomb a {
-    color: #d9534f;
+    color: #e74c3c;
 }
 
 .panel-bomb a:hover {
-    color: #b52b27;
+    color: #c0392b;
 }
 
 .panel-defesa {
-    border-color: #f0ad4e;
+    border-color: #3498db;
 }
 
 .panel-defesa .panel-heading {
-    border-color: #f0ad4e;
+    border-color: #3498db;
     color: #fff;
-    background-color: #f0ad4e;
+    background-color: #3498db;
 }
 
 .panel-defesa a {
-    color: #f0ad4e;
+    color: #3498db  ;
 }
 
 .panel-defesa a:hover {
-    color: #df8a13;
+    color: #2980b9;
+}
+
+.sigac-fixed {
+    position: fixed
 }

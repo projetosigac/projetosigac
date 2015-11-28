@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Devices Graphs
+                </div>
+                
+
+                <div class="panel-body">
+                    <div class="dataTable_wrapper">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-defc">
+                            <tbody>
+                                <div id="chart_div"/>
+                                <script>
+                                    var content = <%= content.station_id %>
+                                </script>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    Station Devices
+                </div>
+                <div class="panel-body">
+                    <div class="dataTable_wrapper">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-defc">
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Device</th>
+                                    <th>Last Reading</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% line_counter = 0 %>
+                                <% content.results.forEach(function(device) { %>
+                                    <% line_counter++ %>
+                                    <tr class="<%= line_counter % 2 === 0? 'even' : 'odd' %> gradeX">
+                                        <td><%= device.id %></td>
+                                        <td><a href="/dashboard/firefighter/raa/device/<%= device.id %>"><%= device.name %></a></td>
+                                        <td><%= device.last_reading %></td>
+                                    </tr>
+                                <% }); %>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

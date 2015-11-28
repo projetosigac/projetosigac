@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+             <div class="panel panel-default">
+                <div class="panel-heading">
+                    Victims from Crisis: <%= content.results[0].crisis %>
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+                    <div class="dataTable_wrapper">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-victim">
+                            <thead>
+                                <tr>
+                                    <th>Token</th>
+                                    <th>Name</th>
+                                    <th>Sex</th>
+                                    <th>Age</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% content.results.forEach(function(victim) { %>
+                                    <tr class="odd gradeX">
+                                        <td class="text-danger text-center"><%= victim.token %></td>
+                                        <td class="text-danger text-center"><%= victim.name %></td>
+                                        <td class="text-danger text-center"><%= victim.sex %></td>
+                                        <td class="text-danger text-center"><%= victim.age %></td>
+                                        <td class="text-danger text-center"><%= victim.status %></td>
+                                    </tr>
+                                <% }); %>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /.table-responsive -->
+                </div>
+                <!-- /.panel-body -->
+            </div>
+            <!-- /.panel -->
+        </div>
+    </div>
+</div>

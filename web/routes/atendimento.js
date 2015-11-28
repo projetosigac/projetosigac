@@ -2,12 +2,13 @@
  * Funcionalidades envolvendo a página de atendimento
  */
 var ocorrenciaDAO = require('../db/ocorrenciaDAO')(); // load the database library
+var localizacaoAmbulanciaDAO = require('../db/localizacaoAmbulanciaDAO')();
 
 exports.carregarPagina = function(req, res){
   res.render('ambulancia/atendimento', { title: 'Hello World' });
 };
 /**
- * Retorna a base de samu que contém a ambulância com a configuração adequada para atendimento a ocorrência
+ * Retorna a lista de ambulância com status Ativo para atendimento a ocorrência
  * Esse método é utilizado pela tela de atendimento para abrir uma ocorrência
  *
  * @author Danilo Ramalho
@@ -15,8 +16,8 @@ exports.carregarPagina = function(req, res){
  * @param req HTTP request
  * @param res HHTP response
  */
-exports.carregarBaseSamu = function (req, res, next) {
-    ocorrenciaDAO.obterBaseSamuAtiva(function(err, result) {
+exports.carregarAmbulanciaAtiva = function (req, res, next) {
+    ocorrenciaDAO.obterAmbulanciaAtiva(function(err, result) {
         if (err) return next(err);
         else res.json(result);
     });
@@ -59,8 +60,20 @@ exports.salvarOcorrencia = function (req, res, next) {
       qtdVitimas : req.body.qtdVitimas,
       qtdAmb : req.body.qtdAmb,
       qtdMed : req.body.qtdMed,
-      observacao : req.body.observacao
+      observacao : req.body.observacao,
+      nroHospitais: req.body.nroHospitais,
+      hospital: [],
+      id_crise: req.body.listaCriseSelecao
     };
+    if(ocorrencia.nroHospitais > 1){
+      var idHospital = req.body.idHospital;
+      var qtdVitimaHospital = req.body.qtdVitimaHospital;
+      for(i in idHospital){
+        ocorrencia["hospital"].push({id_hospital: idHospital[i], qtdVitimaHospital: qtdVitimaHospital[i]});
+      }
+    }else{
+      ocorrencia["hospital"].push({id_hospital: req.body.idHospital, qtdVitimaHospital: req.body.qtdVitimaHospital});
+    }
 
   /*Validação dos valores do formulário de cadastro de ocorrência*/
   var camposValidos = true;
@@ -79,7 +92,29 @@ exports.salvarOcorrencia = function (req, res, next) {
 
   ocorrenciaDAO.salvarOcorrencia(ocorrencia, function(err, result) {
       if (err) return next(err);
-      else res.json(result);
+      else {
+        console.log(result);
+        res.json(result)
+      };
   });
+
+};
+
+/**
+ * Retorna as localizações de todas as ambulâncias cadastradas
+ * Esse método é utilizado pela tela de ambulancias/chamados
+ *
+ * @param req HTTP request
+ * @param res HHTP response
+ */
+exports.localizacaoAmbulancias = function (req, res, next) {
+
+    var param = {
+      status : req.query.status
+    };
+    localizacaoAmbulanciaDAO.listarLocalizacoes(param, function(err, result) {
+        if (err) return next(err);
+        else res.json(result);
+    });
 
 };

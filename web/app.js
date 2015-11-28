@@ -3,7 +3,7 @@
  */
 
 var express = require('express');
-var session	= require('express-session');
+var session = require('express-session');
 var routes = require('./routes');
 var http = require('http');
 var path = require('path');
@@ -36,11 +36,12 @@ app.use(express.static(path.join(__dirname, 'public')));
  * Pool usado nos componentes de acesso a dados.
  */
 var connConfig = {
-    connectionLimit : 10,
-    host            : 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
-    user            : 'admin',
-    password        : 'adminsigac',
-    database:'sigac'
+    connectionLimit    : 10,
+    multipleStatements : true,
+    host               : 'sigac.cc8r8un1zbjy.sa-east-1.rds.amazonaws.com',
+    user               : 'admin',
+    password           : 'adminsigac',
+    database           : 'sigac'
 };
 
 var pool  = mysql.createPool(connConfig);
@@ -53,36 +54,70 @@ app.use(
 // inicia os DAOs.
 require("./db/ocorrenciaDAO")(pool);
 require("./db/localizacaoAmbulanciaDAO")(pool);
+require("./db/hospitalDAO")(pool);
+require('./db/stationDAO')(pool);
+require('./db/crisisDAO')(pool);
+require("./db/panelDAO")(pool);
+require("./db/victimsDAO")(pool);
 
 //load routes
 // The routes MUST be loaded AFTER ALL the DAO components.
 var dashboard = require('./routes/dashboard');
 var utiCrises = require('./routes/utiCrises');
 var utiVitimas = require('./routes/utiVitimas');
+var utiRegisteredVictims = require('./routes/utiRegisteredVictims');
 var utiVitima = require('./routes/utiVitima');
+var utiBedsAvailable = require('./routes/utiBedsAvailable');
 var customers = require('./routes/customers');
 var api = require('./routes/api');
 var apiBombeiro = require('./routes/bombeiro')
 var util = require('./routes/utils');
 var atendimento = require('./routes/atendimento');
-var ambEquipamento = require('./routes/ambEquipamento')
+var hospital = require('./routes/hospital');
+var ambEquipamento = require('./routes/ambEquipamento');
+var defc = require('./routes/defc');
+var reports = require('./routes/reports');
+var registroPedido = require('./routes/registroPedido')
 
 app.get('/', routes.index);
 app.get('/dashboard', util.autenticarSessao, dashboard.carregarPagina);
 app.get('/uti/crises', util.autenticarSessao, utiCrises.carregarPagina);
+app.get('/uti/crises:cId', util.autenticarSessao, utiCrises.carregarPagina);
 app.get('/uti/vitimas', util.autenticarSessao, utiVitimas.carregarPagina);
-app.get('/uti/vitima/:pId', util.autenticarSessao, utiVitima.carregarPagina);
+app.get('/uti/registeredVictims', util.autenticarSessao, utiRegisteredVictims.carregarPagina);
+app.get('/uti/registeredVictims:cId', util.autenticarSessao, utiRegisteredVictims.carregarPagina);
+app.get('/uti/vitima:pId', util.autenticarSessao, utiVitima.carregarPagina);
+app.get('/uti/bedsAvailable', util.autenticarSessao, utiBedsAvailable.carregarPagina);
 app.get('/ambulancia/ambulancias', util.autenticarSessao, routes.ambulancias);
 app.get('/ambulancia/atendimento', util.autenticarSessao, atendimento.carregarPagina);
 app.get('/ambulancia/chamados', util.autenticarSessao, routes.chamados);
 app.get('/ambulancia/ambEquipamento', util.autenticarSessao, ambEquipamento.carregarPagina);
+app.get('/defc', util.autenticarSessao, defc.carregarPagina);
+app.get('/defc/panel', util.autenticarSessao, defc.carregarPainel);
+app.get('/defc/getParams', util.autenticarSessao, defc.getParameters);
+app.get('/defc/getOccPositions', util.autenticarSessao, defc.getOccurrencesPositions);
+app.get('/defc/getAmbPositions', util.autenticarSessao, defc.getAmbulancesPositions);
+app.get('/defc/getSensPositions', util.autenticarSessao, defc.getSensorsPositions);
+app.get('/defc/getStaPositions', util.autenticarSessao, defc.getStationsPositions);
+app.get('/defc/getClosOccPositions', util.autenticarSessao, defc.getClosedOccurrencesPositions);
+app.get('/defc/getHospPositions', util.autenticarSessao, defc.getHospitalsPositions);
+app.get('/defc/getStSenPositions', util.autenticarSessao, defc.getStationsSensorsPositions);
+app.get('/defc/registroPedido', util.autenticarSessao, registroPedido.carregarPagina);
+
+
+//var policia = require('./routes/policia');
+//app.get('/policia/BO', util.autenticarSessao, policia.carregarPagina);
 
 /*
 métodos internos do sistema que necessita de sessão
 */
-app.get('/atendimento/carregar-base-samu', util.autenticarSessao, atendimento.carregarBaseSamu);
+app.get('/atendimento/carregar-ambulancia-ativa', util.autenticarSessao, atendimento.carregarAmbulanciaAtiva);
 app.post('/atendimento/salvar-ocorrencia', util.autenticarSessao, atendimento.salvarOcorrencia);
+app.get('/atendimento/listar-hospital-leito-disponivel', util.autenticarSessao, hospital.listarLeitoDisponivel);
 app.get('/ambulancia/listar-ocorrencias', util.autenticarSessao, atendimento.listarOcorrencia);
+app.get('/ambulancia/localizacao-ambulancias', util.autenticarSessao, atendimento.localizacaoAmbulancias);
+
+app.post('/uti/comunicarObito', util.autenticarSessao, utiRegisteredVictims.registrarObito);
 
 /*
 ***Exemplo de criação de rota passando parametros
@@ -114,17 +149,51 @@ app.post('/api/show-amb', util.autenticarSessao, api.showAmb);
 app.post('/api/delete-equip', util.autenticarSessao, api.deleteEquip);
 app.post('/api/delete-equip-amb', util.autenticarSessao, api.deleteEquipAmb);
 
+app.post('/api/show-crisis', util.autenticarSessao, api.showCrisis);
+app.post('/api/get-crisis', util.autenticarSessao, api.getCrisis);
+app.post('/api/show-occurrences', util.autenticarSessao, api.showOccurrences);
+app.post('/api/show-amb-list', util.autenticarSessao, api.showAmbList);
+
 app.use(app.router);
 
 //apis bombeiros
 
 app.post('/tag',apiBombeiro.iniVictim)
-app.get('/api/bombeiro',apiBombeiro.list)
-app.get('/api/bombeiro/getBraceletList',apiBombeiro.getList)
-app.post('/api/bombeiro/',apiBombeiro.classifyVictim)
+app.get('/api/bombeiro/getVictimList',apiBombeiro.getVictimList)
+app.get('/api/bombeiro/getBraceletList',apiBombeiro.getBraceletList)
+//app.post('/api/bombeiro/',apiBombeiro.classifyVictim)
 app.get('/api/bombeiro/victimsOfColor/:color',apiBombeiro.getVictimsOfColor) //typeof(getNames) = boolean
 app.get('/api/bombeiro/countVictims/:color',apiBombeiro.colorCounter)
 //app.get('/api/bombeiro/:token',apiBombeiro.deleteBracelet)
+
+
+
+/**
+ * Requires Firefigther: Rescue and Aftermath endpoints definition file.
+ * @author Paulo Henrique Aguiar(https://github.com/PauloAguiar)
+ */
+require('./routes/firefighter/rescueAndAftermathWeb')(app);
+require('./routes/firefighter/rescueAndAftermathApi')(app);
+
+/**
+ * Requires Firefigther: Search and Rescue endpoints definition file.
+ * @author
+ */
+require('./routes/firefighter/searchAndRescue')(app);
+require('./routes/firefighter/searchAndRescueApi')(app);
+
+
+
+/**
+ * Requires Police OR
+ * @author
+ */
+require('./routes/police/OR')(app);
+
+// apis Police
+app.post('/api/insert-OR', util.autenticarSessao, api.insertOR);
+app.post('/api/show-ORs', util.autenticarSessao, api.showORs);
+
 
 
 // API error handler

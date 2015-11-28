@@ -1,0 +1,451 @@
+<%- include ./layouts/header.ejs %>
+    <!-- DataTables CSS -->
+    <link href="/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="/bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+</head>
+    <body>
+        <div id="wrapper">
+            <%- include ./layouts/navigationDEFC.ejs %>
+                <div class="container-fluid">
+            <br />
+
+                <div class="row">
+                <div class="col-lg-3">
+                    <div class="panel panel-default sigac-fixed">
+                        <div class="panel-heading">
+                            Latest Crises
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="dataTable_wrapper">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables-defc">
+                                    <thead>
+                                        <tr>
+                                            <th>Crisis</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="odd gradeX">
+                                            <td><a href="#">Sudden flood of medium scale</a></td>
+                                            <td class="text-danger">In progress</td>
+                                        </tr>
+                                        
+                                        <tr class="odd gradeX">
+                                            <td><a href="#">Mariana Disaster</a></td>
+                                            <td class="text-danger">In progress</td>
+                                        </tr>
+
+                                        <tr class="odd gradeX"> 
+                                            <td>Alcantara VHS explosion</td>
+                                            <td class="text-muted">Closed</td>
+                                        </tr>
+
+                                        <tr class="odd gradeX"> 
+                                            <td>Lion rampage in a urban zoo</td>
+                                            <td class="text-muted">Closed</td>
+                                        </tr>
+
+                                        <tr class="odd gradeX"> 
+                                            <td>Fireworks factory explosion</td>
+                                            <td class="text-muted">Closed</td>
+                                        </tr>
+
+                                        <tr class="odd gradeX">
+                                            <td>Large-scale landslide</td>
+                                            <td class="text-muted">Closed</td>
+                                        </tr>
+
+                                        <tr class="odd gradeX"> 
+                                            <td>Aparment building collapse</td>
+                                            <td class="text-muted">Closed</td>
+                                        </tr>
+
+                                        <tr class="odd gradeX"> 
+                                            <td>Suicide bomber in city centre</td>
+                                            <td class="text-muted">Closed</td>
+                                        </tr>
+
+                                        <tr class="odd gradeX"> 
+                                            <td>Buffalo outbreak</td>
+                                            <td class="text-muted">Closed</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-2 -->
+                <div class="col-lg-9">
+                <div class="panel panel-default">
+                    <br />
+                    <div id="graphAffectedPeople" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
+                    <hr />
+                    <div id="graphSupportingPeople" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
+                    <hr />
+                    <div id="graphSmoke" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
+                    <hr />
+                    <div id="graphGases" style="min-width: 350px; height: 230px; margin: 0 auto"></div>
+                </div>
+                <!-- /.panel panel-default -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+        </div>
+        <%- include ./layouts/footer.ejs %>
+        <script src="/bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script src="/bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function() {
+            $('#dataTables-defc').DataTable({
+                responsive: true,
+                bFilter: true,
+                bPaginate: false,
+                bInfo: false,
+                order: [[1, 'desc']],
+                dom: '<"pull-left"f><"pull-right"l>tip'
+            });
+        });
+        </script>
+        
+        <script src="/js/highcharts-custom.js"></script>
+        <script>
+
+var time_slots = [];
+var light_data = [];
+var severe_data = [];
+var dead_data = [];
+for (var i = 0; i <= 48; i += 2) {
+    factor = Math.sqrt((48 - i)/48);
+    time_slots.push('-' + (48 - i)/2 + 'h');
+
+    if (i == 0) {
+        light_data.push(1 + Math.floor(2 * factor * Math.random()));
+        severe_data.push(1 + Math.floor(2 * factor * Math.random()));
+        dead_data.push(1 + Math.floor(1 * factor * Math.random()));
+    } else {
+        light_data.push(light_data[i/2 - 1] + Math.floor(3 * factor * factor * Math.random()));
+        severe_data.push(severe_data[i/2 - 1] + Math.floor(2.5 * Math.sqrt(factor) * factor * Math.random()));
+        dead_data.push(dead_data[i/2 - 1] + Math.floor(1.5 * Math.sqrt(factor) * Math.random()));
+    }
+}
+
+delta = 24 - light_data[48/2] - severe_data[48/2] - dead_data[48/2];
+for (i = 0; i <= 48/2; ++i) {
+    light_data[i] += delta;
+}
+
+var smoke_time = [];
+var smoke_data = [];
+var gases_data = [];
+
+for (var i = 0; i <= 24; ++i) {
+    smoke_time.push('-' + (24 - i) + 'h');
+}
+
+for (var i = 0; i <= 5000; ++i) {
+    base = 0.65*Math.pow(5000/(5000 + 4*i), 1.5) - 0.33;
+
+    if (base < 0.02) {
+        base = 0.02 - 0.000005*i;
+    }
+
+    smoke_data.push([i*24/5000, base + (base + 0.3)*Math.random()/4]);
+}
+
+for (var i = 0; i <= 5000; ++i) {
+    gases_data.push([i*24/5000, 0.012 + Math.random()/10]);
+}
+
+$(function () {
+    $('#graphAffectedPeople').highcharts({
+        colors: ['#f4f45f', '#ff4c3c', '#2c3e50'],
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: time_slots,
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: '# Affected'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value;
+                }
+            }
+        },
+        tooltip: {
+            shared: true,
+            valueSuffix: ' persons'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+            name: 'Lightly Injured',
+            data: light_data
+        }, {
+            name: 'Severely Injured',
+            data: severe_data
+        }, {
+            name: 'Dead',
+            data: dead_data
+        }]
+    });
+});
+
+var defc_data = [];
+var firefighter_data = [];
+var police_data = [];
+var health_data = [];
+for (var i = 0; i <= 48; i += 2) {
+    factor = Math.sqrt((48 - i)/48);
+
+    if (i == 0) {
+        defc_data.push(9);
+        firefighter_data.push(9);
+        police_data.push(9);
+        health_data.push(30);
+    } else {
+        if (Math.random() > 0.9 ) {
+            defc_data.push(defc_data[i/2 - 1] + 1);
+        } else if (Math.random() > 0.8 && defc_data[i/2 - 1] > 0) {
+            defc_data.push(defc_data[i/2 - 1] - 1);
+        } else {
+            defc_data.push(defc_data[i/2 - 1]);
+        }
+        
+        if (Math.random() > 0.9) {
+            firefighter_data.push(firefighter_data[i/2 - 1] + 1);
+        } else if (Math.random() > 0.75 && firefighter_data[i/2 - 1] > 0) {
+            firefighter_data.push(firefighter_data[i/2 - 1] - 1);
+        } else {
+            firefighter_data.push(firefighter_data[i/2 - 1]);
+        }
+        
+        if (Math.random() > 0.9) {
+            police_data.push(police_data[i/2 - 1] + 1);
+        } else if (Math.random() > 0.7 && police_data[i/2 - 1] > 0) {
+            police_data.push(police_data[i/2 - 1] - 1);
+        } else {
+            police_data.push(police_data[i/2 - 1]);
+        }
+        
+        if (Math.random() > 0.9) {
+            health_data.push(health_data[i/2 - 1] + 1);
+        } else if (Math.random() > 0.5 && health_data[i/2 - 1] > 0) {
+            health_data.push(health_data[i/2 - 1] - 1);
+        } else {
+            health_data.push(health_data[i/2 - 1]);
+        }
+    }
+}
+
+$(function () {
+    $('#graphSupportingPeople').highcharts({
+        colors: ['#3498db', '#e74c3c', '#1abc9c', '#34495e'],
+        chart: {
+            type: 'area'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: time_slots,
+            tickmarkPlacement: 'on',
+            title: {
+                enabled: false
+            }
+        },
+        yAxis: {
+            title: {
+                text: '# Mobilized'
+            },
+            labels: {
+                formatter: function () {
+                    return this.value;
+                }
+            }
+        },
+        tooltip: {
+            shared: true,
+            valueSuffix: ' persons'
+        },
+        plotOptions: {
+            area: {
+                stacking: 'normal',
+                lineColor: '#666666',
+                lineWidth: 1,
+                marker: {
+                    lineWidth: 1,
+                    lineColor: '#666666'
+                }
+            }
+        },
+        series: [{
+            name: 'Civil Defence',
+            data: defc_data
+        }, {
+            name: 'Firefighter',
+            data: firefighter_data
+        }, {
+            name: 'Health',
+            data: health_data
+        }, {
+            name: 'Police',
+            data: police_data
+        }]
+    });
+});
+
+$(function () {
+    $('#graphSmoke').highcharts({
+        chart: {
+            zoomType: 'x',
+            categories: smoke_time,
+            tickmarkPlacement: 'on',
+            type: 'int'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: smoke_time,
+            tickmarkPlacement: 'on',
+            type: 'int'
+        },
+        yAxis: {
+            title: {
+                text: 'Smoke Level'
+            },
+            min: 0,
+            max: 1
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, '#7f8c8d'],
+                        [1, 'rgba(150, 160, 165, 0.3)']
+                    ]
+                },
+                marker: {
+                    radius: 2
+                },
+                lineWidth: 1,
+                lineColor: '#5f6c6d',
+                states: {
+                    hover: {
+                        lineWidth: 1
+                    }
+                },
+                threshold: null
+            }
+        },
+
+        series: [{
+            type: 'area',
+            name: 'Smoke Level',
+            data: smoke_data
+        }]
+    });
+});
+
+$(function () {
+    $('#graphGases').highcharts({
+        chart: {
+            zoomType: 'x'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            categories: smoke_time,
+            tickmarkPlacement: 'on',
+            type: 'int'
+        },
+        yAxis: {
+            title: {
+                text: 'Inflammable Gases Level'
+            },
+            min: 0,
+            max: 1
+        },
+        legend: {
+            enabled: false
+        },
+        plotOptions: {
+            area: {
+                fillColor: {
+                    linearGradient: {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops: [
+                        [0, '#e74c3c'],
+                        [1, 'rgba(200, 60, 50, 0.3)']
+                    ]
+                },
+                marker: {
+                    radius: 2
+                },
+                lineWidth: 1,
+                lineColor: '#c0392b',
+                states: {
+                    hover: {
+                        lineWidth: 1
+                    }
+                },
+                threshold: null
+            }
+        },
+
+        series: [{
+            type: 'area',
+            name: 'Inflammable Gases Level',
+            data: gases_data
+        }]
+    });
+});
+
+        </script>
+    </body>
+</html>

@@ -1,14 +1,14 @@
 <%- include ../layouts/header.ejs %>
-	<!-- DataTables CSS -->
-	<link href="/../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="/../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet">
 
-	<!-- DataTables Responsive CSS -->
-	<link href="/../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="/../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
 </head>
-	<body>
-		<div id="wrapper">
-			<%- include ../layouts/navigationUTI.ejs %>
-			<div class="container-fluid">
+    <body>
+        <div id="wrapper">
+            <%- include ../layouts/navigationUTI.ejs %>
+            <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Crisis</h1>
@@ -16,7 +16,7 @@
                 <!-- /.col-lg-12 -->
             </div>
 
-						<div class="row">
+                        <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -29,77 +29,24 @@
                                     <thead>
                                         <tr>
                                             <th>Crisis</th>
-                                            <th>Occurence Date</th>
+                                            <th>Description</th>
+                                            <th>Category</th>
+                                            <th>Victims</th>
                                             <th>Status</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr class="odd gradeX">
-                                            <td><a href="vitimas">Large-scale accident Explosion</a></td>
-                                            <td>10/10/2015 09h50</td>
-                                            <td class="text-danger">In progress</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
-																				<tr class="odd gradeX">
-                                            <td>Large-scale accident Landslide</td>
-                                            <td>10/01/2015 09h50</td>
-                                            <td class="text-muted">Closed</td>
-                                        </tr>
-
+                                        <% for(var i = 0; i < dados.length; i++) { %>
+                                            <tr class="odd gradeX">
+                                                <td class="text-danger text-center"><%= dados[i].cri_id %></td>
+                                                <td class="text-danger text-center"><a href="<%= "registeredVictims" + dados[i].cri_id %>"><%= dados[i].cri_ds %></a></td>
+                                                <td class="text-danger text-center"><%= dados[i].cri_cat %></td>
+                                                <td class="text-danger text-center">
+                                                    <a href="<%= "registeredVictims" + dados[i].cri_id %>"><%= dados[i].cri_afetados %></a>
+                                                </td>
+                                                <td class="text-danger text-center"><%= dados[i].cri_status %></td>
+                                            </tr>
+                                        <% } %>
                                     </tbody>
                                 </table>
                             </div>
@@ -115,16 +62,16 @@
             <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
-		</div>
-		<%- include ../layouts/footer.ejs %>
-		<script src="/../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
-		<script src="/../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
-		<script>
-		$(document).ready(function() {
-				$('#dataTables-example').DataTable({
-								responsive: true
-				});
-		});
-		</script>
-	</body>
+        </div>
+        <%- include ../layouts/footer.ejs %>
+        <script src="/../bower_components/datatables/media/js/jquery.dataTables.min.js"></script>
+        <script src="/../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+        <script>
+        $(document).ready(function() {
+                $('#dataTables-example').DataTable({
+                                responsive: true
+                });
+        });
+        </script>
+    </body>
 </html>
