@@ -23,6 +23,8 @@
 * All rights reserved.
 *******************************************************************/
 
+#include <stddef.h>
+
 #ifndef _HTTPCLIENT_H
 #define _HTTPCLIENT_H
 #define FLAG_REQUEST_ONLY 0x1
@@ -32,6 +34,8 @@
 
 #define MAX_JSON_KEY_SIZE   64
 #define MAX_JSON_VAL_SIZE   1024    
+
+// #define _DEBUG	true
 
 #ifdef _DEBUG
 #define DEBUG printf

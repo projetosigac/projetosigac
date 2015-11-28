@@ -20,6 +20,7 @@
 #include <stdio.h>
 #include <fcntl.h>
 #include <string.h>
+#include <ctype.h>
 
 #include "httpclient.h"
 
@@ -46,6 +47,14 @@
 #define closesocket close
 #define CloseHandle close
 #define stricmp strcasecmp
+
+#define 	DEF_KEY_QUOTES		1
+#define 	DEF_KEY				2
+#define 	DEF_MIDDLE			4
+#define 	DEF_VAL_QUOTES		5
+#define 	DEF_VAL_NO_QUOTES	6
+#define 	DEF_VAL_WITH_QUOTES	7
+#define 	DEF_COMMA			8
 
 #if !defined(O_BINARY)
 #define O_BINARY 0
@@ -168,7 +177,8 @@ static HTTP_RESPONSE* httpGetResponse(HTTP_CONN * const conn) {
         DEBUG("Receiving response...\n");
         receivedBytes = 0;
         for (;;) {
-            ret = recv(conn->sockfd, resp->header + receivedBytes, MAX_HEADER_SIZE - receivedBytes, 0);
+			ret = recv(conn->sockfd, resp->header + receivedBytes, MAX_HEADER_SIZE - receivedBytes, 0);
+			    
             if (ret <= 0) break;
             receivedBytes += ret;
             resp->header[receivedBytes] = 0;
@@ -238,7 +248,7 @@ static HTTP_RESPONSE* httpGetResponse(HTTP_CONN * const conn) {
         int payloadWithHeader = receivedBytes - rspHeaderBytes;
         int eof = 0;
         conn->state = RECEIVING;
-        do {
+        do {			
             if (resp->bufferSize > 0) {
                 if (resp->payloadSize > 0) {
                     if (resp->bufferSize < resp->payloadSize + 1) {
@@ -268,14 +278,18 @@ static HTTP_RESPONSE* httpGetResponse(HTTP_CONN * const conn) {
                 }
             }
             //receive payload data
+			eof = 1;
+			/*
             bytesToRecv = resp->payloadSize ? resp->payloadSize : resp->bufferSize - 1;
             for (; recvBytes < bytesToRecv; recvBytes += bytes) {
                 bytes = recv(conn->sockfd, resp->buffer + recvBytes, bytesToRecv - recvBytes, 0);
+				printf("payload recvd \n");
+				fflush(stdout);
                 if (bytes <= 0) {
                     eof = 1;
                     break;
                 }
-            }
+            }*/
             if (recvBytes == resp->payloadSize) eof = 1;
             DEBUG("Payload received: %d bytes\n", recvBytes);
         } while (!eof);
@@ -314,9 +328,7 @@ HTTP_RESPONSE* sendRequest(const HTTP_REQUEST * const req) {
         DEBUG("Invalid URL path");
         releaseResources(conn);        
         return NULL;
-    }
-
-    
+    }  	
     switch (req->method) {
         case HTTP_GET:
             snprintf(conn->header, MAX_HEADER_SIZE + 1, HTTP_GET_HEADER, "GET",
@@ -335,7 +347,7 @@ HTTP_RESPONSE* sendRequest(const HTTP_REQUEST * const req) {
         do {
             if (!conn->sockfd) {
                 struct sockaddr_in server_addr;
-
+				
                 if ((target_host = gethostbyname((const char*) conn->hostname)) == NULL) {
                     ret = -1;
                     continue;
@@ -357,15 +369,14 @@ HTTP_RESPONSE* sendRequest(const HTTP_REQUEST * const req) {
                     DEBUG("Failed to connect\n");
                     ret = -1;
                     continue;
-                }
+                }				
             }
             DEBUG("Sending request...\n");
             if (sendData(conn, conn->header, hdrsize) != hdrsize) {
                 closesocket(conn->sockfd);
                 conn->sockfd = 0;
                 ret = -1;
-                continue;
-                ;
+                continue;                
             }
             break;
         } while (--retry > 0);
@@ -375,8 +386,9 @@ HTTP_RESPONSE* sendRequest(const HTTP_REQUEST * const req) {
 //            if (sendData(conn, req->postPayload, conn->postPayloadBytes) != conn->postPayloadBytes)
 //                break;
 //        }
+		
     } while (0);
-    HTTP_RESPONSE* resp = httpGetResponse(conn);
+	HTTP_RESPONSE* resp = httpGetResponse(conn);
     releaseResources(conn);
     return resp;
 
@@ -385,12 +397,12 @@ HTTP_RESPONSE* sendRequest(const HTTP_REQUEST * const req) {
 int isJsonResponse(const HTTP_RESPONSE* const resp) {
     int respSize;
     
-    if (resp == NULL) {
+    if (resp == NULL || resp->buffer == NULL) {
         return 0;
     }
     
     respSize = strlen(resp->buffer);
-    
+
     return resp->buffer[0] == '{' && resp->buffer[respSize -1] == '}';
 }
 
@@ -431,72 +443,106 @@ char* removeChar(char *s, char c)
 }
 
 void parseJson(HTTP_RESPONSE* const resp) {
-    char* objects[MAX_JSON_SIZE];
-    char* bufferCpy;
-    char* substr;
-    char* token, *key, *val;
-    char* keyVal;
-    int len, i, j;
+    int len, i, j, c, state;
     
-    if (resp == NULL) {
+	if (resp == NULL) {
         return;
     } 
     resp->jsonSize = 0;
-    
-    if (resp->buffer == NULL) {
+	
+	if (resp->buffer == NULL) {
         return;
     }
     
-    
-    len = strlen(resp->buffer);
-    bufferCpy = malloc(len);
-    
-    if (resp->buffer == NULL) {
-        return;
-    }
-    strcpy(bufferCpy, resp->buffer);
-    
-    substr = bufferCpy + 1; //skip the first '{'
-    substr[len-2] = '\0'; // skip the last '}'
-
-    // break the string, collecting the objects in the 'objects' array.   
-    token = strtok(substr, ","); 
-    i = 0;
-    while (token != NULL) {
-        DEBUG("\ncurrent token: %s", token);
-        objects[i] = token;
-        token = strtok(NULL, ",");        
-        i++;
-    }
-    
-    // for each object, get the key and value;
-    for (j = 0; j < i; j ++) {
-        key = strtok(objects[j], ":"); 
-        if (key != NULL) {
-            val = strtok(NULL, ":");
-            strcpy(resp->json[j].key, removeChar(trim(key), '\"'));
-            strcpy(resp->json[j].value, removeChar(trim(val), '\"')); 
-            DEBUG("\nkey:[%s]   val:[%s]", resp->json[j].key, resp->json[j].value);        
-        }
-    }
-    resp->jsonSize = i;
-    free(bufferCpy);
+	len = strlen(resp->buffer);
+	state = DEF_KEY_QUOTES;
+	j = 0;	
+	
+	for (i = 0; i < len; i++) {
+		if (state == DEF_KEY_QUOTES) {	
+			if (resp->buffer[i] == '"') {
+				state = DEF_KEY;
+				c = 0;		
+			}			
+			else {
+				continue;
+			}			
+		}
+		else if (state == DEF_KEY) {
+			if (resp->buffer[i] == '"' && resp->buffer[i-1] != '\\') {
+				state = DEF_MIDDLE;
+				resp->json[j].key[c] = '\0';
+			} else {
+				resp->json[j].key[c++] = resp->buffer[i]; 
+			}		
+		}
+		else if (state == DEF_MIDDLE) {	
+			if (resp->buffer[i] == ':') {
+				state = DEF_VAL_QUOTES;				
+			} else {
+				continue;
+			}			
+		}
+		else if (state == DEF_VAL_QUOTES) {
+			if (isspace(resp->buffer[i])) {
+				continue;
+			}		
+			else if (resp->buffer[i] == '"') {
+				state = DEF_VAL_WITH_QUOTES;
+				c = 0;		
+			} 
+			else {
+				c = 0;
+				resp->json[j].value[c++] = resp->buffer[i];
+				state = DEF_VAL_NO_QUOTES;
+			}			
+		}
+		else if (state == DEF_VAL_WITH_QUOTES) {
+			if (resp->buffer[i] == '"' && resp->buffer[i-1] != '\\') {
+				state = DEF_COMMA;
+				resp->json[j].value[c] = '\0';				
+			} else {
+				resp->json[j].value[c++] = resp->buffer[i]; 
+			}		
+		}
+		else if (state == DEF_VAL_NO_QUOTES) {
+			if (resp->buffer[i] == ',') {
+				state = DEF_COMMA;
+				i--;				
+			} else {
+				resp->json[j].value[c++] = resp->buffer[i]; 
+			}		
+		}
+		else if (state == DEF_COMMA) {
+			if (resp->buffer[i] == ',' || resp->buffer[i] == '}' ||
+				isspace(resp->buffer[i])) {
+				state = DEF_KEY_QUOTES;
+				c = 0;
+				j++;				
+			} else {
+				continue;
+			}		
+		}
+	}
+	resp->jsonSize = j;			
 }
 
 HTTP_RESPONSE* get(const char* const url) {
     HTTP_REQUEST req;
     HTTP_RESPONSE* resp;    
 
-    req.method = HTTP_GET;
+	req.method = HTTP_GET;
     req.url = url;
-    resp = sendRequest(&req);
-    
+
+	resp = sendRequest(&req);
+
     if (resp == NULL) {
         return NULL;
     }
+
     if (isJsonResponse(resp)) {
-        DEBUG("Parsing JSON response: %s", resp->buffer);
-        parseJson(resp);
+    	DEBUG("Parsing JSON response: %s", resp->buffer);
+        parseJson(resp);		
     }
     return resp;
 }
@@ -507,7 +553,8 @@ HTTP_RESPONSE* post(const char* url, const char body[]) {
 
     req.method = HTTP_POST;
     req.url = url;
-    req.postPayload = body;
+	
+	req.postPayload = body;
     resp = sendRequest(&req);
     
     if (resp == NULL) {
@@ -536,7 +583,6 @@ char* getJsonValue(Json json[], size_t jsonSize,  char* key) {
 
 static int fd;
 static char fileheader[512];
-static int filelen;
 
 static int readData(void* buffer, int bufsize) {
     if (fileheader[0]) {
@@ -547,7 +593,4 @@ static int readData(void* buffer, int bufsize) {
         return read(fd, buffer, bufsize);
     }
 }
-
-
-
 
